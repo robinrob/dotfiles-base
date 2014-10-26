@@ -5,10 +5,13 @@ source indents.zsh
 source functions.zsh
 
 function install() {
-	yellow "\t${ITEM}Installing $1 config ..."
-	cp $2 $2.backup 2> /dev/null
-	rm -f $2
-	ln Robin.xml $2
+    LABEL=$1
+    FILEPATH=$2
+
+	yellow "\t${ITEM}Installing $LABEL config ..."
+	cp $FILEPATH $FILEPATH.backup 2> /dev/null
+	rm -f $FILEPATH
+	ln ../config/files/Robin.xml $FILEPATH
 }
 
 green "Installing Jetbrains IDE config files ..."

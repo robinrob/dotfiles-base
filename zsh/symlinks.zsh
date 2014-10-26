@@ -13,6 +13,7 @@ green "Sym-linking dotfiles ..."
 
 ./uninstall.zsh
 
+cd ../config/dotfiles
 yellow "\t${ITEM}Sym-linking files to home directory ..."
 for file in $FILES; do
     cyan "\t\t${ITEM}$file sym-linked to $HOME/$file"

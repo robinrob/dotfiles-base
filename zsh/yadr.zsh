@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
 
-cd yadr
+cd $DOTFILES_HOME/yadr
 sh install.sh
 rake update
