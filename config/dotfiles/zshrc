@@ -19,18 +19,18 @@ for config_file ($HOME/.framework/zsh/*.zsh) source $config_file
 
 # Environment variables
 #############################
-source $DOTFILES_HOME/env_variables.zsh
+source $DOTFILES_HOME/dotfiles-base/zsh/env_variables.zsh
 
 
 # Functions
 ###############################################################################
 
-source $DOTFILES_HOME/functions.zsh
+source $DOTFILES_HOME/dotfiles-base/zsh/functions.zsh
 
 
 # Aliases
 ###############################################################################
-source $DOTFILES_HOME/aliases.zsh
+source $DOTFILES_HOME/dotfiles-base/zsh/aliases.zsh
 
 
 # ZSH Shell configuration

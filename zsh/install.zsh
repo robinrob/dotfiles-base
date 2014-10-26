@@ -2,9 +2,11 @@
 
 source colors.zsh
 
-#green "Installing YADR ..."
-#./yadr.zsh
-#git submodule update --init --recursive
+./uninstall.zsh
+
+# Initialising framework ...
+# cd ../../framework
+# git submodule update --init --recursive
 
 green "Configuring files ..."
 ./files.zsh

@@ -1,3 +1,7 @@
+source $DOTFILES_HOME/dotfiles-base/zsh/bookmarks.zsh
+source $DOTFILES_HOME/dotfiles-base/zsh/work_bookmarks.zsh
+
+
 ############################################################################### Un-Aliases
 ###############################################################################
 unalias todo
@@ -49,9 +53,6 @@ unalias rm
 
 # Web Shortcuts/Bookmarks
 alias q="question"
-
-source $DOTFILES_HOME/bookmarks.zsh
-source $DOTFILES_HOME/work_bookmarks.zsh
 
 alias rd="rubydoc"
 

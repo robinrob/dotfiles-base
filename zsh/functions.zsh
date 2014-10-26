@@ -3,7 +3,7 @@
 
 # NEVER use aliases in this file! This file is loaded first before aliases.
 
-source colors.zsh
+source $DOTFILES_HOME/dotfiles-base/zsh/colors.zsh
 
 function upper {
 	TEXT="$@"
