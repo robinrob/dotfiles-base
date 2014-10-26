@@ -103,7 +103,7 @@ set sidescroll=1
 
 
 " ================ Custom Settings ========================
-so ~/.yadr/vim/settings.vim
+so ~/.framework/vim/settings.vim
 
 " if has("gui_running")
   " syntax on
