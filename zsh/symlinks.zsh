@@ -17,9 +17,5 @@ FILES=(${(s: :)FILES})
 
 yellow "\t${ITEM}Sym-linking files to home directory ..."
 for file in $FILES; do
-    ln -s $DIR/$file ~/.$file && cyan "\t\t${ITEM}$file sym-linked to $HOME/$file"
+    ln -s $DIR/$file ~/.$file 2> /dev/null && cyan "\t\t${ITEM}$file sym-linked to $HOME/$file"
 done
-
-
-yellow "\t${ITEM}Installing framework to .framework ..."
-ln -s $DOTFILES_HOME/framework ~/.framework

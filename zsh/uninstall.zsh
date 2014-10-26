@@ -6,6 +6,8 @@ source colors.zsh
 DOTFILES_HOME=~/Programming/robin/zsh/projects/dotfiles
 OLD_DIR=/tmp/dotfiles             							
 
+green "Uninstalling ..."
+
 yellow "\t${ITEM}Creating $OLD_DIR for backup of any existing dotfiles in ~ ..."
 rm -rf $OLD_DIR
 mkdir -p $OLD_DIR
@@ -17,7 +19,7 @@ function move_files {
 
     yellow "\t${ITEM}Moving any existing dotfiles from ~ to $OLD_DIR ..."
     for file in $FILES; do
-        mv ~/.$file $OLD_DIR/ && cyan "\t\t$ITEM$file moved to $OLD_DIR"
+        mv ~/.$file $OLD_DIR/ 2> /dev/null && cyan "\t\t$ITEM$file moved to $OLD_DIR"
     done
 
     brightwhite 'Done.'
@@ -26,6 +28,3 @@ function move_files {
 
 cd $DOTFILES_HOME/dotfiles-base/config/dotfiles
 move_files
-
-
-mv ~/.framework $OLD_DIR 2> /dev/null
