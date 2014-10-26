@@ -6,6 +6,7 @@ source colors.zsh
 
 ./jetbrains.zsh
 
+cd ../config/files
 green "Installing crontab ..."
 crontab crontab.cron
 
