@@ -1,10 +1,7 @@
 #!/usr/bin/env zsh
 
 source colors.zsh
-source dotfiles.zsh
 
-FILES=`dot_files`
-FILES=(${(s: :)FILES})
 
 OLD_DIR=/tmp/dotfiles             							
 
@@ -13,11 +10,26 @@ rm -rf $OLD_DIR
 mkdir -p $OLD_DIR
 
 
-cd ../config/dotfiles
-yellow "\t${ITEM}Moving any existing dotfiles from ~ to $OLD_DIR ..."
-for file in $FILES; do
-	cyan "\t\t$ITEM$file moved to $OLD_DIR"
-    mv ~/.$file $OLD_DIR/ 2> /dev/null
-done
+function move_files {
+    FILES=`ls * | xargs`
+    FILES=(${(s: :)FILES})
 
-brightwhite 'Done.'
+    yellow "\t${ITEM}Moving any existing dotfiles from ~ to $OLD_DIR ..."
+    for file in $FILES; do
+        cyan "\t\t$ITEM$file moved to $OLD_DIR"
+        mv ~/.$file $OLD_DIR/ 2> /dev/null
+    done
+
+    brightwhite 'Done.'
+}
+
+
+cd ../config/dotfiles
+move_files
+cd -
+
+cd ../config/files
+move_files
+cd -
+
+mv ~/.framework $OLD_DIR 2> /dev/null

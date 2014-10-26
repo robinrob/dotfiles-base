@@ -7,6 +7,6 @@ source colors.zsh
 #git submodule update --init --recursive
 
 green "Configuring files ..."
-./configure.zsh
+./files.zsh
 
 brightwhite "Done."

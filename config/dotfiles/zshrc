@@ -1,20 +1,20 @@
 #!/usr/bin/env zsh -x
 
 DOTFILES_HOME=~/Programming/robin/zsh/projects/dotfiles
-source $DOTFILES_HOME/colors.zsh
+source $DOTFILES_HOME/dotfiles-base/zsh/colors.zsh
 
 echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)"
 # Or alternatively:
 # echo "$(brightwhite I)$(brightyellow " am ")$(brightcyan awesome)"
 
 
-# YADR stuff
+# External framework
 ############
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-for config_file ($HOME/.yadr/zsh/*.zsh) source $config_file
+for config_file ($HOME/.framework/zsh/*.zsh) source $config_file
 
 
 # Environment variables
