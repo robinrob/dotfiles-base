@@ -12,7 +12,7 @@ green "Installing crontab ..."
 crontab crontab.cron
 
 green "Installing Robin's custom keyboard layout ..."
-cp Robin.keylayout ~/Library/Keyboard\ Layouts/
+cp Robin.keylayout.xml ~/Library/Keyboard\ Layouts/Robin.keylayout
 
 green "Installing sudoers file ..."
 # Make sure that the file has correct permissions first!

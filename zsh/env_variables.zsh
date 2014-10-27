@@ -36,6 +36,8 @@ export SH_HOME=$PROG_HOME/sh
 
 export DOTFILES_HOME=$ZSH_HOME/projects/dotfiles
 
+export ZDOTFILES_HOME=$DOTFILES_HOME/dotfiles-base/zsh
+
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
 export SPLUNK_HOME=$PROG_HOME/splunk

@@ -1,5 +1,4 @@
-source $DOTFILES_HOME/dotfiles-base/zsh/bookmarks.zsh
-source $DOTFILES_HOME/dotfiles-base/zsh/work_bookmarks.zsh
+source $ZDOTFILES_HOME/bookmarks.zsh
 
 
 ############################################################################### Un-Aliases
@@ -571,11 +570,11 @@ alias password="ruby $RUBY_HOME/projects/rbpassword/rbpassword.rb"
 
 alias rnsall="cd $SCREENSHOTS_HOME && despace"
 
-alias mal="$EDITOR $DOTFILES_HOME/aliases.zsh"
+alias mal="$EDITOR $ZDOTFILES_HOME/aliases.zsh"
 
-alias men="$EDITOR $DOTFILES_HOME/env_variables.zsh"
+alias men="$EDITOR $ZDOTFILES_HOME/env_variables.zsh"
 
-alias mfn="$EDITOR $DOTFILES_HOME/functions.zsh"
+alias mfn="$EDITOR $ZDOTFILES_HOME/functions.zsh"
 
 alias t="touch"
 
