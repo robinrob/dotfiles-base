@@ -36,7 +36,11 @@ export SH_HOME=$PROG_HOME/sh
 
 export DOTFILES_HOME=$ZSH_HOME/projects/dotfiles
 
+export DOTFILESBASE_HOME=$ZSH_HOME/projects/dotfiles/dotfiles-base
+
 export ZDOTFILES_HOME=$DOTFILES_HOME/dotfiles-base/zsh
+
+export FORCE_COM_HOME=$PROG_HOME/force_com
 
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 

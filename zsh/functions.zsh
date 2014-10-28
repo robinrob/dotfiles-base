@@ -3,7 +3,7 @@
 
 # NEVER use aliases in this file! This file is loaded first before aliases.
 
-source $DOTFILES_HOME/dotfiles-base/zsh/colors.zsh
+source ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/colors.zsh
 
 function upper {
 	TEXT="$@"
@@ -877,10 +877,6 @@ function cdms {
 	cd_dir $MSCHEF && rvm gemset use chef --create
 }
 
-function nbrew {
-	brew $@ && shift && echo $@ >> $DOTFILES_HOME/homebrew.txt
-}
-
 function bashvulns {
 	browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271'
 	browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7169'
@@ -897,6 +893,7 @@ function repo_cmds {
   abbreviations[coffeescript]=cs
   abbreviations[c]=c
   abbreviations[c-plus-plus]=cp
+  abbreviations[force_com]=f
   abbreviations[htmlcss]=h
   abbreviations[javascript]=js
   abbreviations[markdown]=m

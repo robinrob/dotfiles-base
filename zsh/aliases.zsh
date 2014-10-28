@@ -1,4 +1,5 @@
 source $ZDOTFILES_HOME/bookmarks.zsh
+source $ZDOTFILES_HOME/work_bookmarks.zsh
 
 
 ############################################################################### Un-Aliases
@@ -153,6 +154,8 @@ alias igi="isgit"
 alias shell="echo $SHELL"
 
 alias cdcocos="cd_dir $COCOS_HOME"
+
+alias cddb="cd_dir $DOTFILES_HOME/dotfiles-base"
 
 # Shell shortcuts
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
@@ -424,7 +427,6 @@ alias ga="git add"
 alias gsi="git submodule init"
 
 alias gsu="git submodule update"
-
 alias gsI="git submodule update --init --recursive"
 
 alias gsa="git submodule add"
@@ -544,7 +546,7 @@ alias mbk="m $DOTFILES_HOME/bookmarks.zsh"
 
 alias cbk="cat $DOTFILES_HOME/bookmarks.zsh"
 
-alias mwbk="m $DOTFILES_HOME/work_bookmarks.zsh"
+alias mwbk="m $DOTFILESBASE_HOME/zsh/work_bookmarks.zsh"
 
 alias edit=$EDITOR
 
@@ -678,12 +680,12 @@ alias pb="pbcopy"
 
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
-# Shell functions/function aliases
+# Shell commands/function aliases
+alias brl="brew list"
+
 alias b="browser"
 
 alias killa="killp"
-
-alias brew="nbrew"
 
 alias bkmk="bookmark"
 

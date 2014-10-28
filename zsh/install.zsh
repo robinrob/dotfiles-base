@@ -6,5 +6,3 @@ source colors.zsh
 
 green "Configuring files ..."
 ./files.zsh
-
-brightwhite "Done."
