@@ -154,6 +154,8 @@ alias shell="echo $SHELL"
 
 alias cdcocos="cd_dir $COCOS_HOME"
 
+alias cddb="cd_dir $DOTFILES_HOME/dotfiles-base"
+
 # Shell shortcuts
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
@@ -423,7 +425,9 @@ alias ga="git add"
 
 alias gsi="git submodule init"
 
-alias gsu="git submodule update --init --recursive"
+alias gsu="git submodule update"
+
+alias gsb="git submodule update --init --recursive"
 
 alias gsa="git submodule add"
 
