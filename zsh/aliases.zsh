@@ -1,4 +1,5 @@
 source $ZDOTFILES_HOME/bookmarks.zsh
+source $ZDOTFILES_HOME/work_bookmarks.zsh
 
 
 ############################################################################### Un-Aliases
@@ -546,7 +547,7 @@ alias mbk="m $DOTFILES_HOME/bookmarks.zsh"
 
 alias cbk="cat $DOTFILES_HOME/bookmarks.zsh"
 
-alias mwbk="m $DOTFILES_HOME/work_bookmarks.zsh"
+alias mwbk="m $DOTFILESBASE_HOME/zsh/work_bookmarks.zsh"
 
 alias edit=$EDITOR
 
@@ -680,12 +681,12 @@ alias pb="pbcopy"
 
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
-# Shell functions/function aliases
+# Shell commands/function aliases
+alias brl="brew list"
+
 alias b="browser"
 
 alias killa="killp"
-
-alias brew="nbrew"
 
 alias bkmk="bookmark"
 

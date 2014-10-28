@@ -18,6 +18,8 @@ alias seanscases="cases 00B20000007AD8A"
 
 alias jaredscases="cases 00B20000007BLn1"
 
+alias delcases="cases 00B20000007Bunq"
+
 alias unassed="browser 'https://cloudreach.my.salesforce.com/500?fcf=00B200000079jxp'"
 
 alias pending="browser 'https://cloudreach.my.salesforce.com/500?fcf=00B20000006XDXH'"
