@@ -14,7 +14,7 @@ mkdir -p $OLD_DIR
 
 
 function move_files {
-    FILES=`ls * | xargs`
+    FILES=`ls . | xargs`
     FILES=(${(s: :)FILES})
 
     yellow "\t${ITEM}Moving any existing dotfiles from ~ to $OLD_DIR ..."
