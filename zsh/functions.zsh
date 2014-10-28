@@ -479,6 +479,8 @@ function killp {
 }
 
 function rakeup {
+  rm -rf rake
+  git rm -r --cached rake
 	git submodule add --force git@bitbucket.org:robinrob/rakefile.git rake
 	ln -s rake/Rakefile ./
 }

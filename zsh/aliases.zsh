@@ -423,7 +423,9 @@ alias ga="git add"
 
 alias gsi="git submodule init"
 
-alias gsu="git submodule update --init --recursive"
+alias gsu="git submodule update"
+
+alias gsI="git submodule update --init --recursive"
 
 alias gsa="git submodule add"
 
