@@ -164,7 +164,9 @@ alias rkls="rake each_sub['echo, quiet']"
 
 alias cdgam="cd_dir $GAM_PATH"
 
-alias cdrec="cd_dir $RECEIPTS_HOME"
+alias cdexp="cd_dir $EXPENSES_HOME"
+
+alias cdrec="cd_dir `dirname $RECORDS_PATH`"
 
 alias strash="du -dh $TRASH_HOME"
 
@@ -427,8 +429,7 @@ alias ga="git add"
 alias gsi="git submodule init"
 
 alias gsu="git submodule update"
-
-alias gsb="git submodule update --init --recursive"
+alias gsI="git submodule update --init --recursive"
 
 alias gsa="git submodule add"
 
@@ -489,6 +490,8 @@ alias kel="knife environment list"
 alias knl="knife node list"
 
 # Viewing and editing files
+alias doit="$RECORDS_HOME/doit.zsh"
+
 alias toread="cat $LISTS_HOME/to_read.txt"
 
 alias mtoread="m $LISTS_HOME/to_read.txt"
@@ -543,11 +546,11 @@ alias ezs="ezsh"
 
 alias czsh="cat ~/.zshrc"
 
-alias mbk="m $DOTFILES_HOME/bookmarks.zsh"
+alias mbk="m $BOOKMARKS_HOME"
+
+alias wmbk="m $WORKBOOKMARKS_HOME"
 
 alias cbk="cat $DOTFILES_HOME/bookmarks.zsh"
-
-alias mwbk="m $DOTFILESBASE_HOME/zsh/work_bookmarks.zsh"
 
 alias edit=$EDITOR
 
