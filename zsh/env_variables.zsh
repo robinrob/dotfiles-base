@@ -1,6 +1,10 @@
 # Environment variables
 #############################
 
+export BOOKMARKS_HOME=$DOTFILESBASE_HOME/zsh/bookmarks.zsh
+
+export WORKBOOKMARKS_HOME=$DOTFILESBASE_HOME/zsh/work_bookmarks.zsh
+
 # sudo hostname <name> to change
 export HOSTNAME=`hostname`
 
@@ -37,6 +41,8 @@ export SH_HOME=$PROG_HOME/sh
 export DOTFILES_HOME=$ZSH_HOME/projects/dotfiles
 
 export DOTFILESBASE_HOME=$ZSH_HOME/projects/dotfiles/dotfiles-base
+
+export COLORS_PATH=$DOTFILESBASE_HOME/zsh/colors.zsh
 
 export ZDOTFILES_HOME=$DOTFILES_HOME/dotfiles-base/zsh
 
@@ -168,7 +174,9 @@ export AWS_CONFIG="~/.aws/config"
 
 export KITCHENPLAN_HOME=/opt/kitchenplan
 
-export RECORDS_PATH=$MERCURY_HOME/docs/IMPORTANT/records/records.txt
+export RECORDS_HOME=$MERCURY_HOME/docs/IMPORTANT/records
+
+export RECORDS_PATH=$RECORDS_HOME/records.txt
 
 export RECEIPTS_HOME=~/Google\ Drive/expenses/
 
