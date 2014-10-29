@@ -830,3 +830,5 @@ alias lasts="cd $SCREENSHOTS_HOME && lastf -s $SCREENSHOT_NAME"
 alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 
 alias test="hello"
+
+alias rake="say rake"
