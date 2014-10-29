@@ -175,6 +175,7 @@ function sprnew {
   FILENAME=$1.sh
 
   cp $SH_HOME/templates/practice.sh $FILENAME
+  chmod +x $FILENAME
   $EDITOR $FILENAME
 }
 
@@ -182,6 +183,7 @@ function zprnew {
   FILENAME=$1.zsh
 
   cp $ZSH_HOME/templates/practice.zsh $FILENAME
+  chmod +x $FILENAME
   $EDITOR $FILENAME
 }
 
@@ -1116,3 +1118,15 @@ function ssd {
 autoload hello
 
 autoload hello2
+
+
+function wrap {
+  CMD=$@
+
+  eval $CMD
+
+  if [[ $SAYCMD == 1 ]]
+  then
+    say $CMD
+  fi
+}

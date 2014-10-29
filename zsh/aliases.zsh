@@ -50,6 +50,8 @@ unalias ls
 
 unalias rm
 
+unalias gpl
+
 
 # Web Shortcuts/Bookmarks
 alias q="question"
@@ -429,6 +431,7 @@ alias ga="git add"
 alias gsi="git submodule init"
 
 alias gsu="git submodule update"
+
 alias gsI="git submodule update --init --recursive"
 
 alias gsa="git submodule add"
@@ -442,6 +445,8 @@ alias grao="git remote add origin"
 alias gpom="git push origin master"
 
 alias gplom="git pull origin master"
+
+alias gpl="git pull"
 
 alias gsr="git submodule add git@bitbucket.org:robinrob/rakefile.git rake && ln -s rake/Rakefile Rakefile"
 

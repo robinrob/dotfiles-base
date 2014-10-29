@@ -1,6 +1,8 @@
 # Environment variables
 #############################
 
+export SAYCMD=1
+
 export BOOKMARKS_HOME=$DOTFILESBASE_HOME/zsh/bookmarks.zsh
 
 export WORKBOOKMARKS_HOME=$DOTFILESBASE_HOME/zsh/work_bookmarks.zsh
