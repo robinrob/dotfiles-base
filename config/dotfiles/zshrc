@@ -3,7 +3,10 @@
 # Greeting
 ###############################################################################
 DOTFILES_HOME=~/Programming/robin/zsh/projects/dotfiles
-source $DOTFILES_HOME/dotfiles-base/zsh/colors.zsh
+DOTFILESBASE_HOME=$DOTFILES_HOME/dotfiles-base
+ZDOT_HOME=$DOTFILESBASE_HOME/zsh
+
+source $ZDOT_HOME/colors.zsh
 
 echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)"
 # Or alternatively:
@@ -21,22 +24,22 @@ for config_file ($HOME/.framework/zsh/*.zsh) source $config_file
 
 # Environment variables
 ###############################################################################
-source $DOTFILES_HOME/dotfiles-base/zsh/env_variables.zsh
+source $ZDOT_HOME/env_variables.zsh
 
 
 # Functions
 ###############################################################################
-source $DOTFILES_HOME/dotfiles-base/zsh/functions.zsh
+source $ZDOT_HOME/functions.zsh
 
 
 # Aliases
 ###############################################################################
-source $DOTFILES_HOME/dotfiles-base/zsh/aliases.zsh
+source $ZDOT_HOME/aliases.zsh
 
 
 # Path
 ###############################################################################
-source path.zsh
+source $ZDOT_HOME/path.zsh
 
 
 # ZSH Options

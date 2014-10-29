@@ -171,6 +171,20 @@ function jsnew {
 	echo "\nrequire(process.env.JS_LIB_HOME + '/log')" >> $1.js
 }
 
+function sprnew {
+  FILENAME=$1.sh
+
+  cp $SH_HOME/templates/practice.sh $FILENAME
+  $EDITOR $FILENAME
+}
+
+function zprnew {
+  FILENAME=$1.zsh
+
+  cp $ZSH_HOME/templates/practice.zsh $FILENAME
+  $EDITOR $FILENAME
+}
+
 function rnew {
 	NAME=$1
 	cp $RUBY_HOME/templates/practice.rb $NAME.rb

@@ -40,9 +40,21 @@ export SH_HOME=$PROG_HOME/sh
 
 export DOTFILES_HOME=$ZSH_HOME/projects/dotfiles
 
-export DOTFILESBASE_HOME=$ZSH_HOME/projects/dotfiles/dotfiles-base
+export DOTFILESBASE_HOME=$DOTFILES_HOME/dotfiles-base
 
 export COLORS_PATH=$DOTFILESBASE_HOME/zsh/colors.zsh
+
+export SHLIB_HOME=$SH_HOME/lib
+
+export SHLOG_PATH=$SHLIB_HOME/log.sh
+
+export SHCOLORS_PATH=$SHLIB_HOME/colors.sh
+
+export ZSHLIB_HOME=$ZSH_HOME/lib
+
+export ZSHLOG_PATH=$ZSHLIB_HOME/log.zsh
+
+export ZSHCOLORS_PATH=$DOTFILESBASE_HOME/zsh/colors.zsh
 
 export ZDOTFILES_HOME=$DOTFILES_HOME/dotfiles-base/zsh
 
