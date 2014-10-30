@@ -1131,3 +1131,10 @@ function wrap {
     say $CMD
   fi
 }
+
+function preexec {
+  if [[ $SAYCMD == 1 ]]
+  then
+    say $1
+  fi
+}

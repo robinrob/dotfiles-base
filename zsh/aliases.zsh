@@ -52,7 +52,6 @@ unalias rm
 
 unalias gpl
 
-unalias rake
 
 # Web Shortcuts/Bookmarks
 alias q="question"
@@ -82,7 +81,7 @@ hash -d html-css="$HTMLCSS_HOME"
 ###############################################################################
 
 # Global aliases
-# alias -g p="prog"
+# globalias -g p="prog"
 #
 # alias -g r="rby"
 #
