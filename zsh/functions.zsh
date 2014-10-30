@@ -5,6 +5,7 @@
 
 source ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/colors.zsh
 
+
 function upper {
 	TEXT="$@"
 	echo $TEXT:u
@@ -445,9 +446,9 @@ function rake_do {
 		echo "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
 		if [ -n "$2" ]
 		then
-			rake $TASK"[$2]"
+			wrap rake $TASK"[$2]"
 		else
-			rake $TASK	
+			wrap rake $TASK	
 		fi
 	else
 		red "No Rakefile!"

@@ -52,6 +52,7 @@ unalias rm
 
 unalias gpl
 
+unalias rake
 
 # Web Shortcuts/Bookmarks
 alias q="question"
@@ -831,4 +832,4 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 
 alias test="hello"
 
-alias rake="say rake"
+alias red="say red"
