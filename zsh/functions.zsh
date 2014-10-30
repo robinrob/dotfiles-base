@@ -400,11 +400,11 @@ function al {
 }
 
 function bookmark {
-	create_bookmark $DOTFILES_HOME/bookmarks.zsh $@
+	create_bookmark $BOOKMARKS_PATH $@
 }
 
 function work_bookmark {
-	create_bookmark $DOTFILES_HOME/work_bookmarks.zsh $@ chrome
+	create_bookmark $WORKBOOKMARKS_PATH $@ chrome
 }
 
 function create_bookmark {

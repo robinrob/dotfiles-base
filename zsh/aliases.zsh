@@ -546,9 +546,9 @@ alias ezs="ezsh"
 
 alias czsh="cat ~/.zshrc"
 
-alias mbk="m $BOOKMARKS_HOME"
+alias mbk="m $BOOKMARKS_PATH"
 
-alias wmbk="m $WORKBOOKMARKS_HOME"
+alias mwbk="m $WORKBOOKMARKS_PATH"
 
 alias cbk="cat $DOTFILES_HOME/bookmarks.zsh"
 

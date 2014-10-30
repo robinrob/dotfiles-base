@@ -1,4 +1,8 @@
-[profile rss]
+[profile cr-prod]
 region = eu-west-1
-aws_access_key_id = 
-aws_secret_access_key = 
+aws_access_key_id = AKIAIS6P66V2S5M5GA7A
+aws_secret_access_key = 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
+[profile localworld]
+region = eu-west-1
+aws_access_key_id = AKIAJ4P3UDXBPMQ2WCSA
+aws_secret_access_key = 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
