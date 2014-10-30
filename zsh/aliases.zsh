@@ -309,7 +309,7 @@ alias rkt="rake_do test"
 
 alias rkr="rake routes"
 
-alias rkss="rake sub_sort"
+alias rkss="rake_do sub_sort"
 
 alias rk="rake"
 
@@ -330,6 +330,8 @@ alias save="rake -f $GLOBAL_RAKEFILE_HOME/Rakefile save_code"
 alias rkrn="rake run"
 
 alias rkd="rake_do deploy"
+
+alias rkD="rake_do sub_deinit"
 
 alias rkp="rake_do pull"
 
