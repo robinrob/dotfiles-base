@@ -27,3 +27,5 @@ alias pending="browser 'https://cloudreach.my.salesforce.com/500?fcf=00B20000006
 alias van="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1u1feNasYhE5fm_xXdvAm_mZSKO-vKQshd9XTNu-Jtrg/edit'"
 
 alias zenoss="browser 'http://zenoss.cloudreach.co.uk:8080/zport/dmd/Events/evconsole'"
+
+alias tobedeleted="cases '00B20000007Bunq'"

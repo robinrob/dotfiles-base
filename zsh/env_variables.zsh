@@ -3,9 +3,9 @@
 
 export SAYCMD=1
 
-export BOOKMARKS_HOME=$DOTFILESBASE_HOME/zsh/bookmarks.zsh
+export BOOKMARKS_PATH=$DOTFILESBASE_HOME/zsh/bookmarks.zsh
 
-export WORKBOOKMARKS_HOME=$DOTFILESBASE_HOME/zsh/work_bookmarks.zsh
+export WORKBOOKMARKS_PATH=$DOTFILESBASE_HOME/zsh/work_bookmarks.zsh
 
 # sudo hostname <name> to change
 export HOSTNAME=`hostname`
