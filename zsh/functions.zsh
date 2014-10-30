@@ -1115,12 +1115,6 @@ function ssd {
   sudo shutdown -h now
 }
 
-# Function definition is contained within $DOTFILES_HOME/functions/hello
-autoload hello
-
-autoload hello2
-
-
 function wrap {
   CMD=$@
 
@@ -1135,6 +1129,6 @@ function wrap {
 function preexec {
   if [[ $SAYCMD == 1 ]]
   then
-    say $1
+    (say $1 &) > /dev/null 2>&1
   fi
 }

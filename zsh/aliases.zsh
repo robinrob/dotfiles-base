@@ -589,6 +589,8 @@ alias men="$EDITOR $ZDOTFILES_HOME/env_variables.zsh"
 
 alias mfn="$EDITOR $ZDOTFILES_HOME/functions.zsh"
 
+alias mpa="$EDITOR $ZDOTFILES_HOME/path.zsh"
+
 alias t="touch"
 
 alias mmutt="$EDITOR ~/.mutt/muttrc"

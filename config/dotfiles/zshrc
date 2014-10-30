@@ -55,7 +55,6 @@ setopt vi
 # Shares history between shells instantaneously
 setopt share_history
 
-
 prompt robin
 
 
