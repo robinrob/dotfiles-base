@@ -692,6 +692,8 @@ alias pb="pbcopy"
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
 # Shell commands/function aliases
+alias sws="switchsay"
+
 alias brl="brew list"
 
 alias b="browser"

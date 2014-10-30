@@ -1,14 +1,17 @@
 #!/usr/bin/env zsh -x
 
-# Greeting
-###############################################################################
+
+# Temporarily setup important variables which will be exported as env variables later
 DOTFILES_HOME=~/Programming/robin/zsh/projects/dotfiles
 DOTFILESBASE_HOME=$DOTFILES_HOME/dotfiles-base
 ZDOT_HOME=$DOTFILESBASE_HOME/zsh
 
 source $ZDOT_HOME/colors.zsh
 
-echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)"
+
+# Greeting
+###############################################################################
+echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)" && say i am awesome
 # Or alternatively:
 # echo "$(brightwhite I)$(brightyellow " am ")$(brightcyan awesome)"
 

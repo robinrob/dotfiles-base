@@ -1132,3 +1132,12 @@ function preexec {
     (say $1 &) > /dev/null 2>&1
   fi
 }
+
+function switchsay {
+  if [[ $SAYCMD == 1 ]]
+  then
+    export SAYCMD=""
+  else
+    export SAYCMD=1
+  fi
+}

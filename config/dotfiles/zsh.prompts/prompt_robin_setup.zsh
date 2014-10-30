@@ -67,6 +67,8 @@ function prompt_robin_setup {
   LIGHTNING="⚡"
 
   PROMPT="$(magandaprompt)%n$(brightwhiteprompt)@%{$hostcolor%}%B%M%b%f $(brightyellowprompt)\$(dir)/$(defaultprompt) \${vcs_info_msg_0_}$(brightwhiteprompt)$(brightredprompt)$LIGHTNING$(defaultprompt)  "
+  RPROMPT="$(defaultprompt)\$(pwd)"
+  RPS1=$RPROMPT
 }
 
 prompt_robin_setup "$@"
