@@ -3,14 +3,14 @@ unsetopt correct
 
 # `cd` into directory by only typing directory name
 setopt autocd
+
 # Vim-style editing on command line
 setopt vi
+
 # Shares history between shells instantaneously
 setopt share_history
 
-
-setopt -o beep
-setopt -o histbeep
-setopt -o listbeep
-
-prompt robin
+# Turn off fucking beeps
+setopt nobeep
+setopt nohistbeep
+setopt nolistbeep
