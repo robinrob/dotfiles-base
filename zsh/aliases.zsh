@@ -54,7 +54,7 @@ unalias gpl
 
 
 # Web Shortcuts/Bookmarks
-alias q="question"
+alias q="zequestion"
 
 alias rd="rubydoc"
 
@@ -594,6 +594,8 @@ alias password="ruby $RUBY_HOME/projects/rbpassword/rbpassword.rb"
 alias rnsall="cd $SCREENSHOTS_HOME && despace"
 
 alias mal="$EDITOR $ZDOT_HOME/aliases.zsh"
+
+alias mop="$EDITOR $ZDOT_HOME/options.zsh"
 
 alias men="$EDITOR $ZDOT_HOME/env_variables.zsh"
 

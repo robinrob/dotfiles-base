@@ -100,8 +100,6 @@ alias biographical="browser 'http://www.imdb.com/genre/biography'"
 
 alias activerecord="browser 'http://rubydoc.info/gems/activerecord/4.1.6/frames'"
 
-alias question="browser 'http://stackoverflow.com/questions/26093485/intellij-idea-ultimate-red-underlines-ruby-shorthand-hash-literal'"
-
 alias awssdk="open 'http://docs.aws.amazon.com/AWSRubySDK/latest/frames.html'"
 
 alias bkcaml="safari 'http://my.safaribooksonline.com/book/programming/9781449324735'"
@@ -125,3 +123,11 @@ alias bkzsh2="book 'http://zsh.sourceforge.net/Guide/zshguide.html'"
 alias options="open 'http://www.cs.elte.hu/zsh-manual/zsh_16.html'"
 
 alias opts="options"
+
+
+
+
+
+
+
+alias zequestion="open 'http://stackoverflow.com/questions/26670070/how-can-i-make-zsh-shell-beep-on-os-x'"
