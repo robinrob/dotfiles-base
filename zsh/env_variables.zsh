@@ -253,4 +253,4 @@ fpath=("$DOTFILES_HOME/functions" $fpath)
 
 # Path
 ######
-source $ZDOTFILES_HOME/path.zsh
+source $ZDOT_HOME/path.zsh

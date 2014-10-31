@@ -1,5 +1,5 @@
-source $ZDOTFILES_HOME/bookmarks.zsh
-source $ZDOTFILES_HOME/work_bookmarks.zsh
+source $ZDOT_HOME/bookmarks.zsh
+source $ZDOT_HOME/work_bookmarks.zsh
 
 
 ############################################################################### Un-Aliases
@@ -117,6 +117,8 @@ alias sed="gsed"
 alias ls="/usr/local/bin/gls --color"
 
 alias cat="gcat"
+
+alias sed="gsed"
 
 alias awk="gawk"
 
@@ -591,13 +593,13 @@ alias password="ruby $RUBY_HOME/projects/rbpassword/rbpassword.rb"
 
 alias rnsall="cd $SCREENSHOTS_HOME && despace"
 
-alias mal="$EDITOR $ZDOTFILES_HOME/aliases.zsh"
+alias mal="$EDITOR $ZDOT_HOME/aliases.zsh"
 
-alias men="$EDITOR $ZDOTFILES_HOME/env_variables.zsh"
+alias men="$EDITOR $ZDOT_HOME/env_variables.zsh"
 
-alias mfn="$EDITOR $ZDOTFILES_HOME/functions.zsh"
+alias mfn="$EDITOR $ZDOT_HOME/functions.zsh"
 
-alias mpa="$EDITOR $ZDOTFILES_HOME/path.zsh"
+alias mpa="$EDITOR $ZDOT_HOME/path.zsh"
 
 alias t="touch"
 
