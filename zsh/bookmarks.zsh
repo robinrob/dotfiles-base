@@ -121,3 +121,7 @@ alias cocos2d2="safari 'http://my.safaribooksonline.com/book/programming/game-pr
 alias passwords="chrome 'https://docs.google.com/a/mrrobinsmith.com/spreadsheet/ccc?key=0Aganxin54gVEdE5zUlVvcUNCNi1WSV9MNXVFT1FqWWc&usp=drive_web#gid=0'"
 
 alias bkzsh2="book 'http://zsh.sourceforge.net/Guide/zshguide.html'"
+
+alias options="open 'http://www.cs.elte.hu/zsh-manual/zsh_16.html'"
+
+alias opts="options"

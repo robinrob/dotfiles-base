@@ -511,7 +511,9 @@ alias mprompt="$EDITOR ~/.zsh.prompts/prompt_robin_setup.zsh"
 
 alias mpr="mprompt"
 
-alias rs="source ~/.zshrc"
+alias resource="source ~/.zshrc"
+
+alias rs="resource"
 
 alias rsen="source $DOTFILES_HOME/env_variables.zsh"
 
@@ -561,7 +563,7 @@ alias mbk="m $BOOKMARKS_PATH"
 
 alias mwbk="m $WORKBOOKMARKS_PATH"
 
-alias cbk="cat $DOTFILES_HOME/bookmarks.zsh"
+alias cbk="cat $ZDOT_HOME/bookmarks.zsh"
 
 alias edit=$EDITOR
 
@@ -698,6 +700,10 @@ alias pb="pbcopy"
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
 # Shell commands/function aliases
+alias sto="setopt"
+
+alias uns="unsetopt"
+
 alias sws="switchsay"
 
 alias brl="brew list"
