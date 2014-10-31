@@ -9,13 +9,6 @@ ZDOT_HOME=$DOTFILESBASE_HOME/zsh
 source $ZDOT_HOME/colors.zsh
 
 
-# Greeting
-###############################################################################
-echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)" && say i am awesome
-# Or alternatively:
-# echo "$(brightwhite I)$(brightyellow " am ")$(brightcyan awesome)"
-
-
 # Third-party ZSH framework
 ###############################################################################
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -45,8 +38,19 @@ source $ZDOT_HOME/aliases.zsh
 source $ZDOT_HOME/path.zsh
 
 
+# Greeting
+###############################################################################
+echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)"
+if [[ $SAYCMD == 1 ]]
+then
+  say "I am awesome"
+fi
+# Or alternatively:
+# echo "$(brightwhite I)$(brightyellow " am ")$(brightcyan awesome)"
+
 # ZSH Options
 ###############################################################################
+
 
 # Stop correcting me when commands are correct!!
 unsetopt correct

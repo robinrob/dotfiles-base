@@ -553,6 +553,10 @@ alias ezs="ezsh"
 
 alias czsh="cat ~/.zshrc"
 
+alias bmk="bookmark"
+
+alias wbmk="work_bookmark"
+
 alias mbk="m $BOOKMARKS_PATH"
 
 alias mwbk="m $WORKBOOKMARKS_PATH"

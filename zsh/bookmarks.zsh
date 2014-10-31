@@ -110,8 +110,6 @@ alias documentary="open 'http://www.imdb.com/search/title?at=0&sort=user_rating&
 
 alias rfc="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1TSCavbYKBAznqXOffWJtLA0VJsY3Pts3_TOtqWcOACs&mode=domain'"
 
-alias p1="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1OvJFF7rc3gcU3qIJTaOO9PkfatC5-imNL1KkZrdMtmw&mode=domain'"
-
 alias gsheet="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1d7lB4F-qotkcODeYpDRjEc4rIt4TkSFhqr7DgYXjxSo/edit#gid=0'"
 
 alias war="open 'http://www2.warwick.ac.uk/fac/soc/economics/staff/mharrison/public/ehr2011postprint.pdf'"

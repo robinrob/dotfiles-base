@@ -29,3 +29,5 @@ alias van="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1u1feNa
 alias zenoss="browser 'http://zenoss.cloudreach.co.uk:8080/zport/dmd/Events/evconsole'"
 
 alias tobedeleted="cases '00B20000007Bunq'"
+
+alias video="chrome 'http://www.eduhacker.net/technology/google-hangouts-lecture-capture.html'"

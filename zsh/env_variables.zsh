@@ -1,8 +1,5 @@
 # Environment variables
 #############################
-
-export SAYCMD=1
-
 export BOOKMARKS_PATH=$DOTFILESBASE_HOME/zsh/bookmarks.zsh
 
 export WORKBOOKMARKS_PATH=$DOTFILESBASE_HOME/zsh/work_bookmarks.zsh
@@ -13,6 +10,7 @@ export HOSTNAME=`hostname`
 export MERCURY_HOSTNAME='mercury'
 
 export VENUS_HOSTNAME='venus'
+
 
 export EDITOR=mvim
 
@@ -204,7 +202,9 @@ export CANADA_HOME=$MERCURY_HOME/docs/IMPORTANT/canada
 if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
 then
 	export BROWSER="Safari"
+  export SAYCMD=1  
 else
+  export SAYCMD=1    
 	export BROWSER="Google Chrome"
 fi
 
