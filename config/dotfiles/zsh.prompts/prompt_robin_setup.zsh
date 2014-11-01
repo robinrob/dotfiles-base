@@ -66,9 +66,11 @@ function prompt_robin_setup {
 
   LIGHTNING="⚡"
 
-  PS1="$(magandaprompt)%n$(brightwhiteprompt)@%{$hostcolor%}%B%M%b%f $(brightyellowprompt)\$(dir)/$(defaultprompt) \${vcs_info_msg_0_}$(brightwhiteprompt)$(brightredprompt)$LIGHTNING$(defaultprompt)  "
+  SEP="$(magandaprompt)----------------------------------------------------------------------------------------------------------------------------------------------------------"$'\n'
+  PS1="${SEP}$(magandaprompt)%n$(brightwhiteprompt)@%{$hostcolor%}%B%m%b%f $(brightyellowprompt)\$(dir)/$(defaultprompt) \${vcs_info_msg_0_}$(brightwhiteprompt)$(brightredprompt)$LIGHTNING$(defaultprompt) "
 
-  RPS1="$(defaultprompt)\$(pwd)"
+  RPS1="%20<...<$(defaultprompt)\$(pwd)% $(redprompt)%(?.. (%?%))$(defaultprompt) %(2L. +%L.)%"$''
+
  
   # Line prefix displayed when waiting for input
   PS2="Waiting for input fool! >> "

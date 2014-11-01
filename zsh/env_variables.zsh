@@ -5,7 +5,7 @@ export BOOKMARKS_PATH=$DOTFILESBASE_HOME/zsh/bookmarks.zsh
 export WORKBOOKMARKS_PATH=$DOTFILESBASE_HOME/zsh/work_bookmarks.zsh
 
 # sudo hostname <name> to change
-export HOSTNAME=`hostname`
+export HOSTNAME=`hostname -s`
 
 export MERCURY_HOSTNAME='mercury'
 
