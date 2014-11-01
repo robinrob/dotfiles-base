@@ -26,6 +26,8 @@ unalias gra
 
 unalias gbd
 
+unalias g
+
 unalias sd
 
 # unalias gg
@@ -125,6 +127,8 @@ alias awk="gawk"
 alias "echo"="gecho"
 
 # Shell Aliases
+alias g="grep"
+
 alias cwd="pwd"
 
 alias lsltr="ls -ltr --color=none | awk '{print \$9}' | tail +2"
@@ -214,6 +218,10 @@ alias gimp="/Applications/GIMP.app/Contents/MacOS/GIMP-bin"
 alias sublime="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'"
 
 # Navigation
+alias cdzd="cd $ZDOT_HOME"
+
+alias cdgg="cd ~/Google\ Drive"
+
 alias cdd="cd_dir $DOTFILES_HOME"
 
 alias cddocs="cd_dir $DOCS_HOME"
@@ -627,9 +635,9 @@ alias emptytrash="sudo rm -rf ~/.Trash/*"
 
 alias cgi="cat .gitignore"
 
-alias px="chmod +x"
+alias chp="chmod +x"
 
-alias mx="chmod -x"
+alias chm="chmod -x"
 
 alias kud="knife_upload_databag"
 
@@ -707,6 +715,7 @@ alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 alias dsp="despace"
 
 alias grp="set -o | grep"
+
 alias bell="tput bel"
 
 alias sto="setopt"

@@ -29,3 +29,6 @@ sudo chmod 444 sudoers
 # red "Removing folder: ~/.vim"
 # rm -rf ~/.vim
 
+# OS-X Defaults
+#########################################################################
+./osx.zsh
