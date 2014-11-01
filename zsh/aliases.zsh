@@ -704,8 +704,9 @@ alias pb="pbcopy"
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
 # Shell commands/function aliases
-alias grp="set -o | grep"
+alias dsp="despace"
 
+alias grp="set -o | grep"
 alias bell="tput bel"
 
 alias sto="setopt"
