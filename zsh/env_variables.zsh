@@ -204,7 +204,7 @@ then
 	export BROWSER="Safari"
   export SAYCMD=1  
 else
-  export SAYCMD=1    
+  export SAYCMD=0    
 	export BROWSER="Google Chrome"
 fi
 
