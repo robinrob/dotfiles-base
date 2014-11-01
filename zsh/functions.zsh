@@ -1141,3 +1141,11 @@ function switchsay {
     export SAYCMD=1
   fi
 }
+
+function question {
+  URL=$1
+
+  gsed -i '/zequestion=/d' $BOOKMARKS_PATH
+
+  bookmark zequestion $URL
+}

@@ -1,5 +1,5 @@
-source $ZDOTFILES_HOME/bookmarks.zsh
-source $ZDOTFILES_HOME/work_bookmarks.zsh
+source $ZDOT_HOME/bookmarks.zsh
+source $ZDOT_HOME/work_bookmarks.zsh
 
 
 ############################################################################### Un-Aliases
@@ -54,7 +54,7 @@ unalias gpl
 
 
 # Web Shortcuts/Bookmarks
-alias q="question"
+alias q="zequestion"
 
 alias rd="rubydoc"
 
@@ -117,6 +117,8 @@ alias sed="gsed"
 alias ls="/usr/local/bin/gls --color"
 
 alias cat="gcat"
+
+alias sed="gsed"
 
 alias awk="gawk"
 
@@ -511,7 +513,9 @@ alias mprompt="$EDITOR ~/.zsh.prompts/prompt_robin_setup.zsh"
 
 alias mpr="mprompt"
 
-alias rs="source ~/.zshrc"
+alias resource="source ~/.zshrc"
+
+alias rs="resource"
 
 alias rsen="source $DOTFILES_HOME/env_variables.zsh"
 
@@ -561,7 +565,7 @@ alias mbk="m $BOOKMARKS_PATH"
 
 alias mwbk="m $WORKBOOKMARKS_PATH"
 
-alias cbk="cat $DOTFILES_HOME/bookmarks.zsh"
+alias cbk="cat $ZDOT_HOME/bookmarks.zsh"
 
 alias edit=$EDITOR
 
@@ -589,13 +593,15 @@ alias password="ruby $RUBY_HOME/projects/rbpassword/rbpassword.rb"
 
 alias rnsall="cd $SCREENSHOTS_HOME && despace"
 
-alias mal="$EDITOR $ZDOTFILES_HOME/aliases.zsh"
+alias mal="$EDITOR $ZDOT_HOME/aliases.zsh"
 
-alias men="$EDITOR $ZDOTFILES_HOME/env_variables.zsh"
+alias mop="$EDITOR $ZDOT_HOME/options.zsh"
 
-alias mfn="$EDITOR $ZDOTFILES_HOME/functions.zsh"
+alias men="$EDITOR $ZDOT_HOME/env_variables.zsh"
 
-alias mpa="$EDITOR $ZDOTFILES_HOME/path.zsh"
+alias mfn="$EDITOR $ZDOT_HOME/functions.zsh"
+
+alias mpa="$EDITOR $ZDOT_HOME/path.zsh"
 
 alias t="touch"
 
@@ -698,6 +704,12 @@ alias pb="pbcopy"
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
 # Shell commands/function aliases
+alias bell="tput bel"
+
+alias sto="setopt"
+
+alias uns="unsetopt"
+
 alias sws="switchsay"
 
 alias brl="brew list"

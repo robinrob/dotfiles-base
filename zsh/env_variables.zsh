@@ -56,7 +56,7 @@ export ZSHLOG_PATH=$ZSHLIB_HOME/log.zsh
 
 export ZSHCOLORS_PATH=$DOTFILESBASE_HOME/zsh/colors.zsh
 
-export ZDOTFILES_HOME=$DOTFILES_HOME/dotfiles-base/zsh
+export ZDOT_HOME=$DOTFILES_HOME/dotfiles-base/zsh
 
 export FORCE_COM_HOME=$PROG_HOME/force_com
 
@@ -253,4 +253,4 @@ fpath=("$DOTFILES_HOME/functions" $fpath)
 
 # Path
 ######
-source $ZDOTFILES_HOME/path.zsh
+source $ZDOT_HOME/path.zsh
