@@ -3,7 +3,7 @@ source $COLORS_PATH
 ITEM="> "
 
 function item {
-	return $ITEM$1
+	return ${ITEM}$1
 }
 
 function indent {

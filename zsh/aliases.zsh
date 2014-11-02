@@ -252,6 +252,10 @@ alias cdrecipe="cd_dir $HTMLCSS_HOME/projects/recipe-finder"
 
 alias cdzpr="cd_dir $ZSH_HOME/practice"
 
+alias cdspr="cd_dir $SH_HOME/practice"
+
+alias cdsed="cd_dir $SH_HOME/practice/sed"
+
 alias cdscr="cd_dir $SCREENSHOTS_HOME"
 
 alias cdcam="cd_dir '$CAMERA_HOME'"

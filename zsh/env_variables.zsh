@@ -11,7 +11,6 @@ export MERCURY_HOSTNAME='mercury'
 
 export VENUS_HOSTNAME='venus'
 
-
 export EDITOR=mvim
 
 export VISUAL=vim
