@@ -1,5 +1,4 @@
 # Bookmarks
-
 alias crockford="browser 'https://www.youtube.com/results?search_query=douglas+crockford'"
 
 alias recipe="browser /Users/msl/Programming/robin/html-css/projects/book/chapter05/index.html"
@@ -123,11 +122,5 @@ alias bkzsh2="book 'http://zsh.sourceforge.net/Guide/zshguide.html'"
 alias options="open 'http://www.cs.elte.hu/zsh-manual/zsh_16.html'"
 
 alias opts="options"
-
-
-
-
-
-
 
 alias zequestion="open 'http://stackoverflow.com/questions/26670070/how-can-i-make-zsh-shell-beep-on-os-x'"
