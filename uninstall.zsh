@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source colors.zsh
+source zsh/colors.zsh
 
 
 DOTFILES_HOME=~/Programming/robin/zsh/projects/dotfiles
