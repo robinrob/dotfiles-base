@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source config/dotfiles/zshenv
+source zsh/colors.zsh
 
 # Remove custom dotfiles first
 ./uninstall.zsh
@@ -26,7 +26,7 @@ cp $DOTFILESBASE_HOME/config/files/Robin.keylayout.xml ~/Library/Keyboard\ Layou
 green "Installing sudoers file ..."
 SUDOERS_PATH=$DOTFILESBASE_HOME/config/files/sudoers
 # Make sure that the file has correct permissions first!
-sudo chmod 440 $SUDOERS_PATH/sudoers
-sudo chown root:wheel $SUDOERS_PATH/sudoers
-sudo cp $SUDOERS_PATH/sudoers /etc/sudoers
-sudo chmod 444 $SUDOERS_PATH/sudoers
+sudo chmod 440 $SUDOERS_PATH
+sudo chown root:wheel $SUDOERS_PATH
+sudo cp $SUDOERS_PATH /etc/sudoers
+sudo chmod 444 $SUDOERS_PATH
