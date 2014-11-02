@@ -1,34 +1,32 @@
 #!/usr/bin/env zsh
 
-source zsh/colors.zsh
+source config/dotfiles/zshenv
 
 # Remove custom dotfiles first
 ./uninstall.zsh
 
 
 # Installation
-./zsh/symlinks.zsh
+$ZDOT_HOME/symlinks.zsh
 
-./zsh/jetbrains.zsh
+$ZDOT_HOME/jetbrains.zsh
 
 # OS-X Defaults
 #########################################################################
 #./osx.zsh
 
 green "Installing crontab ..."
-crontab config/files/crontab.cron
+crontab $DOTFILESBASE_HOME/config/files/crontab.cron
 
 
 green "Installing Robin's custom keyboard layout ..."
-cp config/files/Robin.keylayout.xml ~/Library/Keyboard\ Layouts/Robin.keylayout
+cp $DOTFILESBASE_HOME/config/files/Robin.keylayout.xml ~/Library/Keyboard\ Layouts/Robin.keylayout
+
 
 green "Installing sudoers file ..."
+SUDOERS_PATH=$DOTFILESBASE_HOME/config/files/sudoers
 # Make sure that the file has correct permissions first!
-sudo chmod 440 config/files/sudoers
-sudo chown root:wheel config/files/sudoers
-sudo cp config/files/sudoers /etc/sudoers
-sudo chmod 444 config/files/sudoers
-
-# red "Removing folder: ~/.vim"
-# rm -rf ~/.vim
-
+sudo chmod 440 $SUDOERS_PATH/sudoers
+sudo chown root:wheel $SUDOERS_PATH/sudoers
+sudo cp $SUDOERS_PATH/sudoers /etc/sudoers
+sudo chmod 444 $SUDOERS_PATH/sudoers

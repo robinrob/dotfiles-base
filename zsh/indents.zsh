@@ -1,4 +1,4 @@
-source colors.zsh
+source $COLORS_PATH
 
 ITEM="> "
 

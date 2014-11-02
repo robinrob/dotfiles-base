@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source colors.zsh
+source $COLORS_PATH
 source indents.zsh
 
 
