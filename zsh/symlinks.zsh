@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 source $COLORS_PATH
-source indents.zsh
+source $ZDOT_HOME/indents.zsh
 
 
 DOTFILES_HOME=~/Programming/robin/zsh/projects/dotfiles
