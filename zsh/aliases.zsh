@@ -559,6 +559,8 @@ alias vzsh="vim ~/.zshrc"
 
 alias mzsh="$EDITOR ~/.zshrc"
 
+alias mzen="$EDITOR ~/.zshenv"
+
 alias ezsh="edit ~/.zshrc"
 
 alias ezs="ezsh"

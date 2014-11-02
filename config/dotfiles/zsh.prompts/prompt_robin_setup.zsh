@@ -18,8 +18,6 @@ function prompt_robin_precmd {
   # if (( $+functions[ruby-info] )); then
   #   ruby-info
   # fi
-
-  (say next command &) > /dev/null 2>&1
 }
 
 function prompt_robin_setup {
