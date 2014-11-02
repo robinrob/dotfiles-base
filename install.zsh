@@ -7,9 +7,9 @@ source zsh/colors.zsh
 
 
 # Installation
-./symlinks.zsh
+./zsh/symlinks.zsh
 
-./jetbrains.zsh
+./zsh/jetbrains.zsh
 
 # OS-X Defaults
 #########################################################################
