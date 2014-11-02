@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh -x
 
-source ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/env_variables.zsh
-
 source $ZSHCOLORS_PATH
 
 
