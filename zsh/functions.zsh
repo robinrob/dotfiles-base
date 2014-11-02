@@ -1122,7 +1122,7 @@ function wrap {
 
   if [[ $SAYCMD == 1 ]]
   then
-    say $CMD
+    (say $CMD &) > /dev/null 2>&1
   fi
 }
 

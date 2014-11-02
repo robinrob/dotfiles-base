@@ -1,12 +1,7 @@
 #!/usr/bin/env zsh -x
 
 
-# Temporarily setup important variables which will be exported as env variables later
-DOTFILES_HOME=~/Programming/robin/zsh/projects/dotfiles
-DOTFILESBASE_HOME=$DOTFILES_HOME/dotfiles-base
-ZDOT_HOME=$DOTFILESBASE_HOME/zsh
-
-source $ZDOT_HOME/colors.zsh
+source $ZSHCOLORS_PATH
 
 
 # Third-party ZSH framework

@@ -11,10 +11,15 @@ source colors.zsh
 
 ./jetbrains.zsh
 
+# OS-X Defaults
+#########################################################################
+#./osx.zsh
+
 cd ../config/files
 
 green "Installing crontab ..."
 crontab crontab.cron
+
 
 green "Installing Robin's custom keyboard layout ..."
 cp Robin.keylayout.xml ~/Library/Keyboard\ Layouts/Robin.keylayout
@@ -29,6 +34,3 @@ sudo chmod 444 sudoers
 # red "Removing folder: ~/.vim"
 # rm -rf ~/.vim
 
-# OS-X Defaults
-#########################################################################
-./osx.zsh

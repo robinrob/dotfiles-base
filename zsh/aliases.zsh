@@ -106,8 +106,6 @@ alias js="javascript"
 # GNU aliases
 alias mv="gmv"
 
-alias gecho="echo"
-
 alias gegrep="gegrep"
 
 alias grep="ggrep"
@@ -251,6 +249,8 @@ alias cdwp="cd_dir $WORK_PYTHON_HOME"
 alias cdjpr="cd_dir $JS_HOME practice"
 
 alias cdrecipe="cd_dir $HTMLCSS_HOME/projects/recipe-finder"
+
+alias cdzpr="cd_dir $ZSH_HOME/practice"
 
 alias cdscr="cd_dir $SCREENSHOTS_HOME"
 
@@ -864,5 +864,3 @@ alias lasts="cd $SCREENSHOTS_HOME && lastf -s $SCREENSHOT_NAME"
 alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 
 alias test="hello"
-
-alias red="say red"

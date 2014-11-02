@@ -18,6 +18,8 @@ function prompt_robin_precmd {
   # if (( $+functions[ruby-info] )); then
   #   ruby-info
   # fi
+
+  (say next command &) > /dev/null 2>&1
 }
 
 function prompt_robin_setup {
@@ -79,7 +81,7 @@ function prompt_robin_setup {
   PS3="Make a choice bitch!"
 
   # Line prefix displayed when using `xtrace` option
-  PS4="Debug that fucker: >> "
+  PS4="Debug that fucker: >> %N:%i"
 }
 
 prompt_robin_setup "$@"
