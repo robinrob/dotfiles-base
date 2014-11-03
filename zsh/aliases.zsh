@@ -389,11 +389,9 @@ alias p3="~/.pythonbrew/pythons/Python-3.2/bin/python3"
 
 alias pbrew="pythonbrew"
 
-alias cen="count_non_empty $DOTFILES_HOME/env_variables.zsh"
+alias cen="cat $ZDOT_HOME/env_variables.zsh"
 
-alias cal="count_non_empty $DOTFILES_HOME/aliases.zsh"
-
-alias cfn="cat $DOTFILES_HOME/functions.zsh"
+alias cfn="cat $ZDOT_HOME/functions.zsh"
 
 # alias lfn='grep -o "function [a-zA-Z0-9_]* "'$DOTFILES_HOME/functions.zsh'| awk ''{print $2}'' | grep ''.*'''
 

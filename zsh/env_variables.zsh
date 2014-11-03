@@ -206,7 +206,7 @@ else
 	export BROWSER="Google Chrome"
 fi
 
-export SAYCOMMAND_OVERRIDE=""
+export SAYCOMMAND_OVERRIDE=1
 
 export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
 
