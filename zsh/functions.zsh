@@ -125,8 +125,10 @@ function new {
 	
 	if ! [[ "$NO_OPEN" == "noopen" ]]
 	then
-		$VISUAL $FILE
+		$EDITOR $FILE
 	fi
+
+  print -z ./$FILE
 }
 
 # Shortcut for `new` function
@@ -172,32 +174,34 @@ function jsnew {
 	echo "\nrequire(process.env.JS_LIB_HOME + '/log')" >> $1.js
 }
 
-function sprnew {
-  FILENAME=$1.sh
+function new_from_template {
+  TEMPLATE=$1
+  FILENAME=$2
 
-  cp $SH_HOME/templates/practice.sh $FILENAME
+  cp $TEMPLATE $FILENAME
   chmod +x $FILENAME
   $EDITOR $FILENAME
+  print -z ./$FILENAME
+}
+
+function sprnew {
+  FILENAME=$1
+  new_from_template $SH_HOME/templates/practice.sh $FILENAME
 }
 
 function zprnew {
-  FILENAME=$1.zsh
-
-  cp $ZSH_HOME/templates/practice.zsh $FILENAME
-  chmod +x $FILENAME
-  $EDITOR $FILENAME
+  FILENAME=$1
+  new_from_template $ZSH_HOME/templates/practice.zsh $FILENAME
 }
 
 function rnew {
-	NAME=$1
-	cp $RUBY_HOME/templates/practice.rb $NAME.rb
-	brightwhite "`cat $NAME.rb`"
+  FILENAME=$1
+  new_from_template $RUBY_HOME/templates/practice.rb $FILENAME
 }
 
 function plnew {
-	FILENAME="$1.pl"
-	cp $PERL_HOME/templates/practice.pl $FILENAME
-	white "`cat $FILENAME`"
+  FILENAME=$1
+  new_from_template $PERL_HOME/templates/practice.pl $FILENAME
 }
 
 function hcexample {
@@ -256,10 +260,6 @@ function rns {
 	cmd="cp `lasts` $1"
 	green $cmd
 	eval $cmd
-}
-
-function gr {
-	grep -ri $@ *
 }
 
 function t3389 {
@@ -432,6 +432,14 @@ function create_bookmark {
 function fr {
 	PATTERN=$1
 	find . -name "*$PATTERN*" 2> /dev/null
+}
+
+function gr {
+	grep -ri $@ *
+}
+
+function egr {
+	egrep -ri $@ *
 }
 
 function file_grep {

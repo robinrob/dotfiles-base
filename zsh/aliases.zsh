@@ -127,6 +127,14 @@ alias awk="gawk"
 alias "echo"="gecho"
 
 # Shell Aliases
+alias pz="print -z"
+
+alias pp="print -P"
+
+alias pr="print -r"
+
+alias pl="print -l"
+
 alias g="grep"
 
 alias cwd="pwd"
@@ -470,8 +478,6 @@ alias gsr="git submodule add git@bitbucket.org:robinrob/rakefile.git rake && ln 
 
 # Development operations
 alias ccr="cocos run -p web"
-
-alias pl="cd_pull"
 
 alias st="cd_status"
 
