@@ -1157,15 +1157,15 @@ function switchsay {
 }
 
 function switchsay_override {
-  if [[ $SAYCMD_OVERRIDE == 1 ]]
+  if [[ $SAYCMD_OVERRIDE == "1" ]]
   then
-    new_val=""
+    new_val="0"
   else
-    new_val=1
+    new_val="1"
   fi
-  
-  sed -i "s/SAYCMD_OVERRIDE=.*/SAYCMD_OVERRIDE=$new_val/g" $ZDOT_HOME/env_variables.zsh
-  source ~/.zshrc
+ 
+  vars=$ZDOT_HOME/env_variables.zsh
+  gsed -i "s/SAYCMD_OVERRIDE=.*/SAYCMD_OVERRIDE=$new_val/g" $vars && source $vars
 }
 
 function question {
