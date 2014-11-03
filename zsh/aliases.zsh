@@ -734,6 +734,8 @@ alias ung="unsetopt | grep"
 
 alias sws="switchsay"
 
+alias swso="switchsay_override"
+
 alias brl="brew list"
 
 alias b="browser"

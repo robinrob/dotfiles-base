@@ -33,11 +33,7 @@ source $ZDOT_HOME/path.zsh
 
 # Greeting
 ###############################################################################
-echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)"
-if [[ $SAYCMD == 1 ]]
-then
-  say "I am awesome"
-fi
+echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)" && speak "I am awesome"
 # Or alternatively:
 # echo "$(brightwhite I)$(brightyellow " am ")$(brightcyan awesome)"
 
