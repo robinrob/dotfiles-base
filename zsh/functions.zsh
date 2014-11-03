@@ -1127,9 +1127,23 @@ function wrap {
 }
 
 function preexec {
-  if [[ $SAYCMD == 1 ]]
+  speak $1
+}
+
+function speak {
+  if [[ $(should_say) == "yes" ]]
   then
-    (say $1 &) > /dev/null 2>&1
+    (say $@ &) > /dev/null 2>&1
+  fi
+}
+
+function should_say {
+  if [[ $SAYCMD_OVERRIDE == "" && $SAYCMD == 1 ]]
+  then
+    echo yes
+  elif [[ $SAYCMD_OVERRIDE == 1 ]]
+  then
+    echo yes
   fi
 }
 
@@ -1142,8 +1156,16 @@ function switchsay {
   fi
 }
 
-function perm_switchsay {
+function switchsay_override {
+  if [[ $SAYCMD_OVERRIDE == 1 ]]
+  then
+    new_val=""
+  else
+    new_val=1
+  fi
   
+  sed -i "s/SAYCMD_OVERRIDE=.*/SAYCMD_OVERRIDE=$new_val/g" $ZDOT_HOME/env_variables.zsh
+  source ~/.zshrc
 }
 
 function question {

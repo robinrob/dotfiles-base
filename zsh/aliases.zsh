@@ -40,6 +40,8 @@ unalias s
 
 unalias gst
 
+unalias grs
+
 # unalias lc
 
 unalias sf
@@ -396,6 +398,8 @@ alias cfn="cat $ZDOT_HOME/functions.zsh"
 # alias lfn='grep -o "function [a-zA-Z0-9_]* "'$DOTFILES_HOME/functions.zsh'| awk ''{print $2}'' | grep ''.*'''
 
 # Git aliases
+alias grS="git reset"
+
 alias grH="git reset HEAD"
 
 alias gas="git add *"
@@ -733,6 +737,8 @@ alias seg="set -o | grep"
 alias ung="unsetopt | grep"
 
 alias sws="switchsay"
+
+alias swso="switchsay_override"
 
 alias brl="brew list"
 
