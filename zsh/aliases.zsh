@@ -809,8 +809,6 @@ alias cardhsbc="get_record hsbc-debit"
 
 alias cardrbc="get_record rbc-debit"
 
-alias doc="cat $IMPORTANT_HOME/records/doc.txt"
-
 alias mspnum="get_record msp_num"
 
 alias mspaccount="get_record msp_account"

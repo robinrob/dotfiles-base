@@ -396,6 +396,8 @@ function create_alias {
 	else
 		red "Alias already exists!"
 	fi
+
+  print -z $NAME
 }
 
 function al {

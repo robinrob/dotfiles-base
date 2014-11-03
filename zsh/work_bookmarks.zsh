@@ -31,3 +31,7 @@ alias zenoss="browser 'http://zenoss.cloudreach.co.uk:8080/zport/dmd/Events/evco
 alias tobedeleted="cases '00B20000007Bunq'"
 
 alias video="chrome 'http://www.eduhacker.net/technology/google-hangouts-lecture-capture.html'"
+
+alias doc="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1R2pBE7eHAFaZls4j7yA-l_ScmCCXLYAlKI3okt9SMaQ/edit'"
+
+alias gendoc="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1Ful1tZSYUBh182Yj8LV2by9663JJXznhcxMTmwkPXpI/edit'"
