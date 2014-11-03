@@ -203,9 +203,10 @@ then
 	export BROWSER="Safari"
   export SAYCMD=1  
 else
-  export SAYCMD=0    
 	export BROWSER="Google Chrome"
 fi
+
+export SAYCOMMAND_OVERRIDE=""
 
 export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
 

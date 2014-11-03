@@ -718,6 +718,8 @@ alias pb="pbcopy"
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
 # Shell commands/function aliases
+alias h="history"
+
 alias dsp="despace"
 
 alias grp="set -o | grep"
@@ -727,6 +729,10 @@ alias bell="tput bel"
 alias sto="setopt"
 
 alias uns="unsetopt"
+
+alias seg="set -o | grep"
+
+alias ung="unsetopt | grep"
 
 alias sws="switchsay"
 

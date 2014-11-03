@@ -1142,6 +1142,10 @@ function switchsay {
   fi
 }
 
+function perm_switchsay {
+  
+}
+
 function question {
   URL=$1
 
