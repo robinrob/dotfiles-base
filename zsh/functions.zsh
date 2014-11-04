@@ -136,7 +136,7 @@ function new_s {
 	INTERPRETER=$1
 	EXTENSION=$2
 	FILENAME=$3
-	NOOPEN=$3
+	NOOPEN=$4
 	
 	new -i $INTERPRETER -e $EXTENSION -f $FILENAME
 }
@@ -396,6 +396,8 @@ function create_alias {
 	else
 		red "Alias already exists!"
 	fi
+
+  print -z $NAME
 }
 
 function al {
@@ -1110,7 +1112,16 @@ function read {
 }
 
 function read1 {
-  safari "`head -1 $LISTS_HOME/to_read.txt`"
+  reading_list=$LISTS_HOME/to_read.txt
+  new_list=${reading_list}.new
+  next=`head -1 $reading_list`
+
+  safari $next
+
+  # Cycle the top item to the bottom of the list
+  tail +2 $reading_list > $new_list
+  mv -f $new_list $reading_list
+  echo $next >> $reading_list
 }
 
 function srb {
