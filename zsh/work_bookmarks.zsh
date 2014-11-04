@@ -34,6 +34,8 @@ alias tobedeleted="cases '00B20000007Bunq'"
 
 alias video="chrome 'http://www.eduhacker.net/technology/google-hangouts-lecture-capture.html'"
 
-alias doc="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1R2pBE7eHAFaZls4j7yA-l_ScmCCXLYAlKI3okt9SMaQ/edit'"
-
 alias gendoc="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1Ful1tZSYUBh182Yj8LV2by9663JJXznhcxMTmwkPXpI/edit'"
+
+alias spreadsheet="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1rWnvsWx18p2tC0eC7NosWwHzUs823faVz6sX4cbjRG4&mode=domain'"
+
+alias doc="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=199sxUINDrbHeqC6jBqRJHetN1LTNADoviPqmFYXXx-M&mode=domain'"
