@@ -171,9 +171,8 @@ alias shell="echo $SHELL"
 
 alias cdcocos="cd_dir $COCOS_HOME"
 
-alias cddb="cd_dir $DOTFILES_HOME/dotfiles-base"
-
 # Shell shortcuts
+#
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
 alias rkls="rake each_sub['echo, quiet']"
@@ -229,8 +228,6 @@ alias sublime="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl
 alias cdzd="cd $ZDOT_HOME"
 
 alias cdgg="cd ~/Google\ Drive"
-
-alias cdd="cd_dir $DOTFILES_HOME"
 
 alias cddocs="cd_dir $DOCS_HOME"
 
@@ -403,7 +400,6 @@ alias cen="cat $ZDOT_HOME/env_variables.zsh"
 
 alias cfn="cat $ZDOT_HOME/functions.zsh"
 
-# alias lfn='grep -o "function [a-zA-Z0-9_]* "'$DOTFILES_HOME/functions.zsh'| awk ''{print $2}'' | grep ''.*'''
 
 # Git aliases
 alias grS="git reset"
@@ -483,7 +479,7 @@ alias st="cd_status"
 
 alias sv="cd_save"
 
-alias dpl="cd_pull $DOTFILES_HOME"
+repo_cmds
 
 alias dsv="save_crontab; save_jetbrains; cd_save $DOTFILES_HOME"
 
@@ -492,8 +488,6 @@ alias dcm="cd_commit $DOTFILES_HOME"
 alias ddi="cd_diff $DOTFILES_HOME"
 
 alias dst="cd_status $DOTFILES_HOME"
-
-repo_cmds
 
 alias DSV="dsv"
 

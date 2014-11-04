@@ -920,7 +920,9 @@ function repo_cmds {
   abbreviations[coffeescript]=cs
   abbreviations[c]=c
   abbreviations[c-plus-plus]=cp
-  abbreviations[force_com]=f
+  abbreviations[dotfiles]=d
+  abbreviations[dotfiles-base]=db
+  abbreviations[force-com]=f
   abbreviations[htmlcss]=h
   abbreviations[javascript]=js
   abbreviations[markdown]=m
@@ -950,14 +952,14 @@ function alias_repo_action {
 	ALIAS_SUFF=$3
 	CMD=$4
 
-	alias "$REPO_ABBR$ALIAS_SUFF"="$CMD $(upper $REPO)_HOME"
+	alias "$REPO_ABBR$ALIAS_SUFF"="$CMD \$$(pathize $REPO)_HOME"
 }
 
 function alias_repo_nav {
   REPO=$1
   REPO_ABBR=$2
 
-  alias "cd${REPO_ABBR}"="cd_dir $(upper $REPO)_HOME"
+  alias "cd${REPO_ABBR}"="cd_dir $(pathize $REPO)_HOME"
 }
 
 # function languages2 {
@@ -1192,7 +1194,6 @@ function pretty_print_env {
   printf "$(green)\$$ENV: $(yellow) $(eval echo '$'$ENV)\n"
 }
 
-
 function question {
   URL=$1
 
@@ -1202,4 +1203,7 @@ function question {
 }
 
 function pathize {
+  VAL=$1
+
+  echo $VAL:u | sed 's/[^a-zA-Z]/_/g'
 }
