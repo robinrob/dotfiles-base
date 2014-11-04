@@ -746,7 +746,7 @@ alias sws="switchsay"
 
 alias swso="switchsay_override"
 
-alias eswso="echo $SWITCHSAY_OVERRIDE"
+alias eswso="echo $SAYCMD_OVERRIDE"
 
 alias brl="brew list"
 

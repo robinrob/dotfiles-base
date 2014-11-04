@@ -1159,10 +1159,10 @@ function speak {
 function should_say {
   if [[ $SAYCMD_OVERRIDE == "" && $SAYCMD == 1 ]]
   then
-    echo yes
+    echo $TRUE_VALUE
   elif [[ $SAYCMD_OVERRIDE == 1 ]]
   then
-    echo yes
+    echo $TRUE_VALUE
   fi
 }
 
@@ -1173,18 +1173,16 @@ function switchsay {
   else
     export SAYCMD=1
   fi
+
+  printf "$(green)\$SAYCMD: $(yellow) $SAYCMD\n"
 }
 
 function switchsay_override {
-  if [[ $SAYCMD_OVERRIDE == "1" ]]
-  then
-    new_val="0"
-  else
-    new_val="1"
-  fi
- 
+  NEW_VAL=$1 
+
   vars=$ZDOT_HOME/env_variables.zsh
-  gsed -i "s/SAYCMD_OVERRIDE=.*/SAYCMD_OVERRIDE=$new_val/g" $vars && source $vars
+  gsed -i "s/SAYCMD_OVERRIDE=.*/SAYCMD_OVERRIDE=$NEW_VAL/g" $vars && source $vars
+  printf "$(green)\$SAYCMD_OVERRIDE: $(yellow) $SAYCMD_OVERRIDE\n"
 }
 
 function question {

@@ -1,5 +1,7 @@
 # Environment variables
 #############################
+export TRUE_VALUE="yes"
+
 export BOOKMARKS_PATH=$DOTFILESBASE_HOME/zsh/bookmarks.zsh
 
 export WORKBOOKMARKS_PATH=$DOTFILESBASE_HOME/zsh/work_bookmarks.zsh
@@ -206,7 +208,7 @@ else
 	export BROWSER="Google Chrome"
 fi
 
-export SAYCMD_OVERRIDE=0
+export SAYCMD_OVERRIDE=
 
 export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
 
