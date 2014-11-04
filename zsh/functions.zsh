@@ -186,22 +186,22 @@ function new_from_template {
 
 function sprnew {
   FILENAME=$1
-  new_from_template $SH_HOME/templates/practice.sh $FILENAME
+  new_from_template $SH_HOME/templates/practice.sh $FILENAME.sh
 }
 
 function zprnew {
   FILENAME=$1
-  new_from_template $ZSH_HOME/templates/practice.zsh $FILENAME
+  new_from_template $ZSH_HOME/templates/practice.zsh $FILENAME.zsh
 }
 
 function rnew {
   FILENAME=$1
-  new_from_template $RUBY_HOME/templates/practice.rb $FILENAME
+  new_from_template $RUBY_HOME/templates/practice.rb $FILENAME.rb
 }
 
 function plnew {
   FILENAME=$1
-  new_from_template $PERL_HOME/templates/practice.pl $FILENAME
+  new_from_template $PERL_HOME/templates/practice.pl $FILENAME.pl
 }
 
 function hcexample {
@@ -456,8 +456,10 @@ function rake_do {
 		echo "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
 		if [ -n "$2" ]
 		then
+			rake $TASK"[$2]"
 			speak rake $TASK"[$2]"
 		else
+			rake $TASK"[$2]"
 			speak rake $TASK	
 		fi
 	else
@@ -923,7 +925,7 @@ function repo_cmds {
   abbreviations[dotfiles]=d
   abbreviations[dotfiles-base]=db
   abbreviations[force-com]=f
-  abbreviations[htmlcss]=h
+  abbreviations[html-css]=h
   abbreviations[javascript]=js
   abbreviations[markdown]=m
   abbreviations[ocaml]=o
