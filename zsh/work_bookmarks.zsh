@@ -10,6 +10,8 @@ alias splm="chrome 'https://cr-splunk-1.cloudreach.co.uk:8000/en-US/manager/Zeno
 
 alias robscases="cases 00B20000006RBOv"
 
+alias cs="robcases"
+
 alias petrscases="cases 00B200000079yBg"
 
 alias gabscases="cases 00B20000006SMJf"
