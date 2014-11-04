@@ -746,6 +746,8 @@ alias sws="switchsay"
 
 alias swso="switchsay_override"
 
+alias eswso="echo $SWITCHSAY_OVERRIDE"
+
 alias brl="brew list"
 
 alias b="browser"
