@@ -725,7 +725,9 @@ alias pb="pbcopy"
 
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
-# Shell commands/function aliases
+# Function aliases
+alias ppe="pretty_print_env"
+
 alias h="history"
 
 alias dsp="despace"

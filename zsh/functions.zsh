@@ -1174,7 +1174,7 @@ function switchsay {
     export SAYCMD=1
   fi
 
-  printf "$(green)\$SAYCMD: $(yellow) $SAYCMD\n"
+  pretty_print_env SAYCMD
 }
 
 function switchsay_override {
@@ -1182,8 +1182,16 @@ function switchsay_override {
 
   vars=$ZDOT_HOME/env_variables.zsh
   gsed -i "s/SAYCMD_OVERRIDE=.*/SAYCMD_OVERRIDE=$NEW_VAL/g" $vars && source $vars
-  printf "$(green)\$SAYCMD_OVERRIDE: $(yellow) $SAYCMD_OVERRIDE\n"
+  pretty_print_env SAYCMD_OVERRIDE
 }
+
+function pretty_print_env {
+  ENV=$1
+  ENV=`upper $ENV`
+
+  printf "$(green)\$$ENV: $(yellow) $(eval echo '$'$ENV)\n"
+}
+
 
 function question {
   URL=$1
@@ -1191,4 +1199,7 @@ function question {
   gsed -i '/zequestion=/d' $BOOKMARKS_PATH
 
   bookmark zequestion $URL
+}
+
+function pathize {
 }
