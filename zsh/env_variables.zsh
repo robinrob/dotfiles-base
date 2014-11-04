@@ -1,8 +1,10 @@
 # Environment variables
 #############################
-export BOOKMARKS_PATH=$DOTFILESBASE_HOME/zsh/bookmarks.zsh
+export TRUE_VALUE="yes"
 
-export WORKBOOKMARKS_PATH=$DOTFILESBASE_HOME/zsh/work_bookmarks.zsh
+export BOOKMARKS_PATH=$DOTFILES_BASE_HOME/zsh/bookmarks.zsh
+
+export WORKBOOKMARKS_PATH=$DOTFILES_BASE_HOME/zsh/work_bookmarks.zsh
 
 # sudo hostname <name> to change
 export HOSTNAME=`hostname -s`
@@ -39,9 +41,9 @@ export SH_HOME=$PROG_HOME/sh
 
 export DOTFILES_HOME=$ZSH_HOME/projects/dotfiles
 
-export DOTFILESBASE_HOME=$DOTFILES_HOME/dotfiles-base
+export DOTFILES_BASE_HOME=$DOTFILES_HOME/dotfiles-base
 
-export COLORS_PATH=$DOTFILESBASE_HOME/zsh/colors.zsh
+export COLORS_PATH=$DOTFILES_BASE_HOME/zsh/colors.zsh
 
 export SHLIB_HOME=$SH_HOME/lib
 
@@ -53,7 +55,7 @@ export ZSHLIB_HOME=$ZSH_HOME/lib
 
 export ZSHLOG_PATH=$ZSHLIB_HOME/log.zsh
 
-export ZSHCOLORS_PATH=$DOTFILESBASE_HOME/zsh/colors.zsh
+export ZSHCOLORS_PATH=$DOTFILES_BASE_HOME/zsh/colors.zsh
 
 export ZDOT_HOME=$DOTFILES_HOME/dotfiles-base/zsh
 
@@ -206,7 +208,7 @@ else
 	export BROWSER="Google Chrome"
 fi
 
-export SAYCMD_OVERRIDE=0
+export SAYCMD_OVERRIDE=1
 
 export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
 

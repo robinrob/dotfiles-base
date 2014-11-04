@@ -186,22 +186,22 @@ function new_from_template {
 
 function sprnew {
   FILENAME=$1
-  new_from_template $SH_HOME/templates/practice.sh $FILENAME
+  new_from_template $SH_HOME/templates/practice.sh $FILENAME.sh
 }
 
 function zprnew {
   FILENAME=$1
-  new_from_template $ZSH_HOME/templates/practice.zsh $FILENAME
+  new_from_template $ZSH_HOME/templates/practice.zsh $FILENAME.zsh
 }
 
 function rnew {
   FILENAME=$1
-  new_from_template $RUBY_HOME/templates/practice.rb $FILENAME
+  new_from_template $RUBY_HOME/templates/practice.rb $FILENAME.rb
 }
 
 function plnew {
   FILENAME=$1
-  new_from_template $PERL_HOME/templates/practice.pl $FILENAME
+  new_from_template $PERL_HOME/templates/practice.pl $FILENAME.pl
 }
 
 function hcexample {
@@ -456,9 +456,11 @@ function rake_do {
 		echo "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
 		if [ -n "$2" ]
 		then
-			wrap rake $TASK"[$2]"
+			rake $TASK"[$2]"
+			speak rake $TASK"[$2]"
 		else
-			wrap rake $TASK	
+			rake $TASK"[$2]"
+			speak rake $TASK	
 		fi
 	else
 		red "No Rakefile!"
@@ -917,8 +919,10 @@ function repo_cmds {
   abbreviations[coffeescript]=cs
   abbreviations[c]=c
   abbreviations[c-plus-plus]=cp
-  abbreviations[force_com]=f
-  abbreviations[htmlcss]=h
+  abbreviations[dotfiles]=d
+  abbreviations[dotfiles-base]=db
+  abbreviations[force-com]=f
+  abbreviations[html-css]=h
   abbreviations[javascript]=js
   abbreviations[markdown]=m
   abbreviations[ocaml]=o
@@ -947,14 +951,14 @@ function alias_repo_action {
 	ALIAS_SUFF=$3
 	CMD=$4
 
-	alias "$REPO_ABBR$ALIAS_SUFF"="$CMD $(upper $REPO)_HOME"
+	alias "$REPO_ABBR$ALIAS_SUFF"="$CMD \$$(pathize $REPO)_HOME"
 }
 
 function alias_repo_nav {
   REPO=$1
   REPO_ABBR=$2
 
-  alias "cd${REPO_ABBR}"="cd_dir $(upper $REPO)_HOME"
+  alias "cd${REPO_ABBR}"="cd_dir $(pathize $REPO)_HOME"
 }
 
 # function languages2 {
@@ -1131,17 +1135,6 @@ function ssd {
   sudo shutdown -h now
 }
 
-function wrap {
-  CMD=$@
-
-  eval $CMD
-
-  if [[ $SAYCMD == 1 ]]
-  then
-    (say $CMD &) > /dev/null 2>&1
-  fi
-}
-
 function preexec {
   speak $1
 }
@@ -1156,10 +1149,10 @@ function speak {
 function should_say {
   if [[ $SAYCMD_OVERRIDE == "" && $SAYCMD == 1 ]]
   then
-    echo yes
+    echo $TRUE_VALUE
   elif [[ $SAYCMD_OVERRIDE == 1 ]]
   then
-    echo yes
+    echo $TRUE_VALUE
   fi
 }
 
@@ -1170,18 +1163,23 @@ function switchsay {
   else
     export SAYCMD=1
   fi
+
+  pretty_print_env SAYCMD
 }
 
 function switchsay_override {
-  if [[ $SAYCMD_OVERRIDE == "1" ]]
-  then
-    new_val="0"
-  else
-    new_val="1"
-  fi
- 
+  NEW_VAL=$1 
+
   vars=$ZDOT_HOME/env_variables.zsh
-  gsed -i "s/SAYCMD_OVERRIDE=.*/SAYCMD_OVERRIDE=$new_val/g" $vars && source $vars
+  gsed -i "s/SAYCMD_OVERRIDE=.*/SAYCMD_OVERRIDE=$NEW_VAL/g" $vars && source $vars
+  pretty_print_env SAYCMD_OVERRIDE
+}
+
+function pretty_print_env {
+  ENV=$1
+  ENV=`upper $ENV`
+
+  printf "$(green)\$$ENV: $(yellow) $(eval echo '$'$ENV)\n"
 }
 
 function question {
@@ -1190,4 +1188,10 @@ function question {
   gsed -i '/zequestion=/d' $BOOKMARKS_PATH
 
   bookmark zequestion $URL
+}
+
+function pathize {
+  VAL=$1
+
+  echo $VAL:u | sed 's/[^a-zA-Z]/_/g'
 }
