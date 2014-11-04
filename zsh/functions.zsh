@@ -456,9 +456,9 @@ function rake_do {
 		echo "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
 		if [ -n "$2" ]
 		then
-			wrap rake $TASK"[$2]"
+			speak rake $TASK"[$2]"
 		else
-			wrap rake $TASK	
+			speak rake $TASK	
 		fi
 	else
 		red "No Rakefile!"
@@ -1134,17 +1134,6 @@ function srb {
 function ssd {
   red "Shutting DOWN!"
   sudo shutdown -h now
-}
-
-function wrap {
-  CMD=$@
-
-  eval $CMD
-
-  if [[ $SAYCMD == 1 ]]
-  then
-    (say $CMD &) > /dev/null 2>&1
-  fi
 }
 
 function preexec {
