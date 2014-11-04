@@ -576,9 +576,6 @@ function firefox {
 	open -a Firefox $@
 }
 
-function chrome {
-	open -a Google\ Chrome $@
-}
 
 function bb {
 	result=`ls -d .git 2> /dev/null`

@@ -174,6 +174,8 @@ alias cdcocos="cd_dir $COCOS_HOME"
 alias cddb="cd_dir $DOTFILES_HOME/dotfiles-base"
 
 # Shell shortcuts
+alias chrome="open -a Google\ Chrome"
+
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
 alias rkls="rake each_sub['echo, quiet']"
