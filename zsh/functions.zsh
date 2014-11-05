@@ -567,7 +567,7 @@ function cddir {
 }
 
 function browser {
-	open -a $BROWSER $@
+	open -a $BROWSER "$@"
 }
 
 function bb {
@@ -789,15 +789,7 @@ function lc {
 	LESS_FILE=$1
 	cmd="$LESSC_PATH $LESS_FILE > styles.css"
 	green $cmd
-	$LESSC_PATH $LESS_FILE > styles.css
-}
-
-function web {
-	open `wrap_single $1`
-}
-
-function wrap_single {
-	echo "'$@'"
+  $cmd
 }
 
 function dev {
@@ -808,7 +800,7 @@ function dev {
 		BROWSER=$DEFAULT_BROWSER
 	fi
 	
-	open -a $BROWSER http://localhost:3000
+	browser http://localhost:3000
 }
 
 function unixtime {
