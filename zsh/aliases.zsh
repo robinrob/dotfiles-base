@@ -173,6 +173,11 @@ alias cdcocos="cd_dir $COCOS_HOME"
 
 # Shell shortcuts
 alias chrome="open -a Google\ Chrome"
+
+alias safari="open -a Safari"
+
+alias firefox="open -a firefox"
+
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
 alias rkls="rake each_sub['echo, quiet']"

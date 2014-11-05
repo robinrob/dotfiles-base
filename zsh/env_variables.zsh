@@ -79,9 +79,9 @@ export JS_HOME=$JAVASCRIPT_HOME
 
 export JS_LIB_HOME=$JAVASCRIPT_HOME/lib
 
-export HTMLCSS_HOME=$PROG_HOME/html-css
+export HTML_CSS_HOME=$PROG_HOME/html-css
 
-export HTMLLESS_HOME=$PROG_HOME/html-less
+export HTML_LESS_HOME=$PROG_HOME/html-less
 
 export HTML_TEMPLATES_HOME=$HTMLCSS_HOME/templates
 
@@ -208,7 +208,7 @@ else
 	export BROWSER="Google Chrome"
 fi
 
-export SAYCMD_OVERRIDE=1
+export SAYCMD_OVERRIDE=0
 
 export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
 

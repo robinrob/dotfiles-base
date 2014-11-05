@@ -570,15 +570,6 @@ function browser {
 	open -a $BROWSER $@
 }
 
-function safari {
-	open -a Safari $@
-}
-
-function firefox {
-	open -a Firefox $@
-}
-
-
 function bb {
 	result=`ls -d .git 2> /dev/null`
 	if [ "$result" ]
