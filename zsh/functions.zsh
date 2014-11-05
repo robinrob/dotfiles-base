@@ -949,7 +949,7 @@ function alias_repo_nav {
   REPO=$1
   REPO_ABBR=$2
 
-  alias "cd${REPO_ABBR}"="cd_dir $(pathize $REPO)_HOME"
+  alias "cd${REPO_ABBR}"="cd_dir \$$(pathize $REPO)_HOME"
 }
 
 # function languages2 {
@@ -1185,4 +1185,18 @@ function pathize {
   VAL=$1
 
   echo $VAL:u | sed 's/[^a-zA-Z]/_/g'
+}
+
+function edit_env {
+  ENV=$1
+  VAL=$2
+
+  gsed -i 's/'$1'=.*/'$1'='$(sed_esc $VAL)'/g' $ENVS_HOME
+  source $ENVS_HOME
+}
+
+function sed_esc {
+  STR=$1
+
+  printf `echo $STR | gsed 's/\([/\$]\)/\\\\\1/g'`
 }

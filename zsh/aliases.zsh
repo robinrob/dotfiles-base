@@ -648,6 +648,10 @@ alias emptytrash="sudo rm -rf ~/.Trash/*"
 
 alias cgi="cat .gitignore"
 
+alias x+="chmod +x"
+
+alias x-="chmod -x"
+
 alias chp="chmod +x"
 
 alias chm="chmod -x"
@@ -725,6 +729,8 @@ alias pb="pbcopy"
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
 # Function aliases
+alias een="edit_env"
+
 alias ppe="pretty_print_env"
 
 alias h="history"
