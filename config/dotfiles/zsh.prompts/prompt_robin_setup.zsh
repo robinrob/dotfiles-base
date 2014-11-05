@@ -67,7 +67,7 @@ function prompt_robin_setup {
   LIGHTNING="⚡"
 
   SEP="$(magandaprompt)----------------------------------------------------------------------------------------------------------------------------------------------------------"$'\n'
-  PS1="${SEP}$(magandaprompt)%n$(brightwhiteprompt)@%{$hostcolor%}%B%m%b%f $(brightyellowprompt)\$(dir)/$(defaultprompt) \${vcs_info_msg_0_}$(brightwhiteprompt)$(brightredprompt)$LIGHTNING$(defaultprompt) "
+  PS1="${SEP}$(magandaprompt)%n$(brightwhiteprompt)@%{$hostcolor%}%B%m%b%f $(brightyellowprompt)\$(dir)/$(defaultprompt) \${vcs_info_msg_0_}$(brightwhiteprompt)$(brightredprompt)$LIGHTNING$(defaultprompt)  "
 
   RPS1="%20<...<$(defaultprompt)\$(pwd)% $(redprompt)%(?.. (%?%))$(defaultprompt) %(2L. +%L.)%"$''
 

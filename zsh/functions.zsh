@@ -558,6 +558,12 @@ function save_jetbrains {
 	silent_cp $INTELLIJ_CONFIG $DOTFILES_HOME/
 }
 
+function save_homebrew {
+  brew_list=$DOTFILES_BASE_HOME/config/files/homebrew.txt
+  rm -f $brew_list
+  brew list > $brew_list
+}
+
 function cd_dir {
 	cd "$(join / $@)"
 }
@@ -567,19 +573,7 @@ function cddir {
 }
 
 function browser {
-	open -a $BROWSER $@
-}
-
-function safari {
-	open -a Safari $@
-}
-
-function firefox {
-	open -a Firefox $@
-}
-
-function chrome {
-	open -a Google\ Chrome $@
+	open -a $BROWSER "$@"
 }
 
 function bb {
@@ -801,15 +795,7 @@ function lc {
 	LESS_FILE=$1
 	cmd="$LESSC_PATH $LESS_FILE > styles.css"
 	green $cmd
-	$LESSC_PATH $LESS_FILE > styles.css
-}
-
-function web {
-	open `wrap_single $1`
-}
-
-function wrap_single {
-	echo "'$@'"
+  $cmd
 }
 
 function dev {
@@ -820,7 +806,7 @@ function dev {
 		BROWSER=$DEFAULT_BROWSER
 	fi
 	
-	open -a $BROWSER http://localhost:3000
+	browser http://localhost:3000
 }
 
 function unixtime {
@@ -939,7 +925,7 @@ function repo_cmds {
   
 	
   for repo in ${(k)abbreviations}
-	do
+  do
 		alias_repo_action $repo $abbreviations[$repo] sv cd_save
 		alias_repo_action $repo $abbreviations[$repo] cm cd_commit
 		alias_repo_action $repo $abbreviations[$repo] st cd_status
@@ -961,7 +947,7 @@ function alias_repo_nav {
   REPO=$1
   REPO_ABBR=$2
 
-  alias "cd${REPO_ABBR}"="cd_dir $(pathize $REPO)_HOME"
+  alias "cd${REPO_ABBR}"="cd_dir \$$(pathize $REPO)_HOME"
 }
 
 # function languages2 {
@@ -1197,4 +1183,37 @@ function pathize {
   VAL=$1
 
   echo $VAL:u | sed 's/[^a-zA-Z]/_/g'
+}
+
+function edit_env {
+  ENV=$1
+  VAL=$2
+
+  gsed -i 's/'$1'=.*/'$1'='$(sed_esc $VAL)'/g' $ENVS_HOME
+  source $ENVS_HOME
+}
+
+function sed_esc {
+  STR=$1
+
+  printf `echo $STR | gsed 's/\([/\$]\)/\\\\\1/g'`
+}
+
+function encrypt {
+  STR="$@"
+
+  rsa_pem=~/.ssh/id_rsa.pub.pem
+  if ! [ -f $rsa_pem ]
+    then
+      green "Generating $rsa_pem first ..."
+      openssl rsa -in ~/.ssh/id_rsa -pubout > ~/.ssh/id_rsa.pub.pem
+  fi
+
+  echo $STR | openssl rsautl -encrypt -pubin -inkey ~/.ssh/id_rsa.pub.pem
+}
+
+function decrypt {
+  FILE=$1
+
+  cat $FILE | openssl rsautl -decrypt -inkey ~/.ssh/id_rsa
 }

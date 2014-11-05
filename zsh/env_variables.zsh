@@ -17,9 +17,9 @@ export EDITOR=mvim
 
 export VISUAL=vim
 
-# export PROG_HOME=$HOME/Programming/robin
+# export PROG_HOME="/Users/robinsmith/Downloads"
 
-export PROG_HOME=$HOME/Programming/robin
+export PROG_HOME=~/Programming/robin
 
 export SH_HOME=$PROG_HOME/sh
 
@@ -59,7 +59,9 @@ export ZSHCOLORS_PATH=$DOTFILES_BASE_HOME/zsh/colors.zsh
 
 export ZDOT_HOME=$DOTFILES_HOME/dotfiles-base/zsh
 
-export FORCE_COM_HOME=$PROG_HOME/force_com
+export ENVS_HOME=$ZDOT_HOME/env_variables.zsh
+
+export FORCE_COM_HOME="/Users/robinsmith/Programming/robin/force.com"
 
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
@@ -79,13 +81,13 @@ export JS_HOME=$JAVASCRIPT_HOME
 
 export JS_LIB_HOME=$JAVASCRIPT_HOME/lib
 
-export HTMLCSS_HOME=$PROG_HOME/html-css
+export HTML_CSS_HOME=$PROG_HOME/html-css
 
-export HTMLLESS_HOME=$PROG_HOME/html-less
+export HTML_LESS_HOME=$PROG_HOME/html-less
 
 export HTML_TEMPLATES_HOME=$HTMLCSS_HOME/templates
 
-export RUBY_HOME=$PROG_HOME/ruby
+export RUBY_HOME=/Users/robinsmith/Programming/robin/ruby
 
 export MARKDOWN_HOME=$PROG_HOME/markdown
 
@@ -123,7 +125,7 @@ export GAM_PATH=/usr/local/Library/gam
 
 export WORK_HOME=~/Programming/work
 
-export WORK_RUBY_HOME=~/Programming/work/ruby
+export WORK_RUBY_HOME=/Users/robinsmith/Programming/robin/ruby
 
 export WORK_PYTHON_HOME=~/Programming/work/python
 
