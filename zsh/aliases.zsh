@@ -486,7 +486,7 @@ alias sv="cd_save"
 
 repo_cmds
 
-alias dsv="save_crontab; save_jetbrains; cd_save $DOTFILES_HOME"
+alias dsv="save_crontab; save_jetbrains; save_homebrew; cd_save $DOTFILES_HOME"
 
 alias dcm="cd_commit $DOTFILES_HOME"
 
@@ -518,6 +518,8 @@ alias kel="knife environment list"
 alias knl="knife node list"
 
 # Viewing and editing files
+alias regex="$RUBY_HOME/practice/regexp_operators.rb"
+
 alias doit="$RECORDS_HOME/doit.zsh"
 
 alias toread="cat $LISTS_HOME/to_read.txt"
@@ -729,6 +731,10 @@ alias pb="pbcopy"
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
 # Function aliases
+alias enc="encrypt"
+
+alias dec="decrypt"
+
 alias een="edit_env"
 
 alias ppe="pretty_print_env"

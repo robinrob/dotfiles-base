@@ -558,6 +558,12 @@ function save_jetbrains {
 	silent_cp $INTELLIJ_CONFIG $DOTFILES_HOME/
 }
 
+function save_homebrew {
+  brew_list=$DOTFILES_BASE_HOME/config/files/homebrew.txt
+  rm -f $brew_list
+  brew list > $brew_list
+}
+
 function cd_dir {
 	cd "$(join / $@)"
 }
@@ -919,7 +925,7 @@ function repo_cmds {
   
 	
   for repo in ${(k)abbreviations}
-	do
+  do
 		alias_repo_action $repo $abbreviations[$repo] sv cd_save
 		alias_repo_action $repo $abbreviations[$repo] cm cd_commit
 		alias_repo_action $repo $abbreviations[$repo] st cd_status
@@ -1191,4 +1197,23 @@ function sed_esc {
   STR=$1
 
   printf `echo $STR | gsed 's/\([/\$]\)/\\\\\1/g'`
+}
+
+function encrypt {
+  STR="$@"
+
+  rsa_pem=~/.ssh/id_rsa.pub.pem
+  if ! [ -f $rsa_pem ]
+    then
+      green "Generating $rsa_pem first ..."
+      openssl rsa -in ~/.ssh/id_rsa -pubout > ~/.ssh/id_rsa.pub.pem
+  fi
+
+  echo $STR | openssl rsautl -encrypt -pubin -inkey ~/.ssh/id_rsa.pub.pem
+}
+
+function decrypt {
+  FILE=$1
+
+  cat $FILE | openssl rsautl -decrypt -inkey ~/.ssh/id_rsa
 }
