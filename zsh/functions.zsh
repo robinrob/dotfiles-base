@@ -931,7 +931,7 @@ function create_repo_envs {
 }
 
 
-function create_repo_cmds {
+function create_repo_aliases {
   typeset -A abbreviations
 
   abbreviations[awk]=a

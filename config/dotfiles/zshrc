@@ -16,26 +16,30 @@ for config_file ($HOME/.framework/zsh/*.zsh) source $config_file
 source $ZDOT_HOME/functions.zsh
 
 
-# Environment Variables
+# Environment Variables - must come before aliases, since if an env used by an
+# alias is already set: the alias will evaluate using that env!
 ###############################################################################
 source $ZDOT_HOME/env_variables.zsh
+# Dynamically-generate some envs
+create_repo_envs
 
 
 # Aliases
 ###############################################################################
 source $ZDOT_HOME/aliases.zsh
+# Dynamically-generate some aliases
+create_repo_aliases
+
+
+# Bookmarks
+###############################################################################
+source $ZDOT_HOME/bookmarks.zsh
+source $ZDOT_HOME/work_bookmarks.zsh
 
 
 # Path
 ###############################################################################
 source $ZDOT_HOME/path.zsh
-
-
-# Greeting
-###############################################################################
-echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)" && speak "I am awesome"
-# Or alternatively:
-# echo "$(brightwhite I)$(brightyellow " am ")$(brightcyan awesome)"
 
 
 # ZSH Options
@@ -46,6 +50,13 @@ source $ZDOT_HOME/options.zsh
 # Prompt
 ###############################################################################
 prompt robin
+
+
+# Greeting
+###############################################################################
+echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)" && speak "I am awesome"
+# Or alternatively:
+# echo "$(brightwhite I)$(brightyellow " am ")$(brightcyan awesome)"
 
 
 # Development

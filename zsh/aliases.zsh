@@ -1,8 +1,5 @@
-source $ZDOT_HOME/bookmarks.zsh
-source $ZDOT_HOME/work_bookmarks.zsh
-
-
-############################################################################### Un-Aliases
+###############################################################################
+# Un-Aliases
 ###############################################################################
 unalias todo
 
@@ -401,9 +398,9 @@ alias p3="~/.pythonbrew/pythons/Python-3.2/bin/python3"
 
 alias pbrew="pythonbrew"
 
-alias cen="cat $ZDOT_HOME/env_variables.zsh"
+alias cen="cat $ENVS_PATH"
 
-alias cfn="cat $ZDOT_HOME/functions.zsh"
+alias cfn="cat $FUNCS_PATH"
 
 
 # Git aliases
@@ -484,7 +481,7 @@ alias st="cd_status"
 
 alias sv="cd_save"
 
-create_repo_cmds
+create_repo_aliases
 
 alias dsv="save_crontab; save_jetbrains; save_homebrew; cd_save $DOTFILES_HOME"
 

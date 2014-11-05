@@ -1,3 +1,4 @@
+#############################
 # Environment variables
 #############################
 export TRUE_VALUE="yes"
@@ -68,8 +69,6 @@ export FORCE_COM_HOME="/Users/robinsmith/Programming/robin/force.com"
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
 export SPLUNK_HOME=$PROG_HOME/splunk
-
-create_repo_envs
 
 export C_HOME=$PROG_HOME/c
 
@@ -256,7 +255,3 @@ fi
 export PG_CONF=$PGDATA/postgresql.conf
 
 fpath=("$DOTFILES_HOME/functions" $fpath)
-
-# Path
-######
-source $ZDOT_HOME/path.zsh
