@@ -659,7 +659,9 @@ alias fbs="fab save"
 
 alias fcl="fab clean"
 
-alias cgc="cat ~/.gitconfig"
+alias cgc="cat .git/config"
+
+alias mgc="$EDITOR .git/config"
 
 alias mrd="m README.md"
 
