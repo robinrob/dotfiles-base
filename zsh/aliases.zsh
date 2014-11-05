@@ -484,7 +484,7 @@ alias st="cd_status"
 
 alias sv="cd_save"
 
-repo_cmds
+create_repo_cmds
 
 alias dsv="save_crontab; save_jetbrains; save_homebrew; cd_save $DOTFILES_HOME"
 

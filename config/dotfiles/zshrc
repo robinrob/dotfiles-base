@@ -11,14 +11,14 @@ fi
 for config_file ($HOME/.framework/zsh/*.zsh) source $config_file
 
 
-# Environment Variables
-###############################################################################
-source $ZDOT_HOME/env_variables.zsh
-
-
 # Functions
 ###############################################################################
 source $ZDOT_HOME/functions.zsh
+
+
+# Environment Variables
+###############################################################################
+source $ZDOT_HOME/env_variables.zsh
 
 
 # Aliases
