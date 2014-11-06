@@ -11,6 +11,11 @@ $ZDOT_HOME/symlinks.zsh
 
 $ZDOT_HOME/jetbrains.zsh
 
+
+# Initialise prompt stuff
+autoload -Uz promptinit
+promptinit
+
 # OS-X Defaults
 #########################################################################
 #./osx.zsh

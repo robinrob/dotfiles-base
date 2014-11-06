@@ -359,7 +359,9 @@ alias rkd="rake_do deploy"
 
 alias rkD="rake_do sub_deinit"
 
-alias rkp="rake_do pull"
+alias rkpl="rake_do pull"
+
+alias rkp="rake_do push"
 
 alias rkup="rakeup"
 
