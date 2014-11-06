@@ -758,11 +758,17 @@ alias seg="set -o | grep"
 
 alias ung="unsetopt | grep"
 
-alias sws="switchsay"
+alias sws="switch_say"
 
-alias swso="switchsay_override"
+alias swso="switch_say_override"
+
+alias esws="echo $SAYCMD"
 
 alias eswso="echo $SAYCMD_OVERRIDE"
+
+alias swp="switch_python"
+
+alias swr="switch_ruby"
 
 alias brl="brew list"
 

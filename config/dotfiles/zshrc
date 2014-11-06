@@ -66,11 +66,14 @@ echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)" && speak "I am aw
 #########
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
-if [[ "$HOSTNAME" == "$VENUS_HOSTNAME" ]]
+if [[ $USE_PYTHON == 1 ]]
 then
-	pythonbrew use 2.7 2> /dev/null
-else
-	pythonbrew use 2.7 2> /dev/null
+  if [[ "$HOSTNAME" == "$VENUS_HOSTNAME" ]]
+  then
+	  pythonbrew use 2.7 2> /dev/null
+  else
+	  pythonbrew use 2.7 2> /dev/null
+  fi
 fi
 
 
@@ -81,7 +84,10 @@ fi
 #######
 # `rvm reset` is the magic secret command that fixes the path errors!!
 ruby="2.1.1"
-rvm use ruby-"$ruby"
+if [[ $USE_RUBY == 1 ]]
+then
+  rvm use ruby-"$ruby"
+fi
 
 
 ## OCaml
