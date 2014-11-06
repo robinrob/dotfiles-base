@@ -1,3 +1,4 @@
+#############################
 # Environment variables
 #############################
 export TRUE_VALUE="yes"
@@ -59,15 +60,15 @@ export ZSHCOLORS_PATH=$DOTFILES_BASE_HOME/zsh/colors.zsh
 
 export ZDOT_HOME=$DOTFILES_HOME/dotfiles-base/zsh
 
-export ENVS_HOME=$ZDOT_HOME/env_variables.zsh
+export ENVS_PATH=$ZDOT_HOME/env_variables.zsh
+
+export FUNCS_PATH=$ZDOT_HOME/env_variables.zsh
 
 export FORCE_COM_HOME="/Users/robinsmith/Programming/robin/force.com"
 
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
 export SPLUNK_HOME=$PROG_HOME/splunk
-
-export ZSHRC=$DOTFILES_HOME/zshrc
 
 export C_HOME=$PROG_HOME/c
 
@@ -87,7 +88,7 @@ export HTML_LESS_HOME=$PROG_HOME/html-less
 
 export HTML_TEMPLATES_HOME=$HTMLCSS_HOME/templates
 
-export RUBY_HOME=/Users/robinsmith/Programming/robin/ruby
+export RUBY_HOME=$PROG_HOME/ruby
 
 export MARKDOWN_HOME=$PROG_HOME/markdown
 
@@ -210,7 +211,7 @@ else
 	export BROWSER="Google Chrome"
 fi
 
-export SAYCMD_OVERRIDE=
+export SAYCMD_OVERRIDE=1
 
 export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
 
@@ -254,7 +255,3 @@ fi
 export PG_CONF=$PGDATA/postgresql.conf
 
 fpath=("$DOTFILES_HOME/functions" $fpath)
-
-# Path
-######
-source $ZDOT_HOME/path.zsh

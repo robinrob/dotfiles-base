@@ -10,5 +10,8 @@ if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
+
+# Environment Variables
+###############################################################################
 source ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/env_variables.zsh
 

@@ -901,7 +901,37 @@ function bashvulns {
 	browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7188'
 }
 
-function repo_cmds {
+function create_repo_envs {
+  typeset -A abbreviations
+
+  abbreviations[awk]=a
+  abbreviations[coffeescript]=cs
+  abbreviations[c]=c
+  abbreviations[c-plus-plus]=cp
+  abbreviations[dotfiles]=d
+  abbreviations[dotfiles-base]=db
+  abbreviations[force-com]=f
+  abbreviations[html-css]=h
+  abbreviations[javascript]=js
+  abbreviations[markdown]=m
+  abbreviations[ocaml]=o
+  abbreviations[perl]=pl
+  abbreviations[prog]=pr
+  abbreviations[python]=p
+  abbreviations[ruby]=r
+  abbreviations[scala]=sc
+  abbreviations[sh]=s
+  abbreviations[zsh]=z
+
+
+  for repo in ${(k)abbreviations}
+  do
+    export $(pathize $repo)=$PROG_HOME/$repo
+	done
+}
+
+
+function create_repo_aliases {
   typeset -A abbreviations
 
   abbreviations[awk]=a
@@ -1189,8 +1219,8 @@ function edit_env {
   ENV=$1
   VAL=$2
 
-  gsed -i 's/'$1'=.*/'$1'='$(sed_esc $VAL)'/g' $ENVS_HOME
-  source $ENVS_HOME
+  gsed -i 's/'$1'=.*/'$1'='$(sed_esc $VAL)'/g' $ENVS_PATH
+  source $ENVS_PATH
 }
 
 function sed_esc {
