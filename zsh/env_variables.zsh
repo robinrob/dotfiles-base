@@ -211,11 +211,11 @@ else
 	export BROWSER="Google Chrome"
 fi
 
-export USE_PYTHON=
+export USE_PYTHON=1
 
 export USE_RUBY=1
 
-export SAYCMD_OVERRIDE=0
+export SAYCMD_OVERRIDE=
 
 export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
 
