@@ -406,6 +406,8 @@ alias cfn="cat $FUNCS_PATH"
 
 
 # Git aliases
+alias gacm="git add -u * && git add * && git commit -m"
+
 alias grS="git reset"
 
 alias grH="git reset HEAD"
