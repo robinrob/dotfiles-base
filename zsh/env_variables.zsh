@@ -211,7 +211,7 @@ else
 	export BROWSER="Google Chrome"
 fi
 
-export USE_PYTHON=1
+export USE_PYTHON=
 
 export USE_RUBY=1
 
