@@ -388,13 +388,24 @@ function create_alias {
 	VALUE=$2
 	ALIAS_FILE=$3
 	SUCCESS_MSG=$4
-	
+
+  while getopts :o: name
+  do
+    case $name in
+      o) OVERRIDE=$OPTARG ;;
+      *) usage ;;
+    esac
+  done
+
 	if [[ "$(alias_exists $NAME $ALIAS_FILE)" == "no" ]]
 	then
 		echo "\nalias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 		echo "$SUCCESS_MSG"
 	else
-		red "Alias already exists!"
+    if ! [[ $OVERRIDE == "yes" ]]
+    then
+		  red "Alias already exists!"
+    fi
 	fi
 
   print -z $NAME

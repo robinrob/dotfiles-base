@@ -1,57 +1,57 @@
 ###############################################################################
 # Un-Aliases
 ###############################################################################
-unalias todo
+unalias todo 2>/dev/null
 
-unalias gr
+unalias gr 2> /dev/null
 
-unalias cdb
+unalias cdb 2> /dev/null
 
-unalias gam
+unalias gam 2> /dev/null
 
-# unalias gcl
+# unalias gcl 2> /dev/null
 
-unalias c
+unalias c 2> /dev/null
 
-unalias gb
+unalias gb 2> /dev/null
 
-unalias gi
+unalias gi 2> /dev/null
 
-# unalias e
+# unalias e 2> /dev/null
 
-unalias gra
+unalias gra 2> /dev/null
 
-unalias gbd
+unalias gbd 2> /dev/null
 
-unalias g
+unalias g 2> /dev/null
 
-unalias sd
+unalias sd 2> /dev/null
 
-# unalias gg
+# unalias gg 2> /dev/null
 
-unalias ga
+unalias ga 2> /dev/null
 
-unalias d
+unalias d 2> /dev/null
 
-unalias s
+unalias s 2> /dev/null
 
-unalias gst
+unalias gst 2> /dev/null
 
-unalias grs
+unalias grs 2> /dev/null
 
-# unalias lc
+# unalias lc 2> /dev/null
 
-unalias sf
+unalias sf 2> /dev/null
 
-# unalias cd > /dev/null 2> /dev/null
+# unalias cd > /dev/null 2> /dev/null 2> /dev/null
 
-unalias lsg
+unalias lsg 2> /dev/null
 
-unalias ls
+unalias ls 2> /dev/null
 
-unalias rm
+unalias rm 2> /dev/null
 
-unalias gpl
+unalias gpl 2> /dev/null
 
 
 # Web Shortcuts/Bookmarks
@@ -156,7 +156,7 @@ alias w="which"
 
 alias chr="chrome"
 
-alias lsl="ls -l"
+alias lsl="ls -lL"
 
 alias isgit="show_git"
 
@@ -484,8 +484,6 @@ alias ccr="cocos run -p web"
 alias st="cd_status"
 
 alias sv="cd_save"
-
-create_repo_aliases
 
 alias dsv="save_crontab; save_jetbrains; save_homebrew; cd_save $DOTFILES_HOME"
 
