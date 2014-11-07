@@ -923,7 +923,8 @@ function create_repo_envs {
   abbreviations[dotfiles-base]=db
   abbreviations[force-com]=f
   abbreviations[html-css]=h
-  abbreviations[javascript]=js
+  abbreviations[java]=jv
+  abbreviations[javascript]=j
   abbreviations[markdown]=m
   abbreviations[ocaml]=o
   abbreviations[perl]=pl
@@ -1265,7 +1266,7 @@ function sed_esc {
 }
 
 function encrypt {
-  STR="$@"
+  STR="$1"
 
   rsa_pem=~/.ssh/id_rsa.pub.pem
   if ! [ -f $rsa_pem ]
@@ -1281,4 +1282,9 @@ function decrypt {
   FILE=$1
 
   cat $FILE | openssl rsautl -decrypt -inkey ~/.ssh/id_rsa
+}
+
+function cddirs {
+  cd $@
+  dirs
 }

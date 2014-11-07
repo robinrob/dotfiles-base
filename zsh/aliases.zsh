@@ -53,6 +53,8 @@ unalias rm 2> /dev/null
 
 unalias gpl 2> /dev/null
 
+unalias cd
+
 
 # Web Shortcuts/Bookmarks
 alias q="zequestion"
