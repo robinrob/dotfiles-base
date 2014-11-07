@@ -1266,7 +1266,7 @@ function decrypt {
   cat $FILE | openssl rsautl -decrypt -inkey ~/.ssh/id_rsa
 }
 
-function cddirs {
-  cd $@
-  dirs
+function cd {
+  builtin cd $@
+  dirs -v
 }

@@ -126,6 +126,10 @@ alias awk="gawk"
 alias "echo"="gecho"
 
 # Shell Aliases
+# alias cd="cd_dir"
+
+alias dirs="dirs -v"
+
 alias pz="print -z"
 
 alias pp="print -P"
@@ -171,6 +175,8 @@ alias shell="echo $SHELL"
 alias cdcocos="cd_dir $COCOS_HOME"
 
 # Shell shortcuts
+alias bcd="nocorrect builtin cd"
+
 alias chrome="open -a Google\ Chrome"
 
 alias safari="open -a Safari"

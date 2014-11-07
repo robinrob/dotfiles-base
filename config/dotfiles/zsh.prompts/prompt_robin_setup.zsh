@@ -70,7 +70,6 @@ function prompt_robin_setup {
   PS1="${SEP}$(magandaprompt)%n$(brightwhiteprompt)@%{$hostcolor%}%B%m%b%f $(brightyellowprompt)\$(dir)/$(defaultprompt) \${vcs_info_msg_0_}$(brightwhiteprompt)$(brightredprompt)$LIGHTNING$(defaultprompt)  "
 
   RPS1="%20<...<$(defaultprompt)\$(pwd)% $(redprompt)%(?.. (%?%))$(defaultprompt) %(2L. +%L.)%"$''
-
  
   # Line prefix displayed when waiting for input
   PS2="Waiting for input fool! >> "
