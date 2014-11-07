@@ -62,7 +62,9 @@ export ZDOT_HOME=$DOTFILES_HOME/dotfiles-base/zsh
 
 export ENVS_PATH=$ZDOT_HOME/env_variables.zsh
 
-export FUNCS_PATH=$ZDOT_HOME/env_variables.zsh
+export FUNCS_PATH=$ZDOT_HOME/functions.zsh
+
+export ALIASES_PATH=$ZDOT_HOME/aliases.zsh
 
 export FORCE_COM_HOME="/Users/robinsmith/Programming/robin/force.com"
 
@@ -210,6 +212,10 @@ then
 else
 	export BROWSER="Google Chrome"
 fi
+
+export USE_PYTHON=1
+
+export USE_RUBY=1
 
 export SAYCMD_OVERRIDE=
 

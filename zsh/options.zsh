@@ -14,3 +14,8 @@ setopt share_history
 setopt nobeep
 setopt nohistbeep
 setopt nolistbeep
+
+# Turns off ZSH second-guessing of where the shells says you are after following
+# a symbolic link into a directory. ZSH tries to be 'nice' by telling you that you are
+# still in /path/to/link, not where the link actually points to ... wtf?
+setopt chaselinks

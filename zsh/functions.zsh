@@ -388,13 +388,24 @@ function create_alias {
 	VALUE=$2
 	ALIAS_FILE=$3
 	SUCCESS_MSG=$4
-	
+
+  while getopts :o: name
+  do
+    case $name in
+      o) OVERRIDE=$OPTARG ;;
+      *) usage ;;
+    esac
+  done
+
 	if [[ "$(alias_exists $NAME $ALIAS_FILE)" == "no" ]]
 	then
 		echo "\nalias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 		echo "$SUCCESS_MSG"
 	else
-		red "Alias already exists!"
+    if ! [[ $OVERRIDE == "yes" ]]
+    then
+		  red "Alias already exists!"
+    fi
 	fi
 
   print -z $NAME
@@ -1175,30 +1186,54 @@ function should_say {
   fi
 }
 
-function switchsay {
-  if [[ $SAYCMD == 1 ]]
-  then
-    export SAYCMD=""
-  else
-    export SAYCMD=1
-  fi
-
+function switch_say {
+  switch_env SAYCMD
   pretty_print_env SAYCMD
 }
 
-function switchsay_override {
-  NEW_VAL=$1 
+function switch_python {
+  switch_env USE_PYTHON
+  switch_env_permo USE_PYTHON $USE_PYTHON
+  pretty_print_env USE_PYTHON
+}
+
+function switch_ruby {
+  switch_env USE_RUBY
+  switch_env_permo USE_RUBY $USE_RUBY
+  pretty_print_env USE_RUBY
+}
+
+function switch_env {
+  ENV=$1
+
+  if [[ -n $ENV && $(eval "echo \$$ENV") == 1 ]]
+  then
+    export $ENV=""
+  else
+    export $ENV=1
+  fi
+}
+
+function switch_env_permo {
+  ENV=$1
+  NEW_VAL=$2
 
   vars=$ZDOT_HOME/env_variables.zsh
-  gsed -i "s/SAYCMD_OVERRIDE=.*/SAYCMD_OVERRIDE=$NEW_VAL/g" $vars && source $vars
+
+  gsed -i "s/$ENV=.*/$ENV=$NEW_VAL/g" $vars && source $vars
+}
+
+function switch_say_override {
+  VAL=$1 
+
+  switch_env_permo SAYCMD_OVERRIDE $VAL
   pretty_print_env SAYCMD_OVERRIDE
 }
 
 function pretty_print_env {
-  ENV=$1
-  ENV=`upper $ENV`
+  ENV=`upper $1`
 
-  printf "$(green)\$$ENV: $(yellow) $(eval echo '$'$ENV)\n"
+  printf "$(green)\$$ENV: $(yellow)$(eval echo '$'$ENV)\n"
 }
 
 function question {

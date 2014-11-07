@@ -13,5 +13,5 @@ fi
 
 # Environment Variables
 ###############################################################################
-source ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/env_variables.zsh
+source ~/.variables
 
