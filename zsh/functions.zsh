@@ -913,32 +913,13 @@ function bashvulns {
 }
 
 function create_repo_envs {
-  typeset -A abbreviations
+  result=`ls $PROG_HOME | xargs`
 
-  abbreviations[awk]=a
-  abbreviations[coffeescript]=cs
-  abbreviations[c]=c
-  abbreviations[c-plus-plus]=cp
-  abbreviations[dotfiles]=d
-  abbreviations[dotfiles-base]=db
-  abbreviations[force-com]=f
-  abbreviations[html-css]=h
-  abbreviations[java]=jv
-  abbreviations[javascript]=j
-  abbreviations[markdown]=m
-  abbreviations[ocaml]=o
-  abbreviations[perl]=pl
-  abbreviations[prog]=pr
-  abbreviations[python]=p
-  abbreviations[ruby]=r
-  abbreviations[scala]=sc
-  abbreviations[sh]=s
-  abbreviations[zsh]=z
+  repos=(${(s: :)result})
 
-
-  for repo in ${(k)abbreviations}
+  for repo in $repos
   do
-    export $(pathize $repo)=$PROG_HOME/$repo
+    export "$(pathize $repo)_HOME"=$PROG_HOME/$repo
 	done
 }
 
@@ -954,7 +935,8 @@ function create_repo_aliases {
   abbreviations[dotfiles-base]=db
   abbreviations[force-com]=f
   abbreviations[html-css]=h
-  abbreviations[javascript]=js
+  abbreviations[java]=jv
+  abbreviations[javascript]=j
   abbreviations[markdown]=m
   abbreviations[ocaml]=o
   abbreviations[perl]=pl
