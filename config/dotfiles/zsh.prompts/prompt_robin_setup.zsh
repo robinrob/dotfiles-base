@@ -1,3 +1,5 @@
+source ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/functions.zsh
+
 function prompt_robin_precmd {
   # Check for untracked files or updated submodules since vcs_info does not.
   if [[ -n $(git ls-files --other --exclude-standard 2> /dev/null) ]]; then
