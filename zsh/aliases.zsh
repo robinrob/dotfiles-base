@@ -734,6 +734,8 @@ alias pb="pbcopy"
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
 # Function aliases
+alias cap="cat_print"
+
 alias enc="encrypt"
 
 alias dec="decrypt"
