@@ -22,8 +22,6 @@ export VISUAL=vim
 
 export PROG_HOME=~/Programming/robin
 
-export SH_HOME=$PROG_HOME/sh
-
 export PYTHON_HOME=$PROG_HOME/python
 
 export PY_HOME=$PYTHON_HOME
@@ -37,8 +35,6 @@ export NPMLIB_HOME=/usr/local/lib/node_modules
 export FABFILE_BASIC_HOME=$PY_HOME/projects/fabfile-basic
 
 export ZSH_HOME=$PROG_HOME/zsh
-
-export SH_HOME=$PROG_HOME/sh
 
 export DOTFILES_HOME=$ZSH_HOME/projects/dotfiles
 
