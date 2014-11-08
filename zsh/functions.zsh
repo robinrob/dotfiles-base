@@ -716,6 +716,12 @@ function points {
 	browser "https://sites.google.com/a/cloudreach.co.uk/points-lists/system/app/pages/search?scope=search-site&q=`urlencode $@`"
 }
 
+
+function drive {
+	browser "https://drive.google.com/a/cloudreach.co.uk/#search/`urlencode $@`"
+}
+
+
 function rubygems {
 	browser "https://rubygems.org/search?utf8=%E2%9C%93&query=`urlencode $@`"
 }
@@ -920,6 +926,10 @@ function create_repo_envs {
 
   for repo in $repos
   do
+    if [[ $repo == "java" ]]
+    then
+      continue;
+    fi
     export "$(pathize $repo)_HOME"=$PROG_HOME/$repo
 	done
 }
@@ -936,7 +946,6 @@ function create_repo_aliases {
   abbreviations[dotfiles-base]=db
   abbreviations[force-com]=f
   abbreviations[html-css]=h
-  abbreviations[java]=jv
   abbreviations[javascript]=j
   abbreviations[markdown]=m
   abbreviations[ocaml]=o
