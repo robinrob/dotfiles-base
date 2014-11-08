@@ -1,4 +1,4 @@
-source ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/functions.zsh
+source $FUNCS_PATH
 
 function prompt_robin_precmd {
   # Check for untracked files or updated submodules since vcs_info does not.

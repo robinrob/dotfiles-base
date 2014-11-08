@@ -399,7 +399,8 @@ function create_alias {
 
 	if [[ "$(alias_exists $NAME $ALIAS_FILE)" == "no" ]]
 	then
-		echo "\nalias $NAME=\"$VALUE\"" >> $ALIAS_FILE
+		echo "
+alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 		echo "$SUCCESS_MSG"
 	else
     if ! [[ $OVERRIDE == "yes" ]]

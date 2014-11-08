@@ -41,3 +41,5 @@ alias gendoc="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1Ful
 alias spreadsheet="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1rWnvsWx18p2tC0eC7NosWwHzUs823faVz6sX4cbjRG4&mode=domain'"
 
 alias doc="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=199sxUINDrbHeqC6jBqRJHetN1LTNADoviPqmFYXXx-M&mode=domain'"
+
+alias p1="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1OvJFF7rc3gcU3qIJTaOO9PkfatC5-imNL1KkZrdMtmw&mode=domain'"
