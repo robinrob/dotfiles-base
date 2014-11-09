@@ -53,7 +53,7 @@ unalias rm 2> /dev/null
 
 unalias gpl 2> /dev/null
 
-unalias cd
+unalias cd 2> /dev/null
 
 
 # Web Shortcuts/Bookmarks
@@ -626,6 +626,8 @@ alias rnsall="cd $SCREENSHOTS_HOME && despace"
 alias mal="$EDITOR $ZDOT_HOME/aliases.zsh"
 
 alias mop="$EDITOR $ZDOT_HOME/options.zsh"
+
+alias mos="$EDITOR $ZDOT_HOME/osx.zsh"
 
 alias men="$EDITOR $ZDOT_HOME/env_variables.zsh"
 
