@@ -92,7 +92,6 @@ function new {
 			i) INTERPRETER="$OPTARG" ;;
 			e) EXTENSION="$OPTARG" ;;
 			f) FILENAME="$OPTARG" ;;
-			#f) FILENAME=$(singlize "$OPTARG" ;;
 			o) NO_OPEN="$OPTARG" ;;
 			*) usage ;;                # display usage and exit
 		esac
