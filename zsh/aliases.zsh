@@ -551,6 +551,8 @@ alias rsen="source $ZDOT_HOME/env_variables.zsh"
 
 alias rsfn="source $ZDOT_HOME/functions.zsh"
 
+alias rsf="source $ZDOT_HOME/functions.zsh"
+
 alias rsal="source $ZDOT_HOME/aliases.zsh"
 
 alias rsop="source $ZDOT_HOME/options.zsh"

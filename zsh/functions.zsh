@@ -68,7 +68,8 @@ function note {
 }
 
 function song {
-	cd $MERCURY_HOME/docs/creative/songs && $EDITOR "$1.txt"
+  SONG=$(remove_extension $1)
+  cd $MERCURY_HOME/docs/creative/songs && $EDITOR "$SONG.txt"
 }
 
 function write {
@@ -164,14 +165,6 @@ function extend_file {
   else
     echo $BASENAME.$EXTENSION
   fi
-}
-
-function extension {
-  FILENAME=$1
-
-  PARTS=("${(s/./)FILENAME}")
-
-  echo $PARTS[-1]
 }
 
 function hnew {
@@ -1319,5 +1312,30 @@ function singlize {
 }
 
 function singlize_extension {
-  echo $1 | sed 's/\b\([a-zA-Z0-9]\+\)\.\+\1\b/\1/g'
+  echo $1 | sed 's/\b\(\.[a-zA-Z0-9]\+\)\+\1\b/\1/g'
 }
+
+function remove_extension {
+  echo $1 | sed 's/\b\(\.[a-zA-Z0-9]\+\)\+\b//g'
+}
+
+function extension {
+  FILENAME=$1
+
+  PARTS=("${(s/./)FILENAME}")
+
+  echo $PARTS[-1]
+}
+
+function like {
+  FILE_PATH=$1
+  EXTENSION=$(extension $FILE_PATH)
+  NAME=$(remove_extension $(basename $FILE_PATH))
+  DIRNAME=$(dirname $FILE_PATH)
+
+  res1=$(find $DIRNAME -maxdepth 1 -name "*.$EXTENSION")
+  res2=$(find $DIRNAME -maxdepth 1 -name "*functions*")
+  echo $res1 | grep "\.$EXTENSION"
+  echo $res2 | grep $NAME
+}
+
