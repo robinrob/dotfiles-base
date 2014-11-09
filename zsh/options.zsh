@@ -19,3 +19,8 @@ setopt nolistbeep
 # a symbolic link into a directory. ZSH tries to be 'nice' by telling you that you are
 # still in /path/to/link, not where the link actually points to ... wtf?
 setopt chaselinks
+
+# That's a stupid idea - how often am i going to deliberately hide a command from
+# history, compared to the number of times i copy a command with a space at the 
+# fucking beginning?
+setopt nohistignorespace

@@ -20,6 +20,15 @@ function join {
 	local IFS="$1"; shift; echo "$*";
 }
 
+function split {
+  SEPERATOR=$1
+  WORD=$2
+
+  WORDS=$(eval 'WORDS=("${(s/'$SEPERATOR'/)WORD}"); echo $WORDS')
+
+  join " " $WORDS
+}
+
 function join_args {
 	IFS=""
 	echo "$*"
@@ -87,8 +96,10 @@ function new {
 			*) usage ;;                # display usage and exit
 		esac
 	done
-	
-	FILE="$FILENAME.$EXTENSION"
+
+
+  FILE=$(extend_file $FILENAME $EXTENSION)
+
 	FILE_DISPLAY=$(yellow $FILE)
 	COLOR="green"
 	CREATE_SHEBANG_MSG="$COLOR 'Creating, +x-ing and shebanging new file: $FILE_DISPLAY'"
@@ -141,6 +152,28 @@ function new_s {
 	new -i $INTERPRETER -e $EXTENSION -f $FILENAME
 }
 
+function extend_file {
+  BASENAME=$1
+  EXTENSION=$2
+
+  PARTS=("${(s/./)BASENAME}")
+
+  if [[ $PARTS[-1] == $EXTENSION ]]
+  then
+    echo $BASENAME
+  else
+    echo $BASENAME.$EXTENSION
+  fi
+}
+
+function extension {
+  FILENAME=$1
+
+  PARTS=("${(s/./)FILENAME}")
+
+  echo $PARTS[-1]
+}
+
 function hnew {
 	PROJECT=$1
 	cat $HTML_TEMPLATES_HOME/template.html | sed 's/Title/'$PROJECT'/' > $PROJECT.html
@@ -176,7 +209,7 @@ function jsnew {
 
 function new_from_template {
   TEMPLATE=$1
-  FILENAME=$2
+  FILENAME=$(singlize_extension $2)
 
   cp $TEMPLATE $FILENAME
   chmod +x $FILENAME
@@ -1279,4 +1312,12 @@ function decrypt {
 function cd {
   builtin cd $@
   dirs -v
+}
+
+function singlize {
+  echo $1 | sed 's/\b\([[:alpha:]]\+\) \+\1\b/\1/g'
+}
+
+function singlize_extension {
+  echo $1 | sed 's/\b\([a-zA-Z0-9]\+\)\.\+\1\b/\1/g'
 }

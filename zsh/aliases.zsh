@@ -269,6 +269,8 @@ alias cdrecipe="cd_dir $HTMLCSS_HOME/projects/recipe-finder"
 
 alias cdzpr="cd_dir $ZSH_HOME/practice"
 
+alias cdrpr="cd_dir $RUBY_HOME/practice"
+
 alias cdspr="cd_dir $SH_HOME/practice"
 
 alias cdsed="cd_dir $SH_HOME/practice/sed"
@@ -545,11 +547,15 @@ alias resource="source ~/.zshrc"
 
 alias rs="resource"
 
-alias rsen="source $DOTFILES_HOME/env_variables.zsh"
+alias rsen="source $ZDOT_HOME/env_variables.zsh"
 
-alias rsfn="source $DOTFILES_HOME/functions.zsh"
+alias rsfn="source $ZDOT_HOME/functions.zsh"
 
-alias rsal="source $DOTFILES_HOME/aliases.zsh"
+alias rsal="source $ZDOT_HOME/aliases.zsh"
+
+alias rsop="source $ZDOT_HOME/options.zsh"
+
+alias rsos="source $ZDOT_HOME/osx.zsh"
 
 alias RS="source ~/.zshrc"
 
