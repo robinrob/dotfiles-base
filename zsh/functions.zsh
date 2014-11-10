@@ -1339,3 +1339,23 @@ function like {
   echo $res2 | grep $NAME
 }
 
+# Displays the letters of the alphabet represented by the first letter of filenames
+# of files in the given directory.
+function alphabet_of_files {
+  typeset -U alphabet
+
+  files=$(find . -maxdepth 1 -type f -regex '.*/[a-zA-Z].*' | sed 's/\.\///g' | xargs)
+  files=("${(s/ /)files}")
+
+  for file in $files
+  do
+    initial=$file[1]
+    alphabet=($alphabet $initial)
+  done
+  
+  yellow $alphabet
+}
+
+function echopb {
+  echo "$@" | pbcopy
+}
