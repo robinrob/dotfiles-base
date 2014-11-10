@@ -126,7 +126,7 @@ alias awk="gawk"
 alias "echo"="gecho"
 
 # Shell Aliases
-# alias cd="cd_dir"
+alias cfns="functions | grep -o '[^_\s]\+ ()' | wc -l"
 
 alias dirs="dirs -v"
 
@@ -750,6 +750,8 @@ alias pb="pbcopy"
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
 # Function aliases
+alias epb="echopb"
+
 alias cap="cat_print"
 
 alias enc="encrypt"
