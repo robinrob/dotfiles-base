@@ -1339,12 +1339,17 @@ function like {
   echo $res2 | grep $NAME
 }
 
+
+function find_clean_names {
+  find . -maxdepth 1 -type f -regex '.*/[a-zA-Z].*' | sed 's/\.\///g'
+}
+
 # Displays the letters of the alphabet represented by the first letter of filenames
 # of files in the given directory.
 function alphabet_of_files {
   typeset -U alphabet
 
-  files=$(find . -maxdepth 1 -type f -regex '.*/[a-zA-Z].*' | sed 's/\.\///g' | xargs)
+  files=$(find_clean_names | xargs)
   files=("${(s/ /)files}")
 
   for file in $files
@@ -1353,7 +1358,48 @@ function alphabet_of_files {
     alphabet=($alphabet $initial)
   done
   
-  yellow $alphabet
+  echo $alphabet
+}
+
+function inverse_alphabet_of_files  {
+  inverse_alphabet $(alphabet_of_files)
+}
+
+function inverse_alphabet {
+  letters=$*
+
+  typeset -U alphabet
+  alphabet=(a b c d e f g h i j k l m n o p q r s t u v w x y z)
+
+  typeset -U inverse
+
+  for char in $alphabet
+  do
+    if [[ $(is_in_set $char $letters) == "no" ]]
+    then
+      inverse=($inverse $char)
+    fi
+  done 
+  
+  red $inverse
+}
+
+
+function is_in_set {
+  VAL=$1
+  SET=$2
+  SET=("${(s/ /)SET}")
+
+  found="no"
+  for item in $SET
+  do
+    if [[ $item == $VAL ]]
+    then
+      found="yes"
+    fi
+  done
+
+  echo $found
 }
 
 function echopb {
