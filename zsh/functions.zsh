@@ -1406,3 +1406,15 @@ function echopb {
   echo "$@" | pbcopy
 }
 
+function sed_all {
+  FIND_EXPRESSION=$1
+  SED_EXPRESSION=$2
+
+  files=$(find . -regex '$FIND_EXPRESSION' | xargs)
+  files=(${(s/ /)files})``
+
+  for i in $files
+  do
+    gsed -i \'$SED_EXPRESSION\' $i
+  done
+}
