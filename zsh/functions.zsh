@@ -1384,7 +1384,6 @@ function inverse_alphabet {
   red $inverse
 }
 
-
 function is_in_set {
   VAL=$1
   SET=$2
