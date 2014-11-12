@@ -182,6 +182,8 @@ export PHONEGAP_HOME=/usr/local/Library/phonegap-2.9.0
 
 export ANDROID_HOME=/usr/local/Cellar/android-sdk
 
+export DATA_LOADER_PATH=/Applications/LexiLoader_v30.app/Contents/Resources/Java/Dataloader.jar
+
 export USEFUL_HOME=$DOCS_HOME/useful
 
 export AWS_CONFIG="~/.aws/config"
