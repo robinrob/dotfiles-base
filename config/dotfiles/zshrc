@@ -19,16 +19,16 @@ source $ZDOT_HOME/functions.zsh
 # Environment Variables - must come before aliases, since if an env used by an
 # alias is already set: the alias will evaluate using that env!
 ###############################################################################
+create_repo_envs
 source $ZDOT_HOME/env_variables.zsh
 # Dynamically-generate some envs
-create_repo_envs
 
 
 # Aliases
 ###############################################################################
+create_repo_aliases
 source $ZDOT_HOME/aliases.zsh
 # Dynamically-generate some aliases
-create_repo_aliases
 
 
 # Bookmarks

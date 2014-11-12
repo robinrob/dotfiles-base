@@ -541,7 +541,7 @@ function killp {
 	else
     echo "$(green)Killing all $(yellow)${PROCESS}$(green) processes ...$(default)"
 		
-		ps aux | grep $PROCESS | awk '{print $2}' | xargs kill 2> /dev/null
+		ps aux | grep -i $PROCESS | awk '{print $2}' | xargs kill 2> /dev/null
 	fi
 }
 
@@ -619,8 +619,9 @@ function bb {
 	if [ "$result" ]
 	then
 		# url=`git config --get remote.origin.url | awk '{split($1,a,"/"); print a[2]}'`
+    branch=$(git_branch)
 		url=`git config --get remote.origin.url | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}'`
-		url="https://bitbucket.org/${url}"
+		url="https://bitbucket.org/${url}/?at=$branch"
 		green "Repo found: $url"
 	else
 		url="https://bitbucket.org/robinrob"
@@ -768,6 +769,10 @@ function google {
 	browser "https://www.google.ca/#q=`urlencode $@`&safe=active"
 }
 
+function bbs {
+  browser "https://bitbucket.org/cloudreach/profile/repositories?search=`urlencode $@`"
+}
+
 function rubydoc {
 	browser "http://ruby-doc.com/search.html?&q=`urlencode $@`"
 }
@@ -883,19 +888,6 @@ function sshfind {
 	grep -A 3 $HOST ~/.ssh/config
 }
 
-#function killp {
-#	NAME=$1
-#
-#	processes=`ps aux | grep $NAME | awk '{print $2}' | xargs`
-#	processes=("${(s: :)processes}")
-#	
-#	green "Killing all `yellow $NAME` `green 'processes ...'`"
-#	for process in $processes
-#	do
-#		`kill $process 2> /dev/null`
-#	done
-#}
-
 function updatesubs {
 	git submodule foreach --recursive "`git commit -am 'Updates.' && git push` || exit 0"
 }
@@ -906,7 +898,7 @@ function save_code {
 }
 
 function git_branch {
-	output=`git branch`
+	output=`git branch | head -1`
 	echo $output[3,-1]
 }
 
@@ -1339,12 +1331,17 @@ function like {
   echo $res2 | grep $NAME
 }
 
+
+function find_clean_names {
+  find . -maxdepth 1 -type f -regex '.*/[a-zA-Z].*' | sed 's/\.\///g'
+}
+
 # Displays the letters of the alphabet represented by the first letter of filenames
 # of files in the given directory.
 function alphabet_of_files {
   typeset -U alphabet
 
-  files=$(find . -maxdepth 1 -type f -regex '.*/[a-zA-Z].*' | sed 's/\.\///g' | xargs)
+  files=$(find_clean_names | xargs)
   files=("${(s/ /)files}")
 
   for file in $files
@@ -1353,13 +1350,67 @@ function alphabet_of_files {
     alphabet=($alphabet $initial)
   done
   
-  yellow $alphabet
+  echo $alphabet
+}
+
+function inverse_alphabet_of_files  {
+  inverse_alphabet $(alphabet_of_files)
+}
+
+function inverse_alphabet {
+  letters=$*
+
+  typeset -U alphabet
+  alphabet=(a b c d e f g h i j k l m n o p q r s t u v w x y z)
+
+  typeset -U inverse
+
+  for char in $alphabet
+  do
+    if [[ $(is_in_set $char $letters) == "no" ]]
+    then
+      inverse=($inverse $char)
+    fi
+  done 
+  
+  red $inverse
+}
+
+function is_in_set {
+  VAL=$1
+  SET=$2
+  SET=("${(s/ /)SET}")
+
+  found="no"
+  for item in $SET
+  do
+    if [[ $item == $VAL ]]
+    then
+      found="yes"
+    fi
+  done
+
+  echo $found
 }
 
 function echopb {
   echo "$@" | pbcopy
 }
 
+function sed_all {
+  FIND_EXPRESSION=$1
+  SED_EXPRESSION=$2
+
+  files=$(find . -regex '$FIND_EXPRESSION' | xargs)
+  files=(${(s/ /)files})``
+
+  for i in $files
+  do
+    gsed -i \'$SED_EXPRESSION\' $i
+  done
+}
+
 function gpl {
   git pull origin $(git_branch)
 }
+
