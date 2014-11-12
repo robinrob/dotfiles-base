@@ -1360,3 +1360,6 @@ function echopb {
   echo "$@" | pbcopy
 }
 
+function gpl {
+  git pull origin $(git_branch)
+}

@@ -484,8 +484,6 @@ alias gpom="git push origin master"
 
 alias gplom="git pull origin master"
 
-alias gpl="git pull"
-
 alias gsr="git submodule add git@bitbucket.org:robinrob/rakefile.git rake && ln -s rake/Rakefile Rakefile"
 
 # Development operations
