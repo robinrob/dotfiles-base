@@ -514,6 +514,10 @@ function rks {
 	rake_do save $@
 }
 
+function rkss {
+  rake_do "each_sub['rake save']"
+}
+
 function rkc {
 	rake_do commit $@
 }
