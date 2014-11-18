@@ -1401,7 +1401,7 @@ function sed_all {
   FIND_EXPRESSION=$1
   SED_EXPRESSION=$2
 
-  files=$(find . -type f -regex '$FIND_EXPRESSION' | xargs)
+  files=$(gfind . -type f -regex "$FIND_EXPRESSION" | xargs)
   files=(${(s/ /)files})
 
   for file in $files
