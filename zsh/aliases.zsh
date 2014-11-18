@@ -123,8 +123,6 @@ alias sed="gsed"
 
 alias awk="gawk"
 
-alias "print"="gprint"
-
 # Shell Aliases
 alias cfns="functions | grep -o '[^_\s]\+ ()' | wc -l"
 
@@ -185,7 +183,7 @@ alias firefox="open -a firefox"
 
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
-alias rkls="rake each_sub['print, quiet']"
+alias rkls="rake each_sub[nil]"
 
 alias cdgam="cd_dir $GAM_PATH"
 
@@ -195,7 +193,7 @@ alias cdrec="cd_dir `dirname $RECORDS_PATH`"
 
 alias strash="du -dh $TRASH_HOME"
 
-alias mcol="$EDITOR $DOTFILES_HOME/colors.zsh"
+alias mcol="$EDITOR $ZDOT_HOME/colors.zsh"
 
 alias syslog="tail -f /var/log/system.log"
 
@@ -529,7 +527,7 @@ alias regex="$RUBY_HOME/practice/regexp_operators.rb"
 
 alias doit="$RECORDS_HOME/doit.zsh"
 
-alias toread="cat $LISTS_HOME/to_read.txt"
+alias ctoread="cat $LISTS_HOME/to_read.txt"
 
 alias mtoread="m $LISTS_HOME/to_read.txt"
 

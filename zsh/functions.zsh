@@ -1147,7 +1147,7 @@ function kdl {
   knife download $@
 }
 
-function read {
+function toread {
   TO_READ=$1
 
   print "$TO_READ" >> $LISTS_HOME/to_read.txt
@@ -1421,4 +1421,8 @@ function cgr {
   CMD=$@
 
   eval $CMD | grep $SEARCH
+}
+
+function nil {
+  # nil function
 }
