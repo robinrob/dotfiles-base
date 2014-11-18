@@ -32,9 +32,9 @@ function color {
 	end=$(colorencode default)
 	if [[ "$@" == "" ]]
 	then
-		print "`eval echo $start`"
+		print "`eval print $start`"
 	else
-		print "`eval echo $start'$@'$end`"
+		print "`eval print $start'$@'$end`"
 	fi
 }
 
@@ -51,9 +51,9 @@ function promptcolor {
 	end=$(promptcolorencode default)
 	if [[ "$@" == "" ]]
 	then
-		print "`eval echo $start`"
+		print "`eval print $start`"
 	else
-		print "`eval echo $start'$@'$end`"
+		print "`eval print $start'$@'$end`"
 	fi
 }
 
