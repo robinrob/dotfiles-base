@@ -32,16 +32,16 @@ function color {
 	end=$(colorencode default)
 	if [[ "$@" == "" ]]
 	then
-		echo "`eval echo $start`"
+		print "`eval echo $start`"
 	else
-		echo "`eval echo $start'$@'$end`"
+		print "`eval echo $start'$@'$end`"
 	fi
 }
 
 function colorencode {
-	prefix='$(echo "[")'
+	prefix='$(print "[")'
 	suffix='m'
-	echo $prefix'${cc'$1'}'$suffix
+	print $prefix'${cc'$1'}'$suffix
 }
 
 function promptcolor {
@@ -51,16 +51,16 @@ function promptcolor {
 	end=$(promptcolorencode default)
 	if [[ "$@" == "" ]]
 	then
-		echo "`eval echo $start`"
+		print "`eval echo $start`"
 	else
-		echo "`eval echo $start'$@'$end`"
+		print "`eval echo $start'$@'$end`"
 	fi
 }
 
 function promptcolorencode {
-	prefix='%{$(echo "[")'
+	prefix='%{$(print "[")'
 	suffix='m%}'
-	echo $prefix'${cc'$1'}'$suffix
+	print $prefix'${cc'$1'}'$suffix
 }
 
 # Shell colors

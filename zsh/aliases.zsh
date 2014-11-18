@@ -748,9 +748,9 @@ alias pb="pbcopy"
 alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
 # Function aliases
-alias aof="alphabet_of_files"
+alias aof="green $(alphabet_of_files)"
 
-alias aofi="inverse_alphabet_of_files"
+alias aofi="red $(inverse_alphabet_of_files)"
 
 alias epb="echopb"
 

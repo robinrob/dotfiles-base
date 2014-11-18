@@ -1373,7 +1373,7 @@ function inverse_alphabet {
     fi
   done 
   
-  red $inverse
+  echo $inverse
 }
 
 function is_in_set {
@@ -1402,7 +1402,7 @@ function sed_all {
   SED_EXPRESSION=$2
 
   files=$(find . -regex '$FIND_EXPRESSION' | xargs)
-  files=(${(s/ /)files})``
+  files=(${(s/ /)files})
 
   for i in $files
   do
@@ -1414,3 +1414,10 @@ function gpl {
   git pull origin $(git_branch)
 }
 
+function cgr {
+  SEARCH=$1
+  shift
+  CMD=$@
+
+  eval $CMD | grep $SEARCH
+}
