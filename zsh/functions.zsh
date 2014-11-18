@@ -1401,12 +1401,12 @@ function sed_all {
   FIND_EXPRESSION=$1
   SED_EXPRESSION=$2
 
-  files=$(find . -regex '$FIND_EXPRESSION' | xargs)
+  files=$(find . -type f -regex '$FIND_EXPRESSION' | xargs)
   files=(${(s/ /)files})
 
-  for i in $files
+  for file in $files
   do
-    gsed -i \'$SED_EXPRESSION\' $i
+    gsed -i \'$SED_EXPRESSION\' $file
   done
 }
 
