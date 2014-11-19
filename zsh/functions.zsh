@@ -498,7 +498,7 @@ function rake_do {
     if [[ -n $* ]]
     then
       echo "task_args: $*"
-      cmd='rake '$TASK'['$(join ', ' $*)']'
+      cmd='rake '$TASK'['''$(join ', ' $*)''']'
       print "cmd: $cmd"
 		else
 			cmd="rake $TASK"
