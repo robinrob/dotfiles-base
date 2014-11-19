@@ -492,22 +492,28 @@ function rake_do {
 	if [ -f Rakefile ]
 	then
 		print "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
-		if [ -n "$2" ]
-		then
-			rake $TASK"[$2]"
-			speak rake $TASK"[$2]"
+
+    shift
+
+    if [[ -n $* ]]
+    then
+      echo "task_args: $*"
+      cmd='rake '$TASK'['$(join ', ' $*)']'
+      print "cmd: $cmd"
 		else
-			rake $TASK"[$2]"
-			speak rake $TASK	
+			cmd="rake $TASK"
 		fi
+
+    eval $cmd
 	else
 		red "No Rakefile!"
 		# rake -f $RAKEFILE_HOME/Rakefile save
 	fi
 }
 
+
 function rsd {
-	rake_do "sub_deinit[$1]"
+	rake_do sub_deinit $@
 }
 
 function rks {
@@ -515,7 +521,7 @@ function rks {
 }
 
 function rkss {
-  rake_do "each_sub['rake save']"
+  rake_do each_sub $@
 }
 
 function rkc {

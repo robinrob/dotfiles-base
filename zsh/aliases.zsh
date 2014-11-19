@@ -340,7 +340,7 @@ alias rkt="rake_do test"
 
 alias rkr="rake routes"
 
-alias rkst="rake_do sub_sort"
+alias rkst="rake_do sort_sub"
 
 alias rk="rake"
 
