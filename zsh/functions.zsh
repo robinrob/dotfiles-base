@@ -898,7 +898,7 @@ function save_code {
 }
 
 function git_branch {
-	output=`git branch | head -1`
+  output=$(git branch | grep '*')
 	echo $output[3,-1]
 }
 
@@ -918,14 +918,6 @@ function del {
 	do
 		gmv $file $TRASH_HOME	
 	done
-}
-
-function cdnoc {
-	cd_dir $NOCCHEF && rvm gemset use chef --create
-}
-
-function cdms {
-	cd_dir $MSCHEF && rvm gemset use chef --create
 }
 
 function bashvulns {
@@ -1414,3 +1406,17 @@ function gpl {
   git pull origin $(git_branch)
 }
 
+
+function file_exists {
+  FILENAME=$(basename $1)
+  LOCATION=$(dirname $FILENAME)
+
+  EXISTS=$(gfind $LOCATION -name $FILENAME)
+
+  if [[ $EXISTS != '' ]]
+  then
+    print 'yes'
+  else
+    print 'no'
+  fi
+}
