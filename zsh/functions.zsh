@@ -1431,15 +1431,14 @@ function cgr {
 
 function file_exists {
   FILENAME=$(basename $1)
-  LOCATION=$(dirname $FILENAME)
+  LOCATION=$(dirname $1)
 
   EXISTS=$(gfind $LOCATION -name $FILENAME)
 
   if [[ $EXISTS != '' ]]
   then
-    print 'yes'
+    echo 'yes'
   else
-    print 'no'
+    echo 'no'
   fi
 }
-
