@@ -1429,6 +1429,7 @@ function cgr {
   eval $CMD | grep $SEARCH
 }
 
+# Case-sensitive check for file-existence
 function file_exists {
   FILENAME=$(basename $1)
   LOCATION=$(dirname $1)

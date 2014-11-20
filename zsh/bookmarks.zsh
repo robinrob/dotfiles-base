@@ -65,8 +65,6 @@ alias bkrails="browser -a Safari http://my.safaribooksonline.com/book/programmin
 
 alias bkpg="book http://my.safaribooksonline.com/book/programming/mobile/9781783287925"
 
-alias bkzsh="book http://my.safaribooksonline.com/book/operating-systems-and-server-administration/unix/9781783282937"
-
 alias bkcocos="book http://my.safaribooksonline.com/book/programming/iphone/9780132180863"
 
 alias railst="browser http://guides.rubyonrails.org/getting_started.html"
@@ -117,7 +115,7 @@ alias cocos2d2="safari 'http://my.safaribooksonline.com/book/programming/game-pr
 
 alias passwords="chrome 'https://docs.google.com/a/mrrobinsmith.com/spreadsheet/ccc?key=0Aganxin54gVEdE5zUlVvcUNCNi1WSV9MNXVFT1FqWWc&usp=drive_web#gid=0'"
 
-alias bkzsh2="book 'http://zsh.sourceforge.net/Guide/zshguide.html'"
+alias bkzsh="book 'http://zsh.sourceforge.net/Guide/zshguide.html'"
 
 alias options="open 'http://www.cs.elte.hu/zsh-manual/zsh_16.html'"
 

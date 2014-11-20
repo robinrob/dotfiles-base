@@ -24,3 +24,5 @@ setopt chaselinks
 # history, compared to the number of times i copy a command with a space at the 
 # fucking beginning?
 setopt nohistignorespace
+
+setopt noglobalexport
