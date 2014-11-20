@@ -1049,7 +1049,7 @@ function chpwd {
 }
 
 function git_checkout_master_if_on_detached_head {
-	detached=`git branch 2> /dev/null | grep detached`
+  detached=$(git branch 2> /dev/null | grep detached)
 	
 	if [[ -n "$detached" ]]
 	then
