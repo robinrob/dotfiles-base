@@ -8,30 +8,30 @@ source ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/colors.zsh
 
 function upper {
 	TEXT="$@"
-	echo $TEXT:u
+	print $TEXT:u
 }
 
 function lower {
 	TEXT="$@"
-	echo $TEXT:l
+	print $TEXT:l
 }
 
 function join {
-	local IFS="$1"; shift; echo "$*";
+	local IFS="$1"; shift; print "$*";
 }
 
 function split {
   SEPERATOR=$1
   WORD=$2
 
-  WORDS=$(eval 'WORDS=("${(s/'$SEPERATOR'/)WORD}"); echo $WORDS')
+  WORDS=$(eval 'WORDS=("${(s/'$SEPERATOR'/)WORD}"); print $WORDS')
 
   join " " $WORDS
 }
 
 function join_args {
 	IFS=""
-	echo "$*"
+	print "$*"
 }
 
 function cat_print {
@@ -39,13 +39,13 @@ function cat_print {
 }
 
 function copy_print {
-	echo $1 && echo $1 | pbcopy
+	print $1 && print $1 | pbcopy
 }
 
 function get_record {
 	cmd="grep $1 $RECORDS_PATH"
 	val=$(eval "$cmd")
-	val2=`echo ""$val"" | awk -F: '{print $2}'`
+	val2=`print ""$val"" | awk -F: '{print $2}'`
 	copy_print ""$val2""
 }
 
@@ -54,7 +54,7 @@ function email {
 	SUBJECT=$2
 	BODY=$3
 	
-	echo "$BODY" | mail -s "$SUBJECT" "$ADDRESS"
+	print "$BODY" | mail -s "$SUBJECT" "$ADDRESS"
 }
 
 function reminder {
@@ -82,8 +82,8 @@ function prepend {
 	
 	CONTENTS=`cat $FILE`
 	rm $FILE
-	echo $TEXT > $FILE
-	echo $CONTENTS >> $FILE
+	print $TEXT > $FILE
+	print $CONTENTS >> $FILE
 }
 
 function new {
@@ -113,7 +113,7 @@ function new {
 		if [ -n "$INTERPRETER" ]
 		then	
 			eval $CREATE_SHEBANG_MSG
-			echo "#!/usr/bin/env $INTERPRETER" > $FILE
+			print "#!/usr/bin/env $INTERPRETER" > $FILE
 			chmod +x $FILE
 		else
 			eval $CREATE_MSG
@@ -161,9 +161,9 @@ function extend_file {
 
   if [[ $PARTS[-1] == $EXTENSION ]]
   then
-    echo $BASENAME
+    print $BASENAME
   else
-    echo $BASENAME.$EXTENSION
+    print $BASENAME.$EXTENSION
   fi
 }
 
@@ -197,7 +197,7 @@ function hbnew {
 
 function jsnew {
 	new -i node -e js -o noopen -f $1
-	echo "\nrequire(process.env.JS_LIB_HOME + '/log')" >> $1.js
+	print "\nrequire(process.env.JS_LIB_HOME + '/log')" >> $1.js
 }
 
 function new_from_template {
@@ -270,7 +270,7 @@ function cd_diff {
 function cd_action {
 	REPO=$1
 	cd $REPO
-	echo "$(green "In repo: ")$(yellow $REPO)"
+	print "$(green "In repo: ")$(yellow $REPO)"
 	shift
 	$@
 	cd - > /dev/null
@@ -321,7 +321,7 @@ function color_words {
 	TEXT=$1
 	PATTERN=$2
 	COLOR=$3
-	echo $TEXT | gsed "s/$PATTERN/$($COLOR $PATTERN)/gI"
+	print $TEXT | gsed "s/$PATTERN/$($COLOR $PATTERN)/gI"
 }
 
 function libfind {
@@ -390,9 +390,9 @@ function exec_exists {
 	
 	if [[ "`which $EXEC`" == "$EXEC not found" ]]
 	then
-		echo "no"
+		print "no"
 	else
-		echo "yes"
+		print "yes"
 	fi
 }
 
@@ -403,9 +403,9 @@ function alias_exists {
 	
 	if [[ "$result" == "" ]]
 	then
-		echo "no"	
+		print "no"	
 	else
-		echo "yes"
+		print "yes"
 	fi
 }
 
@@ -425,9 +425,9 @@ function create_alias {
 
 	if [[ "$(alias_exists $NAME $ALIAS_FILE)" == "no" ]]
 	then
-		echo "
+		print "
 alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
-		echo "$SUCCESS_MSG"
+		print "$SUCCESS_MSG"
 	else
     if ! [[ $OVERRIDE == "yes" ]]
     then
@@ -491,27 +491,37 @@ function rake_do {
 	
 	if [ -f Rakefile ]
 	then
-		echo "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
-		if [ -n "$2" ]
-		then
-			rake $TASK"[$2]"
-			speak rake $TASK"[$2]"
+		print "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
+
+    shift
+
+    if [[ -n $* ]]
+    then
+      echo "task_args: $*"
+      cmd='rake '$TASK'['''$(join ', ' $*)''']'
+      print "cmd: $cmd"
 		else
-			rake $TASK"[$2]"
-			speak rake $TASK	
+			cmd="rake $TASK"
 		fi
+
+    eval $cmd
 	else
 		red "No Rakefile!"
 		# rake -f $RAKEFILE_HOME/Rakefile save
 	fi
 }
 
+
 function rsd {
-	rake_do "sub_deinit[$1]"
+	rake_do sub_deinit $@
 }
 
 function rks {
 	rake_do save $@
+}
+
+function rkss {
+  rake_do each_sub $@
 }
 
 function rkc {
@@ -539,7 +549,7 @@ function killp {
 		red "Must give name of process!"
 		
 	else
-    echo "$(green)Killing all $(yellow)${PROCESS}$(green) processes ...$(default)"
+    print "$(green)Killing all $(yellow)${PROCESS}$(green) processes ...$(default)"
 		
 		ps aux | grep -i $PROCESS | awk '{print $2}' | xargs kill 2> /dev/null
 	fi
@@ -592,7 +602,7 @@ function save_crontab {
 }
 
 function save_jetbrains {
-	echo "$(green "Copying Jetbrains config from: ")$(yellow "$INTELLIJ_CONFIG ...")"
+	print "$(green "Copying Jetbrains config from: ")$(yellow "$INTELLIJ_CONFIG ...")"
 	silent_cp $INTELLIJ_CONFIG $DOTFILES_HOME/
 }
 
@@ -633,12 +643,12 @@ function bb {
 
 function bb_url {
 	GIT_URL=`git config --get remote.origin.url`
-	echo "https://bitbucket.org/`echo $GIT_URL | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}'`"
+	print "https://bitbucket.org/`print $GIT_URL | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}'`"
 }
 
 function bb_commit_url {
 	COMMIT=$1
-	echo "`bb_url`/commits/$COMMIT"
+	print "`bb_url`/commits/$COMMIT"
 }
 
 function bbcm {
@@ -658,7 +668,7 @@ function cleanhome {
 }
 
 function dir_exists {
-	ls -d $1 2> /dev/null 1> /dev/null && echo "yes"
+	ls -d $1 2> /dev/null 1> /dev/null && print "yes"
 }
 
 function is_git {
@@ -690,7 +700,7 @@ function gro {
 function git_origin {
 	if [ "$(is_git)" ]
 	then
-		echo `git config --get remote.origin.url`
+		print `git config --get remote.origin.url`
 	fi
 }
 
@@ -833,11 +843,11 @@ function translate {
 }
 
 function trn {
-	echo "$@" | trans
+	print "$@" | trans
 }
 
 function trnf {
-	echo "$@" | trans :tl
+	print "$@" | trans :tl
 }
 
 function lc {
@@ -879,7 +889,7 @@ function replace_all {
 	do
 		new_contents=`cat $file | sed "s/$SEARCH/$REPLACEMENT/g"`
 		rm $file
-		echo $new_contents > $file
+		print $new_contents > $file
 	done
 }
 
@@ -898,7 +908,7 @@ function save_code {
 }
 
 function git_branch {
-  output=$(git branch | grep '*')
+	output=`git branch | head -1`
 	echo $output[3,-1]
 }
 
@@ -907,7 +917,7 @@ function clean_home {
 }
 
 function this_dir {
-	echo ${PWD##*/}
+	print ${PWD##*/}
 }
 
 function del {
@@ -1019,7 +1029,7 @@ function odl {
 	cd ~/Downloads
 	despace
 	last_download=`ls -ltr  ~/Downloads | awk '{print $9}' | tail -1`
-	echo $last_download | pbcopy
+	print $last_download | pbcopy
 	green "Opening latest file: $(yellow)$last_download$(default)"
 	open $last_download
 }
@@ -1031,7 +1041,7 @@ function dir {
 	else
 		dir=`basename $PWD`
 	fi
-	echo $dir
+	print $dir
 }
 
 function chpwd {
@@ -1097,8 +1107,8 @@ function gemset {
 	
 	silent rm .ruby-gemset
 	silent rm .ruby-version
-	echo $RUBY_GEMSET > .ruby-gemset
-	echo $RUBY_VERSION > .ruby-version
+	print $RUBY_GEMSET > .ruby-gemset
+	print $RUBY_VERSION > .ruby-version
 }
 
 
@@ -1139,10 +1149,10 @@ function kdl {
   knife download $@
 }
 
-function read {
+function toread {
   TO_READ=$1
 
-  echo "$TO_READ" >> $LISTS_HOME/to_read.txt
+  print "$TO_READ" >> $LISTS_HOME/to_read.txt
 }
 
 function read1 {
@@ -1155,7 +1165,7 @@ function read1 {
   # Cycle the top item to the bottom of the list
   tail +2 $reading_list > $new_list
   mv -f $new_list $reading_list
-  echo $next >> $reading_list
+  print $next >> $reading_list
 }
 
 function srb {
@@ -1182,10 +1192,10 @@ function speak {
 function should_say {
   if [[ $SAYCMD_OVERRIDE == "" && $SAYCMD == 1 ]]
   then
-    echo $TRUE_VALUE
+    print $TRUE_VALUE
   elif [[ $SAYCMD_OVERRIDE == 1 ]]
   then
-    echo $TRUE_VALUE
+    print $TRUE_VALUE
   fi
 }
 
@@ -1209,7 +1219,7 @@ function switch_ruby {
 function switch_env {
   ENV=$1
 
-  if [[ -n $ENV && $(eval "echo \$$ENV") == 1 ]]
+  if [[ -n $ENV && $(eval "print \$$ENV") == 1 ]]
   then
     export $ENV=""
   else
@@ -1236,7 +1246,7 @@ function switch_say_override {
 function pretty_print_env {
   ENV=`upper $1`
 
-  printf "$(green)\$$ENV: $(yellow)$(eval echo '$'$ENV)\n"
+  printf "$(green)\$$ENV: $(yellow)$(eval print '$'$ENV)\n"
 }
 
 function question {
@@ -1250,7 +1260,7 @@ function question {
 function pathize {
   VAL=$1
 
-  echo $VAL:u | sed 's/[^a-zA-Z]/_/g'
+  print $VAL:u | sed 's/[^a-zA-Z]/_/g'
 }
 
 function edit_env {
@@ -1264,7 +1274,7 @@ function edit_env {
 function sed_esc {
   STR=$1
 
-  printf `echo $STR | gsed 's/\([/\$]\)/\\\\\1/g'`
+  printf `print $STR | gsed 's/\([/\$]\)/\\\\\1/g'`
 }
 
 function encrypt {
@@ -1277,7 +1287,7 @@ function encrypt {
       openssl rsa -in ~/.ssh/id_rsa -pubout > ~/.ssh/id_rsa.pub.pem
   fi
 
-  echo $STR | openssl rsautl -encrypt -pubin -inkey ~/.ssh/id_rsa.pub.pem
+  print $STR | openssl rsautl -encrypt -pubin -inkey ~/.ssh/id_rsa.pub.pem
 }
 
 function decrypt {
@@ -1292,15 +1302,15 @@ function cd {
 }
 
 function singlize {
-  echo $1 | sed 's/\b\([[:alpha:]]\+\) \+\1\b/\1/g'
+  print $1 | sed 's/\b\([[:alpha:]]\+\) \+\1\b/\1/g'
 }
 
 function singlize_extension {
-  echo $1 | sed 's/\b\(\.[a-zA-Z0-9]\+\)\+\1\b/\1/g'
+  print $1 | sed 's/\b\(\.[a-zA-Z0-9]\+\)\+\1\b/\1/g'
 }
 
 function remove_extension {
-  echo $1 | sed 's/\b\(\.[a-zA-Z0-9]\+\)\+\b//g'
+  print $1 | sed 's/\b\(\.[a-zA-Z0-9]\+\)\+\b//g'
 }
 
 function extension {
@@ -1308,7 +1318,7 @@ function extension {
 
   PARTS=("${(s/./)FILENAME}")
 
-  echo $PARTS[-1]
+  print $PARTS[-1]
 }
 
 function like {
@@ -1319,8 +1329,8 @@ function like {
 
   res1=$(find $DIRNAME -maxdepth 1 -name "*.$EXTENSION")
   res2=$(find $DIRNAME -maxdepth 1 -name "*functions*")
-  echo $res1 | grep "\.$EXTENSION"
-  echo $res2 | grep $NAME
+  print $res1 | grep "\.$EXTENSION"
+  print $res2 | grep $NAME
 }
 
 
@@ -1342,7 +1352,7 @@ function alphabet_of_files {
     alphabet=($alphabet $initial)
   done
   
-  echo $alphabet
+  print $alphabet
 }
 
 function inverse_alphabet_of_files  {
@@ -1365,7 +1375,7 @@ function inverse_alphabet {
     fi
   done 
   
-  red $inverse
+  print $inverse
 }
 
 function is_in_set {
@@ -1382,23 +1392,24 @@ function is_in_set {
     fi
   done
 
-  echo $found
+  print $found
 }
 
-function echopb {
-  echo "$@" | pbcopy
+function printpb {
+  print "$@" | pbcopy
 }
 
 function sed_all {
   FIND_EXPRESSION=$1
   SED_EXPRESSION=$2
 
-  files=$(find . -regex '$FIND_EXPRESSION' | xargs)
-  files=(${(s/ /)files})``
+  files=$(gfind . -type f -regex "$FIND_EXPRESSION" | xargs)
+  print "files: $files"
+  files=(${(s/ /)files})
 
-  for i in $files
+  for file in $files
   do
-    gsed -i \'$SED_EXPRESSION\' $i
+    gsed -i $SED_EXPRESSION $file
   done
 }
 
@@ -1406,6 +1417,17 @@ function gpl {
   git pull origin $(git_branch)
 }
 
+function nil {
+  # nil function
+}
+
+function cgr {
+  SEARCH=$1
+  shift
+  CMD=$@
+
+  eval $CMD | grep $SEARCH
+}
 
 function file_exists {
   FILENAME=$(basename $1)
@@ -1420,3 +1442,4 @@ function file_exists {
     print 'no'
   fi
 }
+
