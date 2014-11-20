@@ -487,6 +487,10 @@ alias gplod="git pull origin develop"
 alias gsr="git submodule add git@bitbucket.org:robinrob/rakefile.git rake && ln -s rake/Rakefile Rakefile"
 
 # Development operations
+alias cdnoc="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
+
+alias cdms="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
+
 alias ccr="cocos run -p web"
 
 alias st="cd_status"
