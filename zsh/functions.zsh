@@ -551,7 +551,7 @@ function killp {
 	else
     print "$(green)Killing all $(yellow)${PROCESS}$(green) processes ...$(default)"
 		
-		ps aux | grep -i $PROCESS | awk '{print $2}' | xargs kill 2> /dev/null
+		ps aux | grep -i $PROCESS | awk '{print $2}' | xargs kill -KILL 2> /dev/null
 	fi
 }
 
@@ -1442,4 +1442,11 @@ function file_exists {
   else
     echo 'no'
   fi
+}
+
+function clone_robin {
+  DEST=robin
+  git clone --recursive -b master git@bitbucket.org:robinrob/programming.git $DEST
+  cd $DEST 
+  git submodule update --init --recursive
 }
