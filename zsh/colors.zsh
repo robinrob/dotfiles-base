@@ -39,7 +39,7 @@ function color {
 }
 
 function colorencode {
-	prefix='$(print "[")'
+	prefix='"["'
 	suffix='m'
 	print $prefix'${cc'$1'}'$suffix
 }
