@@ -62,6 +62,10 @@ export FUNCS_PATH=$ZDOT_HOME/functions.zsh
 
 export ALIASES_PATH=$ZDOT_HOME/aliases.zsh
 
+typeset -T ALIAS_FILES alias_files
+
+ALIAS_FILES=$ALIASES_PATH:$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH
+
 export FORCE_COM_HOME="/Users/robinsmith/Programming/robin/force.com"
 
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager

@@ -442,11 +442,9 @@ alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 function delete_alias {
   ALIAS=$1
 
-  ALIAS_FILES=($ALIASES_PATH $BOOKMARKS_PATH $WORKBOOKMARKS_PATH)
-
-  for $file in $ALIAS_FILES
+  for file in $alias_files
   do
-    sed -i '/'$ALIAS'/d'
+    sed -i '/'$ALIAS'/d' $file
   done
 }
 
