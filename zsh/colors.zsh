@@ -58,7 +58,7 @@ function promptcolor {
 }
 
 function promptcolorencode {
-	prefix='%{$(print "[")'
+	prefix='%{"["'
 	suffix='m%}'
 	print $prefix'${cc'$1'}'$suffix
 }
