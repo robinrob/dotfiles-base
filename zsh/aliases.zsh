@@ -488,6 +488,7 @@ alias gra="git remote add"
 
 alias grao="git remote add origin"
 
+alias gpom="git push origin master"
 
 alias gplom="git pull origin master"
 
