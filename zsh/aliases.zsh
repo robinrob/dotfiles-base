@@ -124,6 +124,8 @@ alias sed="gsed"
 alias awk="gawk"
 
 # Shell Aliases
+alias timezones="sudo systemsetup -listtimezones"
+
 alias cfns="functions | grep -o '[^_\s]\+ ()' | wc -l"
 
 alias dirs="dirs -v"
@@ -189,7 +191,9 @@ alias cdgam="cd_dir $GAM_PATH"
 
 alias cdexp="cd_dir $EXPENSES_HOME"
 
-alias cdrec="cd_dir `dirname $RECORDS_PATH`"
+alias cdrec="cd_dir $(dirname $RECORDS_PATH)"
+
+alias cdlists="cd_dir $LISTS_HOME"
 
 alias strash="du -dh $TRASH_HOME"
 
@@ -276,6 +280,8 @@ alias cdsed="cd_dir $SH_HOME/practice/sed"
 alias cdscr="cd_dir $SCREENSHOTS_HOME"
 
 alias cdcam="cd_dir '$CAMERA_HOME'"
+
+alias ocam="cd_dir $CAMERA_HOME && open ."
 
 alias cdt="cd $TRASH_HOME"
 
@@ -850,6 +856,8 @@ alias sshfind="file_grep ~/.ssh/config"
 alias erec="$EDITOR $IMPORTANT_HOME/records/record.txt"
 
 alias mrec="$EDITOR $RECORDS_PATH"
+
+alias crec="cat $RECORDS_PATH"
 
 alias lahome="get_record la_home"
 

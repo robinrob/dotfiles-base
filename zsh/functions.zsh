@@ -43,7 +43,8 @@ function copy_print {
 }
 
 function get_record {
-	cmd="grep $1 $RECORDS_PATH"
+  RECORD=$1
+	cmd="grep $RECORD $RECORDS_PATH"
 	val=$(eval "$cmd")
 	val2=`print ""$val"" | awk -F: '{print $2}'`
 	copy_print ""$val2""
@@ -131,9 +132,9 @@ function new {
 	fi
 	
 	# Reset variables for subsequent executions!
-	INTERPRETER=""
-	FILENAME=""
-	EXTENSION=""
+  unset INTERPRETER
+  unset FILENAME
+  unset EXTENSION
 	
 	if ! [[ "$NO_OPEN" == "noopen" ]]
 	then
@@ -436,6 +437,17 @@ alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 	fi
 
   print -z $NAME
+}
+
+function delete_alias {
+  ALIAS=$1
+
+  ALIAS_FILES=($ALIASES_PATH $BOOKMARKS_PATH $WORKBOOKMARKS_PATH)
+
+  for $file in $ALIAS_FILES
+  do
+    sed -i '/'$ALIAS'/d'
+  done
 }
 
 function al {
@@ -1449,4 +1461,12 @@ function clone_robin {
   git clone --recursive -b master git@bitbucket.org:robinrob/programming.git $DEST
   cd $DEST 
   git submodule update --init --recursive
+}
+
+function sub_arr {
+  START=$1
+  END=$2
+  ARR=$3
+
+  typeset -a ARR
 }
