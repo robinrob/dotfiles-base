@@ -446,6 +446,8 @@ function delete_alias {
   do
     sed -i '/'$ALIAS'/d' $file
   done
+
+  unalias $ALIAS
 }
 
 function al {
