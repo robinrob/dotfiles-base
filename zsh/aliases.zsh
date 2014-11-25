@@ -175,6 +175,8 @@ alias shell="print $SHELL"
 alias cdcocos="cd_dir $COCOS_HOME"
 
 # Shell shortcuts
+alias s="source"
+
 alias bcd="nocorrect builtin cd"
 
 alias chrome="open -a Google\ Chrome"
@@ -486,7 +488,6 @@ alias gra="git remote add"
 
 alias grao="git remote add origin"
 
-alias gpom="git push origin master"
 
 alias gplom="git pull origin master"
 
