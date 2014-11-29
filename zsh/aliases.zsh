@@ -241,10 +241,6 @@ alias gimp="/Applications/GIMP.app/Contents/MacOS/GIMP-bin"
 alias sublime="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'"
 
 # Navigation
-alias highwaycode="/Users/msl/Dropbox/mercury/docs/knowledge/useful/the-official-highway-code-with-annexes-uk-en-12-04.pdf"
-
-alias hcode="highwaycode"
-
 alias cdzd="cd $ZDOT_HOME"
 
 alias cdgg="cd ~/Google\ Drive"
