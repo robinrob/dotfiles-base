@@ -125,4 +125,6 @@ alias zequestion="open 'http://stackoverflow.com/questions/26670070/how-can-i-ma
 
 alias alonetone="open 'https://github.com/sudara/alonetone'"
 
-alias hcode="open 'https://www.gov.uk/highway-code'"
+
+
+alias hcode="open 'http://www.highwaycodeuk.co.uk/uploads/3/2/9/2/3292309/the-official-highway-code-with-annexes-uk-en-12-04.pdf'"
