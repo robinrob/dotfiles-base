@@ -442,10 +442,13 @@ alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 function delete_alias {
   ALIAS=$1
 
-  for file in $alias_files
-  do
-    sed -i '/'$ALIAS'/d' $file
-  done
+  if [[ -z $ALIAS ]]
+	  then
+	  for file in $alias_files
+	  do
+	    sed -i '/'$ALIAS'/d' $file
+	  done
+  fi
 
   unalias $ALIAS
 }
