@@ -442,7 +442,7 @@ alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 function delete_alias {
   ALIAS=$1
 
-  if [[ -z $ALIAS ]]
+  if [[ -n $ALIAS ]]
 	  then
 	  for file in $alias_files
 	  do
