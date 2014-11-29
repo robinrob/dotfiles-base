@@ -124,10 +124,6 @@ alias sed="gsed"
 alias awk="gawk"
 
 # Shell Aliases
-alias unal="unalias"
-
-alias unalias="delete_alias"
-
 alias timezones="sudo systemsetup -listtimezones"
 
 alias cfns="functions | grep -o '[^_\s]\+ ()' | wc -l"
