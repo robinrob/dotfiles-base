@@ -450,7 +450,7 @@ function delete_alias {
 	  done
   fi
 
-  unalias $ALIAS
+  builtin unalias $ALIAS
 }
 
 function al {
