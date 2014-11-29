@@ -446,11 +446,9 @@ function delete_alias {
 	  then
 	  for file in $alias_files
 	  do
-	    sed -i '/'$ALIAS'/d' $file
+      sed -i '/'$ALIAS'/d' $file && builtin unalias $ALIAS && green "Removed alias: $ALIAS"
 	  done
   fi
-
-  builtin unalias $ALIAS
 }
 
 function al {
