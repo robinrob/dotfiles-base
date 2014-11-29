@@ -124,3 +124,5 @@ alias opts="options"
 alias zequestion="open 'http://stackoverflow.com/questions/26670070/how-can-i-make-zsh-shell-beep-on-os-x'"
 
 alias alonetone="open 'https://github.com/sudara/alonetone'"
+
+alias highwaycode="open 'https://www.gov.uk/highway-code'"

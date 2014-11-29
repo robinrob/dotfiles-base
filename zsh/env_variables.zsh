@@ -60,6 +60,8 @@ export ENVS_PATH=$ZDOT_HOME/env_variables.zsh
 
 export FUNCS_PATH=$ZDOT_HOME/functions.zsh
 
+export FUNCS_HOME=$ZDOT_HOME/functions
+
 export ALIASES_PATH=$ZDOT_HOME/aliases.zsh
 
 typeset -T ALIAS_FILES alias_files
@@ -219,7 +221,7 @@ export USE_PYTHON=1
 
 export USE_RUBY=1
 
-export SAYCMD_OVERRIDE=1
+export SAYCMD_OVERRIDE=0
 
 export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
 

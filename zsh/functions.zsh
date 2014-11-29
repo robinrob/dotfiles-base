@@ -1470,3 +1470,11 @@ function sub_arr {
 
   typeset -a ARR
 }
+
+function read_fns_to_files {
+  funcs=$(pcregrep -o -M -N CR 'function[ a-zA-Z]+\{[^{}]+\}' $ZDOT_HOME/functions.zsh | xargs)
+
+  funcs=("${(s/' '/)funcs}")
+
+  print $funcs[1]
+}
