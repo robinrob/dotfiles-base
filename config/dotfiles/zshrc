@@ -13,6 +13,9 @@ for config_file ($HOME/.framework/zsh/*.zsh) source $config_file
 
 # Functions
 ###############################################################################
+[[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
+autoload ${fpath[1]}/*(:t)
+
 source $ZDOT_HOME/functions.zsh
 
 

@@ -264,4 +264,3 @@ fi
 
 export PG_CONF=$PGDATA/postgresql.conf
 
-fpath=("$DOTFILES_HOME/functions" $fpath)
