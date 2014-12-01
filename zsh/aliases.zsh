@@ -123,6 +123,8 @@ alias sed="gsed"
 alias awk="gawk"
 
 # Shell Aliases
+alias unal="delete_alias"
+
 alias timezones="sudo systemsetup -listtimezones"
 
 alias cfns="functions | grep -o '[^_\s]\+ ()' | wc -l"
@@ -551,9 +553,9 @@ alias mbrew="$EDITOR $DOTFILES_HOME/homebrew.txt"
 
 alias cbrew="cat $DOTFILES_HOME/homebrew.txt"
 
-alias mprompt="$EDITOR ~/.zsh.prompts/prompt_robin_setup.zsh"
+alias mpr="$EDITOR ~/.zsh.prompts/prompt_robin_setup.zsh"
 
-alias mpr="mprompt"
+alias cpr="cat ~/.zsh.prompts/prompt_robin_setup.zsh"
 
 alias resource="source ~/.zshrc"
 

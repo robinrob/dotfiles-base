@@ -442,12 +442,13 @@ alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 function delete_alias {
   ALIAS=$1
 
-  for file in $alias_files
-  do
-    sed -i '/'$ALIAS'/d' $file
-  done
-
-  unalias $ALIAS
+  if [[ -n $ALIAS ]]
+	  then
+	  for file in $alias_files
+	  do
+      sed -i '/'$ALIAS'/d' $file && builtin unalias $ALIAS 2> /dev/null && print "$(green)Removed alias: $(yellow)$ALIAS"
+	  done
+  fi
 }
 
 function al {
@@ -1056,10 +1057,6 @@ function dir {
 	print $dir
 }
 
-function chpwd {
-	git_checkout_master_if_on_detached_head
-}
-
 function git_checkout_master_if_on_detached_head {
   detached=$(git branch 2> /dev/null | grep detached)
 	
@@ -1470,3 +1467,31 @@ function sub_arr {
 
   typeset -a ARR
 }
+
+autoload +X -U hello
+
+
+chpwd() {
+	git_checkout_master_if_on_detached_head
+}
+
+function shelltime {
+  secs=$SECONDS
+
+  (( h = secs / 3600 ))
+  if (( h > 0 ))
+  then
+    (( secs = secs - h * 3600 ))
+  fi
+
+  (( m = secs / 60 ))
+  if (( m > 0 ))
+  then
+    (( secs = secs - m * 60 ))
+  fi
+
+  s=$secs
+
+  print "$(green)Shell time: $(yellow)$h hours, $m minutes and $s seconds!"
+}
+

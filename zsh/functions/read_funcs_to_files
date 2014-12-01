@@ -1,0 +1,10 @@
+funcs=$(pcregrep -o -M -N CR 'function[ a-zA-Z]+\{[^{}]+\}' $ZDOT_HOME/functions.zsh)
+
+
+#funcs=( ${(s.
+#.)funcs} )
+
+#funcs=("${(s/function[ a-zA-Z]+\{[^\{\}]+\}/)funcs}")
+
+
+print $funcs

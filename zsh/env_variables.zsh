@@ -60,6 +60,8 @@ export ENVS_PATH=$ZDOT_HOME/env_variables.zsh
 
 export FUNCS_PATH=$ZDOT_HOME/functions.zsh
 
+export FUNCS_HOME=$ZDOT_HOME/functions
+
 export ALIASES_PATH=$ZDOT_HOME/aliases.zsh
 
 typeset -T ALIAS_FILES alias_files
@@ -262,4 +264,3 @@ fi
 
 export PG_CONF=$PGDATA/postgresql.conf
 
-fpath=("$DOTFILES_HOME/functions" $fpath)
