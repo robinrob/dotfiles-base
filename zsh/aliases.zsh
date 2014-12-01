@@ -59,7 +59,6 @@ unalias p 2> /dev/null
 
 
 # Web Shortcuts/Bookmarks
-alias q="zequestion"
 
 alias rd="rubydoc"
 
@@ -181,6 +180,8 @@ alias shell="print $SHELL"
 alias cdcocos="cd_dir $COCOS_HOME"
 
 # Shell shortcuts
+alias apps="open /Applications"
+
 alias s="source"
 
 alias bcd="nocorrect builtin cd"
@@ -257,7 +258,6 @@ alias cdmr="cd_dir $RUBY_HOME/projects/mrrobinsmith.com"
 
 alias cdbp="cd_dir $MRROBINSMITHCOM_HOME/public/blogposts"
 
-alias cdq="cd_dir $RUBY_HOME/projects/quiz"
 
 alias cdp2="cd_dir $PY_HOME/python2"
 
@@ -334,7 +334,6 @@ alias rgd="rvm gemset delete"
 
 alias rvl="rvm list"
 
-alias mrdb="psql -U msl -d mrrobinsmith_development"
 
 alias rsc="rails console"
 
@@ -342,7 +341,6 @@ alias plrk="cd rake; green 'Git-pulling rake ...'; git pull origin master; cd - 
 
 alias svrk="cd rake; green 'Rake-saving rake ...'; rake save; cd - > /dev/null"
 
-alias rktr="rake each_sub['print, quiet']"
 
 alias rkser="rake_do server"
 
@@ -498,6 +496,8 @@ alias gpom="git push origin master"
 
 alias gplom="git pull origin master"
 
+alias gpod="git push origin develop"
+
 alias gplod="git pull origin develop"
 
 alias gsr="git submodule add git@bitbucket.org:robinrob/rakefile.git rake && ln -s rake/Rakefile Rakefile"
@@ -535,9 +535,7 @@ alias lsv="cd_save $LOCAL_HOME"
 
 alias lst="cd_status $LOCAL_HOME"
 
-alias qpl="cd_pull $QUIZ_HOME"
 
-alias qsv="cd_save $QUIZ_HOME"
 
 # Chef
 alias kel="knife environment list"
@@ -545,6 +543,8 @@ alias kel="knife environment list"
 alias knl="knife node list"
 
 # Viewing and editing files
+alias splq="$EDITOR $SPLUNK_HOME/splunk_searches.txt"
+
 alias regex="$RUBY_HOME/practice/regexp_operators.rb"
 
 alias doit="$RECORDS_HOME/doit.zsh"
@@ -637,9 +637,7 @@ alias reminderrobin="reminder robin@mrrobinsmith.com"
 
 alias reminderwork="reminder robin.smith@cloudreach.co.uk"
 
-alias tagalog="cd_dir $QUIZ_HOME && ./quiz.rb -f $QUIZ_HOME/tagalog.csv -t 10 -g 3"
 
-alias capitals="cd $QUIZ_HOME && ./quiz.rb -f $QUIZ_HOME/capitals.csv -t 10 -g 3"
 
 alias erec="$EDITOR $RECORDS_PATH"
 
@@ -765,7 +763,6 @@ alias c="cat"
 
 alias pb="pbcopy"
 
-alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
 # Function aliases
 alias aof="green \$(alphabet_of_files)"

@@ -25,7 +25,11 @@ alias gtemp="chrome 'https://drive.google.com/a/cloudreach.co.uk/templates?state
 
 alias gdoc="chrome 'https://docs.google.com/a/mrrobinsmith.com/document/d/1J4f4VHCkW70SxNwqHrTsFSSwbppJzpzR1pSmHJeEntY/edit'"
 
+
+
 alias tasks="chrome 'https://docs.google.com/a/mrrobinsmith.com/spreadsheet/ccc?key=0Aganxin54gVEdEg4eEk2ekpCaFZqb3pwT3JNS3hkRHc&usp=drive_web#gid=0'" 
+
+
 
 alias work="browser http://mail.google.com http://zenoss.cloudreach.co.uk:8080/zport/dmd/Events/evconsole?submitted=true https://cloudreach.my.salesforce.com"
 
@@ -85,11 +89,13 @@ alias bkregex="safari 'http://my.safaribooksonline.com/book/programming/regular-
 
 alias bkhaml="safari 'http://my.safaribooksonline.com/book/web-development/ruby/9781783283774'"
 
+
 alias han="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1vYyK25NFx3x9W57NqqigUj5e0m7Wdm8N2LmJqpDLHo8/edit?usp=drive_web'"
 
 alias reboots="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1cEexs1IuUD2rtlj1YP8mmyIdDHHrciLAY2OvsdbuiBw/edit#gid=0'"
 
 alias ymca="browser 'http://www.vanymca.org/centres/robertlee/sites/all/themes/ymca/documents/programs/PDFschedules/robert_lee_ymca_vancouver_aquatics_curr.pdf'"
+
 
 alias bkdsl="browser 'http://my.safaribooksonline.com/book/software-engineering-and-development/ide/9780132107549'"
 
@@ -107,13 +113,14 @@ alias rfc="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?i
 
 alias gsheet="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1d7lB4F-qotkcODeYpDRjEc4rIt4TkSFhqr7DgYXjxSo/edit#gid=0'"
 
+
+
 alias war="open 'http://www2.warwick.ac.uk/fac/soc/economics/staff/mharrison/public/ehr2011postprint.pdf'"
 
 alias adventures="safari 'http://vim-adventures.com'"
 
 alias cocos2d2="safari 'http://my.safaribooksonline.com/book/programming/game-programming/9781783987863/firstchapter#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE3ODM5ODc4NjMlMkZjaDAwbHZsMXNlYzAyX2h0bWwmcXVlcnk9'"
 
-alias passwords="chrome 'https://docs.google.com/a/mrrobinsmith.com/spreadsheet/ccc?key=0Aganxin54gVEdE5zUlVvcUNCNi1WSV9MNXVFT1FqWWc&usp=drive_web#gid=0'"
 
 alias bkzsh="book 'http://zsh.sourceforge.net/Guide/zshguide.html'"
 
@@ -121,13 +128,7 @@ alias options="open 'http://www.cs.elte.hu/zsh-manual/zsh_16.html'"
 
 alias opts="options"
 
-alias zequestion="open 'http://stackoverflow.com/questions/26670070/how-can-i-make-zsh-shell-beep-on-os-x'"
 
 alias alonetone="open 'https://github.com/sudara/alonetone'"
 
-
-
-
-
-
-alias hcode="open 'http://www.highwaycodeuk.co.uk/uploads/3/2/9/2/3292309/the-official-highway-code-with-annexes-uk-en-12-04.pdf'"
+alias q="open 'http://salesforce.stackexchange.com/questions/57296/salesforce-large-relationship-inner-query'"

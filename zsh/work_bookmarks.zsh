@@ -20,8 +20,6 @@ alias seanscases="cases 00B20000007AD8A"
 
 alias jaredscases="cases 00B20000007BLn1"
 
-alias delcases="cases 00B20000007Bunq"
-
 alias unassed="browser 'https://cloudreach.my.salesforce.com/500?fcf=00B200000079jxp'"
 
 alias pending="browser 'https://cloudreach.my.salesforce.com/500?fcf=00B20000006XDXH'"
@@ -29,8 +27,6 @@ alias pending="browser 'https://cloudreach.my.salesforce.com/500?fcf=00B20000006
 alias van="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1u1feNasYhE5fm_xXdvAm_mZSKO-vKQshd9XTNu-Jtrg/edit'"
 
 alias zenoss="browser 'http://zenoss.cloudreach.co.uk:8080/zport/dmd/Events/evconsole'"
-
-alias tobedeleted="cases '00B20000007Bunq'"
 
 alias tbd="tobedeleted"
 
@@ -40,6 +36,12 @@ alias gendoc="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1Ful
 
 alias spreadsheet="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1rWnvsWx18p2tC0eC7NosWwHzUs823faVz6sX4cbjRG4&mode=domain'"
 
-alias doc="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=199sxUINDrbHeqC6jBqRJHetN1LTNADoviPqmFYXXx-M&mode=domain'"
+alias tobedeleted="chrome 'https://cloudreach.my.salesforce.com/500?fcf=00B20000007Bunq'"
 
-alias p1="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1OvJFF7rc3gcU3qIJTaOO9PkfatC5-imNL1KkZrdMtmw&mode=domain'"
+alias caselists="chrome 'https://cloudreach.my.salesforce.com/500/o'"
+
+alias bobscases="open 'https://cloudreach.my.salesforce.com/500?fcf=00B20000006QqKR'"
+
+alias han="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1vYyK25NFx3x9W57NqqigUj5e0m7Wdm8N2LmJqpDLHo8/edit'"
+
+alias load="chrome 'https://cloudreach.my.salesforce.com/01Z20000000pY7P'"
