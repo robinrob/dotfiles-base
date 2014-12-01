@@ -219,7 +219,7 @@ export USE_PYTHON=1
 
 export USE_RUBY=1
 
-export SAYCMD_OVERRIDE=1
+export SAYCMD_OVERRIDE=0
 
 export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
 

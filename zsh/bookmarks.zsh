@@ -1,5 +1,4 @@
 # Bookmarks
-alias crockford="browser 'https://www.youtube.com/results?search_query=douglas+crockford'"
 
 alias recipe="browser /Users/msl/Programming/robin/html-css/projects/book/chapter05/index.html"
 
@@ -23,9 +22,7 @@ alias shopping="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheet/c
 
 alias gtemp="chrome 'https://drive.google.com/a/cloudreach.co.uk/templates?state=%7B%22folderId%22:%220AIV1py6VJXyMUk9PVA%22,%22action%22:%22create%22,%22userId%22:%22111853091861331127431%22%7D#'"
 
-alias gdoc="chrome 'https://docs.google.com/a/mrrobinsmith.com/document/d/1J4f4VHCkW70SxNwqHrTsFSSwbppJzpzR1pSmHJeEntY/edit'"
 
-alias tasks="chrome 'https://docs.google.com/a/mrrobinsmith.com/spreadsheet/ccc?key=0Aganxin54gVEdEg4eEk2ekpCaFZqb3pwT3JNS3hkRHc&usp=drive_web#gid=0'" 
 
 alias work="browser http://mail.google.com http://zenoss.cloudreach.co.uk:8080/zport/dmd/Events/evconsole?submitted=true https://cloudreach.my.salesforce.com"
 
@@ -85,11 +82,9 @@ alias bkregex="safari 'http://my.safaribooksonline.com/book/programming/regular-
 
 alias bkhaml="safari 'http://my.safaribooksonline.com/book/web-development/ruby/9781783283774'"
 
-alias han="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1vYyK25NFx3x9W57NqqigUj5e0m7Wdm8N2LmJqpDLHo8/edit?usp=drive_web'"
 
 alias reboots="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1cEexs1IuUD2rtlj1YP8mmyIdDHHrciLAY2OvsdbuiBw/edit#gid=0'"
 
-alias ymca="browser 'http://www.vanymca.org/centres/robertlee/sites/all/themes/ymca/documents/programs/PDFschedules/robert_lee_ymca_vancouver_aquatics_curr.pdf'"
 
 alias bkdsl="browser 'http://my.safaribooksonline.com/book/software-engineering-and-development/ide/9780132107549'"
 
@@ -103,9 +98,7 @@ alias bkcaml="safari 'http://my.safaribooksonline.com/book/programming/978144932
 
 alias documentary="open 'http://www.imdb.com/search/title?at=0&sort=user_rating&title_type=documentary'"
 
-alias rfc="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1TSCavbYKBAznqXOffWJtLA0VJsY3Pts3_TOtqWcOACs&mode=domain'"
 
-alias gsheet="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1d7lB4F-qotkcODeYpDRjEc4rIt4TkSFhqr7DgYXjxSo/edit#gid=0'"
 
 alias war="open 'http://www2.warwick.ac.uk/fac/soc/economics/staff/mharrison/public/ehr2011postprint.pdf'"
 
@@ -113,7 +106,6 @@ alias adventures="safari 'http://vim-adventures.com'"
 
 alias cocos2d2="safari 'http://my.safaribooksonline.com/book/programming/game-programming/9781783987863/firstchapter#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE3ODM5ODc4NjMlMkZjaDAwbHZsMXNlYzAyX2h0bWwmcXVlcnk9'"
 
-alias passwords="chrome 'https://docs.google.com/a/mrrobinsmith.com/spreadsheet/ccc?key=0Aganxin54gVEdE5zUlVvcUNCNi1WSV9MNXVFT1FqWWc&usp=drive_web#gid=0'"
 
 alias bkzsh="book 'http://zsh.sourceforge.net/Guide/zshguide.html'"
 
@@ -121,6 +113,9 @@ alias options="open 'http://www.cs.elte.hu/zsh-manual/zsh_16.html'"
 
 alias opts="options"
 
-alias zequestion="open 'http://stackoverflow.com/questions/26670070/how-can-i-make-zsh-shell-beep-on-os-x'"
 
 alias alonetone="open 'https://github.com/sudara/alonetone'"
+
+
+
+alias q="open 'http://salesforce.stackexchange.com/questions/57296/salesforce-large-relationship-inner-query'"
