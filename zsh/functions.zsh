@@ -673,11 +673,13 @@ function bbcmr {
 }
 
 function cleanhome {
+  cd ~
 	for file in `gfind . -maxdepth 1 \( ! -regex '.*/\..*' \) -type f`
 	do
 		green "Moving $file to $TRASH_HOME"
 		mv $file ~/.Trash
 	done
+  cd -
 }
 
 function dir_exists {
@@ -926,7 +928,7 @@ function git_branch {
 }
 
 function clean_home {
-	find ~/ -depth 1 \( ! -regex '.*/\..*' \) -type f -name * | xargs rm
+	cd ~ && find ~/ -depth 1 \( ! -regex '.*/\..*' \) -type f -name * | xargs rm
 }
 
 function this_dir {
@@ -1495,3 +1497,7 @@ function shelltime {
   print "$(green)Shell time: $(yellow)$h hours, $m minutes and $s seconds!"
 }
 
+function longest {
+  array=($*)
+  print ${array[(r)${(l.${#${(O@)array//?/X}[1]}..?.)}]}
+}

@@ -9,6 +9,7 @@ autoconf
 automake
 awk
 awscli
+bdw-gc
 binutils
 boost
 clasp
@@ -82,6 +83,7 @@ tmux
 tokyo-cabinet
 translate-shell
 unixodbc
+w3m
 watch
 wdiff
 wget

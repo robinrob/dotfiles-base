@@ -78,7 +78,7 @@ function prompt_robin_setup {
   PS2="Waiting for input fool! >> "
 
   # Line prefix displayed when using shell `select` loop
-  PS3="Make a choice bitch!"
+  PS3="Make a choice bitch! >> "
 
   # Line prefix displayed when using `xtrace` option
   PS4="Debug that fucker: >> %N:%i"
