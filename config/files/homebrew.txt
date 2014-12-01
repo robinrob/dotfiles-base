@@ -4,6 +4,7 @@ apple-gcc42
 autoconf
 automake
 awscli
+bdw-gc
 binutils
 bison
 boost
@@ -54,7 +55,9 @@ screen
 source-highlight
 the_silver_searcher
 tmux
-vim
+tokyo-cabinet
+translate-shell
+unixodbc
 watch
 wdiff
 wget

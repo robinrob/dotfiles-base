@@ -55,6 +55,8 @@ unalias gpl 2> /dev/null
 
 unalias cd 2> /dev/null
 
+unalias p 2> /dev/null
+
 
 # Web Shortcuts/Bookmarks
 
@@ -123,6 +125,8 @@ alias sed="gsed"
 alias awk="gawk"
 
 # Shell Aliases
+alias p="print"
+
 alias unal="delete_alias"
 
 alias timezones="sudo systemsetup -listtimezones"
@@ -761,9 +765,9 @@ alias pb="pbcopy"
 
 
 # Function aliases
-alias aof="green $(alphabet_of_files)"
+alias aof="green \$(alphabet_of_files)"
 
-alias aofi="red $(inverse_alphabet_of_files)"
+alias aofi="red \$(inverse_alphabet_of_files)"
 
 alias epb="printpb"
 
