@@ -46,7 +46,7 @@ alias han="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1vYyK25
 
 alias load="chrome 'https://cloudreach.my.salesforce.com/01Z20000000pY7P'"
 
-alias robsclosed="chrome 'https://cloudreach.my.salesforce.com/500?fcf=00B20000006RF20'"
+alias closed="chrome 'https://cloudreach.my.salesforce.com/500?fcf=00B20000006RF20'"
 
 alias change="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheet/ccc?key=0AqUVRR8VuUrEdDdOSjF0SjYzYnlUQVplY3BLTjUxQ3c#gid=0'"
 
@@ -60,3 +60,5 @@ alias engineers="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1
 
 
 alias changes="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1tE2NF7C5A3JuI8C5ejQD2d-afh4F1BOcpu1wOTRDiwQ/edit#gid=0'"
+
+alias quoc="chrome 'https://cloudreach.my.salesforce.com/5002000000ecUss'"
