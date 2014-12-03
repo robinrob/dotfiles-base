@@ -45,3 +45,13 @@ alias bobscases="open 'https://cloudreach.my.salesforce.com/500?fcf=00B20000006Q
 alias han="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1vYyK25NFx3x9W57NqqigUj5e0m7Wdm8N2LmJqpDLHo8/edit'"
 
 alias load="chrome 'https://cloudreach.my.salesforce.com/01Z20000000pY7P'"
+
+alias robsclosed="chrome 'https://cloudreach.my.salesforce.com/500?fcf=00B20000006RF20'"
+
+alias change="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheet/ccc?key=0AqUVRR8VuUrEdDdOSjF0SjYzYnlUQVplY3BLTjUxQ3c#gid=0'"
+
+alias p1="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1OvJFF7rc3gcU3qIJTaOO9PkfatC5-imNL1KkZrdMtmw&mode=domain'"
+
+alias sheet="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1rWnvsWx18p2tC0eC7NosWwHzUs823faVz6sX4cbjRG4&mode=domain'"
+
+alias doc="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=199sxUINDrbHeqC6jBqRJHetN1LTNADoviPqmFYXXx-M&mode=domain'"
