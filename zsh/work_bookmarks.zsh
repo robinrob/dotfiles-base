@@ -55,3 +55,8 @@ alias p1="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id
 alias sheet="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1rWnvsWx18p2tC0eC7NosWwHzUs823faVz6sX4cbjRG4&mode=domain'"
 
 alias doc="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=199sxUINDrbHeqC6jBqRJHetN1LTNADoviPqmFYXXx-M&mode=domain'"
+
+alias engineers="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1kzr93csRoAHOwlIhXBaYdMLcpuyzPhDVNY18nvmR1pc/edit#'"
+
+
+alias changes="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1tE2NF7C5A3JuI8C5ejQD2d-afh4F1BOcpu1wOTRDiwQ/edit#gid=0'"
