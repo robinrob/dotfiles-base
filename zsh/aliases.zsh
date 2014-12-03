@@ -543,6 +543,8 @@ alias kel="knife environment list"
 alias knl="knife node list"
 
 # Viewing and editing files
+alias ocv="open -a OpenOffice $IMPORTANT_HOME/cv/cv.odt"
+
 alias splq="$EDITOR $SPLUNK_HOME/splunk_searches.txt"
 
 alias regex="$RUBY_HOME/practice/regexp_operators.rb"
@@ -896,7 +898,7 @@ alias ad="address"
 
 alias phonelong="get_record phone_long"
 
-alias phone="get_record phone_short"
+alias phone="get_record phone_uk"
 
 alias ph="phone"
 
