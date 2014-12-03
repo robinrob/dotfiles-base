@@ -1501,3 +1501,14 @@ function longest {
   array=($*)
   print ${array[(r)${(l.${#${(O@)array//?/X}[1]}..?.)}]}
 }
+
+function dsv {
+  if [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
+  then
+    save_crontab
+    save_jetbrains
+    save_homebrew
+    cd_save $DOTFILES_BASE_HOME
+    cd_save $DOTFILES_HOME
+  fi
+}

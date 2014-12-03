@@ -513,7 +513,6 @@ alias st="cd_status"
 
 alias sv="cd_save"
 
-alias dsv="save_crontab; save_jetbrains; save_homebrew; cd_save $DOTFILES_HOME"
 
 alias dcm="cd_commit $DOTFILES_HOME"
 
@@ -521,7 +520,6 @@ alias ddi="cd_diff $DOTFILES_HOME"
 
 alias dst="cd_status $DOTFILES_HOME"
 
-alias DSV="dsv"
 
 alias fpl="fab pull"
 
