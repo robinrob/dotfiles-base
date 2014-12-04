@@ -180,6 +180,8 @@ alias shell="print $SHELL"
 alias cdcocos="cd_dir $COCOS_HOME"
 
 # Shell shortcuts
+alias die="killp chrome"
+
 alias apps="open /Applications"
 
 alias s="source"

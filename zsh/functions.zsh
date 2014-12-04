@@ -440,15 +440,18 @@ alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 }
 
 function delete_alias {
-  ALIAS=$1
+  ALIASES=$*
 
-  if [[ -n $ALIAS ]]
-	  then
-	  for file in $alias_files
-	  do
-      sed -i '/'$ALIAS'/d' $file && builtin unalias $ALIAS 2> /dev/null && print "$(green)Removed alias: $(yellow)$ALIAS"
-	  done
-  fi
+  for alias in $ALIASES
+  do
+	  if [[ -n $alias ]]
+		  then
+		  for file in $alias_files
+		  do
+	      sed -i '/'$alias'/d' $file && builtin unalias $alias 2> /dev/null && print "$(green)Removed alias: $(yellow)$alias"
+		  done
+	  fi
+  done
 }
 
 function al {
@@ -457,6 +460,10 @@ function al {
 
 function bookmark {
 	create_bookmark $BOOKMARKS_PATH $@
+}
+
+function home_bookmark {
+	create_bookmark $WORKBOOKMARKS_PATH $@ safari
 }
 
 function work_bookmark {
@@ -562,7 +569,7 @@ function killp {
 		red "Must give name of process!"
 		
 	else
-    print "$(green)Killing all $(yellow)${PROCESS}$(green) processes ...$(default)"
+    print "$(green)Killing all $(yellow)${PROCESS} $(green)processes ...$(default)"
 		
 		ps aux | grep -i $PROCESS | awk '{print $2}' | xargs kill -KILL 2> /dev/null
 	fi
@@ -1511,4 +1518,16 @@ function dsv {
     cd_save $DOTFILES_BASE_HOME
     cd_save $DOTFILES_HOME
   fi
+}
+
+function safari {
+  open -a Safari $@
+}
+
+function chrome {
+  open -a Google\ Chrome $@
+}
+
+function firefox {
+  open -a Firefox $@
 }
