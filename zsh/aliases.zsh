@@ -439,7 +439,6 @@ alias gst="git status"
 
 alias gSt="git stash"
 
-alias grrm="git remote rm"
 
 alias gin="git init"
 

@@ -1536,3 +1536,10 @@ function chrome {
 function firefox {
   open -a Firefox $@
 }
+
+function grrm {
+  for remote in $*
+  do
+    git remote rm  $remote
+  done
+}
