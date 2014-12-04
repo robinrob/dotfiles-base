@@ -262,7 +262,7 @@ alias cdp2="cd_dir $PY_HOME/python2"
 
 alias cdp3="cd_dir $PY_HOME/python3"
 
-alias cdrk="cd_dir $RAKEFILE_HOME"
+alias cdrk="cd_dir $RAKELIB_HOME"
 
 alias cdl="cd_dir $LOCAL_HOME"
 
