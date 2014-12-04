@@ -489,6 +489,8 @@ alias cgm="cat .gitmodules"
 
 alias gra="git remote add"
 
+alias grs="rit remote show"
+
 alias grao="git remote add origin"
 
 alias gpom="git push origin master"
