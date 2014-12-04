@@ -134,3 +134,6 @@ alias q="open 'http://salesforce.stackexchange.com/questions/57296/salesforce-la
 
 
 alias bkrk="open 'http://my.safaribooksonline.com/9781783280773'"
+
+
+alias news="chrome 'http://www.bbc.com/news/'"

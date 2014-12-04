@@ -477,13 +477,13 @@ function create_bookmark {
 	
 	if [ -z "$BROWSER" ]
 	then
-		BROWSER="open"
-  elif [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
-  then
-    BROWSER="safari"
-  elif [[ $HOSTNAME == $VENUS_HOSTNAME ]]
-  then
-    BROWSER="chrome"
+    if [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
+    then
+      BROWSER="safari"
+    elif [[ $HOSTNAME == $VENUS_HOSTNAME ]]
+    then
+     BROWSER="chrome"
+    fi
   fi
 	
 	ALIAS="${BROWSER} '${URL}'"
