@@ -489,7 +489,7 @@ alias cgm="cat .gitmodules"
 
 alias gra="git remote add"
 
-alias grs="rit remote show"
+alias grs="git remote show"
 
 alias grao="git remote add origin"
 
