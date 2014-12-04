@@ -110,7 +110,7 @@ export RUBYAPP_HOME=$RUBY_HOME/projects/ruby-app
 
 export RAKEFILE_HOME=$RUBY_HOME/projects/rakefile
 
-export RAKELIB_HOME=$RUBY_HOME/projects/rakefile
+export RAKELIB_HOME=$RUBY_HOME/projects/rakelib
 
 export GLOBAL_RAKEFILE_HOME=$RUBY_HOME/projects/global-rakefile
 

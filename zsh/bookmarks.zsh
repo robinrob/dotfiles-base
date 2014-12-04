@@ -137,3 +137,6 @@ alias bkrk="safari 'http://my.safaribooksonline.com/9781783280773'"
 
 
 alias news="chrome 'http://www.bbc.com/news/'"
+
+
+alias stage="chrome 'http://mrrobinsmith-stage.herokuapp.com'"
