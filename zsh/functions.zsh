@@ -487,7 +487,7 @@ function create_bookmark {
     fi
   fi
 	
-	ALIAS="print ${URL} | pbcopy && ${BROWSER} '${URL}'"
+	ALIAS="print '${URL}' | pbcopy && ${BROWSER} '${URL}'"
   SUCCESS_MSG="$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
 	
 	create_alias $NAME $ALIAS $BOOKMARKS_PATH $SUCCESS_MSG
