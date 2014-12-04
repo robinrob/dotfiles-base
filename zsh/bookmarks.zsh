@@ -133,7 +133,7 @@ alias alonetone="open 'https://github.com/sudara/alonetone'"
 alias q="open 'http://salesforce.stackexchange.com/questions/57296/salesforce-large-relationship-inner-query'"
 
 
-alias bkrk="open 'http://my.safaribooksonline.com/9781783280773'"
+alias bkrk="safari 'http://my.safaribooksonline.com/9781783280773'"
 
 
 alias news="chrome 'http://www.bbc.com/news/'"
