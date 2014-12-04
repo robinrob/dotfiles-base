@@ -442,12 +442,11 @@ alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 function delete_alias {
   for alias in $*
   do
-    print $alias
 	  if [[ -n $alias ]]
 		  then
 		  for file in $alias_files
 		  do
-	      sed -i '/'$alias'/d' $file && builtin unalias $alias 2> /dev/null && print "$(green)Removed alias: $(yellow)$alias"
+	      sed -i '/alias '$alias'=/d' $file && builtin unalias $alias 2> /dev/null && print "$(green)Removed alias: $(yellow)$alias"
 		  done
 	  fi
   done
