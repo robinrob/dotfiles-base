@@ -440,10 +440,9 @@ alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 }
 
 function delete_alias {
-  ALIASES=$*
-
-  for alias in $ALIASES
+  for alias in $*
   do
+    print $alias
 	  if [[ -n $alias ]]
 		  then
 		  for file in $alias_files
