@@ -37,7 +37,6 @@ alias bbh="browser https://bitbucket.org/dashboard/overview"
 
 alias bbc="browser https://bitbucket.org/repo/create"
 
-alias news="browser https://bbc.co.uk/news"
 
 alias learmount="browser http://www.flightglobal.com/blogs/learmount"
 

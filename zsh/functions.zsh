@@ -478,7 +478,13 @@ function create_bookmark {
 	if [ -z "$BROWSER" ]
 	then
 		BROWSER="open"
-	fi
+  elif [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
+  then
+    BROWSER="safari"
+  elif [[ $HOSTNAME == $VENUS_HOSTNAME ]]
+  then
+    BROWSER="chrome"
+  fi
 	
 	ALIAS="${BROWSER} '${URL}'"
   SUCCESS_MSG="$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
