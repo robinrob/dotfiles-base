@@ -188,11 +188,8 @@ alias s="source"
 
 alias bcd="nocorrect builtin cd"
 
-alias chrome="open -a Google\ Chrome"
 
-alias safari="open -a Safari"
 
-alias firefox="open -a firefox"
 
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
