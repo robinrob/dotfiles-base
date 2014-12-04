@@ -482,7 +482,7 @@ function create_bookmark {
       BROWSER="safari"
     elif [[ $HOSTNAME == $VENUS_HOSTNAME ]]
     then
-     BROWSER="chrome"
+      BROWSER="chrome"
     fi
   fi
 	
