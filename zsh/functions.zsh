@@ -282,11 +282,12 @@ function opens {
 }
 
 function rns {
+  NAME=$1
+
 	cd $SCREENSHOTS_HOME && despace
-	
-	cmd="cp `lasts` $1"
-	green $cmd
-	eval $cmd
+  LAST=$(lsltr | tail -1)
+  cp $LAST $NAME
+  print "$(green)Copied $(yellow)$LAST $(green)to $(yellow)$NAME"
 }
 
 function t3389 {
@@ -486,7 +487,7 @@ function create_bookmark {
     fi
   fi
 	
-	ALIAS="${BROWSER} '${URL}'"
+	ALIAS="print ${URL} | pbcopy && ${BROWSER} '${URL}'"
   SUCCESS_MSG="$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
 	
 	create_alias $NAME $ALIAS $BOOKMARKS_PATH $SUCCESS_MSG
@@ -1542,4 +1543,8 @@ function grrm {
   do
     git remote rm  $remote
   done
+}
+
+function lsltr {
+  ls -ltr --color=none | awk '{print $9}' | tail +2
 }

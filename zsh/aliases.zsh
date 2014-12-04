@@ -147,7 +147,6 @@ alias g="grep"
 
 alias cwd="pwd"
 
-alias lsltr="ls -ltr --color=none | awk '{print \$9}' | tail +2"
 
 alias dt="date"
 
