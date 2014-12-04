@@ -125,6 +125,8 @@ alias sed="gsed"
 alias awk="gawk"
 
 # Shell Aliases
+alias age="stat -f '%m%t%Sm %N'"
+
 alias p="print"
 
 alias unal="delete_alias"
