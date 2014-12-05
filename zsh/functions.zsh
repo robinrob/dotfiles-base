@@ -575,8 +575,15 @@ function rakeup {
 	ln -s rake/Rakefile ./
 }
 
+function rakeup {
+  rm -rf rakelib
+  git rm -r --cached rakelib
+	git submodule add --force git@bitbucket.org:robinrob/rakelib.git
+  touch Rakefile
+}
+
 function rakedown {
-	rake -r $RAKEFILE_HOME/Rakefile sub_deinit[rake]
+  rake git:deinit[rakelib]
 	rm Rakefile
 }
 
@@ -677,7 +684,7 @@ function cleanhome {
 	for file in `gfind . -maxdepth 1 \( ! -regex '.*/\..*' \) -type f`
 	do
 		green "Moving $file to $TRASH_HOME"
-		mv $file ~/.Trash
+    mv "${(q)file}" ~/.Trash
 	done
   cd -
 }

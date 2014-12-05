@@ -258,12 +258,11 @@ alias cdmr="cd_dir $RUBY_HOME/projects/mrrobinsmith.com"
 
 alias cdbp="cd_dir $MRROBINSMITHCOM_HOME/public/blogposts"
 
-
 alias cdp2="cd_dir $PY_HOME/python2"
 
 alias cdp3="cd_dir $PY_HOME/python3"
 
-alias cdrk="cd_dir $RAKEFILE_HOME"
+alias cdrk="cd_dir $RAKELIB_HOME"
 
 alias cdl="cd_dir $LOCAL_HOME"
 
@@ -489,6 +488,8 @@ alias gsa="git submodule add"
 alias cgm="cat .gitmodules"
 
 alias gra="git remote add"
+
+alias grs="git remote show"
 
 alias grao="git remote add origin"
 
