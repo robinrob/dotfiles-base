@@ -125,6 +125,8 @@ alias sed="gsed"
 alias awk="gawk"
 
 # Shell Aliases
+alias age="stat -f '%m%t%Sm %N'"
+
 alias p="print"
 
 alias unal="delete_alias"
@@ -147,7 +149,6 @@ alias g="grep"
 
 alias cwd="pwd"
 
-alias lsltr="ls -ltr --color=none | awk '{print \$9}' | tail +2"
 
 alias dt="date"
 
@@ -180,17 +181,16 @@ alias shell="print $SHELL"
 alias cdcocos="cd_dir $COCOS_HOME"
 
 # Shell shortcuts
+alias die="killp chrome"
+
 alias apps="open /Applications"
 
 alias s="source"
 
 alias bcd="nocorrect builtin cd"
 
-alias chrome="open -a Google\ Chrome"
 
-alias safari="open -a Safari"
 
-alias firefox="open -a firefox"
 
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
@@ -439,7 +439,6 @@ alias gst="git status"
 
 alias gSt="git stash"
 
-alias grrm="git remote rm"
 
 alias gin="git init"
 

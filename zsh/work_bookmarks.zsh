@@ -62,3 +62,14 @@ alias engineers="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1
 alias changes="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1tE2NF7C5A3JuI8C5ejQD2d-afh4F1BOcpu1wOTRDiwQ/edit#gid=0'"
 
 alias quoc="chrome 'https://cloudreach.my.salesforce.com/5002000000ecUss'"
+
+
+
+alias 1password="firefox 'x-onepassword4://register/1a76e25c-b067-4c32-91e5-749689f9810e/albertoalvarezgm@gmail.com'"
+
+alias robin="print http://mrrobinsmith.com | pbcopy && chrome 'http://mrrobinsmith.com'"
+
+
+alias bridge="print 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/15saMLgVk8_0_K5tCZul17zYyJMbCBq_8Al-YcxXLiPw/edit#gid=1355481979' | pbcopy && chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/15saMLgVk8_0_K5tCZul17zYyJMbCBq_8Al-YcxXLiPw/edit#gid=1355481979'"
+
+alias escalation="print 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1fY8-IvhWnj1E3VeGhMsBDT_s3_06agrOZDytYesSeCc/edit#gid=1574636108' | pbcopy && chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1fY8-IvhWnj1E3VeGhMsBDT_s3_06agrOZDytYesSeCc/edit#gid=1574636108'"

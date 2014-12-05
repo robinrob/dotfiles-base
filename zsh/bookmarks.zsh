@@ -37,7 +37,6 @@ alias bbh="browser https://bitbucket.org/dashboard/overview"
 
 alias bbc="browser https://bitbucket.org/repo/create"
 
-alias news="browser https://bbc.co.uk/news"
 
 alias learmount="browser http://www.flightglobal.com/blogs/learmount"
 
@@ -134,4 +133,14 @@ alias alonetone="open 'https://github.com/sudara/alonetone'"
 alias q="open 'http://salesforce.stackexchange.com/questions/57296/salesforce-large-relationship-inner-query'"
 
 
-alias bkrk="open 'http://my.safaribooksonline.com/9781783280773'"
+alias bkrk="safari 'http://my.safaribooksonline.com/9781783280773'"
+
+
+alias news="chrome 'http://www.bbc.com/news/'"
+
+
+alias stage="chrome 'http://mrrobinsmith-stage.herokuapp.com'"
+
+alias prod="chrome 'http://mrrobinsmith.com'"
+
+alias security="chrome 'https://www.google.com/settings/security?hl=en'"
