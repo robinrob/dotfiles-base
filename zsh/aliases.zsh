@@ -341,7 +341,7 @@ alias plrk="cd rake; green 'Git-pulling rake ...'; git pull origin master; cd - 
 alias svrk="cd rake; green 'Rake-saving rake ...'; rake save; cd - > /dev/null"
 
 
-alias rkser="rake_do server"
+alias rkser="rake_do rails:server"
 
 alias rls="rails server"
 
@@ -369,15 +369,15 @@ alias save="rake -f $GLOBAL_RAKEFILE_HOME/Rakefile save_code"
 
 #alias rksr="rake -f $RAKEFILE_HOME/Rakefile save"
 
-alias rkrn="rake run"
+alias rkrn="rake cocs:run"
 
-alias rkd="rake_do deploy"
+alias rkd="rake_do rails:deploy"
 
-alias rkD="rake_do sub_deinit"
+alias rkD="rake_do git:sub_deinit"
 
-alias rkpl="rake_do pull"
+alias rkpl="rake_do git:pull"
 
-alias rkp="rake_do push"
+alias rkp="rake_do git:push"
 
 alias rkup="rakeup"
 
@@ -570,8 +570,6 @@ alias rsen="source $ZDOT_HOME/env_variables.zsh"
 alias rsfn="source $ZDOT_HOME/functions.zsh"
 
 alias rsf="source $ZDOT_HOME/functions.zsh"
-
-alias rsal="source $ZDOT_HOME/aliases.zsh"
 
 alias rsop="source $ZDOT_HOME/options.zsh"
 
@@ -835,7 +833,7 @@ alias lfind="libfind_s $LOCAL_HOME"
 
 alias dfind="libfind_s $DOTFILES_HOME"
 
-alias hfind="libfind_s $HTMLCSS_HOME/practice"
+alias hfind="libfind_s $HTML_CSS_HOME/practice"
 
 alias jfind="libfind_s $JS_HOME/practice"
 
