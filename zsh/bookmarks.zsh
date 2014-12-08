@@ -141,6 +141,7 @@ alias news="chrome 'http://www.bbc.com/news/'"
 
 alias stage="chrome 'http://mrrobinsmith-stage.herokuapp.com'"
 
-alias prod="chrome 'http://mrrobinsmith.com'"
 
 alias security="chrome 'https://www.google.com/settings/security?hl=en'"
+
+alias prod="print 'http://mrrobinsmith.com/cv' | pbcopy && safari 'http://mrrobinsmith.com/cv'"
