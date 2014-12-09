@@ -385,6 +385,8 @@ alias rkrn="rake cocs:run"
 
 alias rkd="rake_do rails:deploy"
 
+alias rkde="rake_do git:deinit"
+
 alias rkD="rake_do git:sub_deinit"
 
 alias rkpl="rake_do git:pull"
