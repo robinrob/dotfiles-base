@@ -200,7 +200,7 @@ alias bcd="nocorrect builtin cd"
 
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
-alias rkls="rake each_sub[nil]"
+alias rkls="rake_do git:foreach nil"
 
 alias cdgam="cd_dir $GAM_PATH"
 

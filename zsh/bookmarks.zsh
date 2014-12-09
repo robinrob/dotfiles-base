@@ -17,7 +17,7 @@ alias r4b3="browser http://rails4-bootstrap3.herokuapp.com"
 
 alias r4b3-orig="browser http://rails4-bootstrap3-orig.herokuapp.com"
 
-alias dev="safari http://localhost:3000"
+alias dev="firefox http://localhost:3000"
 
 alias shopping="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheet/ccc?key=1rVCLgwbWg8uhbyCzyjRYTgpv2G08_Z-_aiwm2kNtI9w#gid=0'"
 
