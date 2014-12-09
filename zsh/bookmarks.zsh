@@ -40,7 +40,6 @@ alias bbc="browser https://bitbucket.org/repo/create"
 
 alias learmount="browser http://www.flightglobal.com/blogs/learmount"
 
-alias sf="book http://my.safaribooksonline.com/myrecentpages"
 
 alias bk=sf
 

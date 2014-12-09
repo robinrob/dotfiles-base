@@ -1546,11 +1546,3 @@ function grrm {
 function lsltr {
   ls -ltr --color=none | awk '{print $9}' | tail +2
 }
-
-# Re-source aliases
-function rsal {
-  for file in $alias_files
-  do
-    source $file
-  done
-}

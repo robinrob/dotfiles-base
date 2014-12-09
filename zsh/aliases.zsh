@@ -125,6 +125,10 @@ alias sed="gsed"
 alias awk="gawk"
 
 # Shell Aliases
+alias cpx="chmod +x"
+
+alias cmx="chmod -x"
+
 alias age="stat -f '%m%t%Sm %N'"
 
 alias p="print"
@@ -181,6 +185,8 @@ alias shell="print $SHELL"
 alias cdcocos="cd_dir $COCOS_HOME"
 
 # Shell shortcuts
+alias pyv="python --version"
+
 alias die="killp chrome"
 
 alias apps="open /Applications"
@@ -280,6 +286,8 @@ alias cdzpr="cd_dir $ZSH_HOME/practice"
 
 alias cdrpr="cd_dir $RUBY_HOME/practice"
 
+alias cdppr="cd_dir $PYTHON_HOME/practice"
+
 alias cdspr="cd_dir $SH_HOME/practice"
 
 alias cdsed="cd_dir $SH_HOME/practice/sed"
@@ -309,6 +317,10 @@ alias cdmb="cd_dir $JS_HOME/projects/mobile-app-cordova"
 alias cdg="cd_dir $JS_HOME/projects/mobile-game-cocos"
 
 # Development operations
+alias pbu="pythonbrew use"
+
+alias pi="pip install -r requirements.txt"
+
 alias rgm="rvm_gem_list"
 
 alias crv="cat .ruby-version"
