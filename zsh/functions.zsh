@@ -1555,3 +1555,23 @@ function grrm {
 function lsltr {
   ls -ltr --color=none | awk '{print $9}' | tail +2
 }
+
+function cpb {
+  FILE=$1
+
+  cat $FILE | pbcopy
+}
+
+function cr {
+  FILE=$1
+
+  echo "$(green)$(cat $FILE): $(yellow)$(./$FILE)"
+}
+
+function she {
+  FILE=$1
+  INTERPRETER=$2
+
+  prepend $FILE "#!/usr/bin/env $INTERPRETER\n"
+  chmod +x $FILE
+}
