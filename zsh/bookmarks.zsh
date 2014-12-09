@@ -17,7 +17,7 @@ alias r4b3="browser http://rails4-bootstrap3.herokuapp.com"
 
 alias r4b3-orig="browser http://rails4-bootstrap3-orig.herokuapp.com"
 
-alias dev="chrome http://localhost:3000 && safari http://localhost:3000"
+alias dev="safari http://localhost:3000"
 
 alias shopping="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheet/ccc?key=1rVCLgwbWg8uhbyCzyjRYTgpv2G08_Z-_aiwm2kNtI9w#gid=0'"
 
@@ -140,6 +140,7 @@ alias news="chrome 'http://www.bbc.com/news/'"
 
 alias stage="chrome 'http://mrrobinsmith-stage.herokuapp.com'"
 
-alias prod="chrome 'http://mrrobinsmith.com'"
 
 alias security="chrome 'https://www.google.com/settings/security?hl=en'"
+
+alias prod="print 'http://mrrobinsmith.com/cv' | pbcopy && safari 'http://mrrobinsmith.com/cv'"

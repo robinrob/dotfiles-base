@@ -46,7 +46,7 @@ function get_record {
   RECORD=$1
 	cmd="grep $RECORD $RECORDS_PATH"
 	val=$(eval "$cmd")
-	val2=`print ""$val"" | awk -F: '{print $2}'`
+	val2=`print ""$val"" | awk -F:: '{print $2}'`
 	copy_print ""$val2""
 }
 
@@ -523,9 +523,7 @@ function rake_do {
 
     if [[ -n $* ]]
     then
-      echo "task_args: $*"
       cmd='rake '$TASK'['''$(join ', ' $*)''']'
-      print "cmd: $cmd"
 		else
 			cmd="rake $TASK"
 		fi
@@ -551,7 +549,7 @@ function rkss {
 }
 
 function rkc {
-	rake_do commit $@
+	rake_do git:commit $@
 }
 
 function rka {
@@ -582,13 +580,6 @@ function killp {
 }
 
 function rakeup {
-  rm -rf rake
-  git rm -r --cached rake
-	git submodule add --force git@bitbucket.org:robinrob/rakefile.git rake
-	ln -s rake/Rakefile ./
-}
-
-function rakeup {
   rm -rf rakelib
   git rm -r --cached rakelib
 	git submodule add --force git@bitbucket.org:robinrob/rakelib.git
@@ -597,7 +588,7 @@ function rakeup {
 
 function rakedown {
   rake git:deinit[rakelib]
-	rm Rakefile
+	rm -f Rakefile
 }
 
 function fabup {
@@ -1554,24 +1545,4 @@ function grrm {
 
 function lsltr {
   ls -ltr --color=none | awk '{print $9}' | tail +2
-}
-
-function cpb {
-  FILE=$1
-
-  cat $FILE | pbcopy
-}
-
-function cr {
-  FILE=$1
-
-  echo "$(green)$(cat $FILE): $(yellow)$(./$FILE)"
-}
-
-function she {
-  FILE=$1
-  INTERPRETER=$2
-
-  prepend $FILE "#!/usr/bin/env $INTERPRETER\n"
-  chmod +x $FILE
 }
