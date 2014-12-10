@@ -291,6 +291,8 @@ alias cdsed="cd_dir $SH_HOME/practice/sed"
 
 alias cdscr="cd_dir $SCREENSHOTS_HOME"
 
+alias cdhbpr="cd_dir $HTML_CSS_HOME/practice/bootstrap"
+
 alias cdcam="cd_dir '$CAMERA_HOME'"
 
 alias ocam="cd_dir $CAMERA_HOME && open ."

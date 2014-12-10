@@ -90,7 +90,7 @@ export HTML_CSS_HOME=$PROG_HOME/html-css
 
 export HTML_LESS_HOME=$PROG_HOME/html-less
 
-export HTML_TEMPLATES_HOME=$HTMLCSS_HOME/templates
+export HTML_TEMPLATES_HOME=$HTML_CSS_HOME/templates
 
 export RUBY_HOME=$PROG_HOME/ruby
 
