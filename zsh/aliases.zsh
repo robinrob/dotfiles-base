@@ -864,7 +864,7 @@ alias afind="libfind_s $AWK_HOME"
 
 alias zshfind="file_grep ~/.zshrc"
 
-alias sshfind="file_grep ~/.ssh/config"
+alias sshf="file_grep ~/.ssh/config"
 
 # Records & docs
 alias erec="$EDITOR $IMPORTANT_HOME/records/record.txt"
