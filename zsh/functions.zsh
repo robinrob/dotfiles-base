@@ -253,7 +253,7 @@ function cd_save {
 }
 
 function cd_commit {
-	cd_action $1 rake_do commit
+	cd_action $1 rake_do git:commit
 }
 
 function cd_count_all {
@@ -261,7 +261,7 @@ function cd_count_all {
 }
 
 function cd_status {
-	cd_action $1 rake_do status
+	cd_action $1 rake_do git:status
 }
 
 function cd_diff {
