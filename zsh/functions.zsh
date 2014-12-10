@@ -240,6 +240,11 @@ function hcexample {
 	$EDITOR$EDITOR *
 }
 
+function hbprnew {
+  FILENAME=$1
+  cp $HTML_TEMPLATES_HOME/practice_bootstrap.html $FILENAME.html
+}
+
 function cd_pull {
 	output=`cd $1 && git branch | head -1 > /dev/null`
 	comps=("${(s/* /)output}") # notice the quotes
@@ -1545,4 +1550,11 @@ function grrm {
 
 function lsltr {
   ls -ltr --color=none | awk '{print $9}' | tail +2
+}
+
+function rsal {
+  for file in $alias_files
+  do
+    source $file
+  done
 }
