@@ -1558,3 +1558,9 @@ function rsal {
     source $file
   done
 }
+
+function cpb {
+  FILE=$1
+
+  cat $FILE && cat $FILE | pbcopy
+}
