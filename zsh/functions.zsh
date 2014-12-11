@@ -562,6 +562,10 @@ function rka {
 	git status
 }
 
+function jks {
+  rake_do jekyll:server
+}
+
 function null {
   if [ -z "$1" ]
   then
@@ -1567,4 +1571,18 @@ function cpb {
 
 function ngf {
   cp $RAKELIB_HOME/Gemfile ./
+}
+
+function gcmm {
+  MSG=$@
+
+  git_do commit -m "$MSG"
+}
+
+function git_do {
+  ACTION=$1
+  shift
+  ARGS=$@
+
+  git $ACTION $ARGS
 }

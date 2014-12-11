@@ -183,6 +183,8 @@ alias shell="print $SHELL"
 alias cdcocos="cd_dir $COCOS_HOME"
 
 # Shell shortcuts
+alias pag="ps aux | grep"
+
 alias pyv="python --version"
 
 alias die="killp chrome"
@@ -314,8 +316,6 @@ alias cdmb="cd_dir $JS_HOME/projects/mobile-app-cordova"
 alias cdg="cd_dir $JS_HOME/projects/mobile-game-cocos"
 
 # Development operations
-alias jks="jekyll serve"
-
 alias jkb="jekyll build --watch"
 
 alias pbu="pythonbrew use"
@@ -484,8 +484,6 @@ alias gpld="git push origin develop"
 alias gplm="git push origin master"
 
 alias gcm="git checkout master"
-
-alias gcmm="git commit -m"
 
 alias gcd="git checkout develop"
 
