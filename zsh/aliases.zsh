@@ -102,8 +102,6 @@ hash -d html-css="$HTMLCSS_HOME"
 # alias -g pro="projects"
 
 # Hash aliases
-alias js="javascript"
-
 
 # GNU aliases
 alias mv="gmv"
@@ -257,7 +255,7 @@ alias cddocs="cd_dir $DOCS_HOME"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
-alias cdmr="cd_dir $RUBY_HOME/projects/mrrobinsmith.com"
+alias cdmr="cd_dir $RUBY_HOME/projects/mrrobinsmith.com-jekyll"
 
 alias cdbp="cd_dir $MRROBINSMITHCOM_HOME/public/blogposts"
 
@@ -316,6 +314,10 @@ alias cdmb="cd_dir $JS_HOME/projects/mobile-app-cordova"
 alias cdg="cd_dir $JS_HOME/projects/mobile-game-cocos"
 
 # Development operations
+alias jks="jekyll serve"
+
+alias jkb="jekyll build --watch"
+
 alias pbu="pythonbrew use"
 
 alias pi="pip install -r requirements.txt"
