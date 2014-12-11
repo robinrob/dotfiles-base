@@ -1564,3 +1564,7 @@ function cpb {
 
   cat $FILE && cat $FILE | pbcopy
 }
+
+function ngf {
+  cp $RAKELIB_HOME/Gemfile ./
+}
