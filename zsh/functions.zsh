@@ -221,7 +221,7 @@ function zprnew {
   new_from_template $ZSH_HOME/templates/practice.zsh $FILENAME.zsh
 }
 
-function rnew {
+function rprnew {
   FILENAME=$1
   new_from_template $RUBY_HOME/templates/practice.rb $FILENAME.rb
 }
@@ -406,7 +406,7 @@ function exec_exists {
 function alias_exists {
 	NAME=$1
 	ALIAS_FILE=$2
-	result=`grep "alias $NAME" $ALIAS_FILE`
+	result=`grep "alias $NAME=" $ALIAS_FILE`
 	
 	if [[ "$result" == "" ]]
 	then
@@ -517,6 +517,22 @@ function file_grep {
 	grep -A 3 $2 $1
 }
 
+function rake_do_envs {
+	TASK=$@
+	
+	if [ -f Rakefile ]
+	then
+		print "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
+
+  	cmd="rake $TASK"
+
+    eval $cmd
+    green $cmd
+	else
+		red "No Rakefile!"
+	fi
+}
+
 function rake_do {
 	TASK=$1
 	
@@ -534,6 +550,7 @@ function rake_do {
 		fi
 
     eval $cmd
+    green $cmd
 	else
 		red "No Rakefile!"
 		# rake -f $RAKEFILE_HOME/Rakefile save
@@ -542,15 +559,19 @@ function rake_do {
 
 
 function rsd {
-	rake_do sub_deinit $@
+	rake_do git:deinit $@
 }
 
 function rks {
-	rake_do save $@
+  if [[ $*[-1] == "bitbucket" || $*[-1] == "github" ]] then
+    rake_do save "$*[1,-2]" $*[-1]
+  else
+    rake_do save "$*"
+  fi
 }
 
 function rkss {
-  rake_do each_sub $@
+  rake_do git:foreach $@
 }
 
 function rkc {
@@ -558,11 +579,12 @@ function rkc {
 }
 
 function rka {
-	rake_do add $@
+	rake_do git:add $@
 	git status
 }
 
 function jks {
+  browser http://localhost:4000
   rake_do jekyll:server
 }
 
@@ -597,7 +619,6 @@ function rakeup {
 
 function rakedown {
   rake git:deinit[rakelib]
-	rm -f Rakefile
 }
 
 function fabup {
@@ -657,26 +678,27 @@ function browser {
 	open -a $BROWSER "$@"
 }
 
+function bb_url {
+  typeset url
+  branch=$(git_branch)
+  url=`git config --get remote.bitbucket.url | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}'`
+	url="https://bitbucket.org/${url}/?at=$branch"
+  print $url
+}
+
 function bb {
+  typeset url
 	result=`ls -d .git 2> /dev/null`
 	if [ "$result" ]
 	then
-		# url=`git config --get remote.origin.url | awk '{split($1,a,"/"); print a[2]}'`
-    branch=$(git_branch)
-		url=`git config --get remote.origin.url | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}'`
-		url="https://bitbucket.org/${url}/?at=$branch"
-		green "Repo found: $url"
+    url=$(bb_url)
+    green "Repo found: $(bb_url)"
 	else
 		url="https://bitbucket.org/robinrob"
 	fi
 	
 	green "Opening $url ..."
 	open -a $BROWSER $url
-}
-
-function bb_url {
-	GIT_URL=`git config --get remote.origin.url`
-	print "https://bitbucket.org/`print $GIT_URL | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}'`"
 }
 
 function bb_commit_url {
@@ -690,6 +712,29 @@ function bbcm {
 
 function bbcmr {
 	open "`bb_commit_url $1`/raw"
+}
+
+function gh_url {
+  typeset url
+  branch=$(git_branch)
+  url=`git config --get remote.github.url | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}'`
+	url="https://github.com/${url}"
+  print $url
+}
+
+function gh {
+  typeset url
+	result=`ls -d .git 2> /dev/null`
+	if [ "$result" ]
+	then
+    url=$(gh_url)
+    green "Repo found: $(gh_url)"
+	else
+		url="https://github.com/robinrob"
+	fi
+	
+	green "Opening $url ..."
+	open -a $BROWSER $url
 }
 
 function cleanhome {
@@ -1087,6 +1132,14 @@ function git_checkout_master_if_on_detached_head {
 		red "On detached HEAD! $(green)Switching to branch $(yellow)master"
 		git checkout master
 	fi		
+}
+
+function git_remote_rename_origin_if_exists {
+  if [[ -n $(git config --get remote.origin.url) ]]
+  then
+    print "$(green)Found remote 'origin'. Renaming to $(yellow)bitbucket ..."
+    git remote rename origin bitbucket
+  fi
 }
 
 function rvm_gem_list {
@@ -1495,6 +1548,7 @@ autoload +X -U hello
 
 chpwd() {
 	git_checkout_master_if_on_detached_head
+  git_remote_rename_origin_if_exists
 }
 
 function shelltime {
@@ -1585,4 +1639,18 @@ function git_do {
   ARGS=$@
 
   git $ACTION $ARGS
+}
+
+function she {
+  FILE=$1
+  INTERPRETER=$2
+
+  prepend $FILE "#!/usr/bin/env $INTERPRETER\n"
+}
+
+function cr {
+  FILE=$1
+  
+  print "$(green)$(cat $FILE):
+  $(yellow)$(./$FILE)"
 }

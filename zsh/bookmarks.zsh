@@ -144,3 +144,11 @@ alias stage="chrome 'http://mrrobinsmith-stage.herokuapp.com'"
 alias security="chrome 'https://www.google.com/settings/security?hl=en'"
 
 alias prod="print 'http://mrrobinsmith.com/cv' | pbcopy && safari 'http://mrrobinsmith.com/cv'"
+
+alias githubpages="print 'http://robinrob.github.io' | pbcopy && safari 'http://robinrob.github.io'"
+
+alias ghpagesmr="print 'http://robinrob.github.io/mrrobinsmith.com' | pbcopy && safari 'http://robinrob.github.io/mrrobinsmith.com'"
+
+alias ghpages="print 'http://robinrob.github.io' | pbcopy && safari 'http://robinrob.github.io'"
+
+alias ghh="print 'https://github.com/robinrob' | pbcopy && safari 'https://github.com/robinrob'"

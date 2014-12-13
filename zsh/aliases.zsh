@@ -57,6 +57,7 @@ unalias cd 2> /dev/null
 
 unalias p 2> /dev/null
 
+unalias gh 2> /dev/null
 
 # Web Shortcuts/Bookmarks
 
@@ -316,6 +317,8 @@ alias cdmb="cd_dir $JS_HOME/projects/mobile-app-cordova"
 alias cdg="cd_dir $JS_HOME/projects/mobile-game-cocos"
 
 # Development operations
+alias jk="jekyll"
+
 alias jkb="jekyll build --watch"
 
 alias pbu="pythonbrew use"
@@ -346,13 +349,11 @@ alias rgd="rvm gemset delete"
 
 alias rvl="rvm list"
 
-
 alias rsc="rails console"
 
 alias plrk="cd rake; green 'Git-pulling rake ...'; git pull origin master; cd - > /dev/null"
 
 alias svrk="cd rake; green 'Rake-saving rake ...'; rake save; cd - > /dev/null"
-
 
 alias rkser="rake_do rails:server"
 
@@ -368,6 +369,8 @@ alias rkst="rake_do sort_sub"
 
 alias rk="rake"
 
+alias rkjc="rake_do jekyll:clean"
+
 alias gnb="gem install bundler && bundle install"
 
 alias gib="gem install bundler"
@@ -381,6 +384,7 @@ alias bu="bundle update"
 alias save="rake -f $GLOBAL_RAKEFILE_HOME/Rakefile save_code"
 
 #alias rksr="rake -f $RAKEFILE_HOME/Rakefile save"
+#
 
 alias rkrn="rake cocs:run"
 
@@ -405,6 +409,8 @@ alias fbd="fabdown"
 alias anew="new_s awk awk"
 
 alias pnew="new_s python py"
+
+alias rnew="new_s ruby rb"
 
 alias bnew="new_s bash sh"
 
@@ -505,17 +511,29 @@ alias grs="git remote show"
 
 alias grao="git remote add origin"
 
+alias gpo="git push origin"
+
 alias gpom="git push origin master"
 
+alias gpg="git push github"
+
+alias gpgm="git push github master"
+
+alias gpbm="git push bitbucket master"
+
 alias gplom="git pull origin master"
+
+alias gplgm="git pull github master"
+
+alias gplbm="git pull bitbucket master"
 
 alias gpod="git push origin develop"
 
 alias gplod="git pull origin develop"
 
-alias gsr="git submodule add git@bitbucket.org:robinrob/rakefile.git rake && ln -s rake/Rakefile Rakefile"
-
 # Development operations
+alias js="jekyll serve"
+
 alias cdnoc="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
 
 alias cdms="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
