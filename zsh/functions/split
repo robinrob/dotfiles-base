@@ -1,0 +1,8 @@
+
+SEPERATOR=$1
+WORD=$2
+
+WORDS=$(eval 'WORDS=("${(s/'$SEPERATOR'/)WORD}"); print $WORDS')
+
+join " " $WORDS
+

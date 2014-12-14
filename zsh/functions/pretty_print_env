@@ -1,0 +1,4 @@
+ENV=`upper $1`
+
+printf "$(green)$$ENV: $(yellow)$(eval print '$'$ENV)n"
+

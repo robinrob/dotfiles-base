@@ -1,0 +1,5 @@
+LESS_FILE=$1
+cmd="$LESSC_PATH $LESS_FILE > styles.css"
+green $cmd
+$cmd
+

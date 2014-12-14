@@ -1,0 +1,3 @@
+DATABAG=$1
+knife upload data bag $DATABAG
+

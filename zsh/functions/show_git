@@ -1,0 +1,7 @@
+if [ "$(is_git)" ]
+then
+	green "Is Git"
+else
+	red "Not Git"
+fi
+

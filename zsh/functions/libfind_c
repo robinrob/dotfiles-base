@@ -1,0 +1,2 @@
+libfind -c yes -d $1 -p $2
+

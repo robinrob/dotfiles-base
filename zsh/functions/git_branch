@@ -1,0 +1,3 @@
+output=`git branch | head -1`
+echo $output[3,-1]
+
