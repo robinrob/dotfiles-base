@@ -1,3 +1,0 @@
-PROJECT=$1
-cat $HTML_TEMPLATES_HOME/template.html | sed 's/Title/'$PROJECT'/' > $PROJECT.html
-

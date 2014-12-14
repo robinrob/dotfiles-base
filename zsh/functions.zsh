@@ -7,17 +7,17 @@ source ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/colors.zsh
 
 
 function upper {
-	TEXT="$@"
-	print $TEXT:u
+  TEXT="$@"
+  print $TEXT:u
 }
 
 function lower {
-	TEXT="$@"
-	print $TEXT:l
+  TEXT="$@"
+  print $TEXT:l
 }
 
 function join {
-	local IFS="$1"; shift; print "$*";
+  local IFS="$1"; shift; print "$*";
 }
 
 function split {
@@ -30,42 +30,42 @@ function split {
 }
 
 function join_args {
-	IFS=""
-	print "$*"
+  IFS=""
+  print "$*"
 }
 
 function cat_print {
-	cat $1 && cat $1 | pbcopy
+  cat $1 && cat $1 | pbcopy
 }
 
 function copy_print {
-	print $1 && print $1 | pbcopy
+  print $1 && print $1 | pbcopy
 }
 
 function get_record {
   RECORD=$1
-	cmd="grep $RECORD $RECORDS_PATH"
-	val=$(eval "$cmd")
-	val2=`print ""$val"" | awk -F:: '{print $2}'`
-	copy_print ""$val2""
+  cmd="grep $RECORD $RECORDS_PATH"
+  val=$(eval "$cmd")
+  val2=`print ""$val"" | awk -F:: '{print $2}'`
+  copy_print ""$val2""
 }
 
 function email {
-	ADDRESS=$1
-	SUBJECT=$2
-	BODY=$3
-	
-	print "$BODY" | mail -s "$SUBJECT" "$ADDRESS"
+  ADDRESS=$1
+  SUBJECT=$2
+  BODY=$3
+  
+  print "$BODY" | mail -s "$SUBJECT" "$ADDRESS"
 }
 
 function reminder {
-	ADDRESS=$1
-	MESSAGE=$2
-	email $ADDRESS "REMINDER: $MESSAGE"
+  ADDRESS=$1
+  MESSAGE=$2
+  email $ADDRESS "REMINDER: $MESSAGE"
 }
 
 function note {
-	cd $TEMP_HOME && $EDITOR "$1.txt"
+  cd $TEMP_HOME && $EDITOR "$1.txt"
 }
 
 function song {
@@ -74,84 +74,84 @@ function song {
 }
 
 function write {
-	cd $DOCS_HOME/creative/writing && $EDITOR "$1.txt"
+  cd $DOCS_HOME/creative/writing && $EDITOR "$1.txt"
 }
 
 function prepend {
-	FILE=$1
-	TEXT=$2
-	
-	CONTENTS=`cat $FILE`
-	rm $FILE
-	print $TEXT > $FILE
-	print $CONTENTS >> $FILE
+  FILE=$1
+  TEXT=$2
+  
+  CONTENTS=`cat $FILE`
+  rm $FILE
+  print $TEXT > $FILE
+  print $CONTENTS >> $FILE
 }
 
 function new {
-	while getopts :i:e:f:o: name
-	do
-		case $name in
-			i) INTERPRETER="$OPTARG" ;;
-			e) EXTENSION="$OPTARG" ;;
-			f) FILENAME="$OPTARG" ;;
-			o) NO_OPEN="$OPTARG" ;;
-			*) usage ;;                # display usage and exit
-		esac
-	done
+  while getopts :i:e:f:o: name
+  do
+  	case $name in
+  		i) INTERPRETER="$OPTARG" ;;
+  		e) EXTENSION="$OPTARG" ;;
+  		f) FILENAME="$OPTARG" ;;
+  		o) NO_OPEN="$OPTARG" ;;
+  		*) usage ;;                # display usage and exit
+  	esac
+  done
 
 
   FILE=$(extend_file $FILENAME $EXTENSION)
 
-	FILE_DISPLAY=$(yellow $FILE)
-	COLOR="green"
-	CREATE_SHEBANG_MSG="$COLOR 'Creating, +x-ing and shebanging new file: $FILE_DISPLAY'"
-	SHEBANG_MSG="$COLOR 'Shebanging and +x''ing existing file: $FILE_DISPLAY'"
-	CREATE_MSG="$COLOR 'Creating new file: $FILE_DISPLAY'"
-	OPEN_MSG="$COLOR 'Opening existing file: $FILE_DISPLAY'"
-	
-	if ! [ -f $FILE ]
-	then
-		if [ -n "$INTERPRETER" ]
-		then	
-			eval $CREATE_SHEBANG_MSG
-			print "#!/usr/bin/env $INTERPRETER" > $FILE
-			chmod +x $FILE
-		else
-			eval $CREATE_MSG
-			touch $FILE
-		fi
-	else
-		if [ -n "$INTERPRETER" ]
-		then
-			eval $SHEBANG_MSG
-			prepend $FILE "#!/usr/bin/env $INTERPRETER\n"
-			chmod +x $FILE
-		else
-			eval $OPEN_MSG
-		fi
-	fi
-	
-	# Reset variables for subsequent executions!
+  FILE_DISPLAY=$(yellow $FILE)
+  COLOR="green"
+  CREATE_SHEBANG_MSG="$COLOR 'Creating, +x-ing and shebanging new file: $FILE_DISPLAY'"
+  SHEBANG_MSG="$COLOR 'Shebanging and +x''ing existing file: $FILE_DISPLAY'"
+  CREATE_MSG="$COLOR 'Creating new file: $FILE_DISPLAY'"
+  OPEN_MSG="$COLOR 'Opening existing file: $FILE_DISPLAY'"
+  
+  if ! [ -f $FILE ]
+  then
+  	if [ -n "$INTERPRETER" ]
+  	then	
+  		eval $CREATE_SHEBANG_MSG
+  		print "#!/usr/bin/env $INTERPRETER" > $FILE
+  		chmod +x $FILE
+  	else
+  		eval $CREATE_MSG
+  		touch $FILE
+  	fi
+  else
+  	if [ -n "$INTERPRETER" ]
+  	then
+  		eval $SHEBANG_MSG
+  		prepend $FILE "#!/usr/bin/env $INTERPRETER\n"
+  		chmod +x $FILE
+  	else
+  		eval $OPEN_MSG
+  	fi
+  fi
+  
+  # Reset variables for subsequent executions!
   unset INTERPRETER
   unset FILENAME
   unset EXTENSION
-	
-	if ! [[ "$NO_OPEN" == "noopen" ]]
-	then
-		$EDITOR $FILE
-	fi
+  
+  if ! [[ "$NO_OPEN" == "noopen" ]]
+  then
+  	$EDITOR $FILE
+  fi
 
   print -z ./$FILE
 }
 
 # Shortcut for `new` function
 function new_s {
-	INTERPRETER=$1
-	EXTENSION=$2
-	FILENAME=$3
-	NOOPEN=$4
-	
-	new -i $INTERPRETER -e $EXTENSION -f $FILENAME
+  INTERPRETER=$1
+  EXTENSION=$2
+  FILENAME=$3
+  NOOPEN=$4
+  
+  new -i $INTERPRETER -e $EXTENSION -f $FILENAME
 }
 
 function extend_file {
@@ -169,36 +169,36 @@ function extend_file {
 }
 
 function hnew {
-	PROJECT=$1
-	cat $HTML_TEMPLATES_HOME/template.html | sed 's/Title/'$PROJECT'/' > $PROJECT.html
+  PROJECT=$1
+  cat $HTML_TEMPLATES_HOME/template.html | sed 's/Title/'$PROJECT'/' > $PROJECT.html
 }
 
 function hcnew {
-	PROJECT=$1
-	cat $HTML_TEMPLATES_HOME/practice_css.html | sed 's/Title/'$PROJECT'/' > $PROJECT.html
+  PROJECT=$1
+  cat $HTML_TEMPLATES_HOME/practice_css.html | sed 's/Title/'$PROJECT'/' > $PROJECT.html
 }
 
 function hlnew {
-	PROJECT=$1
-	mkdir $PROJECT
-	cat $HTML_TEMPLATES_HOME/template.html | sed 's/Title/'$PROJECT'/' > $PROJECT/$PROJECT.html
-	touch $PROJECT/styles.less
-	cd $PROJECT
+  PROJECT=$1
+  mkdir $PROJECT
+  cat $HTML_TEMPLATES_HOME/template.html | sed 's/Title/'$PROJECT'/' > $PROJECT/$PROJECT.html
+  touch $PROJECT/styles.less
+  cd $PROJECT
 }
 
 function hjnew {
-	PROJECT=$1
-	cat $HTML_TEMPLATES_HOME/practice_js.html | sed 's/Title/'$PROJECT'/' > $PROJECT.html
+  PROJECT=$1
+  cat $HTML_TEMPLATES_HOME/practice_js.html | sed 's/Title/'$PROJECT'/' > $PROJECT.html
 }
 
 function hbnew {
-	PROJECT=$1
-	cat $HTML_TEMPLATES_HOME/practice_bootstrap.html | sed 's/Title/'$PROJECT'/' > $PROJECT.html
+  PROJECT=$1
+  cat $HTML_TEMPLATES_HOME/practice_bootstrap.html | sed 's/Title/'$PROJECT'/' > $PROJECT.html
 }
 
 function jsnew {
-	new -i node -e js -o noopen -f $1
-	print "\nrequire(process.env.JS_LIB_HOME + '/log')" >> $1.js
+  new -i node -e js -o noopen -f $1
+  print "\nrequire(process.env.JS_LIB_HOME + '/log')" >> $1.js
 }
 
 function new_from_template {
@@ -232,12 +232,12 @@ function plnew {
 }
 
 function hcexample {
-	PROJECT=$1
-	mkdir $PROJECT
-	cd $PROJECT
-	hnew $PROJECT
-	cssnew "style"
-	$EDITOR$EDITOR *
+  PROJECT=$1
+  mkdir $PROJECT
+  cd $PROJECT
+  hnew $PROJECT
+  cssnew "style"
+  $EDITOR$EDITOR *
 }
 
 function hbprnew {
@@ -246,181 +246,181 @@ function hbprnew {
 }
 
 function cd_pull {
-	output=`cd $1 && git branch | head -1 > /dev/null`
-	comps=("${(s/* /)output}") # notice the quotes
-	branch=$comps[2]
+  output=`cd $1 && git branch | head -1 > /dev/null`
+  comps=("${(s/* /)output}") # notice the quotes
+  branch=$comps[2]
 
-	cd $1 && git pull origin $branch
+  cd $1 && git pull origin $branch
 }
 
 function cd_save {
-	cd_action $1 rake_do save
+  cd_action $1 rake_do save
 }
 
 function cd_commit {
-	cd_action $1 rake_do git:commit
+  cd_action $1 rake_do git:commit
 }
 
 function cd_count_all {
-	cd_action $1 rake_do count_all
+  cd_action $1 rake_do count_all
 }
 
 function cd_status {
-	cd_action $1 rake_do git:status
+  cd_action $1 rake_do git:status
 }
 
 function cd_diff {
-	cd_action $1 git diff
+  cd_action $1 git diff
 }
 
 function cd_action {
-	REPO=$1
-	cd $REPO
-	print "$(green "In repo: ")$(yellow $REPO)"
-	shift
-	$@
-	cd - > /dev/null
+  REPO=$1
+  cd $REPO
+  print "$(green "In repo: ")$(yellow $REPO)"
+  shift
+  $@
+  cd - > /dev/null
 }
 
 function opens {
-	cd $SCREENSHOTS_HOME && despace && open `lasts`
+  cd $SCREENSHOTS_HOME && despace && open `lasts`
 }
 
 function rns {
   NAME=$1
 
-	cd $SCREENSHOTS_HOME && despace
+  cd $SCREENSHOTS_HOME && despace
   LAST=$(lsltr | tail -1)
   cp $LAST $NAME
   print "$(green)Copied $(yellow)$LAST $(green)to $(yellow)$NAME"
 }
 
 function t3389 {
-	telnet $1 3389
+  telnet $1 3389
 }
 
 function t22 {
-	telnet $1 22
+  telnet $1 22
 }
 
 function wopen {
-	$EDITOR `which $1`
+  $EDITOR `which $1`
 }
 
 function jlint {
-	cat $1 | jsonlint
+  cat $1 | jsonlint
 }
 
 function docs {
-	HOSTNAME=$1
-	return $FILES_NAME/$HOSTNAME/docs
+  HOSTNAME=$1
+  return $FILES_NAME/$HOSTNAME/docs
 }
 
 function gcr {
-	`git clone -b master git@bitbucket.org:robinrob/$1.git`
+  `git clone -b master git@bitbucket.org:robinrob/$1.git`
 }
 
 function mvd {
-	mv ~/Downloads/$1 $2
+  mv ~/Downloads/$1 $2
 }
 
 function color_words {
-	TEXT=$1
-	PATTERN=$2
-	COLOR=$3
-	print $TEXT | gsed "s/$PATTERN/$($COLOR $PATTERN)/gI"
+  TEXT=$1
+  PATTERN=$2
+  COLOR=$3
+  print $TEXT | gsed "s/$PATTERN/$($COLOR $PATTERN)/gI"
 }
 
 function libfind {
-	COLOR='maganda'
-	while getopts :c:d:p: name
-	do
-		case $name in
-			c) CAT="$OPTARG" ;;
-			d) DIR="$OPTARG" ;;
-			p) PATTERN="$OPTARG" ;;
-			*) usage ;;                # display usage and exit
-		esac
-	done
-	
-	result_grep="`ggrep --binary-file=without-match --line-number -i --no-messages --recursive --word-regexp $PATTERN $DIR`"
-	# grep -ri $PATTERN $DIR
-	# result_grep="`grep -ri $PATTERN $DIR`"
-	results=("${(f)result_grep}")
+  COLOR='maganda'
+  while getopts :c:d:p: name
+  do
+  	case $name in
+  		c) CAT="$OPTARG" ;;
+  		d) DIR="$OPTARG" ;;
+  		p) PATTERN="$OPTARG" ;;
+  		*) usage ;;                # display usage and exit
+  	esac
+  done
+  
+  result_grep="`ggrep --binary-file=without-match --line-number -i --no-messages --recursive --word-regexp $PATTERN $DIR`"
+  # grep -ri $PATTERN $DIR
+  # result_grep="`grep -ri $PATTERN $DIR`"
+  results=("${(f)result_grep}")
 
-	if [ -n "$results" ]
-	then
-		for result in $results
-		do
-			color_words $result $PATTERN $COLOR
-		done
-	fi
-	
-	result_find=`find $DIR -path ./lib -prune -o -type f -name "*$PATTERN*"`
-	results=("${(f)result_find}")
+  if [ -n "$results" ]
+  then
+  	for result in $results
+  	do
+  		color_words $result $PATTERN $COLOR
+  	done
+  fi
+  
+  result_find=`find $DIR -path ./lib -prune -o -type f -name "*$PATTERN*"`
+  results=("${(f)result_find}")
 
-	for result in $results
-	do
+  for result in $results
+  do
 
-		if [[ "$CAT" == "" ]]
-		then
-			color_words $result $PATTERN $COLOR
-		else
-			# If CAT not null
-			eval "$COLOR $result"
-			color_words "`cat $result`" $PATTERN $COLOR
-		fi
-	done
+  	if [[ "$CAT" == "" ]]
+  	then
+  		color_words $result $PATTERN $COLOR
+  	else
+  		# If CAT not null
+  		eval "$COLOR $result"
+  		color_words "`cat $result`" $PATTERN $COLOR
+  	fi
+  done
 }
 
 # cat
 function libfind_c {
-	libfind -c yes -d $1 -p $2
+  libfind -c yes -d $1 -p $2
 }
 
 # libfind-shortcut
 function libfind_s {
-	DIR=$1
-	PATTERN=$2
-	CAT=$3
-	
-	if [[ "$CAT" == "no" ]]
-	then
-			libfind -d $1 -p $2 -c ""
-	else
-			libfind -d $1 -p $2 -c yes
-	fi
+  DIR=$1
+  PATTERN=$2
+  CAT=$3
+  
+  if [[ "$CAT" == "no" ]]
+  then
+  		libfind -d $1 -p $2 -c ""
+  else
+  		libfind -d $1 -p $2 -c yes
+  fi
 }
 
 function exec_exists {
-	EXEC=$1
-	
-	if [[ "`which $EXEC`" == "$EXEC not found" ]]
-	then
-		print "no"
-	else
-		print "yes"
-	fi
+  EXEC=$1
+  
+  if [[ "`which $EXEC`" == "$EXEC not found" ]]
+  then
+  	print "no"
+  else
+  	print "yes"
+  fi
 }
 
 function alias_exists {
-	NAME=$1
-	ALIAS_FILE=$2
-	result=`grep "alias $NAME=" $ALIAS_FILE`
-	
-	if [[ "$result" == "" ]]
-	then
-		print "no"	
-	else
-		print "yes"
-	fi
+  NAME=$1
+  ALIAS_FILE=$2
+  result=`grep "alias $NAME=" $ALIAS_FILE`
+  
+  if [[ "$result" == "" ]]
+  then
+  	print "no"	
+  else
+  	print "yes"
+  fi
 }
 
 function create_alias {
-	NAME=$1
-	VALUE=$2
-	ALIAS_FILE=$3
-	SUCCESS_MSG=$4
+  NAME=$1
+  VALUE=$2
+  ALIAS_FILE=$3
+  SUCCESS_MSG=$4
 
   while getopts :o: name
   do
@@ -430,17 +430,17 @@ function create_alias {
     esac
   done
 
-	if [[ "$(alias_exists $NAME $ALIAS_FILE)" == "no" ]]
-	then
-		print "
+  if [[ "$(alias_exists $NAME $ALIAS_FILE)" == "no" ]]
+  then
+  	print "
 alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
-		print "$SUCCESS_MSG"
-	else
+  	print "$SUCCESS_MSG"
+  else
     if ! [[ $OVERRIDE == "yes" ]]
     then
-		  red "Alias already exists!"
+  	  red "Alias already exists!"
     fi
-	fi
+  fi
 
   print -z $NAME
 }
@@ -448,41 +448,41 @@ alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 function delete_alias {
   for alias in $*
   do
-	  if [[ -n $alias ]]
-		  then
-		  for file in $alias_files
-		  do
+    if [[ -n $alias ]]
+  	  then
+  	  for file in $alias_files
+  	  do
         sed -i '/alias '$alias'=/d' $file && builtin unalias $alias 2> /dev/null
-		  done
-	  fi
+  	  done
+    fi
     print "$(green)Removed alias: $(yellow)$alias" 
   done
 }
 
 function al {
-	create_alias $1 $2 $DOTFILES_HOME/aliases.zsh
+  create_alias $1 $2 $DOTFILES_HOME/aliases.zsh
 }
 
 function bookmark {
-	create_bookmark $BOOKMARKS_PATH $@
+  create_bookmark $BOOKMARKS_PATH $@
 }
 
 function home_bookmark {
-	create_bookmark $WORKBOOKMARKS_PATH $@ safari
+  create_bookmark $WORKBOOKMARKS_PATH $@ safari
 }
 
 function work_bookmark {
-	create_bookmark $WORKBOOKMARKS_PATH $@ chrome
+  create_bookmark $WORKBOOKMARKS_PATH $@ chrome
 }
 
 function create_bookmark {
-	BOOKMARKS_PATH=$1
-	NAME=$2
-	URL=$3
-	BROWSER=$4
-	
-	if [ -z "$BROWSER" ]
-	then
+  BOOKMARKS_PATH=$1
+  NAME=$2
+  URL=$3
+  BROWSER=$4
+  
+  if [ -z "$BROWSER" ]
+  then
     if [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
     then
       BROWSER="safari"
@@ -491,75 +491,75 @@ function create_bookmark {
       BROWSER="chrome"
     fi
   fi
-	
-	ALIAS="print '${URL}' | pbcopy && ${BROWSER} '${URL}'"
+  
+  ALIAS="print '${URL}' | pbcopy && ${BROWSER} '${URL}'"
   SUCCESS_MSG="$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
-	
-	create_alias $NAME $ALIAS $BOOKMARKS_PATH $SUCCESS_MSG
-	
-	source $BOOKMARKS_PATH
+  
+  create_alias $NAME $ALIAS $BOOKMARKS_PATH $SUCCESS_MSG
+  
+  source $BOOKMARKS_PATH
 }
 
 function fr {
-	PATTERN=$1
-	find . -name "*$PATTERN*" 2> /dev/null
+  PATTERN=$1
+  find . -name "*$PATTERN*" 2> /dev/null
 }
 
 function gr {
-	grep -ri $@ *
+  grep -ri $@ *
 }
 
 function egr {
-	egrep -ri $@ *
+  egrep -ri $@ *
 }
 
 function file_grep {
-	grep -A 3 $2 $1
+  grep -A 3 $2 $1
 }
 
 function rake_do_envs {
-	TASK=$@
-	
-	if [ -f Rakefile ]
-	then
-		print "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
+  TASK=$@
+  
+  if [ -f Rakefile ]
+  then
+  	print "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
 
   	cmd="rake $TASK"
 
     eval $cmd
     green $cmd
-	else
-		red "No Rakefile!"
-	fi
+  else
+  	red "No Rakefile!"
+  fi
 }
 
 function rake_do {
-	TASK=$1
-	
-	if [ -f Rakefile ]
-	then
-		print "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
+  TASK=$1
+  
+  if [ -f Rakefile ]
+  then
+  	print "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
 
     shift
 
     if [[ -n $* ]]
     then
       cmd='rake '$TASK'['''$(join ', ' $*)''']'
-		else
-			cmd="rake $TASK"
-		fi
+  	else
+  		cmd="rake $TASK"
+  	fi
 
     eval $cmd
     green $cmd
-	else
-		red "No Rakefile!"
-		# rake -f $RAKEFILE_HOME/Rakefile save
-	fi
+  else
+  	red "No Rakefile!"
+  	# rake -f $RAKEFILE_HOME/Rakefile save
+  fi
 }
 
 
 function rsd {
-	rake_do git:deinit $@
+  rake_do git:deinit $@
 }
 
 function rks {
@@ -575,12 +575,12 @@ function rkss {
 }
 
 function rkc {
-	rake_do git:commit $@
+  rake_do git:commit $@
 }
 
 function rka {
-	rake_do git:add $@
-	git status
+  rake_do git:add $@
+  git status
 }
 
 function jks {
@@ -599,21 +599,21 @@ function null {
 
 function killp {
   PROCESS=$1
-	if [ -z "$PROCESS" ]
+  if [ -z "$PROCESS" ]
   then
-		red "Must give name of process!"
-		
-	else
+  	red "Must give name of process!"
+  	
+  else
     print "$(green)Killing all $(yellow)${PROCESS} $(green)processes ...$(default)"
-		
-		ps aux | grep -i $PROCESS | awk '{print $2}' | xargs kill -KILL 2> /dev/null
-	fi
+  	
+  	ps aux | grep -i $PROCESS | awk '{print $2}' | xargs kill -KILL 2> /dev/null
+  fi
 }
 
 function rakeup {
   rm -rf rakelib
   git rm -r --cached rakelib
-	git submodule add --force git@bitbucket.org:robinrob/rakelib.git
+  git submodule add --force git@bitbucket.org:robinrob/rakelib.git
   touch Rakefile
 }
 
@@ -622,42 +622,42 @@ function rakedown {
 }
 
 function fabup {
-	gsa git@bitbucket.org:robinrob/fabfile.git fabfile
-	ln -s fabfile/fabfile.py ./
+  gsa git@bitbucket.org:robinrob/fabfile.git fabfile
+  ln -s fabfile/fabfile.py ./
 }
 
 function fabdown {
-	fab sub_deinit:fabfile
-	rm fabfile.py
+  fab sub_deinit:fabfile
+  rm fabfile.py
 }
 
 function lsd {
-	ls `dirname $1`
+  ls `dirname $1`
 }
 
 function silent_cp {
-	yes | cp $1 $2 1> /dev/null 2> /dev/null
+  yes | cp $1 $2 1> /dev/null 2> /dev/null
 }
 
 function silent {
-	`$@ 2> /dev/null`
+  `$@ 2> /dev/null`
 }
 
 function save_crontab {
-	CRON_NAME="$HOSTNAME.cron"
-	SAVE_PATH="$DOTFILES_HOME/$CRON_NAME"
-	TMP_PATH="${SAVE_PATH}.tmp"
-	
-	rm -f $SAVE_PATH
-	green "Saving crontab to $SAVE_PATH ..."
-	crontab -l > $TMP_PATH
-	silent_cp $TMP_PATH $SAVE_PATH
-	rm $TMP_PATH
+  CRON_NAME="$HOSTNAME.cron"
+  SAVE_PATH="$DOTFILES_HOME/$CRON_NAME"
+  TMP_PATH="${SAVE_PATH}.tmp"
+  
+  rm -f $SAVE_PATH
+  green "Saving crontab to $SAVE_PATH ..."
+  crontab -l > $TMP_PATH
+  silent_cp $TMP_PATH $SAVE_PATH
+  rm $TMP_PATH
 }
 
 function save_jetbrains {
-	print "$(green "Copying Jetbrains config from: ")$(yellow "$INTELLIJ_CONFIG ...")"
-	silent_cp $INTELLIJ_CONFIG $DOTFILES_HOME/
+  print "$(green "Copying Jetbrains config from: ")$(yellow "$INTELLIJ_CONFIG ...")"
+  silent_cp $INTELLIJ_CONFIG $DOTFILES_HOME/
 }
 
 function save_homebrew {
@@ -667,196 +667,196 @@ function save_homebrew {
 }
 
 function cd_dir {
-	cd "$(join / $@)"
+  cd "$(join / $@)"
 }
 
 function cddir {
-	cd `dirname $1`
+  cd `dirname $1`
 }
 
 function browser {
-	open -a $BROWSER "$@"
+  open -a $BROWSER "$@"
 }
 
 function bb_url {
   typeset url
   branch=$(git_branch)
   url=`git config --get remote.bitbucket.url | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}'`
-	url="https://bitbucket.org/${url}/?at=$branch"
+  url="https://bitbucket.org/${url}/?at=$branch"
   print $url
 }
 
 function bb {
   typeset url
-	result=`ls -d .git 2> /dev/null`
-	if [ "$result" ]
-	then
+  result=`ls -d .git 2> /dev/null`
+  if [ "$result" ]
+  then
     url=$(bb_url)
     green "Repo found: $(bb_url)"
-	else
-		url="https://bitbucket.org/robinrob"
-	fi
-	
-	green "Opening $url ..."
-	open -a $BROWSER $url
+  else
+  	url="https://bitbucket.org/robinrob"
+  fi
+  
+  green "Opening $url ..."
+  open -a $BROWSER $url
 }
 
 function bb_commit_url {
-	COMMIT=$1
-	print "`bb_url`/commits/$COMMIT"
+  COMMIT=$1
+  print "`bb_url`/commits/$COMMIT"
 }
 
 function bbcm {
-	open `bb_commit_url $1`
+  open `bb_commit_url $1`
 }
 
 function bbcmr {
-	open "`bb_commit_url $1`/raw"
+  open "`bb_commit_url $1`/raw"
 }
 
 function gh_url {
   typeset url
   branch=$(git_branch)
   url=`git config --get remote.github.url | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}'`
-	url="https://github.com/${url}"
+  url="https://github.com/${url}"
   print $url
 }
 
 function gh {
   typeset url
-	result=`ls -d .git 2> /dev/null`
-	if [ "$result" ]
-	then
+  result=`ls -d .git 2> /dev/null`
+  if [ "$result" ]
+  then
     url=$(gh_url)
     green "Repo found: $(gh_url)"
-	else
-		url="https://github.com/robinrob"
-	fi
-	
-	green "Opening $url ..."
-	open -a $BROWSER $url
+  else
+  	url="https://github.com/robinrob"
+  fi
+  
+  green "Opening $url ..."
+  open -a $BROWSER $url
 }
 
 function cleanhome {
   cd ~
-	for file in `gfind . -maxdepth 1 \( ! -regex '.*/\..*' \) -type f`
-	do
-		green "Moving $file to $TRASH_HOME"
+  for file in `gfind . -maxdepth 1 \( ! -regex '.*/\..*' \) -type f`
+  do
+  	green "Moving $file to $TRASH_HOME"
     mv "${(q)file}" ~/.Trash
-	done
+  done
   cd -
 }
 
 function dir_exists {
-	ls -d $1 2> /dev/null 1> /dev/null && print "yes"
+  ls -d $1 2> /dev/null 1> /dev/null && print "yes"
 }
 
 function is_git {
-	dir_exists '.git'
+  dir_exists '.git'
 }
 
 function is_chef {
-	dir_exists '.chef'
+  dir_exists '.chef'
 }
 
 function show_git {
-	if [ "$(is_git)" ]
-	then
-		green "Is Git"
-	else
-		red "Not Git"
-	fi
+  if [ "$(is_git)" ]
+  then
+  	green "Is Git"
+  else
+  	red "Not Git"
+  fi
 }
 
 function gro {
-	if [ "$(is_git)" ]
-	then
-		green `git_origin`
-	else
-		red "Not Git"
-	fi 
+  if [ "$(is_git)" ]
+  then
+  	green `git_origin`
+  else
+  	red "Not Git"
+  fi 
 }
 
 function git_origin {
-	if [ "$(is_git)" ]
-	then
-		print `git config --get remote.origin.url`
-	fi
+  if [ "$(is_git)" ]
+  then
+  	print `git config --get remote.origin.url`
+  fi
 }
 
 function delexcept {
-	while getopts :r:f: name
-	do
-		case $name in
-			r) REGEX="$OPTARG" ;;
-	    f) FOR_REAL="$OPTARG" ;;
-	    *) usage ;;
-		esac
-	done
+  while getopts :r:f: name
+  do
+  	case $name in
+  		r) REGEX="$OPTARG" ;;
+      f) FOR_REAL="$OPTARG" ;;
+      *) usage ;;
+  	esac
+  done
 
-	if [ -n "$FOR_REAL" ]
-	then
-		red "Executing for real!"
-		despace -t d && find . -depth 1 \( ! -regex ".*$REGEX.*" \) | xargs rm -r
-	else
-		green "Running in test mode."
-		despace -t d && find . -depth 1 \( ! -regex ".*$REGEX.*" \) | xargs
-	fi
-	
-	FOR_REAL=''
-	REGEX=''
+  if [ -n "$FOR_REAL" ]
+  then
+  	red "Executing for real!"
+  	despace -t d && find . -depth 1 \( ! -regex ".*$REGEX.*" \) | xargs rm -r
+  else
+  	green "Running in test mode."
+  	despace -t d && find . -depth 1 \( ! -regex ".*$REGEX.*" \) | xargs
+  fi
+  
+  FOR_REAL=''
+  REGEX=''
 }
 
 function count_non_empty {
-	grep . $1 | wc -l
+  grep . $1 | wc -l
 }
 
 function lsp {
-	ls $1 | pb
+  ls $1 | pb
 }
 
 function lsa {
-	ls $PWD/$1
+  ls $PWD/$1
 }
 
 function lsad {
-	ls -d $PWD/$1
+  ls -d $PWD/$1
 }
 
 function urlencode {
-	setopt localoptions extendedglob
-	input=( ${(s::)@} )
-	print ${(j::)input/(#b)([^A-Za-z0-9_.!~*\'\(\)-])/%$(([##16]#match))}
+  setopt localoptions extendedglob
+  input=( ${(s::)@} )
+  print ${(j::)input/(#b)([^A-Za-z0-9_.!~*\'\(\)-])/%$(([##16]#match))}
 }
 
 function points {
-	browser "https://sites.google.com/a/cloudreach.co.uk/points-lists/system/app/pages/search?scope=search-site&q=`urlencode $@`"
+  browser "https://sites.google.com/a/cloudreach.co.uk/points-lists/system/app/pages/search?scope=search-site&q=`urlencode $@`"
 }
 
 
 function drive {
-	browser "https://drive.google.com/a/cloudreach.co.uk/#search/`urlencode $@`"
+  browser "https://drive.google.com/a/cloudreach.co.uk/#search/`urlencode $@`"
 }
 
 
 function rubygems {
-	browser "https://rubygems.org/search?utf8=%E2%9C%93&query=`urlencode $@`"
+  browser "https://rubygems.org/search?utf8=%E2%9C%93&query=`urlencode $@`"
 }
 
 function sfs {
-	open -a Safari "http://my.safaribooksonline.com/search?q=`urlencode $@`"
+  open -a Safari "http://my.safaribooksonline.com/search?q=`urlencode $@`"
 }
 
 function wiki {
-	browser "http://en.wikipedia.org/wiki/Special:Search?search=`urlencode $@`&go=Go"
+  browser "http://en.wikipedia.org/wiki/Special:Search?search=`urlencode $@`&go=Go"
 }
 
 function imdb {
-	browser "http://www.imdb.com/find?ref_=nv_sr_fn&q=`urlencode $@`&s=all"
+  browser "http://www.imdb.com/find?ref_=nv_sr_fn&q=`urlencode $@`&s=all"
 }
 
 function google {
-	browser "https://www.google.ca/#q=`urlencode $@`&safe=active"
+  browser "https://www.google.ca/#q=`urlencode $@`&safe=active"
 }
 
 function bbs {
@@ -864,159 +864,159 @@ function bbs {
 }
 
 function rubydoc {
-	browser "http://ruby-doc.com/search.html?&q=`urlencode $@`"
+  browser "http://ruby-doc.com/search.html?&q=`urlencode $@`"
 }
 
 function amz {
-	browser "http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=`urlencode $@`"
+  browser "http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=`urlencode $@`"
 }
 
 function ytube {
-	browser "https://www.youtube.com/results?search_query=`urlencode $@`"
+  browser "https://www.youtube.com/results?search_query=`urlencode $@`"
 }
 
 function stack {
-	browser "http://stackoverflow.com/search?q=`urlencode $@`"
+  browser "http://stackoverflow.com/search?q=`urlencode $@`"
 }
 
 function ask {
 
-	browser "http://stackoverflow.com/questions/ask?title=`urlencode $@`"
+  browser "http://stackoverflow.com/questions/ask?title=`urlencode $@`"
 }
 
 function sf {
-	browser "https://cloudreach.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?searchType=2&sen=01t&sen=a0D&sen=098&sen=800&sen=005&sen=00P&sen=006&sen=501&sen=001&sen=00T&sen=00U&sen=810&sen=500&sen=003&sen=00O&sen=00a&sen=a08&sen=550&str=`urlencode $@`"
+  browser "https://cloudreach.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?searchType=2&sen=01t&sen=a0D&sen=098&sen=800&sen=005&sen=00P&sen=006&sen=501&sen=001&sen=00T&sen=00U&sen=810&sen=500&sen=003&sen=00O&sen=00a&sen=a08&sen=550&str=`urlencode $@`"
 }
 
 function cases {
-	ID=$1
-	open -a $BROWSER "https://cloudreach.my.salesforce.com/500?fcf=$ID"
+  ID=$1
+  open -a $BROWSER "https://cloudreach.my.salesforce.com/500?fcf=$ID"
 }
 
 function translate {
-	while getopts :f:t: name
-	do
-		case $name in
-			f) FROM="$OPTARG" ;;
-			t) TO="$OPTARG" ;;
-			*) usage ;;                # display usage and exit
-		esac
-	done
+  while getopts :f:t: name
+  do
+  	case $name in
+  		f) FROM="$OPTARG" ;;
+  		t) TO="$OPTARG" ;;
+  		*) usage ;;                # display usage and exit
+  	esac
+  done
 
-	if [[ "$FROM" == "" ]]
-	then
-		FROM="tl"
-	else
-		shift; shift;
-	fi
+  if [[ "$FROM" == "" ]]
+  then
+  	FROM="tl"
+  else
+  	shift; shift;
+  fi
 
-	if [[ "$TO" == "" ]]
-	then
-		TO="en"
-	else
-		shift; shift;
-	fi
+  if [[ "$TO" == "" ]]
+  then
+  	TO="en"
+  else
+  	shift; shift;
+  fi
 
-	args="$@"
-	url="https://translate.google.com/#$FROM/$TO/$(urlencode ""$args"")"
-	browser $url
+  args="$@"
+  url="https://translate.google.com/#$FROM/$TO/$(urlencode ""$args"")"
+  browser $url
 }
 
 function trn {
-	print "$@" | trans
+  print "$@" | trans
 }
 
 function trnf {
-	print "$@" | trans :tl
+  print "$@" | trans :tl
 }
 
 function lc {
-	LESS_FILE=$1
-	cmd="$LESSC_PATH $LESS_FILE > styles.css"
-	green $cmd
+  LESS_FILE=$1
+  cmd="$LESSC_PATH $LESS_FILE > styles.css"
+  green $cmd
   $cmd
 }
 
 function dev {
-	BROWSER=$1
-	
-	if [[ "$BROWSER" == "" ]]
-	then
-		BROWSER=$DEFAULT_BROWSER
-	fi
-	
-	browser http://localhost:3000
+  BROWSER=$1
+  
+  if [[ "$BROWSER" == "" ]]
+  then
+  	BROWSER=$DEFAULT_BROWSER
+  fi
+  
+  browser http://localhost:3000
 }
 
 function unixtime {
-	SECS=$1
-	ruby -e "require 'Date'; puts DateTime.strptime('$SECS', '%s')"
+  SECS=$1
+  ruby -e "require 'Date'; puts DateTime.strptime('$SECS', '%s')"
 }
 
 function timeunix {
-	ruby -e "require 'Time'; puts Time.now().to_i"
+  ruby -e "require 'Time'; puts Time.now().to_i"
 }
 
 function replace_all {
-	SEARCH=$1
-	REPLACEMENT=$2
-	FILE_PATTERN="$3"
-	
-	result=`find . -depth 1 -name $FILE_PATTERN`
-	files=("${(f)result}")
-	
-	for file in $files
-	do
-		new_contents=`cat $file | sed "s/$SEARCH/$REPLACEMENT/g"`
-		rm $file
-		print $new_contents > $file
-	done
+  SEARCH=$1
+  REPLACEMENT=$2
+  FILE_PATTERN="$3"
+  
+  result=`find . -depth 1 -name $FILE_PATTERN`
+  files=("${(f)result}")
+  
+  for file in $files
+  do
+  	new_contents=`cat $file | sed "s/$SEARCH/$REPLACEMENT/g"`
+  	rm $file
+  	print $new_contents > $file
+  done
 }
 
 function sshfind {
-	HOST=$1
-	grep -A 3 $HOST ~/.ssh/config
+  HOST=$1
+  grep -A 3 $HOST ~/.ssh/config
 }
 
 function updatesubs {
-	git submodule foreach --recursive "`git commit -am 'Updates.' && git push` || exit 0"
+  git submodule foreach --recursive "`git commit -am 'Updates.' && git push` || exit 0"
 }
 
 function save_code {
-	# rake each_sub["rake save"]
-	rake each_sub["git checkout master; git commit -am 'Auto-update.'; git pull origin master; git push origin master"]
+  # rake each_sub["rake save"]
+  rake each_sub["git checkout master; git commit -am 'Auto-update.'; git pull origin master; git push origin master"]
 }
 
 function git_branch {
-	output=`git branch | head -1`
-	echo $output[3,-1]
+  output=`git branch | head -1`
+  echo $output[3,-1]
 }
 
 function clean_home {
-	cd ~ && find ~/ -depth 1 \( ! -regex '.*/\..*' \) -type f -name * | xargs rm
+  cd ~ && find ~/ -depth 1 \( ! -regex '.*/\..*' \) -type f -name * | xargs rm
 }
 
 function this_dir {
-	print ${PWD##*/}
+  print ${PWD##*/}
 }
 
 function del {
-	files="$@"
-	files=(${(s: :)files})
-	
-	for file in $files
-	do
-		gmv $file $TRASH_HOME	
-	done
+  files="$@"
+  files=(${(s: :)files})
+  
+  for file in $files
+  do
+  	gmv $file $TRASH_HOME	
+  done
 }
 
 function bashvulns {
-	browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271'
-	browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7169'
-	browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6277'
-	browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7187'
-	browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6278'	
-	browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7188'
+  browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271'
+  browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7169'
+  browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6277'
+  browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7187'
+  browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6278'	
+  browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7188'
 }
 
 function create_repo_envs {
@@ -1031,7 +1031,7 @@ function create_repo_envs {
       continue;
     fi
     export "$(pathize $repo)_HOME"=$PROG_HOME/$repo
-	done
+  done
 }
 
 
@@ -1058,24 +1058,24 @@ function create_repo_aliases {
   abbreviations[sh]=s
   abbreviations[zsh]=z
   
-	
+  
   for repo in ${(k)abbreviations}
   do
-		alias_repo_action $repo $abbreviations[$repo] sv cd_save
-		alias_repo_action $repo $abbreviations[$repo] cm cd_commit
-		alias_repo_action $repo $abbreviations[$repo] st cd_status
-		alias_repo_action $repo $abbreviations[$repo] pl cd_pull
+  	alias_repo_action $repo $abbreviations[$repo] sv cd_save
+  	alias_repo_action $repo $abbreviations[$repo] cm cd_commit
+  	alias_repo_action $repo $abbreviations[$repo] st cd_status
+  	alias_repo_action $repo $abbreviations[$repo] pl cd_pull
     alias_repo_nav $repo $abbreviations[$repo]
-	done
+  done
 }
 
 function alias_repo_action {
-	REPO=$1
+  REPO=$1
   REPO_ABBR=$2
-	ALIAS_SUFF=$3
-	CMD=$4
+  ALIAS_SUFF=$3
+  CMD=$4
 
-	alias "$REPO_ABBR$ALIAS_SUFF"="$CMD \$$(pathize $REPO)_HOME"
+  alias "$REPO_ABBR$ALIAS_SUFF"="$CMD \$$(pathize $REPO)_HOME"
 }
 
 function alias_repo_nav {
@@ -1107,32 +1107,32 @@ function alias_repo_nav {
 # }
 
 function odl {
-	cd ~/Downloads
-	despace
-	last_download=`ls -ltr  ~/Downloads | awk '{print $9}' | tail -1`
-	print $last_download | pbcopy
-	green "Opening latest file: $(yellow)$last_download$(default)"
-	open $last_download
+  cd ~/Downloads
+  despace
+  last_download=`ls -ltr  ~/Downloads | awk '{print $9}' | tail -1`
+  print $last_download | pbcopy
+  green "Opening latest file: $(yellow)$last_download$(default)"
+  open $last_download
 }
 
 function dir {	
-	if [[ $PWD == $HOME ]]
-	then
-		dir="~"
-	else
-		dir=`basename $PWD`
-	fi
-	print $dir
+  if [[ $PWD == $HOME ]]
+  then
+  	dir="~"
+  else
+  	dir=`basename $PWD`
+  fi
+  print $dir
 }
 
 function git_checkout_master_if_on_detached_head {
   detached=$(git branch 2> /dev/null | grep detached)
-	
-	if [[ -n "$detached" ]]
-	then
-		red "On detached HEAD! $(green)Switching to branch $(yellow)master"
-		git checkout master
-	fi		
+  
+  if [[ -n "$detached" ]]
+  then
+  	red "On detached HEAD! $(green)Switching to branch $(yellow)master"
+  	git checkout master
+  fi		
 }
 
 function git_remote_rename_origin_if_exists {
@@ -1144,64 +1144,35 @@ function git_remote_rename_origin_if_exists {
 }
 
 function rvm_gem_list {
-	GEMSET=$1
-	rvm @$GEMSET do gem list
+  GEMSET=$1
+  rvm @$GEMSET do gem list
 }
-
 
 function gems {
-	rubygemset=".ruby-gemset"
-	if [[ -f $rubygemset ]]
-	then
-		gemset=`cat $rubygemset`
-		rvm_gem_list $gemset
-	else
-		red "No $rubygemset found."
-	fi
+  rubygemset=".ruby-gemset"
+  if [[ -f $rubygemset ]]
+  then
+  	gemset=`cat $rubygemset`
+  	rvm_gem_list $gemset
+  else
+  	red "No $rubygemset found."
+  fi
 }
-
-
-
-# function rvm_use_gemset_if_dir_exists {
-# 	GEMSET=$1
-# 	DIR=$2
-#
-# 	if [[ -n $(dir_exists $DIR) ]]
-# 	then
-# 		rvm gemset use $GEMSET
-# 	fi
-# }
-#
-# function rvm_use_gemset_chef_if_chef {
-# 	rvm_use_gemset_if_dir_exists chef .chef
-# }
-#
-# function rvm_use_gemset_if_cwd {
-# 	GEMSET=$1
-# 	DIR=$2
-#
-# 	if [[ `basename $PWD` == $DIR ]]
-# 	then
-# 		rvm gemset use $GEMSET
-# 	fi
-# }
 
 function gemset {
-	RUBY_GEMSET=$1
-	RUBY_VERSION=$2
-	
-	silent rm .ruby-gemset
-	silent rm .ruby-version
-	print $RUBY_GEMSET > .ruby-gemset
-	print $RUBY_VERSION > .ruby-version
+  RUBY_GEMSET=$1
+  RUBY_VERSION=$2
+  
+  silent rm .ruby-gemset
+  silent rm .ruby-version
+  print $RUBY_GEMSET > .ruby-gemset
+  print $RUBY_VERSION > .ruby-version
 }
-
 
 function knife_upload_databag {
-	DATABAG=$1
-	knife upload data bag $DATABAG
+  DATABAG=$1
+  knife upload data bag $DATABAG
 }
-
 
 function website () {
   cd $MRROBINSMITHCOM_HOME
@@ -1218,7 +1189,6 @@ function preview {
   FILENAME=$1
   $RUBY_HOME/practice/render.rb $FILENAME && open -a $BROWSER html/$FILENAME.html
 }
-
 
 function cpscr {
   SCREENSHOT=$1
@@ -1545,7 +1515,7 @@ function sub_arr {
 }
 
 chpwd() {
-	git_checkout_master_if_on_detached_head
+  git_checkout_master_if_on_detached_head
   git_remote_rename_origin_if_exists
 }
 
@@ -1655,21 +1625,22 @@ function cr {
 
 
 function export_functions {
-	pcregrep -M -N CR -o 'function [_a-zA-Z]+ {[^{}]+}' $FUNCS_PATH | while read -r line ; do
-	    if [[ -n $(print $line | pcregrep 'function [_a-zA-Z]+') ]]
-	    then
-	      name=$(print $line | pcregrep -o1 'function ([_a-zA-Z]+)')
-	    elif [[ -n $(print $line | pcregrep '}$') ]]
-	    then
-	      green "Function: $name"
-	      yellow $block
-	
-	      print $block > functions/$name
-	
-	      block=""
-	    else  
-	      block="${block}${line}
+  IFS=''
+  pcregrep -M -N CR -o 'function [_a-zA-Z]+ {[^{}]+}' $FUNCS_PATH | while read line ; do
+      if [[ -n $(print $line | pcregrep 'function [_a-zA-Z]+') ]]
+      then
+        name=$(print $line | pcregrep -o1 'function ([_a-zA-Z]+)')
+      elif [[ -n $(print $line | pcregrep '}$') ]]
+      then
+        green "Function: $name"
+        yellow $block
+  
+        print $block > functions/$name
+  
+        block=""
+      else  
+        block="${block}${line[3,-1]}
 "
-	    fi
-	done
+      fi
+  done
 }

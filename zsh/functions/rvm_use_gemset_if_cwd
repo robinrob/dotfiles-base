@@ -1,8 +1,0 @@
-# 	GEMSET=$1
-# 	DIR=$2
-#
-# 	if [[ `basename $PWD` == $DIR ]]
-# 	then
-# 		rvm gemset use $GEMSET
-# 	fi
-

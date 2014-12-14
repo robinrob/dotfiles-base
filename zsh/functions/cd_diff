@@ -1,2 +1,0 @@
-cd_action $1 git diff
-

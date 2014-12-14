@@ -1,4 +1,0 @@
-new -i node -e js -o noopen -f $1
-print "
-require(process.env.JS_LIB_HOME + '/log')" >> $1.js
-

@@ -1,6 +1,0 @@
-ENV=$1
-VAL=$2
-
-gsed -i 's/'$1'=.*/'$1'='$(sed_esc $VAL)'/g' $ENVS_PATH
-source $ENVS_PATH
-

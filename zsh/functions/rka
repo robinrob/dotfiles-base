@@ -1,3 +1,0 @@
-rake_do git:add $@
-git status
-

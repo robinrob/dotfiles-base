@@ -1,6 +1,0 @@
-START=$1
-END=$2
-ARR=$3
-
-typeset -a ARR
-

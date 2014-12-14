@@ -1,4 +1,0 @@
-switch_env USE_RUBY
-switch_env_permo USE_RUBY $USE_RUBY
-pretty_print_env USE_RUBY
-

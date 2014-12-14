@@ -1,3 +1,0 @@
-browser http://localhost:4000
-rake_do jekyll:server
-

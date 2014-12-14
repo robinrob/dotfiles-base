@@ -1,2 +1,0 @@
-local IFS="$1"; shift; print "$*";
-

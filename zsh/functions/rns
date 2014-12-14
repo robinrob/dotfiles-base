@@ -1,7 +1,0 @@
-NAME=$1
-
-cd $SCREENSHOTS_HOME && despace
-LAST=$(lsltr | tail -1)
-cp $LAST $NAME
-print "$(green)Copied $(yellow)$LAST $(green)to $(yellow)$NAME"
-

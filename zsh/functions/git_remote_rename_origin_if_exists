@@ -1,6 +1,0 @@
-if [[ -n $(git config --get remote.origin.url) ]]
-then
-print "$(green)Found remote 'origin'. Renaming to $(yellow)bitbucket ..."
-git remote rename origin bitbucket
-fi
-

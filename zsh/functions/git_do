@@ -1,6 +1,0 @@
-ACTION=$1
-shift
-ARGS=$@
-
-git $ACTION $ARGS
-

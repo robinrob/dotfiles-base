@@ -1,3 +1,0 @@
-fab sub_deinit:fabfile
-rm fabfile.py
-

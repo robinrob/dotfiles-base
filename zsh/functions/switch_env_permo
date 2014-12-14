@@ -1,7 +1,0 @@
-ENV=$1
-NEW_VAL=$2
-
-vars=$ZDOT_HOME/env_variables.zsh
-
-gsed -i "s/$ENV=.*/$ENV=$NEW_VAL/g" $vars && source $vars
-

@@ -1,3 +1,0 @@
-gsa git@bitbucket.org:robinrob/fabfile.git fabfile
-ln -s fabfile/fabfile.py ./
-

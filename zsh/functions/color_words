@@ -1,5 +1,0 @@
-TEXT=$1
-PATTERN=$2
-COLOR=$3
-print $TEXT | gsed "s/$PATTERN/$($COLOR $PATTERN)/gI"
-

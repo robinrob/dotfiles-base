@@ -1,3 +1,0 @@
-FILENAME=$1
-new_from_template $PERL_HOME/templates/practice.pl $FILENAME.pl
-

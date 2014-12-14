@@ -1,3 +1,0 @@
-TEXT="$@"
-print $TEXT:u
-

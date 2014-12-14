@@ -1,4 +1,0 @@
-STR=$1
-
-printf `print $STR | gsed 's/([/$])/\\/g'`
-
