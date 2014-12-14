@@ -1,0 +1,6 @@
+if [[ $*[-1] == "bitbucket" || $*[-1] == "github" ]] then
+rake_do save "$*[1,-2]" $*[-1]
+else
+rake_do save "$*"
+fi
+

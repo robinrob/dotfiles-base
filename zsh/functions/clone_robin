@@ -1,0 +1,5 @@
+DEST=robin
+git clone --recursive -b master git@bitbucket.org:robinrob/programming.git $DEST
+cd $DEST
+git submodule update --init --recursive
+

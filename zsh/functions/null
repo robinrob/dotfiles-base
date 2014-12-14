@@ -1,0 +1,7 @@
+if [ -z "$1" ]
+then
+green yes
+else
+red no
+fi
+

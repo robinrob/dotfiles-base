@@ -1,0 +1,3 @@
+
+browser "http://stackoverflow.com/questions/ask?title=`urlencode $@`"
+

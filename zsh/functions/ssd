@@ -1,0 +1,3 @@
+red "Shutting DOWN!"
+sudo shutdown -h now
+

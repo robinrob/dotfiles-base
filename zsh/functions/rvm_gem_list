@@ -1,0 +1,3 @@
+GEMSET=$1
+rvm @$GEMSET do gem list
+

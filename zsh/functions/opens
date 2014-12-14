@@ -1,0 +1,2 @@
+cd $SCREENSHOTS_HOME && despace && open `lasts`
+

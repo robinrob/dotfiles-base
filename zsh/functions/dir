@@ -1,0 +1,8 @@
+if [[ $PWD == $HOME ]]
+then
+dir="~"
+else
+dir=`basename $PWD`
+fi
+print $dir
+

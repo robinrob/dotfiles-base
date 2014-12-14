@@ -1,0 +1,8 @@
+FILE=$1
+TEXT=$2
+
+CONTENTS=`cat $FILE`
+rm $FILE
+print $TEXT > $FILE
+print $CONTENTS >> $FILE
+

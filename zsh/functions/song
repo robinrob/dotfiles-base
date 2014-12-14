@@ -1,0 +1,3 @@
+SONG=$(remove_extension $1)
+cd $MERCURY_HOME/docs/creative/songs && $EDITOR "$SONG.txt"
+
