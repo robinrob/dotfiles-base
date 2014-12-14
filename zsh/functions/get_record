@@ -1,7 +1,0 @@
-
-RECORD=$1
-cmd="grep $RECORD $RECORDS_PATH"
-val=$(eval "$cmd")
-val2=`print ""$val"" | awk -F:: '{print $2}'`
-copy_print ""$val2""
-

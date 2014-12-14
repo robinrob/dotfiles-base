@@ -1,4 +1,0 @@
-
-print "$(green "Copying Jetbrains config from: ")$(yellow "$INTELLIJ_CONFIG ...")"
-silent_cp $INTELLIJ_CONFIG $DOTFILES_HOME/
-

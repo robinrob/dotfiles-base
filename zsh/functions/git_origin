@@ -1,6 +1,0 @@
-
-if [ "$(is_git)" ]
-then
-	print `git config --get remote.origin.url`
-fi
-

@@ -143,7 +143,6 @@ function new {
   print -z ./$FILE
 }
 
-# Shortcut for `new` function
 function new_s {
   INTERPRETER=$1
   EXTENSION=$2
@@ -372,12 +371,10 @@ function libfind {
   done
 }
 
-# cat
 function libfind_c {
   libfind -c yes -d $1 -p $2
 }
 
-# libfind-shortcut
 function libfind_s {
   DIR=$1
   PATTERN=$2
@@ -1080,27 +1077,6 @@ function alias_repo_nav {
   alias "cd${REPO_ABBR}"="cd_dir \$$(pathize $REPO)_HOME"
 }
 
-# function languages2 {
-# 	languages=(ruby ocaml htmlcss zsh sh javascript coffeescript)
-# 	abbrs=(rb oc ht zs sh js cs)
-#
-# 	for language in $languages
-# 	do
-# 		alias_repo_action2 $language sv cd_save s
-# 		alias_repo_action2 $language cm cd_commit c
-# 		alias_repo_action2 $language st cd_status st
-# 		alias_repo_action2 $language pl cd_pull p
-# 	done
-# }
-#
-# function alias_repo_action {
-# 	lang=$1
-# 	alias_prefix=$2
-# 	cmd=$3
-# 	cmd_abbr=$4
-# 	alias "$lang[1]$alias_suff"="$cmd $(upper $lang)_HOME"
-# }
-
 function odl {
   cd ~/Downloads
   despace
@@ -1387,8 +1363,6 @@ function find_clean_names {
   find . -maxdepth 1 -type f -regex '.*/[a-zA-Z].*' | sed 's/\.\///g'
 }
 
-# Displays the letters of the alphabet represented by the first letter of filenames
-# of files in the given directory.
 function alphabet_of_files {
   typeset -U alphabet
 
@@ -1478,7 +1452,6 @@ function cgr {
   eval $CMD | grep $SEARCH
 }
 
-# Case-sensitive check for file-existence
 function file_exists {
   FILENAME=$(basename $1)
   LOCATION=$(dirname $1)
@@ -1622,7 +1595,7 @@ function export_functions {
   pcregrep '' $FUNCS_PATH | while read line ; do
       
       # Start of function
-      if [[ -n $(print $line | pcregrep 'function [_a-zA-Z]+') ]]
+      if [[ -n $(print $line | pcregrep '(#[[:alph]]])?function [_a-zA-Z]+') ]]
       then
         name=$(print $line | pcregrep -o1 'function ([_a-zA-Z]+)')
       # End of function
@@ -1631,8 +1604,8 @@ function export_functions {
         green "Function: $name"
         yellow $block
        
-        touch functions/$name
-        print $block >> functions/$name
+        # touch functions/$name
+        # print $block >> functions/$name
         read
   
         block=""

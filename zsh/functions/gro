@@ -1,8 +1,0 @@
-
-if [ "$(is_git)" ]
-then
-	green `git_origin`
-else
-	red "Not Git"
-fi 
-
