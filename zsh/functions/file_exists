@@ -1,0 +1,12 @@
+FILENAME=$(basename $1)
+LOCATION=$(dirname $1)
+
+EXISTS=$(gfind $LOCATION -name $FILENAME)
+
+if [[ $EXISTS != '' ]]
+then
+  echo 'yes'
+else
+  echo 'no'
+fi
+

@@ -1,0 +1,2 @@
+browser "http://ruby-doc.com/search.html?&q=`urlencode $@`"
+

@@ -1,0 +1,3 @@
+SECS=$1
+ruby -e "require 'Date'; puts DateTime.strptime('$SECS', '%s')"
+

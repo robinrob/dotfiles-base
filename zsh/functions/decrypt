@@ -1,0 +1,4 @@
+FILE=$1
+
+cat $FILE | openssl rsautl -decrypt -inkey ~/.ssh/id_rsa
+

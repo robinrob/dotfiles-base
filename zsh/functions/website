@@ -1,0 +1,9 @@
+cd $MRROBINSMITHCOM_HOME
+green 'Starting server ...'
+rake server &
+killp postgres
+green 'Starting postgres ...'
+postgres &
+green 'Opening http://localhost:3000'
+safari http://localhost:3000
+

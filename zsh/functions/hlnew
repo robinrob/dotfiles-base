@@ -1,0 +1,6 @@
+PROJECT=$1
+mkdir $PROJECT
+cat $HTML_TEMPLATES_HOME/template.html | sed 's/Title/'$PROJECT'/' > $PROJECT/$PROJECT.html
+touch $PROJECT/styles.less
+cd $PROJECT
+

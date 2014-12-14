@@ -1,0 +1,2 @@
+ls -ltr --color=none | awk '{print $9}' | tail +2
+

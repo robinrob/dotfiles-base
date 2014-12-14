@@ -1,0 +1,4 @@
+brew_list=$DOTFILES_BASE_HOME/config/files/homebrew.txt
+rm -f $brew_list
+brew list > $brew_list
+

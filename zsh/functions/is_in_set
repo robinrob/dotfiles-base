@@ -1,0 +1,15 @@
+VAL=$1
+SET=$2
+SET=("${(s/ /)SET}")
+
+found="no"
+for item in $SET
+do
+  if [[ $item == $VAL ]]
+  then
+    found="yes"
+  fi
+done
+
+print $found
+

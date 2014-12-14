@@ -1,0 +1,8 @@
+detached=$(git branch 2> /dev/null | grep detached)
+
+if [[ -n "$detached" ]]
+then
+	red "On detached HEAD! $(green)Switching to branch $(yellow)master"
+	git checkout master
+fi		
+

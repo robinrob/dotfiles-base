@@ -1,0 +1,12 @@
+FIND_EXPRESSION=$1
+SED_EXPRESSION=$2
+
+files=$(gfind . -type f -regex "$FIND_EXPRESSION" | xargs)
+print "files: $files"
+files=(${(s/ /)files})
+
+for file in $files
+do
+  gsed -i $SED_EXPRESSION $file
+done
+
