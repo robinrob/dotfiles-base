@@ -1,4 +1,4 @@
 STR=$1
 
-printf `print $STR | gsed 's/([/$])/\1/g'`
+printf `print $STR | gsed 's/([/\$])/\1/g'`
 

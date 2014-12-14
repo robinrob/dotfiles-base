@@ -1,5 +1,5 @@
 REPO=$1
 REPO_ABBR=$2
 
-alias "cd${REPO_ABBR}"="cd_dir $$(pathize $REPO)_HOME"
+alias "cd${REPO_ABBR}"="cd_dir \$$(pathize $REPO)_HOME"
 
