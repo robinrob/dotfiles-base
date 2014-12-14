@@ -123,6 +123,10 @@ alias sed="gsed"
 
 alias awk="gawk"
 
+
+# External commands
+alias pcregrep='pcregrep --color=auto'
+
 # Shell Aliases
 alias cpx="chmod +x"
 
@@ -365,7 +369,7 @@ alias rkt="rake_do test"
 
 alias rkr="rake routes"
 
-alias rkst="rake_do sort_sub"
+alias rkst="rake_do git:sort_sub"
 
 alias rk="rake"
 
@@ -665,8 +669,6 @@ alias eaws="$EDITOR $AWS_CONFIG"
 alias reminderrobin="reminder robin@mrrobinsmith.com"
 
 alias reminderwork="reminder robin.smith@cloudreach.co.uk"
-
-
 
 alias erec="$EDITOR $RECORDS_PATH"
 

@@ -1045,6 +1045,7 @@ function create_repo_aliases {
   abbreviations[dotfiles]=d
   abbreviations[dotfiles-base]=db
   abbreviations[force-com]=f
+  abbreviations[github]=gh
   abbreviations[html-css]=h
   abbreviations[javascript]=j
   abbreviations[markdown]=m

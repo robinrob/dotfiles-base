@@ -72,17 +72,7 @@ export FORCE_COM_HOME="/Users/robinsmith/Programming/robin/force.com"
 
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
-export SPLUNK_HOME=$PROG_HOME/splunk
-
-export C_HOME=$PROG_HOME/c
-
-export C_PLUS_PLUS_HOME=$PROG_HOME/c
-
 export JV_HOME=$PROG_HOME/java
-
-export JAVASCRIPT_HOME=$PROG_HOME/javascript
-
-export JS_HOME=$JAVASCRIPT_HOME
 
 export JS_LIB_HOME=$JAVASCRIPT_HOME/lib
 
@@ -92,19 +82,9 @@ export HTML_LESS_HOME=$PROG_HOME/html-less
 
 export HTML_TEMPLATES_HOME=$HTML_CSS_HOME/templates
 
-export RUBY_HOME=$PROG_HOME/ruby
-
-export MARKDOWN_HOME=$PROG_HOME/markdown
-
-export OCAML_HOME=$PROG_HOME/ocaml
-
 export COFFEESCRIPT_HOME=$PROG_HOME/coffeescript
 
 export RUBY_TEMPLATES_HOME=$RUBY_HOME/templates
-
-export SCALA_HOME=$PROG_HOME/scala
-
-export AWK_HOME=$PROG_HOME/awk
 
 export RUBYAPP_HOME=$RUBY_HOME/projects/ruby-app
 
@@ -118,13 +98,13 @@ export QUIZ_HOME=$RUBY_HOME/projects/quiz
 
 export MRROBINSMITHCOM_HOME=$RUBY_HOME/projects/mrrobinsmith.com
 
+export GITHUB_HOME=$RUBY_HOME/projects/github
+
 export MOBILEAPP_HOME=$JS_HOME/projects/mobile-app-cordova
 
 export REPOS=$RUBY_HOME" "$SH_HOME" "$DOTFILES_HOME" "$PYTHON_HOME
 
 export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/lib/ruby/2.0.0
-
-export PERL_HOME=$PROG_HOME/perl
 
 export EC2_HOME=/usr/local/lib/ec2-api-tools-1.6.11.0
 
