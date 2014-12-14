@@ -1595,7 +1595,7 @@ function export_functions {
   pcregrep '' $FUNCS_PATH | while read line ; do
       
       # Start of function
-      if [[ -n $(print $line | pcregrep '(#[[:alph]]])?function [_a-zA-Z]+') ]]
+      if [[ -n $(print $line | pcregrep 'function [_a-zA-Z]+') ]]
       then
         name=$(print $line | pcregrep -o1 'function ([_a-zA-Z]+)')
       # End of function
