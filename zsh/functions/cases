@@ -1,3 +1,4 @@
+
 ID=$1
 open -a $BROWSER "https://cloudreach.my.salesforce.com/500?fcf=$ID"
 

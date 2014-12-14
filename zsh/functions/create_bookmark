@@ -1,3 +1,4 @@
+
 BOOKMARKS_PATH=$1
 NAME=$2
 URL=$3

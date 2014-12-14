@@ -5,7 +5,6 @@ NEVER use aliases in this file! This file is loaded first before aliases.
 
 urce ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/colors.zsh
 
-
 TEXT="$@"
 print $TEXT:u
 

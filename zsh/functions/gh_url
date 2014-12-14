@@ -1,3 +1,4 @@
+
 typeset url
 branch=$(git_branch)
 url=`git config --get remote.github.url | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}'`

@@ -1,3 +1,4 @@
+
 STR="$1"
 
 rsa_pem=~/.ssh/id_rsa.pub.pem

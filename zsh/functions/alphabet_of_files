@@ -1,3 +1,4 @@
+
 typeset -U alphabet
 
 files=$(find_clean_names | xargs)

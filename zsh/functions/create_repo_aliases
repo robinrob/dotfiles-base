@@ -1,3 +1,4 @@
+
 typeset -A abbreviations
 
 abbreviations[awk]=a
@@ -20,8 +21,8 @@ abbreviations[scala]=sc
 abbreviations[sh]=s
 abbreviations[zsh]=z
 
-
-
+for repo in ${(k)abbreviations}
+do
 	alias_repo_action $repo $abbreviations[$repo] sv cd_save
 	alias_repo_action $repo $abbreviations[$repo] cm cd_commit
 	alias_repo_action $repo $abbreviations[$repo] st cd_status

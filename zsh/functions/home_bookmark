@@ -1,2 +1,3 @@
+
 create_bookmark $WORKBOOKMARKS_PATH $@ safari
 

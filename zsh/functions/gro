@@ -1,3 +1,4 @@
+
 if [ "$(is_git)" ]
 then
 	green `git_origin`

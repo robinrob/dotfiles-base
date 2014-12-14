@@ -5,10 +5,42 @@
 
 source ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/colors.zsh
 
-
 function upper {
   TEXT="$@"
   print $TEXT:u
+}
+
+function create_repo_aliases {
+  typeset -A abbreviations
+
+  abbreviations[awk]=a
+  abbreviations[coffeescript]=cs
+  abbreviations[c]=c
+  abbreviations[c-plus-plus]=cp
+  abbreviations[dotfiles]=d
+  abbreviations[dotfiles-base]=db
+  abbreviations[force-com]=f
+  abbreviations[github]=gh
+  abbreviations[html-css]=h
+  abbreviations[javascript]=j
+  abbreviations[markdown]=m
+  abbreviations[ocaml]=o
+  abbreviations[perl]=pl
+  abbreviations[prog]=pr
+  abbreviations[python]=p
+  abbreviations[ruby]=r
+  abbreviations[scala]=sc
+  abbreviations[sh]=s
+  abbreviations[zsh]=z
+
+  for repo in ${(k)abbreviations}
+  do
+  	alias_repo_action $repo $abbreviations[$repo] sv cd_save
+  	alias_repo_action $repo $abbreviations[$repo] cm cd_commit
+  	alias_repo_action $repo $abbreviations[$repo] st cd_status
+  	alias_repo_action $repo $abbreviations[$repo] pl cd_pull
+    alias_repo_nav $repo $abbreviations[$repo]
+  done
 }
 
 function lower {
@@ -1027,40 +1059,6 @@ function create_repo_envs {
   done
 }
 
-function create_repo_aliases {
-  typeset -A abbreviations
-
-  abbreviations[awk]=a
-  abbreviations[coffeescript]=cs
-  abbreviations[c]=c
-  abbreviations[c-plus-plus]=cp
-  abbreviations[dotfiles]=d
-  abbreviations[dotfiles-base]=db
-  abbreviations[force-com]=f
-  abbreviations[github]=gh
-  abbreviations[html-css]=h
-  abbreviations[javascript]=j
-  abbreviations[markdown]=m
-  abbreviations[ocaml]=o
-  abbreviations[perl]=pl
-  abbreviations[prog]=pr
-  abbreviations[python]=p
-  abbreviations[ruby]=r
-  abbreviations[scala]=sc
-  abbreviations[sh]=s
-  abbreviations[zsh]=z
-  
-  
-  for repo in ${(k)abbreviations}
-  do
-  	alias_repo_action $repo $abbreviations[$repo] sv cd_save
-  	alias_repo_action $repo $abbreviations[$repo] cm cd_commit
-  	alias_repo_action $repo $abbreviations[$repo] st cd_status
-  	alias_repo_action $repo $abbreviations[$repo] pl cd_pull
-    alias_repo_nav $repo $abbreviations[$repo]
-  done
-}
-
 function alias_repo_action {
   REPO=$1
   REPO_ABBR=$2
@@ -1592,7 +1590,7 @@ function cr {
 
 function export_functions {
   IFS=''
-  pcregrep '' $FUNCS_PATH | while read line ; do
+  cat $FUNCS_PATH | while read line ; do
       
       # Start of function
       if [[ -n $(print $line | pcregrep 'function [_a-zA-Z]+') ]]
@@ -1600,14 +1598,15 @@ function export_functions {
         name=$(print $line | pcregrep -o1 'function ([_a-zA-Z]+)')
 
       # End of function
-      elif [[ -n $(print $line | pcregrep '}$') ]]
+      elif [[ -n $(print $line | pcregrep '^}$') ]]
       then
         green "Function: $name"
         yellow $block
        
         touch functions/$name
         print $block >> functions/$name
-        read
+
+        # [[ -z $(print $line | tr -d " ") ]] && read line
   
         block=""
 

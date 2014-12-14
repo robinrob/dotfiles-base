@@ -1,3 +1,4 @@
+
 letters=$*
 
 typeset -U alphabet

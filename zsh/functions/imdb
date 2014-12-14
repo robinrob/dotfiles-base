@@ -1,2 +1,3 @@
+
 browser "http://www.imdb.com/find?ref_=nv_sr_fn&q=`urlencode $@`&s=all"
 

@@ -1,2 +1,4 @@
+
 array=($*)
+print ${array[(r)${(l.${#${(O@)array//?/X}[1]}..?.)}]}
 

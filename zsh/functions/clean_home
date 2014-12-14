@@ -1,2 +1,3 @@
+
 cd ~ && find ~/ -depth 1 ( ! -regex '.*/..*' ) -type f -name * | xargs rm
 

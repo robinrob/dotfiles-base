@@ -1,3 +1,4 @@
+
 FILENAME=$1
 
 PARTS=("${(s/./)FILENAME}")

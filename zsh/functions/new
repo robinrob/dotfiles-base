@@ -1,3 +1,4 @@
+
 while getopts :i:e:f:o: name
 do
 	case $name in

@@ -1,2 +1,3 @@
+
 cd $DOCS_HOME/creative/writing && $EDITOR "$1.txt"
 

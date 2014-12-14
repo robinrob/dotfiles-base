@@ -1,3 +1,4 @@
+
 detached=$(git branch 2> /dev/null | grep detached)
 
 if [[ -n "$detached" ]]
