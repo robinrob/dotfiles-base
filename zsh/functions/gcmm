@@ -1,4 +1,3 @@
-
 MSG=$@
 
 git_do commit -m "$MSG"

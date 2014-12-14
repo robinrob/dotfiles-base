@@ -1,3 +1,2 @@
-
 mv ~/Downloads/$1 $2
 

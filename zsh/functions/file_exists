@@ -1,4 +1,3 @@
-
 FILENAME=$(basename $1)
 LOCATION=$(dirname $1)
 

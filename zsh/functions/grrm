@@ -1,4 +1,3 @@
-
 for remote in $*
 do
   git remote rm  $remote

@@ -1,3 +1,2 @@
-
 inverse_alphabet $(alphabet_of_files)
 

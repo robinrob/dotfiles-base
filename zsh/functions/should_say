@@ -1,4 +1,3 @@
-
 if [[ $SAYCMD_OVERRIDE == "" && $SAYCMD == 1 ]]
 then
   print $TRUE_VALUE

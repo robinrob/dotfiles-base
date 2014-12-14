@@ -1,4 +1,3 @@
-
 reading_list=$LISTS_HOME/to_read.txt
 new_list=${reading_list}.new
 next=`head -1 $reading_list`

@@ -1,4 +1,3 @@
-
 cd $MRROBINSMITHCOM_HOME
 green 'Starting server ...'
 rake server &

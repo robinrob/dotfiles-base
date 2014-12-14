@@ -1,4 +1,3 @@
-
 BROWSER=$1
 
 if [[ "$BROWSER" == "" ]]

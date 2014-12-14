@@ -1,4 +1,3 @@
-
 NAME=$1
 VALUE=$2
 ALIAS_FILE=$3

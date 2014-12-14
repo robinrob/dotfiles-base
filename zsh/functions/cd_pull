@@ -1,4 +1,3 @@
-
 output=`cd $1 && git branch | head -1 > /dev/null`
 comps=("${(s/* /)output}") # notice the quotes
 branch=$comps[2]

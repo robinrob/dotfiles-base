@@ -1,4 +1,3 @@
-
 EXEC=$1
 
 if [[ "`which $EXEC`" == "$EXEC not found" ]]

@@ -1606,7 +1606,7 @@ function export_functions {
         touch functions/$name
         print $block >> functions/$name
 
-        # [[ -z $(print $line | tr -d " ") ]] && read line
+        read line
   
         block=""
 

@@ -1,4 +1,3 @@
-
 IFS=''
 cat $FUNCS_PATH | while read line ; do
     
@@ -16,7 +15,7 @@ cat $FUNCS_PATH | while read line ; do
       touch functions/$name
       print $block >> functions/$name
 
-      # [[ -z $(print $line | tr -d " ") ]] && read line
+      read line
 
       block=""
 

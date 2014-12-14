@@ -1,3 +1,2 @@
-
 browser "http://en.wikipedia.org/wiki/Special:Search?search=`urlencode $@`&go=Go"
 

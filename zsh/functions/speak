@@ -1,4 +1,3 @@
-
 if [[ $(should_say) == "yes" ]]
 then
   (say $@ &) > /dev/null 2>&1

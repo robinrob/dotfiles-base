@@ -1,4 +1,3 @@
-
 TEXT=$1
 PATTERN=$2
 COLOR=$3

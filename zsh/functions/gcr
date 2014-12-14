@@ -1,3 +1,2 @@
-
 `git clone -b master git@bitbucket.org:robinrob/$1.git`
 

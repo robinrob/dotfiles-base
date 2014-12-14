@@ -1,4 +1,3 @@
-
 secs=$SECONDS
 
 (( h = secs / 3600 ))

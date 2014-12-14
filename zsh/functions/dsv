@@ -1,4 +1,3 @@
-
 if [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
 then
   save_crontab

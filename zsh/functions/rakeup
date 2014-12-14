@@ -1,4 +1,3 @@
-
 rm -rf rakelib
 git rm -r --cached rakelib
 git submodule add --force git@bitbucket.org:robinrob/rakelib.git

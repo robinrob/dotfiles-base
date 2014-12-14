@@ -1,4 +1,3 @@
-
 result=`ls $PROG_HOME | xargs`
 
 repos=(${(s: :)result})

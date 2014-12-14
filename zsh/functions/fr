@@ -1,4 +1,3 @@
-
 PATTERN=$1
 find . -name "*$PATTERN*" 2> /dev/null
 

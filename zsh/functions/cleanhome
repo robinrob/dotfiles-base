@@ -1,4 +1,3 @@
-
 cd ~
 for file in `gfind . -maxdepth 1 ( ! -regex '.*/..*' ) -type f`
 do

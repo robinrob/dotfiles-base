@@ -1,4 +1,3 @@
-
 cd ~/Downloads
 despace
 last_download=`ls -ltr  ~/Downloads | awk '{print $9}' | tail -1`

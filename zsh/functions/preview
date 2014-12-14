@@ -1,4 +1,3 @@
-
 FILENAME=$1
 $RUBY_HOME/practice/render.rb $FILENAME && open -a $BROWSER html/$FILENAME.html
 

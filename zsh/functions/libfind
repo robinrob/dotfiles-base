@@ -1,4 +1,3 @@
-
 COLOR='maganda'
 while getopts :c:d:p: name
 do

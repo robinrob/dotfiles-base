@@ -1,4 +1,3 @@
-
 FILE_PATH=$1
 EXTENSION=$(extension $FILE_PATH)
 NAME=$(remove_extension $(basename $FILE_PATH))

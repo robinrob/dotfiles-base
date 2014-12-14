@@ -1,4 +1,3 @@
-
 SEARCH=$1
 shift
 CMD=$@

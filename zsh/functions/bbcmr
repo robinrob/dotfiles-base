@@ -1,3 +1,2 @@
-
 open "`bb_commit_url $1`/raw"
 
