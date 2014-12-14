@@ -1664,7 +1664,7 @@ function export_functions {
 	      green "Function: $name"
 	      yellow $block
 	
-	      print $block > functions/$name
+	      # print $block > functions/$name
 	
 	      block=""
 	    else  
