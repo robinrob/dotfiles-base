@@ -5,6 +5,9 @@
 
 source ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/colors.zsh
 
+# perform this VIM command to make this file exportable!
+# :%s/\\\$/\\\\\\\\\$/g 
+
 function upper {
   TEXT="$@"
   print $TEXT:u
@@ -13,7 +16,7 @@ function upper {
 function pretty_print_env {
   ENV=`upper $1`
 
-  printf "$(green)\\\\$$ENV: $(yellow)$(eval print '$'$ENV)\n"
+  printf "$(green)\$$ENV: $(yellow)$(eval print '$'$ENV)\n"
 }
 
 function create_repo_aliases {
@@ -1071,14 +1074,14 @@ function alias_repo_action {
   ALIAS_SUFF=$3
   CMD=$4
 
-  alias "$REPO_ABBR$ALIAS_SUFF"="$CMD \\\\$$(pathize $REPO)_HOME"
+  alias "$REPO_ABBR$ALIAS_SUFF"="$CMD \$$(pathize $REPO)_HOME"
 }
 
 function alias_repo_nav {
   REPO=$1
   REPO_ABBR=$2
 
-  alias "cd${REPO_ABBR}"="cd_dir \\\\$$(pathize $REPO)_HOME"
+  alias "cd${REPO_ABBR}"="cd_dir \$$(pathize $REPO)_HOME"
 }
 
 function odl {
@@ -1249,7 +1252,7 @@ function switch_ruby {
 function switch_env {
   ENV=$1
 
-  if [[ -n $ENV && $(eval "print \\\\$$ENV") == 1 ]]
+  if [[ -n $ENV && $(eval "print \$$ENV") == 1 ]]
   then
     export $ENV=""
   else
@@ -1298,7 +1301,7 @@ function edit_env {
 function sed_esc {
   STR=$1
 
-  printf `print $STR | gsed 's/\([/\\\\$]\)/\\\\\1/g'`
+  printf `print $STR | gsed 's/\([/\$]\)/\\\\\1/g'`
 }
 
 function encrypt {

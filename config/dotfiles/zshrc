@@ -14,8 +14,8 @@ for config_file ($HOME/.framework/zsh/*.zsh) source $config_file
 # Functions
 ###############################################################################
 [[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
-source $ZDOT_HOME/functions.zsh
-# autoload ${fpath[1]}/*(:t)
+# source $ZDOT_HOME/functions.zsh
+autoload ${fpath[1]}/*(:t)
 
 
 # Environment Variables - must come before aliases, since if an env used by an
