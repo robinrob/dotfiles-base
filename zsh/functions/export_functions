@@ -22,7 +22,7 @@ cat $FUNCS_PATH | while read line ; do
     # Body of function
     else  
       # Strip out indentation from beginning of line
-      block="${block}${line[3,-1]}
+      block="${block}${line[3,-1]}"
 
     fi
 
