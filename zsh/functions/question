@@ -1,6 +1,0 @@
-URL=$1
-
-gsed -i '/zequestion=/d' $BOOKMARKS_PATH
-
-bookmark zequestion $URL
-

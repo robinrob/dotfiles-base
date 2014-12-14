@@ -1,3 +1,5 @@
+
+libfind-shortcut
 DIR=$1
 PATTERN=$2
 CAT=$3

@@ -1,0 +1,5 @@
+
+setopt localoptions extendedglob
+input=( ${(s::)@} )
+
+

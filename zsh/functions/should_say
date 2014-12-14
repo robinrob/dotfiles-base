@@ -1,8 +1,0 @@
-if [[ $SAYCMD_OVERRIDE == "" && $SAYCMD == 1 ]]
-then
-  print $TRUE_VALUE
-elif [[ $SAYCMD_OVERRIDE == 1 ]]
-then
-  print $TRUE_VALUE
-fi
-

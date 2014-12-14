@@ -1,5 +1,0 @@
-FILE=$1
-
-print "$(green)$(cat $FILE):
-$(yellow)$(./$FILE)"
-

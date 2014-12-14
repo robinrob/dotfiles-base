@@ -1,2 +1,0 @@
-browser "https://bitbucket.org/cloudreach/profile/repositories?search=`urlencode $@`"
-

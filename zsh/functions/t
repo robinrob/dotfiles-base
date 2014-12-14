@@ -1,3 +1,6 @@
 
 telnet $1 3389
 
+
+telnet $1 22
+

@@ -99,7 +99,6 @@ function new {
   	esac
   done
 
-
   FILE=$(extend_file $FILENAME $EXTENSION)
 
   FILE_DISPLAY=$(yellow $FILE)
@@ -557,7 +556,6 @@ function rake_do {
   fi
 }
 
-
 function rsd {
   rake_do git:deinit $@
 }
@@ -833,11 +831,9 @@ function points {
   browser "https://sites.google.com/a/cloudreach.co.uk/points-lists/system/app/pages/search?scope=search-site&q=`urlencode $@`"
 }
 
-
 function drive {
   browser "https://drive.google.com/a/cloudreach.co.uk/#search/`urlencode $@`"
 }
-
 
 function rubygems {
   browser "https://rubygems.org/search?utf8=%E2%9C%93&query=`urlencode $@`"
@@ -1033,7 +1029,6 @@ function create_repo_envs {
     export "$(pathize $repo)_HOME"=$PROG_HOME/$repo
   done
 }
-
 
 function create_repo_aliases {
   typeset -A abbreviations
@@ -1388,7 +1383,6 @@ function like {
   print $res2 | grep $NAME
 }
 
-
 function find_clean_names {
   find . -maxdepth 1 -type f -regex '.*/[a-zA-Z].*' | sed 's/\.\///g'
 }
@@ -1623,24 +1617,31 @@ function cr {
   $(yellow)$(./$FILE)"
 }
 
-
 function export_functions {
   IFS=''
-  pcregrep -M -N CR -o 'function [_a-zA-Z]+ {.+}' $FUNCS_PATH | while read line ; do
+  pcregrep '' $FUNCS_PATH | while read line ; do
+      
+      # Start of function
       if [[ -n $(print $line | pcregrep 'function [_a-zA-Z]+') ]]
       then
         name=$(print $line | pcregrep -o1 'function ([_a-zA-Z]+)')
+      # End of function
       elif [[ -n $(print $line | pcregrep '}$') ]]
       then
         green "Function: $name"
         yellow $block
-        
-        print $block > functions/$name
+       
+        touch functions/$name
+        print $block >> functions/$name
+        read
   
         block=""
+      # Body of function
       else  
+        # Strip out indentation from beginning of line
         block="${block}${line[3,-1]}
 "
       fi
+
   done
 }

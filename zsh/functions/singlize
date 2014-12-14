@@ -1,2 +1,0 @@
-print $1 | sed 's/b([[:alpha:]]+) +1b/1/g'
-

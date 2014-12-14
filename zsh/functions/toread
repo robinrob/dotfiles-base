@@ -1,4 +1,0 @@
-TO_READ=$1
-
-print "$TO_READ" >> $LISTS_HOME/to_read.txt
-

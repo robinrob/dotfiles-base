@@ -1,9 +1,0 @@
-BROWSER=$1
-
-if [[ "$BROWSER" == "" ]]
-then
-	BROWSER=$DEFAULT_BROWSER
-fi
-
-browser http://localhost:3000
-

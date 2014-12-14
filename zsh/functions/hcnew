@@ -1,3 +1,4 @@
+
 PROJECT=$1
 cat $HTML_TEMPLATES_HOME/practice_css.html | sed 's/Title/'$PROJECT'/' > $PROJECT.html
 

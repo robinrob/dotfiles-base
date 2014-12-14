@@ -1,2 +1,0 @@
-print $1 | sed 's/b(.[a-zA-Z0-9]+)+b//g'
-

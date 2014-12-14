@@ -1,3 +1,5 @@
+
+Shortcut for `new` function
 INTERPRETER=$1
 EXTENSION=$2
 FILENAME=$3

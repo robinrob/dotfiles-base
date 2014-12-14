@@ -1,2 +1,0 @@
-browser "http://stackoverflow.com/search?q=`urlencode $@`"
-

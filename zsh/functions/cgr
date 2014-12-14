@@ -1,6 +1,0 @@
-SEARCH=$1
-shift
-CMD=$@
-
-eval $CMD | grep $SEARCH
-

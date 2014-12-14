@@ -1,4 +1,0 @@
-switch_env USE_PYTHON
-switch_env_permo USE_PYTHON $USE_PYTHON
-pretty_print_env USE_PYTHON
-

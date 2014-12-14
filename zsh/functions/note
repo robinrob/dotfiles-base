@@ -1,2 +1,3 @@
+
 cd $TEMP_HOME && $EDITOR "$1.txt"
 

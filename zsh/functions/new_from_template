@@ -1,3 +1,4 @@
+
 TEMPLATE=$1
 FILENAME=$(singlize_extension $2)
 

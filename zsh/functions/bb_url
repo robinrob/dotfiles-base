@@ -1,0 +1,7 @@
+
+typeset url
+branch=$(git_branch)
+url=`git config --get remote.bitbucket.url | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}'`
+url="https://bitbucket.org/${url}/?at=$branch"
+print $url
+

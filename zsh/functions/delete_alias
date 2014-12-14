@@ -1,3 +1,4 @@
+
 for alias in $*
 do
   if [[ -n $alias ]]
