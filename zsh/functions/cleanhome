@@ -1,5 +1,5 @@
 cd ~
-for file in `gfind . -maxdepth 1 ( ! -regex '.*/..*' ) -type f`
+for file in $(gfind . -maxdepth 1 -type f -not -path '*/\.*')
 do
 	green "Moving $file to $TRASH_HOME"
   mv "${(q)file}" ~/.Trash
