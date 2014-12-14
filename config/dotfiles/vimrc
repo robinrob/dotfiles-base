@@ -126,3 +126,7 @@ nmap <CR> o<Esc>k
 "limit
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
+
+filetype on
+au BufNewFile,BufRead * set filetype=zsh
+
