@@ -262,7 +262,7 @@ alias cddocs="cd_dir $DOCS_HOME"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
-alias cdmr="cd_dir $RUBY_HOME/projects/mrrobinsmith.com-jekyll"
+alias cdmr="cd_dir ${MRROBINSMITHCOM_HOME}"
 
 alias cdbp="cd_dir $MRROBINSMITHCOM_HOME/public/blogposts"
 
@@ -321,6 +321,8 @@ alias cdmb="cd_dir $JS_HOME/projects/mobile-app-cordova"
 alias cdg="cd_dir $JS_HOME/projects/mobile-game-cocos"
 
 # Development operations
+alias cdfn="cd $FUNCS_HOME"
+
 alias jk="jekyll"
 
 alias jkb="jekyll build --watch"
