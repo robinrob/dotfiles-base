@@ -17,7 +17,7 @@ pcregrep -M -N CR -o 'function [_a-zA-Z]+ {[^{}]+}' $FUNCS_PATH | while read lin
       green "Function: $name"
       yellow $block
 
-      print $block > $name
+      print $block > functions/$name
 
       block=""
     fi
