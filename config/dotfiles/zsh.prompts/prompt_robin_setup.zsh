@@ -1,4 +1,4 @@
-source $FUNCS_PATH
+# source $FUNCS_PATH
 
 function prompt_robin_precmd {
   # Check for untracked files or updated submodules since vcs_info does not.
