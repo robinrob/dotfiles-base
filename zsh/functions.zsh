@@ -1598,17 +1598,19 @@ function export_functions {
       if [[ -n $(print $line | pcregrep 'function [_a-zA-Z]+') ]]
       then
         name=$(print $line | pcregrep -o1 'function ([_a-zA-Z]+)')
+
       # End of function
       elif [[ -n $(print $line | pcregrep '}$') ]]
       then
         green "Function: $name"
         yellow $block
        
-        # touch functions/$name
-        # print $block >> functions/$name
+        touch functions/$name
+        print $block >> functions/$name
         read
   
         block=""
+
       # Body of function
       else  
         # Strip out indentation from beginning of line
