@@ -1544,9 +1544,6 @@ function sub_arr {
   typeset -a ARR
 }
 
-autoload +X -U hello
-
-
 chpwd() {
 	git_checkout_master_if_on_detached_head
   git_remote_rename_origin_if_exists
@@ -1658,9 +1655,7 @@ function cr {
 
 
 function export_functions {
-	IFS=''
-	
-	pcregrep -M -N CR -o 'function [_a-zA-Z]+ {[^{}]+}' $FUNCS_PATH | while read line ; do
+	pcregrep -M -N CR -o 'function [_a-zA-Z]+ {[^{}]+}' $FUNCS_PATH | while read -r line ; do
 	    if [[ -n $(print $line | pcregrep 'function [_a-zA-Z]+') ]]
 	    then
 	      name=$(print $line | pcregrep -o1 'function ([_a-zA-Z]+)')
@@ -1669,7 +1664,7 @@ function export_functions {
 	      green "Function: $name"
 	      yellow $block
 	
-	      # print $block > functions/$name
+	      print $block > functions/$name
 	
 	      block=""
 	    else  
