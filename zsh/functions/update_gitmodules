@@ -16,7 +16,7 @@ do
   yellow git commit
   git commit -m '.gitmodules update'
   yellow git pull
-  git pull $DEFAULT_BRANCH master
+  git pull $DEFAULT_GIT_REMOTE master
   yellow git push
-  git push $DEFAULT_BRANCH master
+  git push $DEFAULT_GIT_REMOTE master
 done
