@@ -14,7 +14,7 @@ done
 if [[ "$(alias_exists $NAME $ALIAS_FILE)" == "no" ]]
 then
 	print "
-alias $NAME="$VALUE"" >> $ALIAS_FILE
+alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
 	print "$SUCCESS_MSG"
 else
   if ! [[ $OVERRIDE == "yes" ]]

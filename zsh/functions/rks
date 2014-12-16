@@ -1,4 +1,5 @@
-if [[ $*[-1] == "bitbucket" || $*[-1] == "github" ]] then
+if [[ $*[-1] == "bitbucket" || $*[-1] == "github" || $*[-1] == "origin" ]]
+then
   rake_do save "$*[1,-2]" $*[-1]
 else
   rake_do save "$*"

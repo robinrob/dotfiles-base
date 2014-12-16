@@ -154,3 +154,5 @@ alias ghpages="print 'http://robinrob.github.io' | pbcopy && safari 'http://robi
 alias ghh="print 'https://github.com/robinrob' | pbcopy && safari 'https://github.com/robinrob'"
 
 alias video="print 'https://www.youtube.com/watch?v=e-RzZ5ZsT0s' | pbcopy && safari 'https://www.youtube.com/watch?v=e-RzZ5ZsT0s'"
+
+alias repos=print 'https://github.com/robinrob?tab=repositories' | pbcopy && safari 'https://github.com/robinrob?tab=repositories'
