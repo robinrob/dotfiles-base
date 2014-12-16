@@ -1,6 +1,7 @@
 ###############################################################################
 # Un-Aliases
 ###############################################################################
+
 unalias todo 2>/dev/null
 
 unalias gr 2> /dev/null
@@ -59,3 +60,4 @@ unalias p 2> /dev/null
 
 unalias gh 2> /dev/null
 
+unalias grr 2> /dev/null

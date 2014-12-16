@@ -582,6 +582,8 @@ alias rnsall="cd $SCREENSHOTS_HOME && despace"
 
 alias mal="$EDITOR $ZDOT_HOME/aliases.zsh"
 
+alias mun="$EDITOR $ZDOT_HOME/unaliases.zsh"
+
 alias mop="$EDITOR $ZDOT_HOME/options.zsh"
 
 alias mos="$EDITOR $ZDOT_HOME/osx.zsh"
@@ -696,6 +698,8 @@ alias pb="pbcopy"
 
 
 # Function aliases
+alias grf="grep_all"
+
 alias aof="green \$(alphabet_of_files)"
 
 alias aofi="red \$(inverse_alphabet_of_files)"
@@ -880,3 +884,4 @@ alias lasts="cd $SCREENSHOTS_HOME && lastf -s $SCREENSHOT_NAME"
 alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 
 alias test="hello"
+
