@@ -18,6 +18,7 @@ do
     then
      green $file
      cd $(dirname $file)
+     green "In dir: $(pwd)"
      yellow git add
      git add .gitmodules
      yellow git commit
@@ -27,7 +28,7 @@ do
      yellow git push
      git push $DEFAULT_GIT_REMOTE master
      break
-     cd -
+     cd $PROG_HOME
     fi
   done
 done
