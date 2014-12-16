@@ -27,8 +27,8 @@ do
      git pull $DEFAULT_GIT_REMOTE master
      yellow git push
      git push $DEFAULT_GIT_REMOTE master
-     break
      cd $PROG_HOME
+     break
     fi
   done
 done
