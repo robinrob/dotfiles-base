@@ -1,2 +1,2 @@
-browser "https://sites.google.com/a/cloudreach.co.uk/points-lists/system/app/pages/search?scope=search-site&q=`urlencode $@`"
+browser "https://sites.google.com/a/cloudreach.co.uk/points-lists/system/app/pages/search?scope=search-site&q=$(urlencode $@)"
 

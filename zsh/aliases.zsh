@@ -586,8 +586,6 @@ alias mos="$EDITOR $ZDOT_HOME/osx.zsh"
 
 alias men="$EDITOR $ZDOT_HOME/env_variables.zsh"
 
-alias mfn="$EDITOR $ZDOT_HOME/functions.zsh"
-
 alias mpa="$EDITOR $ZDOT_HOME/path.zsh"
 
 alias t="touch"
