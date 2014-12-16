@@ -14,7 +14,7 @@ do
   yellow git add
   git add .gitmodules
   yellow git commit
-  git commit -m '.gitmodules update'
+  git commit -am '.gitmodules update'
   yellow git pull
   git pull $DEFAULT_GIT_REMOTE master
   yellow git push
