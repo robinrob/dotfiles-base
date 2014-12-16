@@ -363,6 +363,7 @@ alias gst="git status"
 
 alias gSt="git stash"
 
+alias grs="git remote show"
 
 alias gin="git init"
 
