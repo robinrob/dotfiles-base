@@ -27,6 +27,7 @@ do
      yellow git push
      git push $DEFAULT_GIT_REMOTE master
      break
+     cd -
     fi
   done
 done
