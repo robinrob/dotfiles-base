@@ -523,6 +523,8 @@ alias gpom="git push origin master"
 
 alias gpg="git push github"
 
+alias gplg="git pull github"
+
 alias gpgm="git push github master"
 
 alias gpbm="git push bitbucket master"
