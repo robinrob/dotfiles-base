@@ -1,0 +1,22 @@
+typeset -U files
+
+cd $PROG_HOME
+
+for file in $(gfind . -name .gitmodules | xargs)
+do
+  files=($file $files)
+done
+
+for file in $files
+do
+  green $file
+  cd $(dirname $file)
+  yellow git add
+  git add .gitmodules
+  yellow git commit
+  git commit -m '.gitmodules update'
+  yellow git pull
+  git pull origin master || git pull origin github
+  yellow git push
+  git push origin master || git push origin github
+done
