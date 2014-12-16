@@ -30,13 +30,17 @@ GITHUB_CREDS=$GITHUB_HOME/creds.sh
 [[ -f $GITHUB_CREDS ]] && source $GITHUB_CREDS
 
 
+# Unaliases
+###############################################################################
+source $ZDOT_HOME/unaliases.zsh
+
+
 # Aliases
 ###############################################################################
 # Dynamically-generate some aliases
 autoload -U create_repo_aliases
 create_repo_aliases
 source $ZDOT_HOME/aliases.zsh
-
 
 # Bookmarks
 ###############################################################################

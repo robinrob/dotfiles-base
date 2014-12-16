@@ -1,110 +1,7 @@
-###############################################################################
-# Un-Aliases
-###############################################################################
-unalias todo 2>/dev/null
+# I favour using double quotes instead of single quotes for aliases, so that i
+# can later do a find/replace to switch something out for an environment
+# variable value.
 
-unalias gr 2> /dev/null
-
-unalias cdb 2> /dev/null
-
-unalias gam 2> /dev/null
-
-# unalias gcl 2> /dev/null
-
-unalias c 2> /dev/null
-
-unalias gb 2> /dev/null
-
-unalias gi 2> /dev/null
-
-# unalias e 2> /dev/null
-
-unalias gra 2> /dev/null
-
-unalias gbd 2> /dev/null
-
-unalias g 2> /dev/null
-
-unalias sd 2> /dev/null
-
-# unalias gg 2> /dev/null
-
-unalias ga 2> /dev/null
-
-unalias d 2> /dev/null
-
-unalias s 2> /dev/null
-
-unalias gst 2> /dev/null
-
-unalias grs 2> /dev/null
-
-# unalias lc 2> /dev/null
-
-unalias sf 2> /dev/null
-
-# unalias cd > /dev/null 2> /dev/null 2> /dev/null
-
-unalias lsg 2> /dev/null
-
-unalias ls 2> /dev/null
-
-unalias rm 2> /dev/null
-
-unalias gpl 2> /dev/null
-
-unalias cd 2> /dev/null
-
-unalias p 2> /dev/null
-
-unalias gh 2> /dev/null
-
-# Web Shortcuts/Bookmarks
-
-alias rd="rubydoc"
-
-alias wk="wiki"
-
-alias gg="google"
-
-
-# Hashes
-###############################################################################
-
-hash -d robin="$PROG_HOME"
-
-hash -d rby="$RUBY_HOME"
-
-hash -d dotfiles="$DOTFILES_HOME"
-
-hash -d javascript="$JS_HOME"
-
-hash -d html-css="$HTMLCSS_HOME"
-
-
-# Aliases
-###############################################################################
-
-# Global aliases
-# globalias -g p="prog"
-#
-# alias -g r="rby"
-#
-# alias -g d="dotfiles"
-#
-# alias -g css="html-css"
-#
-# alias -g L='| less'
-#
-# alias -g NUL="> /dev/null 2>&1"
-#
-# alias -g pr="practice"
-#
-# alias -g pro="projects"
-
-# Hash aliases
-
-# GNU aliases
 alias mv="gmv"
 
 alias gegrep="gegrep"
@@ -357,7 +254,7 @@ alias rvl="rvm list"
 
 alias rsc="rails console"
 
-alias plrk="cd rake; green 'Git-pulling rake ...'; git pull origin master; cd - > /dev/null"
+alias plrk="cd rake; green 'Git-pulling rake ...'; git pull $DEFAULT_GIT_BRANCH master; cd - > /dev/null"
 
 alias svrk="cd rake; green 'Rake-saving rake ...'; rake save; cd - > /dev/null"
 
@@ -466,6 +363,7 @@ alias gst="git status"
 
 alias gSt="git stash"
 
+alias grs="git remote show"
 
 alias gin="git init"
 
@@ -487,13 +385,13 @@ alias gcmr="git submodule foreach 'git checkout master'"
 
 alias gsf="git submodule foreach"
 
-alias gpd="git push origin develop"
+alias gpd="git push $DEFAULT_GIT_BRANCH develop"
 
-alias gpm="git push origin master"
+alias gpm="git push $DEFAULT_GIT_BRANCH master"
 
-alias gpld="git push origin develop"
+alias gpld="git push $DEFAULT_GIT_BRANCH develop"
 
-alias gplm="git push origin master"
+alias gplm="git push $DEFAULT_GIT_BRANCH master"
 
 alias gcm="git checkout master"
 
@@ -515,11 +413,11 @@ alias gra="git remote add"
 
 alias grs="git remote show"
 
-alias grao="git remote add origin"
+alias grao="git remote add $DEFAULT_GIT_BRANCH"
 
-alias gpo="git push origin"
+alias gpo="git push $DEFAULT_GIT_BRANCH"
 
-alias gpom="git push origin master"
+alias gpom="git push $DEFAULT_GIT_BRANCH master"
 
 alias gpg="git push github"
 
@@ -529,15 +427,15 @@ alias gpgm="git push github master"
 
 alias gpbm="git push bitbucket master"
 
-alias gplom="git pull origin master"
+alias gplom="git pull $DEFAULT_GIT_BRANCH master"
 
 alias gplgm="git pull github master"
 
 alias gplbm="git pull bitbucket master"
 
-alias gpod="git push origin develop"
+alias gpod="git push $DEFAULT_GIT_BRANCH develop"
 
-alias gplod="git pull origin develop"
+alias gplod="git pull $DEFAULT_GIT_BRANCH develop"
 
 # Development operations
 alias js="jekyll serve"
@@ -689,8 +587,6 @@ alias mop="$EDITOR $ZDOT_HOME/options.zsh"
 alias mos="$EDITOR $ZDOT_HOME/osx.zsh"
 
 alias men="$EDITOR $ZDOT_HOME/env_variables.zsh"
-
-alias mfn="$EDITOR $ZDOT_HOME/functions.zsh"
 
 alias mpa="$EDITOR $ZDOT_HOME/path.zsh"
 
