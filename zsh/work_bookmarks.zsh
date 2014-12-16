@@ -74,5 +74,4 @@ alias bridge="print 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1
 alias escalation="print 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1fY8-IvhWnj1E3VeGhMsBDT_s3_06agrOZDytYesSeCc/edit#gid=1574636108' | pbcopy && chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1fY8-IvhWnj1E3VeGhMsBDT_s3_06agrOZDytYesSeCc/edit#gid=1574636108'"
 
 
-
-alias p1=print 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=16Di5DweKy-7BQBwHBJKUwQV9y7IdEqu7k63UuMm2zs0&mode=domain' | pbcopy && chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=16Di5DweKy-7BQBwHBJKUwQV9y7IdEqu7k63UuMm2zs0&mode=domain'
+alias p1="print 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=16Di5DweKy-7BQBwHBJKUwQV9y7IdEqu7k63UuMm2zs0&mode=domain' | pbcopy && chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=16Di5DweKy-7BQBwHBJKUwQV9y7IdEqu7k63UuMm2zs0&mode=domain'"
