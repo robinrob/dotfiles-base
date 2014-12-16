@@ -248,3 +248,4 @@ fi
 
 export PG_CONF=$PGDATA/postgresql.conf
 
+export DEFAULT_GIT_BRANCH="github"

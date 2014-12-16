@@ -37,6 +37,10 @@ autoload -U create_repo_aliases
 create_repo_aliases
 source $ZDOT_HOME/aliases.zsh
 
+# Unaliases
+###############################################################################
+source $ZDOT_HOME/unaliases.zsh
+
 
 # Bookmarks
 ###############################################################################
