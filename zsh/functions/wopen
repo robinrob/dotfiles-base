@@ -1,0 +1,2 @@
+$EDITOR `which $1`
+

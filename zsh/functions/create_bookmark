@@ -1,0 +1,23 @@
+BOOKMARKS_PATH=$1
+NAME=$2
+URL=$3
+BROWSER=$4
+
+if [ -z "$BROWSER" ]
+then
+  if [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
+  then
+    BROWSER="safari"
+  elif [[ $HOSTNAME == $VENUS_HOSTNAME ]]
+  then
+    BROWSER="chrome"
+  fi
+fi
+
+ALIAS="print '${URL}' | pbcopy && ${BROWSER} '${URL}'"
+SUCCESS_MSG="$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
+
+create_alias $NAME $ALIAS $BOOKMARKS_PATH $SUCCESS_MSG
+
+source $BOOKMARKS_PATH
+

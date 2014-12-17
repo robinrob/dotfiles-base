@@ -1,10 +1,10 @@
 #!/usr/bin/env zsh
 
-source colors.zsh
-source indents.zsh
-source functions.zsh
+source $COLORS_PATH
+source $ZDOT_HOME/indents.zsh
+source $ZDOT_HOME/functions.zsh
 
-function install() {
+function install {
     LABEL=$1
     FILEPATH=$2
 
@@ -14,7 +14,7 @@ function install() {
 	# For some reason the evals were required here
 	cmd="rm -f $FILEPATH"
 	eval $cmd
-	cmd="ln ../config/files/Robin.xml $FILEPATH"
+	cmd="ln $DOTFILES_BASE_HOME/config/files/Robin.jetbrains.xml $FILEPATH"
 	eval $cmd
 }
 

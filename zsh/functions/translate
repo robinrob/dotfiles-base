@@ -1,0 +1,27 @@
+while getopts :f:t: name
+do
+	case $name in
+		f) FROM="$OPTARG" ;;
+		t) TO="$OPTARG" ;;
+		*) usage ;;                # display usage and exit
+	esac
+done
+
+if [[ "$FROM" == "" ]]
+then
+	FROM="tl"
+else
+	shift; shift;
+fi
+
+if [[ "$TO" == "" ]]
+then
+	TO="en"
+else
+	shift; shift;
+fi
+
+args="$@"
+url="https://translate.google.com/#$FROM/$TO/$(urlencode ""$args"")"
+browser $url
+

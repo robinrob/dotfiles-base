@@ -1,0 +1,11 @@
+DIR=$1
+PATTERN=$2
+CAT=$3
+
+if [[ "$CAT" == "no" ]]
+then
+		libfind -d $1 -p $2 -c ""
+else
+		libfind -d $1 -p $2 -c yes
+fi
+

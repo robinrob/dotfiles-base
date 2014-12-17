@@ -1,108 +1,8 @@
-source $DOTFILES_HOME/dotfiles-base/zsh/bookmarks.zsh
-source $DOTFILES_HOME/dotfiles-base/zsh/work_bookmarks.zsh
+# I favour using double quotes instead of single quotes for aliases, so that i
+# can later do a find/replace to switch something out for an environment
+# variable value.
 
-
-############################################################################### Un-Aliases
-###############################################################################
-unalias todo
-
-unalias gr
-
-unalias cdb
-
-unalias gam
-
-# unalias gcl
-
-unalias c
-
-unalias gb
-
-unalias gi
-
-# unalias e
-
-unalias gra
-
-unalias gbd
-
-unalias sd
-
-# unalias gg
-
-unalias ga
-
-unalias d
-
-unalias s
-
-unalias gst
-
-# unalias lc
-
-unalias sf
-
-# unalias cd > /dev/null 2> /dev/null
-
-unalias lsg
-
-unalias ls
-
-unalias rm
-
-
-# Web Shortcuts/Bookmarks
-alias q="question"
-
-alias rd="rubydoc"
-
-alias wk="wiki"
-
-alias gg="google"
-
-
-# Hashes
-###############################################################################
-
-hash -d robin="$PROG_HOME"
-
-hash -d rby="$RUBY_HOME"
-
-hash -d dotfiles="$DOTFILES_HOME"
-
-hash -d javascript="$JS_HOME"
-
-hash -d html-css="$HTMLCSS_HOME"
-
-
-# Aliases
-###############################################################################
-
-# Global aliases
-# alias -g p="prog"
-#
-# alias -g r="rby"
-#
-# alias -g d="dotfiles"
-#
-# alias -g css="html-css"
-#
-# alias -g L='| less'
-#
-# alias -g NUL="> /dev/null 2>&1"
-#
-# alias -g pr="practice"
-#
-# alias -g pro="projects"
-
-# Hash aliases
-alias js="javascript"
-
-
-# GNU aliases
 alias mv="gmv"
-
-alias gecho="echo"
 
 alias gegrep="gegrep"
 
@@ -116,14 +16,43 @@ alias ls="/usr/local/bin/gls --color"
 
 alias cat="gcat"
 
+alias sed="gsed"
+
 alias awk="gawk"
 
-alias "echo"="gecho"
+
+# External commands
+alias pcregrep='pcregrep --color=auto'
 
 # Shell Aliases
+alias cpx="chmod +x"
+
+alias cmx="chmod -x"
+
+alias age="stat -f '%m%t%Sm %N'"
+
+alias p="print"
+
+alias unal="delete_alias"
+
+alias timezones="sudo systemsetup -listtimezones"
+
+alias cfns="functions | grep -o '[^_\s]\+ ()' | wc -l"
+
+alias dirs="dirs -v"
+
+alias pz="print -z"
+
+alias pp="print -P"
+
+alias pr="print -r"
+
+alias pl="print -l"
+
+alias g="grep"
+
 alias cwd="pwd"
 
-alias lsltr="ls -ltr --color=none | awk '{print \$9}' | tail +2"
 
 alias dt="date"
 
@@ -143,7 +72,7 @@ alias w="which"
 
 alias chr="chrome"
 
-alias lsl="ls -l"
+alias lsl="ls -lL"
 
 alias isgit="show_git"
 
@@ -151,22 +80,38 @@ alias isg="isgit"
 
 alias igi="isgit"
 
-alias shell="echo $SHELL"
+alias shell="print $SHELL"
 
 alias cdcocos="cd_dir $COCOS_HOME"
 
 # Shell shortcuts
+alias pag="ps aux | grep"
+
+alias pyv="python --version"
+
+alias die="killp chrome"
+
+alias apps="open /Applications"
+
+alias s="source"
+
+alias bcd="nocorrect builtin cd"
+
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
-alias rkls="rake each_sub['echo, quiet']"
+alias rkls="rake_do git:foreach nil"
 
 alias cdgam="cd_dir $GAM_PATH"
 
-alias cdrec="cd_dir $RECEIPTS_HOME"
+alias cdexp="cd_dir $EXPENSES_HOME"
+
+alias cdrec="cd_dir $(dirname $RECORDS_PATH)"
+
+alias cdlists="cd_dir $LISTS_HOME"
 
 alias strash="du -dh $TRASH_HOME"
 
-alias mcol="$EDITOR $DOTFILES_HOME/colors.zsh"
+alias mcol="$EDITOR $ZDOT_HOME/colors.zsh"
 
 alias syslog="tail -f /var/log/system.log"
 
@@ -206,23 +151,23 @@ alias gimp="/Applications/GIMP.app/Contents/MacOS/GIMP-bin"
 alias sublime="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'"
 
 # Navigation
-alias cdd="cd_dir $DOTFILES_HOME"
+alias cdzd="cd $ZDOT_HOME"
+
+alias cdgg="cd ~/Google\ Drive"
 
 alias cddocs="cd_dir $DOCS_HOME"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
-alias cdmr="cd_dir $RUBY_HOME/projects/mrrobinsmith.com"
+alias cdmr="cd_dir ${MRROBINSMITHCOM_HOME}"
 
 alias cdbp="cd_dir $MRROBINSMITHCOM_HOME/public/blogposts"
-
-alias cdq="cd_dir $RUBY_HOME/projects/quiz"
 
 alias cdp2="cd_dir $PY_HOME/python2"
 
 alias cdp3="cd_dir $PY_HOME/python3"
 
-alias cdrk="cd_dir $RAKEFILE_HOME"
+alias cdrk="cd_dir $RAKELIB_HOME"
 
 alias cdl="cd_dir $LOCAL_HOME"
 
@@ -236,9 +181,23 @@ alias cdjpr="cd_dir $JS_HOME practice"
 
 alias cdrecipe="cd_dir $HTMLCSS_HOME/projects/recipe-finder"
 
+alias cdzpr="cd_dir $ZSH_HOME/practice"
+
+alias cdrpr="cd_dir $RUBY_HOME/practice"
+
+alias cdppr="cd_dir $PYTHON_HOME/practice"
+
+alias cdspr="cd_dir $SH_HOME/practice"
+
+alias cdsed="cd_dir $SH_HOME/practice/sed"
+
 alias cdscr="cd_dir $SCREENSHOTS_HOME"
 
+alias cdhbpr="cd_dir $HTML_CSS_HOME/practice/bootstrap"
+
 alias cdcam="cd_dir '$CAMERA_HOME'"
+
+alias ocam="cd_dir $CAMERA_HOME && open ."
 
 alias cdt="cd $TRASH_HOME"
 
@@ -259,6 +218,16 @@ alias cdmb="cd_dir $JS_HOME/projects/mobile-app-cordova"
 alias cdg="cd_dir $JS_HOME/projects/mobile-game-cocos"
 
 # Development operations
+alias cdfn="cd $FUNCS_HOME"
+
+alias jk="jekyll"
+
+alias jkb="jekyll build --watch"
+
+alias pbu="pythonbrew use"
+
+alias pi="pip install -r requirements.txt"
+
 alias rgm="rvm_gem_list"
 
 alias crv="cat .ruby-version"
@@ -283,17 +252,13 @@ alias rgd="rvm gemset delete"
 
 alias rvl="rvm list"
 
-alias mrdb="psql -U msl -d mrrobinsmith_development"
-
 alias rsc="rails console"
 
-alias plrk="cd rake; green 'Git-pulling rake ...'; git pull origin master; cd - > /dev/null"
+alias plrk="cd rake; green 'Git-pulling rake ...'; git pull $DEFAULT_GIT_BRANCH master; cd - > /dev/null"
 
 alias svrk="cd rake; green 'Rake-saving rake ...'; rake save; cd - > /dev/null"
 
-alias rktr="rake each_sub['echo, quiet']"
-
-alias rkser="rake_do server"
+alias rkser="rake_do rails:server"
 
 alias rls="rails server"
 
@@ -303,9 +268,11 @@ alias rkt="rake_do test"
 
 alias rkr="rake routes"
 
-alias rkss="rake sub_sort"
+alias rkst="rake_do git:sort_sub"
 
 alias rk="rake"
+
+alias rkjc="rake_do jekyll:clean"
 
 alias gnb="gem install bundler && bundle install"
 
@@ -320,12 +287,19 @@ alias bu="bundle update"
 alias save="rake -f $GLOBAL_RAKEFILE_HOME/Rakefile save_code"
 
 #alias rksr="rake -f $RAKEFILE_HOME/Rakefile save"
+#
 
-alias rkrn="rake run"
+alias rkrn="rake cocs:run"
 
-alias rkd="rake_do deploy"
+alias rkd="rake_do rails:deploy"
 
-alias rkp="rake_do pull"
+alias rkde="rake_do git:deinit"
+
+alias rkD="rake_do git:sub_deinit"
+
+alias rkpl="rake_do git:pull"
+
+alias rkp="rake_do git:push"
 
 alias rkup="rakeup"
 
@@ -338,6 +312,8 @@ alias fbd="fabdown"
 alias anew="new_s awk awk"
 
 alias pnew="new_s python py"
+
+alias rnew="new_s ruby rb"
 
 alias bnew="new_s bash sh"
 
@@ -367,15 +343,18 @@ alias p3="~/.pythonbrew/pythons/Python-3.2/bin/python3"
 
 alias pbrew="pythonbrew"
 
-alias cen="count_non_empty $DOTFILES_HOME/env_variables.zsh"
+alias cen="cat $ENVS_PATH"
 
-alias cal="count_non_empty $DOTFILES_HOME/aliases.zsh"
+alias cals="cat $ALIASES_PATH"
 
-alias cfn="cat $DOTFILES_HOME/functions.zsh"
+alias cfn="cat $FUNCS_PATH"
 
-# alias lfn='grep -o "function [a-zA-Z0-9_]* "'$DOTFILES_HOME/functions.zsh'| awk ''{print $2}'' | grep ''.*'''
 
 # Git aliases
+alias gacm="git add -u * && git add * && git commit -m"
+
+alias grS="git reset"
+
 alias grH="git reset HEAD"
 
 alias gas="git add *"
@@ -384,7 +363,7 @@ alias gst="git status"
 
 alias gSt="git stash"
 
-alias grrm="git remote rm"
+alias grs="git remote show"
 
 alias gin="git init"
 
@@ -406,17 +385,15 @@ alias gcmr="git submodule foreach 'git checkout master'"
 
 alias gsf="git submodule foreach"
 
-alias gpd="git push origin develop"
+alias gpd="git push $DEFAULT_GIT_BRANCH develop"
 
-alias gpm="git push origin master"
+alias gpm="git push $DEFAULT_GIT_BRANCH master"
 
-alias gpld="git push origin develop"
+alias gpld="git push $DEFAULT_GIT_BRANCH develop"
 
-alias gplm="git push origin master"
+alias gplm="git push $DEFAULT_GIT_BRANCH master"
 
 alias gcm="git checkout master"
-
-alias gcmm="git commit -m"
 
 alias gcd="git checkout develop"
 
@@ -424,7 +401,9 @@ alias ga="git add"
 
 alias gsi="git submodule init"
 
-alias gsu="git submodule update --init --recursive"
+alias gsu="git submodule update"
+
+alias gsI="git submodule update --init --recursive"
 
 alias gsa="git submodule add"
 
@@ -432,26 +411,45 @@ alias cgm="cat .gitmodules"
 
 alias gra="git remote add"
 
-alias grao="git remote add origin"
+alias grs="git remote show"
 
-alias gpom="git push origin master"
+alias grao="git remote add $DEFAULT_GIT_BRANCH"
 
-alias gplom="git pull origin master"
+alias gpo="git push $DEFAULT_GIT_BRANCH"
 
-alias gsr="git submodule add git@bitbucket.org:robinrob/rakefile.git rake && ln -s rake/Rakefile Rakefile"
+alias gpom="git push $DEFAULT_GIT_BRANCH master"
+
+alias gpg="git push github"
+
+alias gplg="git pull github"
+
+alias gpgm="git push github master"
+
+alias gpbm="git push bitbucket master"
+
+alias gplom="git pull $DEFAULT_GIT_BRANCH master"
+
+alias gplgm="git pull github master"
+
+alias gplbm="git pull bitbucket master"
+
+alias gpod="git push $DEFAULT_GIT_BRANCH develop"
+
+alias gplod="git pull $DEFAULT_GIT_BRANCH develop"
 
 # Development operations
-alias ccr="cocos run -p web"
+alias js="jekyll serve"
 
-alias pl="cd_pull"
+alias cdnoc="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
+
+alias cdms="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
+
+alias ccr="cocos run -p web"
 
 alias st="cd_status"
 
 alias sv="cd_save"
 
-alias dpl="cd_pull $DOTFILES_HOME"
-
-alias dsv="save_crontab; save_jetbrains; cd_save $DOTFILES_HOME"
 
 alias dcm="cd_commit $DOTFILES_HOME"
 
@@ -459,9 +457,6 @@ alias ddi="cd_diff $DOTFILES_HOME"
 
 alias dst="cd_status $DOTFILES_HOME"
 
-repo_cmds
-
-alias DSV="dsv"
 
 alias fpl="fab pull"
 
@@ -475,9 +470,7 @@ alias lsv="cd_save $LOCAL_HOME"
 
 alias lst="cd_status $LOCAL_HOME"
 
-alias qpl="cd_pull $QUIZ_HOME"
 
-alias qsv="cd_save $QUIZ_HOME"
 
 # Chef
 alias kel="knife environment list"
@@ -485,7 +478,15 @@ alias kel="knife environment list"
 alias knl="knife node list"
 
 # Viewing and editing files
-alias toread="cat $LISTS_HOME/to_read.txt"
+alias ocv="open -a OpenOffice $IMPORTANT_HOME/cv/cv.odt"
+
+alias splq="$EDITOR $SPLUNK_HOME/splunk_searches.txt"
+
+alias regex="$RUBY_HOME/practice/regexp_operators.rb"
+
+alias doit="$RECORDS_HOME/doit.zsh"
+
+alias ctoread="cat $LISTS_HOME/to_read.txt"
 
 alias mtoread="m $LISTS_HOME/to_read.txt"
 
@@ -493,17 +494,23 @@ alias mbrew="$EDITOR $DOTFILES_HOME/homebrew.txt"
 
 alias cbrew="cat $DOTFILES_HOME/homebrew.txt"
 
-alias mprompt="$EDITOR ~/.zsh.prompts/prompt_robin_setup.zsh"
+alias mpr="$EDITOR ~/.zsh.prompts/prompt_robin_setup.zsh"
 
-alias mpr="mprompt"
+alias cpr="cat ~/.zsh.prompts/prompt_robin_setup.zsh"
 
-alias rs="source ~/.zshrc"
+alias resource="source ~/.zshrc"
 
-alias rsen="source $DOTFILES_HOME/env_variables.zsh"
+alias rs="resource"
 
-alias rsfn="source $DOTFILES_HOME/functions.zsh"
+alias rsen="source $ZDOT_HOME/env_variables.zsh"
 
-alias rsal="source $DOTFILES_HOME/aliases.zsh"
+alias rsfn="source $ZDOT_HOME/functions.zsh"
+
+alias rsf="source $ZDOT_HOME/functions.zsh"
+
+alias rsop="source $ZDOT_HOME/options.zsh"
+
+alias rsos="source $ZDOT_HOME/osx.zsh"
 
 alias RS="source ~/.zshrc"
 
@@ -533,17 +540,23 @@ alias vzsh="vim ~/.zshrc"
 
 alias mzsh="$EDITOR ~/.zshrc"
 
+alias mzen="$EDITOR ~/.zshenv"
+
 alias ezsh="edit ~/.zshrc"
 
 alias ezs="ezsh"
 
 alias czsh="cat ~/.zshrc"
 
-alias mbk="m $DOTFILES_HOME/bookmarks.zsh"
+alias bmk="bookmark"
 
-alias cbk="cat $DOTFILES_HOME/bookmarks.zsh"
+alias wbmk="work_bookmark"
 
-alias mwbk="m $DOTFILES_HOME/work_bookmarks.zsh"
+alias mbk="m $BOOKMARKS_PATH"
+
+alias mwbk="m $WORKBOOKMARKS_PATH"
+
+alias cbk="cat $ZDOT_HOME/bookmarks.zsh"
 
 alias edit=$EDITOR
 
@@ -559,10 +572,6 @@ alias reminderrobin="reminder robin@mrrobinsmith.com"
 
 alias reminderwork="reminder robin.smith@cloudreach.co.uk"
 
-alias tagalog="cd_dir $QUIZ_HOME && ./quiz.rb -f $QUIZ_HOME/tagalog.csv -t 10 -g 3"
-
-alias capitals="cd $QUIZ_HOME && ./quiz.rb -f $QUIZ_HOME/capitals.csv -t 10 -g 3"
-
 alias erec="$EDITOR $RECORDS_PATH"
 
 alias cms="edit $DOCS_HOME/commands.txt"
@@ -571,11 +580,17 @@ alias password="ruby $RUBY_HOME/projects/rbpassword/rbpassword.rb"
 
 alias rnsall="cd $SCREENSHOTS_HOME && despace"
 
-alias mal="$EDITOR $DOTFILES_HOME/aliases.zsh"
+alias mal="$EDITOR $ZDOT_HOME/aliases.zsh"
 
-alias men="$EDITOR $DOTFILES_HOME/env_variables.zsh"
+alias mun="$EDITOR $ZDOT_HOME/unaliases.zsh"
 
-alias mfn="$EDITOR $DOTFILES_HOME/functions.zsh"
+alias mop="$EDITOR $ZDOT_HOME/options.zsh"
+
+alias mos="$EDITOR $ZDOT_HOME/osx.zsh"
+
+alias men="$EDITOR $ZDOT_HOME/env_variables.zsh"
+
+alias mpa="$EDITOR $ZDOT_HOME/path.zsh"
 
 alias t="touch"
 
@@ -601,9 +616,13 @@ alias emptytrash="sudo rm -rf ~/.Trash/*"
 
 alias cgi="cat .gitignore"
 
-alias px="chmod +x"
+alias x+="chmod +x"
 
-alias mx="chmod -x"
+alias x-="chmod -x"
+
+alias chp="chmod +x"
+
+alias chm="chmod -x"
 
 alias kud="knife_upload_databag"
 
@@ -617,7 +636,9 @@ alias fbs="fab save"
 
 alias fcl="fab clean"
 
-alias cgc="cat ~/.gitconfig"
+alias cgc="cat .git/config"
+
+alias mgc="$EDITOR .git/config"
 
 alias mrd="m README.md"
 
@@ -645,7 +666,7 @@ alias ecmd="$EDITOR $DOCS_HOME/commands.txt"
 
 alias cmd="$EDITOR $DOCS_HOME/commands.txt"
 
-alias e="echo"
+alias e="print"
 
 alias v=$VISUAL
 
@@ -675,14 +696,59 @@ alias c="cat"
 
 alias pb="pbcopy"
 
-alias splq="$EDITOR ${SPLUNK_HOME}/splunk_searches.txt"
 
-# Shell functions/function aliases
+# Function aliases
+alias grf="grep_all"
+
+alias aof="green \$(alphabet_of_files)"
+
+alias aofi="red \$(inverse_alphabet_of_files)"
+
+alias epb="printpb"
+
+alias cap="cat_print"
+
+alias enc="encrypt"
+
+alias dec="decrypt"
+
+alias een="edit_env"
+
+alias ppe="pretty_print_env"
+
+alias h="history"
+
+alias dsp="despace"
+
+alias grp="set -o | grep"
+
+alias bell="tput bel"
+
+alias sto="setopt"
+
+alias uns="unsetopt"
+
+alias seg="set -o | grep"
+
+alias ung="unsetopt | grep"
+
+alias sws="switch_say"
+
+alias swso="switch_say_override"
+
+alias esws="print $SAYCMD"
+
+alias eswso="print $SAYCMD_OVERRIDE"
+
+alias swp="switch_python"
+
+alias swr="switch_ruby"
+
+alias brl="brew list"
+
 alias b="browser"
 
 alias killa="killp"
-
-alias brew="nbrew"
 
 alias bkmk="bookmark"
 
@@ -704,7 +770,7 @@ alias lfind="libfind_s $LOCAL_HOME"
 
 alias dfind="libfind_s $DOTFILES_HOME"
 
-alias hfind="libfind_s $HTMLCSS_HOME/practice"
+alias hfind="libfind_s $HTML_CSS_HOME/practice"
 
 alias jfind="libfind_s $JS_HOME/practice"
 
@@ -724,12 +790,14 @@ alias afind="libfind_s $AWK_HOME"
 
 alias zshfind="file_grep ~/.zshrc"
 
-alias sshfind="file_grep ~/.ssh/config"
+alias sshf="file_grep ~/.ssh/config"
 
 # Records & docs
 alias erec="$EDITOR $IMPORTANT_HOME/records/record.txt"
 
 alias mrec="$EDITOR $RECORDS_PATH"
+
+alias crec="cat $RECORDS_PATH"
 
 alias lahome="get_record la_home"
 
@@ -740,8 +808,6 @@ alias cardcredit="get_record rbc-credit"
 alias cardhsbc="get_record hsbc-debit"
 
 alias cardrbc="get_record rbc-debit"
-
-alias doc="cat $IMPORTANT_HOME/records/doc.txt"
 
 alias mspnum="get_record msp_num"
 
@@ -765,7 +831,7 @@ alias ad="address"
 
 alias phonelong="get_record phone_long"
 
-alias phone="get_record phone_short"
+alias phone="get_record phone_uk"
 
 alias ph="phone"
 
@@ -818,3 +884,4 @@ alias lasts="cd $SCREENSHOTS_HOME && lastf -s $SCREENSHOT_NAME"
 alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 
 alias test="hello"
+

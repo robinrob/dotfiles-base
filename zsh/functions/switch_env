@@ -1,0 +1,9 @@
+ENV=$1
+
+if [[ -n $ENV && $(eval "print \$$ENV") == 1 ]]
+then
+  export $ENV=""
+else
+  export $ENV=1
+fi
+

@@ -1,0 +1,3 @@
+setopt localoptions extendedglob
+input=( ${(s::)@} )
+print ${(j::)input/(#b)([^A-Za-z0-9_.!~*\'\(\)-])/%$(([##16]#match))}

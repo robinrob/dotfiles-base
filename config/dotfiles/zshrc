@@ -1,137 +1,110 @@
 #!/usr/bin/env zsh -x
 
-DOTFILES_HOME=~/Programming/robin/zsh/projects/dotfiles
-source $DOTFILES_HOME/dotfiles-base/zsh/colors.zsh
-
-echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)"
-# Or alternatively:
-# echo "$(brightwhite I)$(brightyellow " am ")$(brightcyan awesome)"
+source $ZSHCOLORS_PATH
 
 
-# External framework
-############
+# Third-party ZSH framework
+###############################################################################
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
-
 for config_file ($HOME/.framework/zsh/*.zsh) source $config_file
-
-
-# Environment variables
-#############################
-source $DOTFILES_HOME/dotfiles-base/zsh/env_variables.zsh
 
 
 # Functions
 ###############################################################################
+[[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
+# source $ZDOT_HOME/functions.zsh
+# -U prevents alias expansion during function definition.
+# +X loads the file immediately - rather than only when it is needed. This
+# allows the function's contents to be seen by running e.g. `which bastard`.
+autoload -U +X ${fpath[1]}/*(:t)
 
-source $DOTFILES_HOME/dotfiles-base/zsh/functions.zsh
+
+# Environment Variables - must come before aliases, since if an env used by an
+# alias is already set: the alias will evaluate using that env!
+###############################################################################
+# Dynamically-generate some envs
+autoload -U create_repo_envs
+create_repo_envs
+source $ZDOT_HOME/env_variables.zsh
+
+GITHUB_CREDS=$GITHUB_HOME/creds.sh
+[[ -f $GITHUB_CREDS ]] && source $GITHUB_CREDS
+
+
+# Unaliases
+###############################################################################
+source $ZDOT_HOME/unaliases.zsh
 
 
 # Aliases
 ###############################################################################
-source $DOTFILES_HOME/dotfiles-base/zsh/aliases.zsh
+# Dynamically-generate some aliases
+autoload -U create_repo_aliases
+create_repo_aliases
+source $ZDOT_HOME/aliases.zsh
 
-
-# ZSH Shell configuration
-# autoload -Uz promptinit
-# promptinit
-prompt robin
-
-unsetopt correct
-# setopt prompt_subst
-setopt autocd
-set -o vi
-
-
-
-# echo `eval "echo \`echo "$(white I)$(yellow " am ")$(cyan awesome)"\`"`
-
-# First-time stuff!
+# Bookmarks
 ###############################################################################
-
-# rvm get 1.21.15
-
-# ln $SH_HOME/rubyapp /usr/local/bin/rubyapp
-
-# gem install chef knife-windows knife-ec2 --no-ri --no-rdoc
-
-
-# Fixes!
-###############################################################################
-
-# gem tool errors
-#################
-# brew unlink libyaml && brew link libyaml
-# brew unlink openssl && brew link --force openssl
-
-
-# ZSH setup
-###############################################################################
-
+source $ZDOT_HOME/bookmarks.zsh
+source $ZDOT_HOME/work_bookmarks.zsh
 
 
 # Path
-######
-PATH=$PATH:$EC2_HOME/bin
-PATH=$PATH:$HOME/.rvm/bin
-PATH=$PATH:$LOCAL_HOME/bin
-PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin/
-PATH=$PATH:/usr/local/Library/cocos2d-console/bin
-
-
-# OS-Specific stuff
 ###############################################################################
-
-# OS X
-######
-defaults write com.apple.Safari AlwaysShowTabBar -bool NO
-
-defaults write com.apple.Finder AppleShowAllFiles NO 2> /dev/null
-
-# http://www.tekrevue.com/tip/how-to-customize-screenshot-options-in-mac-os-x/
-# killall SystemUIServer
-defaults write com.apple.screencapture location $SCREENSHOTS_HOME 2> /dev/null
-defaults write com.apple.screencapture name $HOSTNAME
-# defaults write com.apple.screencapture type png
-
-defaults write -g ApplePersistence -bool no 2> /dev/null
-chflags nohidden ~/Library/ 2> /dev/null
-
-# Speed at which Dock auto-hides
-# defaults write com.apple.dock autohide-time-modifier -float 0.0
+source $ZDOT_HOME/path.zsh
 
 
-# Ubuntu
-########
+# ZSH Options
+###############################################################################
+source $ZDOT_HOME/options.zsh
 
-# OPAM configuration
-. /Users/msl/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# Prompt
+###############################################################################
+prompt robin
+
+
+# Greeting
+###############################################################################
+echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)" && speak "I am awesome"
+# Or alternatively:
+# echo "$(brightwhite I)$(brightyellow " am ")$(brightcyan awesome)"
 
 
 # Development
 ###############################################################################
 
-
-# Python
-########
+## Python
+#########
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
-if [[ "$HOSTNAME" == "$VENUS_HOSTNAME" ]]
+if [[ $USE_PYTHON == 1 ]]
 then
-	pythonbrew use 2.7 2> /dev/null
-else
-	pythonbrew use 2.7 2> /dev/null
+  if [[ "$HOSTNAME" == "$VENUS_HOSTNAME" ]]
+  then
+	  pythonbrew use 2.7 2> /dev/null
+  else
+	  pythonbrew use 2.7 2> /dev/null
+  fi
 fi
 
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
-# To do:
-# Manage zsh history - sync between computers! Manage size.
 
-# Ruby
-######
+## Ruby
+#######
 # `rvm reset` is the magic secret command that fixes the path errors!!
 ruby="2.1.1"
-rvm use ruby-"$ruby"
+if [[ $USE_RUBY == 1 ]]
+then
+  rvm use ruby-"$ruby"
+fi
+
+
+## OCaml
+########
+# OPAM configuration
+. /Users/msl/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

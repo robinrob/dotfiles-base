@@ -1,8 +1,14 @@
+#############################
 # Environment variables
 #############################
+export TRUE_VALUE="yes"
+
+export BOOKMARKS_PATH=$DOTFILES_BASE_HOME/zsh/bookmarks.zsh
+
+export WORKBOOKMARKS_PATH=$DOTFILES_BASE_HOME/zsh/work_bookmarks.zsh
 
 # sudo hostname <name> to change
-export HOSTNAME=`hostname`
+export HOSTNAME=`hostname -s`
 
 export MERCURY_HOSTNAME='mercury'
 
@@ -12,11 +18,9 @@ export EDITOR=mvim
 
 export VISUAL=vim
 
-# export PROG_HOME=$HOME/Programming/robin
+# export PROG_HOME="/Users/robinsmith/Downloads"
 
-export PROG_HOME=$HOME/Programming/robin
-
-export SH_HOME=$PROG_HOME/sh
+export PROG_HOME=~/Programming/robin
 
 export PYTHON_HOME=$PROG_HOME/python
 
@@ -32,57 +36,71 @@ export FABFILE_BASIC_HOME=$PY_HOME/projects/fabfile-basic
 
 export ZSH_HOME=$PROG_HOME/zsh
 
-export SH_HOME=$PROG_HOME/sh
-
 export DOTFILES_HOME=$ZSH_HOME/projects/dotfiles
+
+export DOTFILES_BASE_HOME=$DOTFILES_HOME/dotfiles-base
+
+export COLORS_PATH=$DOTFILES_BASE_HOME/zsh/colors.zsh
+
+export SHLIB_HOME=$SH_HOME/lib
+
+export SHLOG_PATH=$SHLIB_HOME/log.sh
+
+export SHCOLORS_PATH=$SHLIB_HOME/colors.sh
+
+export ZSHLIB_HOME=$ZSH_HOME/lib
+
+export ZSHLOG_PATH=$ZSHLIB_HOME/log.zsh
+
+export ZSHCOLORS_PATH=$DOTFILES_BASE_HOME/zsh/colors.zsh
+
+export ZDOT_HOME=$DOTFILES_HOME/dotfiles-base/zsh
+
+export ENVS_PATH=$ZDOT_HOME/env_variables.zsh
+
+export FUNCS_PATH=$ZDOT_HOME/functions.zsh
+
+export FUNCS_HOME=$ZDOT_HOME/functions
+
+export ALIASES_PATH=$ZDOT_HOME/aliases.zsh
+
+typeset -T ALIAS_FILES alias_files
+
+ALIAS_FILES=$ALIASES_PATH:$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH
+
+export FORCE_COM_HOME=$PROG_HOME/force.com
 
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
-export SPLUNK_HOME=$PROG_HOME/splunk
-
-export ZSHRC=$DOTFILES_HOME/zshrc
-
-export C_HOME=$PROG_HOME/c
-
-export C_PLUS_PLUS_HOME=$PROG_HOME/c
-
 export JV_HOME=$PROG_HOME/java
-
-export JAVASCRIPT_HOME=$PROG_HOME/javascript
-
-export JS_HOME=$JAVASCRIPT_HOME
 
 export JS_LIB_HOME=$JAVASCRIPT_HOME/lib
 
-export HTMLCSS_HOME=$PROG_HOME/html-css
+export JS_HOME=$JAVASCRIPT_HOME
 
-export HTMLLESS_HOME=$PROG_HOME/html-less
+export HTML_CSS_HOME=$PROG_HOME/html-css
 
-export HTML_TEMPLATES_HOME=$HTMLCSS_HOME/templates
+export HTML_LESS_HOME=$PROG_HOME/html-less
 
-export RUBY_HOME=$PROG_HOME/ruby
-
-export MARKDOWN_HOME=$PROG_HOME/markdown
-
-export OCAML_HOME=$PROG_HOME/ocaml
+export HTML_TEMPLATES_HOME=$HTML_CSS_HOME/templates
 
 export COFFEESCRIPT_HOME=$PROG_HOME/coffeescript
 
 export RUBY_TEMPLATES_HOME=$RUBY_HOME/templates
 
-export SCALA_HOME=$PROG_HOME/scala
-
-export AWK_HOME=$PROG_HOME/awk
-
 export RUBYAPP_HOME=$RUBY_HOME/projects/ruby-app
 
 export RAKEFILE_HOME=$RUBY_HOME/projects/rakefile
+
+export RAKELIB_HOME=$RUBY_HOME/projects/rakelib
 
 export GLOBAL_RAKEFILE_HOME=$RUBY_HOME/projects/global-rakefile
 
 export QUIZ_HOME=$RUBY_HOME/projects/quiz
 
-export MRROBINSMITHCOM_HOME=$RUBY_HOME/projects/mrrobinsmith.com
+export MRROBINSMITHCOM_HOME=$RUBY_HOME/projects/robinrob.github.io
+
+export GITHUB_HOME=$RUBY_HOME/projects/github
 
 export MOBILEAPP_HOME=$JS_HOME/projects/mobile-app-cordova
 
@@ -90,15 +108,13 @@ export REPOS=$RUBY_HOME" "$SH_HOME" "$DOTFILES_HOME" "$PYTHON_HOME
 
 export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/lib/ruby/2.0.0
 
-export PERL_HOME=$PROG_HOME/perl
-
 export EC2_HOME=/usr/local/lib/ec2-api-tools-1.6.11.0
 
 export GAM_PATH=/usr/local/Library/gam
 
 export WORK_HOME=~/Programming/work
 
-export WORK_RUBY_HOME=~/Programming/work/ruby
+export WORK_RUBY_HOME=/Users/robinsmith/Programming/robin/ruby
 
 export WORK_PYTHON_HOME=~/Programming/work/python
 
@@ -156,13 +172,17 @@ export PHONEGAP_HOME=/usr/local/Library/phonegap-2.9.0
 
 export ANDROID_HOME=/usr/local/Cellar/android-sdk
 
+export DATA_LOADER_PATH=/Applications/LexiLoader_v30.app/Contents/Resources/Java/Dataloader.jar
+
 export USEFUL_HOME=$DOCS_HOME/useful
 
 export AWS_CONFIG="~/.aws/config"
 
 export KITCHENPLAN_HOME=/opt/kitchenplan
 
-export RECORDS_PATH=$MERCURY_HOME/docs/IMPORTANT/records/records.txt
+export RECORDS_HOME=$MERCURY_HOME/docs/IMPORTANT/records
+
+export RECORDS_PATH=$RECORDS_HOME/records.txt
 
 export RECEIPTS_HOME=~/Google\ Drive/expenses/
 
@@ -176,9 +196,16 @@ export CANADA_HOME=$MERCURY_HOME/docs/IMPORTANT/canada
 if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
 then
 	export BROWSER="Safari"
+  export SAYCMD=1  
 else
 	export BROWSER="Google Chrome"
 fi
+
+export USE_PYTHON=1
+
+export USE_RUBY=1
+
+export SAYCMD_OVERRIDE=0
 
 export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
 
@@ -221,16 +248,4 @@ fi
 
 export PG_CONF=$PGDATA/postgresql.conf
 
-fpath=("$DOTFILES_HOME/functions" $fpath)
-
-# Path
-######
-PATH=$PATH:$EC2_HOME/bin
-PATH=$PATH:$HOME/.rvm/bin
-PATH=$PATH:$LOCAL_HOME/bin
-PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin/
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$COCOS_CONSOLE_ROOT
-PATH=$PATH:$ANT_ROOT
-PATH=$PATH:$NDK_ROOT
-export PATH
+export DEFAULT_GIT_REMOTE="github"

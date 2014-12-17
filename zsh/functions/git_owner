@@ -1,0 +1,4 @@
+typeset owner
+owner=`git config --get remote.origin.url | awk '{split($1,a,":"); print a[2]}' | awk '{split($1,a,"/"); print a[1]}'`
+print $owner
+

@@ -1,0 +1,5 @@
+VAL=$1 
+
+switch_env_permo SAYCMD_OVERRIDE $VAL
+pretty_print_env SAYCMD_OVERRIDE
+

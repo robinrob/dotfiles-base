@@ -1,0 +1,14 @@
+SEARCH=$1
+REPLACEMENT=$2
+FILE_PATTERN="$3"
+
+result=`find . -depth 1 -name $FILE_PATTERN`
+files=("${(f)result}")
+
+for file in $files
+do
+	new_contents=`cat $file | sed "s/$SEARCH/$REPLACEMENT/g"`
+	rm $file
+	print $new_contents > $file
+done
+

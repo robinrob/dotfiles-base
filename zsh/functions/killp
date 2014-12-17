@@ -1,0 +1,11 @@
+PROCESS=$1
+if [ -z "$PROCESS" ]
+then
+	red "Must give name of process!"
+	
+else
+  print "$(green)Killing all $(yellow)${PROCESS} $(green)processes ...$(default)"
+	
+	ps aux | grep -i $PROCESS | awk '{print $2}' | xargs kill -KILL 2> /dev/null
+fi
+

@@ -1,0 +1,33 @@
+typeset -U repos
+
+cd $PROG_HOME
+
+files=$(gfind . -name .gitmodules | xargs)
+files=(${(s/ /)files})
+
+for file in $files
+do
+  repos=($(basename $(dirname $file)) $repos)
+done
+
+for repo in $repos
+do
+  for file in $files
+  do
+    if [[ $(basename $(dirname $file)) == $repo ]]
+    then
+     green $file
+     cd $(dirname $file)
+     yellow git add
+     git add .gitmodules
+     yellow git commit
+     git commit -am '.gitmodules update'
+     yellow git pull
+     git pull $DEFAULT_GIT_REMOTE master
+     yellow git push
+     git push $DEFAULT_GIT_REMOTE master
+     cd $PROG_HOME
+     break
+    fi
+  done
+done

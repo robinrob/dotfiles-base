@@ -1,0 +1,7 @@
+PROJECT=$1
+mkdir $PROJECT
+cd $PROJECT
+hnew $PROJECT
+cssnew "style"
+$EDITOR$EDITOR *
+

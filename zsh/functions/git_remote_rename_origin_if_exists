@@ -1,0 +1,7 @@
+if [[ (-n $(git config --get remote.origin.url)) && ($(git_owner) == "robinrob") ]]
+then
+  print "pwd: $(pwd)"
+  print "$(green)Found remote 'origin'. Renaming to $(yellow)bitbucket ..."
+  git remote rename origin bitbucket
+fi
+

@@ -1,0 +1,31 @@
+typeset -A abbreviations
+
+abbreviations[awk]=a
+abbreviations[coffeescript]=cs
+abbreviations[c]=c
+abbreviations[c-plus-plus]=cp
+abbreviations[dotfiles]=d
+abbreviations[dotfiles-base]=db
+abbreviations[force-com]=f
+abbreviations[github]=gh
+abbreviations[html-css]=h
+abbreviations[javascript]=j
+abbreviations[markdown]=m
+abbreviations[ocaml]=o
+abbreviations[perl]=pl
+abbreviations[prog]=pr
+abbreviations[python]=p
+abbreviations[ruby]=r
+abbreviations[scala]=sc
+abbreviations[sh]=s
+abbreviations[zsh]=z
+
+for repo in ${(k)abbreviations}
+do
+	alias_repo_action $repo $abbreviations[$repo] sv cd_save
+	alias_repo_action $repo $abbreviations[$repo] cm cd_commit
+	alias_repo_action $repo $abbreviations[$repo] st cd_status
+	alias_repo_action $repo $abbreviations[$repo] pl cd_pull
+  alias_repo_nav $repo $abbreviations[$repo]
+done
+

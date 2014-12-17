@@ -1,0 +1,2 @@
+git pull $DEFAULT_GIT_BRANCH $(git_branch)
+

@@ -1,0 +1,12 @@
+BASENAME=$1
+EXTENSION=$2
+
+PARTS=("${(s/./)BASENAME}")
+
+if [[ $PARTS[-1] == $EXTENSION ]]
+then
+  print $BASENAME
+else
+  print $BASENAME.$EXTENSION
+fi
+

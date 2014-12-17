@@ -1,0 +1,11 @@
+browser 'http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271'
+Functions
+#############################################################################
+
+NEVER use aliases in this file! This file is loaded first before aliases.
+
+urce ~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/zsh/colors.zsh
+
+TEXT="$@"
+print $TEXT:u
+

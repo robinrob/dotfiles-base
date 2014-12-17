@@ -1,0 +1,54 @@
+while getopts :i:e:f:o: name
+do
+	case $name in
+		i) INTERPRETER="$OPTARG" ;;
+		e) EXTENSION="$OPTARG" ;;
+		f) FILENAME="$OPTARG" ;;
+		o) NO_OPEN="$OPTARG" ;;
+		*) usage ;;                # display usage and exit
+	esac
+done
+
+FILE=$(extend_file $FILENAME $EXTENSION)
+
+FILE_DISPLAY=$(yellow $FILE)
+COLOR="green"
+CREATE_SHEBANG_MSG="$COLOR 'Creating, +x-ing and shebanging new file: $FILE_DISPLAY'"
+SHEBANG_MSG="$COLOR 'Shebanging and +x''ing existing file: $FILE_DISPLAY'"
+CREATE_MSG="$COLOR 'Creating new file: $FILE_DISPLAY'"
+OPEN_MSG="$COLOR 'Opening existing file: $FILE_DISPLAY'"
+
+if ! [ -f $FILE ]
+then
+	if [ -n "$INTERPRETER" ]
+	then	
+		eval $CREATE_SHEBANG_MSG
+		print "#!/usr/bin/env $INTERPRETER" > $FILE
+		chmod +x $FILE
+	else
+		eval $CREATE_MSG
+		touch $FILE
+	fi
+else
+	if [ -n "$INTERPRETER" ]
+	then
+		eval $SHEBANG_MSG
+		prepend $FILE "#!/usr/bin/env $INTERPRETERn"
+		chmod +x $FILE
+	else
+		eval $OPEN_MSG
+	fi
+fi
+
+# Reset variables for subsequent executions!
+unset INTERPRETER
+unset FILENAME
+unset EXTENSION
+
+if ! [[ "$NO_OPEN" == "noopen" ]]
+then
+	$EDITOR $FILE
+fi
+
+print -z ./$FILE
+

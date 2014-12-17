@@ -1,0 +1,10 @@
+CRON_NAME="$HOSTNAME.cron"
+SAVE_PATH="$DOTFILES_BASE_HOME/config/files/$CRON_NAME"
+TMP_PATH="${SAVE_PATH}.tmp"
+
+rm -f $SAVE_PATH
+green "Saving crontab to $SAVE_PATH ..."
+crontab -l > $TMP_PATH
+silent_cp $TMP_PATH $SAVE_PATH
+rm $TMP_PATH
+

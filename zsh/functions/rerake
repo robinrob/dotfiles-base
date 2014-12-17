@@ -1,0 +1,12 @@
+rm -rf rakelib
+rm -rf rake
+rm -f Rakefile
+git rm --cached Rakefile
+git rm -r --cached rakelib
+git rm -r --cached rake
+git add -u rakelib rake Rakefile
+git commit -m 'Rerake'
+
+git submodule add --force git@github.com:robinrob/rakelib.git
+touch Rakefile
+rake git:deinit[rake]

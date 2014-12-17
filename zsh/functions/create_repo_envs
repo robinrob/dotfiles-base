@@ -1,0 +1,13 @@
+result=`ls $PROG_HOME | xargs`
+
+repos=(${(s: :)result})
+
+for repo in $repos
+do
+  if [[ $repo == "java" ]]
+  then
+    continue;
+  fi
+  export "$(pathize $repo)_HOME"=$PROG_HOME/$repo
+done
+

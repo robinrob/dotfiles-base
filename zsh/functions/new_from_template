@@ -1,0 +1,8 @@
+TEMPLATE=$1
+FILENAME=$(singlize_extension $2)
+
+cp $TEMPLATE $FILENAME
+chmod +x $FILENAME
+$EDITOR $FILENAME
+print -z ./$FILENAME
+
