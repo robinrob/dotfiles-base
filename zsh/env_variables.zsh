@@ -250,6 +250,6 @@ export PG_CONF=$PGDATA/postgresql.conf
 
 export DEFAULT_GIT_REMOTE="origin"
 
-export RAKEFILELIB="$RAKEFILE_HOME/rakelib"
+export RAKELIB="$RAKELIB_HOME/rakelib"
 
-export RAKEFILE="$RAKEFILE_HOME/Rakefile"
+export RAKEFILE="$RAKELIB_HOME/Rakefile"

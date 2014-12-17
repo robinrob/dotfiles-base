@@ -1,8 +1,9 @@
 TASK=$1
 
-if [ -f Rakefile ]
+
+if [ -f $RAKEFILE ]
 then
-	print "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
+  print "$(green "Using Rakefile: ")$(yellow)$RAKEFILE"
 
   shift
 
@@ -17,6 +18,5 @@ then
   green $cmd
 else
 	red "No Rakefile!"
-	# rake -f $RAKEFILE_HOME/Rakefile save
 fi
 
