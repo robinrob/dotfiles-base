@@ -403,6 +403,8 @@ alias gsi="git submodule init"
 
 alias gsu="git submodule update"
 
+alias gsur="git submodule update --recursive"
+
 alias gsI="git submodule update --init --recursive"
 
 alias gsa="git submodule add"
