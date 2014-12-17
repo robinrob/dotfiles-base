@@ -248,4 +248,4 @@ fi
 
 export PG_CONF=$PGDATA/postgresql.conf
 
-export DEFAULT_GIT_REMOTE="github"
+export DEFAULT_GIT_REMOTE="origin"
