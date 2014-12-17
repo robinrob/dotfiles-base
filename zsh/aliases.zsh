@@ -254,7 +254,7 @@ alias rvl="rvm list"
 
 alias rsc="rails console"
 
-alias plrk="cd rake; green 'Git-pulling rake ...'; git pull $DEFAULT_GIT_BRANCH master; cd - > /dev/null"
+alias plrk="cd rake; green 'Git-pulling rake ...'; git pull $DEFAULT_GIT_REMOTE master; cd - > /dev/null"
 
 alias svrk="cd rake; green 'Rake-saving rake ...'; rake save; cd - > /dev/null"
 
@@ -385,13 +385,13 @@ alias gcmr="git submodule foreach 'git checkout master'"
 
 alias gsf="git submodule foreach"
 
-alias gpd="git push $DEFAULT_GIT_BRANCH develop"
+alias gpd="git push $DEFAULT_GIT_REMOTE develop"
 
-alias gpm="git push $DEFAULT_GIT_BRANCH master"
+alias gpm="git push $DEFAULT_GIT_REMOTE master"
 
-alias gpld="git push $DEFAULT_GIT_BRANCH develop"
+alias gpld="git push $DEFAULT_GIT_REMOTE develop"
 
-alias gplm="git push $DEFAULT_GIT_BRANCH master"
+alias gplm="git push $DEFAULT_GIT_REMOTE master"
 
 alias gcm="git checkout master"
 
@@ -413,11 +413,11 @@ alias gra="git remote add"
 
 alias grs="git remote show"
 
-alias grao="git remote add $DEFAULT_GIT_BRANCH"
+alias grao="git remote add $DEFAULT_GIT_REMOTE"
 
-alias gpo="git push $DEFAULT_GIT_BRANCH"
+alias gpo="git push $DEFAULT_GIT_REMOTE"
 
-alias gpom="git push $DEFAULT_GIT_BRANCH master"
+alias gpom="git push $DEFAULT_GIT_REMOTE master"
 
 alias gpg="git push github"
 
@@ -427,15 +427,15 @@ alias gpgm="git push github master"
 
 alias gpbm="git push bitbucket master"
 
-alias gplom="git pull $DEFAULT_GIT_BRANCH master"
+alias gplom="git pull $DEFAULT_GIT_REMOTE master"
 
 alias gplgm="git pull github master"
 
 alias gplbm="git pull bitbucket master"
 
-alias gpod="git push $DEFAULT_GIT_BRANCH develop"
+alias gpod="git push $DEFAULT_GIT_REMOTE develop"
 
-alias gplod="git pull $DEFAULT_GIT_BRANCH develop"
+alias gplod="git pull $DEFAULT_GIT_REMOTE develop"
 
 # Development operations
 alias js="jekyll serve"
