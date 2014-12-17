@@ -8,7 +8,7 @@ then
 
   if [[ -n $* ]]
   then
-    cmd='rake '$TASK'['''$(join ', ' $*)''']'
+    cmd='rake --rakefile $RAKEFILE --libdir $RAKEFILELIB '$TASK'['''$(join ', ' $*)''']'
 	else
 		cmd="rake $TASK"
 	fi
