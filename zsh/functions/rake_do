@@ -1,19 +1,17 @@
 TASK=$1
+shift
 
-
-base_cmd='rake --rakefile $RAKEFILE --rakelibdir $RAKELIB'
+BASE_CMD='rake --rakefile $RAKEFILE --rakelibdir $RAKELIB'
 
 if [ -f $RAKEFILE ]
 then
   print "$(green "Using Rakefile: ")$(yellow)$RAKEFILE"
 
-  shift
-
   if [[ -n $* ]]
   then
-    cmd="$base_cmd $TASK['$(join ', ' $*)']"
+    cmd="$BASE_CMD $TASK"[\'$(join ', ' $*)\']
 	else
-		cmd="$base_cmd $TASK"
+		cmd="$BASE_CMD $TASK"
 	fi
 
   eval $cmd

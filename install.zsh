@@ -18,6 +18,7 @@ promptinit
 
 # OS-X Defaults
 #########################################################################
+green "Setting OSX defaults ..."
 $ZDOT_HOME/osx.zsh
 
 green "Installing crontab ..."
