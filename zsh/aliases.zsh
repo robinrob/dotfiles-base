@@ -347,7 +347,7 @@ alias cen="cat $ENVS_PATH"
 
 alias cals="cat $ALIASES_PATH"
 
-alias cfn="cat $FUNCS_PATH"
+alias lsfn="ls $FUNCS_HOME"
 
 
 # Git aliases
