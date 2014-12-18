@@ -1,4 +1,4 @@
-rgu 2.1.4 && rvu rakelib || exit 1
+rgu 2.1.4 && rvu rakelib
 
 if [[ $*[-1] == "bitbucket" || $*[-1] == "github" || $*[-1] == "origin" ]]
 then
