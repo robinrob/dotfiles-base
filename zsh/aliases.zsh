@@ -37,8 +37,6 @@ alias unal="delete_alias"
 
 alias timezones="sudo systemsetup -listtimezones"
 
-alias cfns="functions | grep -o '[^_\s]\+ ()' | wc -l"
-
 alias dirs="dirs -v"
 
 alias pz="print -z"
@@ -347,7 +345,9 @@ alias cen="cat $ENVS_PATH"
 
 alias cals="cat $ALIASES_PATH"
 
-alias lsfn="ls $FUNCS_HOME"
+alias lfn="ls $FUNCS_HOME"
+
+alias cfn="ls $FUNCS_HOME | wc -l"
 
 
 # Git aliases
