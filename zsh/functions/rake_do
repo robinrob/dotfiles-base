@@ -1,7 +1,7 @@
 TASK=$1
 
 
-base_cmd='rake --rakefile $RAKEFILE --libdir $RAKELIB'
+base_cmd='rake --rakefile $RAKEFILE --rakelibdir $RAKELIB'
 
 if [ -f $RAKEFILE ]
 then

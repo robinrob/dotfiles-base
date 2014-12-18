@@ -92,7 +92,7 @@ export RUBYAPP_HOME=$RUBY_HOME/projects/ruby-app
 
 export RAKEFILE_HOME=$RUBY_HOME/projects/rakefile
 
-export RAKELIB_HOME=$RUBY_HOME/projects/rakelib
+export RAKELIB_HOME=~/Programming/rakelib
 
 export GLOBAL_RAKEFILE_HOME=$RUBY_HOME/projects/global-rakefile
 
@@ -250,6 +250,6 @@ export PG_CONF=$PGDATA/postgresql.conf
 
 export DEFAULT_GIT_REMOTE="origin"
 
-export RAKELIB="$RAKELIB_HOME/rakelib"
+export RAKELIB="$RAKELIB_HOME"
 
 export RAKEFILE="$RAKELIB_HOME/Rakefile"
