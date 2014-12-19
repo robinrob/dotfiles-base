@@ -1,3 +1,5 @@
+rgu 2.1.4 && rvu rakelib
+
 if [[ $*[-1] == "bitbucket" || $*[-1] == "github" || $*[-1] == "origin" ]]
 then
   rake_do save "$*[1,-2]" $*[-1]
