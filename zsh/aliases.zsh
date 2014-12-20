@@ -25,6 +25,10 @@ alias awk="gawk"
 alias pcregrep='pcregrep --color=auto'
 
 # Shell Aliases
+alias rmrf="rm -rf"
+
+alias rmr="rm -r"
+
 alias cpx="chmod +x"
 
 alias cmx="chmod -x"
@@ -215,6 +219,8 @@ alias cdmb="cd_dir $JS_HOME/projects/mobile-app-cordova"
 
 alias cdg="cd_dir $JS_HOME/projects/mobile-game-cocos"
 
+alias cdmw="cd_dir $JS_HOME/projects/moonwarriors-robin"
+
 # Development operations
 alias cdfn="cd $FUNCS_HOME"
 
@@ -289,7 +295,7 @@ alias save="rake -f $GLOBAL_RAKEFILE_HOME/Rakefile save_code"
 #alias rksr="rake -f $RAKEFILE_HOME/Rakefile save"
 #
 
-alias rkrn="rake cocs:run"
+alias rkrn="rake -g cocos:run"
 
 alias rkd="rake_do rails:deploy"
 
@@ -417,11 +423,11 @@ alias gra="git remote add"
 
 alias grs="git remote show"
 
-alias grao="git remote add $DEFAULT_GIT_REMOTE"
+alias grao="git remote add origin"
 
-alias gpo="git push $DEFAULT_GIT_REMOTE"
+alias gpo="git push origin"
 
-alias gpom="git push $DEFAULT_GIT_REMOTE master"
+alias gpom="git push origin master"
 
 alias gpg="git push github"
 
@@ -642,7 +648,7 @@ alias fcl="fab clean"
 
 alias cgc="cat .git/config"
 
-alias mgc="$EDITOR .git/config"
+alias mgc="$EDITOR ~/.gitconfig"
 
 alias mrd="m README.md"
 

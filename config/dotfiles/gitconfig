@@ -4,5 +4,4 @@
 [merge]
 	tool = diffmerge
 [core]
-	autocrlf = input
 	safecrlf = true
