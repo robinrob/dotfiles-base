@@ -157,6 +157,6 @@ alias video="print 'https://www.youtube.com/watch?v=e-RzZ5ZsT0s' | pbcopy && saf
 
 alias repos="print 'https://github.com/robinrob?tab=repositories' | pbcopy && safari 'https://github.com/robinrob?tab=repositories'"
 
-
-
 alias christmas="print 'http://www.newark-sherwooddc.gov.uk/media/newarkandsherwood/imagesandfiles/leisure/leisurecentres/pdfs/timetables/New%20Grove%20Fun%20%20Fit%20Leaflet%20Timetable%2022nd%20Dec%202014%20(2).pdf' | pbcopy && chrome 'http://www.newark-sherwooddc.gov.uk/media/newarkandsherwood/imagesandfiles/leisure/leisurecentres/pdfs/timetables/New%20Grove%20Fun%20%20Fit%20Leaflet%20Timetable%2022nd%20Dec%202014%20(2).pdf'"
+
+alias weirich="print 'http://www.confreaks.com/presenters/24-jim-weirich' | pbcopy && safari 'http://www.confreaks.com/presenters/24-jim-weirich'"
