@@ -1,4 +1,8 @@
 [user]
 	email = robin@mrrobinsmith.com
+	name = Robin Smith
 [merge]
 	tool = diffmerge
+[core]
+	autocrlf = input
+	safecrlf = true

@@ -165,7 +165,7 @@ alias cdp2="cd_dir $PY_HOME/python2"
 
 alias cdp3="cd_dir $PY_HOME/python3"
 
-alias cdrk="cd_dir $RAKELIB_HOME"
+alias cdrk="cd_dir $DOTFILES_BASE_HOME/config/dotfiles/rake"
 
 alias cdl="cd_dir $LOCAL_HOME"
 
@@ -270,6 +270,8 @@ alias rkst="rake_do git:sort_sub"
 
 alias rk="rake"
 
+alias rkg="rake -g"
+
 alias rkjc="rake_do jekyll:clean"
 
 alias gnb="gem install bundler && bundle install"
@@ -347,7 +349,7 @@ alias cals="cat $ALIASES_PATH"
 
 alias lfn="ls $FUNCS_HOME"
 
-alias cfn="ls $FUNCS_HOME | wc -l"
+alias ctfn="ls $FUNCS_HOME | wc -l"
 
 
 # Git aliases
