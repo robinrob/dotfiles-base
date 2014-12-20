@@ -1,2 +1,2 @@
-git pull $DEFAULT_GIT_BRANCH $(git_branch)
+git pull $DEFAULT_GIT_REMOTE $(git_branch)
 
