@@ -1,1 +1,4 @@
-alias vpn-innospec='osascript -e "tell application \"Viscosity\" to connect \"Innospec\""'
+VPN=$1
+
+osascript -e "tell application 'Viscosity' to connect '$1'"
+

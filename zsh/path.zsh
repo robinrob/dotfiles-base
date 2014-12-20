@@ -3,6 +3,7 @@
 typeset -U path
 path=($path $EC2_HOME/bin)
 path=($path $HOME/.rvm/bin)
+path=($path $LOCAL_HOME/bin)
 path=($path /Applications/Postgres.app/Contents/Versions/9.3/bin/)
 path=($path $HOME/.rvm/bin)
 path=($path $COCOS_CONSOLE_ROOT)

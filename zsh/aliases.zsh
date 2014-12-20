@@ -887,3 +887,9 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 
 alias test="hello"
 
+
+# VPN/vpn
+
+alias vcr="vpn Cloudreach"
+
+alias vdc="vpn_disconnect"
