@@ -18,6 +18,24 @@ colors[brightcyan]='1;36'
 colors[white]='0;37'
 colors[brightwhite]='1;37'
 
+export ccdefault="0"
+export ccblack="0;30"
+export ccdarkgrey="1;30"
+export ccred="0;31"
+export ccbrightred="1;31"
+export ccgreen="0;32"
+export ccbrightgreen="1;32"
+export ccyellow="0;33"
+export ccbrightyellow="1;33"
+export ccblue="0;34"
+export ccbrightblue="1;34"
+export ccmagenta="0;35"
+export ccbrightmagenta="1;35"
+export cccyan="0;36"
+export ccbrightcyan="1;36"
+export ccwhite="0;37"
+export ccbrightwhite="1;37"
+
 function color {
 	color=$1
 	shift;
@@ -38,7 +56,8 @@ function colorcode {
 function colorencode {
 	prefix='"["'
 	suffix='m'
-	print ${prefix}${1}${suffix}
+	# print ${prefix}${1}${suffix}
+	print ${prefix}'$cc'$1${suffix}
 }
 
 function promptcolor {
