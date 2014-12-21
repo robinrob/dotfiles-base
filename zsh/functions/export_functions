@@ -13,7 +13,7 @@ cat $FUNCS_PATH | while read line ; do
       yellow $block
      
       touch $FUNCS_HOME/$name
-      print $block >> $FUNCS_HOME/$name
+      print -r $block >> $FUNCS_HOME/$name
 
       read line
 
