@@ -2,4 +2,4 @@ FILE=$1
 INTERPRETER=$2
 
 prepend $FILE "#!/usr/bin/env $INTERPRETERn"
-
+chmod +x $FILE

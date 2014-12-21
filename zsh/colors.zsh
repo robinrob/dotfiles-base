@@ -1,4 +1,4 @@
-typeset -A colors
+typeset -Ag colors
 
 colors[default]='0'
 colors[black]='0;30'
@@ -212,3 +212,10 @@ function brightwhiteprompt {
 function magandaprompt {
 	brightmagentaprompt $@
 }
+
+#for key in ${(k)colors}
+#do
+
+#function $key; color $key $@
+
+#done
