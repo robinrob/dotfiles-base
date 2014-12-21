@@ -1,0 +1,3 @@
+COLOR=$1
+
+print -r $($COLOR) | awk -F'[' '{print $2}' | triml
