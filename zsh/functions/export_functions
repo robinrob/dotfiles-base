@@ -12,8 +12,8 @@ cat $FUNCS_PATH | while read line ; do
       green "Function: $name"
       yellow $block
      
-      touch functions/$name
-      print $block >> functions/$name
+      touch $FUNCS_HOME/$name
+      print $block >> $FUNCS_HOME/$name
 
       read line
 
