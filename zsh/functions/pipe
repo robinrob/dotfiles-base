@@ -1,0 +1,3 @@
+lines=("${(f@)$(cat)}")
+
+print $lines

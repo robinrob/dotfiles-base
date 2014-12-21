@@ -67,7 +67,7 @@ alias bkrails="browser -a Safari http://my.safaribooksonline.com/book/programmin
 
 alias bkpg="book http://my.safaribooksonline.com/book/programming/mobile/9781783287925"
 
-alias bkcocos="book http://my.safaribooksonline.com/book/programming/iphone/9780132180863"
+alias bkcocos2="book http://my.safaribooksonline.com/book/programming/iphone/9780132180863"
 
 alias railst="browser http://guides.rubyonrails.org/getting_started.html"
 
@@ -162,3 +162,7 @@ alias christmas="print 'http://www.newark-sherwooddc.gov.uk/media/newarkandsherw
 alias weirich="print 'http://www.confreaks.com/presenters/24-jim-weirich' | pbcopy && safari 'http://www.confreaks.com/presenters/24-jim-weirich'"
 
 alias game="print 'http://localhost:8000' | pbcopy && safari 'http://localhost:8000'"
+
+alias bkcocos="print 'http://www.cocos2d-x.org/wiki/Getting_Started_Cocos2d-js' | pbcopy && safari 'http://www.cocos2d-x.org/wiki/Getting_Started_Cocos2d-js'"
+
+alias bkdev="print 'http://my.safaribooksonline.com/book/programming/9781941222904/early-praise-for-the-developer-code/f_0004_html?query=((developer+blog))#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE5NDEyMjI5MDQlMkZmXzAwMTBfaHRtbCZxdWVyeT0oKGRldmVsb3BlciUyMGJsb2cpKQ==' | pbcopy && safari 'http://my.safaribooksonline.com/book/programming/9781941222904/early-praise-for-the-developer-code/f_0004_html?query=((developer+blog))#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE5NDEyMjI5MDQlMkZmXzAwMTBfaHRtbCZxdWVyeT0oKGRldmVsb3BlciUyMGJsb2cpKQ=='"

@@ -503,6 +503,8 @@ alias gplod="git pull $DEFAULT_GIT_REMOTE develop"
 ###############################################################################
 # Viewing and editing files
 ###############################################################################
+alias quotes="clist quotes"
+
 alias mcol="$EDITOR $ZDOT_HOME/colors.zsh"
 
 alias ocv="open -a OpenOffice $IMPORTANT_HOME/cv/cv.odt"
@@ -815,6 +817,8 @@ alias test="hello"
 ###############################################################################
 # Functions
 ###############################################################################
+alias rld="reload"
+
 alias grf="grep_all"
 
 alias aof="green \$(alphabet_of_files)"

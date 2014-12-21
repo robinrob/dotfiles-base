@@ -1,0 +1,6 @@
+FILE=$1
+
+last=$(tail -1 $FILE)
+
+ghead -n -1 $FILE
+green $last

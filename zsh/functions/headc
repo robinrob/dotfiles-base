@@ -1,0 +1,6 @@
+FILE=$1
+
+first=$(head -1 $FILE)
+
+green $first
+tail -2 $FILE
