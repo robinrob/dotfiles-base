@@ -1,4 +1,4 @@
-typeset -A colors
+typeset -Ag colors
 
 colors[default]='0'
 colors[black]='0;30'
@@ -17,6 +17,7 @@ colors[cyan]='0;36'
 colors[brightcyan]='1;36'
 colors[white]='0;37'
 colors[brightwhite]='1;37'
+
 
 export ccdefault="0"
 export ccblack="0;30"
