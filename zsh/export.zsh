@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 source $ZSHCOLORS_PATH
 
 IFS=''
@@ -30,4 +32,3 @@ cat $FUNCS_PATH | while read line ; do
     fi
 
 done
-
