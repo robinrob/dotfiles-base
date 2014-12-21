@@ -1,22 +1,11 @@
-typeset -A colors
-
-colors[default]='0'
-colors[black]='0;30'
-colors[darkgrey]='1;30'
-colors[red]='0;31'
-colors[brightred]='1;31'
-colors[green]='0;32'
-colors[brightgreen]='1;32'
-colors[yellow]='0;33'
-colors[brightyellow]='1;33'
-colors[blue]='0;34'
-colors[brightblue]='1;34'
-colors[magenta]='0;35'
-colors[brightmagenta]='1;35'
-colors[cyan]='0;36'
-colors[brightcyan]='1;36'
-colors[white]='0;37'
-colors[brightwhite]='1;37'
+#Black       0;30     Dark Gray     1;30
+#Blue        0;34     bright Blue    1;34
+#Green       0;32     bright Green   1;32
+#Cyan        0;36     bright Cyan    1;36
+#Red         0;31     bright Red     1;31
+#Purple      0;35     bright Magenta  1;35
+#Brown       0;33     Yellow        1;33
+#bright Gray  0;37     White         1;37
 
 export ccdefault="0"
 export ccblack="0;30"
@@ -39,32 +28,27 @@ export ccbrightwhite="1;37"
 function color {
 	color=$1
 	shift;
-  start=$(colorencode $(colorcode $color))
-  end=$(colorencode $(colorcode default))
-	if [[ -n "$@" ]]
+	start=$(colorencode $color)
+	end=$(colorencode default)
+	if [[ "$@" == "" ]]
 	then
-    print "$(eval print $start'$@'$end)"
-	else
     print -n "$(eval print $start)"
+	else
+    print "$(eval print $start'$@'$end)"
 	fi
-}
-
-function colorcode {
-	# print ${colors[$1]}
-	print '${cc'$1'}'
 }
 
 function colorencode {
 	prefix='"["'
 	suffix='m'
-	print ${prefix}${1}${suffix}
+	print $prefix'${cc'$1'}'$suffix
 }
 
 function promptcolor {
 	color=$1
 	shift;
-  start=$(promptcolorencode $(colorcode $color))
-  end=$(promptcolorencode $(colorcode default))
+	start=$(promptcolorencode $color)
+	end=$(promptcolorencode default)
 	if [[ "$@" == "" ]]
 	then
     print "$(eval print $start)"
@@ -76,7 +60,7 @@ function promptcolor {
 function promptcolorencode {
 	prefix='%{"["'
 	suffix='m%}'
-	print ${prefix}${1}${suffix}
+	print $prefix'${cc'$1'}'$suffix
 }
 
 # Shell colors
