@@ -17,6 +17,7 @@ colors[cyan]='0;36'
 colors[brightcyan]='1;36'
 colors[white]='0;37'
 colors[brightwhite]='1;37'
+colors[maganda]='1;35'
 
 
 function color {
@@ -63,159 +64,10 @@ function promptcolorencode {
 	print ${prefix}${1}${suffix}
 }
 
-# Shell colors
-function default {
-	color default $@
-}
 
-function black {
-	color black $@
-}
-
-function darkgrey {
-	color darkgrey $@
-}
-
-function red {
-	color red $@
-}
-
-function brightred {
-	color brightred $@
-}
-
-function green {
-	color green $@
-}
-
-function brightgreen {
-	color brightgreen $@
-}
-
-function yellow {
-	color yellow $@
-}
-
-function brightyellow {
-	color brightyellow $@
-}
-
-function blue {
-	color blue $@
-}
-
-function brightblue {
-	color brightblue $@
-}
-
-function magenta {
-	color magenta $@
-}
-
-function brightmagenta {
-	color brightmagenta $@
-}
-
-function cyan {
-	color cyan $@
-}
-
-function brightcyan {
-	color brightcyan $@
-}
-
-function white {
-	color white $@
-}
-
-function brightwhite {
-	color brightwhite $@
-}
-
-function maganda {
-	brightmagenta $@
-}
-
-# Prompt colors
-function defaultprompt {
-	promptcolor default $@
-}
-
-function blackprompt {
-	promptcolor black $@
-}
-
-function darkgreyprompt {
-	promptcolor darkgrey $@
-}
-
-function redprompt {
-	promptcolor red $@
-}
-
-function brightredprompt {
-	promptcolor brightred $@
-}
-
-function greenprompt {
-	promptcolor green $@
-}
-
-function brightredprompt {
-	promptcolor brightred $@
-}
-
-function brightgreenprompt {
-	promptcolor brightgreen $@
-}
-
-function yellowprompt {
-	promptcolor yellow $@
-}
-
-function brightyellowprompt {
-	promptcolor brightyellow $@
-}
-
-function blueprompt {
-	promptcolor blue $@
-}
-
-function brightblueprompt {
-	promptcolor brightblue $@
-}
-
-function magentaprompt {
-	promptcolor magenta $@
-}
-
-function brightmagentaprompt {
-	promptcolor brightmagenta $@
-}
-
-function cyanprompt {
-	promptcolor cyan $@
-}
-
-function brightcyanprompt {
-	promptcolor brightcyan $@
-}
-
-function whiteprompt {
-	promptcolor white $@
-}
-
-function brightwhiteprompt {
-	promptcolor brightwhite $@
-}
-
-function magandaprompt {
-	brightmagentaprompt $@
-}
-
-#for key in ${(k)colors}
-#do
-
-#function $key; color $key $@
-
-#done
+# Progamatically-define color and colorprompt functions. This one's a beauty!!
+for key in ${(k)colors}
+  do
+    eval "function $key; color $key \$@"
+    eval "function ${key}prompt; promptcolor $key \$@"
+done
