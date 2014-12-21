@@ -12,9 +12,9 @@ function prompt_robin_precmd {
 
   vcs_info 'prompt'
 
-  if (( $+functions[python-info] )); then
-    python-info
-  fi
+  # if (( $+functions[python-info] )); then
+    # python-info
+  # fi
 
   # Get ruby information
   # if (( $+functions[ruby-info] )); then
