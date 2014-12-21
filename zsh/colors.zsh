@@ -64,10 +64,9 @@ function promptcolorencode {
 	print ${prefix}${1}${suffix}
 }
 
-
 # Progamatically-define color and colorprompt functions. This one's a beauty!!
 for key in ${(k)colors}
   do
-    eval "function $key; color $key \$@"
-    eval "function ${key}prompt; promptcolor $key \$@"
+    eval "function $key { color $key \$@ }"
+    eval "function ${key}prompt { promptcolor $key \$@ }"
 done
