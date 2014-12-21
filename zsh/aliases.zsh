@@ -2,29 +2,13 @@
 # can later do a find/replace to switch something out for an environment
 # variable value.
 
-alias mv="gmv"
+###############################################################################
+# Shell commands
+###############################################################################
+alias t="touch"
 
-alias gegrep="gegrep"
-
-alias grep="ggrep"
-
-alias find="gfind"
-
-alias sed="gsed"
-
-alias ls="/usr/local/bin/gls --color"
-
-alias cat="gcat"
-
-alias sed="gsed"
-
-alias awk="gawk"
-
-
-# External commands
 alias pcregrep='pcregrep --color=auto'
 
-# Shell Aliases
 alias rmrf="rm -rf"
 
 alias rmr="rm -r"
@@ -54,7 +38,6 @@ alias pl="print -l"
 alias g="grep"
 
 alias cwd="pwd"
-
 
 alias dt="date"
 
@@ -86,7 +69,34 @@ alias shell="print $SHELL"
 
 alias cdcocos="cd_dir $COCOS_HOME"
 
-# Shell shortcuts
+
+###############################################################################
+# GNU commands
+###############################################################################
+alias mv="gmv"
+
+alias gegrep="gegrep"
+
+alias grep="ggrep"
+
+alias find="gfind"
+
+alias sed="gsed"
+
+alias ls="/usr/local/bin/gls --color"
+
+alias cat="gcat"
+
+alias sed="gsed"
+
+alias awk="gawk"
+
+alias head="ghead"
+
+
+###############################################################################
+# Shell command shortcuts
+###############################################################################
 alias pag="ps aux | grep"
 
 alias pyv="python --version"
@@ -103,21 +113,14 @@ alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
 alias rkls="rake_do git:foreach nil"
 
-alias cdgam="cd_dir $GAM_PATH"
-
-alias cdexp="cd_dir $EXPENSES_HOME"
-
-alias cdrec="cd_dir $(dirname $RECORDS_PATH)"
-
-alias cdlists="cd_dir $LISTS_HOME"
-
 alias strash="du -dh $TRASH_HOME"
-
-alias mcol="$EDITOR $ZDOT_HOME/colors.zsh"
 
 alias syslog="tail -f /var/log/system.log"
 
-# Applications/Tools
+
+###############################################################################
+# Installed applications/tools
+###############################################################################
 alias mvim="mvim -p"
 
 alias sc="scala"
@@ -152,7 +155,10 @@ alias gimp="/Applications/GIMP.app/Contents/MacOS/GIMP-bin"
 
 alias sublime="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'"
 
+
+###############################################################################
 # Navigation
+###############################################################################
 alias cdzd="cd $ZDOT_HOME"
 
 alias cdgg="cd ~/Google\ Drive"
@@ -221,7 +227,18 @@ alias cdg="cd_dir $JS_HOME/projects/mobile-game-cocos"
 
 alias cdmw="cd_dir $JS_HOME/projects/moonwarriors-robin"
 
+alias cdgam="cd_dir $GAM_PATH"
+
+alias cdexp="cd_dir $EXPENSES_HOME"
+
+alias cdrec="cd_dir $(dirname $RECORDS_PATH)"
+
+alias cdlists="cd_dir $LISTS_HOME"
+
+
+###############################################################################
 # Development operations
+###############################################################################
 alias cdfn="cd $FUNCS_HOME"
 
 alias jk="jekyll"
@@ -292,9 +309,6 @@ alias bu="bundle update"
 
 alias save="rake -f $GLOBAL_RAKEFILE_HOME/Rakefile save_code"
 
-#alias rksr="rake -f $RAKEFILE_HOME/Rakefile save"
-#
-
 alias rkrn="rake -g cocos:run"
 
 alias rkd="rake_do rails:deploy"
@@ -329,8 +343,6 @@ alias onew="new_s ocaml ml"
 
 alias znew="new_s zsh zsh"
 
-# alias rnew="new -i ruby -e rb -o noopen -f"
-
 alias jnew="jsnew"
 
 alias cssnew="new -i '' -e css -f"
@@ -357,8 +369,48 @@ alias lfn="ls $FUNCS_HOME"
 
 alias ctfn="ls $FUNCS_HOME | wc -l"
 
+alias js="jekyll serve"
 
-# Git aliases
+alias cdnoc="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
+
+alias cdms="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
+
+alias ccr="cocos run -p web"
+
+alias st="cd_status"
+
+alias sv="cd_save"
+
+alias dcm="cd_commit $DOTFILES_HOME"
+
+alias ddi="cd_diff $DOTFILES_HOME"
+
+alias dst="cd_status $DOTFILES_HOME"
+
+alias fpl="fab pull"
+
+alias bsv="cd_save $BACKUPS_HOME"
+
+alias bpl="cd_pull $BACKUPS_HOME"
+
+alias lpl="cd_pull $LOCAL_HOME"
+
+alias lsv="cd_save $LOCAL_HOME"
+
+alias kel="knife environment list"
+
+alias knl="knife node list"
+
+alias lst="cd_status $LOCAL_HOME"
+
+alias vcr="vpn Cloudreach"
+
+alias vdc="vpn_disconnect"
+
+
+###############################################################################
+# Git
+###############################################################################
 alias gacm="git add -u * && git add * && git commit -m"
 
 alias grS="git reset"
@@ -447,47 +499,12 @@ alias gpod="git push $DEFAULT_GIT_REMOTE develop"
 
 alias gplod="git pull $DEFAULT_GIT_REMOTE develop"
 
-# Development operations
-alias js="jekyll serve"
 
-alias cdnoc="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
-
-alias cdms="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
-
-alias ccr="cocos run -p web"
-
-alias st="cd_status"
-
-alias sv="cd_save"
-
-
-alias dcm="cd_commit $DOTFILES_HOME"
-
-alias ddi="cd_diff $DOTFILES_HOME"
-
-alias dst="cd_status $DOTFILES_HOME"
-
-
-alias fpl="fab pull"
-
-alias bsv="cd_save $BACKUPS_HOME"
-
-alias bpl="cd_pull $BACKUPS_HOME"
-
-alias lpl="cd_pull $LOCAL_HOME"
-
-alias lsv="cd_save $LOCAL_HOME"
-
-alias lst="cd_status $LOCAL_HOME"
-
-
-
-# Chef
-alias kel="knife environment list"
-
-alias knl="knife node list"
-
+###############################################################################
 # Viewing and editing files
+###############################################################################
+alias mcol="$EDITOR $ZDOT_HOME/colors.zsh"
+
 alias ocv="open -a OpenOffice $IMPORTANT_HOME/cv/cv.odt"
 
 alias splq="$EDITOR $SPLUNK_HOME/splunk_searches.txt"
@@ -602,8 +619,6 @@ alias men="$EDITOR $ZDOT_HOME/env_variables.zsh"
 
 alias mpa="$EDITOR $ZDOT_HOME/path.zsh"
 
-alias t="touch"
-
 alias mmutt="$EDITOR ~/.mutt/muttrc"
 
 alias gl="git log"
@@ -706,8 +721,100 @@ alias c="cat"
 
 alias pb="pbcopy"
 
+alias erec="$EDITOR $IMPORTANT_HOME/records/record.txt"
 
-# Function aliases
+alias mrec="$EDITOR $RECORDS_PATH"
+
+alias crec="cat $RECORDS_PATH"
+
+alias lahome="get_record la_home"
+
+alias lawork="get_record la_work"
+
+alias cardcredit="get_record rbc-credit"
+
+alias cardhsbc="get_record hsbc-debit"
+
+alias cardrbc="get_record rbc-debit"
+
+alias mspnum="get_record msp_num"
+
+alias mspaccount="get_record msp_account"
+
+alias delta="get_record deltares"
+
+alias docsec1="get_record docsec1"
+
+alias docsec2="get_record docsec2"
+
+alias docsec3="get_record docsecnott1"
+
+alias docsec4="get_record docsecnott2"
+
+alias docsec5="get_record docsecbald1"
+
+alias rssaws="get_record rss-aws"
+
+alias ad="address"
+
+alias phonelong="get_record phone_long"
+
+alias phone="get_record phone_uk"
+
+alias ph="phone"
+
+alias library="get_record $IMPORTANT_HOME/records/records.txt library"
+
+alias lib="library"
+
+alias postcode="get_record home_postcode"
+
+alias pc="postcode"
+
+alias address="get_record home_address"
+
+alias workaddress="get_record work_address"
+
+alias workpostcode="get_record work_postcode"
+
+alias residency="$ADOBE_PATH $CANADA_HOME/residency_form.pdf"
+
+alias songs="cd $SONGS_HOME"
+
+alias cdsongs="cd $SONGS_HOME"
+
+alias sabihin="song sabihin_mo_na"
+
+alias sb="sabihin"
+
+alias skytrain="open $COMMON_DOCS_HOME/useful/vancouver_skytrain_map.pdf"
+
+alias sky="skytrain"
+
+alias tube="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
+
+alias pc="postcode"
+
+alias ad="address"
+
+alias ph="phone"
+
+alias mobileideas="$EDITOR $MERCURY_HOME/creative/mobile/ideas.txt"
+
+alias mi="mobileideas"
+
+alias screenshots="cd $SCREENSHOTS_HOME"
+
+alias lasts="cd $SCREENSHOTS_HOME && lastf -s $SCREENSHOT_NAME"
+
+alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
+
+alias test="hello"
+
+
+###############################################################################
+# Functions
+###############################################################################
 alias grf="grep_all"
 
 alias aof="green \$(alphabet_of_files)"
@@ -801,103 +908,3 @@ alias afind="libfind_s $AWK_HOME"
 alias zshfind="file_grep ~/.zshrc"
 
 alias sshf="file_grep ~/.ssh/config"
-
-# Records & docs
-alias erec="$EDITOR $IMPORTANT_HOME/records/record.txt"
-
-alias mrec="$EDITOR $RECORDS_PATH"
-
-alias crec="cat $RECORDS_PATH"
-
-alias lahome="get_record la_home"
-
-alias lawork="get_record la_work"
-
-alias cardcredit="get_record rbc-credit"
-
-alias cardhsbc="get_record hsbc-debit"
-
-alias cardrbc="get_record rbc-debit"
-
-alias mspnum="get_record msp_num"
-
-alias mspaccount="get_record msp_account"
-
-alias delta="get_record deltares"
-
-alias docsec1="get_record docsec1"
-
-alias docsec2="get_record docsec2"
-
-alias docsec3="get_record docsecnott1"
-
-alias docsec4="get_record docsecnott2"
-
-alias docsec5="get_record docsecbald1"
-
-alias rssaws="get_record rss-aws"
-
-alias ad="address"
-
-alias phonelong="get_record phone_long"
-
-alias phone="get_record phone_uk"
-
-alias ph="phone"
-
-alias library="get_record $IMPORTANT_HOME/records/records.txt library"
-
-alias lib="library"
-
-alias postcode="get_record home_postcode"
-
-alias pc="postcode"
-
-alias address="get_record home_address"
-
-alias workaddress="get_record work_address"
-
-alias workpostcode="get_record work_postcode"
-
-alias residency="$ADOBE_PATH $CANADA_HOME/residency_form.pdf"
-
-alias songs="cd $SONGS_HOME"
-
-alias cdsongs="cd $SONGS_HOME"
-
-alias sabihin="song sabihin_mo_na"
-
-alias sb="sabihin"
-
-alias skytrain="open $COMMON_DOCS_HOME/useful/vancouver_skytrain_map.pdf"
-
-alias sky="skytrain"
-
-alias tube="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
-
-alias pc="postcode"
-
-alias ad="address"
-
-alias ph="phone"
-
-alias mobileideas="$EDITOR $MERCURY_HOME/creative/mobile/ideas.txt"
-
-alias mi="mobileideas"
-
-# Screenshots
-
-alias screenshots="cd $SCREENSHOTS_HOME"
-
-alias lasts="cd $SCREENSHOTS_HOME && lastf -s $SCREENSHOT_NAME"
-
-alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
-
-alias test="hello"
-
-
-# VPN/vpn
-
-alias vcr="vpn Cloudreach"
-
-alias vdc="vpn_disconnect"
