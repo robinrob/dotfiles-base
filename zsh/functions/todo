@@ -1,0 +1,3 @@
+TODO=$1
+
+add_to_list $LISTS_HOME/todo.txt $TODO

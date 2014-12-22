@@ -1,0 +1,5 @@
+LIST=$1
+ITEM=$2
+
+print "$ITEM" >> $LISTS_HOME/${LIST}.txt
+
