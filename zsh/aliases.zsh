@@ -503,6 +503,14 @@ alias gplod="git pull $DEFAULT_GIT_REMOTE develop"
 ###############################################################################
 # Viewing and editing files
 ###############################################################################
+alias ctr="cat $LISTS_HOME/toread.txt"
+
+alias mtr="$EDITOR $LISTS_HOME/to_read.txt"
+
+alias ctd="cat $LISTS_HOME/todo.txt"
+
+alias mtd="$EDITOR $LISTS_HOME/todo.txt"
+
 alias quotes="clist quotes"
 
 alias mcol="$EDITOR $ZDOT_HOME/colors.zsh"
@@ -514,10 +522,6 @@ alias splq="$EDITOR $SPLUNK_HOME/splunk_searches.txt"
 alias regex="$RUBY_HOME/practice/regexp_operators.rb"
 
 alias doit="$RECORDS_HOME/doit.zsh"
-
-alias ctoread="cat $LISTS_HOME/to_read.txt"
-
-alias mtoread="m $LISTS_HOME/to_read.txt"
 
 alias mbrew="$EDITOR $DOTFILES_HOME/homebrew.txt"
 
