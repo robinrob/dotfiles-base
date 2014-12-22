@@ -449,9 +449,9 @@ alias gpd="git push $DEFAULT_GIT_REMOTE develop"
 
 alias gpm="git push $DEFAULT_GIT_REMOTE master"
 
-alias gpld="git push $DEFAULT_GIT_REMOTE develop"
+alias gpld="git pull $DEFAULT_GIT_REMOTE develop"
 
-alias gplm="git push $DEFAULT_GIT_REMOTE master"
+alias gplm="git pull $DEFAULT_GIT_REMOTE master"
 
 alias gcm="git checkout master"
 
