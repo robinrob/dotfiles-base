@@ -1,2 +1,8 @@
-open -a 'Google Chrome' $@
+if [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
+then
+  open -b com.google.Chrome --args --profile-directory="Profile 2" $@
+elif [[ $HOSTNAME == $VENUS_HOSTNAME ]]
+then
+  open -b com.google.Chrome --args --profile-directory="Profile 1" $@
+fi
 

@@ -9,9 +9,7 @@ do
 	esac
 done
 
-result_grep="`ggrep --binary-file=without-match --line-number -i --no-messages --recursive --word-regexp $PATTERN $DIR`"
-# grep -ri $PATTERN $DIR
-# result_grep="`grep -ri $PATTERN $DIR`"
+result_grep="$(ggrep --binary-file=without-match --line-number -i --no-messages --recursive --exclude-dir=css --exclude-dir=fonts --exclude-dir=www --exclude-dir='.*' --exclude-dir=lib --exclude-dir='*plugin*' --exclude-dir=vendor --exclude-dir='*js*' --exclude-dir=platforms --exclude-dir=frameworks --exclude-dir=tools --exclude-dir='*bootstrap*' --exclude=*min* --word-regexp $PATTERN $DIR)"
 results=("${(f)result_grep}")
 
 if [ -n "$results" ]
@@ -22,7 +20,7 @@ then
 	done
 fi
 
-result_find=`find $DIR -path ./lib -prune -o -type f -name "*$PATTERN*"`
+result_find=$(find . -type d -name lib -name fonts -name www -name '*plugin*' -name vendor -name '*js*' -name platforms -name frameworks -name tools -name '*bootstrap*' -prune -o -type f -name "*$PATTERN*")
 results=("${(f)result_find}")
 
 for result in $results

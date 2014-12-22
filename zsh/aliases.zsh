@@ -881,7 +881,7 @@ alias svc="save_code"
 
 alias lbf="libfind_s"
 
-alias rfind="libfind_s $RUBY_HOME/practice"
+alias rfind="libfind_s $RUBY_HOME"
 
 alias ofind="libfind_s $OCAML_HOME"
 
@@ -891,9 +891,9 @@ alias lfind="libfind_s $LOCAL_HOME"
 
 alias dfind="libfind_s $DOTFILES_HOME"
 
-alias hfind="libfind_s $HTML_CSS_HOME/practice"
+alias hfind="libfind_s $HTML_CSS_HOME"
 
-alias jfind="libfind_s $JS_HOME/practice"
+alias jfind="libfind_s $JS_HOME"
 
 alias npmfind="libfind_s $NPMLIB_HOME"
 
@@ -903,7 +903,7 @@ alias cfind="libfind_s $C_HOME"
 
 alias sfind="libfind_s $SH_HOME"
 
-alias zfind="libfind_s $ZSH_HOME/practice"
+alias zfind="libfind_s $ZSH_HOME"
 
 alias prfind="libfind_s $PROG_HOME"
 
