@@ -159,6 +159,8 @@ alias sublime="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdlst="cd $LISTS_HOME"
+
 alias cdzd="cd $ZDOT_HOME"
 
 alias cdgg="cd ~/Google\ Drive"
@@ -505,7 +507,7 @@ alias gplod="git pull $DEFAULT_GIT_REMOTE develop"
 ###############################################################################
 alias ctr="cat $LISTS_HOME/toread.txt"
 
-alias mtr="$EDITOR $LISTS_HOME/to_read.txt"
+alias mtr="$EDITOR $LISTS_HOME/toread.txt"
 
 alias ctd="cat $LISTS_HOME/todo.txt"
 
@@ -521,7 +523,7 @@ alias splq="$EDITOR $SPLUNK_HOME/splunk_searches.txt"
 
 alias regex="$RUBY_HOME/practice/regexp_operators.rb"
 
-alias doit="$RECORDS_HOME/doit.zsh"
+alias doit="$LISTS_HOME/doit.zsh"
 
 alias mbrew="$EDITOR $DOTFILES_HOME/homebrew.txt"
 
@@ -821,6 +823,8 @@ alias test="hello"
 ###############################################################################
 # Functions
 ###############################################################################
+alias td="todo"
+
 alias rld="reload"
 
 alias grf="grep_all"

@@ -1,3 +1,3 @@
-LIST=$1
+ITEM=$@
 
-add_to_list todo $LIST
+add_to_list todo $ITEM

@@ -1,5 +1,6 @@
 LIST=$1
-ITEM=$2
+shift
+ITEM=$@
 
 print "$ITEM" >> $LISTS_HOME/${LIST}.txt
 

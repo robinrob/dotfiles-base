@@ -1,3 +1,3 @@
-LIST=$1
+ITEM=$1
 
-add_to_list toread $LIST
+add_to_list toread $ITEM
