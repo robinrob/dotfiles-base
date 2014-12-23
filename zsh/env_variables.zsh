@@ -90,9 +90,12 @@ export RUBY_TEMPLATES_HOME=$RUBY_HOME/templates
 
 export RUBYAPP_HOME=$RUBY_HOME/projects/ruby-app
 
-export RAKEFILE_HOME=$RUBY_HOME/projects/rakefile
+# export RAKELIB_HOME=$RUBY_HOME/projects/rakelib
+export RAKELIB_HOME=$ZSH_HOME/projects/dotfiles/dotfiles-base/config/dotfiles/rake
 
-export RAKELIB_HOME=$RUBY_HOME/projects/rakelib
+export RAKELIB="$RAKELIB_HOME"
+
+export RAKEFILE="$RAKELIB_HOME/Rakefile"
 
 export GLOBAL_RAKEFILE_HOME=$RUBY_HOME/projects/global-rakefile
 
@@ -249,10 +252,6 @@ fi
 export PG_CONF=$PGDATA/postgresql.conf
 
 export DEFAULT_GIT_REMOTE="origin"
-
-export RAKELIB="$RAKELIB_HOME"
-
-export RAKEFILE="$RAKELIB_HOME/Rakefile"
 
 typeset -A colors
 
