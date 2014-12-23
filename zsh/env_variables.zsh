@@ -189,6 +189,8 @@ export RECORDS_PATH=$RECORDS_HOME/records.txt
 
 export RECEIPTS_HOME=~/Google\ Drive/expenses/
 
+export EXPENSES_HOME=~/Google\ Drive/expenses/
+
 # This must NOT be wrapped in quotes or the whitespace-escaping in the path does not work!!
 export CAMERA_HOME=$FILES_HOME/Camera\ Uploads
 
