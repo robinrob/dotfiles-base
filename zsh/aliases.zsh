@@ -509,6 +509,10 @@ alias ctr="cat $LISTS_HOME/toread.txt"
 
 alias mtr="$EDITOR $LISTS_HOME/toread.txt"
 
+alias cjs="cat $LISTS_HOME/jobsites.txt"
+
+alias mjs="$EDITOR $LISTS_HOME/jobsites.txt"
+
 alias ctd="cat $LISTS_HOME/todo.txt"
 
 alias mtd="$EDITOR $LISTS_HOME/todo.txt"
@@ -767,11 +771,13 @@ alias ad="address"
 
 alias phonelong="get_record phone_long"
 
+alias phoneshort="get_record phone_short"
+
 alias phone="get_record phone_uk"
 
 alias ph="phone"
 
-alias library="get_record $IMPORTANT_HOME/records/records.txt library"
+alias library="get_record library"
 
 alias lib="library"
 
