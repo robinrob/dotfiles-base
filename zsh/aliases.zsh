@@ -773,9 +773,15 @@ alias phonelong="get_record phone_long"
 
 alias phoneshort="get_record phone_short"
 
-alias phone="get_record phone_uk"
+alias phone="get_record phone"
+
+alias phonef="get_record phone_formatted"
 
 alias ph="phone"
+
+alias phf="phone"
+
+alias bank="get_record bank"
 
 alias library="get_record library"
 
@@ -829,6 +835,8 @@ alias test="hello"
 ###############################################################################
 # Functions
 ###############################################################################
+alias grc='get_record'
+
 alias td="todo"
 
 alias rld="reload"
