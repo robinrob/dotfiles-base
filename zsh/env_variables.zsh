@@ -91,7 +91,7 @@ export RUBY_TEMPLATES_HOME=$RUBY_HOME/templates
 export RUBYAPP_HOME=$RUBY_HOME/projects/ruby-app
 
 # export RAKELIB_HOME=$RUBY_HOME/projects/rakelib
-export RAKELIB_HOME=$ZSH_HOME/projects/dotfiles/dotfiles-base/config/dotfiles/rake
+export RAKELIB_HOME=~/.rake
 
 export RAKELIB="$RAKELIB_HOME"
 

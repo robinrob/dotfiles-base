@@ -97,6 +97,8 @@ alias head="ghead"
 ###############################################################################
 # Shell command shortcuts
 ###############################################################################
+alias lsdl="ls ~/Downloads"
+
 alias pag="ps aux | grep"
 
 alias pyv="python --version"
@@ -169,15 +171,13 @@ alias cddocs="cd_dir $DOCS_HOME"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
-alias cdmr="cd_dir ${MRROBINSMITHCOM_HOME}"
+alias cdmrp="cd_dir $MRROBINSMITHCOM_HOME"
+
+alias cdmr="cd_dir ${MRROBINSMITHCOM_HOME}-dev"
 
 alias cdbp="cd_dir $MRROBINSMITHCOM_HOME/public/blogposts"
 
-alias cdp2="cd_dir $PY_HOME/python2"
-
-alias cdp3="cd_dir $PY_HOME/python3"
-
-alias cdrk="cd_dir $DOTFILES_BASE_HOME/config/dotfiles/rake"
+alias cdrk="cd_dir $RAKELIB"
 
 alias cdl="cd_dir $LOCAL_HOME"
 
@@ -187,17 +187,7 @@ alias cdwr="cd_dir $WORK_RUBY_HOME"
 
 alias cdwp="cd_dir $WORK_PYTHON_HOME"
 
-alias cdjpr="cd_dir $JS_HOME practice"
-
 alias cdrecipe="cd_dir $HTMLCSS_HOME/projects/recipe-finder"
-
-alias cdzpr="cd_dir $ZSH_HOME/practice"
-
-alias cdrpr="cd_dir $RUBY_HOME/practice"
-
-alias cdppr="cd_dir $PYTHON_HOME/practice"
-
-alias cdspr="cd_dir $SH_HOME/practice"
 
 alias cdsed="cd_dir $SH_HOME/practice/sed"
 
@@ -413,6 +403,8 @@ alias vdc="vpn_disconnect"
 ###############################################################################
 # Git
 ###############################################################################
+alias grrn="git remote rename"
+
 alias gacm="git add -u * && git add * && git commit -m"
 
 alias grS="git reset"
@@ -835,6 +827,10 @@ alias test="hello"
 ###############################################################################
 # Functions
 ###############################################################################
+alias read1="take1 toread"
+
+alias watch1="take1 towatch"
+
 alias grc='get_record'
 
 alias td="todo"

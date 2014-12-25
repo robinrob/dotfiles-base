@@ -1,0 +1,16 @@
+LIST=$LISTS_HOME/$1.txt
+
+if [[ -f $LIST ]]
+then
+    new_list=$LIST.new
+    next=$(head -1 $LIST)
+
+    safari $next
+
+    # Cycle the top item to the bottom of the list
+    tail +2 $LIST > $new_list
+    mv -f $new_list $LIST
+    print $next >> $LIST
+else
+    red $LIST does not exist.
+fi

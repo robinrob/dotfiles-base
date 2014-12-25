@@ -103,7 +103,7 @@ alias activerecord="browser 'http://rubydoc.info/gems/activerecord/4.1.6/frames'
 
 alias awssdk="open 'http://docs.aws.amazon.com/AWSRubySDK/latest/frames.html'"
 
-alias bkcaml="safari 'http://my.safaribooksonline.com/book/programming/9781449324735'"
+alias bkocaml="safari 'http://my.safaribooksonline.com/book/programming/9781449324735'"
 
 alias documentary="open 'http://www.imdb.com/search/title?at=0&sort=user_rating&title_type=documentary'"
 
@@ -166,3 +166,5 @@ alias game="print 'http://localhost:8000' | pbcopy && safari 'http://localhost:8
 alias bkcocos="print 'http://www.cocos2d-x.org/wiki/Getting_Started_Cocos2d-js' | pbcopy && safari 'http://www.cocos2d-x.org/wiki/Getting_Started_Cocos2d-js'"
 
 alias bkdev="print 'http://my.safaribooksonline.com/book/programming/9781941222904/early-praise-for-the-developer-code/f_0004_html?query=((developer+blog))#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE5NDEyMjI5MDQlMkZmXzAwMTBfaHRtbCZxdWVyeT0oKGRldmVsb3BlciUyMGJsb2cpKQ==' | pbcopy && safari 'http://my.safaribooksonline.com/book/programming/9781941222904/early-praise-for-the-developer-code/f_0004_html?query=((developer+blog))#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE5NDEyMjI5MDQlMkZmXzAwMTBfaHRtbCZxdWVyeT0oKGRldmVsb3BlciUyMGJsb2cpKQ=='"
+
+alias linked="print 'https://www.linkedin.com/profile/view?id=135084368&trk=nav_responsive_tab_profile_pic' | pbcopy && safari 'https://www.linkedin.com/profile/view?id=135084368&trk=nav_responsive_tab_profile_pic'"
