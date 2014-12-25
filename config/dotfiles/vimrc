@@ -128,5 +128,9 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
 filetype on
-au BufNewFile,BufRead * set filetype=zsh
+
+"This is the way to force a filetype for a given extension
+" au BufNewFile,BufRead *.zsh set filetype=zsh
+
+autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set filetype=zsh | endif
 
