@@ -497,6 +497,10 @@ alias gplod="git pull $DEFAULT_GIT_REMOTE develop"
 ###############################################################################
 # Viewing and editing files
 ###############################################################################
+alias ctl="cat $LISTS_HOME/tolearn.txt"
+
+alias mtl="$EDITOR $LISTS_HOME/tolearn.txt"
+
 alias ctw="cat $LISTS_HOME/towatch.txt"
 
 alias mtw="$EDITOR $LISTS_HOME/towatch.txt"
