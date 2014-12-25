@@ -132,5 +132,5 @@ filetype on
 "This is the way to force a filetype for a given extension
 " au BufNewFile,BufRead *.zsh set filetype=zsh
 
+"Set the default filetype for files with no extension"
 autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set filetype=zsh | endif
-
