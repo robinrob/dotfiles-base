@@ -20,22 +20,8 @@ colors[brightwhite]='1;37'
 colors[maganda]='1;35'
 
 
-function color {
-  start=$1
-  end=$2
-  shift 2;
-
-	if [[ -n "$@" ]]
-	then
-    print "$(eval print $start'$@'$end)"
-	else
-    print -n "$(eval print $start)"
-	fi
-}
-
 function shellcolor {
-	color=$1
-	shift;
+	color=$1; shift
 
   start=$(colorencode $(colorcode $color))
   end=$(colorencode $(colorcode default))
@@ -44,31 +30,39 @@ function shellcolor {
 }
 
 function promptcolor {
-	color=$1
-	shift;
+	color=$1; shift
 
-  start=$(colorencode -p "$(colorcode $color)")
-  end=$(colorencode -p "$(colorcode default)")
+  start=$(colorencode -p $(colorcode $color))
+  end=$(colorencode -p $(colorcode default))
 
   color $start $end $@
 }
 
 function colorencode {
   prefix='"["'; suffix='m'
-  prefix='%{"["'; suffix='m%}'
-  while getopts p opt
+  while getopts :p opt
   do
     case $opt in
-      p) 	prefix='%{"["'; suffix='m%}' ;;
+      p) 	prefix='%{"["'; suffix='m%}'; shift ;;
     esac
   done
-
 	
 	print ${prefix}${1}${suffix}
 }
 
 function colorcode {
 	print '${colors['$1']}'
+}
+
+function color {
+  start=$1; end=$2; shift 2
+
+	if [[ -n "$@" ]]
+	then
+    print "$(eval print $start'$@'$end)"
+	else
+    print -n "$(eval print $start)"
+	fi
 }
 
 # Progamatically-define color and colorprompt functions. This one's a beauty!!
