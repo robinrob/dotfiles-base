@@ -21,21 +21,23 @@ colors[maganda]='1;35'
 
 
 function shellcolor {
-	color=$1; shift
-
-  start=$(colorencode $(colorcode $color))
-  end=$(colorencode $(colorcode default))
-
-  color $start $end $@
+  color $(colorencode $(colorcode $1))
 }
 
 function promptcolor {
-	color=$1; shift
+  color $(colorencode -p $(colorcode $1))
+}
 
-  start=$(colorencode -p $(colorcode $color))
-  end=$(colorencode -p $(colorcode default))
+function color {
+  start=$1; shift
+  end=$(promptcolorencode $(colorcode default))
 
-  color $start $end $@
+	if [[ -n "$@" ]]
+	then
+    print "$(eval print $start'$@'$end)"
+	else
+    print -n "$(eval print $start)"
+	fi
 }
 
 function colorencode {
@@ -52,17 +54,6 @@ function colorencode {
 
 function colorcode {
 	print '${colors['$1']}'
-}
-
-function color {
-  start=$1; end=$2; shift 2
-
-	if [[ -n "$@" ]]
-	then
-    print "$(eval print $start'$@'$end)"
-	else
-    print -n "$(eval print $start)"
-	fi
 }
 
 # Progamatically-define color and colorprompt functions. This one's a beauty!!

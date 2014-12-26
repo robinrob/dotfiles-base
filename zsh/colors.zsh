@@ -21,8 +21,7 @@ colors[maganda]='1;35'
 
 
 function color {
-	color=$1
-	shift;
+	color=$1; shift
 
   start=$(colorencode $(colorcode $color))
   end=$(colorencode $(colorcode default))
@@ -40,16 +39,17 @@ function colorcode {
 }
 
 function colorencode {
-	prefix='"["'
-	suffix='m'
+	prefix='"["'; suffix='m'
+
 	print ${prefix}${1}${suffix}
 }
 
 function promptcolor {
-	color=$1
-	shift;
+	color=$1; shift;
+
   start=$(promptcolorencode $(colorcode $color))
   end=$(promptcolorencode $(colorcode default))
+
 	if [[ "$@" == "" ]]
 	then
     print "$(eval print $start)"
@@ -59,8 +59,8 @@ function promptcolor {
 }
 
 function promptcolorencode {
-	prefix='%{"["'
-	suffix='m%}'
+	prefix='%{"["'; suffix='m%}'
+
 	print ${prefix}${1}${suffix}
 }
 
