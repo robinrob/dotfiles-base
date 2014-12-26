@@ -20,10 +20,16 @@ colors[brightwhite]='1;37'
 colors[maganda]='1;35'
 
 
-function color {
-	color=$1; shift
+function shellcolor {
+  color $(colorencode $(colorcode $1))
+}
 
-  start=$(colorencode $(colorcode $color))
+function promptcolor {
+  color $(colorencode -p $(colorcode $1))
+}
+
+function color {
+  start=$1; shift
   end=$(colorencode $(colorcode default))
 
 	if [[ -n "$@" ]]
@@ -34,39 +40,25 @@ function color {
 	fi
 }
 
+function colorencode {
+  prefix='"["'; suffix='m'
+  while getopts :p opt
+  do
+    case $opt in
+      p) 	prefix='%{"["'; suffix='m%}'; shift ;;
+    esac
+  done
+	
+	print ${prefix}${1}${suffix}
+}
+
 function colorcode {
 	print '${colors['$1']}'
-}
-
-function colorencode {
-	prefix='"["'; suffix='m'
-
-	print ${prefix}${1}${suffix}
-}
-
-function promptcolor {
-	color=$1; shift;
-
-  start=$(promptcolorencode $(colorcode $color))
-  end=$(promptcolorencode $(colorcode default))
-
-	if [[ "$@" == "" ]]
-	then
-    print "$(eval print $start)"
-	else
-    print "$(eval print $start'$@'$end)"
-	fi
-}
-
-function promptcolorencode {
-	prefix='%{"["'; suffix='m%}'
-
-	print ${prefix}${1}${suffix}
 }
 
 # Progamatically-define color and colorprompt functions. This one's a beauty!!
 for key in ${(k)colors}
   do
-    eval "function $key { color $key \$@ }"
+    eval "function $key { shellcolor $key \$@ }"
     eval "function ${key}prompt { promptcolor $key \$@ }"
 done
