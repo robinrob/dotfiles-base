@@ -21,16 +21,25 @@ colors[maganda]='1;35'
 
 
 function shellcolor {
-  color $(colorencode $(colorcode $1))
+  color=$1; shift
+
+  start=$(colorencode $(colorcode $color))
+  end=$(colorencode $(colorcode default))
+
+  color $start $end $@
 }
 
-function promptcolor {
-  color $(colorencode -p $(colorcode $1))
+function promptcolor  {
+  color=$1; shift
+
+  start=$(colorencode -p $(colorcode $color))
+  end=$(colorencode -p $(colorcode default))
+
+  color $start $end $@
 }
 
 function color {
-  start=$1; shift
-  end=$(colorencode $(colorcode default))
+  start=$1; end=$2; shift 2
 
 	if [[ -n "$@" ]]
 	then

@@ -68,9 +68,7 @@ prompt robin
 
 # Greeting
 ###############################################################################
-echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome)" && speak "I am awesome"
-# Or alternatively:
-# echo "$(brightwhite I)$(brightyellow " am ")$(brightcyan awesome)"
+echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome) $(brightwhite ':)')" && speak "I am awesome"
 
 
 # Development
