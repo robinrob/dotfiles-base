@@ -4,7 +4,7 @@ case $(basename $(pwd)) in
 esac
 
 
-if [[ $*[-1] == "bitbucket" || $*[-1] == "github" || $*[-1] == "origin" ]]
+if [[ $(is_in_set $*[-1] 'bitbucket github origin live') == "yes" ]]
 then
   rake_do $TASK "$*[1,-2]" $*[-1]
 else

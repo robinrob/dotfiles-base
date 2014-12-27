@@ -41,7 +41,6 @@ alias bbc="browser https://bitbucket.org/repo/create"
 alias learmount="browser http://www.flightglobal.com/blogs/learmount"
 
 
-alias bk=sf
 
 alias bkcoders="book http://my.safaribooksonline.com/book/programming/9781430219484"
 
@@ -157,7 +156,6 @@ alias video="print 'https://www.youtube.com/watch?v=e-RzZ5ZsT0s' | pbcopy && saf
 
 alias repos="print 'https://github.com/robinrob?tab=repositories' | pbcopy && safari 'https://github.com/robinrob?tab=repositories'"
 
-alias christmas="print 'http://www.newark-sherwooddc.gov.uk/media/newarkandsherwood/imagesandfiles/leisure/leisurecentres/pdfs/timetables/New%20Grove%20Fun%20%20Fit%20Leaflet%20Timetable%2022nd%20Dec%202014%20(2).pdf' | pbcopy && chrome 'http://www.newark-sherwooddc.gov.uk/media/newarkandsherwood/imagesandfiles/leisure/leisurecentres/pdfs/timetables/New%20Grove%20Fun%20%20Fit%20Leaflet%20Timetable%2022nd%20Dec%202014%20(2).pdf'"
 
 alias weirich="print 'http://www.confreaks.com/presenters/24-jim-weirich' | pbcopy && safari 'http://www.confreaks.com/presenters/24-jim-weirich'"
 
@@ -174,3 +172,9 @@ alias deedeekitchen="print 'https://www.youtube.com/watch?v=pTfC3YpMDMw' | pbcop
 alias curiosity="print 'http://mars.nasa.gov/msl/news/whatsnew/' | pbcopy && safari 'http://mars.nasa.gov/msl/news/whatsnew/'"
 
 alias opportunity="print 'http://mars.nasa.gov/mer/home/index.html' | pbcopy && safari 'http://mars.nasa.gov/mer/home/index.html'"
+
+alias christmas="print 'http://www.newark-sherwooddc.gov.uk/media/newarkandsherwood/imagesandfiles/leisure/leisurecentres/pdfs/timetables/New%20Grove%20Fun%20%20Fit%20Leaflet%20Timetable%2022nd%20Dec%202014%20(2).pdf' | pbcopy && safari 'http://www.newark-sherwooddc.gov.uk/media/newarkandsherwood/imagesandfiles/leisure/leisurecentres/pdfs/timetables/New%20Grove%20Fun%20%20Fit%20Leaflet%20Timetable%2022nd%20Dec%202014%20(2).pdf'"
+
+alias bk="print 'http://my.safaribooksonline.com' | pbcopy && safari 'http://my.safaribooksonline.com'"
+
+alias mars="print 'http://www.ustream.tv/nasajpl' | pbcopy && safari 'http://www.ustream.tv/nasajpl'"

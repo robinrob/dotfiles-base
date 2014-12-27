@@ -3,6 +3,10 @@
 #############################
 export TRUE_VALUE="yes"
 
+export TRUE="yes"
+
+export FALSE="no"
+
 export BOOKMARKS_PATH=$DOTFILES_BASE_HOME/zsh/bookmarks.zsh
 
 export WORKBOOKMARKS_PATH=$DOTFILES_BASE_HOME/zsh/work_bookmarks.zsh
