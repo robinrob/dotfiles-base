@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh -x
 
-source $ZSHCOLORS_PATH
-
 
 # Third-party ZSH framework
 ###############################################################################
@@ -19,6 +17,7 @@ for config_file ($HOME/.framework/zsh/*.zsh) source $config_file
 # +X loads the file immediately - rather than only when it is needed. This
 # allows the function's contents to be seen by running e.g. `which bastard`.
 autoload -U +X ${fpath[1]}/*(:t)
+source $ZSHCOLORS_PATH
 
 
 # Environment Variables - must come before aliases, since if an env used by an
@@ -45,6 +44,7 @@ autoload -U create_repo_aliases
 create_repo_aliases
 source $ZDOT_HOME/aliases.zsh
 
+
 # Bookmarks
 ###############################################################################
 source $ZDOT_HOME/bookmarks.zsh
@@ -68,7 +68,8 @@ prompt robin
 
 # Greeting
 ###############################################################################
-echo "$(brightwhite)I $(brightyellow)am $(brightcyan awesome) $(brightwhite ':)')" && speak "I am awesome"
+echo "$(brightwhite I) $(brightyellow am) $(brightcyan awesome) $(brightwhite ':)')"
+speak "I am awesome"
 
 
 # Development

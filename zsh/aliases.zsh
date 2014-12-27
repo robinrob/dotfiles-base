@@ -231,6 +231,8 @@ alias cdlists="cd_dir $LISTS_HOME"
 ###############################################################################
 # Development operations
 ###############################################################################
+alias ut="utop"
+
 alias cdfn="cd $FUNCS_HOME"
 
 alias jk="jekyll"

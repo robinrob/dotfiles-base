@@ -168,3 +168,9 @@ alias bkcocos="print 'http://www.cocos2d-x.org/wiki/Getting_Started_Cocos2d-js' 
 alias bkdev="print 'http://my.safaribooksonline.com/book/programming/9781941222904/early-praise-for-the-developer-code/f_0004_html?query=((developer+blog))#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE5NDEyMjI5MDQlMkZmXzAwMTBfaHRtbCZxdWVyeT0oKGRldmVsb3BlciUyMGJsb2cpKQ==' | pbcopy && safari 'http://my.safaribooksonline.com/book/programming/9781941222904/early-praise-for-the-developer-code/f_0004_html?query=((developer+blog))#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE5NDEyMjI5MDQlMkZmXzAwMTBfaHRtbCZxdWVyeT0oKGRldmVsb3BlciUyMGJsb2cpKQ=='"
 
 alias linked="print 'https://www.linkedin.com/profile/view?id=135084368&trk=nav_responsive_tab_profile_pic' | pbcopy && safari 'https://www.linkedin.com/profile/view?id=135084368&trk=nav_responsive_tab_profile_pic'"
+
+alias deedeekitchen="print 'https://www.youtube.com/watch?v=pTfC3YpMDMw' | pbcopy && safari 'https://www.youtube.com/watch?v=pTfC3YpMDMw'"
+
+alias curiosity="print 'http://mars.nasa.gov/msl/news/whatsnew/' | pbcopy && safari 'http://mars.nasa.gov/msl/news/whatsnew/'"
+
+alias opportunity="print 'http://mars.nasa.gov/mer/home/index.html' | pbcopy && safari 'http://mars.nasa.gov/mer/home/index.html'"
