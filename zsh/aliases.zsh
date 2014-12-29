@@ -811,7 +811,7 @@ alias skytrain="open $COMMON_DOCS_HOME/useful/vancouver_skytrain_map.pdf"
 
 alias sky="skytrain"
 
-alias tube="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
+alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 
 alias pc="postcode"
 
