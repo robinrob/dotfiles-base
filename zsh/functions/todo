@@ -1,3 +1,0 @@
-ITEM=$@
-
-add_to_list todo $ITEM

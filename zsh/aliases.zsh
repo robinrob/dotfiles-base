@@ -503,6 +503,8 @@ alias mtl="$EDITOR $LISTS_HOME/tolearn.txt"
 
 alias ctw="cat $LISTS_HOME/towatch.txt"
 
+alias csp="cat $LISTS_HOME/spacecraft.txt"
+
 alias mtw="$EDITOR $LISTS_HOME/towatch.txt"
 
 alias ctr="cat $LISTS_HOME/toread.txt"
@@ -835,6 +837,24 @@ alias test="hello"
 ###############################################################################
 # Functions
 ###############################################################################
+alias spacecraft="add_to_list spacecraft"
+
+alias toread="add_to_list toread"
+
+alias learn="add_to_list tolearn"
+
+alias watch="add_to_list watch"
+
+alias ref="add_to_list references"
+
+alias shop="add_to_list shopping"
+
+alias quote="add_to_list quotes"
+
+alias jobs="add_to_list jobsites"
+
+alias comp="add_to_list computer_science"
+
 alias read1="take1 toread"
 
 alias watch1="take1 towatch"
