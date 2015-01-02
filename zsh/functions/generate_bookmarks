@@ -1,0 +1,19 @@
+rm -f $BOOKMARKS_ALIAS_PATH.old
+mv $BOOKMARKS_ALIAS_PATH $BOOKMARKS_ALIAS_PATH.old
+touch $BOOKMARKS_ALIAS_PATH
+
+cat $BOOKMARKS_PATH | while read line ; do
+
+  NAME=$(print $line | gawk -F: '{print $1}')
+  BROWSER=$(print $1ine | gawk -F: '{print $2}')
+  URL=$(print $1ine | gawk -F: '{print $3}')
+
+  ALIAS="browse_print $BROWSER $URL"
+
+  create_alias $NAME $ALIAS $BOOKMARKS_ALIAS_PATH $SUCCESS_MSG
+
+  source $BOOKMARKS_ALIAS_PATH
+
+  print "$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
+
+done

@@ -7,9 +7,9 @@ export TRUE="yes"
 
 export FALSE="no"
 
-export BOOKMARKS_PATH=$DOTFILES_BASE_HOME/zsh/bookmarks.zsh
+export BOOKMARKS_PATH=$LISTS_HOME/bookmarks.txt
 
-export WORKBOOKMARKS_PATH=$DOTFILES_BASE_HOME/zsh/work_bookmarks.zsh
+export WORKBOOKMARKS_PATH=$LISTS_HOME/work_bookmarks.txt
 
 # sudo hostname <name> to change
 export HOSTNAME=`hostname -s`

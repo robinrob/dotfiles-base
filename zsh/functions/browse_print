@@ -1,0 +1,4 @@
+BROWSER=$1
+URL=$2
+
+copy $URL && eval "$BROWSER '$URL'"

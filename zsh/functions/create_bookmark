@@ -14,10 +14,8 @@ then
   fi
 fi
 
-ALIAS="print '${URL}' | pbcopy && ${BROWSER} '${URL}'"
-SUCCESS_MSG="$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
+print "$NAME:$BROWSER:$URL" >> $BOOKMARKS_PATH
 
-create_alias $NAME $ALIAS $BOOKMARKS_PATH $SUCCESS_MSG
+print "$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
 
-source $BOOKMARKS_PATH
-
+generate_bookmarks
