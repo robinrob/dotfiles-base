@@ -1,180 +1,146 @@
-# Bookmarks
-alias crockford="browser 'https://www.youtube.com/results?search_query=douglas+crockford'"
 
-alias recipe="browser /Users/msl/Programming/robin/html-css/projects/book/chapter05/index.html"
+alias newhorizons="browse_print safari 'http://pluto.jhuapl.edu'"
 
-alias limmy="ytube limmy\'s show"
+alias crockford="browse_print safari 'https://www.youtube.com/results?search_query=douglas+crockford'"
 
-alias reciped="browser /Users/msl/Programming/robin/html-css/projects/recipe-finder/index.html"
+alias swimming="browse_print safari 'http://www.newark-sherwooddc.gov.uk/glc/groveswimming/'"
 
-alias swimming="browser http://www.newark-sherwooddc.gov.uk/glc/groveswimming/"
+alias mrr="browse_print safari 'http://mrrobinsmith.com'"
 
-alias mrr="browser 'http://mrrobinsmith.com'"
+alias mrrd="browse_print safari 'http://localhost:3000'"
 
-alias mrrd="browser 'http://localhost:3000'"
+alias r="browse_print safari 'http://rails4-bootstrap3.herokuapp.com'"
 
-alias r4b3="browser http://rails4-bootstrap3.herokuapp.com"
+alias dev="browse_print safari 'http://localhost:4000'"
 
-alias r4b3-orig="browser http://rails4-bootstrap3-orig.herokuapp.com"
+alias shopping="browse_print safari 'https://docs.google.com/a/cloudreach.co.uk/spreadsheet/ccc?key=1rVCLgwbWg8uhbyCzyjRYTgpv2G08_Z-_aiwm2kNtI9w#gid=0'"
 
-alias dev="safari http://localhost:4000"
+alias gtemp="browse_print safari 'https://drive.google.com/a/cloudreach.co.uk/templates?state=%7B%22folderId%22:%220AIV1py6VJXyMUk9PVA%22,%22action%22:%22create%22,%22userId%22:%22111853091861331127431%22%7D#'"
 
-alias shopping="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheet/ccc?key=1rVCLgwbWg8uhbyCzyjRYTgpv2G08_Z-_aiwm2kNtI9w#gid=0'"
+alias gdoc="browse_print safari 'https://docs.google.com/a/mrrobinsmith.com/document/d/1J4f4VHCkW70SxNwqHrTsFSSwbppJzpzR1pSmHJeEntY/edit'"
 
-alias gtemp="chrome 'https://drive.google.com/a/cloudreach.co.uk/templates?state=%7B%22folderId%22:%220AIV1py6VJXyMUk9PVA%22,%22action%22:%22create%22,%22userId%22:%22111853091861331127431%22%7D#'"
+alias tasks="browse_print safari 'https://docs.google.com/a/mrrobinsmith.com/spreadsheet/ccc?key=0Aganxin54gVEdEg4eEk2ekpCaFZqb3pwT3JNS3hkRHc&usp=drive_web#gid=0'"
 
-alias gdoc="chrome 'https://docs.google.com/a/mrrobinsmith.com/document/d/1J4f4VHCkW70SxNwqHrTsFSSwbppJzpzR1pSmHJeEntY/edit'"
+alias work="browse_print safari 'https://cloudreach.my.salesforce.com'"
 
+alias bbh="browse_print safari 'https://bitbucket.org/dashboard/overview'"
 
+alias bbc="browse_print safari 'https://bitbucket.org/repo/create'"
 
-alias tasks="chrome 'https://docs.google.com/a/mrrobinsmith.com/spreadsheet/ccc?key=0Aganxin54gVEdEg4eEk2ekpCaFZqb3pwT3JNS3hkRHc&usp=drive_web#gid=0'" 
+alias learmount="browse_print safari 'http://www.flightglobal.com/blogs/learmount'"
 
+alias bkcoders="browse_print safari 'http://my.safaribooksonline.com/book/programming/9781430219484'"
 
+alias bkrb="browse_print safari 'http://my.safaribooksonline.com/book/web-development/ruby/9780132480352'"
 
-alias work="browser http://mail.google.com http://zenoss.cloudreach.co.uk:8080/zport/dmd/Events/evconsole?submitted=true https://cloudreach.my.salesforce.com"
+alias bksass="browse_print safari 'http://my.safaribooksonline.com/book/web-development/css/9781849694544'"
 
-alias bbh="browser https://bitbucket.org/dashboard/overview"
+alias bkless="browse_print safari 'http://my.safaribooksonline.com/book/web-development/css/9781783981465'"
 
-alias bbc="browser https://bitbucket.org/repo/create"
+alias bkhtml="browse_print safari 'http://my.safaribooksonline.com/book/programming/game-programming/9781430266976'"
 
+alias bkstrap="browse_print safari 'http://my.safaribooksonline.com/book/web-design-and-development/9781457174346'"
 
-alias learmount="browser http://www.flightglobal.com/blogs/learmount"
+alias bkcss="browse_print safari 'http://my.safaribooksonline.com/book/web-development/css/9781457174315'"
 
+alias bkjsp="browse_print safari 'http://my.safaribooksonline.com/book/programming/javascript/9781449399115'"
 
+alias bkjs="browse_print safari 'http://my.safaribooksonline.com/book/programming/javascript/9781849693127'"
 
-alias bkcoders="book http://my.safaribooksonline.com/book/programming/9781430219484"
+alias bkrails="browse_print safari 'http://my.safaribooksonline.com/book/programming/ruby/9780133487954'"
 
-alias bkrb="book http://my.safaribooksonline.com/book/web-development/ruby/9780132480352"
+alias bkpg="browse_print safari 'http://my.safaribooksonline.com/book/programming/mobile/9781783287925'"
 
-alias bksass="book http://my.safaribooksonline.com/book/web-development/css/9781849694544"
+alias bkcocos="browse_print safari 'http://my.safaribooksonline.com/book/programming/iphone/9780132180863'"
 
-alias bkless="book http://my.safaribooksonline.com/book/web-development/css/9781783981465"
+alias railst="browse_print safari 'http://guides.rubyonrails.org/getting_started.html'"
 
-alias bkhtml5="book http://my.safaribooksonline.com/book/programming/game-programming/9781430266976"
+alias splw="browse_print safari 'https://cr-splunk-1.cloudreach.co.uk:8000/en-US/app/ZenossForwarding'"
 
-alias bkstrap="book http://my.safaribooksonline.com/book/web-design-and-development/9781457174346"
+alias stackh="browse_print safari 'http://stackoverflow.com/users/3946669/robin-smith'"
 
-alias bkcss="book http://my.safaribooksonline.com/book/web-development/css/9781457174315"
+alias crockfordlanguage="browse_print safari 'https://www.youtube.com/watch?v=9e_oEE72d3U'"
 
-alias bkjsp="book http://my.safaribooksonline.com/book/programming/javascript/9781449399115"
+alias renew="browse_print safari 'https://vpl.bibliocommons.com/user/login'"
 
-alias bkjs="book http://my.safaribooksonline.com/book/programming/javascript/9781849693127"
+alias tagging="browse_print safari 'https://sites.google.com/a/cloudreach.co.uk/points-lists/aws/lab-instance-tagging'"
 
-alias bkjs1="book http://my.safaribooksonline.com/book/programming/javascript/9781847194145"
+alias bkregex="browse_print safari 'http://my.safaribooksonline.com/book/programming/regular-expressions/0596528124'"
 
-alias bkrails="browser -a Safari http://my.safaribooksonline.com/book/programming/ruby/9780133487954"
+alias bkhaml="browse_print safari 'http://my.safaribooksonline.com/book/web-development/ruby/9781783283774'"
 
-alias bkpg="book http://my.safaribooksonline.com/book/programming/mobile/9781783287925"
+alias han="browse_print safari 'https://docs.google.com/a/cloudreach.co.uk/document/d/1vYyK25NFx3x9W57NqqigUj5e0m7Wdm8N2LmJqpDLHo8/edit?usp=drive_web'"
 
-alias bkcocos2="book http://my.safaribooksonline.com/book/programming/iphone/9780132180863"
+alias reboots="browse_print safari 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1cEexs1IuUD2rtlj1YP8mmyIdDHHrciLAY2OvsdbuiBw/edit#gid=0'"
 
-alias railst="browser http://guides.rubyonrails.org/getting_started.html"
+alias ymca="browse_print safari 'http://www.vanymca.org/centres/robertlee/sites/all/themes/ymca/documents/programs/PDFschedules/robert_lee_ymca_vancouver_aquatics_curr.pdf'"
 
-alias splw="browser https://cr-splunk-1.cloudreach.co.uk:8000/en-US/app/ZenossForwarding"
+alias bkdsl="browse_print safari 'http://my.safaribooksonline.com/book/software-engineering-and-development/ide/9780132107549'"
 
-alias stackh="browser 'http://stackoverflow.com/users/3946669/robin-smith'"
+alias biographical="browse_print safari 'http://www.imdb.com/genre/biography'"
 
-alias crockfordlanguage="browser 'https://www.youtube.com/watch?v=9e_oEE72d3U'"
+alias activerecord="browse_print safari 'http://rubydoc.info/gems/activerecord/4.1.6/frames'"
 
-alias renew="browser 'https://vpl.bibliocommons.com/user/login'"
+alias awssdk="browse_print safari 'http://docs.aws.amazon.com/AWSRubySDK/latest/frames.html'"
 
-alias tagging="browser 'https://sites.google.com/a/cloudreach.co.uk/points-lists/aws/lab-instance-tagging'"
+alias bkocaml="browse_print safari 'http://my.safaribooksonline.com/book/programming/9781449324735'"
 
-alias bkrb2="safari 'http://my.safaribooksonline.com/book/web-development/ruby/0768667208'"
+alias documentary="browse_print safari 'http://www.imdb.com/search/title?at=0&sort=user_rating&title_type=documentary'"
 
-alias bkregex="safari 'http://my.safaribooksonline.com/book/programming/regular-expressions/0596528124'"
+alias rfc="browse_print safari 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1TSCavbYKBAznqXOffWJtLA0VJsY3Pts3_TOtqWcOACs&mode=domain'"
 
-alias bkhaml="safari 'http://my.safaribooksonline.com/book/web-development/ruby/9781783283774'"
+alias gsheet="browse_print safari 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1d7lB4F-qotkcODeYpDRjEc4rIt4TkSFhqr7DgYXjxSo/edit#gid=0'"
 
+alias war="browse_print safari 'http://www2.warwick.ac.uk/fac/soc/economics/staff/mharrison/public/ehr2011postprint.pdf'"
 
-alias han="chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1vYyK25NFx3x9W57NqqigUj5e0m7Wdm8N2LmJqpDLHo8/edit?usp=drive_web'"
+alias adventures="browse_print safari 'http://vim-adventures.com'"
 
-alias reboots="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1cEexs1IuUD2rtlj1YP8mmyIdDHHrciLAY2OvsdbuiBw/edit#gid=0'"
+alias cocos="browse_print safari 'http://my.safaribooksonline.com/book/programming/game-programming/9781783987863/firstchapter#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE3ODM5ODc4NjMlMkZjaDAwbHZsMXNlYzAyX2h0bWwmcXVlcnk9'"
 
-alias ymca="browser 'http://www.vanymca.org/centres/robertlee/sites/all/themes/ymca/documents/programs/PDFschedules/robert_lee_ymca_vancouver_aquatics_curr.pdf'"
+alias bkzsh="browse_print safari 'http://zsh.sourceforge.net/Guide/zshguide.html'"
 
+alias options="browse_print safari 'http://www.cs.elte.hu/zsh-manual/zsh_16.html'"
 
-alias bkdsl="browser 'http://my.safaribooksonline.com/book/software-engineering-and-development/ide/9780132107549'"
+alias alonetone="browse_print safari 'https://github.com/sudara/alonetone'"
 
-alias biographical="browser 'http://www.imdb.com/genre/biography'"
+alias q="browse_print safari 'http://salesforce.stackexchange.com/questions/57296/salesforce-large-relationship-inner-query'"
 
-alias activerecord="browser 'http://rubydoc.info/gems/activerecord/4.1.6/frames'"
+alias bkrk="browse_print safari 'http://my.safaribooksonline.com/9781783280773'"
 
-alias awssdk="open 'http://docs.aws.amazon.com/AWSRubySDK/latest/frames.html'"
+alias news="browse_print safari 'http://www.bbc.com/news/'"
 
-alias bkocaml="safari 'http://my.safaribooksonline.com/book/programming/9781449324735'"
+alias stage="browse_print safari 'http://mrrobinsmith-stage.herokuapp.com'"
 
-alias documentary="open 'http://www.imdb.com/search/title?at=0&sort=user_rating&title_type=documentary'"
+alias security="browse_print safari 'https://www.google.com/settings/security?hl=en'"
 
-alias rfc="chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=1TSCavbYKBAznqXOffWJtLA0VJsY3Pts3_TOtqWcOACs&mode=domain'"
+alias prod="browse_print safari 'http://mrrobinsmith.com/cv'"
 
-alias gsheet="chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1d7lB4F-qotkcODeYpDRjEc4rIt4TkSFhqr7DgYXjxSo/edit#gid=0'"
+alias githubpages="browse_print safari 'http://robinrob.github.io'"
 
+alias ghpagesmr="browse_print safari 'http://robinrob.github.io/mrrobinsmith.com'"
 
+alias ghpages="browse_print safari 'http://robinrob.github.io'"
 
-alias war="open 'http://www2.warwick.ac.uk/fac/soc/economics/staff/mharrison/public/ehr2011postprint.pdf'"
+alias ghh="browse_print safari 'https://github.com/robinrob'"
 
-alias adventures="safari 'http://vim-adventures.com'"
+alias video="browse_print safari 'https://www.youtube.com/watch?v=e-RzZ5ZsT0s'"
 
-alias cocos2d2="safari 'http://my.safaribooksonline.com/book/programming/game-programming/9781783987863/firstchapter#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE3ODM5ODc4NjMlMkZjaDAwbHZsMXNlYzAyX2h0bWwmcXVlcnk9'"
+alias repos="browse_print safari 'https://github.com/robinrob?tab=repositories'"
 
+alias weirich="browse_print safari 'http://www.confreaks.com/presenters/24-jim-weirich'"
 
-alias bkzsh="book 'http://zsh.sourceforge.net/Guide/zshguide.html'"
+alias game="browse_print safari 'http://localhost:8000'"
 
-alias options="open 'http://www.cs.elte.hu/zsh-manual/zsh_16.html'"
+alias bkdev="browse_print safari 'http://my.safaribooksonline.com/book/programming/9781941222904/early-praise-for-the-developer-code/f_0004_html?query=((developer+blog))#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE5NDEyMjI5MDQlMkZmXzAwMTBfaHRtbCZxdWVyeT0oKGRldmVsb3BlciUyMGJsb2cpKQ=='"
 
-alias opts="options"
+alias linked="browse_print safari 'https://www.linkedin.com/profile/view?id=135084368&trk=nav_responsive_tab_profile_pic'"
 
+alias deedeekitchen="browse_print safari 'https://www.youtube.com/watch?v=pTfC3YpMDMw'"
 
-alias alonetone="open 'https://github.com/sudara/alonetone'"
+alias curiosity="browse_print safari 'http://mars.nasa.gov/msl/news/whatsnew/'"
 
-alias q="open 'http://salesforce.stackexchange.com/questions/57296/salesforce-large-relationship-inner-query'"
+alias opportunity="browse_print safari 'http://mars.nasa.gov/mer/home/index.html'"
 
+alias bk="browse_print safari 'http://my.safaribooksonline.com'"
 
-alias bkrk="safari 'http://my.safaribooksonline.com/9781783280773'"
-
-
-alias news="chrome 'http://www.bbc.com/news/'"
-
-
-alias stage="chrome 'http://mrrobinsmith-stage.herokuapp.com'"
-
-
-alias security="chrome 'https://www.google.com/settings/security?hl=en'"
-
-alias prod="print 'http://mrrobinsmith.com/cv' | pbcopy && safari 'http://mrrobinsmith.com/cv'"
-
-alias githubpages="print 'http://robinrob.github.io' | pbcopy && safari 'http://robinrob.github.io'"
-
-alias ghpagesmr="print 'http://robinrob.github.io/mrrobinsmith.com' | pbcopy && safari 'http://robinrob.github.io/mrrobinsmith.com'"
-
-alias ghpages="print 'http://robinrob.github.io' | pbcopy && safari 'http://robinrob.github.io'"
-
-alias ghh="print 'https://github.com/robinrob' | pbcopy && safari 'https://github.com/robinrob'"
-
-alias video="print 'https://www.youtube.com/watch?v=e-RzZ5ZsT0s' | pbcopy && safari 'https://www.youtube.com/watch?v=e-RzZ5ZsT0s'"
-
-alias repos="print 'https://github.com/robinrob?tab=repositories' | pbcopy && safari 'https://github.com/robinrob?tab=repositories'"
-
-
-alias weirich="print 'http://www.confreaks.com/presenters/24-jim-weirich' | pbcopy && safari 'http://www.confreaks.com/presenters/24-jim-weirich'"
-
-alias game="print 'http://localhost:8000' | pbcopy && safari 'http://localhost:8000'"
-
-alias bkcocos="print 'http://www.cocos2d-x.org/wiki/Getting_Started_Cocos2d-js' | pbcopy && safari 'http://www.cocos2d-x.org/wiki/Getting_Started_Cocos2d-js'"
-
-alias bkdev="print 'http://my.safaribooksonline.com/book/programming/9781941222904/early-praise-for-the-developer-code/f_0004_html?query=((developer+blog))#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE5NDEyMjI5MDQlMkZmXzAwMTBfaHRtbCZxdWVyeT0oKGRldmVsb3BlciUyMGJsb2cpKQ==' | pbcopy && safari 'http://my.safaribooksonline.com/book/programming/9781941222904/early-praise-for-the-developer-code/f_0004_html?query=((developer+blog))#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE5NDEyMjI5MDQlMkZmXzAwMTBfaHRtbCZxdWVyeT0oKGRldmVsb3BlciUyMGJsb2cpKQ=='"
-
-alias linked="print 'https://www.linkedin.com/profile/view?id=135084368&trk=nav_responsive_tab_profile_pic' | pbcopy && safari 'https://www.linkedin.com/profile/view?id=135084368&trk=nav_responsive_tab_profile_pic'"
-
-alias deedeekitchen="print 'https://www.youtube.com/watch?v=pTfC3YpMDMw' | pbcopy && safari 'https://www.youtube.com/watch?v=pTfC3YpMDMw'"
-
-alias curiosity="print 'http://mars.nasa.gov/msl/news/whatsnew/' | pbcopy && safari 'http://mars.nasa.gov/msl/news/whatsnew/'"
-
-alias opportunity="print 'http://mars.nasa.gov/mer/home/index.html' | pbcopy && safari 'http://mars.nasa.gov/mer/home/index.html'"
-
-alias bk="print 'http://my.safaribooksonline.com' | pbcopy && safari 'http://my.safaribooksonline.com'"
-
-alias mars="browse_print safari http://www.ustream.tv/nasajpl"
-
-alias newhorizons="browse_print safari http://pluto.jhuapl.edu"
+alias mars="browse_print safari 'http://www.ustream.tv/nasajpl'"

@@ -601,7 +601,7 @@ alias mbk="m $BOOKMARKS_PATH"
 
 alias mwbk="m $WORKBOOKMARKS_PATH"
 
-alias cbk="cat $ZDOT_HOME/bookmarks.zsh"
+alias cbk="cat $BOOKMARKS_PATH"
 
 alias edit=$EDITOR
 
