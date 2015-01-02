@@ -1,5 +1,6 @@
 TASK=$1
 shift
+TASK_ARGS=$*
 
 BASE_CMD='rake -g'
 
@@ -9,9 +10,9 @@ if [ -f $RAKEFILE ]
 then
   print "$(green "Using Rakefile: ")$(yellow)$RAKEFILE"
 
-  if [[ -n $* ]]
+  if [[ -n $TASK_ARGS ]]
   then
-    cmd="$BASE_CMD $TASK"[\'$(join ', ' $*)\']
+    cmd="$BASE_CMD $TASK"[\'$(join ', ' $TASK_ARGS)\']
 	else
 		cmd="$BASE_CMD $TASK"
 	fi
