@@ -4,9 +4,11 @@ touch $BOOKMARKS_ALIAS_PATH
 
 cat $BOOKMARKS_PATH | while read line ; do
 
-  NAME=$(print $line | gawk -F: '{print $1}')
-  BROWSER=$(print $1ine | gawk -F: '{print $2}')
-  URL=$(print $1ine | gawk -F: '{print $3}')
+  PARTS=("${(s/::/)line}")
+
+  NAME=$PARTS[1]
+  BROWSER=$PARTS[2]
+  URL=$PARTS[3]
 
   ALIAS="browse_print $BROWSER $URL"
 

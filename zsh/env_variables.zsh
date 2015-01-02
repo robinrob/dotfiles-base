@@ -9,7 +9,11 @@ export FALSE="no"
 
 export BOOKMARKS_PATH=$LISTS_HOME/bookmarks.txt
 
+export BOOKMARKS_ALIAS_PATH=$ZDOT_HOME/bookmarks.zsh
+
 export WORKBOOKMARKS_PATH=$LISTS_HOME/work_bookmarks.txt
+
+export WORKBOOKMARKS_ALIAS_PATH=$ZDOT_HOME/work_bookmarks.zsh
 
 # sudo hostname <name> to change
 export HOSTNAME=`hostname -s`
