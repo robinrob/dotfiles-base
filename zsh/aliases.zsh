@@ -519,13 +519,17 @@ alias ctd="cat $LISTS_HOME/todo.txt"
 
 alias mtd="$EDITOR $LISTS_HOME/todo.txt"
 
+alias cref="cat $LISTS_HOME/references.txt"
+
+alias mref="$EDITOR $LISTS_HOME/references.txt"
+
 alias quotes="clist quotes"
 
 alias mcol="$EDITOR $ZDOT_HOME/colors.zsh"
 
 alias ocv="open -a OpenOffice $IMPORTANT_HOME/cv/cv.odt"
 
-alias splq="$EDITOR $SPLUNK_HOME/splunk_searches.txt"
+alias splq="$EDITOR $PROG_HOME/splunk/splunk_searches.txt"
 
 alias regex="$RUBY_HOME/practice/regexp_operators.rb"
 
