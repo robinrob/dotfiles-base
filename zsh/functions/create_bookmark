@@ -1,7 +1,7 @@
-BOOKMARKS_PATH=$1
-NAME=$2
-URL=$3
-BROWSER=$4
+typeset BOOKMARKS_PATH=$1
+typeset NAME=$2
+typeset URL=$3
+typeset BROWSER=$4
 
 if [ -z "$BROWSER" ]
 then
@@ -16,8 +16,8 @@ fi
 
 print "$NAME::$BROWSER::$URL" >> $BOOKMARKS_PATH
 
+generate_all_bookmarks > /dev/null
+
 print "$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
 
 print -z $NAME
-
-generate_all_bookmarks > /dev/null

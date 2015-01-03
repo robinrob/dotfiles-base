@@ -1,0 +1,3 @@
+COMMIT=$1
+print "$(bb_url)/commits/$COMMIT"
+

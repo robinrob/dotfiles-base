@@ -7,9 +7,9 @@ cat $bookmarks_path | while read line ; do
 
   PARTS=("${(s/::/)line}")
 
-  NAME=$PARTS[1]
-  BROWSER=$PARTS[2]
-  URL=$PARTS[3]
+  typeset NAME=$PARTS[1]
+  typeset BROWSER=$PARTS[2]
+  typeset URL=$PARTS[3]
 
   ALIAS="browse_print $BROWSER '$URL'"
 
