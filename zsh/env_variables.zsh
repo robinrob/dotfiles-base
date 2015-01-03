@@ -15,6 +15,9 @@ export WORKBOOKMARKS_PATH=$LISTS_HOME/work_bookmarks.txt
 
 export WORKBOOKMARKS_ALIAS_PATH=$ZDOT_HOME/work_bookmarks.zsh
 
+typeset -T BOOKMARKS bookmarks
+BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH
+
 # sudo hostname <name> to change
 export HOSTNAME=`hostname -s`
 
@@ -264,3 +267,7 @@ export PG_CONF=$PGDATA/postgresql.conf
 export DEFAULT_GIT_REMOTE="origin"
 
 export BREWLIST=$DOTFILES_BASE_HOME/config/files/homebrew.txt
+
+export GOOGLE_DRIVE=~/Google\ Drive
+
+export GDOC_TEMPLATE=$GOOGLE_DRIVE/new_document.gdoc

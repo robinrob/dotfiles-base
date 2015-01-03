@@ -1,10 +1,15 @@
 BOOKMARK=$1
 
-delete_alias $BOOKMARK > /dev/null
+if [[ -n $(bookmark_exists $BOOKMARK) ]]
+then
+  delete_alias $BOOKMARK > /dev/null
 
-gsed -i '/^'$BOOKMARK'::/d' $BOOKMARKS_PATH
-gsed -i '/^'$BOOKMARK'::/d' $WORKBOOKMARKS_PATH
+  gsed -i '/^'$BOOKMARK'::/d' $BOOKMARKS_PATH
+  gsed -i '/^'$BOOKMARK'::/d' $WORKBOOKMARKS_PATH
 
-print "$(red)Bookmark $(yellow)$BOOKMARK $(red)unbookmarked"
+  generate_all_bookmarks > /dev/null
 
-generate_all_bookmarks > /dev/null
+  print "$(red)Bookmark $(yellow)$BOOKMARK $(red)unbookmarked$(default)"
+else
+  print "$(maganda)Bookmark $(yellow)$BOOKMARK $(maganda)does not exist$(default)"
+fi

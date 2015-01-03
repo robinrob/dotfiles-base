@@ -3,6 +3,7 @@ typeset NAME=$2
 typeset URL=$3
 typeset BROWSER=$4
 
+
 if [ -z "$BROWSER" ]
 then
   if [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
@@ -14,10 +15,15 @@ then
   fi
 fi
 
-print "$NAME::$BROWSER::$URL" >> $BOOKMARKS_PATH
+if [[ -z $(bookmark_exists $NAME) ]]
+then
+  print "$NAME::$BROWSER::$URL" >> $BOOKMARKS_PATH
 
-generate_all_bookmarks > /dev/null
+  generate_all_bookmarks > /dev/null
 
-print "$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
+  print -z $NAME
 
-print -z $NAME
+  print "$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
+else
+  print "$(red)Bookmark $(yellow)$NAME $(red)exists$(default)"
+fi
