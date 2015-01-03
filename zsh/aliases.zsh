@@ -535,9 +535,9 @@ alias regex="$RUBY_HOME/practice/regexp_operators.rb"
 
 alias doit="$LISTS_HOME/doit.zsh"
 
-alias mbrew="$EDITOR $DOTFILES_HOME/homebrew.txt"
+alias mbrew="$EDITOR $BREWLIST"
 
-alias cbrew="cat $DOTFILES_HOME/homebrew.txt"
+alias cbrew="cat $BREWLIST"
 
 alias mpr="$EDITOR ~/.zsh.prompts/prompt_robin_setup.zsh"
 

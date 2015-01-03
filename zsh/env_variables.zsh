@@ -262,3 +262,5 @@ fi
 export PG_CONF=$PGDATA/postgresql.conf
 
 export DEFAULT_GIT_REMOTE="origin"
+
+export BREWLIST=$DOTFILES_BASE_HOME/config/files/homebrew.txt
