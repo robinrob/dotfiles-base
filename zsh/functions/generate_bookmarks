@@ -1,9 +1,7 @@
 bookmarks_path=$1
 bookmarks_alias_path=$2
 
-rm -f $bookmarks_alias_path.old
-mv $bookmarks_alias_path $bookmarks_alias_path.old
-touch $bookmarks_alias_path
+rm -f $bookmarks_alias_path && touch $bookmarks_alias_path
 
 cat $bookmarks_path | while read line ; do
 
