@@ -1,8 +1,9 @@
 NAME=$1
 ALIAS_FILE=$2
+
 result=$(grep "alias $NAME=" $ALIAS_FILE)
 
-if [[ "$result" == "" ]]
+if [[ -z $result ]]
 then
 	print "no"	
 else
