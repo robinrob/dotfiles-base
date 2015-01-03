@@ -4,11 +4,11 @@ TASK_ARGS=$*
 
 BASE_CMD='rake -g'
 
-rvm use 2.1.4 && rvm gemset use rakelib
+rvm use 2.1.4 > /dev/null && rvm gemset use rakelib
 
 if [ -f $RAKEFILE ]
 then
-  print "$(green "Using Rakefile: ")$(yellow)$RAKEFILE"
+  print "$(green "Using Rakefile: ")$(yellow)$RAKEFILE $(default)"
 
   if [[ -n $TASK_ARGS ]]
   then
