@@ -32,7 +32,7 @@ do
 	else
 		# If CAT not null
 		eval "$COLOR $result"
-		color_words "`cat $result`" $PATTERN $COLOR
+		color_words "$(cat $result)" $PATTERN $COLOR
 	fi
 done
 

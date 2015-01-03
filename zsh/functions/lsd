@@ -1,2 +1,2 @@
-ls `dirname $1`
+ls $(dirname $1)
 

@@ -1,7 +1,7 @@
 rubygemset=".ruby-gemset"
 if [[ -f $rubygemset ]]
 then
-	gemset=`cat $rubygemset`
+	gemset=$(cat $rubygemset)
 	rvm_gem_list $gemset
 else
 	red "No $rubygemset found."
