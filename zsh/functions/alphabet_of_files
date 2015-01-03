@@ -3,11 +3,4 @@ typeset -U alphabet
 files=$(find_clean_names | xargs)
 files=("${(s/ /)files}")
 
-for file in $files
-do
-  initial=$file[1]
-  alphabet=($alphabet $initial)
-done
-
-print $alphabet
-
+alphabet_of_items $files

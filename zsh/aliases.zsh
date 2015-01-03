@@ -888,7 +888,7 @@ alias grf="grep_all"
 
 alias aof="green \$(alphabet_of_files)"
 
-alias aofi="red \$(inverse_alphabet_of_files)"
+alias aofi="red \$(inverse_alphabet \$(alphabet_of_files))"
 
 alias epb="printpb"
 
