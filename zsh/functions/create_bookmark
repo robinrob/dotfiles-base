@@ -14,8 +14,10 @@ then
   fi
 fi
 
-print "$NAME:$BROWSER:$URL" >> $BOOKMARKS_PATH
+print "$NAME::$BROWSER::$URL" >> $BOOKMARKS_PATH
 
 print "$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
 
-generate_bookmarks
+print -z $NAME
+
+generate_all_bookmarks > /dev/null

@@ -1,6 +1,4 @@
 
-alias newhorizons="browse_print safari 'http://pluto.jhuapl.edu'"
-
 alias crockford="browse_print safari 'https://www.youtube.com/results?search_query=douglas+crockford'"
 
 alias swimming="browse_print safari 'http://www.newark-sherwooddc.gov.uk/glc/groveswimming/'"
@@ -144,3 +142,5 @@ alias opportunity="browse_print safari 'http://mars.nasa.gov/mer/home/index.html
 alias bk="browse_print safari 'http://my.safaribooksonline.com'"
 
 alias mars="browse_print safari 'http://www.ustream.tv/nasajpl'"
+
+alias newhorizons="browse_print safari 'http://pluto.jhuapl.edu'"

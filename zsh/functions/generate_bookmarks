@@ -1,8 +1,11 @@
-rm -f $BOOKMARKS_ALIAS_PATH.old
-mv $BOOKMARKS_ALIAS_PATH $BOOKMARKS_ALIAS_PATH.old
-touch $BOOKMARKS_ALIAS_PATH
+bookmarks_path=$1
+bookmarks_alias_path=$2
 
-cat $BOOKMARKS_PATH | while read line ; do
+rm -f $bookmarks_alias_path.old
+mv $bookmarks_alias_path $bookmarks_alias_path.old
+touch $bookmarks_alias_path
+
+cat $bookmarks_path | while read line ; do
 
   PARTS=("${(s/::/)line}")
 
@@ -12,8 +15,8 @@ cat $BOOKMARKS_PATH | while read line ; do
 
   ALIAS="browse_print $BROWSER '$URL'"
 
-  create_alias $NAME $ALIAS $BOOKMARKS_ALIAS_PATH $SUCCESS_MSG
+  create_alias $NAME $ALIAS $bookmarks_alias_path $SUCCESS_MSG
 
-  source $BOOKMARKS_ALIAS_PATH
+  source $bookmarks_alias_path
 
 done

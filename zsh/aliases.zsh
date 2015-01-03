@@ -599,9 +599,17 @@ alias wbmk="work_bookmark"
 
 alias mbk="m $BOOKMARKS_PATH"
 
+alias cbk="cat $BOOKMARKS_PATH"
+
+alias cbkal="cat $BOOKMARKS_ALIAS_PATH"
+
+alias mbkal="m $BOOKMARKS_ALIAS_PATH"
+
 alias mwbk="m $WORKBOOKMARKS_PATH"
 
-alias cbk="cat $BOOKMARKS_PATH"
+alias cwbk="cat $WORKBOOKMARKS_PATH"
+
+alias cwbkal="cat $WORKBOOKMARKS_ALIAS_PATH"
 
 alias edit=$EDITOR
 
@@ -835,12 +843,19 @@ alias lasts="cd $SCREENSHOTS_HOME && lastf -s $SCREENSHOT_NAME"
 
 alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 
-alias test="hello"
 
 
 ###############################################################################
 # Functions
 ###############################################################################
+alias dbk="delete_bookmark"
+
+alias unbk="dbk"
+
+alias ubk="dbk"
+
+alias delbk="dbk"
+
 alias spacecraft="add_to_list spacecraft"
 
 alias toread="add_to_list toread"

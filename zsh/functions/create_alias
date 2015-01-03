@@ -15,13 +15,5 @@ if [[ "$(alias_exists $NAME $ALIAS_FILE)" == "no" ]]
 then
 	print "
 alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
-	print "$SUCCESS_MSG"
-else
-  if ! [[ $OVERRIDE == "yes" ]]
-  then
-	  red "Alias already exists!"
-  fi
+  print "$(yellow)$NAME $(green)aliased to $(yellow)$VALUE"
 fi
-
-print -z $NAME
-
