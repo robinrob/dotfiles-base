@@ -93,6 +93,8 @@ alias awk="gawk"
 
 alias head="ghead"
 
+alias tail="gtail"
+
 
 ###############################################################################
 # Shell command shortcuts
@@ -239,7 +241,7 @@ alias jkb="jekyll build --watch"
 
 alias pbu="pythonbrew use"
 
-alias pi="pip install -r requirements.txt"
+alias pbl="pythonbrew list"
 
 alias rgm="rvm_gem_list"
 
@@ -357,7 +359,9 @@ alias cen="cat $ENVS_PATH"
 
 alias cals="cat $ALIASES_PATH"
 
-alias lfn="ls $FUNCS_HOME"
+alias lsfn="ls $FUNCS_HOME"
+
+alias lfn="lsfn"
 
 alias ctfn="ls $FUNCS_HOME | wc -l"
 
@@ -497,6 +501,8 @@ alias gplod="git pull $DEFAULT_GIT_REMOTE develop"
 ###############################################################################
 # Viewing and editing files
 ###############################################################################
+alias lslst="ls $LISTS_HOME"
+
 alias ctl="cat $LISTS_HOME/tolearn.txt"
 
 alias mtl="$EDITOR $LISTS_HOME/tolearn.txt"
@@ -707,6 +713,10 @@ alias mgfl="$EDITOR Gemfile.lock"
 
 alias cgfl="cat Gemfile.lock"
 
+alias mre="$EDITOR requirements.txt"
+
+alias crq="cat requirements.txt"
+
 alias mgi="$EDITOR .gitignore"
 
 alias mgm="$EDITOR .gitmodules"
@@ -858,11 +868,11 @@ alias delbk="dbk"
 
 alias spacecraft="add_to_list spacecraft"
 
-alias toread="add_to_list toread"
+alias read="add_to_list toread"
 
 alias learn="add_to_list tolearn"
 
-alias watch="add_to_list watch"
+alias watch="add_to_list towatch"
 
 alias ref="add_to_list references"
 
