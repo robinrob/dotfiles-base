@@ -1,4 +1,13 @@
-VPN=$1
+action='connect'
+while getopts q opt
+do
+case $opt in
+  q) action='disconnect'; shift; break
+esac
+done
 
-osascript -e "tell application 'Viscosity' to connect '$1'"
+vpn=$1
 
+script='tell application "Viscosity" to '$action' "'$vpn'"'
+green $script
+osascript -e $script

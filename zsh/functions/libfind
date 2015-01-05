@@ -9,7 +9,7 @@ do
 	esac
 done
 
-result_grep="$(ggrep --binary-file=without-match --line-number -i --no-messages --recursive --exclude-dir=css --exclude-dir=fonts --exclude-dir=www --exclude-dir='.*' --exclude-dir=lib --exclude-dir='*plugin*' --exclude-dir=vendor --exclude-dir='*js*' --exclude-dir=platforms --exclude-dir=frameworks --exclude-dir=tools --exclude-dir='*bootstrap*' --exclude=*min* --word-regexp $PATTERN $DIR)"
+result_grep="$(ggrep --binary-file=without-match --line-number -i --no-messages --recursive --exclude-dir=css --exclude-dir=fonts --exclude-dir=www --exclude-dir='.*' --exclude-dir=lib --exclude-dir='*plugin*' --exclude-dir=vendor --exclude-dir='*js*' --exclude-dir=platforms --exclude-dir=frameworks --exclude-dir=tools --exclude-dir='*bootstrap*' --exclude='*min*' --word-regexp $PATTERN $DIR)"
 results=("${(f)result_grep}")
 
 if [ -n "$results" ]
