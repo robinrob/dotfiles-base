@@ -17,6 +17,7 @@ cmake
 coreutils
 cscope
 ctags
+dict
 diffutils
 docbook
 docbook-xsl
@@ -50,6 +51,7 @@ libevent
 libffi
 libgpg-error
 libksba
+libmaa
 libpng
 libtasn1
 libtool

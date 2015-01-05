@@ -1,7 +1,8 @@
-BOOKMARKS_PATH=$1
-NAME=$2
-URL=$3
-BROWSER=$4
+typeset BOOKMARKS_PATH=$1
+typeset NAME=$2
+typeset URL=$3
+typeset BROWSER=$4
+
 
 if [ -z "$BROWSER" ]
 then
@@ -14,10 +15,15 @@ then
   fi
 fi
 
-ALIAS="print '${URL}' | pbcopy && ${BROWSER} '${URL}'"
-SUCCESS_MSG="$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
+if [[ -z $(bookmark_exists $NAME) ]]
+then
+  print "$NAME::$BROWSER::$URL" >> $BOOKMARKS_PATH
 
-create_alias $NAME $ALIAS $BOOKMARKS_PATH $SUCCESS_MSG
+  generate_all_bookmarks > /dev/null
 
-source $BOOKMARKS_PATH
+  print -z $NAME
 
+  print "$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
+else
+  print "$(red)Bookmark $(yellow)$NAME $(red)exists$(default)"
+fi

@@ -7,9 +7,16 @@ export TRUE="yes"
 
 export FALSE="no"
 
-export BOOKMARKS_PATH=$DOTFILES_BASE_HOME/zsh/bookmarks.zsh
+export BOOKMARKS_PATH=$LISTS_HOME/bookmarks.txt
 
-export WORKBOOKMARKS_PATH=$DOTFILES_BASE_HOME/zsh/work_bookmarks.zsh
+export BOOKMARKS_ALIAS_PATH=$ZDOT_HOME/bookmarks.zsh
+
+export WORKBOOKMARKS_PATH=$LISTS_HOME/work_bookmarks.txt
+
+export WORKBOOKMARKS_ALIAS_PATH=$ZDOT_HOME/work_bookmarks.zsh
+
+typeset -T BOOKMARKS bookmarks
+BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH
 
 # sudo hostname <name> to change
 export HOSTNAME=`hostname -s`
@@ -70,7 +77,7 @@ export ALIASES_PATH=$ZDOT_HOME/aliases.zsh
 
 typeset -T ALIAS_FILES alias_files
 
-ALIAS_FILES=$ALIASES_PATH:$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH
+ALIAS_FILES=$ALIASES_PATH:$BOOKMARKS_ALIAS_PATH:$WORKBOOKMARKS_ALIAS_PATH
 
 export FORCE_COM_HOME=$PROG_HOME/force.com
 
@@ -210,9 +217,9 @@ else
 	export BROWSER="Google Chrome"
 fi
 
-export USE_PYTHON=1
+export USE_PYTHON=0
 
-export USE_RUBY=1
+export USE_RUBY=0
 
 export SAYCMD_OVERRIDE=0
 
@@ -258,3 +265,9 @@ fi
 export PG_CONF=$PGDATA/postgresql.conf
 
 export DEFAULT_GIT_REMOTE="origin"
+
+export BREWLIST=$DOTFILES_BASE_HOME/config/files/homebrew.txt
+
+export GOOGLE_DRIVE=~/Google\ Drive
+
+export GDOC_TEMPLATE=$GOOGLE_DRIVE/new_document.gdoc

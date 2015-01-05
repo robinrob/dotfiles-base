@@ -1,0 +1,12 @@
+items=($*)
+
+typeset -U alphabet
+
+for item in $items
+do
+  initial=$item[1]
+  alphabet=($alphabet $initial)
+done
+
+print $alphabet
+

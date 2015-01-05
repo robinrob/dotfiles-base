@@ -1,0 +1,11 @@
+NAME=$1
+
+for file in $bookmarks
+do
+  if [[ -n $(ggrep '^'$NAME'::' $file) ]]
+  then
+    exists=yes
+  fi
+done
+
+print $exists

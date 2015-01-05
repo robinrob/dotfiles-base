@@ -1,2 +1,2 @@
-browser "http://stackoverflow.com/search?q=`urlencode $@`"
+browser "http://stackoverflow.com/search?q=$(urlencode $@)"
 

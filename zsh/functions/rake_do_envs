@@ -2,7 +2,7 @@ TASK=$@
 
 if [ -f Rakefile ]
 then
-	print "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))"
+	print "$(green "Using Rakefile: ")$(yellow $(/usr/local/bin/gls $PWD/Rakefile))$(default)"
 
 	cmd="rake $TASK"
 

@@ -173,8 +173,8 @@ alias curiosity="print 'http://mars.nasa.gov/msl/news/whatsnew/' | pbcopy && saf
 
 alias opportunity="print 'http://mars.nasa.gov/mer/home/index.html' | pbcopy && safari 'http://mars.nasa.gov/mer/home/index.html'"
 
-alias christmas="print 'http://www.newark-sherwooddc.gov.uk/media/newarkandsherwood/imagesandfiles/leisure/leisurecentres/pdfs/timetables/New%20Grove%20Fun%20%20Fit%20Leaflet%20Timetable%2022nd%20Dec%202014%20(2).pdf' | pbcopy && safari 'http://www.newark-sherwooddc.gov.uk/media/newarkandsherwood/imagesandfiles/leisure/leisurecentres/pdfs/timetables/New%20Grove%20Fun%20%20Fit%20Leaflet%20Timetable%2022nd%20Dec%202014%20(2).pdf'"
-
 alias bk="print 'http://my.safaribooksonline.com' | pbcopy && safari 'http://my.safaribooksonline.com'"
 
-alias mars="print 'http://www.ustream.tv/nasajpl' | pbcopy && safari 'http://www.ustream.tv/nasajpl'"
+alias mars="browse_print safari http://www.ustream.tv/nasajpl"
+
+alias newhorizons="browse_print safari http://pluto.jhuapl.edu"

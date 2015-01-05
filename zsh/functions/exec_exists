@@ -1,6 +1,6 @@
 EXEC=$1
 
-if [[ "`which $EXEC`" == "$EXEC not found" ]]
+if [[ "$(which $EXEC)" == "$EXEC not found" ]]
 then
 	print "no"
 else

@@ -79,13 +79,14 @@ speak "I am awesome"
 #########
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
+python=2.7
 if [[ $USE_PYTHON == 1 ]]
 then
   if [[ "$HOSTNAME" == "$VENUS_HOSTNAME" ]]
   then
-	  pythonbrew use 2.7 2> /dev/null
+	  pythonbrew use $python 2> /dev/null
   else
-	  pythonbrew use 2.7 2> /dev/null
+	  pythonbrew use $python 2> /dev/null
   fi
 fi
 
@@ -96,7 +97,7 @@ fi
 ## Ruby
 #######
 # `rvm reset` is the magic secret command that fixes the path errors!!
-ruby="2.1.1"
+ruby="2.1.4"
 if [[ $USE_RUBY == 1 ]]
 then
   rvm use ruby-"$ruby"

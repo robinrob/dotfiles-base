@@ -1,2 +1,2 @@
-cd $SCREENSHOTS_HOME && despace && open `lasts`
+cd $SCREENSHOTS_HOME && despace && open $(lasts)
 

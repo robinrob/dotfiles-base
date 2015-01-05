@@ -1,0 +1,8 @@
+PACKAGE=$1
+
+if [[ -n $PACKAGE ]]
+then
+  sudo pip install $PACKAGE
+else
+  sudo pip install -r requirements.txt
+fi

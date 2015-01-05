@@ -93,6 +93,8 @@ alias awk="gawk"
 
 alias head="ghead"
 
+alias tail="gtail"
+
 
 ###############################################################################
 # Shell command shortcuts
@@ -239,7 +241,7 @@ alias jkb="jekyll build --watch"
 
 alias pbu="pythonbrew use"
 
-alias pi="pip install -r requirements.txt"
+alias pbl="pythonbrew list"
 
 alias rgm="rvm_gem_list"
 
@@ -357,7 +359,9 @@ alias cen="cat $ENVS_PATH"
 
 alias cals="cat $ALIASES_PATH"
 
-alias lfn="ls $FUNCS_HOME"
+alias lsfn="ls $FUNCS_HOME"
+
+alias lfn="lsfn"
 
 alias ctfn="ls $FUNCS_HOME | wc -l"
 
@@ -497,6 +501,8 @@ alias gplod="git pull $DEFAULT_GIT_REMOTE develop"
 ###############################################################################
 # Viewing and editing files
 ###############################################################################
+alias lslst="ls $LISTS_HOME"
+
 alias ctl="cat $LISTS_HOME/tolearn.txt"
 
 alias mtl="$EDITOR $LISTS_HOME/tolearn.txt"
@@ -535,9 +541,9 @@ alias regex="$RUBY_HOME/practice/regexp_operators.rb"
 
 alias doit="$LISTS_HOME/doit.zsh"
 
-alias mbrew="$EDITOR $DOTFILES_HOME/homebrew.txt"
+alias mbrew="$EDITOR $BREWLIST"
 
-alias cbrew="cat $DOTFILES_HOME/homebrew.txt"
+alias cbrew="cat $BREWLIST"
 
 alias mpr="$EDITOR ~/.zsh.prompts/prompt_robin_setup.zsh"
 
@@ -599,9 +605,17 @@ alias wbmk="work_bookmark"
 
 alias mbk="m $BOOKMARKS_PATH"
 
+alias cbk="cat $BOOKMARKS_PATH"
+
+alias cbkal="cat $BOOKMARKS_ALIAS_PATH"
+
+alias mbkal="m $BOOKMARKS_ALIAS_PATH"
+
 alias mwbk="m $WORKBOOKMARKS_PATH"
 
-alias cbk="cat $ZDOT_HOME/bookmarks.zsh"
+alias cwbk="cat $WORKBOOKMARKS_PATH"
+
+alias cwbkal="cat $WORKBOOKMARKS_ALIAS_PATH"
 
 alias edit=$EDITOR
 
@@ -698,6 +712,10 @@ alias cgf="cat Gemfile"
 alias mgfl="$EDITOR Gemfile.lock"
 
 alias cgfl="cat Gemfile.lock"
+
+alias mre="$EDITOR requirements.txt"
+
+alias crq="cat requirements.txt"
 
 alias mgi="$EDITOR .gitignore"
 
@@ -835,19 +853,26 @@ alias lasts="cd $SCREENSHOTS_HOME && lastf -s $SCREENSHOT_NAME"
 
 alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 
-alias test="hello"
 
 
 ###############################################################################
 # Functions
 ###############################################################################
+alias dbk="delete_bookmark"
+
+alias unbk="dbk"
+
+alias ubk="dbk"
+
+alias delbk="dbk"
+
 alias spacecraft="add_to_list spacecraft"
 
-alias toread="add_to_list toread"
+alias read="add_to_list toread"
 
 alias learn="add_to_list tolearn"
 
-alias watch="add_to_list watch"
+alias watch="add_to_list towatch"
 
 alias ref="add_to_list references"
 
@@ -873,7 +898,7 @@ alias grf="grep_all"
 
 alias aof="green \$(alphabet_of_files)"
 
-alias aofi="red \$(inverse_alphabet_of_files)"
+alias aofi="red \$(inverse_alphabet \$(alphabet_of_files))"
 
 alias epb="printpb"
 

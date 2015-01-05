@@ -1,2 +1,2 @@
-open `bb_commit_url $1`
+open $(bb_commit_url $1)
 

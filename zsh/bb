@@ -1,5 +1,5 @@
 typeset url
-result=`ls -d .git 2> /dev/null`
+result=$(ls -d .git 2> /dev/null)
 if [ "$result" ]
 then
   url=$(bb_url)
