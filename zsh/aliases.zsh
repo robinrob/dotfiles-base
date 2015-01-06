@@ -860,6 +860,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gbk="generate_all_bookmarks"
+
 alias dbk="delete_bookmark"
 
 alias unbk="dbk"
