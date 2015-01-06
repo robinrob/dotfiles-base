@@ -8,4 +8,5 @@ tail +2 $LIST > $new_list
 mv -f $new_list $LIST
 print $next >> $LIST
 
-safari $next
+item=$(print $next | awk -F:: '{print $NF}')
+safari $item  

@@ -1,0 +1,1 @@
+copy_print $(lstr $@ | awk '{print $3}' | tail -1)
