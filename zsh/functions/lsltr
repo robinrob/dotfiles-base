@@ -1,2 +1,2 @@
-/usr/local/bin/gls -ltr --color=none . | awk '{print $9}' | tail +2
+/usr/local/bin/gls -ltr --color=none $@ | awk '{print $9}' | tail +2
 

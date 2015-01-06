@@ -858,6 +858,12 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gbk="generate_all_bookmarks"
+
+alias ldl="cd ~/Downloads; despace; lastf; cd - > /dev/null"
+
+alias dspdl="cd ~/Downloads; despace"
+
 alias dbk="delete_bookmark"
 
 alias unbk="dbk"
@@ -873,6 +879,8 @@ alias read="add_to_list toread"
 alias learn="add_to_list tolearn"
 
 alias watch="add_to_list towatch"
+
+alias help="add_to_list help"
 
 alias ref="add_to_list references"
 
