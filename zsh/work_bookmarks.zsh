@@ -50,3 +50,5 @@ alias bridge="browse_print chrome 'https://docs.google.com/a/cloudreach.co.uk/sp
 alias escalation="browse_print chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1fY8-IvhWnj1E3VeGhMsBDT_s3_06agrOZDytYesSeCc/edit#gid=1574636108'"
 
 alias p1="browse_print chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=16Di5DweKy-7BQBwHBJKUwQV9y7IdEqu7k63UuMm2zs0&mode=domain'"
+
+alias ops="browse_print chrome 'https://docs.google.com/a/mrrobinsmith.com/document/d/1Hydmrak04iTCCCuMFmMT9t6aVEcgp4b8E4nDmimWHiU/edit'"

@@ -1,4 +1,0 @@
-cat $LISTS_HOME/bash_vulns.txt | while read line
-do
-  browser $line
-done

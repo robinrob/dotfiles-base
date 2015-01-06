@@ -1,0 +1,6 @@
+LIST=$1
+
+cat $LIST | while read line
+do
+  eval $line
+done

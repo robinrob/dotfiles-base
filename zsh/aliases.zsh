@@ -858,6 +858,10 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias bashvulns="browse_all $LISTS_HOME/bash_vulns.txt"
+
+alias space="run_all $LISTS_HOME/spacecraft.txt"
+
 alias dbk="delete_bookmark"
 
 alias unbk="dbk"
