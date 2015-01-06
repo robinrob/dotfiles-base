@@ -49,4 +49,10 @@ alias robin="browse_copy chrome 'http://mrrobinsmith.com'"
 
 alias bridge="browse_copy chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/15saMLgVk8_0_K5tCZul17zYyJMbCBq_8Al-YcxXLiPw/edit#gid=1355481979'"
 
-alias p1="browse_print chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=16Di5DweKy-7BQBwHBJKUwQV9y7IdEqu7k63UuMm2zs0&mode=domain'"
+alias escalation="browse_copy chrome 'https://docs.google.com/a/cloudreach.co.uk/spreadsheets/d/1fY8-IvhWnj1E3VeGhMsBDT_s3_06agrOZDytYesSeCc/edit#gid=1574636108'"
+
+alias p1="browse_copy chrome 'https://drive.google.com/a/cloudreach.co.uk/previewtemplate?id=16Di5DweKy-7BQBwHBJKUwQV9y7IdEqu7k63UuMm2zs0&mode=domain'"
+
+alias ops="browse_copy chrome 'https://docs.google.com/a/cloudreach.co.uk/document/d/1Hydmrak04iTCCCuMFmMT9t6aVEcgp4b8E4nDmimWHiU/edit'"
+
+alias splw="browse_copy chrome 'https://cr-splunk-1.cloudreach.co.uk:8000/en-US/app/ZenossForwarding'"
