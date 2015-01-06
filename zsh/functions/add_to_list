@@ -1,6 +1,14 @@
 LIST=$1
 shift
-ITEM=$@
+
+if (( $#* == 2 ))
+then
+  NAME=$1
+  ITEM=$2
+  ITEM="$NAME::$ITEM"
+else
+  ITEM=$1
+fi
 
 [[ -n "$ITEM" ]] && print "$ITEM" >> $LISTS_HOME/${LIST}.txt
 

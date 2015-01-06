@@ -11,7 +11,7 @@ cat $bookmarks_path | while read line ; do
   typeset BROWSER=$PARTS[2]
   typeset URL=$PARTS[3]
 
-  ALIAS="browse_print $BROWSER '$URL'"
+  ALIAS="browse_copy $BROWSER '$URL'"
 
   create_alias $NAME $ALIAS $bookmarks_alias_path $SUCCESS_MSG
 

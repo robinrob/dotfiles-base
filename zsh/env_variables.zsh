@@ -217,9 +217,9 @@ else
 	export BROWSER="Google Chrome"
 fi
 
-export USE_PYTHON=0
+export USE_PYTHON=1
 
-export USE_RUBY=0
+export USE_RUBY=1
 
 export SAYCMD_OVERRIDE=0
 

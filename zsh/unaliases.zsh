@@ -63,3 +63,5 @@ unalias gh 2> /dev/null
 unalias grr 2> /dev/null
 
 unalias grc 2> /dev/null
+
+unalias gg 2> /dev/null
