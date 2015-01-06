@@ -1,0 +1,12 @@
+LIST=$LISTS_HOME/$1.txt
+
+if [[ -n $2 ]]
+then
+  LABEL=$2
+
+  ITEM=$(ggrep "^$LABEL::" $LIST | gawk -F:: '{print $NF}')
+
+  safari $ITEM
+else
+  take1 $1
+fi

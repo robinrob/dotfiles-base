@@ -1,5 +1,6 @@
+source $ZDOT_HOME/unaliases.zsh
+
 for file in $alias_files
 do
   source $file
 done
-

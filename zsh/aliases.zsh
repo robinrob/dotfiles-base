@@ -501,6 +501,8 @@ alias gplod="git pull $DEFAULT_GIT_REMOTE develop"
 ###############################################################################
 # Viewing and editing files
 ###############################################################################
+alias mdo="$EDITOR $LISTS_HOME/doit.zsh"
+
 alias lslst="ls $LISTS_HOME"
 
 alias ctl="cat $LISTS_HOME/tolearn.txt"
@@ -521,13 +523,13 @@ alias cjs="cat $LISTS_HOME/jobsites.txt"
 
 alias mjs="$EDITOR $LISTS_HOME/jobsites.txt"
 
+alias md="$EDITOR $LISTS_HOME/todo.txt"
+
 alias ctd="cat $LISTS_HOME/todo.txt"
 
-alias mtd="$EDITOR $LISTS_HOME/todo.txt"
+alias mref="$EDITOR $LISTS_HOME/references.txt"
 
 alias cref="cat $LISTS_HOME/references.txt"
-
-alias mref="$EDITOR $LISTS_HOME/references.txt"
 
 alias quotes="clist quotes"
 
@@ -858,6 +860,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gg="google"
+
 alias gbk="generate_all_bookmarks"
 
 alias ldl="cd ~/Downloads; despace; lastf; cd - > /dev/null"
@@ -892,7 +896,7 @@ alias jobs="add_to_list jobsites"
 
 alias comp="add_to_list computer_science"
 
-alias read1="take1 toread"
+alias read1="take toread"
 
 alias watch1="take1 towatch"
 
