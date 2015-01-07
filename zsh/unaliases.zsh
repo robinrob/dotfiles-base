@@ -65,3 +65,5 @@ unalias grr 2> /dev/null
 unalias grc 2> /dev/null
 
 unalias gg 2> /dev/null
+
+unalias cls 2> /dev/null

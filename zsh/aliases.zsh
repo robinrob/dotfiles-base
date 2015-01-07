@@ -505,27 +505,29 @@ alias mdo="$EDITOR $LISTS_HOME/doit.zsh"
 
 alias lslst="ls $LISTS_HOME"
 
-alias ctl="cat $LISTS_HOME/tolearn.txt"
-
-alias mtl="$EDITOR $LISTS_HOME/tolearn.txt"
-
-alias ctw="cat $LISTS_HOME/towatch.txt"
+alias lls="ls $LISTS_HOME"
 
 alias csp="cat $LISTS_HOME/spacecraft.txt"
 
-alias mtw="$EDITOR $LISTS_HOME/towatch.txt"
+alias ctl="cat $LISTS_HOME/$TO_LEARN.txt"
 
-alias ctr="cat $LISTS_HOME/toread.txt"
+alias mtl="$EDITOR $LISTS_HOME/$TO_LEARN.txt"
 
-alias mtr="$EDITOR $LISTS_HOME/toread.txt"
+alias ctw="cat $LISTS_HOME/$TO_WATCH.txt"
+
+alias mtw="$EDITOR $LISTS_HOME/$TO_WATCH.txt"
+
+alias ctr="cat $LISTS_HOME/$TO_READ.txt"
+
+alias mtr="$EDITOR $LISTS_HOME/$TO_READ.txt"
 
 alias cjs="cat $LISTS_HOME/jobsites.txt"
 
 alias mjs="$EDITOR $LISTS_HOME/jobsites.txt"
 
-alias mtd="$EDITOR $LISTS_HOME/todo.txt"
+alias mtd="$EDITOR $LISTS_HOME/$TO_DO.txt"
 
-alias ctd="cat $LISTS_HOME/todo.txt"
+alias ctd="cat $LISTS_HOME/$TO_DO.txt"
 
 alias mref="$EDITOR $LISTS_HOME/references.txt"
 
@@ -860,6 +862,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias cls="cat_list"
+
 alias cdld="cd \$(lsltr | tail -1)"
 
 alias dspdl="cd ~/Downloads; despace; cd - > /dev/null"
@@ -876,11 +880,11 @@ alias delbk="dbk"
 
 alias spacecraft="add_to_list spacecraft"
 
-alias read="add_to_list toread"
+alias read="add_to_list $TO_READ"
 
-alias learn="add_to_list tolearn"
+alias learn="add_to_list $TO_LEARN"
 
-alias watch="add_to_list towatch"
+alias watch="add_to_list $TO_WATCH"
 
 alias help="add_to_list help"
 
@@ -894,9 +898,9 @@ alias jobs="add_to_list jobsites"
 
 alias comp="add_to_list computer_science"
 
-alias read1="take toread"
+alias read1="take $TO_READ"
 
-alias watch1="take1 towatch"
+alias watch1="take1 $TO_WATCH"
 
 alias grc='get_record'
 

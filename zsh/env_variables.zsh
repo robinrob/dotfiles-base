@@ -271,3 +271,11 @@ export BREWLIST=$DOTFILES_BASE_HOME/config/files/homebrew.txt
 export GOOGLE_DRIVE=~/Google\ Drive
 
 export GDOC_TEMPLATE=$GOOGLE_DRIVE/new_document.gdoc
+
+export TO_DO=do
+
+export TO_READ=read
+
+export TO_WATCH=watch
+
+export TO_LEARN=learn

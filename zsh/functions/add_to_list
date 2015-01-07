@@ -1,20 +1,28 @@
 LIST=$1
 shift
+LIST_PATH=$LISTS_HOME/${LIST}.txt
 
-if (( $#* == 2 ))
+
+if [[ -n $(cat $LIST_PATH | ggrep "^$1") ]]
+then
+  print "$(yellow)$1 $(red)already in $(yellow)$LIST"
+
+elif (( $#* == 2 ))
 then
   NAME=$1
   VALUE=$2
   ITEM="$NAME::$VALUE"
+
+  print "$ITEM" >> $LIST_PATH
   print "$(yellow)$NAME $(green)added to $(yellow)$LIST $(green)as $(yellow)$VALUE$(default)"
-else
+
+elif [[ -n $1 ]]
+then
   VALUE=$1
   ITEM=$VALUE
+  print "$ITEM" >> $LIST_PATH
   print "$(yellow)$VALUE $(green)added to $(yellow)$LIST$(default)"
-fi
 
-if [[ -n "$ITEM" ]]
-then
-  print "$ITEM" >> $LISTS_HOME/${LIST}.txt
+else
+  red 'Nothing added.'
 fi
-
