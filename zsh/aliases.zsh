@@ -851,7 +851,7 @@ alias mi="mobileideas"
 
 alias screenshots="cd $SCREENSHOTS_HOME"
 
-alias lasts="cd $SCREENSHOTS_HOME && lastf -s $SCREENSHOT_NAME"
+alias lasts="cd $SCREENSHOTS_HOME && $LOCAL_HOME/bin/lastf -s $SCREENSHOT_NAME"
 
 alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 
@@ -860,6 +860,10 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias cdld="cd \$(lsltr | tail -1)"
+
+alias dspdl="cd ~/Downloads; despace; cd - > /dev/null"
+
 alias gbk="generate_all_bookmarks"
 
 alias dbk="delete_bookmark"
