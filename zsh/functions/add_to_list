@@ -4,11 +4,15 @@ shift
 if (( $#* == 2 ))
 then
   NAME=$1
-  ITEM=$2
-  ITEM="$NAME::$ITEM"
+  VALUE=$2
+  ITEM="$NAME::$VALUE"
 else
   ITEM=$1
 fi
 
-[[ -n "$ITEM" ]] && print "$ITEM" >> $LISTS_HOME/${LIST}.txt
+if [[ -n "$ITEM" ]]
+then
+  print "$ITEM" >> $LISTS_HOME/${LIST}.txt
+  print "$(yellow)$NAME $(green)added to $(yellow)$LIST $(green)as $(yellow)$VALUE$(default)"
+fi
 
