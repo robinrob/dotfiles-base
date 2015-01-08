@@ -1,4 +1,4 @@
-BROWSER=$1
-URL=$2
+typeset BROWSER=$1
+typeset URL=$2
 
 copy $URL && eval "$BROWSER '$URL'"
