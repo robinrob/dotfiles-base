@@ -127,8 +127,6 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 alias mvim="mvim -p"
 
-alias sc="scala"
-
 alias scc="scalac"
 
 alias tran="trans :tl"
@@ -862,6 +860,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gg="google"
+
 alias cls="cat_list"
 
 alias cdld="cd \$(lsltr | tail -1)"
