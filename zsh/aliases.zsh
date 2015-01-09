@@ -860,6 +860,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias wk="wiki"
+
 alias ggt="google_translate"
 
 alias gg="google"
