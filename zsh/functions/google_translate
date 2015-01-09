@@ -1,0 +1,1 @@
+browser "https://translate.google.com/#auto/en/$(urlencode $@)"
