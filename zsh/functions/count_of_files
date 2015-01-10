@@ -1,0 +1,4 @@
+files=$(find_clean_names | xargs)
+files=("${(s/ /)files}")
+
+alphabet_count $files
