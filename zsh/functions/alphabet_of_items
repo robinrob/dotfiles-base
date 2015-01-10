@@ -4,7 +4,7 @@ typeset -U alphabet
 
 for item in $items
 do
-  alphabet=($alphabet $item[1])
+  alphabet=($alphabet $(lower $item[1]))
 done
 
 print $alphabet

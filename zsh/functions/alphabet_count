@@ -6,7 +6,7 @@ typeset -A counts
 
 for item in $ITEMS
 do
-  letter=$item[1]
+  letter=$(lower $item[1])
   if [[ -z $counts[$letter] ]]
   then
     counts[$letter]=1
