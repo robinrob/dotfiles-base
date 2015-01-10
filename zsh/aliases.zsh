@@ -864,6 +864,8 @@ alias gg="google"
 
 alias cls="cat_list"
 
+alias mls="edit_list"
+
 alias cdld="cd \$(lsltr | tail -1)"
 
 alias dspdl="cd ~/Downloads; despace; cd - > /dev/null"
