@@ -69,8 +69,6 @@ export ZDOT_HOME=$DOTFILES_HOME/dotfiles-base/zsh
 
 export ENVS_PATH=$ZDOT_HOME/env_variables.zsh
 
-export FUNCS_PATH=$ZDOT_HOME/functions.zsh
-
 export FUNCS_HOME=$ZDOT_HOME/functions
 
 export ALIASES_PATH=$ZDOT_HOME/aliases.zsh

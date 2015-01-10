@@ -2,7 +2,6 @@
 
 source $COLORS_PATH
 source $ZDOT_HOME/indents.zsh
-source $ZDOT_HOME/functions.zsh
 
 function install {
     LABEL=$1

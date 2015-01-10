@@ -557,10 +557,6 @@ alias rs="resource"
 
 alias rsen="source $ZDOT_HOME/env_variables.zsh"
 
-alias rsfn="source $ZDOT_HOME/functions.zsh"
-
-alias rsf="source $ZDOT_HOME/functions.zsh"
-
 alias rsop="source $ZDOT_HOME/options.zsh"
 
 alias rsos="source $ZDOT_HOME/osx.zsh"
