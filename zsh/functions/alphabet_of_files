@@ -1,4 +1,4 @@
-files=$(find_clean_names | xargs)
+files=$(find_clean_filenames | xargs)
 files=("${(s/ /)files}")
 
 alphabet_of_items $files
