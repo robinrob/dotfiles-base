@@ -3,7 +3,6 @@ then
   save_crontab
   save_jetbrains
   save_homebrew
-  cd_save $DOTFILES_BASE_HOME
-  cd_save $DOTFILES_HOME
+  rake -g git:foreach["'rake -g base:save'"]
 fi
 
