@@ -507,9 +507,9 @@ alias lls="ls $LISTS_HOME"
 
 alias csp="cat $LISTS_HOME/spacecraft.txt"
 
-alias ctl="cat $LISTS_HOME/$TO_LEARN.txt"
+alias ctl="cat_list $TO_LEARN"
 
-alias mtl="$EDITOR $LISTS_HOME/$TO_LEARN.txt"
+alias mtl="edit_list $TO_LEARN"
 
 alias ctw="cat $LISTS_HOME/$TO_WATCH.txt"
 
@@ -856,6 +856,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias ols="open \$(lastf)"
+
 alias wk="wiki"
 
 alias ggt="google_translate"
@@ -879,6 +881,8 @@ alias unbk="dbk"
 alias ubk="dbk"
 
 alias delbk="dbk"
+
+alias als="add_to_list"
 
 alias spacecraft="add_to_list spacecraft"
 
