@@ -1,0 +1,2 @@
+safari "http://www.sciencemag.org/search?site_area=sciencejournals&y=0&fulltext=$(urlencode $@)&safe=active)&x=0&journalcode=sci&journalcode=sigtrans&journalcode=scitransmed&submit=yes&sortspec=date&y=0"
+
