@@ -527,9 +527,9 @@ alias mtd="$EDITOR $LISTS_HOME/$TO_DO.txt"
 
 alias ctd="cat $LISTS_HOME/$TO_DO.txt"
 
-alias mref="$EDITOR $LISTS_HOME/references.txt"
+alias mref="edit_list refs"
 
-alias cref="cat $LISTS_HOME/references.txt"
+alias cref="cat_list refs"
 
 alias quotes="clist quotes"
 
@@ -856,7 +856,7 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
-alias ols="open \$(lastf)"
+alias ols="open $(lastf)"
 
 alias wk="wiki"
 
@@ -894,7 +894,7 @@ alias watch="add_to_list $TO_WATCH"
 
 alias help="add_to_list help"
 
-alias ref="add_to_list references"
+alias ref="add_to_list refs"
 
 alias shop="add_to_list shopping"
 
