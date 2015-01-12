@@ -1,0 +1,6 @@
+readonly From=$1
+readonly To=$2
+shift 2;
+Text=$@
+
+print $Text | replace $From $To
