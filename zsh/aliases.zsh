@@ -507,9 +507,9 @@ alias lls="ls $LISTS_HOME"
 
 alias csp="cat $LISTS_HOME/spacecraft.txt"
 
-alias ctl="cat $LISTS_HOME/$TO_LEARN.txt"
+alias ctl="cat_list $TO_LEARN"
 
-alias mtl="$EDITOR $LISTS_HOME/$TO_LEARN.txt"
+alias mtl="edit_list $TO_LEARN"
 
 alias ctw="cat $LISTS_HOME/$TO_WATCH.txt"
 
@@ -527,9 +527,9 @@ alias mtd="$EDITOR $LISTS_HOME/$TO_DO.txt"
 
 alias ctd="cat $LISTS_HOME/$TO_DO.txt"
 
-alias mref="$EDITOR $LISTS_HOME/references.txt"
+alias mref="edit_list refs"
 
-alias cref="cat $LISTS_HOME/references.txt"
+alias cref="cat_list refs"
 
 alias quotes="clist quotes"
 
@@ -556,10 +556,6 @@ alias resource="source ~/.zshrc"
 alias rs="resource"
 
 alias rsen="source $ZDOT_HOME/env_variables.zsh"
-
-alias rsfn="source $ZDOT_HOME/functions.zsh"
-
-alias rsf="source $ZDOT_HOME/functions.zsh"
 
 alias rsop="source $ZDOT_HOME/options.zsh"
 
@@ -860,7 +856,10 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+
 alias cpy="copy"
+
+alias ols="open $(lastf)"
 
 alias wk="wiki"
 
@@ -869,6 +868,8 @@ alias ggt="google_translate"
 alias gg="google"
 
 alias cls="cat_list"
+
+alias mls="edit_list"
 
 alias cdld="cd \$(lsltr | tail -1)"
 
@@ -884,6 +885,8 @@ alias ubk="dbk"
 
 alias delbk="dbk"
 
+alias als="add_to_list"
+
 alias spacecraft="add_to_list spacecraft"
 
 alias read="add_to_list $TO_READ"
@@ -894,7 +897,7 @@ alias watch="add_to_list $TO_WATCH"
 
 alias help="add_to_list help"
 
-alias ref="add_to_list references"
+alias ref="add_to_list refs"
 
 alias shop="add_to_list shopping"
 
@@ -919,6 +922,8 @@ alias grf="grep_all"
 alias aof="green \$(alphabet_of_files)"
 
 alias aofi="red \$(inverse_alphabet \$(alphabet_of_files))"
+
+alias cof="count_of_files"
 
 alias epb="printpb"
 

@@ -29,3 +29,4 @@ do
   alias_repo_nav $repo $abbreviations[$repo]
 done
 
+unalias dsv

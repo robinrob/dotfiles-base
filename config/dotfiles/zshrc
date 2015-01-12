@@ -12,7 +12,6 @@ for config_file ($HOME/.framework/zsh/*.zsh) source $config_file
 # Functions
 ###############################################################################
 [[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
-# source $ZDOT_HOME/functions.zsh
 # -U prevents alias expansion during function definition.
 # +X loads the file immediately - rather than only when it is needed. This
 # allows the function's contents to be seen by running e.g. `which bastard`.

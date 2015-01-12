@@ -19,7 +19,7 @@ promptinit
 # OS-X Defaults
 #########################################################################
 green "Setting OSX defaults ..."
-$ZDOT_HOME/osx.zsh
+# $ZDOT_HOME/osx.zsh
 
 green "Installing crontab ..."
 crontab $DOTFILES_BASE_HOME/config/files/crontab.cron
@@ -36,3 +36,10 @@ sudo chmod 440 $SUDOERS_PATH
 sudo chown root:wheel $SUDOERS_PATH
 sudo cp $SUDOERS_PATH /etc/sudoers
 sudo chmod 444 $SUDOERS_PATH
+
+source ~/.variables
+[[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
+autoload -U +X ${fpath[1]}/*(:t)
+
+green "Generating bookmarks ..."
+generate_all_bookmarks

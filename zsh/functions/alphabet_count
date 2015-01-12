@@ -1,0 +1,40 @@
+ITEMS=($*)
+
+COL="%-3s"
+
+typeset -A counts
+
+for item in $ITEMS
+do
+  letter=$(lower $item[1])
+  if [[ -z $counts[$letter] ]]
+  then
+    counts[$letter]=1
+  else
+    (( counts[$letter] = counts[$letter] + 1 ))
+  fi
+done
+
+
+ALPHABET=(a b c d e f g h i j k l m n o p q r s t u v w x y z)
+line=""
+for char in $ALPHABET
+do
+  if [[ -n $counts[$char] ]]
+  then
+    line="${line}$(printf $COL $char)"
+  fi
+done
+green $line
+
+
+line=""
+for char in $ALPHABET
+do
+  if [[ -n $counts[$char] ]]
+  then
+    line="${line}$(printf $COL $counts[$char])"
+  fi
+done
+yellow $line
+
