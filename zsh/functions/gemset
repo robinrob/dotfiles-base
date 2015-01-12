@@ -1,8 +1,8 @@
-RUBY_GEMSET=$1
-RUBY_VERSION=$2
+readonly RubyGemset=$1
+readonly RubyVersion=$2
 
 silent rm .ruby-gemset
 silent rm .ruby-version
-print $RUBY_GEMSET > .ruby-gemset
-print $RUBY_VERSION > .ruby-version
+print $RubyGemset > .ruby-gemset
+print $RubyVersion > .ruby-version
 
