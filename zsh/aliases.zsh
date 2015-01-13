@@ -125,6 +125,10 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Installed applications/tools
 ###############################################################################
+alias spotify="/Applications/Spotify.app/Contents/MacOS/Spotify &"
+
+alias spo="spotify"
+
 alias mvim="mvim -p"
 
 alias scc="scalac"
@@ -568,6 +572,8 @@ alias save="rake -f $GLOBAL_RAKEFILE_HOME/Rakefile save_code"
 alias vconf="vim ~/.ssh/config"
 
 alias mssh="$EDITOR ~/.ssh/config"
+
+alias mkh="$EDITOR ~/.ssh/known_hosts"
 
 alias mvrc="$EDITOR ~/.vimrc"
 
