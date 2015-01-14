@@ -3,8 +3,10 @@ then
   save_crontab
   save_jetbrains
   save_homebrew
-  cd $DOTFILES_HOME
-  rvm gemset use rakelib
-  rake -g 'git:foreach[rake -g base:save]'
 fi
+
+cd $DOTFILES_HOME
+rvm gemset use rakelib
+rake -g 'git:foreach[rake -g base:save]'
+
 
