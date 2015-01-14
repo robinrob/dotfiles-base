@@ -409,6 +409,8 @@ alias vdc="vpn_disconnect"
 ###############################################################################
 # Git
 ###############################################################################
+alias gcam="git commit --amend -m"
+
 alias grrn="git remote rename"
 
 alias gacm="git add -u * && git add * && git commit -m"
