@@ -41,5 +41,8 @@ source ~/.variables
 [[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
 autoload -U +X ${fpath[1]}/*(:t)
 
+green "Installing SublimeText3 configuration ..."
+$ZDOT_HOME/sublimetext.zsh
+
 green "Generating bookmarks ..."
 generate_all_bookmarks
