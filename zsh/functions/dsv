@@ -1,10 +1,10 @@
 if [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
 then
   save_crontab
-  save_jetbrains
   save_homebrew
 fi
 
+save_jetbrains
 cd $DOTFILES_HOME
 rvm gemset use rakelib
 rake -g 'git:foreach[rake -g base:save]'
