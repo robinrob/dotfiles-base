@@ -862,10 +862,9 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
-
 alias cpy="copy"
 
-alias ols="open $(lastf)"
+alias ols="open \$(lastf)"
 
 alias wk="wiki"
 
