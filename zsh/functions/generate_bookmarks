@@ -1,20 +1,21 @@
-local -r bookmarks_path=$1
-local -r bookmarks_alias_path=$2
+local -r BookmarksPath=$1
+local -r BookmarksAliasPath=$2
 
-rm -f $bookmarks_alias_path && touch $bookmarks_alias_path
+rm -f $BookmarksAliasPath && touch $BookmarksAliasPath
 
-cat $bookmarks_path | while read line ; do
+cat $BookmarksPath | while read line ; do
 
-  local -r PARTS=("${(s/::/)line}")
+  local PARTS
+  PARTS=("${(s/::/)line}")
 
-  local -r NAME=$PARTS[1]
-  local -r BROWSER=$PARTS[2]
-  local -r URL=$PARTS[3]
+  local -r Name=$PARTS[1]
+  local -r Browser=$PARTS[2]
+  local -r Url=$PARTS[3]
 
-  local -r  ALIAS="browse_copy $BROWSER '$URL'"
+  local -r  Alias="browse_copy $Browser '$Url'"
 
-  create_alias $NAME $ALIAS $bookmarks_alias_path $SUCCESS_MSG
+  create_alias $Name $Alias $BookmarksAliasPath $SUCCESS_MSG
 
-  source $bookmarks_alias_path
+  source $BookmarksAliasPath
 
 done
