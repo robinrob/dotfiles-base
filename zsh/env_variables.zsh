@@ -1,6 +1,13 @@
 #############################
 # Environment variables
 #############################
+# sudo hostname <name> to change hostname
+export HOSTNAME=`hostname -s`
+
+export MERCURY_HOSTNAME='mercury'
+
+export VENUS_HOSTNAME='venus'
+
 export TRUE_VALUE="yes"
 
 export TRUE="yes"
@@ -18,18 +25,9 @@ export WORKBOOKMARKS_ALIAS_PATH=$ZDOT_HOME/work_bookmarks.zsh
 typeset -T BOOKMARKS bookmarks
 BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH
 
-# sudo hostname <name> to change
-export HOSTNAME=`hostname -s`
-
-export MERCURY_HOSTNAME='mercury'
-
-export VENUS_HOSTNAME='venus'
-
 export EDITOR=mvim
 
 export VISUAL=vim
-
-# export PROG_HOME="/Users/robinsmith/Downloads"
 
 export PROG_HOME=~/Programming/robin
 
