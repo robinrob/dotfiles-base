@@ -866,6 +866,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias grbk="grep_bookmarks"
+
 alias cpy="copy"
 
 alias ols="open \$(lastf)"

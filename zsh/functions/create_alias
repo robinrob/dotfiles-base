@@ -1,19 +1,12 @@
-NAME=$1
-VALUE=$2
-ALIAS_FILE=$3
-SUCCESS_MSG=$4
+readonly Name=$1
+readonly Value=$2
+readonly AliasFile=$3
+readonly SuccessMsg=$4
 
-while getopts :o: name
-do
-  case $name in
-    o) OVERRIDE=$OPTARG ;;
-    *) usage ;;
-  esac
-done
 
-if [[ "$(alias_exists $NAME $ALIAS_FILE)" == "no" ]]
+if [[ "$(alias_exists $Name $AliasFile)" == "no" ]]
 then
 	print "
-alias $NAME=\"$VALUE\"" >> $ALIAS_FILE
-  print "$(yellow)$NAME $(green)aliased to $(yellow)$VALUE"
+alias $Name=\"$Value\"" >> $AliasFile
+  print "$(yellow)$Name $(green)aliased to $(yellow)$Value"
 fi
