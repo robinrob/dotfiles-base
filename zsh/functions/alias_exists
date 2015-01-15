@@ -1,7 +1,7 @@
-readonly NAME=$1
-readonly ALIAS_FILE=$2
+local -r NAME=$1
+local -r ALIAS_FILE=$2
 
-readonly result=$(grep "alias $NAME=" $ALIAS_FILE)
+local -r result=$(grep "alias $NAME=" $ALIAS_FILE)
 
 if [[ -z $result ]]
 then

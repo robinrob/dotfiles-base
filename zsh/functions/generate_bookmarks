@@ -1,18 +1,17 @@
-readonly bookmarks_path=$1
-readonly bookmarks_alias_path=$2
+local -r bookmarks_path=$1
+local -r bookmarks_alias_path=$2
 
 rm -f $bookmarks_alias_path && touch $bookmarks_alias_path
 
 cat $bookmarks_path | while read line ; do
 
-  typeset PARTS
-  PARTS=("${(s/::/)line}")
+  local -r PARTS=("${(s/::/)line}")
 
-  typeset -r NAME=$PARTS[1]
-  readonly BROWSER=$PARTS[2]
-  readonly URL=$PARTS[3]
+  local -r NAME=$PARTS[1]
+  local -r BROWSER=$PARTS[2]
+  local -r URL=$PARTS[3]
 
-  readonly ALIAS="browse_copy $BROWSER '$URL'"
+  local -r  ALIAS="browse_copy $BROWSER '$URL'"
 
   create_alias $NAME $ALIAS $bookmarks_alias_path $SUCCESS_MSG
 

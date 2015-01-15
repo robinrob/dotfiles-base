@@ -1,4 +1,4 @@
-readonly Browser=$1
-readonly Url=$2
+local -r Browser=$1
+local -r Url=$2
 
 copy $Url && eval "$Browser '$Url'"

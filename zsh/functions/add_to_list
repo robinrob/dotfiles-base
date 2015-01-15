@@ -1,6 +1,6 @@
-readonly List=$1
+local -r List=$1
 shift
-readonly ListPath=$ListS_HOME/${List}.txt
+local -r ListPath=$ListS_HOME/${List}.txt
 
 
 if [[ -n $(cat $ListPath | ggrep "^$1") ]]
@@ -9,17 +9,17 @@ then
 
 elif (( $#* == 2 ))
 then
-  readonly Name=$1
-  readonly Value=$2
-  readonly Item="$Name::$Value"
+  local -r Name=$1
+  local -r Value=$2
+  local -r Item="$Name::$Value"
 
   print "$Item" >> $ListPath
   print "$(yellow)$Name $(green)added to $(yellow)$List $(green)as $(yellow)$Value$(default)"
 
 elif [[ -n $1 ]]
 then
-  readonly Value=$1
-  readonly Item=$Value
+  local -r Value=$1
+  local -r Item=$Value
   print "$Item" >> $ListPath
   print "$(yellow)$Value $(green)added to $(yellow)$List$(default)"
 
