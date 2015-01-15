@@ -21,6 +21,9 @@ promptinit
 green "Setting OSX defaults ..."
 # $ZDOT_HOME/osx.zsh
 
+green "Installing silent system sound ..."
+cp $DOTFILES_BASE_HOME/config/files/silence.wav ~/Library/Sounds
+
 green "Installing crontab ..."
 crontab $DOTFILES_BASE_HOME/config/files/crontab.cron
 
