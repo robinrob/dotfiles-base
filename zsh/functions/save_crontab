@@ -3,7 +3,7 @@ SAVE_PATH="$DOTFILES_BASE_HOME/config/files/$CRON_NAME"
 TMP_PATH="${SAVE_PATH}.tmp"
 
 rm -f $SAVE_PATH
-green "Saving crontab to $SAVE_PATH ..."
+print "$(green)Saving crontab to $(yellow)$SAVE_PATH ...$(default)"
 crontab -l > $TMP_PATH
 silent_cp $TMP_PATH $SAVE_PATH
 rm $TMP_PATH
