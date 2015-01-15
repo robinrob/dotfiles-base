@@ -1,27 +1,27 @@
-LIST=$1
+readonly List=$1
 shift
-LIST_PATH=$LISTS_HOME/${LIST}.txt
+readonly ListPath=$ListS_HOME/${List}.txt
 
 
-if [[ -n $(cat $LIST_PATH | ggrep "^$1") ]]
+if [[ -n $(cat $ListPath | ggrep "^$1") ]]
 then
-  print "$(yellow)$1 $(red)already in $(yellow)$LIST"
+  print "$(yellow)$1 $(red)already in $(yellow)$List"
 
 elif (( $#* == 2 ))
 then
-  NAME=$1
-  VALUE=$2
-  ITEM="$NAME::$VALUE"
+  readonly Name=$1
+  readonly Value=$2
+  readonly Item="$Name::$Value"
 
-  print "$ITEM" >> $LIST_PATH
-  print "$(yellow)$NAME $(green)added to $(yellow)$LIST $(green)as $(yellow)$VALUE$(default)"
+  print "$Item" >> $ListPath
+  print "$(yellow)$Name $(green)added to $(yellow)$List $(green)as $(yellow)$Value$(default)"
 
 elif [[ -n $1 ]]
 then
-  VALUE=$1
-  ITEM=$VALUE
-  print "$ITEM" >> $LIST_PATH
-  print "$(yellow)$VALUE $(green)added to $(yellow)$LIST$(default)"
+  readonly Value=$1
+  readonly Item=$Value
+  print "$Item" >> $ListPath
+  print "$(yellow)$Value $(green)added to $(yellow)$List$(default)"
 
 else
   red 'Nothing added.'

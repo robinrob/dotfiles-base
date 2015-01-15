@@ -623,6 +623,8 @@ alias cwbk="cat $WORKBOOKMARKS_PATH"
 
 alias cwbkal="cat $WORKBOOKMARKS_ALIAS_PATH"
 
+alias mwbkal="m $WORKBOOKMARKS_ALIAS_PATH"
+
 alias edit=$EDITOR
 
 alias conf="$EDITOR ~/.ssh/config"
