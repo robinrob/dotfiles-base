@@ -1,6 +1,6 @@
 local -r List=$1
 shift
-local -r ListPath=$ListS_HOME/${List}.txt
+local -r ListPath=$LISTS_HOME/${List}.txt
 
 
 if [[ -n $(cat $ListPath | ggrep "^$1") ]]

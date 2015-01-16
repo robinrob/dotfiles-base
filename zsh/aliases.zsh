@@ -904,11 +904,17 @@ alias als="add_to_list"
 
 alias spacecraft="add_to_list spacecraft"
 
-alias read="add_to_list $TO_READ"
+alias atr="add_to_list $TO_READ"
 
-alias learn="add_to_list $TO_LEARN"
+alias atl="add_to_list $TO_LEARN"
 
-alias watch="add_to_list $TO_WATCH"
+alias atw="add_to_list $TO_WATCH"
+
+alias read="take $TO_READ"
+
+alias watch="take $TO_WATCH"
+
+alias learn="take $TO_LEARN"
 
 alias help="add_to_list help"
 
@@ -921,10 +927,6 @@ alias quote="add_to_list quotes"
 alias jobs="add_to_list jobsites"
 
 alias comp="add_to_list computer_science"
-
-alias read1="take $TO_READ"
-
-alias watch1="take1 $TO_WATCH"
 
 alias grc='get_record'
 
