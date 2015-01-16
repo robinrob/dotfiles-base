@@ -1,3 +1,5 @@
+(( $#* >= 1 )) || return
+
 LIST=$LISTS_HOME/$1.txt
 
 if [[ -n $2 ]]

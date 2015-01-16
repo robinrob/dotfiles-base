@@ -1,8 +1,7 @@
-function TRAPEXIT {
-local -r List=$1 || exit;
-}
+(( $#* >= 2 )) || return
 
-shift
+local -r List=$1; shift
+
 local -r ListPath=$LISTS_HOME/${List}.txt
 
 
