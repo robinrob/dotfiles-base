@@ -13,7 +13,7 @@ function install {
 	# For some reason the evals were required here
 	cmd="rm -f $FILEPATH"
 	eval $cmd
-	cmd="ln $DOTFILES_BASE_HOME/config/files/Robin.jetbrains.xml $FILEPATH"
+	cmd="cp $DOTFILES_BASE_HOME/config/files/Robin.jetbrains.xml $FILEPATH"
 	eval $cmd
 }
 
