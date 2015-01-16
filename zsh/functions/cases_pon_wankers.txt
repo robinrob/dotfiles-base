@@ -1,0 +1,7 @@
+Case[] cses = [select assigned_engineer__c, status from case where origin = 'PON' and status = 'Assigning' and assigned_engineer__c = 'Not Assigned' and (subject LIKE '%2-Step%' OR subject LIKE '%2-step%' OR subject LIKE '%2 Step%' OR subject LIKE '%2 step%' OR subject LIKE '%Step 2%' OR subject LIKE '%step 2%')];
+
+for (Case cs : cses) {
+    cs.assigned_engineer__c = 'Captain BackLog';
+}
+
+update cses;
