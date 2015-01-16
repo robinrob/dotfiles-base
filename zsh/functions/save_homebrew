@@ -1,4 +1,7 @@
 brew_list=$DOTFILES_BASE_HOME/config/files/homebrew.txt
+
+print "$(green)Saving homebrew packages list to $(yellow)$brew_list$(default)"
+
 rm -f $brew_list
 brew list > $brew_list
 
