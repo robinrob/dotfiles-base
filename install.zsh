@@ -16,13 +16,19 @@ $ZDOT_HOME/jetbrains.zsh
 autoload -Uz promptinit
 promptinit
 
+source ~/.variables
+[[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
+autoload -U +X ${fpath[1]}/*(:t)
+
+
 # OS-X Defaults
 #########################################################################
-green "Setting OSX defaults ..."
+# green "Setting OSX defaults ..."
 # $ZDOT_HOME/osx.zsh
 
 green "Installing silent system sound ..."
 cp $DOTFILES_BASE_HOME/config/files/silence.wav ~/Library/Sounds
+
 
 green "Installing crontab ..."
 crontab $DOTFILES_BASE_HOME/config/files/crontab.cron
@@ -33,19 +39,12 @@ cp $DOTFILES_BASE_HOME/config/files/Robin.keylayout.xml ~/Library/Keyboard\ Layo
 
 
 green "Installing sudoers file ..."
-SUDOERS_PATH=$DOTFILES_BASE_HOME/config/files/sudoers
-# Make sure that the file has correct permissions first!
-sudo chmod 440 $SUDOERS_PATH
-sudo chown root:wheel $SUDOERS_PATH
-sudo cp $SUDOERS_PATH /etc/sudoers
-sudo chmod 444 $SUDOERS_PATH
+$ZDOT_HOME/suoders.zsh
 
-source ~/.variables
-[[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
-autoload -U +X ${fpath[1]}/*(:t)
 
 green "Installing SublimeText3 configuration ..."
 $ZDOT_HOME/sublimetext.zsh
+
 
 green "Generating bookmarks ..."
 generate_all_bookmarks
