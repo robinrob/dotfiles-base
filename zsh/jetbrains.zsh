@@ -4,10 +4,10 @@ source $COLORS_PATH
 source $ZDOT_HOME/indents.zsh
 
 function install {
-    LABEL=$1
-    FILEPATH=$2
+  LABEL=$1
+  FILEPATH=$2
 
-	yellow "\t${ITEM}Installing $LABEL config ..."
+  print "\t${ITEM}$(green Installing) $(yellow $LABEL) $(green to) $(yellow $FILEPATH) $(green ...)"
 	cp $FILEPATH $FILEPATH.backup 2> /dev/null
 
 	# For some reason the evals were required here
@@ -19,7 +19,7 @@ function install {
 
 green "Installing Jetbrains IDE config files ..."
 
-install IntelliJIdea "~/Library/Preferences/IntelliJIdea13/keymaps/Robin.xml"
+install IntelliJIdea $INTELLIJ_CONFIG
 
 # install RubyMine $RUBYMINE_CONFIG
 #
