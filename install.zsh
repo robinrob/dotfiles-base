@@ -38,8 +38,8 @@ green "Installing Robin's custom keyboard layout ..."
 cp $DOTFILES_BASE_HOME/config/files/Robin.keylayout.xml ~/Library/Keyboard\ Layouts/Robin.keylayout
 
 
-green "Installing sudoers file ..."
-$ZDOT_HOME/suoders.zsh
+# green "Installing sudoers file ..."
+# $ZDOT_HOME/sudoers.zsh
 
 
 green "Installing SublimeText3 configuration ..."
