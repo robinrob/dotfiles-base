@@ -125,7 +125,9 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Installed applications/tools
 ###############################################################################
-alias spotify="/Applications/Spotify.app/Contents/MacOS/Spotify &"
+alias utorrent="open -a uTorrent"
+
+alias spotify="open -a Spotify"
 
 alias spo="spotify"
 
@@ -158,8 +160,6 @@ alias adobe="$ADOBE_PATH"
 alias m="$EDITOR"
 
 alias gimp="/Applications/GIMP.app/Contents/MacOS/GIMP-bin"
-
-alias sublime="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'"
 
 
 ###############################################################################

@@ -1,5 +1,7 @@
 function TRAPEXIT {
 local -r List=$1 || exit;
+}
+
 shift
 local -r ListPath=$LISTS_HOME/${List}.txt
 
@@ -27,4 +29,3 @@ then
 else
   red 'Nothing added.'
 fi
-}
