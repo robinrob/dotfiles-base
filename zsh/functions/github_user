@@ -1,0 +1,3 @@
+local -r User=$1; shift
+
+browser "https://github.com/$User?query=$(urlencode $@)"

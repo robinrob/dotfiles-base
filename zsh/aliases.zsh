@@ -866,6 +866,10 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias ghu="github_user"
+
+alias bbu="bitbucket_user"
+
 alias grbk="grep_bookmarks"
 
 alias cpy="copy"
