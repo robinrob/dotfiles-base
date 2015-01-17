@@ -724,6 +724,40 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 defaults write com.twitter.twitter-mac HideInBackground -bool true
 
 ###############################################################################
+# Robin's additional defaults
+###############################################################################
+# Hide tab bar in Safari
+defaults write com.apple.Safari AlwaysShowTabBar -bool NO
+
+# Hide hidden files in Finder
+defaults write com.apple.Finder AppleShowAllFiles NO 2> /dev/null
+
+# Change screenshot location
+# http://www.tekrevue.com/tip/how-to-customize-screenshot-options-in-mac-os-x/
+# killall SystemUIServer
+defaults write com.apple.screencapture location $SCREENSHOTS_HOME 2> /dev/null
+
+# Change screenshot filename prefix
+defaults write com.apple.screencapture name $HOSTNAME
+
+# Change screenshot filetype
+# defaults write com.apple.screencapture type png
+
+defaults write -g ApplePersistence -bool no 2> /dev/null
+
+# Show ~/Library folder in Finder
+chflags nohidden ~/Library/ 2> /dev/null
+
+# Set default wallpaper image. `DefaultDesktop.jpg` is already a symlink, and
+# all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
+#rm -rf ~/Library/Application Support/Dock/desktoppicture.db
+sudo mv /System/Library/CoreServices/DefaultDesktop.jpg /System/Library/CoreServices/DefaultDesktop.backup.jpg
+sudo ln -s $DOTFILES_BASE/config/diles/DefaultDesktop.jpg /System/Library/CoreServices/DefaultDesktop.jpg
+
+# Iterm2 hotkey window animation duration
+defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.0
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
@@ -733,30 +767,3 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	killall "${app}" > /dev/null 2>&1
 done
 print "Done. Note that some of these changes require a logout/restart to take effect."
-
-
-
-###############################################################################
-# Robin's original defaults                                                   #
-###############################################################################
-defaults write com.apple.Safari AlwaysShowTabBar -bool NO
-
-defaults write com.apple.Finder AppleShowAllFiles NO 2> /dev/null
-
-# http://www.tekrevue.com/tip/how-to-customize-screenshot-options-in-mac-os-x/
-# killall SystemUIServer
-defaults write com.apple.screencapture location $SCREENSHOTS_HOME 2> /dev/null
-
-defaults write com.apple.screencapture name $HOSTNAME
-# defaults write com.apple.screencapture type png
-
-defaults write -g ApplePersistence -bool no 2> /dev/null
-
-chflags nohidden ~/Library/ 2> /dev/null
-
-
-# Set a custom wallpaper image. `DefaultDesktop.jpg` is already a symlink, and
-# all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
-#rm -rf ~/Library/Application Support/Dock/desktoppicture.db
-sudo mv /System/Library/CoreServices/DefaultDesktop.jpg /System/Library/CoreServices/DefaultDesktop.backup.jpg
-sudo ln -s $DOTFILES_BASE/config/diles/DefaultDesktop.jpg /System/Library/CoreServices/DefaultDesktop.jpg
