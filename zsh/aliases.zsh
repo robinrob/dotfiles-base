@@ -97,8 +97,12 @@ alias tail="gtail"
 
 
 ###############################################################################
-# Shell command shortcuts
+# Shortcuts
 ###############################################################################
+alias cdsam="cd $COCOS_HOME/samples"
+
+alias adbd="adb devices"
+
 alias lsdl="ls ~/Downloads"
 
 alias pag="ps aux | grep"
@@ -223,7 +227,7 @@ alias cdm="cd_dir $JS_HOME/projects"
 
 alias cdmb="cd_dir $JS_HOME/projects/mobile-app-cordova"
 
-alias cdg="cd_dir $JS_HOME/projects/mobile-game-cocos"
+alias cdg="cd_dir $JS_HOME/projects/Parkour"
 
 alias cdmw="cd_dir $JS_HOME/projects/moonwarriors-robin"
 
@@ -289,13 +293,9 @@ alias rkm="rake_do db:migrate"
 
 alias rkt="rake_do test"
 
-alias rkr="rake routes"
-
 alias rkst="rake_do git:sort_sub"
 
 alias rk="rake"
-
-alias rkg="rake -g"
 
 alias rkjc="rake_do jekyll:clean"
 
@@ -308,20 +308,6 @@ alias gi="gem install"
 alias bi="bundle install"
 
 alias bu="bundle update"
-
-alias save="rake -f $GLOBAL_RAKEFILE_HOME/Rakefile save_code"
-
-alias rkrn="rake -g cocos:run"
-
-alias rkd="rake_do rails:deploy"
-
-alias rkde="rake_do git:deinit"
-
-alias rkD="rake_do git:sub_deinit"
-
-alias rkpl="rake_do git:pull"
-
-alias rkp="rake_do git:push"
 
 alias rkup="rakeup"
 
@@ -507,6 +493,27 @@ alias gpod="git push $DEFAULT_GIT_REMOTE develop"
 
 alias gplod="git pull $DEFAULT_GIT_REMOTE develop"
 
+###############################################################################
+# Rake
+###############################################################################
+alias rkg="rake -g"
+
+alias rkrt="rake routes"
+
+alias rki="rake install"
+
+alias rkrn="rake_do cocos:run"
+
+alias rkdp="rake_do rails:deploy"
+
+alias rkde="rake_do git:deinit"
+
+alias rkD="rake_do git:sub_deinit"
+
+alias rkpl="rake_do git:pull"
+
+alias rkp="rake_do git:push"
+
 
 ###############################################################################
 # Viewing and editing files
@@ -572,12 +579,6 @@ alias rsen="source $ZDOT_HOME/env_variables.zsh"
 alias rsop="source $ZDOT_HOME/options.zsh"
 
 alias rsos="source $ZDOT_HOME/osx.zsh"
-
-alias RS="source ~/.zshrc"
-
-alias save="rake -f $GLOBAL_RAKEFILE_HOME/Rakefile save_code"
-
-alias vconf="vim ~/.ssh/config"
 
 alias mssh="$EDITOR ~/.ssh/config"
 
@@ -701,8 +702,6 @@ alias kne="knife node edit --editor vim"
 
 alias kee="knife environment edit --editor vim"
 
-alias rki="rake install"
-
 alias fbs="fab save"
 
 alias fcl="fab clean"
@@ -756,8 +755,6 @@ alias erk="edit rakefile"
 alias rkct="rake count_all"
 
 alias mkd="mkdir"
-
-alias plane="copy_print NQFLIZ"
 
 alias gclm="git clone -b master"
 
@@ -872,6 +869,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias rkd="rake_deploy"
+
 alias intr="intranet"
 
 alias ghu="github_user"

@@ -238,18 +238,10 @@ export LESS=" -R "
 
 export LESSC_PATH="/usr/local/lib/node_modules/less/bin/lessc"
 
-export COCOS_HOME="/usr/local/Library/cocos2d-js"
 
-export COCOS_CONSOLE_ROOT="$COCOS_HOME/tools/cocos2d-console/bin"
-
-export ANT_ROOT=/usr/local/bin
-
-export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
-
-export GREP_COLORS='ms=01;35:mc=01;31:sl=:cx=:fn=0:ln=32:bn=32:se=36'
-
-export LS_COLORS='di=1;34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
-
+###############################################################################
+# Host-specific
+###############################################################################
 if [[ $HOSTNAME == "venus" ]]
 then
   export PGDATA=/Users/robinsmith/Library/Application\ Support/Postgres/var-9.3
@@ -280,3 +272,22 @@ export TO_LEARN=learn
 # Applications
 ###############################################################################
 export SUBLIMETEXT_HOME="~/Library/Application\ Support/Sublime\ Text\ 3/"
+
+
+
+###############################################################################
+# Cocos
+###############################################################################
+export COCOS_HOME="/usr/local/Library/cocos2d-js-v3.2"
+
+export COCOS_CONSOLE_ROOT="$COCOS_HOME/tools/cocos2d-console/bin"
+
+export ANT_ROOT=/usr/local/bin
+
+export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
+
+export GREP_COLORS='ms=01;35:mc=01;31:sl=:cx=:fn=0:ln=32:bn=32:se=36'
+
+export LS_COLORS='di=1;34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
+
+

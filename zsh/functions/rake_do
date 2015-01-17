@@ -17,8 +17,8 @@ then
 		cmd="$BASE_CMD $TASK"
 	fi
 
-  eval $cmd
   green $cmd
+  eval $cmd
 else
 	red "No Rakefile!"
 fi
