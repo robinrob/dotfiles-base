@@ -101,6 +101,8 @@ alias tail="gtail"
 ###############################################################################
 alias cdsam="cd $COCOS_HOME/samples"
 
+alias cdt="cd $COCOS_HOME/samples/js-tests"
+
 alias adbd="adb devices"
 
 alias lsdl="ls ~/Downloads"
@@ -211,7 +213,7 @@ alias cdcam="cd_dir '$CAMERA_HOME'"
 
 alias ocam="cd_dir $CAMERA_HOME && open ."
 
-alias cdt="cd $TRASH_HOME"
+alias cdtr="cd $TRASH_HOME"
 
 alias cddr="cd ~/Google\ Drive"
 
@@ -365,7 +367,9 @@ alias cdnoc="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
 
 alias cdms="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
 
-alias ccr="cocos run -p web"
+alias ccr="cocos run"
+
+alias ccc="cocos compile"
 
 alias st="cd_status"
 
