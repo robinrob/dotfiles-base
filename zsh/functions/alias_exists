@@ -1,9 +1,9 @@
-local -r NAME=$1
-local -r ALIAS_FILE=$2
+local -r Name=$1
+local -r AliasFile=$2
 
-local -r result=$(grep "alias $NAME=" $ALIAS_FILE)
+local +r Result=$(grep "alias $Name=" $AliasFile)
 
-if [[ -z $result ]]
+if [[ -z $Result ]]
 then
 	print "no"	
 else

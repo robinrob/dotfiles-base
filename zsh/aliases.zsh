@@ -123,8 +123,14 @@ alias syslog="tail -f /var/log/system.log"
 
 
 ###############################################################################
-# Installed applications/tools
+# Applications/tools
 ###############################################################################
+alias dic="dict"
+
+alias intellij="open -a IntelliJ\ IDEA\ 13"
+
+alias int="open -a IntelliJ\ IDEA\ 13"
+
 alias utorrent="open -a uTorrent"
 
 alias spotify="open -a Spotify"
@@ -866,6 +872,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias intr="intranet"
+
 alias ghu="github_user"
 
 alias bbu="bitbucket_user"
