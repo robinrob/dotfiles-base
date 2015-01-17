@@ -275,3 +275,8 @@ export TO_READ=read
 export TO_WATCH=watch
 
 export TO_LEARN=learn
+
+###############################################################################
+# Applications
+###############################################################################
+export SUBLIMETEXT_HOME="~/Library/Application\ Support/Sublime\ Text\ 3/"

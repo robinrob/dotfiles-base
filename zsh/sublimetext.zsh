@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
-readonly SublimeText=~/Library/Application\ Support/Sublime\ Text\ 3
+[[ -d $SUBLIMETEXT_HOME ]] || exit
 
-rm -f $SublimeText/Packages 
+rm -rf $SUBLIMETEXT_HOME/Packages 
 
-ln -s $DOTFILES_BASE_HOME/config/files/Packages $SublimeText/Packages
+ln -s $DOTFILES_BASE_HOME/config/files/Packages $SUBLIMETEXT_HOME/Packages

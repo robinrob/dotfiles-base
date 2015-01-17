@@ -47,4 +47,7 @@ $ZDOT_HOME/sublimetext.zsh
 
 
 green "Generating bookmarks ..."
-generate_all_bookmarks
+generate_all_bookmarks > /dev/null
+
+
+green "Done."
