@@ -1,2 +1,2 @@
-yes | cp $1 $2 1> /dev/null 2> /dev/null
+yes | cp $@ 1> /dev/null 2> /dev/null
 

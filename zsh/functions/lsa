@@ -1,2 +1,2 @@
-ls $PWD/$1
+copy_print $(ls $PWD/$1)
 

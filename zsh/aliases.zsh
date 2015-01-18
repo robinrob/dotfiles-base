@@ -103,6 +103,8 @@ alias cdsam="cd $COCOS_HOME/samples"
 
 alias cdt="cd $COCOS_HOME/samples/js-tests"
 
+alias cdpk="cd $JS_HOME/projects/Parkour"
+
 alias adbd="adb devices"
 
 alias lsdl="ls ~/Downloads"
@@ -131,6 +133,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ###############################################################################
+alias unz="unzip"
+
 alias dic="dict"
 
 alias intellij="open -a IntelliJ\ IDEA\ 13"
@@ -171,7 +175,7 @@ alias adobe="$ADOBE_PATH"
 
 alias m="$EDITOR"
 
-alias gimp="/Applications/GIMP.app/Contents/MacOS/GIMP-bin"
+alias gimp="open -a Gimp"
 
 
 ###############################################################################
@@ -371,6 +375,8 @@ alias ccr="cocos run"
 
 alias ccc="cocos compile"
 
+alias ccd="cocos deploy"
+
 alias st="cd_status"
 
 alias sv="cd_save"
@@ -506,7 +512,7 @@ alias rkrt="rake routes"
 
 alias rki="rake install"
 
-alias rkrn="rake_do cocos:run"
+alias ccrn="rake_do cocos:run"
 
 alias rkdp="rake_do rails:deploy"
 
@@ -873,6 +879,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias Cp="silent_cp"
+
 alias rkd="rake_deploy"
 
 alias intr="intranet"
