@@ -1,6 +1,34 @@
-#############################
+###############################################################################
 # Environment variables
-#############################
+###############################################################################
+
+###############################################################################
+# Shell
+###############################################################################
+export EDITOR=mvim
+
+export VISUAL=vim
+
+###############################################################################
+# ZSH global variables
+###############################################################################
+export TRUE_VALUE="yes"
+
+export TRUE="yes"
+
+export FALSE="no"
+
+export TO_DO=do
+
+export TO_READ=read
+
+export TO_WATCH=watch
+
+export TO_LEARN=learn
+
+###############################################################################
+# Host-specific
+###############################################################################
 # sudo hostname <name> to change hostname
 export HOSTNAME=`hostname -s`
 
@@ -8,26 +36,26 @@ export MERCURY_HOSTNAME='mercury'
 
 export VENUS_HOSTNAME='venus'
 
-export TRUE_VALUE="yes"
+if [[ $HOSTNAME == "venus" ]]
+then
+  export PGDATA=/Users/robinsmith/Library/Application\ Support/Postgres/var-9.3
+elif [[ $HOSTNAME == "mercury" ]]
+then
+  export PGDATA=/Users/msl/Library/Containers/com.heroku.postgres/Data/Library/Application\ Support/Postgres/var
+fi
 
-export TRUE="yes"
+if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
+then
+	export BROWSER="Safari"
+  export SAYCMD=1  
+else
+	export BROWSER="Google Chrome"
+fi
 
-export FALSE="no"
-
-export BOOKMARKS_PATH=$LISTS_HOME/bookmarks.txt
-
-export BOOKMARKS_ALIAS_PATH=$ZDOT_HOME/bookmarks.zsh
-
-export WORKBOOKMARKS_PATH=$LISTS_HOME/work_bookmarks.txt
-
-export WORKBOOKMARKS_ALIAS_PATH=$ZDOT_HOME/work_bookmarks.zsh
-
-typeset -T BOOKMARKS bookmarks
-BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH
-
-export EDITOR=mvim
-
-export VISUAL=vim
+###############################################################################
+# Directories
+###############################################################################
+export GOOGLE_DRIVE=~/Google\ Drive
 
 export PROG_HOME=~/Programming/robin
 
@@ -192,8 +220,6 @@ export KITCHENPLAN_HOME=/opt/kitchenplan
 
 export RECORDS_HOME=$MERCURY_HOME/docs/IMPORTANT/records
 
-export RECORDS_PATH=$RECORDS_HOME/records.txt
-
 export RECEIPTS_HOME=~/Google\ Drive/expenses/
 
 export EXPENSES_HOME=~/Google\ Drive/expenses/
@@ -204,14 +230,6 @@ export CAMERA_HOME=$FILES_HOME/Camera\ Uploads
 export TRASH_HOME=~/.Trash
 
 export CANADA_HOME=$MERCURY_HOME/docs/IMPORTANT/canada
-
-if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
-then
-	export BROWSER="Safari"
-  export SAYCMD=1  
-else
-	export BROWSER="Google Chrome"
-fi
 
 export USE_PYTHON=1
 
@@ -227,7 +245,44 @@ export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/22.6.2/
 
 export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
 
+
+###############################################################################
+# Files
+###############################################################################
+export RECORDS_PATH=$RECORDS_HOME/records.txt
+
+export PG_CONF=$PGDATA/postgresql.conf
+
+export DEFAULT_GIT_REMOTE="origin"
+
+export BREWLIST=$DOTFILES_BASE_HOME/config/files/homebrew.txt
+
+export GDOC_TEMPLATE=$GOOGLE_DRIVE/new_document.gdoc
+
+export BOOKMARKS_PATH=$LISTS_HOME/bookmarks.txt
+
+export BOOKMARKS_ALIAS_PATH=$ZDOT_HOME/bookmarks.zsh
+
+export WORKBOOKMARKS_PATH=$LISTS_HOME/work_bookmarks.txt
+
+export WORKBOOKMARKS_ALIAS_PATH=$ZDOT_HOME/work_bookmarks.zsh
+
+typeset -T BOOKMARKS bookmarks
+BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH
+
+###############################################################################
+# Applications
+###############################################################################
+export SUBLIMETEXT_HOME="~/Library/Application\ Support/Sublime\ Text\ 3/"
+
+###############################################################################
+# Colors
+###############################################################################
 export GREP_COLOR="0;32"
+
+export GREP_COLORS='ms=01;35:mc=01;31:sl=:cx=:fn=0:ln=32:bn=32:se=36'
+
+export LS_COLORS='di=1;34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
 
 # Syntax highlighing in `less`
 # Requires `brew install source-highlight`
@@ -237,43 +292,6 @@ export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
 export LESS=" -R "
 
 export LESSC_PATH="/usr/local/lib/node_modules/less/bin/lessc"
-
-
-###############################################################################
-# Host-specific
-###############################################################################
-if [[ $HOSTNAME == "venus" ]]
-then
-  export PGDATA=/Users/robinsmith/Library/Application\ Support/Postgres/var-9.3
-elif [[ $HOSTNAME == "mercury" ]]
-then
-  export PGDATA=/Users/msl/Library/Containers/com.heroku.postgres/Data/Library/Application\ Support/Postgres/var
-fi
-
-export PG_CONF=$PGDATA/postgresql.conf
-
-export DEFAULT_GIT_REMOTE="origin"
-
-export BREWLIST=$DOTFILES_BASE_HOME/config/files/homebrew.txt
-
-export GOOGLE_DRIVE=~/Google\ Drive
-
-export GDOC_TEMPLATE=$GOOGLE_DRIVE/new_document.gdoc
-
-export TO_DO=do
-
-export TO_READ=read
-
-export TO_WATCH=watch
-
-export TO_LEARN=learn
-
-###############################################################################
-# Applications
-###############################################################################
-export SUBLIMETEXT_HOME="~/Library/Application\ Support/Sublime\ Text\ 3/"
-
-
 
 ###############################################################################
 # Cocos
@@ -285,9 +303,3 @@ export COCOS_CONSOLE_ROOT="$COCOS_HOME/tools/cocos2d-console/bin"
 export ANT_ROOT=/usr/local/bin
 
 export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
-
-export GREP_COLORS='ms=01;35:mc=01;31:sl=:cx=:fn=0:ln=32:bn=32:se=36'
-
-export LS_COLORS='di=1;34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
-
-
