@@ -220,6 +220,8 @@ export KITCHENPLAN_HOME=/opt/kitchenplan
 
 export RECORDS_HOME=$MERCURY_HOME/docs/IMPORTANT/records
 
+export WORK_RECORDS_HOME=$VENUS_HOME/docs/IMPORTANT/records
+
 export RECEIPTS_HOME=~/Google\ Drive/expenses/
 
 export EXPENSES_HOME=~/Google\ Drive/expenses/
@@ -250,6 +252,11 @@ export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
 # Files
 ###############################################################################
 export RECORDS_PATH=$RECORDS_HOME/records.txt
+
+export WORK_RECORDS_PATH=$WORK_RECORDS_HOME/records.txt
+
+typeset -T RECORDS records
+RECORDS=$RECORDS_PATH:$WORK_RECORDS_PATH
 
 export PG_CONF=$PGDATA/postgresql.conf
 

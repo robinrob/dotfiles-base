@@ -761,7 +761,7 @@ chflags nohidden ~/Library/ 2> /dev/null
 # all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
 #rm -rf ~/Library/Application Support/Dock/desktoppicture.db
 sudo mv /System/Library/CoreServices/DefaultDesktop.jpg /System/Library/CoreServices/DefaultDesktop.backup.jpg
-sudo ln -s $DOTFILES_BASE/config/diles/DefaultDesktop.jpg /System/Library/CoreServices/DefaultDesktop.jpg
+sudo ln -s $DOTFILES_BASE/config/files/DefaultDesktop.jpg /System/Library/CoreServices/DefaultDesktop.jpg
 
 # Iterm2 hotkey window animation duration
 defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.0

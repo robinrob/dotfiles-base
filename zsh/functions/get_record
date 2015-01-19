@@ -1,8 +1,12 @@
-RECORD=$1
+local -r Record=$1
 
-line=$(grep "^$RECORD::" $RECORDS_PATH)
+for file in $records
+do
+  line=$(grep "^$Record::" $file)
 
-val=$(print ""$line"" | awk -F:: '{print $2}')
+  val=$(print ""$line"" | awk -F:: '{print $2}')
+
+  [[ -n $val ]] && break;
+done
 
 copy_print ""$val""
-
