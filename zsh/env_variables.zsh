@@ -251,6 +251,10 @@ export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
 ###############################################################################
 # Files
 ###############################################################################
+export DEFAULT_DESKTOP="$DOTFILES_BASE_HOME/config/files/DefaultDesktop.jpg"
+
+export DEFAULT_DESKTOP_LOCATION="/System/Library/CoreServices/DefaultDesktop.jpg"
+
 export RECORDS_PATH=$RECORDS_HOME/records.txt
 
 export WORK_RECORDS_PATH=$WORK_RECORDS_HOME/records.txt
