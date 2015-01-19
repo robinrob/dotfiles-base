@@ -23,7 +23,7 @@ autoload -U +X ${fpath[1]}/*(:t)
 
 # OS-X Defaults
 #########################################################################
-# green "Setting OSX defaults ..."
+green "Setting OSX defaults ..."
 $ZDOT_HOME/osx.zsh
 
 green "Installing silent system sound ..."
