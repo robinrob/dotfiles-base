@@ -1,2 +1,2 @@
-ls $1 | pb
+ls $1 | pbcopy
 
