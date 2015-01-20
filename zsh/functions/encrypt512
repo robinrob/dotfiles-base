@@ -1,0 +1,1 @@
+print $(encrypt $@) | openssl dgst -sha512

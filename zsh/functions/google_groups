@@ -1,0 +1,7 @@
+if [[ -n $@ ]]
+then
+  browser "https://groups.google.com/forum/#!search/$(urlencode $@)"
+else
+  browser "https://groups.google.com"
+fi
+

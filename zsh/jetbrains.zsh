@@ -7,7 +7,7 @@ function install {
   LABEL=$1
   FILEPATH=$2
 
-  print "\t${ITEM}$(green Installing) $(yellow $LABEL) $(green to) $(yellow $FILEPATH) $(green ...)"
+  print "\t${ITEM}$(green Installing) $(yellow $LABEL) $(green config to) $(yellow $FILEPATH) $(green ...)"
 	cp $FILEPATH $FILEPATH.backup 2> /dev/null
 
 	# For some reason the evals were required here

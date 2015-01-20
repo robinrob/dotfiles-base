@@ -407,7 +407,9 @@ sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulato
 # Add a spacer to the right side of the Dock (where the Trash is)
 #defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
 
+###############################################################################
 # Hot corners - turn these bitches OFF!
+###############################################################################
 # Possible values:
 #  0: no-op
 #  2: Mission Control
@@ -419,15 +421,22 @@ sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulato
 # 10: Put display to sleep
 # 11: Launchpad
 # 12: Notification Center
+
 # Top left screen corner → Mission Control
-# defaults write com.apple.dock wvous-tl-corner -int 2
+defaults write com.apple.dock wvous-tl-corner -int 0
 # defaults write com.apple.dock wvous-tl-modifier -int 0
+
 # Top right screen corner → Desktop
-# defaults write com.apple.dock wvous-tr-corner -int 4
+defaults write com.apple.dock wvous-tr-corner -int 0
 # defaults write com.apple.dock wvous-tr-modifier -int 0
+
 # Bottom left screen corner → Start screen saver
-# defaults write com.apple.dock wvous-bl-corner -int 5
+defaults write com.apple.dock wvous-bl-corner -int 0
 # defaults write com.apple.dock wvous-bl-modifier -int 0
+
+# Bottom left screen corner → Start screen saver
+defaults write com.apple.dock wvous-bl-corner -int 0
+# defaults write com.apple.dock wvous-br-modifier -int 0
 
 ###############################################################################
 # Safari & WebKit                                                             #
@@ -748,12 +757,22 @@ defaults write -g ApplePersistence -bool no 2> /dev/null
 # Show ~/Library folder in Finder
 chflags nohidden ~/Library/ 2> /dev/null
 
+###############################################################################
+# Desktop Background
+###############################################################################
 # Set default wallpaper image. `DefaultDesktop.jpg` is already a symlink, and
 # all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
-#rm -rf ~/Library/Application Support/Dock/desktoppicture.db
-sudo mv /System/Library/CoreServices/DefaultDesktop.jpg /System/Library/CoreServices/DefaultDesktop.backup.jpg
-sudo ln -s $DOTFILES_BASE/config/diles/DefaultDesktop.jpg /System/Library/CoreServices/DefaultDesktop.jpg
+rm -rf ~/Library/Application\ Support/Dock/desktoppicture.db
+local -r DefaultDesktopLocation=/System/Library/CoreServices/DefaultDesktop.jpg
+sudo mv -f $DefaultDesktopLocation $DefaultDesktopLocation.backup
+sudo ln -s $DEFAULT_DESKTOP $DefaultDesktopLocation
 
+# Alternate method:
+# osascript -e "tell application \"System Events\" to set picture of every desktop to \"$DEFAULT_DESKTOP\""
+
+###############################################################################
+# Iterm2
+###############################################################################
 # Iterm2 hotkey window animation duration
 defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.0
 

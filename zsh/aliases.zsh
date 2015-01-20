@@ -782,7 +782,11 @@ alias erec="$EDITOR $IMPORTANT_HOME/records/record.txt"
 
 alias mrec="$EDITOR $RECORDS_PATH"
 
-alias crec="cat $RECORDS_PATH"
+alias mwr="$EDITOR $WORK_RECORDS_PATH"
+
+alias cre="cat $RECORDS_PATH"
+
+alias cwr="cat $WORK_RECORDS_PATH"
 
 alias lahome="get_record la_home"
 
@@ -879,8 +883,6 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
-alias cpb="cat_copy"
-
 alias Cp="silent_cp"
 
 alias rkd="rake_deploy"
@@ -900,6 +902,8 @@ alias ols="open \$(lastf)"
 alias wk="wiki"
 
 alias ggt="google_translate"
+
+alias ggg="google_groups"
 
 alias gg="google"
 
