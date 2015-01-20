@@ -883,8 +883,6 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
-alias gre="get_record"
-
 alias Cp="silent_cp"
 
 alias rkd="rake_deploy"
