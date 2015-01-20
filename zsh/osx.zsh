@@ -764,8 +764,16 @@ chflags nohidden ~/Library/ 2> /dev/null
 # all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
 rm -rf ~/Library/Application\ Support/Dock/desktoppicture.db
 local -r DefaultDesktopLocation=/System/Library/CoreServices/DefaultDesktop.jpg
+
+case $HOSTNAME in
+  mercury) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/MercuryDesktop.png ;;
+    venus) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/VenusDesktop.jpg ;;
+     mars) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/MarsDesktop.jpg ;;
+        *) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/DefaultDesktop.jpg ;;
+esac
+
 sudo mv -f $DefaultDesktopLocation $DefaultDesktopLocation.backup
-sudo ln -s $DEFAULT_DESKTOP $DefaultDesktopLocation
+sudo ln -s $BackgroundLocation $DefaultDesktopLocation
 
 # Alternate method:
 # osascript -e "tell application \"System Events\" to set picture of every desktop to \"$DEFAULT_DESKTOP\""

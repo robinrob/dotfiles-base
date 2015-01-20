@@ -913,6 +913,10 @@ alias cls="cat_list"
 
 alias mls="edit_list"
 
+alias als="add_to_list"
+
+alias tls="take"
+
 alias cdld="cd \$(lsltr | tail -1)"
 
 alias dspdl="cd ~/Downloads; despace; cd - > /dev/null"
@@ -926,8 +930,6 @@ alias unbk="dbk"
 alias ubk="dbk"
 
 alias delbk="dbk"
-
-alias als="add_to_list"
 
 alias spacecraft="add_to_list spacecraft"
 
