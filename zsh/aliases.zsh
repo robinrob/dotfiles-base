@@ -181,6 +181,8 @@ alias gimp="open -a Gimp"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdsp="cd $SPRITES_HOME"
+
 alias cdlst="cd $LISTS_HOME"
 
 alias cdzd="cd $ZDOT_HOME"
