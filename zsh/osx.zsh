@@ -764,12 +764,14 @@ chflags nohidden ~/Library/ 2> /dev/null
 # all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
 rm -rf ~/Library/Application\ Support/Dock/desktoppicture.db
 local -r DefaultDesktopLocation=/System/Library/CoreServices/DefaultDesktop.jpg
-if [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
-then
-  local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/MercuryDesktop.jpg
-else
-  local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/VenusDesktop.jpg
-fi
+
+case $HOSTNAME in
+  mercury) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/MercuryDesktop.png ;;
+    venus) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/VenusDesktop.jpg ;;
+     mars) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/MarsDesktop.jpg ;;
+        *) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/DefaultDesktop.jpg ;;
+esac
+
 sudo mv -f $DefaultDesktopLocation $DefaultDesktopLocation.backup
 sudo ln -s $BackgroundLocation $DefaultDesktopLocation
 
