@@ -403,6 +403,12 @@ alias kel="knife environment list"
 
 alias knl="knife node list"
 
+alias kul="knife upload"
+
+alias kud="knife upload databag"
+
+alias kdl="knife download"
+
 alias lst="cd_status $LOCAL_HOME"
 
 alias vcr="vpn Cloudreach"
@@ -885,6 +891,10 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias sfo="salesforce_object_search"
+
+alias "ls*"="lss"
+
 alias Cp="silent_cp"
 
 alias rkd="rake_deploy"
