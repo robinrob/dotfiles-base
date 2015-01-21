@@ -1,5 +1,12 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
-	"font_size": 16,
-  "file_exclude_patterns": ["*-meta.xml"]
+	"file_exclude_patterns":
+	[
+		"*-meta.xml"
+	],
+	"font_size": 21,
+	"ignored_packages":
+	[
+		"Vintage"
+	]
 }
