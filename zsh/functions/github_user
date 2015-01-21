@@ -1,3 +1,4 @@
-local -r User=$1; shift
-
-browser "https://github.com/$User?query=$(urlencode $@)"
+case $#@ in
+  1) browser "https://github.com/search?q=$(urlencode $@)&type=Users&utf8=%E2%9C%93"; print 1 ;;
+  *) local -r User=$1; shift; browser "https://github.com/$User?query=$(urlencode $@)"; print 2 ;;
+esac

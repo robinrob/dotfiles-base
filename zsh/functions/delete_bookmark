@@ -1,15 +1,27 @@
-BOOKMARK=$1
+local success=$FALSE
 
-if [[ -n $(bookmark_exists $BOOKMARK) ]]
+for bookmark in $*
+do
+  if [[ -n $(bookmark_exists $bookmark) ]]
+  then
+    delete_alias $bookmark > /dev/null
+
+    for bookmark_file in $bookmarks
+    do
+      gsed -i '/^'$bookmark'::/d' $bookmark_file
+    done
+
+    print "$(red)Bookmark $(yellow)$bookmark $(red)unbookmarked$(default)"
+    success=$TRUE
+  else
+    print "$(maganda)Bookmark $(yellow)$bookmark $(maganda)does not exist$(default)"
+  fi
+done
+
+if [[ $success == $TRUE ]]
 then
-  delete_alias $BOOKMARK > /dev/null
-
-  gsed -i '/^'$BOOKMARK'::/d' $BOOKMARKS_PATH
-  gsed -i '/^'$BOOKMARK'::/d' $WORKBOOKMARKS_PATH
-
   generate_all_bookmarks > /dev/null
-
-  print "$(red)Bookmark $(yellow)$BOOKMARK $(red)unbookmarked$(default)"
+  green "Bookmarks updated."
 else
-  print "$(maganda)Bookmark $(yellow)$BOOKMARK $(maganda)does not exist$(default)"
+  yellow "No bookmarks changed."
 fi

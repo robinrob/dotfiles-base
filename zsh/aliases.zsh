@@ -893,13 +893,19 @@ alias intr="intranet"
 
 alias ghu="github_user"
 
+alias ghs="github_search"
+
 alias bbu="bitbucket_user"
+
+alias bbs="bitbucket_search"
 
 alias grbk="grep_bookmarks"
 
 alias cpy="copy"
 
 alias ols="open \$(lastf)"
+
+alias mvls="mv \$(lastf)"
 
 alias wk="wiki"
 

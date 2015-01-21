@@ -1,0 +1,4 @@
+case $#@ in
+  0) browser "https://github.com"; ;;
+  *) browser "https://bitbucket.org/repo/all?name=$(urlencode $@)" ;;
+esac
