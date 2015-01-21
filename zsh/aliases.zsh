@@ -893,6 +893,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias ssd="sudo_shutdown"
+
 alias sfo="salesforce_object_search"
 
 alias "ls*"="lss"
