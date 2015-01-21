@@ -185,6 +185,8 @@ alias cdsp="cd $SPRITES_HOME"
 
 alias cdlst="cd $LISTS_HOME"
 
+alias cdls="cd $LISTS_HOME"
+
 alias cdzd="cd $ZDOT_HOME"
 
 alias cdgg="cd ~/Google\ Drive"
@@ -931,22 +933,6 @@ alias mls="edit_list"
 
 alias als="add_to_list"
 
-alias tls="take"
-
-alias cdld="cd \$(lsltr | tail -1)"
-
-alias dspdl="cd ~/Downloads; despace; cd - > /dev/null"
-
-alias gbk="generate_all_bookmarks"
-
-alias dbk="delete_bookmark"
-
-alias unbk="dbk"
-
-alias ubk="dbk"
-
-alias delbk="dbk"
-
 alias spacecraft="add_to_list spacecraft"
 
 alias atr="add_to_list $TO_READ"
@@ -972,6 +958,22 @@ alias quote="add_to_list quotes"
 alias jobs="add_to_list jobsites"
 
 alias comp="add_to_list computer_science"
+
+alias tls="take"
+
+alias cdld="cd \$(lsltr | tail -1)"
+
+alias dspdl="cd ~/Downloads; despace; cd - > /dev/null"
+
+alias gbk="generate_all_bookmarks"
+
+alias dbk="delete_bookmark"
+
+alias unbk="dbk"
+
+alias ubk="dbk"
+
+alias delbk="dbk"
 
 alias grc='get_record'
 
