@@ -901,7 +901,7 @@ alias "ls*"="lss"
 
 alias Cp="silent_cp"
 
-alias rkd="rake_deploy"
+alias rkd="rake_do"
 
 alias intr="intranet"
 

@@ -1,3 +1,0 @@
-LIST=$1
-
-cat $LISTS_HOME/$LIST.txt
