@@ -172,6 +172,8 @@ export INTELLIJ_IDEA="IntelliJ\ Idea\ $INTELLIJ_VERSION"
 
 export INTELLIJ_CONFIG="~/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/keymaps/Robin.xml"
 
+export INTELLIJ_COLORS=~/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/colors
+
 export FILES_HOME=~/Dropbox
 
 export PICTURES_HOME=~/Google\ Drive/pictures/pictures

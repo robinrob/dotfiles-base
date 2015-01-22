@@ -26,3 +26,6 @@ install IntelliJIdea $INTELLIJ_CONFIG
 # install PyCharm $PYCHARM_CONFIG
 #
 # install WebStorm $WEBSTORM_CONFIG
+
+green "\t${ITEM}Installing Jetbrains IDE Dark Solarized color scheme ..."
+cp $DOTFILES_BASE_HOME/config/files/intellij-colors-solarized/Solarized\ Dark.icls $INTELLIJ_COLORS/
