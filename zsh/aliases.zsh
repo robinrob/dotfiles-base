@@ -141,9 +141,9 @@ alias unz="unzip"
 
 alias dic="dict"
 
-alias intellij="open -a IntelliJ\ IDEA\ 13"
+alias intellij="open -a $INTELLIJ_IDEA"
 
-alias int="open -a IntelliJ\ IDEA\ 13"
+alias int="intellij"
 
 alias utorrent="open -a uTorrent"
 
