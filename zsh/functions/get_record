@@ -2,9 +2,7 @@ local -r Record=$1
 
 for file in $records
 do
-  line=$(grep "^$Record::" $file)
-
-  val=$(print ""$line"" | awk -F:: '{print $2}')
+  val=$(ggrep -Po "(?<=^($Record)::)(.+)" $file)
 
   [[ -n $val ]] && break;
 done

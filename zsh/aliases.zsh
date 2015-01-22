@@ -43,8 +43,6 @@ alias dt="date"
 
 alias crl="crontab -l"
 
-alias cre="crontab -e"
-
 alias less='less -m -N -g -i -J --underline-special --SILENT'
 
 alias more='less'
@@ -796,7 +794,7 @@ alias mrec="$EDITOR $RECORDS_PATH"
 
 alias mwr="$EDITOR $WORK_RECORDS_PATH"
 
-alias cre="cat $RECORDS_PATH"
+alias crec="cat $RECORDS_PATH"
 
 alias cwr="cat $WORK_RECORDS_PATH"
 
@@ -895,6 +893,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gre="get_record"
+
 alias reminderrobin="reminder robin@mrrobinsmith.com"
 
 alias reminderwork="reminder robin.smith@cloudreach.co.uk"

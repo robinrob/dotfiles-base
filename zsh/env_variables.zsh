@@ -166,7 +166,7 @@ export LOCAL_HOME=$RUBY_HOME/projects/local
 
 export TODO_HOME=$LOCAL_HOME/lib/todo.csv
 
-export INTELLIJ_CONFIG=~/Library/Preferences/IntelliJIdea13/keymaps/Robin.xml
+export INTELLIJ_CONFIG=~/Library/Preferences/IntelliJIdea14/keymaps/Robin.xml
 
 export FILES_HOME=~/Dropbox
 
