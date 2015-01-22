@@ -103,6 +103,8 @@ alias ssd="red 'Shutting DOWN!'; sudo shutdown -h now"
 
 alias ssr="red 'Shutting DOWN!'; sudo shutdown -r now"
 
+alias lgo="osascript -e 'tell application \"loginwindow\" to  «event aevtrlgo»'"
+
 alias cdsam="cd $COCOS_HOME/samples"
 
 alias cdt="cd $COCOS_HOME/samples/js-tests"
