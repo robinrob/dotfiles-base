@@ -538,9 +538,13 @@ alias rkp="rake_do git:push"
 ###############################################################################
 # Viewing and editing files
 ###############################################################################
+alias chi="cat ~/.zhistory"
+
+alias mhi="$EDITOR ~/.zhistory"
+
 alias mdo="$EDITOR $LISTS_HOME/doit.zsh"
 
-alias lslst="ls $LISTS_HOME"
+alias lsls="ls $LISTS_HOME"
 
 alias lls="ls $LISTS_HOME"
 
