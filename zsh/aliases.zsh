@@ -99,6 +99,10 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias ssd="red 'Shutting DOWN!'; sudo shutdown -h now"
+
+alias ssr="red 'Shutting DOWN!'; sudo shutdown -r now"
+
 alias cdsam="cd $COCOS_HOME/samples"
 
 alias cdt="cd $COCOS_HOME/samples/js-tests"
@@ -917,7 +921,11 @@ alias grbk="grep_bookmarks"
 
 alias cpy="copy"
 
-alias ols="open \$(lastf)"
+alias olst="open \$(lastf)"
+
+alias clst="cat \$(lastf)"
+
+alias mlst="$EDITOR \$(lastf)"
 
 alias mvls="mv \$(lastf)"
 
@@ -993,7 +1001,7 @@ alias cof="count_of_files"
 
 alias epb="printpb"
 
-alias cap="cat_print"
+alias cpb="cat_copy"
 
 alias enc="encrypt"
 
