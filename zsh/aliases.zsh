@@ -878,10 +878,6 @@ alias ad="address"
 
 alias ph="phone"
 
-alias mobileideas="$EDITOR $MERCURY_HOME/creative/mobile/ideas.txt"
-
-alias mi="mobileideas"
-
 alias screenshots="cd $SCREENSHOTS_HOME"
 
 alias lasts="cd $SCREENSHOTS_HOME && $LOCAL_HOME/bin/lastf -s $SCREENSHOT_NAME"
