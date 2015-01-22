@@ -658,17 +658,9 @@ alias mwbkal="m $WORKBOOKMARKS_ALIAS_PATH"
 
 alias edit=$EDITOR
 
-alias conf="$EDITOR ~/.ssh/config"
+alias caw="cat $AWS_CONFIG"
 
-alias maws="$EDITOR $AWS_CONFIG"
-
-alias caws="cat $AWS_CONFIG"
-
-alias eaws="$EDITOR $AWS_CONFIG"
-
-alias reminderrobin="reminder robin@mrrobinsmith.com"
-
-alias reminderwork="reminder robin.smith@cloudreach.co.uk"
+alias maw="$EDITOR $AWS_CONFIG"
 
 alias erec="$EDITOR $RECORDS_PATH"
 
@@ -897,6 +889,10 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias reminderrobin="reminder robin@mrrobinsmith.com"
+
+alias reminderwork="reminder robin.smith@cloudreach.co.uk"
+
 alias ssd="sudo_shutdown"
 
 alias sfo="salesforce_object_search"
@@ -909,13 +905,13 @@ alias rkd="rake_deploy"
 
 alias intr="intranet"
 
-alias ghu="github_user"
+alias gh="github"
 
-alias ghs="github_search"
+alias bb="bitbucket"
 
-alias bbu="bitbucket_user"
+alias ghu="github_user_search"
 
-alias bbs="bitbucket_search"
+alias bbu="bitbucket_user_search"
 
 alias grbk="grep_bookmarks"
 

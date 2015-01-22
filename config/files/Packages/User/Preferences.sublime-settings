@@ -4,7 +4,7 @@
 	[
 		"*-meta.xml"
 	],
-	"font_size": 21,
+	"font_size": 15,
 	"ignored_packages":
 	[
 		"Vintage"
