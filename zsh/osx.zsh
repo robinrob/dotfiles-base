@@ -296,13 +296,15 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
+# Decrease grid spacing for icons on the desktop!!!
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 1" ~/Library/Preferences/com.apple.finder.plist
 # Increase grid spacing for icons on the desktop and in other icon views
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
 
-# Increase the size of icons on the desktop and in other icon views
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
+# Decrease the size of icons on the desktop!!!
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 16" ~/Library/Preferences/com.apple.finder.plist
+# Increase the size of icons in other icon views
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
 
@@ -763,13 +765,13 @@ chflags nohidden ~/Library/ 2> /dev/null
 # Set default wallpaper image. `DefaultDesktop.jpg` is already a symlink, and
 # all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
 rm -rf ~/Library/Application\ Support/Dock/desktoppicture.db
-local -r DefaultDesktopLocation=/System/Library/CoreServices/DefaultDesktop.jpg
+local +r DefaultDesktopLocation=/System/Library/CoreServices/DefaultDesktop.jpg
 
 case $HOSTNAME in
-  mercury) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/MercuryDesktop.png ;;
-    venus) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/VenusDesktop.jpg ;;
-     mars) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/MarsDesktop.jpg ;;
-        *) local -r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/DefaultDesktop.jpg ;;
+  mercury) local +r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/MercuryDesktop.png ;;
+    venus) local +r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/VenusDesktop.jpg ;;
+     mars) local +r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/MarsDesktop.jpg ;;
+        *) local +r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/DefaultDesktop.jpg ;;
 esac
 
 sudo mv -f $DefaultDesktopLocation $DefaultDesktopLocation.backup

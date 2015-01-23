@@ -889,6 +889,10 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias killp="kill_processes"
+
+alias pdf="print_default"
+
 alias gre="get_record"
 
 alias reminderrobin="reminder robin@mrrobinsmith.com"
