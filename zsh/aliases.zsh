@@ -5,6 +5,9 @@
 ###############################################################################
 # Shell commands
 ###############################################################################
+# Just a joke to over-compensate for all the thenners in the world!
+alias than="then"
+
 alias t="touch"
 
 alias pcregrep='pcregrep --color=auto'
@@ -993,7 +996,7 @@ alias td="todo"
 
 alias rld="reload"
 
-alias grf="grep_all"
+alias gral="grep_all"
 
 alias aof="green \$(alphabet_of_files)"
 
