@@ -55,9 +55,9 @@ fi
 ###############################################################################
 # Directories
 ###############################################################################
-export GOOGLE_DRIVE=~/Google\ Drive
+export GOOGLE_DRIVE=$HOME/Google\ Drive
 
-export PROG_HOME=~/Programming/robin
+export PROG_HOME=$HOME/Programming/robin
 
 export PYTHON_HOME=$PROG_HOME/python
 
@@ -128,7 +128,7 @@ export RUBY_TEMPLATES_HOME=$RUBY_HOME/templates
 export RUBYAPP_HOME=$RUBY_HOME/projects/ruby-app
 
 # export RAKELIB_HOME=$RUBY_HOME/projects/rakelib
-export RAKELIB_HOME=~/.rake
+export RAKELIB_HOME=$HOME/.rake
 
 export RAKELIB="$RAKELIB_HOME"
 
@@ -152,11 +152,11 @@ export EC2_HOME=/usr/local/lib/ec2-api-tools-1.6.11.0
 
 export GAM_PATH=/usr/local/Library/gam
 
-export WORK_HOME=~/Programming/work
+export WORK_HOME=$HOME/Programming/work
 
 export WORK_RUBY_HOME=/Users/robinsmith/Programming/robin/ruby
 
-export WORK_PYTHON_HOME=~/Programming/work/python
+export WORK_PYTHON_HOME=$HOME/Programming/work/python
 
 export NOCCHEF=$WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef
 
@@ -170,15 +170,15 @@ export INTELLIJ_VERSION=14
 
 export INTELLIJ_IDEA="IntelliJ\ Idea\ $INTELLIJ_VERSION"
 
-export INTELLIJ_CONFIG="~/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/keymaps/Robin.xml"
+export INTELLIJ_CONFIG="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/keymaps/Robin.xml"
 
-export INTELLIJ_COLORS=~/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/colors
+export INTELLIJ_COLORS=$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/colors
 
-export FILES_HOME=~/Dropbox
+export FILES_HOME=$HOME/Dropbox
 
-export PICTURES_HOME=~/Google\ Drive/pictures/pictures
+export PICTURES_HOME=$HOME/Google\ Drive/pictures/pictures
 
-export PHOTOS_HOME=~/Google\ Drive/pictures/photos
+export PHOTOS_HOME=$HOME/Google\ Drive/pictures/photos
 
 export HOSTFILES_HOME=$FILES_HOME/$HOSTNAME
 
@@ -200,7 +200,7 @@ export LISTS_HOME=$MERCURY_HOME/docs/lists
 
 export RDOCS_HOME=$RFILES_HOME/docs
 
-export DOWNLOADS_HOME='~/Downloads'
+export DOWNLOADS_HOME='$HOME/Downloads'
 
 export IMPORTANT_HOME=$DOCS_HOME/IMPORTANT
 
@@ -222,7 +222,7 @@ export DATA_LOADER_PATH=/Applications/LexiLoader_v30.app/Contents/Resources/Java
 
 export USEFUL_HOME=$DOCS_HOME/useful
 
-export AWS_CONFIG="~/.aws/config"
+export AWS_CONFIG="$HOME/.aws/config"
 
 export KITCHENPLAN_HOME=/opt/kitchenplan
 
@@ -230,14 +230,14 @@ export RECORDS_HOME=$MERCURY_HOME/docs/IMPORTANT/records
 
 export WORK_RECORDS_HOME=$VENUS_HOME/docs/IMPORTANT/records
 
-export RECEIPTS_HOME=~/Google\ Drive/expenses/
+export RECEIPTS_HOME=$HOME/Google\ Drive/expenses/
 
-export EXPENSES_HOME=~/Google\ Drive/expenses/
+export EXPENSES_HOME=$HOME/Google\ Drive/expenses/
 
 # This must NOT be wrapped in quotes or the whitespace-escaping in the path does not work!!
 export CAMERA_HOME=$FILES_HOME/Camera\ Uploads
 
-export TRASH_HOME=~/.Trash
+export TRASH_HOME=$HOME/.Trash
 
 export CANADA_HOME=$MERCURY_HOME/docs/IMPORTANT/canada
 
@@ -292,7 +292,7 @@ BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH
 ###############################################################################
 # Applications
 ###############################################################################
-export SUBLIMETEXT_HOME="~/Library/Application\ Support/Sublime\ Text\ 3/"
+export SUBLIMETEXT_HOME="$HOME/Library/Application\ Support/Sublime\ Text\ 3/"
 
 ###############################################################################
 # Colors

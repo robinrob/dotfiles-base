@@ -8,13 +8,11 @@ function install {
   FILEPATH=$2
 
   print "\t${ITEM}$(green Installing) $(yellow $LABEL) $(green config to) $(yellow $FILEPATH) $(green ...)"
-	cp $FILEPATH $FILEPATH.backup 2> /dev/null
+	gcp $FILEPATH $FILEPATH.backup 2> /dev/null
 
 	# For some reason the evals were required here
-	cmd="rm -f $FILEPATH"
-	eval $cmd
-	cmd="cp $DOTFILES_BASE_HOME/config/files/Robin.jetbrains.xml $FILEPATH"
-	eval $cmd
+	rm -f $FILEPATH
+	gcp "$DOTFILES_BASE_HOME/config/files/Robin.jetbrains.xml" "$FILEPATH"
 }
 
 green "Installing Jetbrains IDE config files ..."
@@ -28,4 +26,4 @@ install IntelliJIdea $INTELLIJ_CONFIG
 # install WebStorm $WEBSTORM_CONFIG
 
 green "\t${ITEM}Installing Jetbrains IDE Dark Solarized color scheme ..."
-cp $DOTFILES_BASE_HOME/config/files/intellij-colors-solarized/Solarized\ Dark.icls $INTELLIJ_COLORS/
+gcp $DOTFILES_BASE_HOME/config/files/intellij-colors-solarized/Solarized\ Dark.icls $INTELLIJ_COLORS/
