@@ -428,6 +428,8 @@ alias vdc="vpn_disconnect"
 ###############################################################################
 # Git
 ###############################################################################
+alias gld="git log -p --topo-order --stat --pretty=format:\${_git_log_medium_format}"
+
 alias gcam="git commit --amend -m"
 
 alias grrn="git remote rename"
@@ -906,7 +908,7 @@ alias ssd="sudo_shutdown"
 
 alias sfo="salesforce_object_search"
 
-alias sfc="salesforce_class_search"
+alias sfc="salesforce_object_search"
 
 alias "ls*"="lss"
 

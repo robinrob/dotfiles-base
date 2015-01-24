@@ -71,3 +71,5 @@ unalias cls 2> /dev/null
 unalias gcam 2> /dev/null
 
 unalias gcp 2> /dev/null
+
+unalias gld 2> /dev/null

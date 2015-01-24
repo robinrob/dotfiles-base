@@ -16,9 +16,9 @@ export TRUE_VALUE="yes"
 
 export TRUE="yes"
 
-export FALSE="no"
+export FALSE=no
 
-export TO_DO=do
+export TO_DO="do"
 
 export TO_READ=read
 
@@ -38,10 +38,10 @@ export VENUS_HOSTNAME='venus'
 
 if [[ $HOSTNAME == "venus" ]]
 then
-  export PGDATA=/Users/robinsmith/Library/Application\ Support/Postgres/var-9.3
+  export PGDATA="$HOME/Library/Application Support/Postgres/var-9.3"
 elif [[ $HOSTNAME == "mercury" ]]
 then
-  export PGDATA=/Users/msl/Library/Containers/com.heroku.postgres/Data/Library/Application\ Support/Postgres/var
+  export PGDATA="$HOME/Library/Containers/com.heroku.postgres/Data/Library/Application Support/Postgres/var"
 fi
 
 if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
@@ -55,9 +55,9 @@ fi
 ###############################################################################
 # Directories
 ###############################################################################
-export GOOGLE_DRIVE=$HOME/Google\ Drive
+export GOOGLE_DRIVE="$HOME/Google Drive"
 
-export PROG_HOME=$HOME/Programming/robin
+export PROG_HOME="$HOME/Programming/robin"
 
 export PYTHON_HOME=$PROG_HOME/python
 
@@ -169,6 +169,8 @@ export TODO_HOME=$LOCAL_HOME/lib/todo.csv
 export INTELLIJ_VERSION=14
 
 export INTELLIJ_IDEA="IntelliJ\ Idea\ $INTELLIJ_VERSION"
+
+export INTELLIJ_IDEA_HOME="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION"
 
 export INTELLIJ_CONFIG="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/keymaps/Robin.xml"
 
@@ -292,7 +294,8 @@ BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH
 ###############################################################################
 # Applications
 ###############################################################################
-export SUBLIMETEXT_HOME="$HOME/Library/Application\ Support/Sublime\ Text\ 3/"
+export SUBLIMETEXT_HOME="$HOME/Library/Application Support/Sublime Text 3"
+
 
 ###############################################################################
 # Colors
@@ -317,7 +320,7 @@ export LESSC_PATH="/usr/local/lib/node_modules/less/bin/lessc"
 ###############################################################################
 export COCOS_HOME="/usr/local/Library/cocos2d-js-v3.2"
 
-export COCOS_CONSOLE_ROOT="$COCOS_HOME/tools/cocos2d-console/bin"
+export COCOS_CONSOLE_ROOT=$COCOS_HOME/tools/cocos2d-console/bin
 
 export ANT_ROOT=/usr/local/bin
 

@@ -1,7 +1,9 @@
 GREP_EXPRESSION=$1
 FIND_EXPRESSION=$2
 
-for file in $(gfind . -name $FIND_EXPRESSION)
+IFS="
+"
+for file in $(gfind . -follow -name "$FIND_EXPRESSION" -type f)
 do
   grep=$(grep $GREP_EXPRESSION $file)
   if [[ -n $grep ]]
