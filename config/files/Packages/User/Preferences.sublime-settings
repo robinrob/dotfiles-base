@@ -1,11 +1,20 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
-	"file_exclude_patterns": [ "*-meta.xml" ],
-	"font_size": 15,
-	"ignored_packages": [ "Vintage" ],
-	"highlight_line": true,
-	// Valid values are "smooth", "phase", "blink", "wide" and "solid".
+	"caret": "#FF0000",
 	"caret_style": "solid",
-	"wide_caret": true,
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"file_exclude_patterns":
+	[
+		"*-meta.xml"
+	],
+	"font_size": 15,
+	"highlight_line": true,
 	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"wide_caret": true,
+	"caret_extra_bottom": 0,
+	"caret_extra_top": 0,
+	"caret_extra_width": 10
 }
