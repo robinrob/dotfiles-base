@@ -906,6 +906,8 @@ alias ssd="sudo_shutdown"
 
 alias sfo="salesforce_object_search"
 
+alias sfc="salesforce_class_search"
+
 alias "ls*"="lss"
 
 alias Cp="silent_cp"

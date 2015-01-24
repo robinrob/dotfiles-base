@@ -2,5 +2,10 @@
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"file_exclude_patterns": [ "*-meta.xml" ],
 	"font_size": 15,
-	"ignored_packages": [ "Vintage" ]
+	"ignored_packages": [ "Vintage" ],
+	"highlight_line": true,
+	// Valid values are "smooth", "phase", "blink", "wide" and "solid".
+	"caret_style": "solid",
+	"wide_caret": true,
+	"highlight_modified_tabs": true,
 }
