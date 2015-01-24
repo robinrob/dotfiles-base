@@ -709,7 +709,7 @@ alias cmd="$EDITOR $TEMP_HOME/commands.txt"
 
 alias window="open /Users/robinsmith/Dropbox/Camera\ Uploads/gif/window.gif"
 
-alias emptytrash="sudo rm -rf ~/.Trash/*"
+alias cleantrash="sudo rm -rf ~/.Trash; mkdir ~/.Trash"
 
 alias cgi="cat .gitignore"
 

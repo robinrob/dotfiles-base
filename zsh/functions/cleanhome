@@ -1,10 +1,20 @@
 cd ~
-IFS='
-'
-for file in $(gfind . -maxdepth 1 -type f -not -path '*/\.*')
+
+IFS="
+"
+
+Result1=($(gfind . -maxdepth 1 -type f -not -path '*/\.*' | gxargs -0))
+Result2=($(gfind . -maxdepth 1 -regex '.*/[a-z0-9].*'))
+
+local -U Result
+Result=($Result1 $Result2)
+
+
+for file in $Result
 do
-	green "Moving $file to $TRASH_HOME"
-  cp "${(q)file}" ~/.Trash
+  print "$(green Moving) $(yellow $file) $(green to $TRASH_HOME)"
+  mv $file ~/.Trash
 done
+
 cd -
 
