@@ -1,14 +1,30 @@
 GREP_EXPRESSION=$1
 FIND_EXPRESSION=$2
 
+
 IFS="
 "
-for file in $(gfind . -follow -name "$FIND_EXPRESSION" -type f)
-do
-  grep=$(grep $GREP_EXPRESSION $file)
-  if [[ -n $grep ]]
-  then
-    yellow $file
-    print $(trim $grep) | grep $GREP_EXPRESSION
-  fi
-done
+
+if [[ -n $3 ]]
+then
+  for file in $(gfind . -maxdepth $3 -follow -name $FIND_EXPRESSION -type f)
+  do
+    grep=$(grep $GREP_EXPRESSION $file)
+    if [[ -n $grep ]]
+    then
+      yellow $file
+      print $(trim $grep) | grep $GREP_EXPRESSION
+    fi
+  done
+
+else
+  for file in $(gfind . -follow -name $FIND_EXPRESSION -type f)
+  do
+    grep=$(grep $GREP_EXPRESSION $file)
+    if [[ -n $grep ]]
+    then
+      yellow $file
+      print $(trim $grep) | grep $GREP_EXPRESSION
+    fi
+  done
+fi
