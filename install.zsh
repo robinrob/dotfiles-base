@@ -46,6 +46,10 @@ green "Installing SublimeText3 configuration ..."
 $ZDOT_HOME/sublimetext.zsh
 
 
+green "Copying custom screensaver images to new system folder ..."
+$ZDOT_HOME/screensavers.zsh
+
+
 green "Generating bookmarks ..."
 generate_all_bookmarks > /dev/null
 

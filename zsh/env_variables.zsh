@@ -208,8 +208,6 @@ export IMPORTANT_HOME=$DOCS_HOME/IMPORTANT
 
 export KNOWLEDGE_HOME=$DOCS_HOME/knowledge
 
-export BACKGROUNDS_HOME=$HOSTFILES_HOME/backgrounds
-
 export SCREENSAVERS_HOME=$HOSTFILES_HOME/screensavers
 
 export SCREENSHOTS_HOME=$HOSTFILES_HOME/screenshots
@@ -257,11 +255,11 @@ export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/22.6.2/
 
 export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
 
-
+export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/dotfiles/backgrounds
 ###############################################################################
 # Files
 ###############################################################################
-export DEFAULT_DESKTOP="$DOTFILES_BASE_HOME/config/files/DefaultDesktop.jpg"
+export DEFAULT_DESKTOP="$BACKGROUNDS_HOME/DefaultDesktop.jpg"
 
 export DEFAULT_DESKTOP_LOCATION="/System/Library/CoreServices/DefaultDesktop.jpg"
 

@@ -241,7 +241,7 @@ defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Finder: show hidden files by default
-#defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -768,10 +768,10 @@ rm -rf ~/Library/Application\ Support/Dock/desktoppicture.db
 local +r DefaultDesktopLocation=/System/Library/CoreServices/DefaultDesktop.jpg
 
 case $HOSTNAME in
-  mercury) local +r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/MercuryDesktop.png ;;
-    venus) local +r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/VenusDesktop.jpg ;;
-     mars) local +r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/MarsDesktop.jpg ;;
-        *) local +r BackgroundLocation=$DOTFILES_BASE_HOME/config/files/DefaultDesktop.jpg ;;
+  mercury) local +r BackgroundLocation=$BACKGROUNDS_HOME/MercuryDesktop.png ;;
+    venus) local +r BackgroundLocation=$BACKGROUNDS_HOME/VenusDesktop.jpg ;;
+     mars) local +r BackgroundLocation=$BACKGROUNDS_HOME/MarsDesktop.jpg ;;
+        *) local +r BackgroundLocation=$BACKGROUNDS_HOME/DefaultDesktop.jpg ;;
 esac
 
 sudo mv -f $DefaultDesktopLocation $DefaultDesktopLocation.backup
