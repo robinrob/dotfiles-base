@@ -428,6 +428,8 @@ alias vdc="vpn_disconnect"
 ###############################################################################
 # Git
 ###############################################################################
+alias gcdl="git ls-files --deleted | xargs git checkout"
+
 alias gld="git log -p --topo-order --stat --pretty=format:\${_git_log_medium_format}"
 
 alias gcam="git commit --amend -m"

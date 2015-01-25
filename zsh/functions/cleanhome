@@ -7,16 +7,16 @@ local Result1
 Result1=($(gfind . -maxdepth 1 -type f -not -path '*/\.*' | gxargs -0))
 
 local Result2
-Result2=($(gfind . -maxdepth 1 -regex '.*/[a-z0-9].*'))
+Result=($(gfind . -maxdepth 1 -regex '.*/[a-z0-9].*'))
 
-local -U Result
+local -a Result
 Result=($Result1 $Result2)
 
 
 for file in $Result
 do
   print "$(green Moving) $(yellow $file) $(green to $TRASH_HOME)"
-  mv $file ~/.Trash
+  # mv $file ~/.Trash
 done
 
 cd - > /dev/null

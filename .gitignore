@@ -2,3 +2,4 @@ zsh/bookmarks.zsh
 zsh/work_bookmarks.zsh
 config/files/Packages/User/Package\ Control.last-run
 config/files/Packages/User/Package\ Control.cache
+*.DS_Store

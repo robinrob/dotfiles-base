@@ -11,6 +11,7 @@
 	[
 		"MavensMate",
 		"Package Control",
-		"PackageResourceViewer"
+		"PackageResourceViewer",
+		"VIM Navigation"
 	]
 }
