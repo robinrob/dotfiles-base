@@ -1,7 +1,7 @@
 source ../../colors.zsh
 
 local root=test_dir
-local result
+local result=0
 
 function setup {
   mkdir $root

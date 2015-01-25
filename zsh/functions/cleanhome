@@ -20,7 +20,7 @@ Result=($(gfind . -maxdepth 1 -regex '.*/[a-z0-9].*'))
 for file in $Result
 do
   print "$(green Moving) $(yellow $file) $(green to $TRASH_HOME)"
-  # mv $file ~/.Trash
+  mv $file ~/.Trash
 done
 
 cd - > /dev/null
