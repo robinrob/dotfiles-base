@@ -767,15 +767,8 @@ chflags nohidden ~/Library/ 2> /dev/null
 rm -rf ~/Library/Application\ Support/Dock/desktoppicture.db
 local +r DefaultDesktopLocation=/System/Library/CoreServices/DefaultDesktop.jpg
 
-case $HOSTNAME in
-  mercury) local +r BackgroundLocation=$BACKGROUNDS_HOME/MercuryDesktop.png ;;
-    venus) local +r BackgroundLocation=$BACKGROUNDS_HOME/VenusDesktop.jpg ;;
-     mars) local +r BackgroundLocation=$BACKGROUNDS_HOME/MarsDesktop.jpg ;;
-        *) local +r BackgroundLocation=$BACKGROUNDS_HOME/DefaultDesktop.jpg ;;
-esac
-
 sudo mv -f $DefaultDesktopLocation $DefaultDesktopLocation.backup
-sudo ln -s $BackgroundLocation $DefaultDesktopLocation
+sudo ln -s $BACKGROUNDS_HOME/$HOSTNAME.jpg $DefaultDesktopLocation
 
 # Alternate method:
 # osascript -e "tell application \"System Events\" to set picture of every desktop to \"$DEFAULT_DESKTOP\""
