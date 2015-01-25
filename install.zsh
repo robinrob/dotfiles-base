@@ -50,4 +50,8 @@ green "Generating bookmarks ..."
 generate_all_bookmarks > /dev/null
 
 
+# green "Installing homebrew packages ..."
+# $ZDOT_HOME/homebrew.zsh
+
+
 green "Done."

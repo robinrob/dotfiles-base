@@ -1,2 +1,2 @@
-trans "$@"
+/usr/local/bin/trans "$*"
 

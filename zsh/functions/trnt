@@ -1,2 +1,2 @@
-trans :tl "$@"
+/usr/local/bin/trans :tl "$@"
 

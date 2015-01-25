@@ -1,7 +1,7 @@
-source ../../colors.zsh
+source unittest.zsh
 
 local root=test_dir
-local result=0
+
 
 function setup {
   mkdir $root
@@ -32,39 +32,32 @@ function teardown {
   rm -rf $root
 }
 
-function assert {
-  assertion=$1
-  msg=$2
-
-  (eval $assertion) || (print "$(red Assertion failure:) $(cyan $msg)" && return 1)
-}
-
-
-function runtest {
-  test=$1
-
-  print "Running test: $(yellow $test) ..."
-
-  (eval $test) || (result=$?; red "Failure in $test")
-}
-
 
 function shouldRemoveUnimportantFiles {
   setup
 
   cleanhome $root > /dev/null
 
-  assert "[ ! -f $root/unimportant_file ]" "File $root/unimportant_file should not exist"
-  result=$?
+  assertFileDoesNotExist "$root/unimportant_file" "File $root/unimportant_file should not exist"
 
   teardown
-
-  return $result
 }
 
 
-# shouldRemoveUnimportantFiles || red "Failure in shouldRemoveUnimportantFiles"
+function shouldRemoveUnimportantFilesWithSpaces {
+  setup
+
+  cleanhome $root > /dev/null
+
+  assertFileDoesNotExist "$root/unimportant file" "File $root/unimportant\ file should not exist"
+
+  teardown
+}
+
+
+suite
 
 runtest shouldRemoveUnimportantFiles
+runtest shouldRemoveUnimportantFilesWithSpaces
 
-[[ $result == 0 ]] && green "All tests passed!"
+stats

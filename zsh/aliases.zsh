@@ -158,8 +158,6 @@ alias mvim="mvim -p"
 
 alias scc="scalac"
 
-alias tran="trans :tl"
-
 alias lessc="$LESSC_PATH"
 
 alias lc="lessc"
