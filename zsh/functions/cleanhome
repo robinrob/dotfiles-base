@@ -1,16 +1,20 @@
-cd ~
+if [[ -n $1 ]]
+then
+  local -r SearchRoot=$1
+else
+  local -r SearchRoot=$HOME
+fi
+
+# Fuck off!
+[[ $SearchRoot == "/" ]] && red "No fucking way!" && return 1
+
+cd $SearchRoot || return 1
 
 IFS="
 "
 
-local Result1
-Result1=($(gfind . -maxdepth 1 -type f -not -path '*/\.*' | gxargs -0))
-
-local Result2
+local Result
 Result=($(gfind . -maxdepth 1 -regex '.*/[a-z0-9].*'))
-
-local -a Result
-Result=($Result1 $Result2)
 
 
 for file in $Result

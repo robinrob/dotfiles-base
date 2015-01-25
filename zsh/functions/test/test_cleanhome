@@ -1,0 +1,70 @@
+source ../../colors.zsh
+
+local root=test_dir
+local result
+
+function setup {
+  mkdir $root
+
+  # Stuff that should not be deleted
+  touch $root/ImportantFile
+  touch $root/Important\ File
+
+  mkdir $root/ImportantDir
+  mkdir $root/Important\ Dir
+
+  # Stuff that should be deleted
+  touch $root/unimportant_file
+  touch $root/unimportant\ file
+
+  mkdir $root/unimportant_dir
+  mkdir $root/unimportant\ dir
+
+  ln -s $root/unimportant_file $root/unimportant_symbolic_link
+  ln -s $root/unimportant_file $root/unimportant\ symbolic\ link
+
+  fpath=(../)
+  autoload -U +X cleanhome
+}
+
+
+function teardown {
+  rm -rf $root
+}
+
+function assert {
+  assertion=$1
+  msg=$2
+
+  (eval $assertion) || (print "$(red Assertion failure:) $(cyan $msg)" && return 1)
+}
+
+
+function runtest {
+  test=$1
+
+  print "Running test: $(yellow $test) ..."
+
+  (eval $test) || (result=$?; red "Failure in $test")
+}
+
+
+function shouldRemoveUnimportantFiles {
+  setup
+
+  cleanhome $root > /dev/null
+
+  assert "[ ! -f $root/unimportant_file ]" "File $root/unimportant_file should not exist"
+  result=$?
+
+  teardown
+
+  return $result
+}
+
+
+# shouldRemoveUnimportantFiles || red "Failure in shouldRemoveUnimportantFiles"
+
+runtest shouldRemoveUnimportantFiles
+
+[[ $result == 0 ]] && green "All tests passed!"
