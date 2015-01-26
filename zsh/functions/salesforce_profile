@@ -1,0 +1,5 @@
+typeset -A profiles
+
+profiles=('cr support user' '00e2000000120BL')
+
+print $profiles['cr support user']

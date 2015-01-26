@@ -10,14 +10,14 @@ cat $BookmarksPath | while read line ; do
 
   local +r Name=$Parts[1]
 
-  if [[ -n $parts[2] ]]
+  if [[ $#Parts == 3 ]]
   then
     local +r Browser=$Parts[2]
+    local +r Url=$Parts[3]
   else
     local +r Browser='browser'
+    local +r Url=$Parts[2]
   fi
-
-  local +r Url=$Parts[3]
 
   local +r  Alias="browse_copy $Browser '$Url'"
 

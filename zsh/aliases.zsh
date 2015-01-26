@@ -894,6 +894,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias ols="open \$(lastf)"
+
 alias killp="kill_processes"
 
 alias pdf="print_default"
