@@ -1,29 +1,23 @@
-typeset BOOKMARKS_PATH=$1
-typeset NAME=$2
-typeset URL=$3
-typeset BROWSER=$4
-
-
-if [ -z "$BROWSER" ]
+local -r BookmarksPath=$1
+local -r Name=$2
+local -r  Url=$3
+if [[ -n $4 ]]
 then
-  if [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
-  then
-    BROWSER="safari"
-  elif [[ $HOSTNAME == $VENUS_HOSTNAME ]]
-  then
-    BROWSER="chrome"
-  fi
+  local +r Browser=$4
+else
+  local -r Browser='browser'
 fi
 
-if [[ -z $(bookmark_exists $NAME) ]]
+
+if [[ -z $(bookmark_exists $Name) ]]
 then
-  print "$NAME::$BROWSER::$URL" >> $BOOKMARKS_PATH
+  print "$Name::$Browser::$Url" >> $BookmarksPath
 
   generate_all_bookmarks > /dev/null
 
-  print -z $NAME
+  print -z $Name
 
-  print "$(yellow)$NAME $(green)bookmarked as $(yellow)$URL $(green)with browser $(yellow)$BROWSER"
+  print "$(yellow $Name) $(green bookmarked as) $(yellow $Url) $(green with browser) $(yellow $Browser)"
 else
-  print "$(red)Bookmark $(yellow)$NAME $(red)exists$(default)"
+  print "$(red Bookmark) $(yellow $Name) $(red exists)"
 fi
