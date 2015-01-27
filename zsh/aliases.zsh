@@ -599,6 +599,8 @@ alias mbrew="$EDITOR $BREWLIST"
 
 alias cbrew="cat $BREWLIST"
 
+alias gbrew="cat $BREWLIST | grep -i"
+
 alias mpr="$EDITOR ~/.zsh.prompts/prompt_robin_setup.zsh"
 
 alias cpr="cat ~/.zsh.prompts/prompt_robin_setup.zsh"
@@ -637,13 +639,11 @@ alias vzsh="vim ~/.zshrc"
 
 alias mzsh="$EDITOR ~/.zshrc"
 
-alias mzen="$EDITOR ~/.zshenv"
-
-alias ezsh="edit ~/.zshrc"
-
-alias ezs="ezsh"
-
 alias czsh="cat ~/.zshrc"
+
+alias gzsh="cat ~/.zshrc | grep -i"
+
+alias mzen="$EDITOR ~/.zshenv"
 
 alias bmk="bookmark"
 
@@ -894,6 +894,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias rp="source_repo"
+
 alias ols="open \$(lastf)"
 
 alias killp="kill_processes"
@@ -953,6 +955,8 @@ alias cls="cat_list"
 alias mls="edit_list"
 
 alias als="add_to_list"
+
+alias grls="grep_list"
 
 alias spacecraft="add_to_list spacecraft"
 

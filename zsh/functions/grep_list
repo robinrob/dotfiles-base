@@ -1,0 +1,4 @@
+local +r List=$1
+local +r GrepExpression=$2
+
+grep $GrepExpression $LISTS_HOME/$List.txt
