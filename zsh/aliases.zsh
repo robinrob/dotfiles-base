@@ -180,12 +180,14 @@ alias adobe="$ADOBE_PATH"
 
 alias m="$EDITOR"
 
-alias gimp="open -a Gimp"
+alias gimp="open -a Gimp\ 2"
 
 
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdbg="cd $BACKGROUNDS_HOME"
+
 alias cdsp="cd $SPRITES_HOME"
 
 alias cdlst="cd $LISTS_HOME"
