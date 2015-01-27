@@ -1,2 +1,0 @@
-open -a Safari "http://my.safaribooksonline.com/search?q=$(urlencode $@)"
-

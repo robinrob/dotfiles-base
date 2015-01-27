@@ -256,6 +256,9 @@ export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/22.6.2/
 export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
 
 export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/dotfiles/backgrounds
+
+export SCREENSAVERS_HOME="/Library/Screen\ Savers/Default\ Collections"
+
 ###############################################################################
 # Files
 ###############################################################################

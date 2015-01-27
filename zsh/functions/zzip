@@ -1,3 +1,0 @@
-DIR=$1
-
-zip $DIR.zip -r $DIR

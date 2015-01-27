@@ -140,6 +140,10 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ###############################################################################
+alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+
+alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+
 alias unz="unzip"
 
 alias dic="dict"
@@ -186,6 +190,8 @@ alias gimp="open -a Gimp\ 2"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdscre="cd $SCREENSAVERS_HOME"
+
 alias cdbg="cd $BACKGROUNDS_HOME"
 
 alias cdsp="cd $SPRITES_HOME"
@@ -896,6 +902,12 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias sf="salesforce_search"
+
+alias sfs="salesforce_search"
+
+alias bk="safari_books_search"
+
 alias rp="source_repo"
 
 alias ols="open \$(lastf)"

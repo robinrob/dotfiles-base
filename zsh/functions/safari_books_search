@@ -1,0 +1,6 @@
+if (( #@ > 0 ))
+then
+  safari "http://my.safaribooksonline.com/search?q=$(urlencode $@)"
+else
+  safari 'http://my.safaribooksonline.com/'
+fi
