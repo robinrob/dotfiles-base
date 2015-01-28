@@ -8,8 +8,6 @@
 # Just a joke to over-compensate for all the thenners in the world!
 alias than="then"
 
-alias t="touch"
-
 alias pcregrep='pcregrep --color=auto'
 
 alias rmrf="rm -rf"
@@ -1040,7 +1038,9 @@ alias een="edit_env"
 
 alias ppe="pretty_print_env"
 
-alias h="history"
+alias h="head"
+
+alias t="tail"
 
 alias dsp="despace"
 

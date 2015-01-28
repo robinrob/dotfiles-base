@@ -109,9 +109,9 @@ export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
 export JV_HOME=$PROG_HOME/java
 
-export JS_LIB_HOME=$JAVASCRIPT_HOME/lib
+export JS_HOME=$PROG_HOME/javascript
 
-export JS_HOME=$JAVASCRIPT_HOME
+export JS_LIB_HOME=$JS_HOME/lib
 
 export SPRITES_HOME=$JS_HOME/projects/sprites
 
