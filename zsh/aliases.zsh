@@ -206,7 +206,7 @@ alias cddocs="cd_dir $DOCS_HOME"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
-alias cdmr="cd_dir ${MRROBINSMITHCOM_HOME}-dev"
+alias cdmr="cd_dir $WORK_HOME/java/br-reportapp"
 
 alias cdbp="cd_dir $MRROBINSMITHCOM_HOME/public/blogposts"
 
@@ -623,7 +623,7 @@ alias rsos="source $ZDOT_HOME/osx.zsh"
 
 alias mssh="$EDITOR ~/.ssh/config"
 
-alias mkh="$EDITOR ~/.ssh/known_hosts"
+alias mho="$EDITOR ~/.ssh/known_hosts"
 
 alias mvrc="$EDITOR ~/.vimrc"
 
@@ -632,8 +632,6 @@ alias cvrc="cat ~/.vimrc"
 alias mrvm="$EDITOR ~/.rvmrc"
 
 alias mrvmrc="$EDITOR .rvmrc"
-
-alias mconf="mssh"
 
 alias essh="edit ~/.ssh/config"
 
@@ -737,7 +735,7 @@ alias fbs="fab save"
 
 alias fcl="fab clean"
 
-alias cgc="cat .git/config"
+alias cgc="cat ~/.gitconfig"
 
 alias mgc="$EDITOR ~/.gitconfig"
 
@@ -908,7 +906,7 @@ alias bk="safari_books_search"
 
 alias rp="source_repo"
 
-alias ols="open \$(lastf)"
+alias olst="open \$(lastf)"
 
 alias killp="kill_processes"
 
@@ -931,8 +929,6 @@ alias "ls*"="lss"
 alias Cp="silent_cp"
 
 alias rkd="rake_do"
-
-alias intr="intranet"
 
 alias gh="github"
 
@@ -969,6 +965,8 @@ alias mls="edit_list"
 alias als="add_to_list"
 
 alias grls="grep_list"
+
+alias ols="open_list_item"
 
 alias spacecraft="add_to_list spacecraft"
 

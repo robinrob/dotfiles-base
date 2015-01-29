@@ -3,16 +3,16 @@ local -r FindExpression=$2
 [[ -n $3 ]] && local -r Depth="-maxdepth $3"
 
 
-args=". $Depth -follow -name $FindExpression -type f"
+local +r args=". $Depth -follow -name $FindExpression -type f"
 
-result=($(print $args | xargs gfind))
+local +r result=($(print $args | xargs gfind))
 
 for file in $result
 do
-  grep=$(grep $GrepExpression $file)
+  grep=$(grep -i $GrepExpression $file)
   if [[ -n $grep ]]
   then
     yellow $file
-    print $grep | grep $GrepExpression
+    print $grep | grep -i $GrepExpression
   fi
 done

@@ -1,7 +1,0 @@
-NAME=$1
-
-DOC_PATH=$GOOGLE_DRIVE/$NAME.gdoc
-
-cp $GOOGLE_DRIVE/new_document.gdoc $DOC_PATH
-
-print -z open "'$DOC_PATH'"
