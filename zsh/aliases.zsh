@@ -902,6 +902,14 @@ alias sf="salesforce_search"
 
 alias sfs="salesforce_search"
 
+alias sfc="salesforce_class_search"
+
+alias sfd="salesforce_developer_search"
+
+alias sfm="salesforce_method_search"
+
+alias sfo="salesforce_object_search"
+
 alias bk="safari_books_search"
 
 alias rp="source_repo"
@@ -919,10 +927,6 @@ alias reminderrobin="reminder robin@mrrobinsmith.com"
 alias reminderwork="reminder robin.smith@cloudreach.co.uk"
 
 alias ssd="sudo_shutdown"
-
-alias sfo="salesforce_object_search"
-
-alias sfc="salesforce_object_search"
 
 alias "ls*"="lss"
 
