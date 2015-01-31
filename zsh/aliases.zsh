@@ -146,7 +146,7 @@ alias unz="unzip"
 
 alias dic="dict"
 
-alias intellij="open -a $INTELLIJ_IDEA"
+alias intellij="open -a \"$INTELLIJ_IDEA\""
 
 alias int="intellij"
 

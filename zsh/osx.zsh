@@ -762,21 +762,12 @@ chflags nohidden ~/Library/ 2> /dev/null
 ###############################################################################
 # Desktop Background
 ###############################################################################
-# Set default wallpaper image. `DefaultDesktop.jpg` is already a symlink, and
-# all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
-rm -rf ~/Library/Application\ Support/Dock/desktoppicture.db
-local +r SystemDesktopLocation=/System/Library/CoreServices/DefaultDesktop.jpg
-
-sudo mv -f $SystemDesktopLocation $SystemDesktopLocation.backup
-sudo ln -s $BACKGROUNDS_HOME/$HOSTNAME.jpg $SystemDesktopLocation
-
-# Alternate method:
-# osascript -e "tell application \"System Events\" to set picture of every desktop to \"$DEFAULT_DESKTOP\""
+./osx_background.zsh
 
 ###############################################################################
 # Screensaver images
 ###############################################################################
-./screensavers.zsh
+./osx_screensavers.zsh
 
 ###############################################################################
 # Iterm2
@@ -787,10 +778,4 @@ defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.0
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
-
-for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-	"Dock" "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" \
-	"Terminal" "Transmission" "Twitter" "iCal"; do
-	killall "${app}" > /dev/null 2>&1
-done
-print "Done. Note that some of these changes require a logout/restart to take effect."
+./osx_reset.zsh

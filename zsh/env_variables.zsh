@@ -168,7 +168,7 @@ export TODO_HOME=$LOCAL_HOME/lib/todo.csv
 
 export INTELLIJ_VERSION=14
 
-export INTELLIJ_IDEA="IntelliJ\ Idea\ $INTELLIJ_VERSION"
+export INTELLIJ_IDEA="IntelliJ Idea $INTELLIJ_VERSION"
 
 export INTELLIJ_IDEA_HOME="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION"
 
@@ -257,7 +257,7 @@ export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
 
 export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/dotfiles/backgrounds
 
-export SYSTEM_SCREENSAVERS_HOME="/Library/Screen\ Savers/Default\ Collections"
+export SYSTEM_SCREENSAVERS_HOME=/Library/Screen\ Savers/Default\ Collections
 
 ###############################################################################
 # Files
@@ -265,6 +265,8 @@ export SYSTEM_SCREENSAVERS_HOME="/Library/Screen\ Savers/Default\ Collections"
 export DEFAULT_DESKTOP="$BACKGROUNDS_HOME/DefaultDesktop.jpg"
 
 export SYSTEM_DESKTOP_PATH="/System/Library/CoreServices/DefaultDesktop.jpg"
+
+export SYSTEM_DESKTOPDB_PATH=$HOME/Library/Application\ Support/Dock/desktoppicture.db
 
 export RECORDS_PATH=$RECORDS_HOME/records.txt
 
