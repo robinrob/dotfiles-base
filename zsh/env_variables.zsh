@@ -257,14 +257,14 @@ export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
 
 export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/dotfiles/backgrounds
 
-export SCREENSAVERS_HOME="/Library/Screen\ Savers/Default\ Collections"
+export SYSTEM_SCREENSAVERS_HOME="/Library/Screen\ Savers/Default\ Collections"
 
 ###############################################################################
 # Files
 ###############################################################################
 export DEFAULT_DESKTOP="$BACKGROUNDS_HOME/DefaultDesktop.jpg"
 
-export DEFAULT_DESKTOP_LOCATION="/System/Library/CoreServices/DefaultDesktop.jpg"
+export SYSTEM_DESKTOP_PATH="/System/Library/CoreServices/DefaultDesktop.jpg"
 
 export RECORDS_PATH=$RECORDS_HOME/records.txt
 

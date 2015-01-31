@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
-local -r SystemLocation=/Library/Screen\ Savers/Default\ Collections
-local -r MyScreensavers=$SystemLocation/Robin
+local -r MyScreensavers=$SYSTEM_SCREENSAVERS_HOME/Robin
 
 
 sudo rm -rf $MyScreensavers
