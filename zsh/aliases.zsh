@@ -100,6 +100,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias cldl="green 'Moving $HOME/Downloads/* to Trash ...'; mv $HOME/Downloads/* $HOME/.Trash"
+
 alias ssd="red 'Shutting DOWN!'; sudo shutdown -h now"
 
 alias ssr="red 'Shutting DOWN!'; sudo shutdown -r now"
