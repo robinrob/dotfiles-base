@@ -18,7 +18,7 @@ promptinit
 
 source ~/.variables
 [[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
-autoload -U +X ${fpath[1]}/*(:t)
+autoload -U +X $fpath[1]/*(:t)
 
 
 # OS-X Defaults
@@ -44,10 +44,6 @@ cp $DOTFILES_BASE_HOME/config/files/Robin.keylayout.xml ~/Library/Keyboard\ Layo
 
 green "Installing SublimeText3 configuration ..."
 $ZDOT_HOME/sublimetext.zsh
-
-
-green "Copying custom screensaver images to new system folder ..."
-$ZDOT_HOME/screensavers.zsh
 
 
 green "Generating bookmarks ..."
