@@ -46,10 +46,10 @@ fi
 
 if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
 then
-	export BROWSER="Safari"
+	export BROWSER="safari"
   export SAYCMD=1  
 else
-	export BROWSER="Google Chrome"
+	export BROWSER="chrome"
 fi
 
 ###############################################################################

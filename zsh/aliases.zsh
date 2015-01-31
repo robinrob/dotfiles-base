@@ -554,8 +554,10 @@ alias rkp="rake_do git:push"
 
 
 ###############################################################################
-# Viewing and editing files
+# Files
 ###############################################################################
+alias min="$EDITOR $DOTFILES_BASE_HOME/install.zsh"
+
 alias chi="cat ~/.zhistory"
 
 alias mhi="$EDITOR ~/.zhistory"
@@ -897,10 +899,13 @@ alias lasts="cd $SCREENSHOTS_HOME && $LOCAL_HOME/bin/lastf -s $SCREENSHOT_NAME"
 alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 
 
-
 ###############################################################################
 # Functions
 ###############################################################################
+alias sbr="set_browser"
+
+alias bgr="background"
+
 alias lsdir="ls_dirname"
 
 alias sf="salesforce_search"
