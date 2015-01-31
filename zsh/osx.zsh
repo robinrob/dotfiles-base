@@ -772,7 +772,7 @@ chflags nohidden ~/Library/ 2> /dev/null
 ###############################################################################
 # User profile images
 ###############################################################################
-cp $BACKGROUNDS_HOME/* $SYSTEM_PROFILEIMAGES_HOME
+sudo cp $BACKGROUNDS_HOME/* $SYSTEM_PROFILEIMAGES_HOME/Nature
 
 ###############################################################################
 # Iterm2
