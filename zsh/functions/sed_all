@@ -1,13 +1,9 @@
 local +r SedExpression="$*[1, -2]"
 local +r FindExpression=$*[-1]
 
-local +r Args=". -name $FindExpression -type f"
-local +r Files=($(print $args | xargs gfind))
-# print "files: $Files"
 
-for file in $Files
+for file in $(gfind . -name $FindExpression -type f)
 do
-  print $file
-  # gsed -i $SED_EXPRESSION $file
+  gsed -i $SedExpression $file
 done
 
