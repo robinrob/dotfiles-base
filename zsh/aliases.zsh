@@ -58,6 +58,8 @@ alias chr="chrome"
 
 alias lsl="ls -lL"
 
+alias lsd="ls -d"
+
 alias isgit="show_git"
 
 alias isg="isgit"
@@ -182,12 +184,13 @@ alias adobe="$ADOBE_PATH"
 
 alias m="$EDITOR"
 
-alias gimp="open -a Gimp\ 2"
-
+alias gimp="open -a Gimp"
 
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdssh="cd ~/.ssh/"
+
 alias cdscre="cd $SCREENSAVERS_HOME"
 
 alias cdbg="cd $BACKGROUNDS_HOME"
@@ -898,6 +901,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias lsdir="ls_dirname"
+
 alias sf="salesforce_search"
 
 alias sfs="salesforce_search"

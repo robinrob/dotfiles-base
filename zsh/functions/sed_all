@@ -1,7 +1,8 @@
 local +r SedExpression="$*[1, -2]"
 local +r FindExpression=$*[-1]
 
-
+IFS="
+"
 for file in $(gfind . -name $FindExpression -type f)
 do
   gsed -i $SedExpression $file
