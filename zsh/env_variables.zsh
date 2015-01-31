@@ -266,7 +266,9 @@ export DEFAULT_DESKTOP="$BACKGROUNDS_HOME/DefaultDesktop.jpg"
 
 export SYSTEM_DESKTOP_PATH="/System/Library/CoreServices/DefaultDesktop.jpg"
 
-export SYSTEM_DESKTOPDB_PATH=$HOME/Library/Application\ Support/Dock/desktoppicture.db
+export SYSTEM_PROFILEIMAGES_HOME=/Library/User\ Pictures
+
+export USER_DESKTOPDB_PATH=$HOME/Library/Application\ Support/Dock/desktoppicture.db
 
 export RECORDS_PATH=$RECORDS_HOME/records.txt
 

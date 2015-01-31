@@ -1,5 +1,5 @@
-FIND_EXPRESSION=$1
-SED_EXPRESSION=$2
+SED_EXPRESSION=$1
+FIND_EXPRESSION=$2
 
 files=$(gfind . -type f -name "$FIND_EXPRESSION" | xargs)
 print "files: $files"
