@@ -461,6 +461,8 @@ alias gSt="git stash"
 
 alias grs="git remote show"
 
+alias grso="git remote show origin"
+
 alias gin="git init"
 
 alias gRm="git rm -r --cached"
@@ -1096,7 +1098,7 @@ alias wbkmk="work_bookmark"
 
 alias rbdoc="rubydoc"
 
-alias svc="rake -g 'git:foreach[rake -g base:save]'"
+alias saveall="rake -g 'git:foreach[rake -g base:save]'"
 
 alias lbf="libfind_s"
 
