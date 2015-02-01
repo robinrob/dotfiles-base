@@ -54,8 +54,6 @@ alias wh="which"
 
 alias w="which"
 
-alias chr="chrome"
-
 alias lsl="ls -lL"
 
 alias lsd="ls -d"
@@ -142,6 +140,14 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ###############################################################################
+alias chrome="open -b com.google.Chrome"
+
+alias incognito="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --incognito"
+
+alias firefox="open -a Firefox"
+
+alias safari="open -a Safari"
+
 alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
@@ -212,6 +218,10 @@ alias cddocs="cd_dir $DOCS_HOME"
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
 alias cdmr="cd_dir $MRROBINSMITHCOM_HOME"
+
+alias cdmrd="cd_dir ${MRROBINSMITHCOM_HOME}-dev"
+
+alias cdsf="cd_dir $RUBY_HOME/projects/salesforce-blog"
 
 alias cdmrp="cd_dir $WORK_HOME/java/br-reportapp"
 
@@ -1061,8 +1071,6 @@ alias h="head"
 alias t="tail"
 
 alias dsp="despace"
-
-alias grp="set -o | grep"
 
 alias bell="tput bel"
 
