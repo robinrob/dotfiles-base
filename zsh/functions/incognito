@@ -1,1 +1,1 @@
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --incognito
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --incognito $@
