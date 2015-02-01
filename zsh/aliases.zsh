@@ -211,7 +211,9 @@ alias cddocs="cd_dir $DOCS_HOME"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
-alias cdmr="cd_dir $WORK_HOME/java/br-reportapp"
+alias cdmr="cd_dir $MRROBINSMITHCOM_HOME"
+
+alias cdmrp="cd_dir $WORK_HOME/java/br-reportapp"
 
 alias cdbp="cd_dir $MRROBINSMITHCOM_HOME/public/blogposts"
 
@@ -1094,7 +1096,7 @@ alias wbkmk="work_bookmark"
 
 alias rbdoc="rubydoc"
 
-alias svc="save_code"
+alias svc="rake -g 'git:foreach[rake -g base:save]'"
 
 alias lbf="libfind_s"
 
