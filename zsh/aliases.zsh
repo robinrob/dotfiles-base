@@ -140,14 +140,6 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ###############################################################################
-alias chrome="open -b com.google.Chrome"
-
-alias incognito="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --incognito"
-
-alias firefox="open -a Firefox"
-
-alias safari="open -a Safari"
-
 alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
