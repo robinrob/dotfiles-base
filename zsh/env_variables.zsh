@@ -29,7 +29,8 @@ export TO_LEARN=learn
 ###############################################################################
 # Host-specific
 ###############################################################################
-# sudo hostname <name> to change hostname
+# `sudo hostname <name>` or `sudo scutil --set HostName <name>` to change the
+# hostname. `hostname -s` gets just the part before the dot.
 export HOSTNAME=`hostname -s`
 
 export MERCURY_HOSTNAME='mercury'
@@ -255,7 +256,7 @@ export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/22.6.2/
 
 export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
 
-export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/files/backgrounds
+export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/dotfiles/backgrounds
 
 export SYSTEM_SCREENSAVERS_HOME=/Library/Screen\ Savers/Default\ Collections
 
