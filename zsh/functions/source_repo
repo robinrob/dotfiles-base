@@ -9,5 +9,4 @@ else
 fi
 
 green "Opening $url ..."
-open -a $BROWSER $url
-
+browser $url

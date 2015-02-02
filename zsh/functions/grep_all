@@ -5,9 +5,9 @@ local -r FindExpression=$2
 
 local +r args=". $Depth -follow -name $FindExpression -type f"
 
-local +r result=($(print $args | xargs gfind))
-
-for file in $result
+IFS="
+"
+for file in $(gfind . -follow -name $FindExpression -type f)
 do
   grep=$(grep -i $GrepExpression $file)
   if [[ -n $grep ]]

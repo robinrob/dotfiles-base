@@ -18,13 +18,14 @@ promptinit
 
 source ~/.variables
 [[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
-autoload -U +X ${fpath[1]}/*(:t)
+autoload -U +X $fpath[1]/*(:t) 2> /dev/null
 
 
 # OS-X Defaults
 #########################################################################
-green "Setting OSX defaults ..."
-$ZDOT_HOME/osx.zsh
+print "$(green Installing global gitconfig:) $(yellow gitconfig.$HOSTNAME) $(green ...)"
+cp $DOTFILES_BASE_HOME/config/files/gitconfig.$HOSTNAME $HOME/.gitconfig
+
 
 green "Installing silent system sound ..."
 cp $DOTFILES_BASE_HOME/config/files/silence.wav ~/Library/Sounds
@@ -46,16 +47,16 @@ green "Installing SublimeText3 configuration ..."
 $ZDOT_HOME/sublimetext.zsh
 
 
-green "Copying custom screensaver images to new system folder ..."
-$ZDOT_HOME/screensavers.zsh
-
-
 green "Generating bookmarks ..."
 generate_all_bookmarks > /dev/null
 
 
 # green "Installing homebrew packages ..."
 # $ZDOT_HOME/homebrew.zsh
+
+
+green "Setting OSX defaults ..."
+$ZDOT_HOME/osx.zsh
 
 
 green "Done."

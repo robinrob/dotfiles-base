@@ -46,10 +46,10 @@ fi
 
 if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
 then
-	export BROWSER="Safari"
+	export BROWSER="safari"
   export SAYCMD=1  
 else
-	export BROWSER="Google Chrome"
+	export BROWSER="chrome"
 fi
 
 ###############################################################################
@@ -170,7 +170,7 @@ export TODO_HOME=$LOCAL_HOME/lib/todo.csv
 
 export INTELLIJ_VERSION=14
 
-export INTELLIJ_IDEA="IntelliJ\ Idea\ $INTELLIJ_VERSION"
+export INTELLIJ_IDEA="IntelliJ Idea $INTELLIJ_VERSION"
 
 export INTELLIJ_IDEA_HOME="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION"
 
@@ -257,16 +257,20 @@ export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/22.6.2/
 
 export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
 
-export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/dotfiles/backgrounds
+export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/files/backgrounds
 
-export SCREENSAVERS_HOME="/Library/Screen\ Savers/Default\ Collections"
+export SYSTEM_SCREENSAVERS_HOME=/Library/Screen\ Savers/Default\ Collections
 
 ###############################################################################
 # Files
 ###############################################################################
 export DEFAULT_DESKTOP="$BACKGROUNDS_HOME/DefaultDesktop.jpg"
 
-export DEFAULT_DESKTOP_LOCATION="/System/Library/CoreServices/DefaultDesktop.jpg"
+export SYSTEM_DESKTOP_PATH="/System/Library/CoreServices/DefaultDesktop.jpg"
+
+export SYSTEM_PROFILEIMAGES_HOME=/Library/User\ Pictures
+
+export USER_DESKTOPDB_PATH=$HOME/Library/Application\ Support/Dock/desktoppicture.db
 
 export RECORDS_PATH=$RECORDS_HOME/records.txt
 

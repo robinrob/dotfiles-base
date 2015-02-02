@@ -1,0 +1,2 @@
+ls $(dirname $1)
+

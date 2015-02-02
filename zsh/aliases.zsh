@@ -54,9 +54,9 @@ alias wh="which"
 
 alias w="which"
 
-alias chr="chrome"
-
 alias lsl="ls -lL"
+
+alias lsd="ls -d"
 
 alias isgit="show_git"
 
@@ -98,6 +98,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias cldl="green 'Moving $HOME/Downloads/* to Trash ...'; mv $HOME/Downloads/* $HOME/.Trash"
+
 alias ssd="red 'Shutting DOWN!'; sudo shutdown -h now"
 
 alias ssr="red 'Shutting DOWN!'; sudo shutdown -r now"
@@ -146,7 +148,7 @@ alias unz="unzip"
 
 alias dic="dict"
 
-alias intellij="open -a $INTELLIJ_IDEA"
+alias intellij="open -a \"$INTELLIJ_IDEA\""
 
 alias int="intellij"
 
@@ -182,12 +184,13 @@ alias adobe="$ADOBE_PATH"
 
 alias m="$EDITOR"
 
-alias gimp="open -a Gimp\ 2"
-
+alias gimp="open -a Gimp"
 
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdssh="cd ~/.ssh/"
+
 alias cdscre="cd $SCREENSAVERS_HOME"
 
 alias cdbg="cd $BACKGROUNDS_HOME"
@@ -206,7 +209,13 @@ alias cddocs="cd_dir $DOCS_HOME"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
-alias cdmr="cd_dir $WORK_HOME/java/br-reportapp"
+alias cdmr="cd_dir $MRROBINSMITHCOM_HOME"
+
+alias cdmrd="cd_dir ${MRROBINSMITHCOM_HOME}-dev"
+
+alias cdsf="cd_dir $RUBY_HOME/projects/salesforce-blog"
+
+alias cdmrp="cd_dir $WORK_HOME/java/br-reportapp"
 
 alias cdbp="cd_dir $MRROBINSMITHCOM_HOME/public/blogposts"
 
@@ -454,6 +463,8 @@ alias gSt="git stash"
 
 alias grs="git remote show"
 
+alias grso="git remote show origin"
+
 alias gin="git init"
 
 alias gRm="git rm -r --cached"
@@ -551,8 +562,10 @@ alias rkp="rake_do git:push"
 
 
 ###############################################################################
-# Viewing and editing files
+# Files
 ###############################################################################
+alias min="$EDITOR $DOTFILES_BASE_HOME/install.zsh"
+
 alias chi="cat ~/.zhistory"
 
 alias mhi="$EDITOR ~/.zhistory"
@@ -894,10 +907,15 @@ alias lasts="cd $SCREENSHOTS_HOME && $LOCAL_HOME/bin/lastf -s $SCREENSHOT_NAME"
 alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 
 
-
 ###############################################################################
 # Functions
 ###############################################################################
+alias sbr="set_browser"
+
+alias bgr="background"
+
+alias lsdir="ls_dirname"
+
 alias sf="salesforce_search"
 
 alias sfs="salesforce_search"
@@ -1046,8 +1064,6 @@ alias t="tail"
 
 alias dsp="despace"
 
-alias grp="set -o | grep"
-
 alias bell="tput bel"
 
 alias sto="setopt"
@@ -1082,7 +1098,7 @@ alias wbkmk="work_bookmark"
 
 alias rbdoc="rubydoc"
 
-alias svc="save_code"
+alias saveall="rake -g 'git:foreach[rake -g base:save]'"
 
 alias lbf="libfind_s"
 

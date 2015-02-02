@@ -762,16 +762,17 @@ chflags nohidden ~/Library/ 2> /dev/null
 ###############################################################################
 # Desktop Background
 ###############################################################################
-# Set default wallpaper image. `DefaultDesktop.jpg` is already a symlink, and
-# all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
-rm -rf ~/Library/Application\ Support/Dock/desktoppicture.db
-local +r DefaultDesktopLocation=/System/Library/CoreServices/DefaultDesktop.jpg
+./osx_background.zsh
 
-sudo mv -f $DefaultDesktopLocation $DefaultDesktopLocation.backup
-sudo ln -s $BACKGROUNDS_HOME/$HOSTNAME.jpg $DefaultDesktopLocation
+###############################################################################
+# Screensaver images
+###############################################################################
+./osx_screensavers.zsh
 
-# Alternate method:
-# osascript -e "tell application \"System Events\" to set picture of every desktop to \"$DEFAULT_DESKTOP\""
+###############################################################################
+# User profile images
+###############################################################################
+sudo cp $BACKGROUNDS_HOME/* $SYSTEM_PROFILEIMAGES_HOME/Nature
 
 ###############################################################################
 # Iterm2
@@ -782,10 +783,6 @@ defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.0
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
+./osx_reset.zsh
 
-for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-	"Dock" "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" \
-	"Terminal" "Transmission" "Twitter" "iCal"; do
-	killall "${app}" > /dev/null 2>&1
-done
 print "Done. Note that some of these changes require a logout/restart to take effect."
