@@ -184,7 +184,7 @@ alias adobe="$ADOBE_PATH"
 
 alias m="$EDITOR"
 
-alias gimp="open -a Gimp"
+alias gimp="open -a Gimp\ 2"
 
 ###############################################################################
 # Navigation
