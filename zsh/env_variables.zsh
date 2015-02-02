@@ -140,7 +140,9 @@ export GLOBAL_RAKEFILE_HOME=$RUBY_HOME/projects/global-rakefile
 
 export QUIZ_HOME=$RUBY_HOME/projects/quiz
 
-export MRROBINSMITHCOM_HOME=$RUBY_HOME/projects/robinrob.github.io
+export MRROBINSMITH_COM_HOME=$RUBY_HOME/projects/robinrob.github.io
+
+export MRROBINSMITH_COM_DEV_HOME=$RUBY_HOME/projects/robinrob.github.io-dev
 
 export GITHUB_HOME=$RUBY_HOME/projects/github
 

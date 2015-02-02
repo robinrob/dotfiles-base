@@ -209,10 +209,6 @@ alias cddocs="cd_dir $DOCS_HOME"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
-alias cdmr="cd_dir $MRROBINSMITHCOM_HOME"
-
-alias cdmrd="cd_dir ${MRROBINSMITHCOM_HOME}-dev"
-
 alias cdsf="cd_dir $RUBY_HOME/projects/salesforce-blog"
 
 alias cdmrp="cd_dir $WORK_HOME/java/br-reportapp"
