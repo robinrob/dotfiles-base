@@ -1,5 +1,6 @@
 typeset -A abbreviations
 
+# Home
 abbreviations[awk]=a
 abbreviations[coffeescript]=cs
 abbreviations[c]=c
@@ -11,6 +12,7 @@ abbreviations[github]=gh
 abbreviations[html-css]=h
 abbreviations[javascript]=j
 abbreviations[markdown]=m
+abbreviations[mrrobinsmith.com]=mr
 abbreviations[ocaml]=o
 abbreviations[perl]=pl
 abbreviations[prog]=pr
@@ -19,6 +21,9 @@ abbreviations[ruby]=r
 abbreviations[scala]=sc
 abbreviations[sh]=s
 abbreviations[zsh]=z
+
+# Work
+abbreviations[work-force-com]=wf
 
 for repo in ${(k)abbreviations}
 do
