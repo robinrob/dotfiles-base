@@ -762,12 +762,12 @@ chflags nohidden ~/Library/ 2> /dev/null
 ###############################################################################
 # Desktop Background
 ###############################################################################
-./osx_background.zsh
+$ZDOT_HOME/osx_background.zsh
 
 ###############################################################################
 # Screensaver images
 ###############################################################################
-./osx_screensavers.zsh
+$ZDOT_HOME/osx_screensavers.zsh
 
 ###############################################################################
 # User profile images
@@ -783,6 +783,6 @@ defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.0
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
-./osx_reset.zsh
+$ZDOT_HOME/osx_reset.zsh
 
 print "Done. Note that some of these changes require a logout/restart to take effect."

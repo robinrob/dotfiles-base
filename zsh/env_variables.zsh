@@ -106,6 +106,8 @@ ALIAS_FILES=$ALIASES_PATH:$BOOKMARKS_ALIAS_PATH:$WORKBOOKMARKS_ALIAS_PATH
 
 export FORCE_COM_HOME=$PROG_HOME/force.com
 
+export WORK_FORCE_COM_HOME=$WORK_HOME/force.com
+
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
 export JV_HOME=$PROG_HOME/java
@@ -139,7 +141,9 @@ export GLOBAL_RAKEFILE_HOME=$RUBY_HOME/projects/global-rakefile
 
 export QUIZ_HOME=$RUBY_HOME/projects/quiz
 
-export MRROBINSMITHCOM_HOME=$RUBY_HOME/projects/robinrob.github.io
+export MRROBINSMITH_COM_HOME=$RUBY_HOME/projects/robinrob.github.io
+
+export MRROBINSMITH_COM_DEV_HOME=$RUBY_HOME/projects/robinrob.github.io-dev
 
 export GITHUB_HOME=$RUBY_HOME/projects/github
 

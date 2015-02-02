@@ -184,7 +184,7 @@ alias adobe="$ADOBE_PATH"
 
 alias m="$EDITOR"
 
-alias gimp="open -a Gimp"
+alias gimp="open -a Gimp\ 2"
 
 ###############################################################################
 # Navigation
@@ -208,10 +208,6 @@ alias cdgg="cd ~/Google\ Drive"
 alias cddocs="cd_dir $DOCS_HOME"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
-
-alias cdmr="cd_dir $MRROBINSMITHCOM_HOME"
-
-alias cdmrd="cd_dir ${MRROBINSMITHCOM_HOME}-dev"
 
 alias cdsf="cd_dir $RUBY_HOME/projects/salesforce-blog"
 
@@ -938,7 +934,7 @@ alias killp="kill_processes"
 
 alias pdf="print_default"
 
-alias gre="get_record"
+alias grec="get_record"
 
 alias reminderrobin="reminder robin@mrrobinsmith.com"
 
