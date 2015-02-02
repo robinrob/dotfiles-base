@@ -666,6 +666,12 @@ alias mbk="m $BOOKMARKS_PATH"
 
 alias cbk="cat $BOOKMARKS_PATH"
 
+alias gbk="get_bookmark"
+
+alias dbk="delete_bookmark"
+
+alias genbk="generate_bookmarks"
+
 alias cbkal="cat $BOOKMARKS_ALIAS_PATH"
 
 alias mbkal="m $BOOKMARKS_ALIAS_PATH"
@@ -1017,18 +1023,6 @@ alias tls="take"
 alias cdld="cd \$(lsltr | tail -1)"
 
 alias dspdl="cd ~/Downloads; despace; cd - > /dev/null"
-
-alias gbk="generate_all_bookmarks"
-
-alias dbk="delete_bookmark"
-
-alias unbk="dbk"
-
-alias ubk="dbk"
-
-alias delbk="dbk"
-
-alias grc='get_record'
 
 alias td="todo"
 

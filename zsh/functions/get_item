@@ -1,0 +1,13 @@
+local -r Record=$1
+shift; local -a Files; Files=($*)
+
+for file in $Files
+do
+  row=$(ggrep -Po "(?<=^($Record)::)(.+)" $file)
+  row=(${(s/::/)row})
+  val=$row[-1]
+
+  [[ -n $val ]] && break;
+done
+
+copy_print ""$val""

@@ -1,10 +1,1 @@
-local -r Record=$1
-
-for file in $records
-do
-  val=$(ggrep -Po "(?<=^($Record)::)(.+)" $file)
-
-  [[ -n $val ]] && break;
-done
-
-copy_print ""$val""
+get_item $1 $records
