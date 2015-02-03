@@ -1,0 +1,3 @@
+local +r Expression=$@
+
+print $(( Expression ))
