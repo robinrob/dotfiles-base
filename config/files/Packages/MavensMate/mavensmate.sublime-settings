@@ -197,6 +197,7 @@ To override default MavensMate settings, modify user-specific settings (MavensMa
 		"StaticResource",
 		"CustomObject",
 		"Profile"
+		"Layout"
 	],
 
 	//ignore metadata from managed packages (highly recommended)

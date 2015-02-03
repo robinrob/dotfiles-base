@@ -1,12 +1,7 @@
 local -r BookmarksPath=$1
 local -r Name=$2
 local -r  Url=$3
-if [[ -n $4 ]]
-then
-  local +r Browser=$4
-else
-  local -r Browser='browser'
-fi
+([[ -n $4 ]] && local +r Browser=$4) || local -r Browser='browser'
 
 
 if [[ -z $(bookmark_exists $Name) ]]
