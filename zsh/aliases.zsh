@@ -54,6 +54,8 @@ alias wh="which"
 
 alias w="which"
 
+alias lsn="/usr/local/bin/gls --color=none"
+
 alias lsl="ls -lL"
 
 alias lsd="ls -d"
@@ -670,7 +672,7 @@ alias gbk="get_bookmark"
 
 alias dbk="delete_bookmark"
 
-alias genbk="generate_bookmarks"
+alias gbks="generate_all_bookmarks"
 
 alias cbkal="cat $BOOKMARKS_ALIAS_PATH"
 

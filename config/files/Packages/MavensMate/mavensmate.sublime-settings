@@ -196,7 +196,7 @@ To override default MavensMate settings, modify user-specific settings (MavensMa
 		"ApexTrigger",
 		"StaticResource",
 		"CustomObject",
-		"Profile"
+		"Profile",
 		"Layout"
 	],
 
