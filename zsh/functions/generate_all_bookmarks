@@ -1,2 +1,4 @@
-generate_bookmarks $BOOKMARKS_PATH $BOOKMARKS_ALIAS_PATH
-generate_bookmarks $WORKBOOKMARKS_PATH $WORKBOOKMARKS_ALIAS_PATH
+for bookmarks_file in $bookmarks
+do
+  generate_bookmarks $bookmarks_file $ZDOT_HOME/$(name $bookmarks_file).zsh
+done
