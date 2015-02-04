@@ -942,6 +942,10 @@ alias olst="open \$(lastf)"
 
 alias killp="kill_processes"
 
+alias kps="kill_processes"
+
+alias lps="list_processes"
+
 alias pdf="print_default"
 
 alias grec="get_record"
