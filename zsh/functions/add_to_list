@@ -1,4 +1,9 @@
-(( $#* >= 2 )) || return
+if (( $#* < 2 ))
+then
+  red "Must provide at least 2 arguments"
+  return
+fi
+
 
 local -r List=$1; shift
 
@@ -22,9 +27,7 @@ elif [[ -n $1 ]]
 then
   local -r Value=$1
   local -r Item=$Value
+  
   print "$Item" >> $ListPath
   print "$(yellow)$Value $(green)added to $(yellow)$List$(default)"
-
-else
-  red 'Nothing added.'
 fi
