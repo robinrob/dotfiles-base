@@ -299,7 +299,7 @@ export WORKBOOKMARKS_PATH=$LISTS_HOME/work_bookmarks.txt
 export WORKBOOKMARKS_ALIAS_PATH=$ZDOT_HOME/work_bookmarks.zsh
 
 typeset -T BOOKMARKS bookmarks
-BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH
+BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH:$LISTS_HOME/sf.txt
 
 ###############################################################################
 # Applications
