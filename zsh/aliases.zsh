@@ -672,6 +672,8 @@ alias gbk="get_bookmark"
 
 alias dbk="delete_bookmark"
 
+alias rbk="rebookmark"
+
 alias gbks="generate_all_bookmarks"
 
 alias cbkal="cat $BOOKMARKS_ALIAS_PATH"
@@ -989,6 +991,8 @@ alias cls="cat_list"
 alias mls="edit_list"
 
 alias als="add_to_list"
+
+alias glst="get_list_item"
 
 alias grls="grep_list"
 

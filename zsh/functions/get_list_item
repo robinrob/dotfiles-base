@@ -1,0 +1,1 @@
+get_item $2 $LISTS_HOME/$1.txt

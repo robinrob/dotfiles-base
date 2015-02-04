@@ -1,15 +1,13 @@
 local success=$FALSE
+local +r -a Bookmarks
+Bookmarks=($*)
 
-for bookmark in $*
+for bookmark in $Bookmarks
 do
   if [[ -n $(bookmark_exists $bookmark) ]]
   then
     delete_alias $bookmark > /dev/null
-
-    for bookmark_file in $bookmarks
-    do
-      gsed -i '/^'$bookmark'::/d' $bookmark_file
-    done
+    delete_bookmark_entry $bookmark
 
     print "$(red)Bookmark $(yellow)$bookmark $(red)unbookmarked$(default)"
     success=$TRUE
