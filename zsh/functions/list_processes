@@ -1,0 +1,6 @@
+local -r Process=$1
+[[ -z "$Process" ]] && red "Must give name of process!" && return
+	
+print "$(green All) $(yellow ${Process}) $(green processes:)"
+
+ps aux | grep -i $Process | awk '{print $2}'
