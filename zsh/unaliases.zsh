@@ -73,5 +73,3 @@ unalias gcam 2> /dev/null
 unalias gcp 2> /dev/null
 
 unalias gld 2> /dev/null
-
-unalias gls 2> /dev/null

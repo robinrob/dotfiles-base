@@ -1,6 +1,0 @@
-if [[ $(is_git) == "yes" ]]
-then
-  git log --topo-order --stat --pretty=format:${_git_log_medium_format}
-else
-  get_list_item $@
-fi

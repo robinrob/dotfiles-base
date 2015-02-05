@@ -100,6 +100,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias pwdp="pwd | pbcopy"
+
 alias cldl="green 'Moving $HOME/Downloads/* to Trash ...'; mv $HOME/Downloads/* $HOME/.Trash"
 
 alias ssd="red 'Shutting DOWN!'; sudo shutdown -h now"
