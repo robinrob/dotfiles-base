@@ -1012,6 +1012,8 @@ alias atl="add_to_list $TO_LEARN"
 
 alias atw="add_to_list $TO_WATCH"
 
+alias atc="add_to_list courses"
+
 alias read="take $TO_READ"
 
 alias watch="take $TO_WATCH"
