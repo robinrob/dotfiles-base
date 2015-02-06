@@ -14,3 +14,5 @@ alias sha-256-test="browse_copy browser 'https://sha2test.salesforce.com/s/?elq_
 alias emailtocasehandler="browse_copy browser 'http://sforcehacks.blogspot.co.uk/2012/01/email-to-case-can-create-too-many-cases.html'"
 
 alias emailtocasehandler-explanation="browse_copy browser 'http://sforcehacks.blogspot.ca/2012/01/email-to-case-custom-email-handler.html'"
+
+alias capula="browse_copy browser 'https://docs.google.com/a/cloudreach.co.uk/document/d/1gJ8OrrE4_ofsyvjzTcWmmHLCY0zJiJUHlObZsDJCjnE/edit'"
