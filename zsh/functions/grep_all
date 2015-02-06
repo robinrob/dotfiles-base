@@ -3,11 +3,11 @@ local -r FindExpression=$2
 [[ -n $3 ]] && local -r Depth="-maxdepth $3"
 
 
-local +r args=". $Depth -follow -name $FindExpression -type f"
+# local +r args=". $Depth -follow -name *$FindExpression* -type f"
 
 IFS="
 "
-for file in $(gfind . -follow -name $FindExpression -type f)
+for file in $(gfind . -follow -name "*$FindExpression*" -type f)
 do
   grep=$(grep -i $GrepExpression $file)
   if [[ -n $grep ]]

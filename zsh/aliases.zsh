@@ -100,6 +100,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias pwdp="pwd | pbcopy"
+
 alias cldl="green 'Moving $HOME/Downloads/* to Trash ...'; mv $HOME/Downloads/* $HOME/.Trash"
 
 alias ssd="red 'Shutting DOWN!'; sudo shutdown -h now"
@@ -191,6 +193,8 @@ alias gimp="open -a Gimp\ 2"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdpon="cd $WORK_HOME/java/PONCEO"
+
 alias cdssh="cd ~/.ssh/"
 
 alias cdscre="cd $SCREENSAVERS_HOME"
