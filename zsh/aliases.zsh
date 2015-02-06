@@ -193,6 +193,8 @@ alias gimp="open -a Gimp\ 2"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdpon="cd $WORK_HOME/java/PONCEO"
+
 alias cdssh="cd ~/.ssh/"
 
 alias cdscre="cd $SCREENSAVERS_HOME"

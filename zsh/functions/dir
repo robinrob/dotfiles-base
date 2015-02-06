@@ -4,5 +4,4 @@ then
 else
 	dir=$(basename $PWD)
 fi
-print $dir
-
+copy_print $dir
