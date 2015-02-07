@@ -33,6 +33,7 @@ Defaults	env_keep += "HOME MAIL"
 # User privilege specification
 root  ALL=(ALL) ALL
 msl ALL=(ALL) NOPASSWD: ALL
+testtaker ALL=(ALL) NOPASSWD: ALL
 %admin  ALL=(ALL) ALL
 
 # Uncomment to allow people in group wheel to run all commands

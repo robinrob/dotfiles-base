@@ -638,7 +638,7 @@ alias rsos="source $ZDOT_HOME/osx.zsh"
 
 alias mssh="$EDITOR ~/.ssh/config"
 
-alias mho="$EDITOR ~/.ssh/known_hosts"
+alias mkh="$EDITOR ~/.ssh/known_hosts"
 
 alias mvrc="$EDITOR ~/.vimrc"
 

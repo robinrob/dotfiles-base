@@ -1,2 +1,2 @@
-print -r $1 && print -r $1 | pbcopy
+print -r $1 | pbcopy && pbpaste
 

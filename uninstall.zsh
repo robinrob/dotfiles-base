@@ -9,7 +9,7 @@ OLD_DIR=/tmp/dotfiles
 red "Uninstalling ..."
 
 yellow "\t${ITEM}Creating $OLD_DIR for backup of any existing dotfiles in ~ ..."
-rm -rf $OLD_DIR
+# rm -rf $OLD_DIR
 mkdir -p $OLD_DIR
 
 
