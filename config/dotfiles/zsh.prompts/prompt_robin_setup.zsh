@@ -68,7 +68,7 @@ function prompt_robin_setup {
 
   LIGHTNING="⚡"
 
-  # SEP="$(magandaprompt)$(repeat_string 80 -)"$'\n'
+  SEP="$(magandaprompt)$(repeat_string 80 -)"$'\n'
 
   PS1="${SEP}$(magandaprompt)%n$(brightwhiteprompt)@%{$HOSTCOLOR%}%B%m%b%f $(brightyellowprompt)\$(dir)/ \${vcs_info_msg_0_}$LIGHTNING$(defaultprompt)  "
 
