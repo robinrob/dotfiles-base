@@ -920,6 +920,12 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias colorc="color_using_code"
+
+alias grc="grep_color"
+
+alias cco="get_color_code"
+
 alias sbr="set_browser"
 
 alias bgr="background"

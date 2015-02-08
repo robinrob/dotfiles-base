@@ -10,7 +10,7 @@ for line in $(ps aux | grep -i $Process | awk $AwkScript)
 do
   if ! [ $(print "$line" | grep 'grep') ]
   then
-    colorencode $GREP_COLOR $line
+    yellow $line
   fi
 done
 # ps aux | grep -i $Process | awk '{print $2,"\t",$NF}'

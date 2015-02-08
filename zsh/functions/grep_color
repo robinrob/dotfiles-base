@@ -1,1 +1,1 @@
-eval print $(colorencode '$(print "$GREP_COLOR")')$@
+color_using_code $GREP_COLOR $@

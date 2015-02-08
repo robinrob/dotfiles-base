@@ -1,0 +1,3 @@
+local +r Code=$1; shift
+
+eval print $(colorencode '$(print '\"$Code\"')')$@
