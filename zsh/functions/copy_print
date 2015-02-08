@@ -1,2 +1,4 @@
-print -r $1 | pbcopy && pbpaste
+# printf is necessary here because print does not print a string containing only
+# the character -, no matter how many times the string contains it.
+printf $1 | pbcopy && pbpaste
 
