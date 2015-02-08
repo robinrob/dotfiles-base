@@ -1,9 +1,9 @@
 typeset url
-result=$(ls -d .git 2> /dev/null)
-if [ "$result" ]
+
+url=$(repo_url) 2> /dev/null
+if [ "$url" ]
 then
-  url=$(repo_url)
-  green "Repo found: $(repo_url)"
+  green "Repo found: $url"
 else
 	url="https://github.com/robinrob"
 fi
