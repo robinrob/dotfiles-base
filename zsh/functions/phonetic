@@ -1,0 +1,20 @@
+typeset -A +r Phonetic
+typeset -a +r Alphabet
+Alphabet=(a b c d e f g h i j k l m n o p q r s t u v w x y z)
+
+cat $LISTS_HOME/phonetic.txt | while read line
+do
+  key=$(print $line | gawk -F:: '{print $1}')
+  value=$(print $line | gawk -F:: '{print $2}')
+  Phonetic[$key]=$value
+done
+
+function print_pair {
+  print $(green $1:) $(yellow $2)
+}
+
+case $# in
+  0) for letter in $Alphabet; do; print_pair $letter $Phonetic[$letter]; done ;;
+  *) for letter in $*; do; print_pair $letter $Phonetic[$letter]; done
+esac
+
