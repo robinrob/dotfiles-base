@@ -1,0 +1,7 @@
+local +ri Num=$1; shift
+local +r String="$*"
+
+for n ({1..$Num})
+do
+  print $String
+done

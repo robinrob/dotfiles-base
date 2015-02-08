@@ -922,6 +922,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias rps="repeat_string"
+
 alias colorc="color_using_code"
 
 alias grc="grep_color"
