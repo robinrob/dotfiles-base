@@ -3,4 +3,16 @@ local -r Process=$1
 	
 print "$(green All) $(yellow ${Process}) $(green processes:)"
 
-ps aux | grep -i $Process | awk '{print $2}'
+IFS="
+"
+local +r AwkScript='{for(i=11;i<NF;i++) printf "%s",$i OFS;if(NF)printf "%s",$NF;printf ORS}'
+for line in $(ps aux | grep -i $Process | awk $AwkScript)
+do
+  if ! [ $(print "$line" | grep 'grep') ]
+  then
+    colorencode $GREP_COLOR $line
+  fi
+done
+# ps aux | grep -i $Process | awk '{print $2,"\t",$NF}'
+#
+# awk '{for(i=11;i<NF;i++) printf "%s",$i OFS;if(NF)printf "%s",$NF;printf ORS}'
