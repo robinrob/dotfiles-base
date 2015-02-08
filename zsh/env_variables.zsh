@@ -312,7 +312,7 @@ export SUBLIMETEXT_HOME="$HOME/Library/Application Support/Sublime Text 3"
 ###############################################################################
 # Colors
 ###############################################################################
-export GREP_COLOR=""
+export GREP_COLOR="1;37"
 
 export GREP_COLORS='ms=01;35:mc=01;31:sl=:cx=:fn=0:ln=32:bn=32:se=36'
 

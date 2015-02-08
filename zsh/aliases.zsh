@@ -924,7 +924,7 @@ alias colorc="color_using_code"
 
 alias grc="grep_color"
 
-alias cco="get_color_code"
+alias gco="get_color_code"
 
 alias sbr="set_browser"
 
