@@ -10,4 +10,4 @@ do
   Line="$String$Line"
 done
 
-copy_print $Line
+print $Line

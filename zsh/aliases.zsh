@@ -195,7 +195,7 @@ alias gimp="open -a Gimp\ 2"
 ###############################################################################
 # Navigation
 ###############################################################################
-alias cdpon="cd $WORK_HOME/java/PONCEO"
+alias cdpn="cd $WORK_HOME/java/pon-blog-app"
 
 alias cdssh="cd ~/.ssh/"
 
