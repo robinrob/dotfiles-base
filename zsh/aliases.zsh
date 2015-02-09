@@ -443,6 +443,8 @@ alias vdc="vpn_disconnect"
 ###############################################################################
 # Git
 ###############################################################################
+alias gau="git add -u"
+
 alias gcdl="git ls-files --deleted | xargs git checkout"
 
 alias gld="git log -p --topo-order --stat --pretty=format:\${_git_log_medium_format}"
