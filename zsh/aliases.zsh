@@ -100,6 +100,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias lsw="ls | wc -l"
+
 alias pwdp="pwd | pbcopy"
 
 alias cldl="green 'Moving $HOME/Downloads/* to Trash ...'; mv $HOME/Downloads/* $HOME/.Trash"
@@ -1023,6 +1025,8 @@ alias grls="grep_list"
 alias ols="open_list_item"
 
 alias spacecraft="add_to_list spacecraft"
+
+alias atd="add_to_list $TO_DO"
 
 alias atr="add_to_list $TO_READ"
 
