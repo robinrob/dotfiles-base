@@ -62,6 +62,8 @@ export PROG_HOME="$HOME/Programming/robin"
 
 export PYTHON_HOME=$PROG_HOME/python
 
+export PI_HOME=$PYTHON_HOME/projects/pi
+
 export PY_HOME=$PYTHON_HOME
 
 export PYAPP_HOME=$PY_HOME/projects/pyapp
@@ -310,7 +312,7 @@ export SUBLIMETEXT_HOME="$HOME/Library/Application Support/Sublime Text 3"
 ###############################################################################
 # Colors
 ###############################################################################
-export GREP_COLOR="0;32"
+export GREP_COLOR="1;37"
 
 export GREP_COLORS='ms=01;35:mc=01;31:sl=:cx=:fn=0:ln=32:bn=32:se=36'
 

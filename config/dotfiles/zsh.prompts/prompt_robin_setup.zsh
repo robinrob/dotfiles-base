@@ -3,7 +3,7 @@
 function prompt_robin_precmd {
   # Check for untracked files or updated submodules since vcs_info does not.
   if [[ -n $(git ls-files --other --exclude-standard 2> /dev/null) ]]; then
-    branch_format="%{$(brightwhite)%}(%{$(brightcyan)%}%b%f%u%c%{$(red)%}●%{$(brightwhite)%})%f "
+    branch_format="%{$(brightwhite)%}(%{$(cyan)%}%b%f%u%c%{$(red)%}●%{$(brightwhite)%})%f "
   else
     branch_format="%{$(brightwhite)%}(%{$(cyan)%}%b%f%u%c%{$(brightwhite)%})%f "
   fi
@@ -68,7 +68,7 @@ function prompt_robin_setup {
 
   LIGHTNING="⚡"
 
-  SEP="$(magandaprompt)----------------------------------------------------------------------------------------------------------------------------------------------------------"$'\n'
+  SEP="$(magandaprompt)$(repeat_string 80 -)"$'\n'
 
   PS1="${SEP}$(magandaprompt)%n$(brightwhiteprompt)@%{$HOSTCOLOR%}%B%m%b%f $(brightyellowprompt)\$(dir)/ \${vcs_info_msg_0_}$LIGHTNING$(defaultprompt)  "
 

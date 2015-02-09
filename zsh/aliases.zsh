@@ -136,7 +136,9 @@ alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
 alias rkls="rake_do git:foreach nil"
 
-alias strash="du -dh $TRASH_HOME"
+alias str="du -dh $TRASH_HOME"
+
+alias sdr="du -dh $HOME/Dropbox"
 
 alias syslog="tail -f /var/log/system.log"
 
@@ -209,7 +211,7 @@ alias cdls="cd $LISTS_HOME"
 
 alias cdzd="cd $ZDOT_HOME"
 
-alias cdgg="cd ~/Google\ Drive"
+alias cdgg="cd $HOME/Google\ Drive"
 
 alias cddocs="cd_dir $DOCS_HOME"
 
@@ -245,7 +247,7 @@ alias ocam="cd_dir $CAMERA_HOME && open ."
 
 alias cdtr="cd $TRASH_HOME"
 
-alias cddr="cd ~/Google\ Drive"
+alias cddr="cd $HOME/Dropbox"
 
 alias cdk="cd_dir $KITCHENPLAN_HOME"
 
@@ -640,7 +642,7 @@ alias rsos="source $ZDOT_HOME/osx.zsh"
 
 alias mssh="$EDITOR ~/.ssh/config"
 
-alias mho="$EDITOR ~/.ssh/known_hosts"
+alias mkh="$EDITOR ~/.ssh/known_hosts"
 
 alias mvrc="$EDITOR ~/.vimrc"
 
@@ -922,6 +924,18 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias clh="clean_home"
+
+alias 80="repeat_string 80 -"
+
+alias rps="repeat_string"
+
+alias colorc="color_using_code"
+
+alias grc="grep_color"
+
+alias gco="get_color_code"
+
 alias sbr="set_browser"
 
 alias bgr="background"

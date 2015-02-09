@@ -1,0 +1,5 @@
+# This can be re-implemented easily by matching the colors hash key by the value!
+
+local +r Code=$1; shift
+
+eval print $(colorencode '$(print '\"$Code\"')')$@

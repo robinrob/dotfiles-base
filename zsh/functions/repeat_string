@@ -1,0 +1,13 @@
+local +ri Num=$1; shift
+(( Num > 0 )) || return
+local +r String="$*"
+
+
+local +r Line=""
+
+for n ({1..$Num})
+do
+  Line="$String$Line"
+done
+
+copy_print $Line
