@@ -116,7 +116,9 @@ alias cdsam="cd $COCOS_HOME/samples"
 
 alias cdt="cd $COCOS_HOME/samples/js-tests"
 
-alias cdpk="cd $JS_HOME/projects/Parkour"
+alias cdff="cd $JS_HOME/projects/FlappyFish"
+
+alias cdpk="cdff"
 
 alias adbd="adb devices"
 
