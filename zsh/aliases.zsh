@@ -247,9 +247,9 @@ alias cdcam="cd_dir '$CAMERA_HOME'"
 
 alias ocam="cd_dir $CAMERA_HOME && open ."
 
-alias cdtr="cd $TRASH_HOME"
+alias cdtr="cd_dir $TRASH_HOME"
 
-alias cddr="cd $HOME/Dropbox"
+alias cddr="cd_dir $HOME/Dropbox"
 
 alias cdk="cd_dir $KITCHENPLAN_HOME"
 
