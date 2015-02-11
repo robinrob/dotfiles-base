@@ -8,10 +8,10 @@ IFS="
 "
 for file in $(gfind . -name "$FindExpression" -type f)
 do
-  if [ -n $(grep $MatchTerm $file) ]
+  grep=$(grep $MatchTerm $file)
+  if [[ -n $grep ]]
   then
     print "$(green 'Replacing occurrence(s) of') $(yellow $MatchTerm) $(green in file:) $(yellow $file)"
     gsed -i $SedExpression $file
   fi
 done
-

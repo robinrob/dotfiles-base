@@ -1,6 +1,6 @@
 local -r GrepExpression=$1
 local -r FindExpression=$2
-[[ -n $3 ]] && local -r Depth="-maxdepth $3"
+# [[ -n $3 ]] && local -r Depth="-maxdepth $3"
 
 
 # local +r args=". $Depth -follow -name *$FindExpression* -type f"
