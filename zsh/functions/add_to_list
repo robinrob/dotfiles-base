@@ -31,3 +31,5 @@ then
   print "$Item" >> $ListPath
   print "$(yellow)$Name $(green)added to $(yellow)$List $(green)as $(yellow)$Value$(default)"
 fi
+
+cat $ListPath

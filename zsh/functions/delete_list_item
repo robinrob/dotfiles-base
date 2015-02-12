@@ -1,0 +1,4 @@
+local +r List=$LISTS_HOME/$1.txt
+
+delete_item $2 $List
+cat $List

@@ -1024,6 +1024,8 @@ alias mls="edit_list"
 
 alias als="add_to_list"
 
+alias dls="delete_list_item"
+
 alias glst="get_list_item"
 
 alias grls="grep_list"
