@@ -150,11 +150,13 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ###############################################################################
+alias finder="open -a finder"
+
+alias unz="unzip"
+
 alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
-
-alias unz="unzip"
 
 alias dic="dict"
 
@@ -408,6 +410,8 @@ alias ccr="cocos run"
 alias ccc="cocos compile"
 
 alias ccd="cocos deploy"
+
+alias ccn="cocos new -l js"
 
 alias st="cd_status"
 
@@ -1067,6 +1071,8 @@ alias td="todo"
 alias rld="reload"
 
 alias gral="grep_all"
+
+alias sdal="sed_all"
 
 alias aof="green \$(alphabet_of_files)"
 
