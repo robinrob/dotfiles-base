@@ -116,7 +116,9 @@ alias cdsam="cd $COCOS_HOME/samples"
 
 alias cdt="cd $COCOS_HOME/samples/js-tests"
 
-alias cdff="cd $JS_HOME/projects/FlappyFish"
+alias cdff="cd $JS_HOME/projects/flappy-fish"
+
+alias cdbb="cd $JS_HOME/projects/bouncing-balls"
 
 alias cdpk="cdff"
 
@@ -453,6 +455,8 @@ alias vdc="vpn_disconnect"
 ###############################################################################
 # Git
 ###############################################################################
+alias glsf="git ls-files "
+
 alias gau="git add -u"
 
 alias gcdl="git ls-files --deleted | xargs git checkout"
