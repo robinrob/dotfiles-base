@@ -1,0 +1,9 @@
+local +r Item=$1; shift
+local -a +r Files
+Files=($*)
+
+for file in $Files
+do
+  gsed -i '/^'$Item'::/d' $file
+  print "$(yellow $Item) $(green deleted from) $(yellow $file)"
+done
