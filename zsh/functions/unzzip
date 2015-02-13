@@ -1,0 +1,3 @@
+local +r File=$1
+
+/usr/bin/unzip $File -d $(name $File)

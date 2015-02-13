@@ -116,7 +116,9 @@ alias cdsam="cd $COCOS_HOME/samples"
 
 alias cdt="cd $COCOS_HOME/samples/js-tests"
 
-alias cdff="cd $JS_HOME/projects/FlappyFish"
+alias cdff="cd $JS_HOME/projects/flappy-fish"
+
+alias cdbb="cd $JS_HOME/projects/bouncing-balls"
 
 alias cdpk="cdff"
 
@@ -150,11 +152,13 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ###############################################################################
+alias finder="open -a finder"
+
+alias unz="unzip"
+
 alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
-
-alias unz="unzip"
 
 alias dic="dict"
 
@@ -409,6 +413,8 @@ alias ccc="cocos compile"
 
 alias ccd="cocos deploy"
 
+alias ccn="cocos new -l js"
+
 alias st="cd_status"
 
 alias sv="cd_save"
@@ -449,6 +455,8 @@ alias vdc="vpn_disconnect"
 ###############################################################################
 # Git
 ###############################################################################
+alias glsf="git ls-files "
+
 alias gau="git add -u"
 
 alias gcdl="git ls-files --deleted | xargs git checkout"
@@ -1071,6 +1079,8 @@ alias td="todo"
 alias rld="reload"
 
 alias gral="grep_all"
+
+alias sdal="sed_all"
 
 alias aof="green \$(alphabet_of_files)"
 
