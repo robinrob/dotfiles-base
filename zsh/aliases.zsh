@@ -582,10 +582,6 @@ alias mhi="$EDITOR ~/.zhistory"
 
 alias mdo="$EDITOR $LISTS_HOME/doit.zsh"
 
-alias lsls="ls $LISTS_HOME"
-
-alias lls="ls $LISTS_HOME"
-
 alias csp="cat $LISTS_HOME/spacecraft.txt"
 
 alias ctl="cat_list $TO_LEARN"
@@ -1022,11 +1018,17 @@ alias als="add_to_list"
 
 alias dls="delete_list_item"
 
+alias nls="new_list"
+
 alias glst="get_list_item"
 
 alias grls="grep_list"
 
 alias ols="open_list_item"
+
+alias lsls="ls $LISTS_HOME"
+
+alias lls="ls $LISTS_HOME"
 
 alias spacecraft="add_to_list spacecraft"
 
