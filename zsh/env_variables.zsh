@@ -56,7 +56,7 @@ fi
 ###############################################################################
 # Directories
 ###############################################################################
-export GOOGLE_DRIVE="$HOME/Google Drive"
+export GOOGLE_DRIVE="$HOME/Google\ Drive"
 
 export PROG_HOME="$HOME/Programming/robin"
 
@@ -185,9 +185,9 @@ export INTELLIJ_COLORS="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/
 
 export FILES_HOME=$HOME/Dropbox
 
-export PICTURES_HOME=$HOME/Google\ Drive/pictures/pictures
+export PICTURES_HOME=$GOOGLE_DRIVE/pictures/pictures
 
-export PHOTOS_HOME=$HOME/Google\ Drive/pictures/photos
+export PHOTOS_HOME=$GOOGLE_DRIVE/pictures/photos
 
 export HOSTFILES_HOME=$FILES_HOME/$HOSTNAME
 
@@ -209,7 +209,7 @@ export LISTS_HOME=$MERCURY_HOME/docs/lists
 
 export RDOCS_HOME=$RFILES_HOME/docs
 
-export DOWNLOADS_HOME='$HOME/Downloads'
+export DOWNLOADS_HOME="$HOME/Downloads"
 
 export IMPORTANT_HOME=$DOCS_HOME/IMPORTANT
 
@@ -233,20 +233,20 @@ export AWS_CONFIG="$HOME/.aws/config"
 
 export KITCHENPLAN_HOME=/opt/kitchenplan
 
-export RECORDS_HOME=$MERCURY_HOME/docs/IMPORTANT/records
+export RECORDS_HOME="$MERCURY_HOME/docs/IMPORTANT/records"
 
-export WORK_RECORDS_HOME=$VENUS_HOME/docs/IMPORTANT/records
+export WORK_RECORDS_HOME="$VENUS_HOME/docs/IMPORTANT/records"
 
-export RECEIPTS_HOME=$HOME/Google\ Drive/expenses/
+export RECEIPTS_HOME=$GOOGLE_DRIVE/expenses
 
-export EXPENSES_HOME=$HOME/Google\ Drive/expenses/
+export EXPENSES_HOME=$RECEIPTS_HOME
 
 # This must NOT be wrapped in quotes or the whitespace-escaping in the path does not work!!
-export CAMERA_HOME=$FILES_HOME/Camera\ Uploads
+export CAMERA_HOME="$FILES_HOME/Camera\ Uploads"
 
 export TRASH_HOME=$HOME/.Trash
 
-export CANADA_HOME=$MERCURY_HOME/docs/IMPORTANT/canada
+export CANADA_HOME="$MERCURY_HOME/docs/IMPORTANT/canada"
 
 export USE_PYTHON=1
 
@@ -254,7 +254,7 @@ export USE_RUBY=1
 
 export SAYCMD_OVERRIDE=0
 
-export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
+export ADOBE_PATH="/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader"
 
 export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
 

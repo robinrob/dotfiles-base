@@ -203,6 +203,8 @@ alias gimp="open -a Gimp\ 2"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdph="cd $PHOTOS_HOME"
+
 alias cdpn="cd $WORK_HOME/java/pon-blog-app"
 
 alias cdssh="cd ~/.ssh/"
@@ -259,7 +261,7 @@ alias cddr="cd_dir $HOME/Dropbox"
 
 alias cdk="cd_dir $KITCHENPLAN_HOME"
 
-alias cddl="cd_dir ~/Downloads"
+alias cddl="cd_dir $DOWNLOADS_HOME"
 
 alias cdmv="cd_dir ~/Movies"
 
