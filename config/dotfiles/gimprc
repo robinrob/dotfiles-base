@@ -724,5 +724,5 @@
 # This path will be searched for scripts when the Script-Fu plug-in is run. 
 # This is a colon-separated list of folders to search.
 # 
-# (script-fu-path "${gimp_dir}/scripts:${gimp_data_dir}/scripts")
+(script-fu-path "${gimp_dir}/scripts:${gimp_data_dir}/scripts")
 

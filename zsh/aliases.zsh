@@ -5,7 +5,7 @@
 ###############################################################################
 # Shell commands
 ###############################################################################
-# Just a joke to over-compensate for all the thenners in the world!
+# Just a joke to all the thenners in the world!
 alias than="then"
 
 alias pcregrep='pcregrep --color=auto'
@@ -55,6 +55,8 @@ alias wh="which"
 alias w="which"
 
 alias lsn="/usr/local/bin/gls --color=none"
+
+alias lsh="find_hidden"
 
 alias lsl="ls -lL"
 
@@ -200,7 +202,7 @@ alias adobe="$ADOBE_PATH"
 
 alias m="$EDITOR"
 
-alias gimp="open -a Gimp"
+alias gimp="/Applications/GIMP.app/Contents/MacOS/GIMP"
 
 ###############################################################################
 # Navigation
@@ -658,6 +660,8 @@ alias mkh="$EDITOR $HOME/.ssh/known_hosts"
 
 alias mvrc="$EDITOR $HOME/.vimrc"
 
+alias mgrc="$EDITOR $HOME/.gimprc"
+
 alias cvrc="cat $HOME/.vimrc"
 
 alias mrvm="$EDITOR $HOME/.rvmrc"
@@ -987,8 +991,6 @@ alias reminderrobin="reminder robin@mrrobinsmith.com"
 alias reminderwork="reminder robin.smith@cloudreach.co.uk"
 
 alias ssd="sudo_shutdown"
-
-alias "ls*"="lss"
 
 alias Cp="silent_cp"
 

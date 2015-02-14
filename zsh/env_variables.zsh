@@ -64,15 +64,13 @@ export PYTHON_HOME=$PROG_HOME/python
 
 export PI_HOME=$PYTHON_HOME/projects/pi
 
-export PY_HOME=$PYTHON_HOME
+export PYAPP_HOME=$PYTHON_HOME/projects/pyapp
 
-export PYAPP_HOME=$PY_HOME/projects/pyapp
-
-export FABFILE_HOME=$PY_HOME/projects/fabfile
+export FABFILE_HOME=$PYTHON_HOME/projects/fabfile
 
 export NPMLIB_HOME=/usr/local/lib/node_modules
 
-export FABFILE_BASIC_HOME=$PY_HOME/projects/fabfile-basic
+export FABFILE_BASIC_HOME=$PYTHON_HOME/projects/fabfile-basic
 
 export ZSH_HOME=$PROG_HOME/zsh
 
@@ -307,6 +305,10 @@ BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH:$LISTS_HOME/sf.txt
 # Applications
 ###############################################################################
 export SUBLIMETEXT_HOME="$HOME/Library/Application Support/Sublime Text 3"
+
+export CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
+export GIMP_PATH="/Applications/GIMP.app/Contents/MacOS/GIMP"
 
 
 ###############################################################################
