@@ -1,6 +1,0 @@
-typeset -A +r HashAsArray
-HashAsArray=($@)
-
-typeset +r Keys=${(k)HashAsArray}
-
-print $Keys

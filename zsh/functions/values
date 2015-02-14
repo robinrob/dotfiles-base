@@ -1,6 +1,7 @@
 typeset -A +r HashAsArray
-HashAsArray=($@)
+HashAsArray=($*)
 
-typeset +r Values=${(v)HashAsArray}
+typeset -a +r Values
+Values=(${(v)HashAsArray})
 
 print $Values
