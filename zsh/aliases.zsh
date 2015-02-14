@@ -385,6 +385,8 @@ alias cssnew="new -i '' -e css -f"
 
 alias tnew="new -i '' -e txt -f"
 
+alias gnew="new -i '' -e gimp -f"
+
 alias demo="open $MOBILEAPP_HOME/www/index.html"
 
 alias up2="pythonbrew use 2.7"
@@ -940,6 +942,10 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias mfn="edit_function"
+
+alias hpb="head_pbcopy"
+
 alias clh="clean_home"
 
 alias 80="repeat_string 80 -"

@@ -1,0 +1,6 @@
+typeset -A +r HashAsArray
+HashAsArray=($@)
+
+typeset +r Values=${(v)HashAsArray}
+
+print $Values

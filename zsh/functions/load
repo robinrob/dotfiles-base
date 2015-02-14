@@ -1,0 +1,24 @@
+local +r -a Funcs
+local +r DoWhich
+
+
+if [[ $@# > 0 ]]
+then
+  print "$(green Loading functions:) $(yellow $@)"
+  Funcs=($*)
+  DoWhich=$TRUE
+else
+  green "Loading all functions"
+  Funcs=($FUNCS_HOME/*(:t))
+fi
+
+for func in $Funcs
+do
+  autoload -U +X $func 2> /dev/null
+
+  if [[ $DoWhich == $TRUE ]]
+  then
+    green; which $FUNC; default
+  fi
+done
+

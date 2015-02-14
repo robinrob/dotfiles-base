@@ -1,2 +1,5 @@
-copy_print $(ls $PWD/$1)
+local +r Target=$m*[-1]
+local +r Args=$*[1, -2]
+
+copy_print $(ls $Args $PWD/$Target)
 

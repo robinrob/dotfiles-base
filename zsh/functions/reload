@@ -1,14 +1,2 @@
-if [[ $#@ > 0 ]]
-then
-  FUNC=$1
-
-  unfunction $FUNC 2> /dev/null
-  autoload -U +X $FUNC
-
-  green; which $FUNC; default
-
-else
-  autoload -U +X $fpath[1]/*(:t) 2> /dev/null
-  green "Reloaded all functions."
-fi
-
+unload $@
+load $@

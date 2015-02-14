@@ -339,3 +339,13 @@ export COCOS_CONSOLE_ROOT=$COCOS_HOME/tools/cocos2d-console/bin
 export ANT_ROOT=/usr/local/bin
 
 export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
+
+
+###############################################################################
+# Function aliases
+###############################################################################
+
+# Can't see a point to it!
+# typeset -A FUNC_ALIASES
+#
+# FUNC_ALIASES[mfn]="edit_function"
