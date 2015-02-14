@@ -6,7 +6,9 @@ local -r SuccessMsg=$4
 
 if [[ "$(alias_exists $Name $AliasFile)" == "no" ]]
 then
-	print "
-alias $Name=\"$Value\"" >> $AliasFile
+# 	print "
+# alias $Name=\"$Value\"" >> $AliasFile
+  unalias $Name 2> /dev/null
+  alias $Name=\"$Value\"
   print "$(yellow)$Name $(green)aliased to $(yellow)$Value"
 fi
