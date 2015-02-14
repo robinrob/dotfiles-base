@@ -209,6 +209,8 @@ alias gimp="/Applications/GIMP.app/Contents/MacOS/GIMP"
 ###############################################################################
 alias cdph="cd $PHOTOS_HOME"
 
+alias cdla="cd $PHOTOS_HOME/la"
+
 alias cdpn="cd $WORK_HOME/java/pon-blog-app"
 
 alias cdssh="cd $HOME/.ssh/"
@@ -942,6 +944,8 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias mvt="move_tags"
+
 alias mfn="edit_function"
 
 alias hpb="head_pbcopy"
