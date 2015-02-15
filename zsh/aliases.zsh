@@ -202,8 +202,6 @@ alias adobe="$ADOBE_PATH"
 
 alias m="$EDITOR"
 
-alias gimp="/Applications/GIMP.app/Contents/MacOS/GIMP"
-
 ###############################################################################
 # Navigation
 ###############################################################################

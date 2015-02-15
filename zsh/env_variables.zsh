@@ -187,6 +187,8 @@ export PICTURES_HOME=$GOOGLE_DRIVE/pictures/pictures
 
 export PHOTOS_HOME=$GOOGLE_DRIVE/pictures/photos
 
+export LA_HOME=$PHOTOS_HOME/la
+
 export HOSTFILES_HOME=$FILES_HOME/$HOSTNAME
 
 export COMMON_HOME=$FILES_HOME/common
