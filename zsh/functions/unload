@@ -2,10 +2,10 @@ local +r -a Funcs
 
 if [[ $@# > 0 ]]
 then
-  print "$(green Un-functioning:) $(yellow $@)"
+  print "$(green Un-functioning functions:) $(yellow $@)"
   Funcs=($*)
 else
-  green "Unfunctionning all functions"
+  green "Un-functionning all functions"
   Funcs=($FUNCS_HOME/*(:t))
 fi
 

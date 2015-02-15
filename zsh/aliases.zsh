@@ -387,6 +387,8 @@ alias tnew="new -i '' -e txt -f"
 
 alias gnew="new -i '' -e gimp -f"
 
+alias mnew="new -i '' -e md -f"
+
 alias demo="open $MOBILEAPP_HOME/www/index.html"
 
 alias up2="pythonbrew use 2.7"
@@ -470,8 +472,6 @@ alias gau="git add -u"
 alias gcdl="git ls-files --deleted | xargs git checkout"
 
 alias gld="git log -p --topo-order --stat --pretty=format:\${_git_log_medium_format}"
-
-alias gcam="git commit --amend -m"
 
 alias grrn="git remote rename"
 
