@@ -1,6 +1,3 @@
-FUNC=$1
-
-unfunction $FUNC 2> /dev/null
-autoload -U +X $FUNC
-
-green; which $FUNC; default
+unload $@
+autoload -U +X load 2> /dev/null
+load $@

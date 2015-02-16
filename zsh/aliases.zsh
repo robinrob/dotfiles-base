@@ -5,7 +5,7 @@
 ###############################################################################
 # Shell commands
 ###############################################################################
-# Just a joke to over-compensate for all the thenners in the world!
+# Just a joke to all the thenners in the world!
 alias than="then"
 
 alias pcregrep='pcregrep --color=auto'
@@ -55,6 +55,8 @@ alias wh="which"
 alias w="which"
 
 alias lsn="/usr/local/bin/gls --color=none"
+
+alias lsh="find_hidden"
 
 alias lsl="ls -lL"
 
@@ -124,7 +126,9 @@ alias cdpk="cdff"
 
 alias adbd="adb devices"
 
-alias lsdl="ls ~/Downloads"
+alias lsdl="ls $DOWNLOADS_HOME"
+
+alias lstrdl="lstr $DOWNLOADS_HOME"
 
 alias pag="ps aux | grep"
 
@@ -138,7 +142,7 @@ alias s="source"
 
 alias bcd="nocorrect builtin cd"
 
-alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
+alias sshkey="cat $HOME/.ssh/id_rsa.pub | pbcopy"
 
 alias rkls="rake_do git:foreach nil"
 
@@ -198,14 +202,16 @@ alias adobe="$ADOBE_PATH"
 
 alias m="$EDITOR"
 
-alias gimp="open -a Gimp\ 2"
-
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdph="cd $PHOTOS_HOME"
+
+alias cdla="cd $PHOTOS_HOME/la"
+
 alias cdpn="cd $WORK_HOME/java/pon-blog-app"
 
-alias cdssh="cd ~/.ssh/"
+alias cdssh="cd $HOME/.ssh/"
 
 alias cdscre="cd $SCREENSAVERS_HOME"
 
@@ -259,9 +265,9 @@ alias cddr="cd_dir $HOME/Dropbox"
 
 alias cdk="cd_dir $KITCHENPLAN_HOME"
 
-alias cddl="cd_dir ~/Downloads"
+alias cddl="cd_dir $DOWNLOADS_HOME"
 
-alias cdmv="cd_dir ~/Movies"
+alias cdmv="cd_dir $HOME/Movies"
 
 alias cdaws="cd_dir `dirname $AWS_CONFIG`"
 
@@ -379,15 +385,19 @@ alias cssnew="new -i '' -e css -f"
 
 alias tnew="new -i '' -e txt -f"
 
+alias gnew="new -i '' -e gimp -f"
+
+alias mnew="new -i '' -e md -f"
+
 alias demo="open $MOBILEAPP_HOME/www/index.html"
 
 alias up2="pythonbrew use 2.7"
 
 alias up3="pythonbrew use 3.2"
 
-alias p2="~/.pythonbrew/pythons/Python-2.7/bin/python"
+alias p2="$HOME/.pythonbrew/pythons/Python-2.7/bin/python"
 
-alias p3="~/.pythonbrew/pythons/Python-3.2/bin/python3"
+alias p3="$HOME/.pythonbrew/pythons/Python-3.2/bin/python3"
 
 alias pbrew="pythonbrew"
 
@@ -462,8 +472,6 @@ alias gau="git add -u"
 alias gcdl="git ls-files --deleted | xargs git checkout"
 
 alias gld="git log -p --topo-order --stat --pretty=format:\${_git_log_medium_format}"
-
-alias gcam="git commit --amend -m"
 
 alias grrn="git remote rename"
 
@@ -584,9 +592,9 @@ alias rkp="rake_do git:push"
 ###############################################################################
 alias min="$EDITOR $DOTFILES_BASE_HOME/install.zsh"
 
-alias chi="cat ~/.zhistory"
+alias chi="cat $HOME/.zhistory"
 
-alias mhi="$EDITOR ~/.zhistory"
+alias mhi="$EDITOR $HOME/.zhistory"
 
 alias mdo="$EDITOR $LISTS_HOME/doit.zsh"
 
@@ -634,11 +642,11 @@ alias cbrew="cat $BREWLIST"
 
 alias gbrew="cat $BREWLIST | grep -i"
 
-alias mpr="$EDITOR ~/.zsh.prompts/prompt_robin_setup.zsh"
+alias mpr="$EDITOR $HOME/.zsh.prompts/prompt_robin_setup.zsh"
 
-alias cpr="cat ~/.zsh.prompts/prompt_robin_setup.zsh"
+alias cpr="cat $HOME/.zsh.prompts/prompt_robin_setup.zsh"
 
-alias resource="source ~/.zshrc"
+alias resource="source $HOME/.zshrc"
 
 alias rs="resource"
 
@@ -648,33 +656,35 @@ alias rsop="source $ZDOT_HOME/options.zsh"
 
 alias rsos="source $ZDOT_HOME/osx.zsh"
 
-alias mssh="$EDITOR ~/.ssh/config"
+alias mssh="$EDITOR $HOME/.ssh/config"
 
-alias mkh="$EDITOR ~/.ssh/known_hosts"
+alias mkh="$EDITOR $HOME/.ssh/known_hosts"
 
-alias mvrc="$EDITOR ~/.vimrc"
+alias mvrc="$EDITOR $HOME/.vimrc"
 
-alias cvrc="cat ~/.vimrc"
+alias mgrc="$EDITOR $HOME/.gimprc"
 
-alias mrvm="$EDITOR ~/.rvmrc"
+alias cvrc="cat $HOME/.vimrc"
+
+alias mrvm="$EDITOR $HOME/.rvmrc"
 
 alias mrvmrc="$EDITOR .rvmrc"
 
-alias essh="edit ~/.ssh/config"
+alias essh="edit $HOME/.ssh/config"
 
-alias ess="edit ~/.ssh/config"
+alias ess="edit $HOME/.ssh/config"
 
-alias econf="edit ~/.ssh/config"
+alias econf="edit $HOME/.ssh/config"
 
-alias vzsh="vim ~/.zshrc"
+alias vzsh="vim $HOME/.zshrc"
 
-alias mzsh="$EDITOR ~/.zshrc"
+alias mzsh="$EDITOR $HOME/.zshrc"
 
-alias czsh="cat ~/.zshrc"
+alias czsh="cat $HOME/.zshrc"
 
-alias gzsh="cat ~/.zshrc | grep -i"
+alias gzsh="cat $HOME/.zshrc | grep -i"
 
-alias mzen="$EDITOR ~/.zshenv"
+alias mzen="$EDITOR $HOME/.zshenv"
 
 alias bmk="bookmark"
 
@@ -730,7 +740,7 @@ alias men="$EDITOR $ZDOT_HOME/env_variables.zsh"
 
 alias mpa="$EDITOR $ZDOT_HOME/path.zsh"
 
-alias mmutt="$EDITOR ~/.mutt/muttrc"
+alias mmutt="$EDITOR $HOME/.mutt/muttrc"
 
 alias gl="git log"
 
@@ -748,7 +758,7 @@ alias cmd="$EDITOR $TEMP_HOME/commands.txt"
 
 alias window="open /Users/robinsmith/Dropbox/Camera\ Uploads/gif/window.gif"
 
-alias cleantrash="sudo rm -rf ~/.Trash; mkdir ~/.Trash"
+alias cleantrash="sudo rm -rf $HOME/.Trash; mkdir $HOME/.Trash"
 
 alias cgi="cat .gitignore"
 
@@ -770,9 +780,9 @@ alias fbs="fab save"
 
 alias fcl="fab clean"
 
-alias cgc="cat ~/.gitconfig"
+alias cgc="cat $HOME/.gitconfig"
 
-alias mgc="$EDITOR ~/.gitconfig"
+alias mgc="$EDITOR $HOME/.gitconfig"
 
 alias mrd="m README.md"
 
@@ -932,6 +942,12 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias mvt="move_tags"
+
+alias mfn="edit_function"
+
+alias hpb="head_pbcopy"
+
 alias clh="clean_home"
 
 alias 80="repeat_string 80 -"
@@ -983,8 +999,6 @@ alias reminderrobin="reminder robin@mrrobinsmith.com"
 alias reminderwork="reminder robin.smith@cloudreach.co.uk"
 
 alias ssd="sudo_shutdown"
-
-alias "ls*"="lss"
 
 alias Cp="silent_cp"
 
@@ -1072,7 +1086,7 @@ alias tls="take"
 
 alias cdld="cd \$(lsltr | tail -1)"
 
-alias dspdl="cd ~/Downloads; despace; cd - > /dev/null"
+alias dspdl="cd $HOME/Downloads; despace; cd - > /dev/null"
 
 alias td="todo"
 
@@ -1080,7 +1094,7 @@ alias rld="reload"
 
 alias gral="grep_all"
 
-alias sdal="sed_all"
+alias sal="sed_all"
 
 alias aof="green \$(alphabet_of_files)"
 
@@ -1172,6 +1186,6 @@ alias prfind="libfind_s $PROG_HOME"
 
 alias afind="libfind_s $AWK_HOME"
 
-alias zshfind="file_grep ~/.zshrc"
+alias zshfind="file_grep $HOME/.zshrc"
 
-alias sshf="file_grep ~/.ssh/config"
+alias sshf="file_grep $HOME/.ssh/config"

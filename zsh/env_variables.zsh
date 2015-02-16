@@ -56,7 +56,7 @@ fi
 ###############################################################################
 # Directories
 ###############################################################################
-export GOOGLE_DRIVE="$HOME/Google Drive"
+export GOOGLE_DRIVE="$HOME/Google\ Drive"
 
 export PROG_HOME="$HOME/Programming/robin"
 
@@ -64,15 +64,13 @@ export PYTHON_HOME=$PROG_HOME/python
 
 export PI_HOME=$PYTHON_HOME/projects/pi
 
-export PY_HOME=$PYTHON_HOME
+export PYAPP_HOME=$PYTHON_HOME/projects/pyapp
 
-export PYAPP_HOME=$PY_HOME/projects/pyapp
-
-export FABFILE_HOME=$PY_HOME/projects/fabfile
+export FABFILE_HOME=$PYTHON_HOME/projects/fabfile
 
 export NPMLIB_HOME=/usr/local/lib/node_modules
 
-export FABFILE_BASIC_HOME=$PY_HOME/projects/fabfile-basic
+export FABFILE_BASIC_HOME=$PYTHON_HOME/projects/fabfile-basic
 
 export ZSH_HOME=$PROG_HOME/zsh
 
@@ -185,9 +183,11 @@ export INTELLIJ_COLORS="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/
 
 export FILES_HOME=$HOME/Dropbox
 
-export PICTURES_HOME=$HOME/Google\ Drive/pictures/pictures
+export PICTURES_HOME=$GOOGLE_DRIVE/pictures/pictures
 
-export PHOTOS_HOME=$HOME/Google\ Drive/pictures/photos
+export PHOTOS_HOME=$GOOGLE_DRIVE/pictures/photos
+
+export LA_HOME=$PHOTOS_HOME/la
 
 export HOSTFILES_HOME=$FILES_HOME/$HOSTNAME
 
@@ -209,7 +209,7 @@ export LISTS_HOME=$MERCURY_HOME/docs/lists
 
 export RDOCS_HOME=$RFILES_HOME/docs
 
-export DOWNLOADS_HOME='$HOME/Downloads'
+export DOWNLOADS_HOME="$HOME/Downloads"
 
 export IMPORTANT_HOME=$DOCS_HOME/IMPORTANT
 
@@ -233,20 +233,20 @@ export AWS_CONFIG="$HOME/.aws/config"
 
 export KITCHENPLAN_HOME=/opt/kitchenplan
 
-export RECORDS_HOME=$MERCURY_HOME/docs/IMPORTANT/records
+export RECORDS_HOME="$MERCURY_HOME/docs/IMPORTANT/records"
 
-export WORK_RECORDS_HOME=$VENUS_HOME/docs/IMPORTANT/records
+export WORK_RECORDS_HOME="$VENUS_HOME/docs/IMPORTANT/records"
 
-export RECEIPTS_HOME=$HOME/Google\ Drive/expenses/
+export RECEIPTS_HOME=$GOOGLE_DRIVE/expenses
 
-export EXPENSES_HOME=$HOME/Google\ Drive/expenses/
+export EXPENSES_HOME=$RECEIPTS_HOME
 
 # This must NOT be wrapped in quotes or the whitespace-escaping in the path does not work!!
-export CAMERA_HOME=$FILES_HOME/Camera\ Uploads
+export CAMERA_HOME="$FILES_HOME/Camera\ Uploads"
 
 export TRASH_HOME=$HOME/.Trash
 
-export CANADA_HOME=$MERCURY_HOME/docs/IMPORTANT/canada
+export CANADA_HOME="$MERCURY_HOME/docs/IMPORTANT/canada"
 
 export USE_PYTHON=1
 
@@ -254,7 +254,7 @@ export USE_RUBY=1
 
 export SAYCMD_OVERRIDE=0
 
-export ADOBE_PATH=/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader
+export ADOBE_PATH="/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader"
 
 export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
 
@@ -308,6 +308,10 @@ BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH:$LISTS_HOME/sf.txt
 ###############################################################################
 export SUBLIMETEXT_HOME="$HOME/Library/Application Support/Sublime Text 3"
 
+export CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
+export GIMP_PATH="/Applications/GIMP.app/Contents/MacOS/GIMP"
+
 
 ###############################################################################
 # Colors
@@ -337,3 +341,13 @@ export COCOS_CONSOLE_ROOT=$COCOS_HOME/tools/cocos2d-console/bin
 export ANT_ROOT=/usr/local/bin
 
 export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
+
+
+###############################################################################
+# Function aliases
+###############################################################################
+
+# Can't see a point to it!
+# typeset -A FUNC_ALIASES
+#
+# FUNC_ALIASES[mfn]="edit_function"

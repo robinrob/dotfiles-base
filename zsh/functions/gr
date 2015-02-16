@@ -1,6 +1,6 @@
 case $#@ in
   1) grep -ri $1 * ;;
-  2) grep -ri $1 $2'*' ;;
+  2) grep -ri $1 $2* ;;
   *) red 'Must provide 1 or 2 arguments.' ;;
 esac
 
