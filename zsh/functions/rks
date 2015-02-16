@@ -1,3 +1,5 @@
+IFS=' '
+
 case $(basename $(pwd)) in
   robinrob.github.io-dev) TASK="jekyll:save" ;;
   *) TASK="base:save" ;;
