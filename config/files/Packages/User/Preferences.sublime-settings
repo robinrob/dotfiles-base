@@ -2,7 +2,6 @@
 	"caret": "#FF0000",
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
-	// "caret_extra_width": 10,
 	"caret_style": "solid",
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"file_exclude_patterns":
