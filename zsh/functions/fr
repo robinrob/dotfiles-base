@@ -1,11 +1,12 @@
 PATTERN=$1
 MAX_DEPTH=$2
 
-if [ -n $MAX_DEPTH ]
+if (( MAX_DEPTH > 0 ))
 then
-  cmd="find . -maxdepth $MAX_DEPTH -iname "*$PATTERN*" 2> /dev/null"
+  cmd="gfind . -maxdepth $MAX_DEPTH -iname '*$PATTERN*'"
 else
-  cmd="find . -iname "*$PATTERN*" 2> /dev/null"
+  cmd="gfind . -iname '*$PATTERN*'"
 fi
 
-print $cmd
+green $cmd
+eval $cmd
