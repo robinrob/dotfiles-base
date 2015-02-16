@@ -1,3 +1,11 @@
 PATTERN=$1
-find . -iname "*$PATTERN*" 2> /dev/null
+MAX_DEPTH=$2
 
+if [ -n $MAX_DEPTH ]
+then
+  cmd="find . -maxdepth $MAX_DEPTH -iname "*$PATTERN*" 2> /dev/null"
+else
+  cmd="find . -iname "*$PATTERN*" 2> /dev/null"
+fi
+
+print $cmd
