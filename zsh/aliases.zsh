@@ -574,7 +574,7 @@ alias rkrt="rake routes"
 
 alias rki="rake install"
 
-alias ccrn="rake_do cocos:run"
+alias ccrn="chrome; rake_do cocos:run"
 
 alias rkdp="rake_do rails:deploy"
 
