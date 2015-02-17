@@ -2,16 +2,12 @@ local +r SedExpression="$*[1, -2]"
 local -a +r SedParts
 SedParts=(${(s/ /)$(print $SedExpression | gawk -F/ '{for(i=1;i<NF;++i) printf "%s",$i OFS;if(NF)printf "%s",$NF;printf ORS}')})
 local +r MatchTerm=$SedParts[2]
+local +r ReplaceTerm=$SedParts[3]
 local +r FindExpression=$*[-1]
 
 IFS="
 "
 for file in $(gfind . -name "$FindExpression" -type f)
 do
-  grep=$(grep $MatchTerm $file)
-  if [[ -n $grep ]]
-  then
-    print "$(green 'Replacing occurrence(s) of') $(yellow $MatchTerm) $(green in file:) $(yellow $file)"
-    gsed -i $SedExpression $file
-  fi
+  gsed -i $SedExpression $file
 done
