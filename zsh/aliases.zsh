@@ -156,6 +156,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ###############################################################################
+alias cpp="copy_print"
+
 alias finder="open -a finder"
 
 alias unz="unzip"
