@@ -120,8 +120,6 @@ alias cdt="cd $COCOS_HOME/samples/js-tests"
 
 alias cdff="cd $JS_HOME/projects/flappy-fish"
 
-alias cdbb="cd $JS_HOME/projects/bouncing-balls"
-
 alias cdpk="cdff"
 
 alias adbd="adb devices"
@@ -167,8 +165,6 @@ alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework
 alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 alias dic="dict"
-
-alias intellij="open -a \"$INTELLIJ_IDEA\""
 
 alias int="intellij"
 
@@ -276,8 +272,6 @@ alias cdaws="cd_dir `dirname $AWS_CONFIG`"
 alias cdm="cd_dir $JS_HOME/projects"
 
 alias cdmb="cd_dir $JS_HOME/projects/mobile-app-cordova"
-
-alias cdg="cd_dir $JS_HOME/projects/Parkour"
 
 alias cdmw="cd_dir $JS_HOME/projects/moonwarriors-robin"
 
@@ -944,6 +938,12 @@ alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias std="start_dev"
+
+alias enD="end_dev"
+
+alias wpb="which_pbcopy"
+
 alias mvt="move_tags"
 
 alias mfn="edit_function"
@@ -984,7 +984,7 @@ alias bk="safari_books_search"
 
 alias rp="source_repo"
 
-alias olst="open \$(lastf)"
+alias olst="despace; open \$(lastf)"
 
 alias killp="kill_processes"
 
