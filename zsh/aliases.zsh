@@ -984,8 +984,6 @@ alias bk="safari_books_search"
 
 alias rp="source_repo"
 
-alias olst="despace; open \$(lastf)"
-
 alias killp="kill_processes"
 
 alias kps="kill_processes"
