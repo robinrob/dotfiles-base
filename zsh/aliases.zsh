@@ -984,8 +984,6 @@ alias bk="safari_books_search"
 
 alias rp="source_repo"
 
-alias olst="open \$(lastf)"
-
 alias killp="kill_processes"
 
 alias kps="kill_processes"
@@ -1018,11 +1016,9 @@ alias grbk="grep_bookmarks"
 
 alias cpy="copy"
 
-alias olst="open \$(lastf)"
-
 alias clst="cat \$(lastf)"
 
-alias mlst="$EDITOR \$(lastf)"
+alias mlst="olst $EDITOR"
 
 alias mvls="mv \$(lastf)"
 

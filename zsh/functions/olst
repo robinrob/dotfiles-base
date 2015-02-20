@@ -1,0 +1,10 @@
+local +r App=$1
+
+despace
+
+if [[ -n $App ]]
+then
+ eval "$App \$(lastf)"
+else
+  open \$(lastf)
+fi
