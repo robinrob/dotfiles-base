@@ -1,0 +1,1 @@
+open -a "$INTELLIJ_IDEA"

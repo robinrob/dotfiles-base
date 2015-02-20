@@ -2,12 +2,14 @@ typeset -A abbreviations
 
 # Home
 abbreviations[awk]=a
+abbreviations[bouncing_balls]=bb
 abbreviations[coffeescript]=cs
 abbreviations[c]=c
 abbreviations[c-plus-plus]=cp
 abbreviations[dotfiles]=d
 abbreviations[dotfiles-base]=db
 abbreviations[force-com]=f
+abbreviations[game]=ga
 abbreviations[gimp]=gi
 abbreviations[github]=gh
 abbreviations[html-css]=h
