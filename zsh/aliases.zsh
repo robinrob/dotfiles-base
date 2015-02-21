@@ -70,8 +70,6 @@ alias igi="isgit"
 
 alias shell="print $SHELL"
 
-alias cdcocos="cd_dir $COCOS_HOME"
-
 
 ###############################################################################
 # GNU commands
@@ -102,6 +100,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias api="cocosapi"
+
 alias lsw="ls | wc -l"
 
 alias pwdp="pwd | pbcopy"
@@ -114,11 +114,11 @@ alias ssr="red 'Shutting DOWN!'; sudo shutdown -r now"
 
 alias lgo="osascript -e 'tell application \"loginwindow\" to  «event aevtrlgo»'"
 
-alias cdsam="cd $COCOS_HOME/samples"
+alias cdsam="cd_dir $COCOS_HOME/samples"
 
-alias cdt="cd $COCOS_HOME/samples/js-tests"
+alias cdt="cd_dir $COCOS_HOME/samples/js-tests"
 
-alias cdff="cd $JS_HOME/projects/flappy-fish"
+alias cdff="cd_dir $JS_HOME/projects/flappy-fish"
 
 alias cdpk="cdff"
 
@@ -203,27 +203,29 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
-alias cdph="cd $PHOTOS_HOME"
+alias cdcc="cd_dir $COCOS_HOME"
 
-alias cdla="cd $PHOTOS_HOME/la"
+alias cdph="cd_dir $PHOTOS_HOME"
 
-alias cdpn="cd $WORK_HOME/java/pon-blog-app"
+alias cdla="cd_dir $PHOTOS_HOME/la"
 
-alias cdssh="cd $HOME/.ssh/"
+alias cdpn="cd_dir $WORK_HOME/java/pon-blog-app"
 
-alias cdscre="cd $SCREENSAVERS_HOME"
+alias cdssh="cd_dir $HOME/.ssh/"
 
-alias cdbg="cd $BACKGROUNDS_HOME"
+alias cdscre="cd_dir $SCREENSAVERS_HOME"
 
-alias cdsp="cd $SPRITES_HOME"
+alias cdbg="cd_dir $BACKGROUNDS_HOME"
 
-alias cdlst="cd $LISTS_HOME"
+alias cdsp="cd_dir $SPRITES_HOME"
 
-alias cdls="cd $LISTS_HOME"
+alias cdlst="cd_dir $LISTS_HOME"
 
-alias cdzd="cd $ZDOT_HOME"
+alias cdls="cd_dir $LISTS_HOME"
 
-alias cdgg="cd $HOME/Google\ Drive"
+alias cdzd="cd_dir $ZDOT_HOME"
+
+alias cdgg="cd_dir $HOME/Google\ Drive"
 
 alias cddocs="cd_dir $DOCS_HOME"
 
@@ -289,7 +291,7 @@ alias cdlists="cd_dir $LISTS_HOME"
 ###############################################################################
 alias ut="utop"
 
-alias cdfn="cd $FUNCS_HOME"
+alias cdfn="cd_dir $FUNCS_HOME"
 
 alias jk="jekyll"
 
@@ -409,9 +411,9 @@ alias ctfn="ls $FUNCS_HOME | wc -l"
 
 alias js="jekyll serve"
 
-alias cdnoc="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
+alias cdnoc="cd_dir $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
 
-alias cdms="cd $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
+alias cdms="cd_dir $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
 
 alias ccr="cocos run"
 
@@ -722,7 +724,7 @@ alias cms="edit $DOCS_HOME/commands.txt"
 
 alias password="ruby $RUBY_HOME/projects/rbpassword/rbpassword.rb"
 
-alias rnsall="cd $SCREENSHOTS_HOME && despace"
+alias rnsall="cd_dir $SCREENSHOTS_HOME && despace"
 
 alias mal="$EDITOR $ZDOT_HOME/aliases.zsh"
 
@@ -908,9 +910,9 @@ alias workpostcode="get_record work_postcode"
 
 alias residency="$ADOBE_PATH $CANADA_HOME/residency_form.pdf"
 
-alias songs="cd $SONGS_HOME"
+alias songs="cd_dir $SONGS_HOME"
 
-alias cdsongs="cd $SONGS_HOME"
+alias cdsongs="cd_dir $SONGS_HOME"
 
 alias sabihin="song sabihin_mo_na"
 
@@ -928,11 +930,11 @@ alias ad="address"
 
 alias ph="phone"
 
-alias screenshots="cd $SCREENSHOTS_HOME"
+alias screenshots="cd_dir $SCREENSHOTS_HOME"
 
-alias lasts="cd $SCREENSHOTS_HOME && $LOCAL_HOME/bin/lastf -s $SCREENSHOT_NAME"
+alias lasts="cd_dir $SCREENSHOTS_HOME && $LOCAL_HOME/bin/lastf -s $SCREENSHOT_NAME"
 
-alias dels="cd $SCREENSHOTS_HOME && rm Screen*"
+alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 
 
 ###############################################################################
@@ -1084,7 +1086,7 @@ alias tls="take"
 
 alias cdld="cd \$(lsltr | tail -1)"
 
-alias dspdl="cd $HOME/Downloads; despace; cd - > /dev/null"
+alias dspdl="cd_dir $HOME/Downloads; despace; cd - > /dev/null"
 
 alias td="todo"
 
@@ -1141,6 +1143,14 @@ alias swp="switch_python"
 alias swr="switch_ruby"
 
 alias brl="brew list"
+
+alias bri="brew install"
+
+alias bru="brew update"
+
+alias brg="brew upgrade"
+
+alias brs="save_homebrew"
 
 alias b="browser"
 

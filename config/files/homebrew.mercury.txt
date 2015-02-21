@@ -91,4 +91,5 @@ wdiff
 wget
 xmlto
 xz
+yuicompressor
 zsh

@@ -1,2 +1,2 @@
-create_alias $1 $2 $DOTFILES_HOME/aliases.zsh
+create_alias $1 $2 $ALIASES_HOME
 
