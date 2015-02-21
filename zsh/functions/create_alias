@@ -7,5 +7,7 @@ if [[ "$(alias_exists $Name $AliasFile)" == "no" ]]
 	print "
 alias $Name=\"$Value\"" >> $AliasFile
 
+  alias $Name="$Value"
+
   print "$(yellow $Name) $(green aliased to) $(yellow $Value)"
 fi

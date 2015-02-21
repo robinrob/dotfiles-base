@@ -13,7 +13,6 @@ then
   local +r New=$ZDOT_HOME/new_bookmarks.zsh
 
   generate_bookmark $Line $ZDOT_HOME/new_bookmarks.zsh
-  source_bookmarks
 
   print -z $Name
 
@@ -21,3 +20,5 @@ then
 else
   print "$(red Bookmark) $(yellow $Name) $(red exists)"
 fi
+
+generate_all_bookmarks &
