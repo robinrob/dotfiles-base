@@ -175,7 +175,11 @@ export INTELLIJ_VERSION=14
 
 export INTELLIJ_IDEA="IntelliJ Idea $INTELLIJ_VERSION"
 
-export INTELLIJ_IDEA_HOME="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION"
+export INTELLIJ_IDEA_HOME="/Applications/$INTELLIJ_IDEA.app/Contents/MacOS"
+
+export INTELLIJ_IDEA_PATH="$INTELLIJ_IDEA_HOME/idea"
+
+export INTELLIJ_IDEA_PREFS_HOME="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION"
 
 export INTELLIJ_CONFIG="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/keymaps/Robin.xml"
 

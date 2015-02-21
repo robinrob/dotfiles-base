@@ -154,6 +154,12 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ###############################################################################
+alias safari="open -a Safari"
+
+alias chrome="open -a Google\ Chrome"
+
+alias firefox="open -a Firefox"
+
 alias cpp="copy_print"
 
 alias finder="open -a finder"
@@ -199,6 +205,11 @@ alias ffc="firefoxc"
 alias adobe="$ADOBE_PATH"
 
 alias m="$EDITOR"
+
+alias e="$EDITOR"
+
+alias v="$VISUAL"
+
 
 ###############################################################################
 # Navigation
@@ -712,8 +723,6 @@ alias cwbkal="cat $WORKBOOKMARKS_ALIAS_PATH"
 
 alias mwbkal="m $WORKBOOKMARKS_ALIAS_PATH"
 
-alias edit=$EDITOR
-
 alias caw="cat $AWS_CONFIG"
 
 alias maw="$EDITOR $AWS_CONFIG"
@@ -811,10 +820,6 @@ alias egi="$EDITOR .gitignore"
 alias ecmd="$EDITOR $DOCS_HOME/commands.txt"
 
 alias cmd="$EDITOR $DOCS_HOME/commands.txt"
-
-alias e="print"
-
-alias v=$VISUAL
 
 alias sprog="du -dh $PROG_HOME"
 

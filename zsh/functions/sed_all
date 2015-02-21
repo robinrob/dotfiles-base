@@ -1,9 +1,12 @@
-local +r SedExpression="$*[1, -2]"
-local -a +r SedParts
-SedParts=(${(s/ /)$(print $SedExpression | gawk -F/ '{for(i=1;i<NF;++i) printf "%s",$i OFS;if(NF)printf "%s",$NF;printf ORS}')})
-local +r MatchTerm=$SedParts[2]
-local +r ReplaceTerm=$SedParts[3]
-local +r FindExpression=$*[-1]
+local +r SedExpression=$1
+
+if [[ -n $2 ]]
+then
+  local +r FindExpression=$2
+else
+  local +r FindExpression='*'
+fi
+
 
 IFS="
 "

@@ -20,7 +20,7 @@ setopt no_list_beep
 # still in /path/to/link, not where the link actually points to ... wtf?
 setopt chase_links
 
-# That's a stupid idea - how often am i going to deliberately hide a command from
+# hist_ignore_space - that's a stupid idea - how often am i going to deliberately hide a command from
 # history, compared to the number of times i copy a command with a space at the 
 # fucking beginning?
 setopt no_hist_ignore_space
