@@ -154,6 +154,10 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ###############################################################################
+alias preview="open -a Preview"
+
+alias livereload="open -a LiveReload"
+
 alias safari="open -a Safari"
 
 alias chrome="open -a Google\ Chrome"

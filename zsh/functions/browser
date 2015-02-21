@@ -2,4 +2,4 @@ if [[ -n $2 ]]
 then
   local BROWSER=$2
 fi
-$($BROWSER "$1")
+eval $BROWSER "$1"
