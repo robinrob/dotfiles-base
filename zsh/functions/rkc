@@ -1,1 +1,1 @@
-rake_do git:commit $@
+rake_do git:commit "$*"
