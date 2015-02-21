@@ -1125,7 +1125,7 @@ alias ppe="pretty_print_env"
 
 alias h="head"
 
-alias t="tail"
+alias t="touch"
 
 alias dsp="despace"
 
