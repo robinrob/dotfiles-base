@@ -16,9 +16,7 @@ do
   fi
 done
 
-if [[ $success == $TRUE ]]
+if [[ $success == $FALSE ]]
 then
-  green "Bookmarks updated."
-else
   yellow "No bookmarks changed."
 fi

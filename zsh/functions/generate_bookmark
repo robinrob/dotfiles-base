@@ -18,4 +18,4 @@ fi
 
 local +r Value="browse_copy $Browser '$Url'"
 
-create_alias $Name "$Value" $BookmarksAliasPath
+create_alias $Name "$Value" $BookmarksAliasPath > /dev/null
