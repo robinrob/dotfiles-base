@@ -1,6 +1,8 @@
 TASK=$1
 shift
-TASK_ARGS=$*
+local +r -a TASK_ARGS
+TASK_ARGS=($*)
+join ', ' $TASK_ARGS
 
 BASE_CMD='rake -g'
 
