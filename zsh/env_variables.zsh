@@ -306,17 +306,11 @@ bookmarks=($BOOKMARKS_PATH $WORKBOOKMARKS_PATH $LISTS_HOME/sf.txt)
 
 export BOOKMARKS_ALIAS_PATH=$ZDOT_HOME/bookmarks.zsh
 
-export WORKBOOKMARKS_ALIAS_PATH=$ZDOT_HOME/work_bookmarks.zsh
-
-typeset -T BOOKMARKS_ALIASES bookmarks_aliases
-
-bookmarks_aliases=($BOOKMARKS_ALIAS_PATH $WORKBOOKMARKS_ALIAS_PATH $ZDOT_HOME/new_bookmarks.zsh)
-
 export ALIASES_PATH=$ZDOT_HOME/aliases.zsh
 
 typeset -T ALIAS_FILES alias_files
 
-alias_files=($ALIASES_PATH $bookmarks_aliases)
+alias_files=($ALIASES_PATH $BOOKMARKS_ALIAS_PATH)
 
 ###############################################################################
 # Applications

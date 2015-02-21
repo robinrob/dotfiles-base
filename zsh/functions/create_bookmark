@@ -8,11 +8,7 @@ if [[ -z $(bookmark_exists $Name) ]]
 then
   local +r Line="$Name::$Browser::$Url" 
 
-  print $Line >> $BookmarksPath
-
-  local +r New=$ZDOT_HOME/new_bookmarks.zsh
-
-  generate_bookmark $Line $ZDOT_HOME/new_bookmarks.zsh
+  generate_bookmark $Line $ZDOT_HOME/bookmarks.zsh
 
   print -z $Name
 

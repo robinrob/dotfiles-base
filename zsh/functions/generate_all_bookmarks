@@ -1,8 +1,4 @@
 for bookmarks_file in $bookmarks
 do
-  generate_bookmarks $bookmarks_file $ZDOT_HOME/$(name $bookmarks_file).zsh
+  generate_bookmarks $bookmarks_file $ZDOT_HOME/bookmarks.zsh
 done
-
-local +r New=$ZDOT_HOME/new_bookmarks.zsh
-rm -rf $New
-touch $New
