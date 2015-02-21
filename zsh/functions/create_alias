@@ -4,8 +4,7 @@ local +r AliasFile=$3
 
 if [[ "$(alias_exists $Name $AliasFile)" == "no" ]]
  then
-	print "
-alias $Name=\"$Value\"" >> $AliasFile
+	print "alias $Name=\"$Value\"" >> $AliasFile
 
   alias $Name="$Value"
 

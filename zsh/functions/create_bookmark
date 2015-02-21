@@ -8,6 +8,8 @@ if [[ -z $(bookmark_exists $Name) ]]
 then
   local +r Line="$Name::$Browser::$Url" 
 
+  print $Line >> $BookmarksPath
+
   generate_bookmark $Line $ZDOT_HOME/bookmarks.zsh
 
   print -z $Name
@@ -16,5 +18,3 @@ then
 else
   print "$(red Bookmark) $(yellow $Name) $(red exists)"
 fi
-
-generate_all_bookmarks &

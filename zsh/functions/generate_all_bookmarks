@@ -1,3 +1,6 @@
+rm -rf $BOOKMARKS_ALIAS_PATH
+touch $BOOKMARKS_ALIAS_PATH
+
 for bookmarks_file in $bookmarks
 do
   generate_bookmarks $bookmarks_file $ZDOT_HOME/bookmarks.zsh
