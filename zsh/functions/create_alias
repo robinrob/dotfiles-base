@@ -2,13 +2,12 @@ local +r Name=$1
 local +r Value=$2
 local +r AliasFile=$3
 
-alias_exists $Name $AliasFile
 
+if [[ "$(alias_exists $Name $AliasFile)" == "no" ]]
+ then
+   print wank
+	print "
+alias $Name=\"$Value\"" >> $AliasFile
 
-# if [[ "$(alias_exists $Name $AliasFile)" == "no" ]]
-#  then
-# 	print "
-# alias $Name=\"$Value\"" >> $AliasFile
-#
-#   print "$(yellow $Name) $(green aliased to) $(yellow $Value)"
-# fi
+  print "$(yellow $Name) $(green aliased to) $(yellow $Value)"
+fi
