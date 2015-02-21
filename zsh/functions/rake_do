@@ -1,7 +1,6 @@
 TASK=$1
 shift
-TASK_ARGS="$*"
-print $TASK_ARGS
+TASK_ARGS=$*
 
 BASE_CMD='rake -g'
 
@@ -13,7 +12,7 @@ then
 
   if [[ -n $TASK_ARGS ]]
   then
-    cmd="$BASE_CMD $TASK"["\'$(join ', ' $TASK_ARGS)\'"]
+    cmd="$BASE_CMD $TASK"[\'$(join ', ' $TASK_ARGS)\']
 	else
 		cmd="$BASE_CMD $TASK"
 	fi
