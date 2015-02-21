@@ -1,11 +1,13 @@
 local -r Name=$1
 local -r AliasFile=$2
 
-local +r Result=$(grep "alias $Name=" $AliasFile)
+print "args: $@"
+local +r Result
+Result=$(grep "alias $Name=" $AliasFile)
 
-if [[ -z $Result ]]
+if [[ -n $Result ]]
 then
-	print "no"	
+	print "yes"	
 else
-	print "yes"
+	print "no"
 fi

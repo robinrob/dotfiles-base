@@ -1,14 +1,14 @@
 local -r Name=$1
 local -r Value=$2
 local -r AliasFile=$3
-local -r SuccessMsg=$4
 
-print "args: $@"
+alias_exists $Name $AliasFile
 
-if [[ "$(alias_exists $Name $AliasFile)" == "no" ]]
- then
-	print "
-alias $Name=\"$Value\"" >> $AliasFile
 
-  print "$(yellow $Name) $(green aliased to) $(yellow $Value)"
-fi
+# if [[ "$(alias_exists $Name $AliasFile)" == "no" ]]
+#  then
+# 	print "
+# alias $Name=\"$Value\"" >> $AliasFile
+#
+#   print "$(yellow $Name) $(green aliased to) $(yellow $Value)"
+# fi
