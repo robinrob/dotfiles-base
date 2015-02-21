@@ -3,10 +3,12 @@ local -r Value=$2
 local -r AliasFile=$3
 local -r SuccessMsg=$4
 
+print "args: $@"
 
 if [[ "$(alias_exists $Name $AliasFile)" == "no" ]]
-then
+ then
 	print "
 alias $Name=\"$Value\"" >> $AliasFile
-  print "$(yellow)$Name $(green)aliased to $(yellow)$Value"
+
+  print "$(yellow $Name) $(green aliased to) $(yellow $Value)"
 fi

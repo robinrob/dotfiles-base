@@ -1,14 +1,16 @@
 local +r BookmarksPath=$1
 local +r Name=$2
-local +r  Url=$3
+local +r Url=$3
 [[ -n $4 ]] && local +r Browser=$4 || local +r Browser='browser'
 
 
 if [[ -z $(bookmark_exists $Name) ]]
 then
-  print "$Name::$Browser::$Url" >> $BookmarksPath
+  local +r Line="$Name::$Browser::$Url" 
 
-  generate_all_bookmarks > /dev/null
+  print $Line >> $BookmarksPath
+  generate_bookmark $Line $ZDOT_HOME/new_bookmarks.zsh
+  source_bookmarks
 
   print -z $Name
 

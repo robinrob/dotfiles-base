@@ -951,7 +951,9 @@ alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
-alias phon="phonetic"
+alias rsal="source_aliases"
+
+alias phone="phonetic"
 
 alias std="start_dev"
 

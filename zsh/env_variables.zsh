@@ -98,12 +98,6 @@ export ENVS_PATH=$ZDOT_HOME/env_variables.zsh
 
 export FUNCS_HOME=$ZDOT_HOME/functions
 
-export ALIASES_PATH=$ZDOT_HOME/aliases.zsh
-
-typeset -T ALIAS_FILES alias_files
-
-ALIAS_FILES=$ALIASES_PATH:$BOOKMARKS_ALIAS_PATH:$WORKBOOKMARKS_ALIAS_PATH
-
 export FORCE_COM_HOME=$PROG_HOME/force.com
 
 export WORK_FORCE_COM_HOME=$WORK_HOME/force.com
@@ -185,13 +179,13 @@ export INTELLIJ_CONFIG="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/
 
 export INTELLIJ_COLORS="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/colors"
 
-export FILES_HOME=$HOME/Dropbox
-
 export PICTURES_HOME=$GOOGLE_DRIVE/pictures/pictures
 
 export PHOTOS_HOME=$GOOGLE_DRIVE/pictures/photos
 
 export LA_HOME=$PHOTOS_HOME/la
+
+export FILES_HOME=$HOME/Dropbox
 
 export HOSTFILES_HOME=$FILES_HOME/$HOSTNAME
 
@@ -199,9 +193,11 @@ export COMMON_HOME=$FILES_HOME/common
 
 export COMMON_DOCS_HOME=$COMMON_HOME/docs
 
-export MERCURY_DOCS_HOME=$FILES_HOME/$MERCURY_HOSTNAME
+export MERCURY_HOME=$FILES_HOME/$MERCURY_HOSTNAME
 
-export SONGS_HOME=$MERCURY_DOCS_HOME/docs/creative/songs
+export MERCURY_DOCS_HOME=$MERCURY_HOME/docs
+
+export SONGS_HOME=$MERCURY_DOCS_HOME/creative/songs
 
 export VENUS_HOME=$FILES_HOME/$VENUS_HOSTNAME
 
@@ -209,7 +205,7 @@ export TEMP_HOME=$HOSTFILES_HOME/temp
 
 export DOCS_HOME=$HOSTFILES_HOME/docs
 
-export LISTS_HOME=$MERCURY_DOCS_HOME/docs/lists
+export LISTS_HOME=$MERCURY_HOME/docs/lists
 
 export RDOCS_HOME=$RFILES_HOME/docs
 
@@ -237,7 +233,7 @@ export AWS_CONFIG="$HOME/.aws/config"
 
 export KITCHENPLAN_HOME=/opt/kitchenplan
 
-export RECORDS_HOME="$MERCURY_DOCS_HOME/docs/IMPORTANT/records"
+export RECORDS_HOME="$MERCURY_HOME/docs/IMPORTANT/records"
 
 export WORK_RECORDS_HOME="$VENUS_HOME/docs/IMPORTANT/records"
 
@@ -250,7 +246,7 @@ export CAMERA_HOME="$FILES_HOME/Camera\ Uploads"
 
 export TRASH_HOME=$HOME/.Trash
 
-export CANADA_HOME="$MERCURY_DOCS_HOME/docs/IMPORTANT/canada"
+export CANADA_HOME="$MERCURY_HOME/docs/IMPORTANT/canada"
 
 export USE_PYTHON=1
 
@@ -310,7 +306,13 @@ export WORKBOOKMARKS_PATH=$LISTS_HOME/work_bookmarks.txt
 export WORKBOOKMARKS_ALIAS_PATH=$ZDOT_HOME/work_bookmarks.zsh
 
 typeset -T BOOKMARKS bookmarks
-BOOKMARKS=$BOOKMARKS_PATH:$WORKBOOKMARKS_PATH:$LISTS_HOME/sf.txt
+bookmarks=($BOOKMARKS_PATH $WORKBOOKMARKS_PATH $LISTS_HOME/sf.txt)
+
+export ALIASES_PATH=$ZDOT_HOME/aliases.zsh
+
+typeset -T ALIAS_FILES alias_files
+
+alias_files=($ALIASES_PATH $bookmarks)
 
 ###############################################################################
 # Applications

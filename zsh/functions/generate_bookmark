@@ -1,0 +1,22 @@
+local +r Line=$1
+local +r BookmarksAliasPath=$2
+
+print $Line
+
+local +r -a Parts
+Parts=("${(s/::/)Line}")
+
+local +r Name=$Parts[1]
+
+if [[ $#Parts == 3 ]]
+then
+  local +r Browser=$Parts[2]
+  local +r Url=$Parts[3]
+else
+  local +r Browser='browser'
+  local +r Url=$Parts[2]
+fi
+
+local +r  Alias="browse_copy $Browser '$Url'"
+
+create_alias $Name $Alias $BookmarksAliasPath $SUCCESS_MSG
