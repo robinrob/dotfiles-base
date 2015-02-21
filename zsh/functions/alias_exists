@@ -1,5 +1,5 @@
-local -r Name=$1
-local -r AliasFile=$2
+local +r Name=$1
+local +r AliasFile=$2
 
 print "args: $@"
 local +r Result

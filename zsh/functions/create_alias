@@ -1,6 +1,6 @@
-local -r Name=$1
-local -r Value=$2
-local -r AliasFile=$3
+local +r Name=$1
+local +r Value=$2
+local +r AliasFile=$3
 
 alias_exists $Name $AliasFile
 

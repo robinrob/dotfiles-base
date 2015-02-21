@@ -1,8 +1,8 @@
 if [[ -n $1 ]]
 then
-  local -r SearchRoot=$1
+  local +r SearchRoot=$1
 else
-  local -r SearchRoot=$HOME
+  local +r SearchRoot=$HOME
 fi
 
 # Fuck off!

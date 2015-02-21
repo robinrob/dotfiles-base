@@ -1,4 +1,4 @@
-local -r Record=$1
+local +r Record=$1
 shift; local -a Files; Files=($*)
 
 for file in $Files

@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-local -r MyScreensavers=$SYSTEM_SCREENSAVERS_HOME/Robin
+local +r MyScreensavers=$SYSTEM_SCREENSAVERS_HOME/Robin
 
 sudo rm -rf "$MyScreensavers"
 sudo mkdir $MyScreensavers

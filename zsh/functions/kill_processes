@@ -1,4 +1,4 @@
-local -r Process=$1
+local +r Process=$1
 if [ -z "$Process" ]
 then
 	red "Must give name of process!"

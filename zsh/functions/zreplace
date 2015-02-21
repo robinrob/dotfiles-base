@@ -1,5 +1,5 @@
-local -r From=$1
-local -r To=$2
+local +r From=$1
+local +r To=$2
 shift 2;
 Text=$@
 

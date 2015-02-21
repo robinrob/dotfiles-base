@@ -1,5 +1,5 @@
-local -r RubyGemset=$1
-local -r RubyVersion=$2
+local +r RubyGemset=$1
+local +r RubyVersion=$2
 
 silent rm .ruby-gemset
 silent rm .ruby-version
