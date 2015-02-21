@@ -9,6 +9,11 @@ then
   local +r Line="$Name::$Browser::$Url" 
 
   print $Line >> $BookmarksPath
+
+  local +r New=$ZDOT_HOME/new_bookmarks.zsh
+  rm -rf $New
+  touch $New
+
   generate_bookmark $Line $ZDOT_HOME/new_bookmarks.zsh
   source_bookmarks
 

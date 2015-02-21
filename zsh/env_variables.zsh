@@ -310,7 +310,7 @@ export WORKBOOKMARKS_ALIAS_PATH=$ZDOT_HOME/work_bookmarks.zsh
 
 typeset -T BOOKMARKS_ALIASES bookmarks_aliases
 
-bookmarks_aliases=($BOOKMARKS_ALIAS_PATH $WORKBOOKMARKS_PATH)
+bookmarks_aliases=($BOOKMARKS_ALIAS_PATH $WORKBOOKMARKS_ALIAS_PATH $ZDOT_HOME/new_bookmarks.zsh)
 
 export ALIASES_PATH=$ZDOT_HOME/aliases.zsh
 

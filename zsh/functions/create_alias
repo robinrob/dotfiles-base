@@ -2,10 +2,8 @@ local +r Name=$1
 local +r Value=$2
 local +r AliasFile=$3
 
-
 if [[ "$(alias_exists $Name $AliasFile)" == "no" ]]
  then
-   print wank
 	print "
 alias $Name=\"$Value\"" >> $AliasFile
 
