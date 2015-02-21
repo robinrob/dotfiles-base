@@ -48,7 +48,7 @@ source $ZDOT_HOME/aliases.zsh
 
 # Bookmarks
 ###############################################################################
-source_bookmarks
+source $ZDOT_HOME/bookmarks.zsh
 
 
 # Path
