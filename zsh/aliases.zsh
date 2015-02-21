@@ -176,8 +176,6 @@ alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Version
 
 alias dic="dict"
 
-alias int="intellij"
-
 alias utorrent="open -a uTorrent"
 
 alias spotify="open -a Spotify"
@@ -243,6 +241,10 @@ alias cdzd="cd_dir $ZDOT_HOME"
 alias cdgg="cd_dir $HOME/Google\ Drive"
 
 alias cddocs="cd_dir $DOCS_HOME"
+
+alias cddc="cd_dir $DOCS_HOME"
+
+alias cdcr="cd_dir $MERCURY_DOCS_HOME/air-crash-reports"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
@@ -949,6 +951,8 @@ alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias phon="phonetic"
+
 alias std="start_dev"
 
 alias enD="end_dev"

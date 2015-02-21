@@ -1,1 +1,6 @@
-$INTELLIJ_IDEA_PATH
+if [[ -n $1 ]]
+then
+  local +r PATH=$PWD/$1
+fi
+
+$INTELLIJ_IDEA_PATH $PATH

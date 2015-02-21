@@ -199,9 +199,9 @@ export COMMON_HOME=$FILES_HOME/common
 
 export COMMON_DOCS_HOME=$COMMON_HOME/docs
 
-export MERCURY_HOME=$FILES_HOME/$MERCURY_HOSTNAME
+export MERCURY_DOCS_HOME=$FILES_HOME/$MERCURY_HOSTNAME
 
-export SONGS_HOME=$MERCURY_HOME/docs/creative/songs
+export SONGS_HOME=$MERCURY_DOCS_HOME/docs/creative/songs
 
 export VENUS_HOME=$FILES_HOME/$VENUS_HOSTNAME
 
@@ -209,7 +209,7 @@ export TEMP_HOME=$HOSTFILES_HOME/temp
 
 export DOCS_HOME=$HOSTFILES_HOME/docs
 
-export LISTS_HOME=$MERCURY_HOME/docs/lists
+export LISTS_HOME=$MERCURY_DOCS_HOME/docs/lists
 
 export RDOCS_HOME=$RFILES_HOME/docs
 
@@ -237,7 +237,7 @@ export AWS_CONFIG="$HOME/.aws/config"
 
 export KITCHENPLAN_HOME=/opt/kitchenplan
 
-export RECORDS_HOME="$MERCURY_HOME/docs/IMPORTANT/records"
+export RECORDS_HOME="$MERCURY_DOCS_HOME/docs/IMPORTANT/records"
 
 export WORK_RECORDS_HOME="$VENUS_HOME/docs/IMPORTANT/records"
 
@@ -250,7 +250,7 @@ export CAMERA_HOME="$FILES_HOME/Camera\ Uploads"
 
 export TRASH_HOME=$HOME/.Trash
 
-export CANADA_HOME="$MERCURY_HOME/docs/IMPORTANT/canada"
+export CANADA_HOME="$MERCURY_DOCS_HOME/docs/IMPORTANT/canada"
 
 export USE_PYTHON=1
 
