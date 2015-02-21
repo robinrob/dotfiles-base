@@ -1,5 +1,6 @@
 TASK=$1
 shift
+
 local +r -a TASK_ARGS
 TASK_ARGS=($*)
 
