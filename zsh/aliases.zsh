@@ -949,6 +949,8 @@ alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias hmrec="salesforce_record eu1"
+
 alias rsal="re_source_aliases"
 
 alias phone="phonetic"

@@ -1,0 +1,4 @@
+local +r Instance=$1
+local +r Id=$2
+
+browser "https://$Instance.salesforce.com/$Id"
