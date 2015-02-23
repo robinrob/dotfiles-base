@@ -8,5 +8,8 @@ if [[ "$(alias_exists $Name $AliasFile)" == "no" ]]
 
   alias $Name="$Value"
 
-  print "$(yellow $Name) $(green aliased to) $(yellow $Value)"
+  if [[ -z $Quiet ]]
+  then
+    print "$(yellow $Name) $(green aliased to) $(yellow $Value)"
+  fi
 fi

@@ -22,7 +22,9 @@ alias age="stat -f '%m%t%Sm %N'"
 
 alias p="print"
 
-alias unal="delete_alias"
+alias dal="delete_alias"
+
+alias unal="unalias_aliases"
 
 alias timezones="sudo systemsetup -listtimezones"
 
@@ -158,12 +160,6 @@ alias preview="open -a Preview"
 
 alias livereload="open -a LiveReload"
 
-alias safari="open -a Safari"
-
-alias chrome="open -a Google\ Chrome"
-
-alias firefox="open -a Firefox"
-
 alias cpp="copy_print"
 
 alias finder="open -a finder"
@@ -216,6 +212,8 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdlb="cd_dir /usr/local/Library"
+
 alias cdcc="cd_dir $COCOS_HOME"
 
 alias cdph="cd_dir $PHOTOS_HOME"
@@ -951,7 +949,7 @@ alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
-alias rsal="source_aliases"
+alias rsal="re_source_aliases"
 
 alias phone="phonetic"
 
@@ -987,8 +985,6 @@ alias lsdir="ls_dirname"
 
 alias sf="salesforce_search"
 
-alias sfs="salesforce_search"
-
 alias sfc="salesforce_class_search"
 
 alias sfd="salesforce_developer_search"
@@ -998,6 +994,8 @@ alias sfm="salesforce_method_search"
 alias sfo="salesforce_object_search"
 
 alias bk="safari_books_search"
+
+alias sfs="bk"
 
 alias rp="source_repo"
 

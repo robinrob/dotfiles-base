@@ -302,7 +302,7 @@ export BOOKMARKS_PATH=$LISTS_HOME/bookmarks.txt
 export WORKBOOKMARKS_PATH=$LISTS_HOME/work_bookmarks.txt
 
 typeset -T BOOKMARKS bookmarks
-bookmarks=($BOOKMARKS_PATH $WORKBOOKMARKS_PATH $LISTS_HOME/sf.txt)
+bookmarks=($LISTS_HOME/sf.txt $WORKBOOKMARKS_PATH $BOOKMARKS_PATH)
 
 export BOOKMARKS_ALIAS_PATH=$ZDOT_HOME/bookmarks.zsh
 
@@ -343,7 +343,7 @@ export LESSC_PATH="/usr/local/lib/node_modules/less/bin/lessc"
 ###############################################################################
 # Cocos
 ###############################################################################
-export COCOS_HOME="/usr/local/Library/cocos2d-js-v3.2"
+export COCOS_HOME="/usr/local/Library/cocos2d-js-v3.3"
 
 export COCOS_CONSOLE_ROOT=$COCOS_HOME/tools/cocos2d-console/bin
 

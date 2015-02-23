@@ -1,0 +1,1 @@
+df -h | head -2 | tail -1 | awk -F' ' '{print $4}'

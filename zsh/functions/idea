@@ -3,4 +3,4 @@ then
   local +r PATH=$PWD/$1
 fi
 
-$INTELLIJ_IDEA_PATH $PATH
+$INTELLIJ_IDEA_PATH $PATH &

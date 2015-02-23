@@ -1,4 +1,4 @@
-if (( #@ > 0 ))
+if (( # > 0 ))
 then
   safari "http://my.safaribooksonline.com/search?q=$(urlencode $@)"
 else
