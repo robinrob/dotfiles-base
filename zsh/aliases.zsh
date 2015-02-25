@@ -156,13 +156,7 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ###############################################################################
-alias preview="open -a Preview"
-
-alias livereload="open -a LiveReload"
-
 alias cpp="copy_print"
-
-alias finder="open -a finder"
 
 alias unz="unzip"
 
@@ -951,7 +945,9 @@ alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 alias hmrec="salesforce_record eu1"
 
-alias rsal="re_source_aliases"
+alias rsal="source_aliases"
+
+alias rsaL="re_source_aliases"
 
 alias phone="phonetic"
 
