@@ -1,0 +1,20 @@
+DEFAULT="Cloudreach"
+
+ACTION='connect'
+while getopts q opt
+do
+case $opt in
+  q) ACTION='disconnect'; shift; break
+esac
+done
+
+if [[ -n $1 ]]
+then
+  VPN=$1
+else
+  VPN=$DEFAULT
+fi
+
+SCRIPT='tell application "Viscosity" to '$ACTION' "'$VPN'"'
+green $SCRIPT
+osascript -e $SCRIPT
