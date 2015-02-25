@@ -426,9 +426,9 @@ alias cdms="cd_dir $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
 
 alias ccr="cocos run"
 
-alias ccc="cocos compile"
+alias ccc="cocos compile -p android"
 
-alias ccd="cocos deploy"
+alias ccd="cocos deploy -p android"
 
 alias ccn="cocos new -l js"
 
