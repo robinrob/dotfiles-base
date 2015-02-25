@@ -6,5 +6,5 @@ if [[ -n $App ]]
 then
  eval "$App \$(lastf)"
 else
-  open \$(lastf)
+  open $(lastf)
 fi

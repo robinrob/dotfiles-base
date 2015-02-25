@@ -943,6 +943,8 @@ alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias vpnd="vpn -q"
+
 alias hmrec="salesforce_record eu1"
 
 alias rsal="source_aliases"
