@@ -444,14 +444,6 @@ alias dst="cd_status $DOTFILES_HOME"
 
 alias fpl="fab pull"
 
-alias bsv="cd_save $BACKUPS_HOME"
-
-alias bpl="cd_pull $BACKUPS_HOME"
-
-alias lpl="cd_pull $LOCAL_HOME"
-
-alias lsv="cd_save $LOCAL_HOME"
-
 alias kel="knife environment list"
 
 alias knl="knife node list"
@@ -462,12 +454,7 @@ alias kud="knife upload databag"
 
 alias kdl="knife download"
 
-alias lst="cd_status $LOCAL_HOME"
-
-alias vcr="vpn Cloudreach"
-
-alias vdc="vpn_disconnect"
-
+alias vpnd="vpn -q"
 
 ###############################################################################
 # Git
@@ -943,7 +930,7 @@ alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
-alias vpnd="vpn -q"
+alias olst="open_last_modified"
 
 alias hmrec="salesforce_record eu1"
 
