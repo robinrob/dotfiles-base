@@ -288,7 +288,7 @@ alias cdmw="cd_dir $JS_HOME/projects/moonwarriors-robin"
 
 alias cdgam="cd_dir $GAM_PATH"
 
-alias cdexp="cd '$EXPENSES_HOME'"
+alias cdexp="cd $EXPENSES_HOME"
 
 alias cdrec="cd_dir $(dirname $RECORDS_PATH)"
 
