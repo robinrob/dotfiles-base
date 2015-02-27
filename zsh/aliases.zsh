@@ -288,7 +288,7 @@ alias cdmw="cd_dir $JS_HOME/projects/moonwarriors-robin"
 
 alias cdgam="cd_dir $GAM_PATH"
 
-alias cdexp="cd '$EXPENSES_HOME'"
+alias cdexp="cd $EXPENSES_HOME"
 
 alias cdrec="cd_dir $(dirname $RECORDS_PATH)"
 
@@ -744,8 +744,6 @@ alias jl="jsonlint"
 
 alias bcodes="cat $IMPORTANT_HOME/passwords/Backup-codes-robin.smith.txt"
 
-alias gcl="git clone"
-
 alias cmd="$EDITOR $TEMP_HOME/commands.txt"
 
 alias window="open /Users/robinsmith/Dropbox/Camera\ Uploads/gif/window.gif"
@@ -931,7 +929,6 @@ alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 # Functions
 ###############################################################################
 alias gtr="google_translate"
-
 alias olst="open_last_modified"
 
 alias hmrec="salesforce_record eu1"
