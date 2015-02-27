@@ -1,0 +1,10 @@
+local +r Site=$1
+local +r User=$2
+local +r Repo=$3
+
+local +r -A sites
+
+sites[bb]=bitbucket.org
+sites[gh]=github.com
+
+git clone "git@$sites[$Site]:$User/$Repo.git"

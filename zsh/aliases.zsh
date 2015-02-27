@@ -763,8 +763,6 @@ alias jl="jsonlint"
 
 alias bcodes="cat $IMPORTANT_HOME/passwords/Backup-codes-robin.smith.txt"
 
-alias gcl="git clone"
-
 alias cmd="$EDITOR $TEMP_HOME/commands.txt"
 
 alias window="open /Users/robinsmith/Dropbox/Camera\ Uploads/gif/window.gif"
@@ -949,6 +947,10 @@ alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gcl="git clone"
+
+alias gc="git_clone"
+
 alias vpnd="vpn -q"
 
 alias hmrec="salesforce_record eu1"
