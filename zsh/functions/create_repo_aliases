@@ -6,8 +6,8 @@ abbreviations[bouncing_balls]=bb
 abbreviations[coffeescript]=cs
 abbreviations[c]=c
 abbreviations[c-plus-plus]=cp
-abbreviations[dotfiles]=d
-abbreviations[dotfiles-base]=db
+abbreviations[dotfiles]=dt
+abbreviations[dotfiles-base]=d
 abbreviations[force-com]=f
 abbreviations[game]=ga
 abbreviations[gimp]=gi
@@ -39,5 +39,3 @@ do
 	alias_repo_action $repo $abbreviations[$repo] pl cd_pull
   alias_repo_nav $repo $abbreviations[$repo]
 done
-
-unalias dsv

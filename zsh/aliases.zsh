@@ -432,15 +432,7 @@ alias ccd="cocos deploy -p android"
 
 alias ccn="cocos new -l js"
 
-alias st="cd_status"
-
 alias sv="cd_save"
-
-alias dcm="cd_commit $DOTFILES_HOME"
-
-alias ddi="cd_diff $DOTFILES_HOME"
-
-alias dst="cd_status $DOTFILES_HOME"
 
 alias fpl="fab pull"
 
@@ -928,7 +920,10 @@ alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias dtsv="dotfiles_save"
+
 alias gtr="google_translate"
+
 alias olst="open_last_modified"
 
 alias hmrec="salesforce_record eu1"
