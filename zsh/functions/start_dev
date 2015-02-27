@@ -1,5 +1,4 @@
 idea
 livereload
 cd $GAME_HOME
-chrome
 rake_do cocos:run

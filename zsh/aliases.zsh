@@ -930,6 +930,8 @@ alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gtr="google_translate"
+
 alias olst="open_last_modified"
 
 alias hmrec="salesforce_record eu1"
