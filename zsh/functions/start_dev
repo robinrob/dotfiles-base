@@ -1,4 +1,4 @@
-idea
 livereload
+idea
 cd $GAME_HOME
 rake_do cocos:run

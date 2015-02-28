@@ -116,14 +116,6 @@ alias ssr="red 'Shutting DOWN!'; sudo shutdown -r now"
 
 alias lgo="osascript -e 'tell application \"loginwindow\" to  «event aevtrlgo»'"
 
-alias cdsam="cd_dir $COCOS_HOME/samples"
-
-alias cdt="cd_dir $COCOS_HOME/samples/js-tests"
-
-alias cdff="cd_dir $JS_HOME/projects/flappy-fish"
-
-alias cdpk="cdff"
-
 alias adbd="adb devices"
 
 alias lsdl="ls $DOWNLOADS_HOME"
@@ -206,6 +198,16 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdsam="cd_dir $COCOS_HOME/samples"
+
+alias cdt="cd_dir $COCOS_HOME/samples/js-tests"
+
+alias cdmw="cd_dir $COCOS_HOME/samples/js-moonwarriors"
+
+alias cdff="cd_dir $JS_HOME/projects/flappy-fish"
+
+alias cdpk="cdff"
+
 alias cdlb="cd_dir /usr/local/Library"
 
 alias cdcc="cd_dir $COCOS_HOME"
@@ -237,6 +239,12 @@ alias cddocs="cd_dir $DOCS_HOME"
 alias cddc="cd_dir $DOCS_HOME"
 
 alias cdcr="cd_dir $MERCURY_DOCS_HOME/air-crash-reports"
+
+alias screenshots="cd_dir $SCREENSHOTS_HOME"
+
+alias lasts="cd_dir $SCREENSHOTS_HOME && $LOCAL_HOME/bin/lastf -s $SCREENSHOT_NAME"
+
+alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
@@ -283,8 +291,6 @@ alias cdaws="cd_dir `dirname $AWS_CONFIG`"
 alias cdm="cd_dir $JS_HOME/projects"
 
 alias cdmb="cd_dir $JS_HOME/projects/mobile-app-cordova"
-
-alias cdmw="cd_dir $JS_HOME/projects/moonwarriors-robin"
 
 alias cdgam="cd_dir $GAM_PATH"
 
@@ -335,24 +341,6 @@ alias rgd="rvm gemset delete"
 alias rvl="rvm list"
 
 alias rsc="rails console"
-
-alias plrk="cd rake; green 'Git-pulling rake ...'; git pull $DEFAULT_GIT_REMOTE master; cd - > /dev/null"
-
-alias svrk="cd rake; green 'Rake-saving rake ...'; rake save; cd - > /dev/null"
-
-alias rkser="rake_do rails:server"
-
-alias rls="rails server"
-
-alias rkm="rake_do db:migrate"
-
-alias rkt="rake_do test"
-
-alias rkst="rake_do git:sort_sub"
-
-alias rk="rake"
-
-alias rkjc="rake_do jekyll:clean"
 
 alias gnb="gem install bundler && bundle install"
 
@@ -554,13 +542,29 @@ alias gplod="git pull $DEFAULT_GIT_REMOTE develop"
 ###############################################################################
 # Rake
 ###############################################################################
+alias rkser="rake_do rails:server"
+
+alias rls="rails server"
+
+alias rkm="rake_do db:migrate"
+
+alias rkt="rake_do test"
+
+alias rkst="rake_do git:sort_sub"
+
+alias rk="rake"
+
+alias rkjc="rake_do jekyll:clean"
+
+alias rkd="rake_do"
+
 alias rkg="rake -g"
 
 alias rkrt="rake routes"
 
 alias rki="rake install"
 
-alias ccrn="chrome; rake_do cocos:run"
+alias ccrn="rake_do cocos:run"
 
 alias rkdp="rake_do rails:deploy"
 
@@ -910,12 +914,6 @@ alias ad="address"
 
 alias ph="phone"
 
-alias screenshots="cd_dir $SCREENSHOTS_HOME"
-
-alias lasts="cd_dir $SCREENSHOTS_HOME && $LOCAL_HOME/bin/lastf -s $SCREENSHOT_NAME"
-
-alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
-
 
 ###############################################################################
 # Functions
@@ -997,8 +995,6 @@ alias reminderwork="reminder robin.smith@cloudreach.co.uk"
 alias ssd="sudo_shutdown"
 
 alias Cp="silent_cp"
-
-alias rkd="rake_do"
 
 alias gh="github"
 
