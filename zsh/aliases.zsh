@@ -580,6 +580,8 @@ alias rkp="rake_do git:push"
 ###############################################################################
 # Files
 ###############################################################################
+alias mand="$EDITOR frameworks/runtime-src/proj.android/AndroidManifest.xml"
+
 alias min="$EDITOR $DOTFILES_BASE_HOME/install.zsh"
 
 alias chi="cat $HOME/.zhistory"
@@ -932,7 +934,7 @@ alias rsal="source_aliases"
 
 alias rsaL="re_source_aliases"
 
-alias phone="phonetic"
+alias phon="phonetic"
 
 alias std="start_dev"
 

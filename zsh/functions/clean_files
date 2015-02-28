@@ -5,7 +5,7 @@ check_cd_root_arg $1 || return 1
 IFS="
 "
 
-local Result
+local +r Result
 Result=($(gfind . -maxdepth 1 \( -type f -and -regex '.*/[^.].*' \)))
 
 move_to_trash $Result
