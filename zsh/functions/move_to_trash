@@ -1,0 +1,10 @@
+local +r -a Files
+Files=($*)
+
+for file in $Files
+do
+  print "$(green Moving) $(yellow $file) $(green to $TRASH_HOME)"
+  mv $file ~/.Trash
+done
+
+return 0

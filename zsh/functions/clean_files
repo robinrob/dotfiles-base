@@ -6,10 +6,11 @@ IFS="
 "
 
 local Result
-Result=($(gfind . -maxdepth 1 \( -type d -and -regex '.*/[a-z0-9].*' \) -or \( -type f -and -regex '.*/[^.].*' \)))
+Result=($(gfind . -maxdepth 1 \( -type f -and -regex '.*/[^.].*' \)))
 
 move_to_trash $Result
 
 cd $pwd > /dev/null
 
 return 0
+

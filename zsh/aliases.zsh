@@ -453,7 +453,7 @@ alias gacm="git add -u * && git add * && git commit -m"
 
 alias grS="git reset"
 
-alias grH="git reset HEAD"
+alias grsH="git reset HEAD"
 
 alias gas="git add *"
 
@@ -918,6 +918,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias clf="clean_files"
+
 alias dtsv="dotfiles_save"
 
 alias gtr="google_translate"
@@ -944,7 +946,9 @@ alias mfn="edit_function"
 
 alias hpb="head_pbcopy"
 
-alias clh="clean_home"
+alias clh="clean_home $HOME"
+
+alias clf="clean_files"
 
 alias 80="repeat_string 80 -"
 
