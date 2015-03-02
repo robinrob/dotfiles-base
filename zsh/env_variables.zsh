@@ -271,7 +271,7 @@ export BOUNCING_BALLS_HOME="$JS_HOME/projects/bouncing-balls"
 
 export CONCENTRATION_GAME_HOME="$JS_HOME/projects/conentration-game"
 
-export GAME_HOME=$BOUNCING_BALLS_HOME
+export GAME_HOME=$CONCENTRATION_GAME_HOME
 
 ###############################################################################
 # Files
