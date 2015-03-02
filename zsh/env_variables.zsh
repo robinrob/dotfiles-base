@@ -267,9 +267,11 @@ export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/files/backgrounds
 export SYSTEM_SCREENSAVERS_HOME=/Library/Screen\ Savers/Default\ Collections
 
 # Projects
-export GAME_HOME=$BOUNCING_BALLS_HOME
-
 export BOUNCING_BALLS_HOME="$JS_HOME/projects/bouncing-balls"
+
+export CONCENTRATION_GAME_HOME="$JS_HOME/projects/conentration-game"
+
+export GAME_HOME=$BOUNCING_BALLS_HOME
 
 ###############################################################################
 # Files

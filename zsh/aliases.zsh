@@ -102,6 +102,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias ycp="yes | cp"
+
 alias api="cocosapi"
 
 alias lsw="ls | wc -l"
@@ -198,6 +200,8 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdcn="cd_dir $JS_HOME/projects/conentration-game"
+
 alias cdsam="cd_dir $COCOS_HOME/samples"
 
 alias cdt="cd_dir $COCOS_HOME/samples/js-tests"
