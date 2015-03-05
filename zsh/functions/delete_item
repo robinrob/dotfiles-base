@@ -7,3 +7,5 @@ do
   gsed -i '/^'$Item'::/d' $file
   print "$(yellow $Item) $(green deleted from) $(yellow $file)"
 done
+
+cat $List

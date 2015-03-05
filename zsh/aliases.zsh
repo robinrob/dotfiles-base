@@ -200,6 +200,8 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdpl="cd_dir $JS_HOME/projects/planet-pairs"
+
 alias cdcn="cd_dir $JS_HOME/projects/conentration-game"
 
 alias cdsam="cd_dir $COCOS_HOME/samples"

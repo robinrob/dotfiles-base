@@ -13,6 +13,7 @@ local +r ListPath=$LISTS_HOME/${List}.txt
 if [[ -n $(cat $ListPath | ggrep "^$1") ]]
 then
   print "$(yellow $1) $(red already in) $(yellow $List)"
+  cat $ListPath
 
 elif (( $#* == 1 ))
 then
@@ -21,6 +22,7 @@ then
 
   print "$Item" >> $ListPath
   print "$(yellow $Value) $(green added to) $(yellow $List)"
+  tailc $ListPath
 
 elif (( $#* >= 2 ))
 then
@@ -30,6 +32,5 @@ then
 
   print "$Item" >> $ListPath
   print "$(yellow $Name) $(green added to) $(yellow $List) $(green as) $(yellow $Value)"
+  tailc $ListPath
 fi
-
-cat $ListPath

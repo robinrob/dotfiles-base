@@ -215,8 +215,6 @@ export IMPORTANT_HOME=$DOCS_HOME/IMPORTANT
 
 export KNOWLEDGE_HOME=$DOCS_HOME/knowledge
 
-export SCREENSAVERS_HOME=$HOSTFILES_HOME/screensavers
-
 export SCREENSHOTS_HOME=$HOSTFILES_HOME/screenshots
 
 export SCREENSHOT_NAME=$HOSTNAME
@@ -262,9 +260,11 @@ export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/22.6.2/
 
 export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
 
-export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/files/backgrounds
+export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/files/backgrounds/jpg
 
 export SYSTEM_SCREENSAVERS_HOME=/Library/Screen\ Savers/Default\ Collections
+
+export SCREENSAVERS_HOME="$SYSTEM_SCREENSAVERS_HOME/Robin"
 
 # Projects
 export BOUNCING_BALLS_HOME="$JS_HOME/projects/bouncing-balls"
