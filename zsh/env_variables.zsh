@@ -269,9 +269,11 @@ export SCREENSAVERS_HOME="$SYSTEM_SCREENSAVERS_HOME/Robin"
 # Projects
 export BOUNCING_BALLS_HOME="$JS_HOME/projects/bouncing-balls"
 
-export CONCENTRATION_GAME_HOME="$JS_HOME/projects/conentration-game"
+export CONCENTRATION_GAME_HOME="$JS_HOME/projects/concentration-game"
 
-export GAME_HOME=$CONCENTRATION_GAME_HOME
+export PLANET_PAIRS_HOME="$JS_HOME/projects/planet-pairs"
+
+export GAME_HOME=$PLANET_PAIRS_HOME
 
 ###############################################################################
 # Files

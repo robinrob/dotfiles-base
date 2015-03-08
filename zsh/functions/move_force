@@ -1,0 +1,10 @@
+# I use this when i want to rename a file to the same name but with different
+# capitalisation
+
+local +r Target=$1
+local +r Destination=$2
+
+local +r Temp="/tmp/$(gdate +%s)"
+
+mv $Target $Temp
+mv $Temp $Destination

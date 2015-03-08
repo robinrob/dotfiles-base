@@ -200,9 +200,11 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdce="cd_dir $JS_HOME/projects/cocos-examples"
+
 alias cdpl="cd_dir $JS_HOME/projects/planet-pairs"
 
-alias cdcn="cd_dir $JS_HOME/projects/conentration-game"
+alias cdcn="cd_dir $JS_HOME/projects/concentration-game"
 
 alias cdsam="cd_dir $COCOS_HOME/samples"
 
@@ -926,6 +928,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias mvf="move_force"
+
+alias gsap="git_submodule_add_project"
+
 alias clf="clean_files"
 
 alias dtsv="dotfiles_save"

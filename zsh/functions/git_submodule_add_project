@@ -1,0 +1,3 @@
+local +r Project=$1
+
+git submodule add git@github.com:robinrob/$Project.git projects/$Project
