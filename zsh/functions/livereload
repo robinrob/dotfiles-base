@@ -1,1 +1,1 @@
-open -a LiveReload
+open -a LiveReload $@

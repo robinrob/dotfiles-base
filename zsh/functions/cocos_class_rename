@@ -1,0 +1,14 @@
+! [[ -f .cocos-project.json ]] && red "No .cocos-project.json!" && exit 1
+
+local +r Old=$1
+local +r New=$2
+
+function do_sed {
+  cmd="gsed -i 's/$1/$2/g' $3"
+  green $cmd
+  eval $cmd
+}
+
+do_sed $Old $New project.json
+do_sed $Old $New main.js
+do_sed $Old $New 'src/*'

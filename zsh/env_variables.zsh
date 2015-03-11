@@ -273,7 +273,11 @@ export CONCENTRATION_GAME_HOME="$JS_HOME/projects/concentration-game"
 
 export PLANET_PAIRS_HOME="$JS_HOME/projects/planet-pairs"
 
-export GAME_HOME=$PLANET_PAIRS_HOME
+export COCOS_EXAMPLES_HOME="$JS_HOME/projects/cocos-examples"
+
+export RUNNER_HOME="$JS_HOME/projects/runner"
+
+export GAME_HOME=$RUNNER_HOME
 
 ###############################################################################
 # Files

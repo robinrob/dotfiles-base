@@ -1,4 +1,9 @@
-livereload
+open -a iTerm $GAME_HOME
 cd $GAME_HOME
-idea .
+
+livereload .
+
+idea . &
+idea $COCOS_HOME/samples/js-tests &
+
 rake_do cocos:run

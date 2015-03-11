@@ -200,6 +200,8 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdrn="cd_dir $JS_HOME/projects/runner"
+
 alias cdce="cd_dir $JS_HOME/projects/cocos-examples"
 
 alias cdpl="cd_dir $JS_HOME/projects/planet-pairs"
@@ -928,6 +930,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias ccrf="cocos_class_rename"
+
 alias mvf="move_force"
 
 alias gsap="git_submodule_add_project"
@@ -999,6 +1003,8 @@ alias rp="source_repo"
 alias killp="kill_processes"
 
 alias kps="kill_processes"
+
+alias grp="grep_processes"
 
 alias lps="list_processes"
 
