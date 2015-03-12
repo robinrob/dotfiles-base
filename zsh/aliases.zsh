@@ -930,6 +930,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias it="iterm"
+
+alias lrl="livereload"
+
 alias ccrf="cocos_class_rename"
 
 alias mvf="move_force"

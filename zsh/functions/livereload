@@ -1,1 +1,1 @@
-open -a LiveReload $@
+open_app LiveReload $@

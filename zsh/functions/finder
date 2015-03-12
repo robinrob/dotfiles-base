@@ -1,1 +1,1 @@
-open -a Finder
+open -a Finder $@

@@ -167,7 +167,7 @@ export TODO_HOME=$LOCAL_HOME/lib/todo.csv
 
 export INTELLIJ_VERSION=14
 
-export INTELLIJ_IDEA="IntelliJ Idea $INTELLIJ_VERSION"
+export INTELLIJ_IDEA="IntelliJ IDEA $INTELLIJ_VERSION"
 
 export INTELLIJ_IDEA_HOME="/Applications/$INTELLIJ_IDEA.app/Contents/MacOS"
 
