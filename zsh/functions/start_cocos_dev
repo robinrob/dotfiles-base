@@ -1,0 +1,14 @@
+if [[ -n $1 ]]
+then
+  local +r Where=$1
+else
+  local +r Where=$PWD
+fi
+
+cd $Where
+
+iterm $Where
+livereload
+idea
+
+rake_do cocos:run

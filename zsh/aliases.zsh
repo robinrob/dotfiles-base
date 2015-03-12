@@ -956,7 +956,9 @@ alias rsaL="re_source_aliases"
 
 alias phon="phonetic"
 
-alias std="start_dev"
+alias scd="start_cocos_dev"
+
+alias std="start_game_dev"
 
 alias enD="end_dev"
 

@@ -1,9 +1,0 @@
-iTerm $GAME_HOME
-cd $GAME_HOME
-
-livereload
-
-idea
-idea $COCOS_HOME/samples/js-tests
-
-rake_do cocos:run

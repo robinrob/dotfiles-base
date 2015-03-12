@@ -1,0 +1,2 @@
+start_cocos_dev $GAME_HOME
+idea $COCOS_HOME/samples/js-tests
