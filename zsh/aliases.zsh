@@ -1118,7 +1118,7 @@ alias sal="sed_all"
 
 alias aof="green \$(alphabet_of_files)"
 
-alias aofi="red \$(inverse_alphabet \$(alphabet_of_files))"
+alias aoF="red \$(inverse_alphabet \$(alphabet_of_files))"
 
 alias cof="count_of_files"
 
