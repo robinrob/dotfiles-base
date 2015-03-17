@@ -361,6 +361,8 @@ export ANT_ROOT=/usr/local/bin
 
 export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
 
+export JS_TESTS_HOME="$COCOS_HOME/samples/js-tests"
+
 
 ###############################################################################
 # Function aliases

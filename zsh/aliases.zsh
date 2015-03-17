@@ -200,17 +200,7 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
-alias cdrn="cd_dir $JS_HOME/projects/runner"
-
-alias cdce="cd_dir $JS_HOME/projects/cocos-examples"
-
-alias cdpl="cd_dir $JS_HOME/projects/planet-pairs"
-
-alias cdcn="cd_dir $JS_HOME/projects/concentration-game"
-
 alias cdsam="cd_dir $COCOS_HOME/samples"
-
-alias cdt="cd_dir $COCOS_HOME/samples/js-tests/src"
 
 alias cdmw="cd_dir $COCOS_HOME/samples/js-moonwarriors"
 
