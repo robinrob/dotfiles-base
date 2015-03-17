@@ -210,11 +210,9 @@ alias cdcn="cd_dir $JS_HOME/projects/concentration-game"
 
 alias cdsam="cd_dir $COCOS_HOME/samples"
 
-alias cdt="cd_dir $COCOS_HOME/samples/js-tests"
+alias cdt="cd_dir $COCOS_HOME/samples/js-tests/src"
 
 alias cdmw="cd_dir $COCOS_HOME/samples/js-moonwarriors"
-
-alias cdff="cd_dir $JS_HOME/projects/flappy-fish"
 
 alias cdpk="cdff"
 
@@ -647,8 +645,6 @@ alias gbrew="cat $BREWLIST | grep -i"
 alias mpr="$EDITOR $HOME/.zsh.prompts/prompt_robin_setup.zsh"
 
 alias cpr="cat $HOME/.zsh.prompts/prompt_robin_setup.zsh"
-
-alias resource="source $HOME/.zshrc"
 
 alias rs="resource"
 
@@ -1110,7 +1106,7 @@ alias dspdl="cd_dir $HOME/Downloads; despace; cd - > /dev/null"
 
 alias td="todo"
 
-alias rld="reload"
+alias rld="reload_functions"
 
 alias gral="grep_all"
 

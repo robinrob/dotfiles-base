@@ -12,3 +12,5 @@ function do_sed {
 do_sed $Old $New project.json
 do_sed $Old $New main.js
 do_sed $Old $New 'src/*'
+
+mv src/$Old.js src/$New.js

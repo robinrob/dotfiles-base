@@ -271,6 +271,8 @@ export BOUNCING_BALLS_HOME="$JS_HOME/projects/bouncing-balls"
 
 export CONCENTRATION_GAME_HOME="$JS_HOME/projects/concentration-game"
 
+export FLAPPY_FISH_HOME="$JS_HOME/projects/flappy-fish"
+
 export PLANET_PAIRS_HOME="$JS_HOME/projects/planet-pairs"
 
 export COCOS_EXAMPLES_HOME="$JS_HOME/projects/cocos-examples"

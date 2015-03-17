@@ -28,6 +28,13 @@ abbreviations[scala]=sc
 abbreviations[sh]=s
 abbreviations[zsh]=z
 
+# Games
+abbreviations[bouncing-balls]=bb
+abbreviations[cocos-examples]=ce
+abbreviations[flappy-fish]=ff
+abbreviations[planet-pairs]=pl
+abbreviations[runner]=rn
+
 # Work
 abbreviations[work-force-com]=wf
 
@@ -37,5 +44,6 @@ do
 	alias_repo_action $repo $abbreviations[$repo] cm cd_commit
 	alias_repo_action $repo $abbreviations[$repo] st cd_status
 	alias_repo_action $repo $abbreviations[$repo] pl cd_pull
+	alias_repo_action $repo id $abbreviations[$repo] idea
   alias_repo_nav $repo $abbreviations[$repo]
 done
