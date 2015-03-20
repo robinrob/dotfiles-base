@@ -110,8 +110,6 @@ export JS_HOME=$PROG_HOME/javascript
 
 export JS_LIB_HOME=$JS_HOME/lib
 
-export SPRITES_HOME=$JS_HOME/projects/sprites
-
 export HTML_CSS_HOME=$PROG_HOME/html-css
 
 export HTML_LESS_HOME=$PROG_HOME/html-less
