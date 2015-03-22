@@ -1,11 +1,10 @@
 if [[ -n $1 ]]
 then
   local +r Where=$1
+  cd $Where
 else
   local +r Where=$PWD
 fi
-
-cd $Where
 
 iterm $Where
 livereload
