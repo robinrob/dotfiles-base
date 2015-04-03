@@ -662,6 +662,10 @@ alias essh="edit $HOME/.ssh/config"
 
 alias ess="edit $HOME/.ssh/config"
 
+alias css="cat $HOME/.ssh/config"
+
+alias cssh="cat $HOME/.ssh/config"
+
 alias econf="edit $HOME/.ssh/config"
 
 alias vzsh="vim $HOME/.zshrc"
