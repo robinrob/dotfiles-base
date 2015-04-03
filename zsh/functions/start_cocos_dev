@@ -7,7 +7,6 @@ else
 fi
 
 iterm $Where
-livereload
+chrome http://localhost:3000/index.html
 idea
-
-rake_do cocos:run
+browser_sync_cocos

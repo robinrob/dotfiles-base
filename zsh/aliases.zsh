@@ -236,7 +236,7 @@ alias cddocs="cd_dir $DOCS_HOME"
 
 alias cddc="cd_dir $DOCS_HOME"
 
-alias cdcr="cd_dir $MERCURY_DOCS_HOME/air-crash-reports"
+alias cdcr="cd_dir $CRASH_REPORTS_HOME"
 
 alias screenshots="cd_dir $SCREENSHOTS_HOME"
 
@@ -410,7 +410,7 @@ alias cdnoc="cd_dir $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
 
 alias cdms="cd_dir $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
 
-alias ccr="cocos run"
+alias ccr="cocos run -p android"
 
 alias ccc="cocos compile -p android"
 
@@ -451,7 +451,7 @@ alias gacm="git add -u * && git add * && git commit -m"
 
 alias grS="git reset"
 
-alias grsH="git reset HEAD"
+alias grsH="git reset --hard"
 
 alias gas="git add *"
 
@@ -916,6 +916,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias cbs="browser_sync_cocos"
+
 alias it="iterm"
 
 alias lrl="livereload"

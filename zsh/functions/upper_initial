@@ -1,0 +1,7 @@
+local +r -a Words
+Words=($*)
+
+for word in $Words
+do
+  print "$(upper $word[1])$word[2,-1]"
+done

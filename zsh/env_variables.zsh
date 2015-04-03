@@ -122,6 +122,8 @@ export RUBY_TEMPLATES_HOME=$RUBY_HOME/templates
 
 export RUBYAPP_HOME=$RUBY_HOME/projects/ruby-app
 
+export CRASH_REPORTS_HOME=$MERCURY_DOCS_HOME/air-crash-reports
+
 # export RAKELIB_HOME=$RUBY_HOME/projects/rakelib
 export RAKELIB_HOME=$HOME/.rake
 
