@@ -6,7 +6,8 @@ do
   # row=$(ggrep -Po "(?<=^($Record)::)(.+)" $file)
   # row=$(ggrep -Po1 "$Record::(.+)" $file)
 
-  row=$(pcregrep -o1 -M -N CR "$Record::([^:]+)\n" $file)
+  # row=$(pcregrep -o1 -M -N CR "$Record::((^(::))+)\n" $file)
+  row=$(pcregrep -o1 -M -N CR "$Record::^((?!::).)+" $file)
   row=(${(s/::/)row})
   val=$row[-1]
 
