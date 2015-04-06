@@ -3,11 +3,17 @@ shift; local -a Files; Files=($*)
 
 for file in $Files
 do
-  row=$(ggrep -Po "(?<=^($Record)::)(.+)" $file)
+  # row=$(ggrep -Po "(?<=^($Record)::)(.+)" $file)
+  # row=$(ggrep -Po1 "$Record::(.+)" $file)
+
+  row=$(pcregrep -o1 -M -N CR "$Record::([^:]+)\n" $file)
   row=(${(s/::/)row})
   val=$row[-1]
 
-  [[ -n $val ]] && break;
+  [[ $(is_empty $val) == "no" ]] && break
 done
 
-copy_print ""$val""
+if [[ $(is_empty $val) == "no" ]]
+then
+  copy_print ""$val""
+fi

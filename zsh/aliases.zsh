@@ -920,6 +920,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias trn="translate_to_english"
+
+alias trt="translate_to_tagalog"
+
 alias cbs="browser_sync_cocos"
 
 alias it="iterm"
