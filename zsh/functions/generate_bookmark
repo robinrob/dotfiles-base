@@ -16,6 +16,6 @@ else
   local +r Url=$Parts[2]
 fi
 
-local +r Value="browse_copy $Browser '$Url'"
+local +r Value="browse $Browser '$Url'"
 
 create_alias $Name "$Value" $BookmarksAliasPath
