@@ -920,6 +920,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias cr="cat_run"
+
 alias trn="translate_to_english"
 
 alias trt="translate_to_tagalog"
