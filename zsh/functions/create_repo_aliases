@@ -5,6 +5,7 @@ abbreviations[awk]=a
 abbreviations[bouncing_balls]=bb
 abbreviations[coffeescript]=cs
 abbreviations[c]=c
+abbreviations[coq]=cq
 abbreviations[c-plus-plus]=cp
 abbreviations[dotfiles]=dt
 abbreviations[dotfiles-base]=d
