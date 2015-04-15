@@ -112,9 +112,9 @@ alias pwdp="pwd | pbcopy"
 
 alias cldl="green 'Moving $HOME/Downloads/* to Trash ...'; mv $HOME/Downloads/* $HOME/.Trash"
 
-alias ssd="red 'Shutting DOWN!'; sudo shutdown -h now"
+alias ssd="red 'Shutting down!'; sudo shutdown -h now"
 
-alias ssr="red 'Shutting DOWN!'; sudo shutdown -r now"
+alias ssr="red 'Rebooting!'; sudo shutdown -r now"
 
 alias lgo="osascript -e 'tell application \"loginwindow\" to  «event aevtrlgo»'"
 
@@ -1025,8 +1025,6 @@ alias grec="get_record"
 alias reminderrobin="reminder robin@mrrobinsmith.com"
 
 alias reminderwork="reminder robin.smith@cloudreach.co.uk"
-
-alias ssd="sudo_shutdown"
 
 alias Cp="silent_cp"
 
