@@ -372,6 +372,8 @@ alias onew="new_s ocaml ml"
 
 alias znew="new_s zsh zsh"
 
+alias cnew="new -i '' -e cq -f"
+
 alias jnew="jsnew"
 
 alias cssnew="new -i '' -e css -f"
