@@ -1,0 +1,1 @@
+browser "https://www.physicsforums.com/search/736873/?q=$(urlencode $@)&o=relevance"
