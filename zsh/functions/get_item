@@ -3,11 +3,13 @@ shift; local -a Files; Files=($*)
 
 for file in $Files
 do
-  # row=$(ggrep -Po "(?<=^($Record)::)(.+)" $file)
-  # row=$(ggrep -Po1 "$Record::(.+)" $file)
+  row=$(pcregrep -o1 -M -N CRLF "$Record::((((?<!:):(?!:))|[^:])+)\n.+::" $file)
+  # Catches case where record is last in file:
+  if [[ -z $row ]]
+  then
+    row=$(pcregrep -o1 -M -N CRLF "$Record::((((?<!:):(?!:))|[^:])+)" $file)
+  fi
 
-  # row=$(pcregrep -o1 -M -N CR "$Record::((^(::))+)\n" $file)
-  row=$(pcregrep -o1 -M -N CR "$Record::^((?!::).)+" $file)
   row=(${(s/::/)row})
   val=$row[-1]
 
