@@ -838,6 +838,8 @@ alias crec="cat $RECORDS_PATH"
 
 alias cwr="cat $WORK_RECORDS_PATH"
 
+alias gov="get_record directgovid"
+
 alias lahome="get_record la_home"
 
 alias lawork="get_record la_work"
