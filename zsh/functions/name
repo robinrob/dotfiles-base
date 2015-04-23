@@ -1,3 +1,4 @@
+# todo - doesn't work for names containing dots before extension
 FILENAME=$(basename $1)
 
 PARTS=("${(s/./)FILENAME}")
