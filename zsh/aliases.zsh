@@ -924,6 +924,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias yell="yell_search"
+
 alias phys="physics_forums_search"
 
 alias thes="thesaurus"
