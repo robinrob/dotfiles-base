@@ -1,2 +1,5 @@
-term=$(urlencode $@)
-safari "http://www.sciencemag.org/search?journalcode=sci&volume=&firstpage=&submit=yes&doi=&submit=yes&fulltext=$term&andorexactfulltext=or&titleabstract=$term&andorexacttitleabs=or&title=&andorexacttitle=and&author1=&author2=&fmonth=&fyear=&tmonth=&tyear=&hits=50&sortspec=date&submit=yes&resourcetype=HWCIT%7CHWELTR&tocsectionid=Original+Research&tocsectionid=Reviews%2C+Perspectives+%26+Essays&tocsectionid=AAAS+News+%26+Notes&submit=yes&submit.x=31&submit.y=8&submit=Search"
+local +r Term=$(urlencode $@)
+
+# safari "http://www.sciencemag.org/search?journalcode=sci&volume=&firstpage=&submit=yes&doi=&submit=yes&fulltext=$Term&andorexactfulltext=or&titleabstract=$Term&andorexacttitleabs=or&title=&andorexacttitle=and&author1=&author2=&fmonth=&fyear=&tmonth=&tyear=&hits=50&sortspec=date&submit=yes&resourcetype=HWCIT%7CHWELTR&tocsectionid=Original+Research&tocsectionid=Reviews%2C+Perspectives+%26+Essays&tocsectionid=AAAS+News+%26+Notes&submit=yes&submit.x=31&submit.y=8&submit=Search"
+
+safari "http://www.sciencemag.org/search?site_area=sciencejournals&y=0&fulltext=$Term&x=0&journalcode=sci&journalcode=sigtrans&journalcode=scitransmed&submit=yes"
