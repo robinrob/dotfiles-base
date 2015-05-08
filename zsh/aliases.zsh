@@ -152,8 +152,6 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 alias cpp="copy_print"
 
-alias unz="unzip"
-
 alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
@@ -816,6 +814,8 @@ alias rkct="rake count_all"
 
 alias mkd="mkdir"
 
+alias gcl="git clone"
+
 alias gclm="git clone -b master"
 
 alias gclb="git clone -b "
@@ -886,8 +886,6 @@ alias bank="get_record bank"
 
 alias library="get_record library"
 
-alias lib="library"
-
 alias postcode="get_record home_postcode"
 
 alias pc="postcode"
@@ -924,6 +922,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias lib="search_library"
+
 alias yell="yell_search"
 
 alias phys="physics_forums_search"
@@ -941,8 +941,6 @@ alias trn="translate_to_english"
 alias trt="translate_to_tagalog"
 
 alias cbs="browser_sync_cocos"
-
-alias it="iterm"
 
 alias lrl="livereload"
 

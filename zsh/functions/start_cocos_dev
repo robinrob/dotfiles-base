@@ -7,6 +7,5 @@ else
 fi
 
 iterm $Where
-chrome http://localhost:3000/index.html
 idea
 browser_sync_cocos

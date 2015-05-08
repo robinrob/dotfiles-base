@@ -1,0 +1,4 @@
+def regex(regex):
+  return r"(?!.*" + regex + ").*$"
+
+Profile(name = "cocos", filters = r"COCOS|cocos")
