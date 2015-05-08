@@ -416,6 +416,8 @@ alias ccc="cocos compile -p android"
 
 alias ccd="cocos deploy -p android"
 
+alias ccl="logcat-color cocos"
+
 alias ccn="cocos new -l js"
 
 alias sv="cd_save"
