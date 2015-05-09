@@ -279,6 +279,8 @@ export COCOS_EXAMPLES_HOME="$JS_HOME/projects/cocos-examples"
 
 export RUNNER_HOME="$JS_HOME/projects/runner"
 
+export ORBITER_HOME="$JS_HOME/projects/orbiter"
+
 export GAME_HOME=$COCOS_EXAMPLES_HOME
 
 ###############################################################################
@@ -353,7 +355,7 @@ export LESSC_PATH="/usr/local/lib/node_modules/less/bin/lessc"
 ###############################################################################
 # Cocos
 ###############################################################################
-export COCOS_HOME="/usr/local/Library/cocos2d-js-v3.3"
+export COCOS_HOME="/usr/local/Library/cocos2d-js-v3.6"
 
 export COCOS_CONSOLE_ROOT=$COCOS_HOME/tools/cocos2d-console/bin
 
