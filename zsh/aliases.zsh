@@ -208,6 +208,8 @@ alias cdlb="cd_dir /usr/local/Library"
 
 alias cdcc="cd_dir $COCOS_HOME"
 
+alias cdccl="cd_dir $COCOS_LITE_HOME"
+
 alias cdph="cd_dir $PHOTOS_HOME"
 
 alias cdla="cd_dir $PHOTOS_HOME/la"
@@ -924,6 +926,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias jks="jekyll_serve"
+
 alias lib="search_library"
 
 alias yell="yell_search"
@@ -1128,7 +1132,7 @@ alias sal="sed_all"
 
 alias aof="green \$(alphabet_of_files)"
 
-alias aoF="red \$(inverse_alphabet \$(alphabet_of_files))"
+alias aofi="red \$(inverse_alphabet \$(alphabet_of_files))"
 
 alias cof="count_of_files"
 

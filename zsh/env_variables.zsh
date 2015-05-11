@@ -357,6 +357,8 @@ export LESSC_PATH="/usr/local/lib/node_modules/less/bin/lessc"
 ###############################################################################
 export COCOS_HOME="/usr/local/Library/cocos2d-js-v3.6"
 
+export COCOS_LITE_HOME="/usr/local/Library/cocos2d-js-v3.6-lite"
+
 export COCOS_CONSOLE_ROOT=$COCOS_HOME/tools/cocos2d-console/bin
 
 export ANT_ROOT=/usr/local/bin
