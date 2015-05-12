@@ -594,17 +594,17 @@ alias mdo="$EDITOR $LISTS_HOME/doit.zsh"
 
 alias csp="cat $LISTS_HOME/spacecraft.txt"
 
-alias ctl="cat_list $TO_LEARN"
+alias ctl="cat_named_list $TO_LEARN"
 
-alias mtl="edit_list $TO_LEARN"
+alias mtl="edit_named_list $TO_LEARN"
 
-alias ctw="cat $LISTS_HOME/$TO_WATCH.txt"
+alias ctw="cat_named_list watch"
 
-alias mtw="$EDITOR $LISTS_HOME/$TO_WATCH.txt"
+alias mtw="edit_named_list watch"
 
-alias ctr="cat $LISTS_HOME/$TO_READ.txt"
+alias ctr="cat_named_list read"
 
-alias mtr="$EDITOR $LISTS_HOME/$TO_READ.txt"
+alias mtr="edit_named_list read"
 
 alias cjs="cat $LISTS_HOME/jobsites.txt"
 
@@ -614,9 +614,9 @@ alias mtd="$EDITOR $LISTS_HOME/$TO_DO.txt"
 
 alias ctd="cat $LISTS_HOME/$TO_DO.txt"
 
-alias mref="edit_list refs"
+alias mref="edit_named_list refs"
 
-alias cref="cat_list refs"
+alias cref="cat_named_list refs"
 
 alias quotes="clist quotes"
 
@@ -926,6 +926,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias sedall="sed_all"
+
 alias jks="jekyll_serve"
 
 alias lib="search_library"
@@ -1066,19 +1068,19 @@ alias ggg="google_groups"
 
 alias gg="google"
 
-alias cls="cat_list"
+alias cls="cat_named_list"
 
-alias mls="edit_list"
+alias mls="edit_named_list"
 
-alias als="add_to_list"
+alias als="add_named_list_item"
 
-alias dls="delete_list_item"
+alias dls="delete_named_list_item"
 
 alias nls="new_list"
 
-alias glst="get_list_item"
+alias glst="get_named_list_item"
 
-alias grls="grep_list"
+alias grls="grep_named_list"
 
 alias ols="open_list_item"
 
@@ -1086,17 +1088,17 @@ alias lsls="ls $LISTS_HOME"
 
 alias lls="ls $LISTS_HOME"
 
-alias spacecraft="add_to_list spacecraft"
+alias spacecraft="add_named_list_item spacecraft"
 
-alias atd="add_to_list $TO_DO"
+alias atd="add_named_list_item $TO_DO"
 
-alias atr="add_to_list $TO_READ"
+alias atr="add_named_list_item $TO_READ"
 
-alias atl="add_to_list $TO_LEARN"
+alias atl="add_named_list_item $TO_LEARN"
 
-alias atw="add_to_list $TO_WATCH"
+alias atw="add_named_list_item $TO_WATCH"
 
-alias atc="add_to_list courses"
+alias atc="add_named_list_item courses"
 
 alias read="take $TO_READ"
 
@@ -1104,17 +1106,17 @@ alias watch="take $TO_WATCH"
 
 alias learn="take $TO_LEARN"
 
-alias help="add_to_list help"
+alias help="add_named_list_item help"
 
-alias ref="add_to_list refs"
+alias ref="add_named_list_item refs"
 
-alias shop="add_to_list shopping"
+alias shop="add_named_list_item shopping"
 
-alias quote="add_to_list quotes"
+alias quote="add_named_list_item quotes"
 
-alias jobs="add_to_list jobsites"
+alias jobs="add_named_list_item jobsites"
 
-alias comp="add_to_list computer_science"
+alias comp="add_named_list_item computer_science"
 
 alias tls="take"
 

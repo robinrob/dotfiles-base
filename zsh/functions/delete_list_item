@@ -1,4 +1,11 @@
-local +r List=$LISTS_HOME/$1.txt
-local +r Item=$2
+local +r Item=$1; shift
+local -a +r Files
+Files=($*)
 
-delete_item $Item $List
+for file in $Files
+do
+  gsed -i '/^'$Item'::/d' $file
+  print "$(yellow $Item) $(green deleted from) $(yellow $file)"
+done
+
+cat $List

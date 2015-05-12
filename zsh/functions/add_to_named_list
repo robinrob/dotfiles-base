@@ -1,0 +1,5 @@
+local +r List=$1; shift
+local +r ListPath=$LISTS_HOME/${List}.txt
+local +r Args="$*"
+
+add_list_item $ListPath $Args

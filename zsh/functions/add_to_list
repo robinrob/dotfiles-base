@@ -5,9 +5,8 @@ then
 fi
 
 
-local +r List=$1; shift
-
-local +r ListPath=$LISTS_HOME/${List}.txt
+local +r ListPath=$1; shift
+local +r List=$(basename $ListPath)
 
 
 if [[ -n $(cat $ListPath | ggrep "^$1") ]]
