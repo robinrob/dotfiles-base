@@ -1,11 +1,8 @@
-local +r Item=$1; shift
-local -a +r Files
-Files=($*)
+local +r List=$1
+local +r Item=$2
 
-for file in $Files
-do
-  gsed -i '/^'$Item'::/d' $file
-  print "$(yellow $Item) $(green deleted from) $(yellow $file)"
-done
+gsed -i '/^'$Item'::/d' $List
+gsed -i '/^'$Item'$/d' $List
+print "$(yellow $Item) $(green deleted from) $(yellow $List)"
 
 cat $List

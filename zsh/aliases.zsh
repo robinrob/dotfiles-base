@@ -1074,7 +1074,11 @@ alias mls="edit_named_list"
 
 alias als="add_named_list_item"
 
+alias aLs="add_list_item"
+
 alias dls="delete_named_list_item"
+
+alias dLs="delete_list_item"
 
 alias nls="new_list"
 

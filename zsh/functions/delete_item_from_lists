@@ -1,0 +1,8 @@
+local +r Item=$1; shift
+local -a +r Files
+Files=($*)
+
+for file in $Files
+do
+  delete_list_item $file $Item
+done
