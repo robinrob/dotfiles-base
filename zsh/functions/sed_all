@@ -1,16 +1,25 @@
 local +r SedExpression=$1
 
-if [[ -n $2 ]]
+if [[ $# == 1 ]]
 then
-  local +r FindExpression=$2
-else
+  local +r Where='.'
   local +r FindExpression='*'
+elif [[ $# == 2 ]]
+then
+  local +r Where='.'
+  local +r FindExpression=$2
+elif [[ $# == 3 ]]
+then
+  local +r Where=$2
+  local +r FindExpression=$3
 fi
 
 
 IFS="
 "
-for file in $(gfind . -name "$FindExpression" -type f)
+for file in $(gfind $Where -name "$FindExpression" -type f)
 do
-  gsed -i $SedExpression $file
+  cmd="gsed -i $SedExpression $file"
+  yellow $cmd
+  eval $cmd
 done

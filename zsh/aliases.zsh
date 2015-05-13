@@ -932,6 +932,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gr="grep_recursive"
+
+alias gR="grep_recursive_sensitive"
+
 alias sedall="sed_all"
 
 alias jks="jekyll_serve"

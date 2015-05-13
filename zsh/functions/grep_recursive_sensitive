@@ -1,0 +1,4 @@
+case $#@ in
+  1) grep -r $1 * ;;
+  *) grep -r $@ ;;
+esac
