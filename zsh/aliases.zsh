@@ -102,6 +102,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias rsS=$RSS_HOME/rss.rb
+
 alias ycp="yes | cp"
 
 alias api="cocosapi"
@@ -834,6 +836,10 @@ alias pb="pbcopy"
 
 alias erec="$EDITOR $IMPORTANT_HOME/records/record.txt"
 
+alias arec="add_list_item $RECORDS_PATH"
+
+alias drec="delete_list_item $RECORDS_PATH"
+
 alias mrec="$EDITOR $RECORDS_PATH"
 
 alias mwr="$EDITOR $WORK_RECORDS_PATH"
@@ -1200,7 +1206,7 @@ alias bkmk="bookmark"
 
 alias wbkmk="work_bookmark"
 
-alias rbdoc="rubydoc"
+alias rd="rubydoc"
 
 alias saveall="rake -g 'git:foreach[rake -g base:save]'"
 

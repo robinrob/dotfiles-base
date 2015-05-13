@@ -133,6 +133,8 @@ export RAKEFILE="$RAKELIB_HOME/Rakefile"
 
 export GLOBAL_RAKEFILE_HOME=$RUBY_HOME/projects/global-rakefile
 
+export RSS_HOME=$RUBY_HOME/projects/rss
+
 export QUIZ_HOME=$RUBY_HOME/projects/quiz
 
 export MRROBINSMITH_COM_HOME=$RUBY_HOME/projects/robinrob.github.io

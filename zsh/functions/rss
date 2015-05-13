@@ -1,0 +1,13 @@
+local +r feed=$1
+
+case $feed in
+  science) feed='http://www.sciencedaily.com/newsfeed.xml' ;;
+  hacker) feed='https://news.ycombinator.com/rss' ;;
+esac
+
+if [[ -n $feed ]]
+then
+  $RSS_HOME/rss.rb $feed
+else
+  red "Must provide name of feed"
+fi

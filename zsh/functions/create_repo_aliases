@@ -3,41 +3,39 @@ typeset -A abbreviations
 # Home
 abbreviations[awk]=a
 abbreviations[bouncing_balls]=bb
-abbreviations[coffeescript]=cs
 abbreviations[c]=c
+abbreviations[cocos-examples]=ce
+abbreviations[coffeescript]=cs
+abbreviations[concentration-game]=cn
 abbreviations[coq]=cq
 abbreviations[c-plus-plus]=cp
 abbreviations[dotfiles]=dt
 abbreviations[dotfiles-base]=d
+abbreviations[flappy-fish]=ff
 abbreviations[force-com]=f
 abbreviations[game]=ga
 abbreviations[gimp]=gi
 abbreviations[github]=gh
 abbreviations[html-css]=h
+abbreviations[js-tests]=t
 abbreviations[jv]=jv
 abbreviations[javascript]=j
 abbreviations[markdown]=m
 abbreviations[mrrobinsmith.com]=mr
 abbreviations[mrrobinsmith.com-dev]=mrd
 abbreviations[ocaml]=o
+abbreviations[orbiter]=or
 abbreviations[perl]=pl
 abbreviations[pi]=pi
+abbreviations[planet-pairs]=pp
 abbreviations[prog]=pr
 abbreviations[python]=p
 abbreviations[ruby]=r
+abbreviations[runner]=rn
+abbreviations[rss]=rs
 abbreviations[scala]=sc
 abbreviations[sh]=s
 abbreviations[zsh]=z
-
-# Games
-abbreviations[bouncing-balls]=bb
-abbreviations[cocos-examples]=ce
-abbreviations[concentration-game]=cn
-abbreviations[flappy-fish]=ff
-abbreviations[js-tests]=t
-abbreviations[orbiter]=or
-abbreviations[planet-pairs]=pp
-abbreviations[runner]=rn
 
 # Work
 abbreviations[work-force-com]=wf
