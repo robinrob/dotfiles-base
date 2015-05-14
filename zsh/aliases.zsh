@@ -1114,7 +1114,7 @@ alias atw="add_named_list_item $TO_WATCH"
 
 alias atc="add_named_list_item courses"
 
-alias read="take $TO_READ"
+alias read1="take $TO_READ"
 
 alias watch="take $TO_WATCH"
 

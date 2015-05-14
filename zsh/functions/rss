@@ -1,8 +1,28 @@
 local +r feed=$1
 
 case $feed in
-  science) feed='http://www.sciencedaily.com/newsfeed.xml' ;;
-  hacker) feed='https://news.ycombinator.com/rss' ;;
+  hacker)
+    feed='https://news.ycombinator.com/rss' ;;
+  flight)
+    feed='http://www.flightglobal.com/rss/airlines-news-rss/' ;;
+  flighta)
+    feed='http://www.flightglobal.com/rss/aviation-news-rss/' ;;
+  news)
+    feed='http://www.theguardian.com/world/rss' ;;
+  newse)
+    feed='http://www.theguardian.com/uk/environment/rss' ;;
+  papers)
+    feed='http://www.sciencemag.org/rss/express.xml' ;;
+  space)
+    feed='http://phys.org/rss-feed/space-news/space-exploration/' ;;
+  science)
+    feed='http://www.sciencemag.org/rss/current.xml' ;;
+  sciencepodcast)
+    feed='http://www.sciencemag.org/rss/podcast.xml' ;;
+  sciencenews)
+    feed='http://www.sciencemag.org/rss/news.xml' ;;
+  sciencedaily)
+    feed='http://www.sciencedaily.com/newsfeed.xml' ;;
 esac
 
 if [[ -n $feed ]]
