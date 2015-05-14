@@ -102,6 +102,12 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias news="rss news"
+
+alias flight="rss flight"
+
+alias science="rss science"
+
 alias rsS=$RSS_HOME/rss.rb
 
 alias ycp="yes | cp"

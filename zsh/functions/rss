@@ -1,33 +1,31 @@
-local +r feed=$1
+local +r Feed=$1
 
-case $feed in
-  hacker)
-    feed='https://news.ycombinator.com/rss' ;;
-  flight)
-    feed='http://www.flightglobal.com/rss/airlines-news-rss/' ;;
-  flighta)
-    feed='http://www.flightglobal.com/rss/aviation-news-rss/' ;;
-  news)
-    feed='http://www.theguardian.com/world/rss' ;;
-  newse)
-    feed='http://www.theguardian.com/uk/environment/rss' ;;
-  papers)
-    feed='http://www.sciencemag.org/rss/express.xml' ;;
-  space)
-    feed='http://phys.org/rss-feed/space-news/space-exploration/' ;;
-  science)
-    feed='http://www.sciencemag.org/rss/current.xml' ;;
-  sciencepodcast)
-    feed='http://www.sciencemag.org/rss/podcast.xml' ;;
-  sciencenews)
-    feed='http://www.sciencemag.org/rss/news.xml' ;;
-  sciencedaily)
-    feed='http://www.sciencedaily.com/newsfeed.xml' ;;
-esac
-
-if [[ -n $feed ]]
+if [[ -z $Feed ]]
 then
-  $RSS_HOME/rss.rb $feed
-else
-  red "Must provide name of feed"
+  red "Must provide name of Feed"
 fi
+
+case $Feed in
+  hacker)
+    $RSS_HOME/rss.rb 'https://news.ycombinator.com/rss' ;;
+  flight)
+    $RSS_HOME/rss.rb 'http://www.flightglobal.com/rss/airlines-news-rss/' ;;
+  flighta)
+    $RSS_HOME/rss.rb 'http://www.flightglobal.com/rss/aviation-news-rss/' ;;
+  news)
+    $RSS_HOME/rss.rb 'http://www.theguardian.com/world/rss' ;;
+  newse)
+    $RSS_HOME/rss.rb 'http://www.theguardian.com/uk/environment/rss' ;;
+  papers)
+    $RSS_HOME/rss.rb 'http://www.sciencemag.org/rss/express.xml' ;;
+  space)
+    $RSS_HOME/rss.rb 'http://phys.org/rss-Feed/space-news/space-exploration/' ;;
+  science)
+    $RSS_HOME/rss.rb 'http://www.sciencemag.org/rss/current.xml' 99;;
+  sciencepodcast)
+    $RSS_HOME/rss.rb 'http://www.sciencemag.org/rss/podcast.xml' ;;
+  sciencenews)
+    $RSS_HOME/rss.rb 'http://www.sciencemag.org/rss/news.xml' ;;
+  sciencedaily)
+    $RSS_HOME/rss.rb 'http://www.sciencedaily.com/newsFeed.xml' ;;
+esac
