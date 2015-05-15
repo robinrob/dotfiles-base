@@ -1,5 +1,6 @@
 local +r Line=$1
 local +r BookmarksAliasPath=$2
+shift 2
 
 
 local +r -a Parts
@@ -18,4 +19,4 @@ fi
 
 local +r Value="browse $Browser '$Url'"
 
-create_alias $Name "$Value" $BookmarksAliasPath
+create_alias $Name "$Value" $BookmarksAliasPath $@

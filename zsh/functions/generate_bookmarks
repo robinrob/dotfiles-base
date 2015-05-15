@@ -1,7 +1,7 @@
 local +r BookmarksPath=$1
 local +r BookmarksAliasPath=$2
-
+shift 2
 
 cat $BookmarksPath | while read line ; do
-  generate_bookmark $line $BookmarksAliasPath
+  generate_bookmark $line $BookmarksAliasPath $@
 done

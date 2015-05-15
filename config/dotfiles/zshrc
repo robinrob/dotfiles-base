@@ -24,8 +24,8 @@ source $ZSHCOLORS_PATH
 # alias is already set: the alias will evaluate using that env!
 ###############################################################################
 # Dynamically-generate some envs
-autoload -U create_repo_envs
-create_repo_envs
+#autoload -U create_repo_envs
+#create_repo_envs
 source $ZDOT_HOME/env_variables.zsh
 
 GITHUB_CREDS=$GITHUB_HOME/creds.sh
@@ -40,9 +40,10 @@ source $ZDOT_HOME/unaliases.zsh
 # Aliases
 ###############################################################################
 # Dynamically-generate some aliases
-autoload -U create_repo_aliases
-create_repo_aliases
+# autoload -U create_repo_aliases
+# create_repo_aliases
 source $ZDOT_HOME/aliases.zsh
+source $ZDOT_HOME/repo_aliases.zsh
 
 
 # Bookmarks
@@ -83,9 +84,9 @@ if [[ $USE_PYTHON == 1 ]]
 then
   if [[ "$HOSTNAME" == "$VENUS_HOSTNAME" ]]
   then
-	  pythonbrew use $python 2> /dev/null
+	  # pythonbrew use $python 2> /dev/null
   else
-	  pythonbrew use $python 2> /dev/null
+	  # pythonbrew use $python 2> /dev/null
   fi
 fi
 
@@ -99,7 +100,7 @@ fi
 ruby="2.1.4"
 if [[ $USE_RUBY == 1 ]]
 then
-  rvm use ruby-"$ruby"
+  # rvm use ruby-"$ruby"
 fi
 
 
@@ -111,5 +112,5 @@ fi
 
 ## SSH
 #########
-[ -f $HOME/.ssh/id_rsa_heroku ] && ssh-add $HOME/.ssh/id_rsa_heroku
-[ -f $HOME/.ssh/id_rsa ] && ssh-add $HOME/.ssh/id_rsa
+# [ -f $HOME/.ssh/id_rsa_heroku ] && ssh-add $HOME/.ssh/id_rsa_heroku
+# [ -f $HOME/.ssh/id_rsa ] && ssh-add $HOME/.ssh/id_rsa

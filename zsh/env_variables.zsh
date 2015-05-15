@@ -53,14 +53,52 @@ else
 	export BROWSER="chrome"
 fi
 
+
 ###############################################################################
 # Directories
 ###############################################################################
 export GOOGLE_DRIVE="$HOME/Google\ Drive"
 
-export PROG_HOME="$HOME/Programming/robin"
+###############################################################################
+# Programming top-level repos
+###############################################################################
+export AWK_HOME="/Users/msl/Programming/robin/awk"
 
-export PYTHON_HOME=$PROG_HOME/python
+export C_HOME="/Users/msl/Programming/robin/c"
+
+export C_PLUS_PLUS_HOME="/Users/msl/Programming/robin/c-plus-plus"
+
+export COFFEESCRIPT_HOME="/Users/msl/Programming/robin/coffeescript"
+
+export COQ_HOME="/Users/msl/Programming/robin/coq"
+
+export DOCS_HOME="/Users/msl/Programming/robin/docs"
+
+export FORCE_COM_HOME="/Users/msl/Programming/robin/force.com"
+
+export HTML_CSS_HOME="/Users/msl/Programming/robin/html-css"
+
+export JAVA_HOME="/Users/msl/Programming/robin/java"
+
+export JAVASCRIPT_HOME="/Users/msl/Programming/robin/javascript"
+
+export MARKDOWN_HOME="/Users/msl/Programming/robin/markdown"
+
+export OCAML_HOME="/Users/msl/Programming/robin/ocaml"
+
+export PERL_HOME="/Users/msl/Programming/robin/perl"
+
+export PYTHON_HOME="/Users/msl/Programming/robin/python"
+
+export RUBY_HOME="/Users/msl/Programming/robin/ruby"
+
+export SCALA_HOME="/Users/msl/Programming/robin/scala"
+
+export SH_HOME="/Users/msl/Programming/robin/sh"
+
+export SPRITES_HOME="/Users/msl/Programming/robin/sprites"
+
+export ZSH_HOME="/Users/msl/Programming/robin/zsh"
 
 export PI_HOME=$PYTHON_HOME/projects/pi
 
@@ -71,8 +109,6 @@ export FABFILE_HOME=$PYTHON_HOME/projects/fabfile
 export NPMLIB_HOME=/usr/local/lib/node_modules
 
 export FABFILE_BASIC_HOME=$PYTHON_HOME/projects/fabfile-basic
-
-export ZSH_HOME=$PROG_HOME/zsh
 
 export DOTFILES_HOME=$ZSH_HOME/projects/dotfiles
 
@@ -115,8 +151,6 @@ export HTML_CSS_HOME=$PROG_HOME/html-css
 export HTML_LESS_HOME=$PROG_HOME/html-less
 
 export HTML_TEMPLATES_HOME=$HTML_CSS_HOME/templates
-
-export COFFEESCRIPT_HOME=$PROG_HOME/coffeescript
 
 export RUBY_TEMPLATES_HOME=$RUBY_HOME/templates
 
@@ -268,6 +302,7 @@ export SYSTEM_SCREENSAVERS_HOME=/Library/Screen\ Savers/Default\ Collections
 
 export SCREENSAVERS_HOME="$SYSTEM_SCREENSAVERS_HOME/Robin"
 
+
 # Projects
 export BOUNCING_BALLS_HOME="$JS_HOME/projects/bouncing-balls"
 
@@ -316,7 +351,7 @@ export BOOKMARKS_PATH=$LISTS_HOME/bookmarks.txt
 export WORKBOOKMARKS_PATH=$LISTS_HOME/work_bookmarks.txt
 
 typeset -T BOOKMARKS bookmarks
-bookmarks=($LISTS_HOME/sf.txt $WORKBOOKMARKS_PATH $BOOKMARKS_PATH)
+bookmarks=($WORKBOOKMARKS_PATH $BOOKMARKS_PATH $LISTS_HOME/books.txt)
 
 export BOOKMARKS_ALIAS_PATH=$ZDOT_HOME/bookmarks.zsh
 

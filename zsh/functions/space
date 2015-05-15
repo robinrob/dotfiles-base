@@ -1,4 +1,0 @@
-cat $LISTS_HOME/spacecraft.txt | while read line
-do
-  eval $line
-done

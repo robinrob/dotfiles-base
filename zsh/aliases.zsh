@@ -80,7 +80,7 @@ alias mv="gmv"
 
 alias gegrep="gegrep"
 
-alias grep="ggrep"
+alias grep="gegrep"
 
 alias find="gfind"
 
@@ -105,6 +105,8 @@ alias tail="gtail"
 alias news="rss news"
 
 alias flight="rss flight"
+
+alias space="rss space"
 
 alias science="rss science"
 
@@ -704,7 +706,7 @@ alias dbk="delete_bookmark"
 
 alias rbk="rebookmark"
 
-alias gbks="generate_all_bookmarks"
+alias gbks="generate_all_bookmarks quiet"
 
 alias cbkal="cat $BOOKMARKS_ALIAS_PATH"
 
@@ -891,6 +893,8 @@ alias phonelong="get_record phone_long"
 alias phoneshort="get_record phone_short"
 
 alias phone="get_record phone"
+
+alias phone2="get_record phone2"
 
 alias phonef="get_record phone_formatted"
 

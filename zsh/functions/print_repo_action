@@ -1,0 +1,8 @@
+REPO=$1
+REPO_ABBR=$2
+ALIAS_SUFF=$3
+CMD=$4
+
+print "alias $REPO_ABBR$ALIAS_SUFF=\"$CMD \$$(pathize $REPO)_HOME\""
+print
+
