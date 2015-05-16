@@ -1210,6 +1210,8 @@ alias bri="brew install"
 
 alias bru="brew update"
 
+alias brun="brew uninstall"
+
 alias brg="brew upgrade"
 
 alias brs="save_homebrew"
