@@ -5,6 +5,8 @@ then
   red "Must provide name of Feed"
 fi
 
+rvm gemset use rss > /dev/null 2> /dev/null
+
 case $Feed in
   hacker)
     $RSS_HOME/rss.rb 'https://news.ycombinator.com/rss' ;;

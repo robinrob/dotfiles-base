@@ -84,9 +84,9 @@ if [[ $USE_PYTHON == 1 ]]
 then
   if [[ "$HOSTNAME" == "$VENUS_HOSTNAME" ]]
   then
-	  # pythonbrew use $python 2> /dev/null
+	  pythonbrew use $python 2> /dev/null
   else
-	  # pythonbrew use $python 2> /dev/null
+	  pythonbrew use $python 2> /dev/null
   fi
 fi
 
@@ -100,7 +100,7 @@ fi
 ruby="2.1.4"
 if [[ $USE_RUBY == 1 ]]
 then
-  # rvm use ruby-"$ruby"
+  rvm use ruby-"$ruby"
 fi
 
 
@@ -112,5 +112,5 @@ fi
 
 ## SSH
 #########
-# [ -f $HOME/.ssh/id_rsa_heroku ] && ssh-add $HOME/.ssh/id_rsa_heroku
-# [ -f $HOME/.ssh/id_rsa ] && ssh-add $HOME/.ssh/id_rsa
+[ -f $HOME/.ssh/id_rsa_heroku ] && ssh-add $HOME/.ssh/id_rsa_heroku
+[ -f $HOME/.ssh/id_rsa ] && ssh-add $HOME/.ssh/id_rsa
