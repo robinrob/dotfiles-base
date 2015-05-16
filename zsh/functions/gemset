@@ -1,8 +1,14 @@
 local +r RubyGemset=$1
-local +r RubyVersion=$2
+if [[ $# == 2 ]]
+then
+  local +r RubyVersion=$2
+else
+  local +r RubyVersion='2.1.4'
+fi
 
-silent rm .ruby-gemset
-silent rm .ruby-version
+rm .ruby-gemset 2> /dev/null
+rm .ruby-version 2> /dev/null
+
 print $RubyGemset > .ruby-gemset
 print $RubyVersion > .ruby-version
 
