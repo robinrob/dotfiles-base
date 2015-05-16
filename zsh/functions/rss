@@ -22,6 +22,8 @@ case $Feed in
     $RSS_HOME/rss.rb 'http://www.theguardian.com/uk/environment/rss' ;;
   papers)
     $RSS_HOME/rss.rb 'http://www.sciencemag.org/rss/express.xml' ;;
+  sig)
+    $RSS_HOME/rss.rb 'https://signalvnoise.com/posts.rss' ;;
   space)
     $RSS_HOME/rss.rb 'http://phys.org/rss-Feed/space-news/space-exploration/' ;;
   science)

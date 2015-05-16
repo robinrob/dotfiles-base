@@ -696,6 +696,8 @@ alias bmk="bookmark"
 
 alias wbmk="work_bookmark"
 
+alias abk="create_bookmark $LISTS_HOME/books.txt"
+
 alias mbk="m $BOOKMARKS_PATH"
 
 alias cbk="cat $BOOKMARKS_PATH"

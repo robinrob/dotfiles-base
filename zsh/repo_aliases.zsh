@@ -502,3 +502,17 @@ alias cdcq="cd_dir $COQ_HOME"
 
 alias cdcqpr="cd_dir $COQ_HOME/practice"
 
+alias qsv="cd_save $QUIZ_HOME"
+
+alias qcm="cd_commit $QUIZ_HOME"
+
+alias qst="cd_status $QUIZ_HOME"
+
+alias qpl="cd_pull $QUIZ_HOME"
+
+alias idq="idea $QUIZ_HOME"
+
+alias cdq="cd_dir $QUIZ_HOME"
+
+alias cdqpr="cd_dir $QUIZ_HOME/practice"
+

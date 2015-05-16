@@ -10,7 +10,7 @@ then
 
   print $Line >> $BookmarksPath
 
-  generate_bookmark $Line $ZDOT_HOME/bookmarks.zsh
+  generate_bookmark $Line $ZDOT_HOME/bookmarks.zsh quiet
 
   print -z $Name
 
