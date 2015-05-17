@@ -1,0 +1,12 @@
+local +r new
+
+for file in $(ls)
+do
+  new=$(print $file | gsed 's/-/_/')
+  if [[ -n $new ]]
+  then
+    cmd="mv $file $new"
+    green $cmd
+    eval $cmd
+  fi
+done

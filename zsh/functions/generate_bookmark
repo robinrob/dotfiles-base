@@ -19,4 +19,4 @@ fi
 
 local +r Value="browse $Browser '$Url'"
 
-create_alias $Name "$Value" $BookmarksAliasPath
+create_alias $Name "$Value" $BookmarksAliasPath $@

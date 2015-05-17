@@ -1,0 +1,14 @@
+rm spritesheet.png spritesheet.plist 2> /dev/null
+
+local +A Names
+Names=($*)
+
+local +A Dirs
+for name in $Names
+do
+  Dirs=($Dirs "$name/frames")
+done
+
+texturepacker $Dirs --sheet spritesheet.png --data spritesheet.plist --format cocos2d
+
+open spritesheet.png

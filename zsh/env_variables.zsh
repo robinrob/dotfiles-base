@@ -62,43 +62,47 @@ export GOOGLE_DRIVE="$HOME/Google\ Drive"
 ###############################################################################
 # Programming top-level repos
 ###############################################################################
-export AWK_HOME="/Users/msl/Programming/robin/awk"
+export PROGRAMMING_HOME="$HOME/Programming/robin"
 
-export C_HOME="/Users/msl/Programming/robin/c"
+export PROG_HOME="$HOME/Programming/robin"
 
-export C_PLUS_PLUS_HOME="/Users/msl/Programming/robin/c-plus-plus"
+export AWK_HOME="$HOME/Programming/robin/awk"
 
-export COFFEESCRIPT_HOME="/Users/msl/Programming/robin/coffeescript"
+export C_HOME="$HOME/Programming/robin/c"
 
-export COQ_HOME="/Users/msl/Programming/robin/coq"
+export C_PLUS_PLUS_HOME="$HOME/Programming/robin/c-plus-plus"
 
-export DOCS_HOME="/Users/msl/Programming/robin/docs"
+export COFFEESCRIPT_HOME="$HOME/Programming/robin/coffeescript"
 
-export FORCE_COM_HOME="/Users/msl/Programming/robin/force.com"
+export COQ_HOME="$HOME/Programming/robin/coq"
 
-export HTML_CSS_HOME="/Users/msl/Programming/robin/html-css"
+export DOCS_HOME="$HOME/Programming/robin/docs"
 
-export JAVA_HOME="/Users/msl/Programming/robin/java"
+export FORCE_COM_HOME="$HOME/Programming/robin/force.com"
 
-export JAVASCRIPT_HOME="/Users/msl/Programming/robin/javascript"
+export HTML_CSS_HOME="$HOME/Programming/robin/html-css"
 
-export MARKDOWN_HOME="/Users/msl/Programming/robin/markdown"
+export JAVA_HOME="$HOME/Programming/robin/java"
 
-export OCAML_HOME="/Users/msl/Programming/robin/ocaml"
+export JAVASCRIPT_HOME="$HOME/Programming/robin/javascript"
 
-export PERL_HOME="/Users/msl/Programming/robin/perl"
+export MARKDOWN_HOME="$HOME/Programming/robin/markdown"
 
-export PYTHON_HOME="/Users/msl/Programming/robin/python"
+export OCAML_HOME="$HOME/Programming/robin/ocaml"
 
-export RUBY_HOME="/Users/msl/Programming/robin/ruby"
+export PERL_HOME="$HOME/Programming/robin/perl"
 
-export SCALA_HOME="/Users/msl/Programming/robin/scala"
+export PYTHON_HOME="$HOME/Programming/robin/python"
 
-export SH_HOME="/Users/msl/Programming/robin/sh"
+export RUBY_HOME="$HOME/Programming/robin/ruby"
 
-export SPRITES_HOME="/Users/msl/Programming/robin/sprites"
+export SCALA_HOME="$HOME/Programming/robin/scala"
 
-export ZSH_HOME="/Users/msl/Programming/robin/zsh"
+export SH_HOME="$HOME/Programming/robin/sh"
+
+export SPRITES_HOME="$HOME/Programming/robin/sprites"
+
+export ZSH_HOME="$HOME/Programming/robin/zsh"
 
 export PI_HOME=$PYTHON_HOME/projects/pi
 
