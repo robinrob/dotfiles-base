@@ -1,4 +1,4 @@
-local +r SedExpression=$1
+local +r PerlExpression=$1
 
 if [[ $# == 1 ]]
 then
@@ -19,8 +19,8 @@ IFS="
 "
 for file in $(gfind $Where -name "$FindExpression" -type f)
 do
-  # Single-quotes around the $SedExpression are critical here
-  cmd="gsed -i '$SedExpression' $file"
+  # Single-quotes around the $PerlExpression are critical here
+  cmd="cat $file | perl -p -i -e '$PerlExpression'"
   yellow $cmd
   eval $cmd
 done
