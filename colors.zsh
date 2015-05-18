@@ -47,8 +47,8 @@ function promptcolor {
 	color=$1
 	shift;
 
-  start=$(colorencode -p "$(colorcode $color)")
-  end=$(colorencode -p "$(colorcode default)")
+  start=$(colorencode -p $(colorcode $color))
+  end=$(colorencode -p $(colorcode default))
 
   color $start $end $@
 }
