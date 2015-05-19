@@ -1162,6 +1162,8 @@ alias gral="grep_all"
 
 alias sal="sed_all"
 
+alias pal="perl_all"
+
 alias aof="green \$(alphabet_of_files)"
 
 alias aofi="red \$(inverse_alphabet \$(alphabet_of_files))"

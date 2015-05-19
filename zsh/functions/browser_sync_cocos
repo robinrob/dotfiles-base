@@ -1,2 +1,2 @@
-browser-sync start --files "*.html, **/*.css, *.js, src/**/*.js, res/*.png, res/*.jpg, res/*.plist, *.json" --server --directory --startPath "index.html" --no-open
+browser-sync start --files "*.html, **/*.css, *.js, src/**/*.js, res/*.png, res/*.jpg, res/*.plist, *.json" --server --directory --startPath "index.html" --no-open &
 chrome http://localhost:3000/index.html
