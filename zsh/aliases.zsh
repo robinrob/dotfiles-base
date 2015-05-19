@@ -102,6 +102,12 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias kcc="kill_processes cocos"
+
+alias kbs="kill_processes browser-sync"
+
+alias kid="kill_processes idea"
+
 alias repals="rm repo_aliases.zsh; print_all_repo_aliases > repo_aliases.zsh; source_aliases"
 
 alias news="rss news"
@@ -140,11 +146,7 @@ alias pag="ps aux | grep"
 
 alias pyv="python --version"
 
-alias die="killp chrome"
-
 alias apps="open /Applications"
-
-alias s="source"
 
 alias bcd="nocorrect builtin cd"
 
@@ -1050,8 +1052,6 @@ alias sfs="bk"
 
 alias rp="source_repo"
 
-alias killp="kill_processes"
-
 alias kps="kill_processes"
 
 alias grp="grep_processes"
@@ -1223,8 +1223,6 @@ alias brg="brew upgrade"
 alias brs="save_homebrew"
 
 alias b="browser"
-
-alias killa="killp"
 
 alias bkmk="bookmark"
 
