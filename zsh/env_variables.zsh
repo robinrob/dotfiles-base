@@ -82,7 +82,7 @@ export FORCE_COM_HOME="$HOME/Programming/robin/force.com"
 
 export HTML_CSS_HOME="$HOME/Programming/robin/html-css"
 
-export JAVA_HOME="$HOME/Programming/robin/java"
+export JV_HOME="$HOME/Programming/robin/java"
 
 export JAVASCRIPT_HOME="$HOME/Programming/robin/javascript"
 
@@ -100,7 +100,11 @@ export SCALA_HOME="$HOME/Programming/robin/scala"
 
 export SH_HOME="$HOME/Programming/robin/sh"
 
-export SPRITES_HOME="$HOME/Programming/robin/sprites"
+export RES_HOME="$HOME/Programming/robin/res"
+
+export SPRITES_HOME="$RES_HOME/sprites"
+
+export SOUNDS_HOME="$RES_HOME/sounds"
 
 export ZSH_HOME="$HOME/Programming/robin/zsh"
 
@@ -396,7 +400,7 @@ export LESSC_PATH="/usr/local/lib/node_modules/less/bin/lessc"
 ###############################################################################
 # Cocos
 ###############################################################################
-export COCOS_HOME="/usr/local/Library/cocos2d-js-v3.6"
+export COCOS_HOME="/usr/local/Library/cocos2d-js-v3.2"
 
 export COCOS_LITE_HOME="/usr/local/Library/cocos2d-js-v3.6-lite"
 

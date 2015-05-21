@@ -102,6 +102,10 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias vlc="open -a Vlc\ 2"
+
+alias aud="open -a Audacity"
+
 alias kcc="kill_processes cocos"
 
 alias kbs="kill_processes browser-sync"
@@ -237,6 +241,10 @@ alias cdscre="cd_dir $SCREENSAVERS_HOME"
 alias cdbg="cd_dir $BACKGROUNDS_HOME"
 
 alias cdsp="cd_dir $SPRITES_HOME"
+
+alias cdsn="cd_dir $SOUNDS_HOME"
+
+alias cdres="cd_dir $RES_HOME"
 
 alias cdlst="cd_dir $LISTS_HOME"
 
@@ -950,6 +958,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias dd="duckduckgo"
+
 alias gr="grep_recursive"
 
 alias gR="grep_recursive_sensitive"
@@ -1092,7 +1102,7 @@ alias ggt="google_translate"
 
 alias ggg="google_groups"
 
-alias gg="google"
+alias gg="duckduckgo"
 
 alias cls="cat_named_list"
 
@@ -1112,7 +1122,7 @@ alias glst="get_named_list_item"
 
 alias grls="grep_named_list"
 
-alias ols="open_list_item"
+alias ols="open_named_list_item"
 
 alias lsls="ls $LISTS_HOME"
 
