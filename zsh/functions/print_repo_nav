@@ -1,8 +1,8 @@
 REPO=$1
 REPO_ABBR=$2
 
-print "alias cd${REPO_ABBR}=\"cd_dir \$$(pathize $REPO)_HOME\""
+print "alias cd${REPO_ABBR}=\"cd_down_tree \$$(pathize $REPO)_HOME\""
 print
-print "alias cd${REPO_ABBR}pr=\"cd_dir \$$(pathize $REPO)_HOME/practice\""
+print "alias cd${REPO_ABBR}pr=\"cd_down_tree \$$(pathize $REPO)_HOME/practice\""
 print
 

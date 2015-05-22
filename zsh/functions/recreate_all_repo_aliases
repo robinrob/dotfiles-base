@@ -1,0 +1,6 @@
+local +r REPO_ALIASES_PATH=$ZDOT_HOME/repo_aliases.zsh
+
+rm -f $REPO_ALIASES_PATH
+
+print_all_repo_aliases > $REPO_ALIASES_PATH
+source $REPO_ALIASES_PATH

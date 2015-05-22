@@ -102,6 +102,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias wifi="grec wifi"
+
 alias vlc="open -a Vlc\ 2"
 
 alias aud="open -a Audacity"
@@ -216,109 +218,109 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
-alias cdsam="cd_dir $COCOS_HOME/samples"
+alias cdsam="cd_down_tree $COCOS_HOME/samples"
 
-alias cdmw="cd_dir $COCOS_HOME/samples/js-moonwarriors"
+alias cdmw="cd_down_tree $COCOS_HOME/samples/js-moonwarriors"
 
 alias cdpk="cdff"
 
-alias cdlb="cd_dir /usr/local/Library"
+alias cdlb="cd_down_tree /usr/local/Library"
 
-alias cdcc="cd_dir $COCOS_HOME"
+alias cdcc="cd_down_tree $COCOS_HOME"
 
-alias cdccl="cd_dir $COCOS_LITE_HOME"
+alias cdccl="cd_down_tree $COCOS_LITE_HOME"
 
-alias cdph="cd_dir $PHOTOS_HOME"
+alias cdph="cd_down_tree $PHOTOS_HOME"
 
-alias cdla="cd_dir $PHOTOS_HOME/la"
+alias cdla="cd_down_tree $PHOTOS_HOME/la"
 
-alias cdpn="cd_dir $WORK_HOME/java/pon-blog-app"
+alias cdpn="cd_down_tree $WORK_HOME/java/pon-blog-app"
 
-alias cdssh="cd_dir $HOME/.ssh/"
+alias cdssh="cd_down_tree $HOME/.ssh/"
 
-alias cdscre="cd_dir $SCREENSAVERS_HOME"
+alias cdscre="cd_down_tree $SCREENSAVERS_HOME"
 
-alias cdbg="cd_dir $BACKGROUNDS_HOME"
+alias cdbg="cd_down_tree $BACKGROUNDS_HOME"
 
-alias cdsp="cd_dir $SPRITES_HOME"
+alias cdsp="cd_down_tree $SPRITES_HOME"
 
-alias cdsn="cd_dir $SOUNDS_HOME"
+alias cdsn="cd_down_tree $SOUNDS_HOME"
 
-alias cdres="cd_dir $RES_HOME"
+alias cdres="cd_down_tree $RES_HOME"
 
-alias cdlst="cd_dir $LISTS_HOME"
+alias cdlst="cd_down_tree $LISTS_HOME"
 
-alias cdls="cd_dir $LISTS_HOME"
+alias cdls="cd_down_tree $LISTS_HOME"
 
-alias cdzd="cd_dir $ZDOT_HOME"
+alias cdzd="cd_down_tree $ZDOT_HOME"
 
-alias cdgg="cd_dir $HOME/Google\ Drive"
+alias cdgg="cd_down_tree $HOME/Google\ Drive"
 
-alias cddocs="cd_dir $DOCS_HOME"
+alias cddocs="cd_down_tree $DOCS_HOME"
 
-alias cddc="cd_dir $DOCS_HOME"
+alias cddc="cd_down_tree $DOCS_HOME"
 
-alias cdcr="cd_dir $CRASH_REPORTS_HOME"
+alias cdcr="cd_down_tree $CRASH_REPORTS_HOME"
 
-alias screenshots="cd_dir $SCREENSHOTS_HOME"
+alias screenshots="cd_down_tree $SCREENSHOTS_HOME"
 
-alias lasts="cd_dir $SCREENSHOTS_HOME && $LOCAL_HOME/bin/lastf -s $SCREENSHOT_NAME"
+alias lasts="cd_down_tree $SCREENSHOTS_HOME && $LOCAL_HOME/bin/lastf -s $SCREENSHOT_NAME"
 
-alias dels="cd_dir $SCREENSHOTS_HOME && rm Screen*"
+alias dels="cd_down_tree $SCREENSHOTS_HOME && rm Screen*"
 
 alias cdegr="/Users/msl/Programming/robin/sh/practice/egrep"
 
-alias cdsf="cd_dir $RUBY_HOME/projects/salesforce-blog"
+alias cdsf="cd_down_tree $RUBY_HOME/projects/salesforce-blog"
 
-alias cdmrp="cd_dir $WORK_HOME/java/br-reportapp"
+alias cdmrp="cd_down_tree $WORK_HOME/java/br-reportapp"
 
-alias cdbp="cd_dir $MRROBINSMITHCOM_HOME/public/blogposts"
+alias cdbp="cd_down_tree $MRROBINSMITHCOM_HOME/public/blogposts"
 
-alias cdrk="cd_dir $RAKELIB"
+alias cdrk="cd_down_tree $RAKELIB"
 
-alias cdl="cd_dir $LOCAL_HOME"
+alias cdl="cd_down_tree $LOCAL_HOME"
 
-alias cdw="cd_dir $WORK_HOME"
+alias cdw="cd_down_tree $WORK_HOME"
 
-alias cdwr="cd_dir $WORK_RUBY_HOME"
+alias cdwr="cd_down_tree $WORK_RUBY_HOME"
 
-alias cdwp="cd_dir $WORK_PYTHON_HOME"
+alias cdwp="cd_down_tree $WORK_PYTHON_HOME"
 
-alias cdrecipe="cd_dir $HTMLCSS_HOME/projects/recipe-finder"
+alias cdrecipe="cd_down_tree $HTMLCSS_HOME/projects/recipe-finder"
 
-alias cdsed="cd_dir $SH_HOME/practice/sed"
+alias cdsed="cd_down_tree $SH_HOME/practice/sed"
 
-alias cdscr="cd_dir $SCREENSHOTS_HOME"
+alias cdscr="cd_down_tree $SCREENSHOTS_HOME"
 
-alias cdhbpr="cd_dir $HTML_CSS_HOME/practice/bootstrap"
+alias cdhbpr="cd_down_tree $HTML_CSS_HOME/practice/bootstrap"
 
-alias cdcam="cd_dir '$CAMERA_HOME'"
+alias cdcam="cd_down_tree '$CAMERA_HOME'"
 
-alias ocam="cd_dir $CAMERA_HOME && open ."
+alias ocam="cd_down_tree $CAMERA_HOME && open ."
 
-alias cdtr="cd_dir $TRASH_HOME"
+alias cdtr="cd_down_tree $TRASH_HOME"
 
-alias cddr="cd_dir $HOME/Dropbox"
+alias cddr="cd_down_tree $HOME/Dropbox"
 
-alias cdk="cd_dir $KITCHENPLAN_HOME"
+alias cdk="cd_down_tree $KITCHENPLAN_HOME"
 
-alias cddl="cd_dir $DOWNLOADS_HOME"
+alias cddl="cd_down_tree $DOWNLOADS_HOME"
 
-alias cdmv="cd_dir $HOME/Movies"
+alias cdmv="cd_down_tree $HOME/Movies"
 
-alias cdaws="cd_dir `dirname $AWS_CONFIG`"
+alias cdaws="cd_down_tree `dirname $AWS_CONFIG`"
 
-alias cdm="cd_dir $JS_HOME/projects"
+alias cdm="cd_down_tree $JS_HOME/projects"
 
-alias cdmb="cd_dir $JS_HOME/projects/mobile-app-cordova"
+alias cdmb="cd_down_tree $JS_HOME/projects/mobile-app-cordova"
 
-alias cdgam="cd_dir $GAM_PATH"
+alias cdgam="cd_down_tree $GAM_PATH"
 
 alias cdexp="cd $EXPENSES_HOME"
 
-alias cdrec="cd_dir $(dirname $RECORDS_PATH)"
+alias cdrec="cd_down_tree $(dirname $RECORDS_PATH)"
 
-alias cdlists="cd_dir $LISTS_HOME"
+alias cdlists="cd_down_tree $LISTS_HOME"
 
 
 ###############################################################################
@@ -326,7 +328,7 @@ alias cdlists="cd_dir $LISTS_HOME"
 ###############################################################################
 alias ut="utop"
 
-alias cdfn="cd_dir $FUNCS_HOME"
+alias cdfn="cd_down_tree $FUNCS_HOME"
 
 alias jk="jekyll"
 
@@ -374,13 +376,7 @@ alias bl="bundle list"
 
 alias bu="bundle update"
 
-alias rkup="rakeup"
-
-alias rkdn="rakedown"
-
-alias fbu="fabup"
-
-alias fbd="fabdown"
+alias ni="sudo npm install"
 
 alias anew="new_s awk awk"
 
@@ -432,9 +428,9 @@ alias ctfn="ls $FUNCS_HOME | wc -l"
 
 alias js="jekyll serve"
 
-alias cdnoc="cd_dir $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
+alias cdnoc="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
 
-alias cdms="cd_dir $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
+alias cdms="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
 
 alias ccr="cocos run -p android"
 
@@ -493,9 +489,9 @@ alias grso="git remote show origin"
 
 alias gin="git init"
 
-alias gRm="git rm -r --cached"
+alias grm="git rm -r --cached"
 
-alias grm="git remote"
+alias gre="git remote"
 
 alias gbd="git branch develop && git checkout develop"
 
@@ -746,7 +742,7 @@ alias cms="edit $DOCS_HOME/commands.txt"
 
 alias password="ruby $RUBY_HOME/projects/rbpassword/rbpassword.rb"
 
-alias rnsall="cd_dir $SCREENSHOTS_HOME && despace"
+alias rnsall="cd_down_tree $SCREENSHOTS_HOME && despace"
 
 alias mal="$EDITOR $ZDOT_HOME/aliases.zsh"
 
@@ -934,9 +930,9 @@ alias workpostcode="get_record work_postcode"
 
 alias residency="$ADOBE_PATH $CANADA_HOME/residency_form.pdf"
 
-alias songs="cd_dir $SONGS_HOME"
+alias songs="cd_down_tree $SONGS_HOME"
 
-alias cdsongs="cd_dir $SONGS_HOME"
+alias cdsongs="cd_down_tree $SONGS_HOME"
 
 alias sabihin="song sabihin_mo_na"
 
@@ -958,6 +954,12 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias repoal="recreate_all_repo_aliases"
+
+alias cdt="cd_down_tree"
+
+alias cdf="cd_to_file"
+
 alias dd="duckduckgo"
 
 alias gr="grep_recursive"
@@ -1162,7 +1164,7 @@ alias tls="take"
 
 alias cdld="cd \$(lsltr | tail -1)"
 
-alias dspdl="cd_dir $HOME/Downloads; despace; cd - > /dev/null"
+alias dspdl="cd_down_tree $HOME/Downloads; despace; cd - > /dev/null"
 
 alias td="todo"
 

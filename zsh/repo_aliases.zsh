@@ -8,9 +8,9 @@ alias scpl="cd_pull $SCALA_HOME"
 
 alias idsc="idea $SCALA_HOME"
 
-alias cdsc="cd_dir $SCALA_HOME"
+alias cdsc="cd_down_tree $SCALA_HOME"
 
-alias cdscpr="cd_dir $SCALA_HOME/practice"
+alias cdscpr="cd_down_tree $SCALA_HOME/practice"
 
 alias gisv="cd_save $GIMP_HOME"
 
@@ -22,9 +22,9 @@ alias gipl="cd_pull $GIMP_HOME"
 
 alias idgi="idea $GIMP_HOME"
 
-alias cdgi="cd_dir $GIMP_HOME"
+alias cdgi="cd_down_tree $GIMP_HOME"
 
-alias cdgipr="cd_dir $GIMP_HOME/practice"
+alias cdgipr="cd_down_tree $GIMP_HOME/practice"
 
 alias zsv="cd_save $ZSH_HOME"
 
@@ -36,9 +36,9 @@ alias zpl="cd_pull $ZSH_HOME"
 
 alias idz="idea $ZSH_HOME"
 
-alias cdz="cd_dir $ZSH_HOME"
+alias cdz="cd_down_tree $ZSH_HOME"
 
-alias cdzpr="cd_dir $ZSH_HOME/practice"
+alias cdzpr="cd_down_tree $ZSH_HOME/practice"
 
 alias msv="cd_save $MARKDOWN_HOME"
 
@@ -50,9 +50,9 @@ alias mpl="cd_pull $MARKDOWN_HOME"
 
 alias idm="idea $MARKDOWN_HOME"
 
-alias cdm="cd_dir $MARKDOWN_HOME"
+alias cdm="cd_down_tree $MARKDOWN_HOME"
 
-alias cdmpr="cd_dir $MARKDOWN_HOME/practice"
+alias cdmpr="cd_down_tree $MARKDOWN_HOME/practice"
 
 alias jvsv="cd_save $JV_HOME"
 
@@ -64,9 +64,9 @@ alias jvpl="cd_pull $JV_HOME"
 
 alias idjv="idea $JV_HOME"
 
-alias cdjv="cd_dir $JV_HOME"
+alias cdjv="cd_down_tree $JV_HOME"
 
-alias cdjvpr="cd_dir $JV_HOME/practice"
+alias cdjvpr="cd_down_tree $JV_HOME/practice"
 
 alias rssv="cd_save $RSS_HOME"
 
@@ -78,9 +78,9 @@ alias rspl="cd_pull $RSS_HOME"
 
 alias idrs="idea $RSS_HOME"
 
-alias cdrs="cd_dir $RSS_HOME"
+alias cdrs="cd_down_tree $RSS_HOME"
 
-alias cdrspr="cd_dir $RSS_HOME/practice"
+alias cdrspr="cd_down_tree $RSS_HOME/practice"
 
 alias qsv="cd_save $QUIZ_HOME"
 
@@ -92,9 +92,9 @@ alias qpl="cd_pull $QUIZ_HOME"
 
 alias idq="idea $QUIZ_HOME"
 
-alias cdq="cd_dir $QUIZ_HOME"
+alias cdq="cd_down_tree $QUIZ_HOME"
 
-alias cdqpr="cd_dir $QUIZ_HOME/practice"
+alias cdqpr="cd_down_tree $QUIZ_HOME/practice"
 
 alias ssv="cd_save $SH_HOME"
 
@@ -106,9 +106,9 @@ alias spl="cd_pull $SH_HOME"
 
 alias ids="idea $SH_HOME"
 
-alias cds="cd_dir $SH_HOME"
+alias cds="cd_down_tree $SH_HOME"
 
-alias cdspr="cd_dir $SH_HOME/practice"
+alias cdspr="cd_down_tree $SH_HOME/practice"
 
 alias rsv="cd_save $RUBY_HOME"
 
@@ -120,9 +120,9 @@ alias rpl="cd_pull $RUBY_HOME"
 
 alias idr="idea $RUBY_HOME"
 
-alias cdr="cd_dir $RUBY_HOME"
+alias cdr="cd_down_tree $RUBY_HOME"
 
-alias cdrpr="cd_dir $RUBY_HOME/practice"
+alias cdrpr="cd_down_tree $RUBY_HOME/practice"
 
 alias prsv="cd_save $PROG_HOME"
 
@@ -134,9 +134,9 @@ alias prpl="cd_pull $PROG_HOME"
 
 alias idpr="idea $PROG_HOME"
 
-alias cdpr="cd_dir $PROG_HOME"
+alias cdpr="cd_down_tree $PROG_HOME"
 
-alias cdprpr="cd_dir $PROG_HOME/practice"
+alias cdprpr="cd_down_tree $PROG_HOME/practice"
 
 alias csv="cd_save $C_HOME"
 
@@ -148,9 +148,9 @@ alias cpl="cd_pull $C_HOME"
 
 alias idc="idea $C_HOME"
 
-alias cdc="cd_dir $C_HOME"
+alias cdc="cd_down_tree $C_HOME"
 
-alias cdcpr="cd_dir $C_HOME/practice"
+alias cdcpr="cd_down_tree $C_HOME/practice"
 
 alias hsv="cd_save $HTML_CSS_HOME"
 
@@ -162,9 +162,9 @@ alias hpl="cd_pull $HTML_CSS_HOME"
 
 alias idh="idea $HTML_CSS_HOME"
 
-alias cdh="cd_dir $HTML_CSS_HOME"
+alias cdh="cd_down_tree $HTML_CSS_HOME"
 
-alias cdhpr="cd_dir $HTML_CSS_HOME/practice"
+alias cdhpr="cd_down_tree $HTML_CSS_HOME/practice"
 
 alias cpsv="cd_save $C_PLUS_PLUS_HOME"
 
@@ -176,9 +176,9 @@ alias cppl="cd_pull $C_PLUS_PLUS_HOME"
 
 alias idcp="idea $C_PLUS_PLUS_HOME"
 
-alias cdcp="cd_dir $C_PLUS_PLUS_HOME"
+alias cdcp="cd_down_tree $C_PLUS_PLUS_HOME"
 
-alias cdcppr="cd_dir $C_PLUS_PLUS_HOME/practice"
+alias cdcppr="cd_down_tree $C_PLUS_PLUS_HOME/practice"
 
 alias cnsv="cd_save $CONCENTRATION_GAME_HOME"
 
@@ -190,9 +190,9 @@ alias cnpl="cd_pull $CONCENTRATION_GAME_HOME"
 
 alias idcn="idea $CONCENTRATION_GAME_HOME"
 
-alias cdcn="cd_dir $CONCENTRATION_GAME_HOME"
+alias cdcn="cd_down_tree $CONCENTRATION_GAME_HOME"
 
-alias cdcnpr="cd_dir $CONCENTRATION_GAME_HOME/practice"
+alias cdcnpr="cd_down_tree $CONCENTRATION_GAME_HOME/practice"
 
 alias ghsv="cd_save $GITHUB_HOME"
 
@@ -204,9 +204,9 @@ alias ghpl="cd_pull $GITHUB_HOME"
 
 alias idgh="idea $GITHUB_HOME"
 
-alias cdgh="cd_dir $GITHUB_HOME"
+alias cdgh="cd_down_tree $GITHUB_HOME"
 
-alias cdghpr="cd_dir $GITHUB_HOME/practice"
+alias cdghpr="cd_down_tree $GITHUB_HOME/practice"
 
 alias jsv="cd_save $JAVASCRIPT_HOME"
 
@@ -218,9 +218,9 @@ alias jpl="cd_pull $JAVASCRIPT_HOME"
 
 alias idj="idea $JAVASCRIPT_HOME"
 
-alias cdj="cd_dir $JAVASCRIPT_HOME"
+alias cdj="cd_down_tree $JAVASCRIPT_HOME"
 
-alias cdjpr="cd_dir $JAVASCRIPT_HOME/practice"
+alias cdjpr="cd_down_tree $JAVASCRIPT_HOME/practice"
 
 alias osv="cd_save $OCAML_HOME"
 
@@ -232,9 +232,9 @@ alias opl="cd_pull $OCAML_HOME"
 
 alias ido="idea $OCAML_HOME"
 
-alias cdo="cd_dir $OCAML_HOME"
+alias cdo="cd_down_tree $OCAML_HOME"
 
-alias cdopr="cd_dir $OCAML_HOME/practice"
+alias cdopr="cd_down_tree $OCAML_HOME/practice"
 
 alias dtsv="cd_save $DOTFILES_HOME"
 
@@ -246,9 +246,9 @@ alias dtpl="cd_pull $DOTFILES_HOME"
 
 alias iddt="idea $DOTFILES_HOME"
 
-alias cddt="cd_dir $DOTFILES_HOME"
+alias cddt="cd_down_tree $DOTFILES_HOME"
 
-alias cddtpr="cd_dir $DOTFILES_HOME/practice"
+alias cddtpr="cd_down_tree $DOTFILES_HOME/practice"
 
 alias dsv="cd_save $DOTFILES_BASE_HOME"
 
@@ -260,9 +260,9 @@ alias dpl="cd_pull $DOTFILES_BASE_HOME"
 
 alias idd="idea $DOTFILES_BASE_HOME"
 
-alias cdd="cd_dir $DOTFILES_BASE_HOME"
+alias cdd="cd_down_tree $DOTFILES_BASE_HOME"
 
-alias cddpr="cd_dir $DOTFILES_BASE_HOME/practice"
+alias cddpr="cd_down_tree $DOTFILES_BASE_HOME/practice"
 
 alias psv="cd_save $PYTHON_HOME"
 
@@ -274,9 +274,9 @@ alias ppl="cd_pull $PYTHON_HOME"
 
 alias idp="idea $PYTHON_HOME"
 
-alias cdp="cd_dir $PYTHON_HOME"
+alias cdp="cd_down_tree $PYTHON_HOME"
 
-alias cdppr="cd_dir $PYTHON_HOME/practice"
+alias cdppr="cd_down_tree $PYTHON_HOME/practice"
 
 alias fsv="cd_save $FORCE_COM_HOME"
 
@@ -288,9 +288,9 @@ alias fpl="cd_pull $FORCE_COM_HOME"
 
 alias idf="idea $FORCE_COM_HOME"
 
-alias cdf="cd_dir $FORCE_COM_HOME"
+alias cdf="cd_down_tree $FORCE_COM_HOME"
 
-alias cdfpr="cd_dir $FORCE_COM_HOME/practice"
+alias cdfpr="cd_down_tree $FORCE_COM_HOME/practice"
 
 alias mrsv="cd_save $MRROBINSMITH_COM_HOME"
 
@@ -302,9 +302,9 @@ alias mrpl="cd_pull $MRROBINSMITH_COM_HOME"
 
 alias idmr="idea $MRROBINSMITH_COM_HOME"
 
-alias cdmr="cd_dir $MRROBINSMITH_COM_HOME"
+alias cdmr="cd_down_tree $MRROBINSMITH_COM_HOME"
 
-alias cdmrpr="cd_dir $MRROBINSMITH_COM_HOME/practice"
+alias cdmrpr="cd_down_tree $MRROBINSMITH_COM_HOME/practice"
 
 alias wfsv="cd_save $WORK_FORCE_COM_HOME"
 
@@ -316,9 +316,9 @@ alias wfpl="cd_pull $WORK_FORCE_COM_HOME"
 
 alias idwf="idea $WORK_FORCE_COM_HOME"
 
-alias cdwf="cd_dir $WORK_FORCE_COM_HOME"
+alias cdwf="cd_down_tree $WORK_FORCE_COM_HOME"
 
-alias cdwfpr="cd_dir $WORK_FORCE_COM_HOME/practice"
+alias cdwfpr="cd_down_tree $WORK_FORCE_COM_HOME/practice"
 
 alias asv="cd_save $AWK_HOME"
 
@@ -330,9 +330,9 @@ alias apl="cd_pull $AWK_HOME"
 
 alias ida="idea $AWK_HOME"
 
-alias cda="cd_dir $AWK_HOME"
+alias cda="cd_down_tree $AWK_HOME"
 
-alias cdapr="cd_dir $AWK_HOME/practice"
+alias cdapr="cd_down_tree $AWK_HOME/practice"
 
 alias orsv="cd_save $ORBITER_HOME"
 
@@ -344,9 +344,9 @@ alias orpl="cd_pull $ORBITER_HOME"
 
 alias idor="idea $ORBITER_HOME"
 
-alias cdor="cd_dir $ORBITER_HOME"
+alias cdor="cd_down_tree $ORBITER_HOME"
 
-alias cdorpr="cd_dir $ORBITER_HOME/practice"
+alias cdorpr="cd_down_tree $ORBITER_HOME/practice"
 
 alias plsv="cd_save $PERL_HOME"
 
@@ -358,9 +358,9 @@ alias plpl="cd_pull $PERL_HOME"
 
 alias idpl="idea $PERL_HOME"
 
-alias cdpl="cd_dir $PERL_HOME"
+alias cdpl="cd_down_tree $PERL_HOME"
 
-alias cdplpr="cd_dir $PERL_HOME/practice"
+alias cdplpr="cd_down_tree $PERL_HOME/practice"
 
 alias ppsv="cd_save $PLANET_PAIRS_HOME"
 
@@ -372,9 +372,9 @@ alias pppl="cd_pull $PLANET_PAIRS_HOME"
 
 alias idpp="idea $PLANET_PAIRS_HOME"
 
-alias cdpp="cd_dir $PLANET_PAIRS_HOME"
+alias cdpp="cd_down_tree $PLANET_PAIRS_HOME"
 
-alias cdpppr="cd_dir $PLANET_PAIRS_HOME/practice"
+alias cdpppr="cd_down_tree $PLANET_PAIRS_HOME/practice"
 
 alias cssv="cd_save $COFFEESCRIPT_HOME"
 
@@ -386,9 +386,9 @@ alias cspl="cd_pull $COFFEESCRIPT_HOME"
 
 alias idcs="idea $COFFEESCRIPT_HOME"
 
-alias cdcs="cd_dir $COFFEESCRIPT_HOME"
+alias cdcs="cd_down_tree $COFFEESCRIPT_HOME"
 
-alias cdcspr="cd_dir $COFFEESCRIPT_HOME/practice"
+alias cdcspr="cd_down_tree $COFFEESCRIPT_HOME/practice"
 
 alias gasv="cd_save $GAME_HOME"
 
@@ -400,9 +400,9 @@ alias gapl="cd_pull $GAME_HOME"
 
 alias idga="idea $GAME_HOME"
 
-alias cdga="cd_dir $GAME_HOME"
+alias cdga="cd_down_tree $GAME_HOME"
 
-alias cdgapr="cd_dir $GAME_HOME/practice"
+alias cdgapr="cd_down_tree $GAME_HOME/practice"
 
 alias bbsv="cd_save $BOUNCING_BALLS_HOME"
 
@@ -414,9 +414,9 @@ alias bbpl="cd_pull $BOUNCING_BALLS_HOME"
 
 alias idbb="idea $BOUNCING_BALLS_HOME"
 
-alias cdbb="cd_dir $BOUNCING_BALLS_HOME"
+alias cdbb="cd_down_tree $BOUNCING_BALLS_HOME"
 
-alias cdbbpr="cd_dir $BOUNCING_BALLS_HOME/practice"
+alias cdbbpr="cd_down_tree $BOUNCING_BALLS_HOME/practice"
 
 alias cesv="cd_save $COCOS_EXAMPLES_HOME"
 
@@ -428,9 +428,9 @@ alias cepl="cd_pull $COCOS_EXAMPLES_HOME"
 
 alias idce="idea $COCOS_EXAMPLES_HOME"
 
-alias cdce="cd_dir $COCOS_EXAMPLES_HOME"
+alias cdce="cd_down_tree $COCOS_EXAMPLES_HOME"
 
-alias cdcepr="cd_dir $COCOS_EXAMPLES_HOME/practice"
+alias cdcepr="cd_down_tree $COCOS_EXAMPLES_HOME/practice"
 
 alias ffsv="cd_save $FLAPPY_FISH_HOME"
 
@@ -442,9 +442,9 @@ alias ffpl="cd_pull $FLAPPY_FISH_HOME"
 
 alias idff="idea $FLAPPY_FISH_HOME"
 
-alias cdff="cd_dir $FLAPPY_FISH_HOME"
+alias cdff="cd_down_tree $FLAPPY_FISH_HOME"
 
-alias cdffpr="cd_dir $FLAPPY_FISH_HOME/practice"
+alias cdffpr="cd_down_tree $FLAPPY_FISH_HOME/practice"
 
 alias mrdsv="cd_save $MRROBINSMITH_COM_DEV_HOME"
 
@@ -456,9 +456,9 @@ alias mrdpl="cd_pull $MRROBINSMITH_COM_DEV_HOME"
 
 alias idmrd="idea $MRROBINSMITH_COM_DEV_HOME"
 
-alias cdmrd="cd_dir $MRROBINSMITH_COM_DEV_HOME"
+alias cdmrd="cd_down_tree $MRROBINSMITH_COM_DEV_HOME"
 
-alias cdmrdpr="cd_dir $MRROBINSMITH_COM_DEV_HOME/practice"
+alias cdmrdpr="cd_down_tree $MRROBINSMITH_COM_DEV_HOME/practice"
 
 alias tsv="cd_save $JS_TESTS_HOME"
 
@@ -470,9 +470,9 @@ alias tpl="cd_pull $JS_TESTS_HOME"
 
 alias idt="idea $JS_TESTS_HOME"
 
-alias cdt="cd_dir $JS_TESTS_HOME"
+alias cdt="cd_down_tree $JS_TESTS_HOME"
 
-alias cdtpr="cd_dir $JS_TESTS_HOME/practice"
+alias cdtpr="cd_down_tree $JS_TESTS_HOME/practice"
 
 alias pisv="cd_save $PI_HOME"
 
@@ -484,9 +484,9 @@ alias pipl="cd_pull $PI_HOME"
 
 alias idpi="idea $PI_HOME"
 
-alias cdpi="cd_dir $PI_HOME"
+alias cdpi="cd_down_tree $PI_HOME"
 
-alias cdpipr="cd_dir $PI_HOME/practice"
+alias cdpipr="cd_down_tree $PI_HOME/practice"
 
 alias rnsv="cd_save $RUNNER_HOME"
 
@@ -498,9 +498,9 @@ alias rnpl="cd_pull $RUNNER_HOME"
 
 alias idrn="idea $RUNNER_HOME"
 
-alias cdrn="cd_dir $RUNNER_HOME"
+alias cdrn="cd_down_tree $RUNNER_HOME"
 
-alias cdrnpr="cd_dir $RUNNER_HOME/practice"
+alias cdrnpr="cd_down_tree $RUNNER_HOME/practice"
 
 alias cqsv="cd_save $COQ_HOME"
 
@@ -512,7 +512,7 @@ alias cqpl="cd_pull $COQ_HOME"
 
 alias idcq="idea $COQ_HOME"
 
-alias cdcq="cd_dir $COQ_HOME"
+alias cdcq="cd_down_tree $COQ_HOME"
 
-alias cdcqpr="cd_dir $COQ_HOME/practice"
+alias cdcqpr="cd_down_tree $COQ_HOME/practice"
 
