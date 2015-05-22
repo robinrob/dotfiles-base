@@ -218,6 +218,8 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdts="cd_down_tree $JS_TESTS_HOME/src"
+
 alias cdsam="cd_down_tree $COCOS_HOME/samples"
 
 alias cdmw="cd_down_tree $COCOS_HOME/samples/js-moonwarriors"
