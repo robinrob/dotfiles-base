@@ -278,19 +278,19 @@ alias cdp="cd_down_tree $PYTHON_HOME"
 
 alias cdppr="cd_down_tree $PYTHON_HOME/practice"
 
-alias fsv="cd_save $FORCE_COM_HOME"
+alias fcsv="cd_save $FORCE_COM_HOME"
 
-alias fcm="cd_commit $FORCE_COM_HOME"
+alias fccm="cd_commit $FORCE_COM_HOME"
 
-alias fst="cd_status $FORCE_COM_HOME"
+alias fcst="cd_status $FORCE_COM_HOME"
 
-alias fpl="cd_pull $FORCE_COM_HOME"
+alias fcpl="cd_pull $FORCE_COM_HOME"
 
-alias idf="idea $FORCE_COM_HOME"
+alias idfc="idea $FORCE_COM_HOME"
 
-alias cdf="cd_down_tree $FORCE_COM_HOME"
+alias cdfc="cd_down_tree $FORCE_COM_HOME"
 
-alias cdfpr="cd_down_tree $FORCE_COM_HOME/practice"
+alias cdfcpr="cd_down_tree $FORCE_COM_HOME/practice"
 
 alias mrsv="cd_save $MRROBINSMITH_COM_HOME"
 
@@ -460,19 +460,19 @@ alias cdmrd="cd_down_tree $MRROBINSMITH_COM_DEV_HOME"
 
 alias cdmrdpr="cd_down_tree $MRROBINSMITH_COM_DEV_HOME/practice"
 
-alias tsv="cd_save $JS_TESTS_HOME"
+alias tesv="cd_save $JS_TESTS_HOME"
 
-alias tcm="cd_commit $JS_TESTS_HOME"
+alias tecm="cd_commit $JS_TESTS_HOME"
 
-alias tst="cd_status $JS_TESTS_HOME"
+alias test="cd_status $JS_TESTS_HOME"
 
-alias tpl="cd_pull $JS_TESTS_HOME"
+alias tepl="cd_pull $JS_TESTS_HOME"
 
-alias idt="idea $JS_TESTS_HOME"
+alias idte="idea $JS_TESTS_HOME"
 
-alias cdt="cd_down_tree $JS_TESTS_HOME"
+alias cdte="cd_down_tree $JS_TESTS_HOME"
 
-alias cdtpr="cd_down_tree $JS_TESTS_HOME/practice"
+alias cdtepr="cd_down_tree $JS_TESTS_HOME/practice"
 
 alias pisv="cd_save $PI_HOME"
 

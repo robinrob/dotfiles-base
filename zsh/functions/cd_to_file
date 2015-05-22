@@ -1,1 +1,1 @@
-cd_down_tree "$(dirname $1)" $*[2, -1]
+cd_down_tree "$(dirname $1)" $*[2,-1]
