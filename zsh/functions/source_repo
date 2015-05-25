@@ -1,12 +1,20 @@
-typeset url
+local +r Url=$(repo_url) 2> /dev/null
+local +r Provider=$(print $Url | ggrep -P -o '(?<=https://)([a-z\.]+)(?=\/|:)')
 
-url=$(repo_url) 2> /dev/null
-if [ "$url" ]
+
+if [[ $Provider == 'bitbucket.org' ]]
 then
-  green "Repo found: $url"
-else
-	url="https://github.com/robinrob"
+  local +r Project=$(print $Url | ggrep -P -o '(?<=\/)([a-z-]+)(?=\.git)')
+  Url=$(print $Url | gsed "s/$Project\.git/$Project\/src/")
 fi
 
-green "Opening $url ..."
-browser $url
+
+if [ "$Url" ]
+then
+  green "Repo found: $Url"
+else
+	Url="https://github.com/robinrob"
+fi
+
+green "Opening $Url ..."
+browser $Url
