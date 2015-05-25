@@ -782,14 +782,6 @@ alias cleantrash="sudo rm -rf $HOME/.Trash; mkdir $HOME/.Trash"
 
 alias cgi="cat .gitignore"
 
-alias x+="chmod +x"
-
-alias x-="chmod -x"
-
-alias chp="chmod +x"
-
-alias chm="chmod -x"
-
 alias kud="knife_upload_databag"
 
 alias kne="knife node edit --editor vim"
