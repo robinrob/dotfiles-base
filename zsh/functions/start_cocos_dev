@@ -8,4 +8,4 @@ fi
 
 iterm $Where
 idea
-browser_sync_cocos
+gulp

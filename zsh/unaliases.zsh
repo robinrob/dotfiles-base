@@ -75,3 +75,5 @@ unalias gcp 2> /dev/null
 unalias gld 2> /dev/null
 
 unalias gco 2> /dev/null
+
+unalias gRm 2> /dev/null

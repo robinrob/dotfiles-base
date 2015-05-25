@@ -138,7 +138,11 @@ alias cldl="green 'Moving $HOME/Downloads/* to Trash ...'; mv $HOME/Downloads/* 
 
 alias ssd="red 'Shutting down!'; sudo shutdown -h now"
 
+alias SSD="ssd"
+
 alias ssr="red 'Rebooting!'; sudo shutdown -r now"
+
+alias SSR="ssr"
 
 alias lgo="osascript -e 'tell application \"loginwindow\" to  «event aevtrlgo»'"
 
@@ -976,6 +980,8 @@ alias lib="search_library"
 
 alias yell="yell_search"
 
+alias yelp="yelp_search"
+
 alias phys="physics_forums_search"
 
 alias thes="thesaurus"
@@ -1106,7 +1112,7 @@ alias ggt="google_translate"
 
 alias ggg="google_groups"
 
-alias gg="duckduckgo"
+alias gg="google"
 
 alias cls="cat_named_list"
 

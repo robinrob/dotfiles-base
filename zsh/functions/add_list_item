@@ -1,35 +1,27 @@
-if (( $#* < 1 ))
-then
-  red "Must provide at least 1 argument"
-  return
-fi
+(( $#* < 2 )) && red "Must provide at least name of file and item!" && return
 
 
-local +r ListPath=$1; shift
+local +r ListPath=$1
+local +r NameOrItem=$2
 local +r List=$(basename $ListPath)
 
 
-if [[ -n $(cat $ListPath | ggrep "^$1") ]]
+if [[ -n $(cat $ListPath | ggrep "^$NameOrItem::") ]]
 then
-  print "$(yellow $1) $(red already in) $(yellow $List)"
+  print "$(yellow $NameOrItem) $(red already in) $(yellow $List)"
   cat $ListPath
 
-elif (( $#* == 1 ))
+elif (( $#* == 2 ))
 then
-  local +r Value=$1
-  local +r Item=$Value
-
-  print "$Item" >> $ListPath
-  print "$(yellow $Value) $(green added to) $(yellow $List)"
+  print "$NameOrItem" >> $ListPath
+  print "$(yellow $NameOrItem) $(green added to) $(yellow $List)"
   tailc $ListPath
 
-elif (( $#* >= 2 ))
+elif (( $#* >= 3 ))
 then
-  local +r Name=$1; shift
-  local +r Value="$*"
-  local +r Item="$Name::$Value"
+  local +r Item="$*[3,-1]"
 
-  print "$Item" >> $ListPath
+  print "$NameOrItem::$Item" >> $ListPath
   print "$(yellow $Name) $(green added to) $(yellow $List) $(green as) $(yellow $Value)"
   tailc $ListPath
 fi
