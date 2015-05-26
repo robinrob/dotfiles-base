@@ -1,8 +1,0 @@
-files="$@"
-files=(${(s: :)files})
-
-for file in $files
-do
-	gmv $file $TRASH_HOME	
-done
-

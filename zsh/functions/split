@@ -3,5 +3,5 @@ WORD=$2
 
 WORDS=$(eval 'WORDS=("${(s/'$SEPERATOR'/)WORD}"); print $WORDS')
 
-join " " $WORDS
+join $WORDS " "
 

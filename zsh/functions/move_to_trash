@@ -1,10 +1,9 @@
-local +r -a Files
-Files=($*)
+files="$@"
+files=(${(s: :)files})
 
-for file in $Files
+red "Moving files to trash ..."
+for file in $files
 do
-  print "$(green Moving) $(yellow $file) $(green to $TRASH_HOME)"
-  mv $file ~/.Trash
+  yellow "\t$file"
+	gmv $file $TRASH_HOME	
 done
-
-return 0

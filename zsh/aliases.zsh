@@ -952,6 +952,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias trash="move_to_trash"
+
+alias del="move_to_trash"
+
 alias repoal="recreate_all_repo_aliases"
 
 alias cdt="cd_down_tree"
@@ -1120,15 +1124,17 @@ alias dLs="delete_list_item"
 
 alias nls="new_list"
 
+alias dlls="delete_list"
+
 alias glst="get_named_list_item"
 
 alias grls="grep_named_list"
 
 alias ols="open_named_list_item"
 
-alias lsls="ls $LISTS_HOME"
+alias lsls="ls_list"
 
-alias lls="ls $LISTS_HOME"
+alias lls="ls_list"
 
 alias spacecraft="add_named_list_item spacecraft"
 

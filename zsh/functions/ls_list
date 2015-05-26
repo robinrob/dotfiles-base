@@ -1,0 +1,6 @@
+if [[ -n $@ ]]
+then
+  ls "${LISTS_HOME}/$(join $@ '/').txt"
+else
+  ls $LISTS_HOME
+fi
