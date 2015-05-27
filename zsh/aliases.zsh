@@ -188,7 +188,7 @@ alias spotify="open -a Spotify"
 
 alias spo="spotify"
 
-alias mvim="mvim -p"
+alias mvim="open -a MacVim"
 
 alias scc="scalac"
 
@@ -431,6 +431,8 @@ alias lsfn="ls $FUNCS_HOME"
 alias lfn="lsfn"
 
 alias ctfn="ls $FUNCS_HOME | wc -l"
+
+alias grfn="grep_functions"
 
 alias js="jekyll serve"
 
@@ -1124,7 +1126,7 @@ alias dLs="delete_list_item"
 
 alias nls="new_list"
 
-alias dlls="delete_list"
+# alias dlls="delete_list"
 
 alias glst="get_named_list_item"
 

@@ -22,6 +22,6 @@ then
   local +r Item="$*[3,-1]"
 
   print "$NameOrItem::$Item" >> $ListPath
-  print "$(yellow $Name) $(green added to) $(yellow $List) $(green as) $(yellow $Value)"
+  print "$(yellow $NameOrItem) $(green added to) $(yellow $List) $(green as) $(yellow $Item)"
   tailc $ListPath
 fi
