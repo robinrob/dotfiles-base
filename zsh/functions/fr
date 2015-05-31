@@ -1,11 +1,12 @@
-PATTERN=$1
-MAX_DEPTH=$2
+Pattern=$1
+( [[ -n $2 ]] && Where=$2 ) || Where='.'
+MaxDepth=$3
 
-if (( MAX_DEPTH > 0 ))
+if (( $MaxDepth > 0 ))
 then
-  cmd="gfind . -maxdepth $MAX_DEPTH -iname '*$PATTERN*'"
+  cmd="gfind $Where -maxdepth $MaxDepth -iname '*$Pattern*'"
 else
-  cmd="gfind . -iname '*$PATTERN*'"
+  cmd="gfind $Where -iname '*$Pattern*'"
 fi
 
 green $cmd
