@@ -1,0 +1,3 @@
+local +r Term=$1
+
+$RUBY_HOME/practice/regexp_operators.rb | grep -A 5 $Term

@@ -954,6 +954,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias rex="regex_lookup"
+
+alias fr="find_recursive"
+
 alias trash="move_to_trash"
 
 alias del="move_to_trash"
