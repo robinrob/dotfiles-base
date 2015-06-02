@@ -47,7 +47,7 @@ unset EXTENSION
 
 if ! [[ "$NO_OPEN" == "noopen" ]]
 then
-	editor $FILE
+	$EDITOR $FILE
 fi
 
 print -z ./$FILE

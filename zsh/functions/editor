@@ -1,1 +1,1 @@
-open -a MacVim
+mvim $@

@@ -3,5 +3,5 @@ mkdir $PROJECT
 cd $PROJECT
 hnew $PROJECT
 cssnew "style"
-editoreditor *
+$EDITOR$EDITOR *
 

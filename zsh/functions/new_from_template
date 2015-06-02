@@ -3,6 +3,6 @@ FILENAME=$(singlize_extension $2)
 
 cp $TEMPLATE $FILENAME
 chmod +x $FILENAME
-editor $FILENAME
+$EDITOR $FILENAME
 print -z ./$FILENAME
 

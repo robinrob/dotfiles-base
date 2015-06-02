@@ -1,2 +1,2 @@
-cd $DOCS_HOME/creative/writing && editor "$1.txt"
+cd $DOCS_HOME/creative/writing && $EDITOR "$1.txt"
 

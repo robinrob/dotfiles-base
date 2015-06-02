@@ -1,7 +1,12 @@
 local +r -a Words
 Words=($*)
 
+local +r str
 for word in $Words
 do
-  print "$(upper $word[1])$word[2,-1]"
+   str="$str$(upper $word[1])$word[2,-1] "
 done
+
+str=$str[1,-2]
+
+print $str

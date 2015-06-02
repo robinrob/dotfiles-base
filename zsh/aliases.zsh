@@ -188,8 +188,6 @@ alias spotify="open -a Spotify"
 
 alias spo="spotify"
 
-alias mvim="open -a MacVim"
-
 alias scc="scalac"
 
 alias lessc="$LESSC_PATH"
@@ -786,9 +784,9 @@ alias cgi="cat .gitignore"
 
 alias kud="knife_upload_databag"
 
-alias kne="knife node edit --editor vim"
+alias kne="knife node edit --$EDITOR vim"
 
-alias kee="knife environment edit --editor vim"
+alias kee="knife environment edit --$EDITOR vim"
 
 alias fbs="fab save"
 

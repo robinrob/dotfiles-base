@@ -1,5 +1,5 @@
 cp $CSS_HOME/templates/practice_css.html $1.html
 gsed -i "s/Title/$(upper_initial $1)/g" $1.html
 
-editor $1.html
+$EDITOR $1.html
 browser $1.html
