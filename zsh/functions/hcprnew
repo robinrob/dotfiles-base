@@ -1,5 +1,0 @@
-cp $HTML_HOME/templates/practice.html $1.html
-gsed -i "s/Title/$(nameify $1)/g" $1.html
-
-$EDITOR $1.html
-browser $1.html
