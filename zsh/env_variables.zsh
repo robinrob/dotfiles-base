@@ -80,7 +80,9 @@ export DOCS_HOME="$HOME/Programming/robin/docs"
 
 export FORCE_COM_HOME="$HOME/Programming/robin/force.com"
 
-export HTML_CSS_HOME="$HOME/Programming/robin/html-css"
+export HTML_HOME="$HOME/Programming/robin/html5"
+
+export CSS_HOME="$HOME/Programming/robin/css"
 
 export JV_HOME="$HOME/Programming/robin/java"
 

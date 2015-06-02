@@ -152,20 +152,6 @@ alias cdc="cd_down_tree $C_HOME"
 
 alias cdcpr="cd_down_tree $C_HOME/practice"
 
-alias hsv="cd_save $HTML_CSS_HOME"
-
-alias hcm="cd_commit $HTML_CSS_HOME"
-
-alias hst="cd_status $HTML_CSS_HOME"
-
-alias hpl="cd_pull $HTML_CSS_HOME"
-
-alias idh="idea $HTML_CSS_HOME"
-
-alias cdh="cd_down_tree $HTML_CSS_HOME"
-
-alias cdhpr="cd_down_tree $HTML_CSS_HOME/practice"
-
 alias cpsv="cd_save $C_PLUS_PLUS_HOME"
 
 alias cpcm="cd_commit $C_PLUS_PLUS_HOME"
@@ -263,6 +249,20 @@ alias idd="idea $DOTFILES_BASE_HOME"
 alias cdd="cd_down_tree $DOTFILES_BASE_HOME"
 
 alias cddpr="cd_down_tree $DOTFILES_BASE_HOME/practice"
+
+alias hsv="cd_save $HTML_HOME"
+
+alias hcm="cd_commit $HTML_HOME"
+
+alias hst="cd_status $HTML_HOME"
+
+alias hpl="cd_pull $HTML_HOME"
+
+alias idh="idea $HTML_HOME"
+
+alias cdh="cd_down_tree $HTML_HOME"
+
+alias cdhpr="cd_down_tree $HTML_HOME/practice"
 
 alias psv="cd_save $PYTHON_HOME"
 
@@ -487,6 +487,20 @@ alias idpi="idea $PI_HOME"
 alias cdpi="cd_down_tree $PI_HOME"
 
 alias cdpipr="cd_down_tree $PI_HOME/practice"
+
+alias cssv="cd_save $CSS_HOME"
+
+alias cscm="cd_commit $CSS_HOME"
+
+alias csst="cd_status $CSS_HOME"
+
+alias cspl="cd_pull $CSS_HOME"
+
+alias idcs="idea $CSS_HOME"
+
+alias cdcs="cd_down_tree $CSS_HOME"
+
+alias cdcspr="cd_down_tree $CSS_HOME/practice"
 
 alias rnsv="cd_save $RUNNER_HOME"
 
