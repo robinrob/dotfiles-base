@@ -1,1 +1,1 @@
-$EDITOR $LISTS_HOME/$1.txt
+editor $LISTS_HOME/$1.txt
