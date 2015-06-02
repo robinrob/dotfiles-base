@@ -580,7 +580,7 @@ alias rkm="rake_do db:migrate"
 
 alias rkt="rake_do test"
 
-alias rkst="rake_do git:sort_sub"
+alias rkss="rake_do git:sort_sub"
 
 alias rk="rake"
 
