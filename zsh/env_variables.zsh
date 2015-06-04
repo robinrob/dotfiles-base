@@ -390,6 +390,8 @@ export GREP_COLORS="ms=$GREP_COLOR:mc=01;31:sl=:cx=:fn=0:ln=32:bn=32:se=36"
 
 export LS_COLORS='di=1;34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
 
+export CLICOLOR=1
+
 # Syntax highlighing in `less`
 # Requires `brew install source-highlight`
 ##############################

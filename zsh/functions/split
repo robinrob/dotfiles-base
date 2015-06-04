@@ -1,7 +1,6 @@
-SEPERATOR=$1
-WORD=$2
+SEPERATOR=$*[-1]
+WORD="$*[1,-2]"
 
 WORDS=$(eval 'WORDS=("${(s/'$SEPERATOR'/)WORD}"); print $WORDS')
 
-join $WORDS " "
-
+print $WORDS

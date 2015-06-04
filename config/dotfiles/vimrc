@@ -1,4 +1,4 @@
-" Use Vim settings, rather then Vi settings (much better!).
+" Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
@@ -116,7 +116,6 @@ so ~/.framework/vim/settings.vim
 
 " ================ Robin's Settings ========================
 set clipboard=unnamed
-set noignorecase
 set wrap
 
 nmap <S-Enter> O<Esc>j
@@ -134,3 +133,16 @@ filetype on
 
 "Set the default filetype for files with no extension"
 autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set filetype=zsh | endif
+
+" inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
+" inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
+"
+" verbose inoremap <expr> <C-j> pumvisible() ? "\<C-p>" : "\<C-j>"
+" verbose inoremap <expr> <C-k> pumvisible() ? "\<C-n>" : "\<C-k>"
+
+set shortmess+=I
+
+set ignorecase
+set smartcase
+
+set guifont=Menlo\ Regular:h14

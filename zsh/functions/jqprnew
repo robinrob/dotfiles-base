@@ -1,0 +1,4 @@
+cp $JS_HOME/templates/practice_jquery.html $1.html
+gsed -i "s/Title/$(upper_initial $1)/g" $1.html
+
+touch $1.js

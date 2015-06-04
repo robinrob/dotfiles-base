@@ -1,0 +1,4 @@
+for repo in $*
+do
+  rake_do git:deinit $repo
+done

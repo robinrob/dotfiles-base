@@ -1,12 +1,10 @@
-local +r -a Words
-Words=($*)
-
 local +r str
-for word in $Words
+
+for word in $*
 do
-   str="$str$(upper $word[1])$word[2,-1] "
+    str="$str $word[1]:u$word[2,-1]"
 done
 
-str=$str[1,-2]
+str=$str[2,-1]
 
 print $str

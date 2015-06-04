@@ -1,1 +1,1 @@
-upper_initial $(split _ $@)
+upper_initial $(lower $(print $@ | gsed 's/[_-]/ /g'))

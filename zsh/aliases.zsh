@@ -596,7 +596,7 @@ alias ccrn="rake_do cocos:run"
 
 alias rkdp="rake_do rails:deploy"
 
-alias rkde="rake_do git:deinit"
+alias rkde="rake_git_deinit"
 
 alias rkD="rake_do git:sub_deinit"
 
@@ -952,6 +952,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias mo="edit_open"
+
 alias rex="regex_lookup"
 
 alias fr="find_recursive"
