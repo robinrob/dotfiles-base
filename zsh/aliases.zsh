@@ -210,7 +210,7 @@ alias ffc="firefoxc"
 
 alias adobe="$ADOBE_PATH"
 
-alias m="$EDITOR"
+alias m="$EDITOR --remote-tab"
 
 alias e="$EDITOR"
 
