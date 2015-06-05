@@ -6,4 +6,4 @@ gsed -i "s/Title/$(nameify $1)/g" $1.html
 touch $1.js
 
 open $1.html
-mvim -p $1.js $1.html
+mvim $1.js $1.html

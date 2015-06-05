@@ -20,6 +20,8 @@ IFS="
 for file in $(gfind $Where -name "$FindExpression" -type f)
 do
   # Single-quotes around the $SedExpression are critical here
+  # local +r SedSubExpr = (${(s///SedExpression)})
+  # print $SedSubExpr
   cmd="gsed -i '$SedExpression' $file"
   yellow $cmd
   eval $cmd

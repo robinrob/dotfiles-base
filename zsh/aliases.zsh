@@ -76,6 +76,8 @@ alias shell="print $SHELL"
 ###############################################################################
 # GNU commands
 ###############################################################################
+alias kill="gkill"
+
 alias mv="gmv"
 
 alias egrep="gegrep"
@@ -84,7 +86,9 @@ alias grep="gegrep"
 
 alias find="gfind"
 
-alias sed="gsed"
+alias sed="gsed -r"
+
+alias gsed="gsed -r"
 
 alias ls="/usr/local/bin/gls --color"
 
@@ -210,7 +214,7 @@ alias ffc="firefoxc"
 
 alias adobe="$ADOBE_PATH"
 
-alias m="$EDITOR --remote-tab"
+alias m="$EDITOR"
 
 alias e="$EDITOR"
 
@@ -297,6 +301,8 @@ alias cdsed="cd_down_tree $SH_HOME/practice/sed"
 alias cdscr="cd_down_tree $SCREENSHOTS_HOME"
 
 alias cdhbpr="cd_down_tree $HTML_CSS_HOME/practice/bootstrap"
+
+alias cdjqpr="cd_down_tree $JS_HOME/practice/jquery"
 
 alias cdcam="cd_down_tree '$CAMERA_HOME'"
 
@@ -952,6 +958,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias jdoc="jquery_doc_search"
+
 alias mo="edit_open"
 
 alias rex="regex_lookup"
