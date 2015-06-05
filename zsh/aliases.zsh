@@ -78,7 +78,7 @@ alias shell="print $SHELL"
 ###############################################################################
 alias mv="gmv"
 
-alias gegrep="gegrep"
+alias egrep="gegrep"
 
 alias grep="gegrep"
 
@@ -1020,7 +1020,7 @@ alias hmrec="salesforce_record eu1"
 
 alias rsal="source_aliases"
 
-alias rsaL="re_source_aliases"
+alias rsaL="resource_aliases"
 
 alias phon="phonetic"
 
