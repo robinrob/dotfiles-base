@@ -1,0 +1,1 @@
+find . -maxdepth 1 -name \*.html -print | sed 'p;s/.html$/.haml/' | xargs -n2 html2haml --no-erb

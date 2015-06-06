@@ -958,7 +958,13 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
-alias jdoc="jquery_doc_search"
+alias moq="edit_open_jquery"
+
+alias jqdoc="jquery_doc_search"
+
+alias jqudoc="jquery_doc_search"
+
+alias judoc="jquery_ui_doc_search"
 
 alias mo="edit_open"
 

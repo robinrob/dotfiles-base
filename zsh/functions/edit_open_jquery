@@ -1,0 +1,4 @@
+local +r Name=$1
+
+open $Name.html
+editor $Name.html $Name.js
