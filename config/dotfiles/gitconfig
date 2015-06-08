@@ -3,3 +3,5 @@
 	name = Robin Smith
 [merge]
 	tool = DiffMerge
+[push]
+	default = matching
