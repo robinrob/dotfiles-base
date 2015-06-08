@@ -106,6 +106,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias viM="/usr/bin/vim"
+
 alias wifi="grec wifi"
 
 alias vlc="open -a Vlc\ 2"
@@ -224,6 +226,8 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdcl="cd /usr/local/Cellar"
+
 alias cdts="cd_down_tree $JS_TESTS_HOME/src"
 
 alias cdsam="cd_down_tree $COCOS_HOME/samples"
@@ -387,6 +391,12 @@ alias bl="bundle list"
 alias bu="bundle update"
 
 alias ni="sudo npm install"
+
+alias nig="sudo npm install -g"
+
+alias npmgls="npm config set json; npm -g list --depth=0"
+
+alias npmls="npm config set json; npm list --depth=0"
 
 alias anew="new_s awk awk"
 
@@ -958,6 +968,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias nis="npm_install_save"
+
 alias moq="edit_open_jquery"
 
 alias jqdoc="jquery_doc_search"
@@ -1256,7 +1268,7 @@ alias bru="brew update"
 
 alias brun="brew uninstall"
 
-alias brg="brew upgrade"
+alias brug="brew update; brew upgrade"
 
 alias brs="save_homebrew"
 

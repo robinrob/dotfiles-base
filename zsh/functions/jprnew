@@ -1,4 +1,8 @@
-cp $HTML_CSS_HOME/templates/practice_js.html $1.html
-gsed -i "s/Title/$(nameify $1)/g" $1.html
+local +r Name=$1
 
-touch $1.js
+cp $JS_HOME/templates/practice_js.html $Name.html
+gsed -i "s/Title/$(nameify $Name)/g" $Name.html
+
+open $Name.html
+touch $Name.js
+$EDITOR $Name.js

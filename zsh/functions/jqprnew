@@ -1,9 +1,14 @@
-cp $JS_HOME/templates/practice_jquery.html $1.html
+local +r Name=$1
 
-gsed -i "s/Title\.js/$1\.js/g" $1.html
-gsed -i "s/Title/$(nameify $1)/g" $1.html
+cp $JS_HOME/templates/practice_jquery.haml $Name.haml
 
-touch $1.js
+gsed -i "s/Title\.js/$Name\.js/g" $Name.haml
+gsed -i "s/Title/$(nameify $Name)/g" $Name.haml
 
-open $1.html
-editor $1.js $1.html
+haml $Name.haml > $Name.html
+
+touch $Name.js
+
+/* open "http://localhost:3000/$Name.html" */
+open $Name.html
+editor $Name.js $Name.haml

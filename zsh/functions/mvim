@@ -1,1 +1,1 @@
-/usr/local/bin/mvim --remote-tab $@
+/usr/local/bin/mvim --servername VIM --remote-tab-silent $@

@@ -1,3 +1,4 @@
 FILENAME=$1
 cp $HTML_TEMPLATES_HOME/practice_bootstrap.html $FILENAME.html
+cp $HTML_TEMPLATES_HOME/practice_bootstrap.html $FILENAME.html
 

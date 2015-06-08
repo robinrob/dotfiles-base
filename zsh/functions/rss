@@ -34,4 +34,6 @@ case $Feed in
     $RSS_HOME/rss.rb 'http://www.sciencemag.org/rss/news.xml' ;;
   sciencedaily)
     $RSS_HOME/rss.rb 'http://www.sciencedaily.com/newsFeed.xml' ;;
+  fowler)
+    $RSS_HOME/rss.rb 'http://martinfowler.com/feed.atom' ;;
 esac

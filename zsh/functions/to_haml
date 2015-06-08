@@ -1,1 +1,9 @@
-find . -maxdepth 1 -name \*.html -print | sed 'p;s/.html$/.haml/' | xargs -n2 html2haml --no-erb
+if (( $# == 0)
+then
+  find . -maxdepth 1 -name \*.html -print | sed 'p;s/.html$/.haml/' | xargs -n2 html2haml --no-erb ;;
+else
+  for file in $*
+  do
+    html2haml --no-erb $file > $(name $file).haml
+  done
+esac
