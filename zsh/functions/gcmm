@@ -1,4 +1,4 @@
 MSG=$@
 
-git_do commit -m "$MSG"
+git commit -m "$MSG"
 

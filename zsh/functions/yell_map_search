@@ -1,0 +1,4 @@
+local +r Search="$*[1,-2]"
+local +r Location=$*[-1]
+
+browser "http://www.yell.com/ucs/UcsSearchAction.do?keywords=$(urlencode $Search)&location=$(urlencode $Location)&view=map"

@@ -1,8 +1,8 @@
 TASK=$1
-shift
 
 local +r -a TASK_ARGS
-TASK_ARGS=($*)
+TASK_ARGS=($*[2,-1])
+print $TASK_ARGS
 
 BASE_CMD='rake -g'
 
@@ -14,7 +14,7 @@ then
 
   if [[ -n $TASK_ARGS ]]
   then
-    cmd="$BASE_CMD $TASK"[\'$(join $TASK_ARGS, ', ')\']
+    cmd="$BASE_CMD $TASK"[\'$(join $TASK_ARGS ', ')\']
 	else
 		cmd="$BASE_CMD $TASK"
 	fi

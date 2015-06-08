@@ -6,10 +6,11 @@ IFS=' '
 # esac
 TASK="base:save"
 
-if [[ $(is_in_set $*[-1] 'bitbucket github origin live') == "yes" ]]
-then
-  rake_do $TASK "$*[1,-2]" $*[-1]
-else
-  rake_do $TASK "$*"
-fi
+rake_do $TASK "$*"
+
+# if [[ $(is_in_set $*[-1] 'bitbucket github origin live') == "yes" ]]
+# then
+#   rake_do $TASK $*[1,-2] $*[-1]
+# else
+# fi
 
