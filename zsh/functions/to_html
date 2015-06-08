@@ -4,9 +4,9 @@ then
   set *.haml
 fi
 
-for $file in $*
+for file in $*
 do
-  local +r HtmlFile = $(name $file).html
+  local +r HtmlFile=$(name $file).html
   print "$(green Converting) $(yellow $file) $(green to) $(yellow $HtmlFile)"
   haml $file > $(name $file).html
 done
