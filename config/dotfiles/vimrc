@@ -106,12 +106,12 @@ set sidescroll=1
 so ~/.framework/vim/settings.vim
 
 " if has("gui_running")
-  " syntax on
-  " set hlsearch
-  " colorscheme macvim
-  " set bs=2
-  " set ai
-  " set ruler
+" syntax on
+" set hlsearch
+" colorscheme macvim
+" set bs=2
+" set ai
+" set ruler
 " endif
 
 " ================ Robin's Settings ========================
@@ -140,6 +140,11 @@ filetype on
 "
 " verbose inoremap <expr> <C-j> pumvisible() ? "\<C-p>" : "\<C-j>"
 " verbose inoremap <expr> <C-k> pumvisible() ? "\<C-n>" : "\<C-k>"
+
+"This highlights with red background any text that has gone over an 80 column
+"limit
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
 "Remove startup message when opening new file"
 set shortmess+=I
@@ -189,17 +194,17 @@ set gdefault
 "     " is displayed in a window again.
 "     autocmd! BufRead * if exists('syntax_on') && exists('b:current_syntax') && ! empty(&l:filetype) && index(split(&eventignore, ','), 'Syntax') != -1 | unlet! b:current_syntax | endif
 "    "
-"     "Set the default filetype for files with no extension"
-"     autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set filetype=zsh | endif
-"     "Set the default syntax for files with no extension"
-"     autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set syntax=zsh | endif
 " augroup END
 
-"This highlights with red background any text that has gone over an 80 column
-"limit
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+" Set the default filetype for files with no extension"
+autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set filetype=zsh | endif
+"Set the default syntax for files with no extension"
+autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set syntax=zsh | endif
 
+" Set the default filetype for files with no extension"
+autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.haml' | set filetype=haml | endif
+"Set the default syntax for files with no extension"
+autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.haml' | set syntax=haml | endif
 
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
