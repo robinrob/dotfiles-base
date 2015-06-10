@@ -1,0 +1,4 @@
+[[ -n $1 ]] && local +r File=$1
+[[ -n $2 ]] && local +r Port=$2 || local +r Port="3000"
+
+browser "http://localhost:$Port/$File"

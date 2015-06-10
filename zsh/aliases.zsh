@@ -106,6 +106,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias glp="gulp"
+
 alias viM="/usr/bin/vim"
 
 alias wifi="grec wifi"
@@ -304,7 +306,7 @@ alias cdsed="cd_down_tree $SH_HOME/practice/sed"
 
 alias cdscr="cd_down_tree $SCREENSHOTS_HOME"
 
-alias cdhbpr="cd_down_tree $HTML_CSS_HOME/practice/bootstrap"
+alias cdhbpr="cd_down_tree $CSS_HOME/practice/bootstrap"
 
 alias cdjqpr="cd_down_tree $JS_HOME/practice/jquery"
 
@@ -968,6 +970,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias lo="localhost_browse"
+
 alias nis="npm_install_save"
 
 alias moq="edit_open_jquery"
@@ -1296,7 +1300,7 @@ alias lfind="libfind_s $LOCAL_HOME"
 
 alias dfind="libfind_s $DOTFILES_HOME"
 
-alias hfind="libfind_s $HTML_CSS_HOME"
+alias hfind="libfind_s $HTML_HOME"
 
 alias jfind="libfind_s $JS_HOME"
 

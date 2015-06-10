@@ -1,3 +1,5 @@
+rvm use 2.1.4 > /dev/null && rvm gemset use rakelib
+
 if (( $# == 0 ))
 then
   green "Converting all haml files to html ..."

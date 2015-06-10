@@ -1,3 +1,5 @@
+rvm use 2.1.4 > /dev/null && rvm gemset use rakelib
+
 if (( $# == 0 ))
 then
   find . -maxdepth 1 -name \*.html -print | sed 'p;s/.html$/.haml/' | xargs -n2 html2haml --no-erb
