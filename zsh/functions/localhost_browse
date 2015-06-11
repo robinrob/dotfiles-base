@@ -1,4 +1,7 @@
-[[ -n $1 ]] && local +r File=$1
-[[ -n $2 ]] && local +r Port=$2 || local +r Port="3000"
+case $# in
+  0) red 'Must provide at least name of file.' ;;
+  1) local +r File=$1; local +r Port='3000' ;;
+  2) local +r File=$1; local +r Port=$2;;
+esac
 
 browser "http://localhost:$Port/$File"

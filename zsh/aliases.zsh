@@ -106,8 +106,6 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
-alias glp="gulp"
-
 alias viM="/usr/bin/vim"
 
 alias wifi="grec wifi"
@@ -228,6 +226,8 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdim="cd $IMPORTANT_HOME"
+
 alias cdcl="cd /usr/local/Cellar"
 
 alias cdts="cd_down_tree $JS_TESTS_HOME/src"
@@ -970,6 +970,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias glp="gulp_iterm_pwd"
+
+alias id="idea"
+
 alias lo="localhost_browse"
 
 alias nis="npm_install_save"
