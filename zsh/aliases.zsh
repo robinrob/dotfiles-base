@@ -306,7 +306,7 @@ alias cdsed="cd_down_tree $SH_HOME/practice/sed"
 
 alias cdscr="cd_down_tree $SCREENSHOTS_HOME"
 
-alias cdhbpr="cd_down_tree $CSS_HOME/practice/bootstrap"
+alias cdbspr="cd_down_tree $CSS_HOME/practice/bootstrap"
 
 alias cdjqpr="cd_down_tree $JS_HOME/practice/jquery"
 
@@ -973,6 +973,8 @@ alias ph="phone"
 alias glp="gulp_iterm_pwd"
 
 alias id="idea"
+
+alias i="idea"
 
 alias lo="localhost_browse"
 
