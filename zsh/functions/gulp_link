@@ -1,0 +1,10 @@
+mv gulpfile.js gulpfile.tmp.js
+cp $GULPFILE_PATH ./
+
+sudo -v
+sudo npm link gulp
+sudo npm link shelljs
+gulp link
+
+mv gulpfile.js gulpfile.global.js
+cp gulpfile.tmp.js gulpfile.js

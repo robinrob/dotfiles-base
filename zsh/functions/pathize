@@ -1,4 +1,4 @@
-VAL=$1
+VAL="$*"
 
 print $VAL:u | gsed 's/[^a-zA-Z]/_/g'
 

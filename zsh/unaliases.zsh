@@ -2,6 +2,8 @@
 # Un-Aliases
 ###############################################################################
 
+unalias cp 2>/dev/null
+
 unalias todo 2>/dev/null
 
 unalias gr 2> /dev/null

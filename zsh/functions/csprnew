@@ -1,10 +1,10 @@
-local +r HamlFile=$1.haml
-local +r HtmlFile=$1.html
+local +r Name=$1
+local +r HamlFile=$Name.haml
+local +r HtmlFile=$Name.html
 
 cp $CSS_HOME/templates/practice_css.haml $HamlFile
 gsed -i "s/Title/$(nameify $1)/g" $HamlFile
 
 to_html $HamlFile
 
-$EDITOR $HamlFile
-localhost_browse $HtmlFile
+localhost_browse_edit $Name

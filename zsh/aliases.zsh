@@ -76,6 +76,8 @@ alias shell="print $SHELL"
 ###############################################################################
 # GNU commands
 ###############################################################################
+alias cp="nocorrect gcp -i"
+
 alias kill="gkill"
 
 alias mv="gmv"
@@ -106,6 +108,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias pg="rebookmark page"
+
 alias viM="/usr/bin/vim"
 
 alias wifi="grec wifi"
@@ -138,7 +142,7 @@ alias api="cocosapi"
 
 alias lsw="ls | wc -l"
 
-alias pwdp="pwd | pbcopy"
+alias pwdp="copy_print \$(pwd)"
 
 alias cldl="green 'Moving $HOME/Downloads/* to Trash ...'; mv $HOME/Downloads/* $HOME/.Trash"
 
@@ -289,6 +293,8 @@ alias cdsf="cd_down_tree $RUBY_HOME/projects/salesforce-blog"
 alias cdmrp="cd_down_tree $WORK_HOME/java/br-reportapp"
 
 alias cdbp="cd_down_tree $MRROBINSMITHCOM_HOME/public/blogposts"
+
+alias cdgp="cd_down_tree $GULPFILE_HOME"
 
 alias cdrk="cd_down_tree $RAKELIB"
 
@@ -970,6 +976,14 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias cc="creative_commons_search"
+
+alias toh="to_haml"
+
+alias tot="to_html"
+
+alias gup="gulp_up"
+
 alias glp="gulp_iterm_pwd"
 
 alias id="idea"
@@ -977,6 +991,8 @@ alias id="idea"
 alias i="idea"
 
 alias lo="localhost_browse"
+
+alias lom="localhost_browse_edit"
 
 alias nis="npm_install_save"
 

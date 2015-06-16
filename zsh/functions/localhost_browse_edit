@@ -1,0 +1,5 @@
+local +r Name=$1
+
+localhost_browse $@
+
+editor $Name.haml

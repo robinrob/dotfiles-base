@@ -416,12 +416,8 @@ export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
 
 export JS_TESTS_HOME="$COCOS_HOME/samples/js-tests"
 
+export NODE_PATH=/usr/lib/node_modules
 
-###############################################################################
-# Function aliases
-###############################################################################
+export GULPFILE_HOME="$JS_HOME/projects/gulpfile"
 
-# Can't see a point to it!
-# typeset -A FUNC_ALIASES
-#
-# FUNC_ALIASES[mfn]="edit_function"
+export GULPFILE_PATH="$GULPFILE_HOME/gulpfile.js"
