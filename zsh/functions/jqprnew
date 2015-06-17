@@ -9,6 +9,6 @@ haml $Name.haml > $Name.html
 
 touch $Name.js
 
-/* open "http://localhost:3000/$Name.html" */
-open $Name.html
+open "http://localhost:3000/$Name.html"
+/* open $Name.html */
 editor $Name.js $Name.haml
