@@ -1,0 +1,2 @@
+# ls -lS | sort -k 5 -n $@
+ls -alGhSr

@@ -183,7 +183,9 @@ alias syslog="tail -f /var/log/system.log"
 
 ###############################################################################
 # Applications/tools
-###############################################################################
+##############################################################################
+alias pix="open -a Pixelmator"
+
 alias cpp="copy_print"
 
 alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
@@ -230,9 +232,11 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
-alias cdim="cd $IMPORTANT_HOME"
+alias cdap="cd_down_tree /Applications"
 
-alias cdcl="cd /usr/local/Cellar"
+alias cdim="cd_down_tree $IMPORTANT_HOME"
+
+alias cdcl="cd_down_tree /usr/local/Cellar"
 
 alias cdts="cd_down_tree $JS_TESTS_HOME/src"
 
@@ -976,6 +980,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias mva="move_to_applications"
+
+alias lS="ls_sort_by_size"
+
 alias cc="creative_commons_search"
 
 alias toh="to_haml"

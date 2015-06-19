@@ -1,0 +1,6 @@
+local +r Name=$1
+
+cmd="mv $Name.app /Applications"
+
+green $cmd
+eval $cmd

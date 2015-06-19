@@ -380,6 +380,10 @@ export CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
 
 export GIMP_PATH="/Applications/GIMP.app/Contents/MacOS/GIMP"
 
+export GIMP_HOME="$HOME/.gimp"
+
+export gimp_dir="$HOME/.gimp"
+
 
 ###############################################################################
 # Colors
