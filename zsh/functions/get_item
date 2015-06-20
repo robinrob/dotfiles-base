@@ -3,20 +3,11 @@ shift; local -a Files; Files=($*)
 
 for file in $Files
 do
-  row=$(pcregrep -o1 -M -N CRLF "$Record::((((?<!:):(?!:))|[^:])+)\n.+::" $file)
-  # Catches case where record is last in file:
-  if [[ -z $row ]]
-  then
-    row=$(pcregrep -o1 -M -N CRLF "$Record::((((?<!:):(?!:))|[^:])+)" $file)
-  fi
-
+  row=$(pcregrep -o1 -M -N CRLF "($Record)(::[^:]+)?" $file)
   row=(${(s/::/)row})
   val=$row[-1]
 
   [[ $(is_empty $val) == "no" ]] && break
 done
 
-if [[ $(is_empty $val) == "no" ]]
-then
-  copy_print ""$val""
-fi
+[[ $(is_empty $val) == "no" ]] && copy_print ""$val""
