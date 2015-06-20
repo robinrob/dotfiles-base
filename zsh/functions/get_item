@@ -3,7 +3,7 @@ shift; local -a Files; Files=($*)
 
 for file in $Files
 do
-  row=$(pcregrep -o1 -M -N CRLF "($Record)(::[^:]+)?" $file)
+  row=$(pcregrep -o1 -M -N CRLF "($Record(::[^\n]+))" $file)
   row=(${(s/::/)row})
   val=$row[-1]
 
