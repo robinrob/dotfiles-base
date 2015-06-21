@@ -424,6 +424,8 @@ alias onew="new_s ocaml ml"
 
 alias znew="new_s zsh zsh"
 
+alias fnew="new_s fish fish"
+
 alias cnew="new -i '' -e cq -f"
 
 alias jnew="jsnew"
@@ -980,6 +982,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias light="lightning"
+
 alias mva="move_to_applications"
 
 alias lS="ls_sort_by_size"

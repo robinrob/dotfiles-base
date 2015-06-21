@@ -78,6 +78,8 @@ export COQ_HOME="$HOME/Programming/robin/coq"
 
 export DOCS_HOME="$HOME/Programming/robin/docs"
 
+export FISH_HOME="$HOME/Programming/robin/fish"
+
 export FORCE_COM_HOME="$HOME/Programming/robin/force.com"
 
 export HTML_HOME="$HOME/Programming/robin/html5"

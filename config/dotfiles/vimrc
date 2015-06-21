@@ -198,14 +198,14 @@ augroup EnableSyntaxHighlighting
     autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set filetype=zsh | endif
     "Set the default syntax for files with no extension"
     autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set syntax=zsh | endif
+    
+    " Set the filetype for files ending in .fish"
+    "autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.fish' | set filetype=fish | endif
+    " Set the syntax for files ending in .fish"
+    "autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.fish' | set syntax=fish | endif
 
 augroup END
 
-
-" Set the default filetype for files with no extension"
-autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.haml' | set filetype=haml | endif
-"Set the default syntax for files with no extension"
-autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.haml' | set syntax=haml | endif
 
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1

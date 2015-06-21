@@ -110,6 +110,20 @@ alias cds="cd_down_tree $SH_HOME"
 
 alias cdspr="cd_down_tree $SH_HOME/practice"
 
+alias fsv="cd_save $FISH_HOME"
+
+alias fcm="cd_commit $FISH_HOME"
+
+alias fst="cd_status $FISH_HOME"
+
+alias fpl="cd_pull $FISH_HOME"
+
+alias idf="idea $FISH_HOME"
+
+alias cdf="cd_down_tree $FISH_HOME"
+
+alias cdfpr="cd_down_tree $FISH_HOME/practice"
+
 alias rsv="cd_save $RUBY_HOME"
 
 alias rcm="cd_commit $RUBY_HOME"

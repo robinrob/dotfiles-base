@@ -11,6 +11,7 @@ abbreviations[coq]=cq
 abbreviations[c-plus-plus]=cp
 abbreviations[dotfiles]=dt
 abbreviations[dotfiles-base]=d
+abbreviations[fish]=f
 abbreviations[flappy-fish]=ff
 abbreviations[force-com]=fc
 abbreviations[game]=ga
