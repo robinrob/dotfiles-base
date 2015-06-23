@@ -428,4 +428,4 @@ export GULPFILE_HOME="$JS_HOME/projects/gulpfile"
 
 export GULPFILE_PATH="$GULPFILE_HOME/gulpfile.js"
 
-export GIT_QUICKSAVE_MSG="Quicksave"
+export GIT_QUICKSAVE_MSG="Quick-save."
