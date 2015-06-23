@@ -427,3 +427,5 @@ export NODE_PATH=/usr/lib/node_modules
 export GULPFILE_HOME="$JS_HOME/projects/gulpfile"
 
 export GULPFILE_PATH="$GULPFILE_HOME/gulpfile.js"
+
+export GIT_QUICKSAVE_MSG="Quicksave"

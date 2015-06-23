@@ -982,6 +982,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias rks="rake_save"
+
+alias zaz="zazzle"
+
 alias light="lightning"
 
 alias mva="move_to_applications"
