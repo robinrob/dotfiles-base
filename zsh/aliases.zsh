@@ -252,11 +252,7 @@ alias cdcc="cd_down_tree $COCOS_HOME"
 
 alias cdccl="cd_down_tree $COCOS_LITE_HOME"
 
-alias cdph="cd_down_tree $PHOTOS_HOME"
-
-alias cdla="cd_down_tree $PHOTOS_HOME/la"
-
-alias cdpn="cd_down_tree $WORK_HOME/java/pon-blog-app"
+alias cdph="cd_down_tree \$PHOTOS_HOME"
 
 alias cdssh="cd_down_tree $HOME/.ssh/"
 
@@ -982,6 +978,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias tof="to_fahrenheit"
+
+alias toc="to_celcius"
+
 alias rks="rake_save"
 
 alias zaz="zazzle"

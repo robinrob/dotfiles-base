@@ -227,9 +227,9 @@ export INTELLIJ_CONFIG="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/
 
 export INTELLIJ_COLORS="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/colors"
 
-export PICTURES_HOME=$GOOGLE_DRIVE/pictures/pictures
+export PICTURES_HOME="$GOOGLE_DRIVE/pictures/pictures"
 
-export PHOTOS_HOME=$GOOGLE_DRIVE/pictures/photos
+export PHOTOS_HOME="$GOOGLE_DRIVE/pictures/photos"
 
 export LA_HOME=$PHOTOS_HOME/la
 
