@@ -832,6 +832,8 @@ alias crk="cat Rakefile"
 
 alias mgf="$EDITOR Gemfile"
 
+alias mgp="$EDITOR gulpfile.js"
+
 alias cgf="cat Gemfile"
 
 alias mgfl="$EDITOR Gemfile.lock"
@@ -924,15 +926,11 @@ alias rssaws="get_record rss-aws"
 
 alias ad="address"
 
-alias phonelong="get_record phone_long"
+alias phonelong="get_record phonelong"
 
-alias phoneshort="get_record phone_short"
+alias phoneshort="get_record phonecompact"
 
 alias phone="get_record phone"
-
-alias phone2="get_record phone2"
-
-alias phonef="get_record phone_formatted"
 
 alias ph="phone"
 
@@ -978,6 +976,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias in="linkedin_search"
+
 alias tof="to_fahrenheit"
 
 alias toc="to_celcius"

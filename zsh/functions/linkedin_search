@@ -1,0 +1,6 @@
+case $# in
+  0)
+    browser "https://www.linkedin.com/in/rsmithio" ;;
+  *)
+    browser "https://www.linkedin.com/vsearch/f?type=all&keywords=$(urlencode $@)&search=Search" ;;
+esac
