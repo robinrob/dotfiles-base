@@ -1,0 +1,6 @@
+case $# in
+  0)
+    gulp deploy ;;
+  *)
+    gulp deploy --msg "'$*'" ;;
+esac
