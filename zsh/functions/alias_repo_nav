@@ -3,4 +3,5 @@ REPO_ABBR=$2
 
 alias "cd${REPO_ABBR}"="cd_down_tree \$$(pathize $REPO)_HOME"
 alias "cd${REPO_ABBR}pr"="cd_down_tree \$$(pathize $REPO)_HOME/practice"
+alias "cd${REPO_ABBR}pro"="cd_down_tree \$$(pathize $REPO)_HOME/projects"
 

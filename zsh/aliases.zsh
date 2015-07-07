@@ -136,7 +136,13 @@ alias science="rss science"
 
 alias rsS=$RSS_HOME/rss.rb
 
+alias ncp="no | cp"
+
+alias ncP="no | sudo cp"
+
 alias ycp="yes | cp"
+
+alias ycP="yes | sudo cp"
 
 alias api="cocosapi"
 

@@ -1,0 +1,18 @@
+# This function should cd into any destination EXCEPT root directory - to
+# help protect against accidentally performing file operations in root directory.
+
+local +r Destination=$1
+
+if [[ -z $Destination ]]
+then
+  print "$(red Not cd\'ing to ambiguous destination:) '$(yellow $Destination)'" && return 1
+
+elif [[ $Destination == "/" ]]
+then
+  red "Not cd\'ing to root directory!" && return 1
+
+else
+  $Destination || return 1
+fi
+
+return 0

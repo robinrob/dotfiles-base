@@ -1,16 +1,19 @@
-local +r pwd=$PWD
+local +r Pwd=$PWD
 
-check_cd_root_arg $1 || return 1
+check_cd_destination $1 || return 1
 
 IFS="
 "
 
-local +r Result
-Result=($(gfind . -maxdepth 1 \( -type f -and -regex '.*/[^.].*' \)))
+local +r Files
+Files=($(gfind . -maxdepth 1 \( -type f -and -regex '.*/[^.].*' \)))
 
-move_to_trash $Result
+for file in $Files
+do
+  move_to_trash $file
+done
 
-cd $pwd > /dev/null
+cd $Pwd > /dev/null
 
 return 0
 
