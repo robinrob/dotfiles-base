@@ -232,6 +232,8 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdnpm="cd $NPMLIB_HOME"
+
 alias cdap="cd_down_tree /Applications"
 
 alias cdim="cd_down_tree $IMPORTANT_HOME"

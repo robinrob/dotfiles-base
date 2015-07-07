@@ -1,1 +1,7 @@
-get_item $2 $LISTS_HOME/$1.txt
+local +r List=$1.txt
+local +r Val=$(get_item $2 $LISTS_HOME/$List)
+
+if [[ -z $Val ]]
+then
+  print "$(red Item) $(yellow $2) $(red not found in list) $(yellow $List)"
+fi
