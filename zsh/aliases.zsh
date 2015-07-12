@@ -126,7 +126,6 @@ alias kid="kill_processes idea"
 
 alias repals="rm repo_aliases.zsh; print_all_repo_aliases > repo_aliases.zsh; source_aliases"
 
-alias news="rss news"
 
 alias flight="rss flight"
 

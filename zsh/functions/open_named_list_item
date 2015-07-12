@@ -1,6 +1,5 @@
 local +r List=$1; shift
-local +A Items;
-Items=($*)
+local +A Items; Items=($*)
 
 for item in $Items
 do

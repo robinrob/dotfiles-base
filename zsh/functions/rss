@@ -7,31 +7,34 @@ fi
 
 rvm gemset use rss > /dev/null 2> /dev/null
 
+local +r Url
 case $Feed in
   hacker)
-    $RSS_HOME/rss.rb 'https://news.ycombinator.com/rss' ;;
+    Url='https://news.ycombinator.com/rss' ;;
   flight)
-    $RSS_HOME/rss.rb 'http://www.flightglobal.com/rss/accidents-and-incidents-news-rss/' ;;
+    Url='http://www.flightglobal.com/rss/accidents-and-incidents-news-rss/' ;;
   flighta)
-    $RSS_HOME/rss.rb 'http://www.flightglobal.com/rss/aviation-news-rss/' ;;
+    Url='http://www.flightglobal.com/rss/aviation-news-rss/' ;;
   flightar)
-    $RSS_HOME/rss.rb 'http://www.flightglobal.com/rss/airlines-news-rss/' ;;
+    Url='http://www.flightglobal.com/rss/airlines-news-rss/' ;;
   news)
-    $RSS_HOME/rss.rb 'https://news.ycombinator.com/rss' ;;
+    Url='https://news.ycombinator.com/rss' ;;
   papers)
-    $RSS_HOME/rss.rb 'http://www.sciencemag.org/rss/express.xml' ;;
+    Url='http://www.sciencemag.org/rss/express.xml' ;;
   sig)
-    $RSS_HOME/rss.rb 'https://signalvnoise.com/posts.rss' ;;
+    Url='https://signalvnoise.com/posts.rss' ;;
   space)
-    $RSS_HOME/rss.rb 'http://phys.org/rss-Feed/space-news/space-exploration/' ;;
+    Url='http://phys.org/rss-Feed/space-news/space-exploration/' ;;
   science)
-    $RSS_HOME/rss.rb 'http://www.sciencemag.org/rss/current.xml' 99;;
+    Url='http://www.sciencemag.org/rss/current.xml' 99;;
   sciencepodcast)
-    $RSS_HOME/rss.rb 'http://www.sciencemag.org/rss/podcast.xml' ;;
+    Url='http://www.sciencemag.org/rss/podcast.xml' ;;
   sciencenews)
-    $RSS_HOME/rss.rb 'http://www.sciencemag.org/rss/news.xml' ;;
+    Url='http://www.sciencemag.org/rss/news.xml' ;;
   sciencedaily)
-    $RSS_HOME/rss.rb 'http://www.sciencedaily.com/newsFeed.xml' ;;
+    Url='http://www.sciencedaily.com/newsFeed.xml' ;;
   fowler)
-    $RSS_HOME/rss.rb 'http://martinfowler.com/feed.atom' ;;
+    Url='http://martinfowler.com/feed.atom' ;;
 esac
+
+$RSS_HOME/rss.rb $Url
