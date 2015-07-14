@@ -33,7 +33,7 @@ else
 	if [ -n "$INTERPRETER" ]
 	then
 		eval $SHEBANG_MSG
-		prepend $FILE "#!/usr/bin/env $INTERPRETERn"
+		prepend $FILE "#!/usr/bin/env $INTERPRETER"
 		chmod +x $FILE
 	else
 		eval $OPEN_MSG

@@ -237,6 +237,8 @@ alias v="$VISUAL"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdang="cd $JS_HOME/practice/angular-blog"
+
 alias cdnpm="cd $NPMLIB_HOME"
 
 alias cdap="cd_down_tree /Applications"
@@ -430,6 +432,12 @@ alias znew="new_s zsh zsh"
 alias fnew="new_s fish fish"
 
 alias cnew="new -i '' -e cq -f"
+
+alias nnew="new_s node js"
+
+alias ndnew="nnew"
+
+alias jsnew="new_s node js"
 
 alias jnew="jsnew"
 
@@ -983,6 +991,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias sad="start_angular_dev"
+
 alias gpd="gulp_deploy"
 
 alias in="linkedin_search"
@@ -1008,8 +1018,6 @@ alias toh="to_haml"
 alias tot="to_html"
 
 alias gup="gulp_up"
-
-alias glp="gulp_iterm_pwd"
 
 alias id="idea"
 
@@ -1098,8 +1106,6 @@ alias olst="open_last_modified"
 alias hmrec="salesforce_record eu1"
 
 alias rsal="source_aliases"
-
-alias rsaL="resource_aliases"
 
 alias phon="phonetic"
 

@@ -354,6 +354,8 @@ export PG_CONF=$PGDATA/postgresql.conf
 
 export DEFAULT_GIT_REMOTE="origin"
 
+export DEFAULT_GIT_URL="git@github.com:robinrob"
+
 export BREWLIST=$DOTFILES_BASE_HOME/config/files/homebrew.txt
 
 export GDOC_TEMPLATE=$GOOGLE_DRIVE/new_document.gdoc

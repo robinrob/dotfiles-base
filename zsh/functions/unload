@@ -5,7 +5,7 @@ then
   print "$(green Un-functioning functions:) $(yellow $@)"
   Funcs=($*)
 else
-  green "Un-functionning all functions"
+  green "Un-functioning all functions"
   Funcs=($FUNCS_HOME/*(:t))
 fi
 
