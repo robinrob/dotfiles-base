@@ -1,2 +1,2 @@
-cd_action $1 rake_do base:save
+cd_action $1 rake_do base:save $*[2,-1]
 
