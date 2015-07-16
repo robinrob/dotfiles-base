@@ -189,6 +189,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias office="open -a OpenOffice"
+
 alias pix="open -a Pixelmator"
 
 alias cpp="copy_print"
@@ -953,7 +955,6 @@ alias phf="phone"
 
 alias bank="get_record bank"
 
-alias library="get_record library"
 
 alias postcode="get_record home_postcode"
 

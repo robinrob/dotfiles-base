@@ -1,2 +1,1 @@
-browser "https://www.google.co.uk/maps/search/$(urlencode $@)/@53.0594582,-0.7810704,10z"
-
+browser "https://www.google.co.uk/maps/search/$(urlencode $@)"
