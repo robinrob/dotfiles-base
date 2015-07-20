@@ -1,8 +1,10 @@
 local +r Name=$1
+local +r HamlFile=$Name.haml
+local +r HtmlFile=$Name.html
 
-cp $JS_HOME/templates/practice_js.html $Name.html
-gsed -i "s/Title/$(nameify $Name)/g" $Name.html
+cp $JS_HOME/templates/practice_js.haml $HamlFile
+gsed -i "s/Title/$(nameify $1)/g" $HamlFile
 
-open $Name.html
-touch $Name.js
-$EDITOR $Name.js
+to_html $HamlFile
+
+localhost_browse_edit $Name

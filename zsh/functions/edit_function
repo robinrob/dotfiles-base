@@ -1,3 +1,10 @@
-FUNCTION=$1
+local +r -a FunctionNames
+FunctionNames=($*)
 
-$EDITOR $FUNCS_HOME/$FUNCTION
+local +r -a FunctionPaths
+for function in $FunctionNames
+do
+  FunctionPaths=($FunctionPaths $FUNCS_HOME/$function)
+done
+
+$EDITOR $FunctionPaths

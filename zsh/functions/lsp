@@ -1,2 +1,2 @@
-ls $1 | pbcopy
+$(copy_print ls $1)
 

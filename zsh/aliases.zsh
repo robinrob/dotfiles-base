@@ -439,10 +439,6 @@ alias nnew="new_s node js"
 
 alias ndnew="nnew"
 
-alias jsnew="new_s node js"
-
-alias jnew="jsnew"
-
 alias cssnew="new -i '' -e css -f"
 
 alias tnew="new -i '' -e txt -f"
@@ -1109,6 +1105,8 @@ alias hmrec="salesforce_record eu1"
 alias rsal="source_aliases"
 
 alias phon="phonetic"
+
+alias swd="start_website_dev"
 
 alias scd="start_cocos_dev"
 
