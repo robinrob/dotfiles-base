@@ -37,4 +37,4 @@ case $Feed in
     Url='http://martinfowler.com/feed.atom' ;;
 esac
 
-$RSS_HOME/rss.rb $Url
+$RSS_HOME/rss-opener.rb $Url

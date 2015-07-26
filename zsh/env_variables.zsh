@@ -179,13 +179,13 @@ export RAKEFILE="$RAKELIB_HOME/Rakefile"
 
 export GLOBAL_RAKEFILE_HOME=$RUBY_HOME/projects/global-rakefile
 
-export RSS_HOME=$RUBY_HOME/projects/rss
+export RSS_HOME=$RUBY_HOME/projects/rss-openeEC
 
 export QUIZ_HOME=$RUBY_HOME/projects/quiz
 
-export MRROBINSMITH_COM_HOME=$RUBY_HOME/projects/robinrob.github.io
+export WEBSITE_HOME=$JS_HOME/projects/robinrob.github.io
 
-export MRROBINSMITH_COM_DEV_HOME=$RUBY_HOME/projects/robinrob.github.io-dev
+export WEBSITE_DEV_HOME=$JS_HOME/projects/robinrob.github.io-dev
 
 export GITHUB_HOME=$RUBY_HOME/projects/github
 
@@ -331,6 +331,10 @@ export RUNNER_HOME="$JS_HOME/projects/runner"
 export ORBITER_HOME="$JS_HOME/projects/orbiter-lite"
 
 export GAME_HOME=$COCOS_EXAMPLES_HOME
+
+export RECIPES_APP_HOME=$JS_HOME/projects/recipes-app
+
+export RECIPES_SERVER_HOME=$RUBY_HOME/projects/recipes-server
 
 ###############################################################################
 # Files

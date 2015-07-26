@@ -58,21 +58,6 @@ alias idm="idea $MARKDOWN_HOME"
 alias cdm="cd_down_tree $MARKDOWN_HOME"
 alias cdmpr="cd_down_tree $MARKDOWN_HOME/practice"
 alias cdmpro="cd_down_tree $MARKDOWN_HOME/projects"
-alias jvsv="cd_save $JV_HOME"
-
-alias jvcm="cd_commit $JV_HOME"
-
-alias jvst="cd_status $JV_HOME"
-
-alias jvgl="cd_git_log $JV_HOME"
-
-alias jvpl="cd_pull $JV_HOME"
-
-alias idjv="idea $JV_HOME"
-
-alias cdjv="cd_down_tree $JV_HOME"
-alias cdjvpr="cd_down_tree $JV_HOME/practice"
-alias cdjvpro="cd_down_tree $JV_HOME/projects"
 alias rssv="cd_save $RSS_HOME"
 
 alias rscm="cd_commit $RSS_HOME"
@@ -88,6 +73,21 @@ alias idrs="idea $RSS_HOME"
 alias cdrs="cd_down_tree $RSS_HOME"
 alias cdrspr="cd_down_tree $RSS_HOME/practice"
 alias cdrspro="cd_down_tree $RSS_HOME/projects"
+alias jvsv="cd_save $JV_HOME"
+
+alias jvcm="cd_commit $JV_HOME"
+
+alias jvst="cd_status $JV_HOME"
+
+alias jvgl="cd_git_log $JV_HOME"
+
+alias jvpl="cd_pull $JV_HOME"
+
+alias idjv="idea $JV_HOME"
+
+alias cdjv="cd_down_tree $JV_HOME"
+alias cdjvpr="cd_down_tree $JV_HOME/practice"
+alias cdjvpro="cd_down_tree $JV_HOME/projects"
 alias qsv="cd_save $QUIZ_HOME"
 
 alias qcm="cd_commit $QUIZ_HOME"
@@ -118,6 +118,21 @@ alias ids="idea $SH_HOME"
 alias cds="cd_down_tree $SH_HOME"
 alias cdspr="cd_down_tree $SH_HOME/practice"
 alias cdspro="cd_down_tree $SH_HOME/projects"
+alias rasv="cd_save $RECIPES_APP_HOME"
+
+alias racm="cd_commit $RECIPES_APP_HOME"
+
+alias rast="cd_status $RECIPES_APP_HOME"
+
+alias ragl="cd_git_log $RECIPES_APP_HOME"
+
+alias rapl="cd_pull $RECIPES_APP_HOME"
+
+alias idra="idea $RECIPES_APP_HOME"
+
+alias cdra="cd_down_tree $RECIPES_APP_HOME"
+alias cdrapr="cd_down_tree $RECIPES_APP_HOME/practice"
+alias cdrapro="cd_down_tree $RECIPES_APP_HOME/projects"
 alias fsv="cd_save $FISH_HOME"
 
 alias fcm="cd_commit $FISH_HOME"
@@ -178,6 +193,21 @@ alias idc="idea $C_HOME"
 alias cdc="cd_down_tree $C_HOME"
 alias cdcpr="cd_down_tree $C_HOME/practice"
 alias cdcpro="cd_down_tree $C_HOME/projects"
+alias mrdsv="cd_save $WEBSITE_DEV_HOME"
+
+alias mrdcm="cd_commit $WEBSITE_DEV_HOME"
+
+alias mrdst="cd_status $WEBSITE_DEV_HOME"
+
+alias mrdgl="cd_git_log $WEBSITE_DEV_HOME"
+
+alias mrdpl="cd_pull $WEBSITE_DEV_HOME"
+
+alias idmrd="idea $WEBSITE_DEV_HOME"
+
+alias cdmrd="cd_down_tree $WEBSITE_DEV_HOME"
+alias cdmrdpr="cd_down_tree $WEBSITE_DEV_HOME/practice"
+alias cdmrdpro="cd_down_tree $WEBSITE_DEV_HOME/projects"
 alias cpsv="cd_save $C_PLUS_PLUS_HOME"
 
 alias cpcm="cd_commit $C_PLUS_PLUS_HOME"
@@ -238,6 +268,21 @@ alias idj="idea $JAVASCRIPT_HOME"
 alias cdj="cd_down_tree $JAVASCRIPT_HOME"
 alias cdjpr="cd_down_tree $JAVASCRIPT_HOME/practice"
 alias cdjpro="cd_down_tree $JAVASCRIPT_HOME/projects"
+alias rassv="cd_save $RECIPES_SERVER_HOME"
+
+alias rascm="cd_commit $RECIPES_SERVER_HOME"
+
+alias rasst="cd_status $RECIPES_SERVER_HOME"
+
+alias rasgl="cd_git_log $RECIPES_SERVER_HOME"
+
+alias raspl="cd_pull $RECIPES_SERVER_HOME"
+
+alias idras="idea $RECIPES_SERVER_HOME"
+
+alias cdras="cd_down_tree $RECIPES_SERVER_HOME"
+alias cdraspr="cd_down_tree $RECIPES_SERVER_HOME/practice"
+alias cdraspro="cd_down_tree $RECIPES_SERVER_HOME/projects"
 alias osv="cd_save $OCAML_HOME"
 
 alias ocm="cd_commit $OCAML_HOME"
@@ -328,21 +373,6 @@ alias idfc="idea $FORCE_COM_HOME"
 alias cdfc="cd_down_tree $FORCE_COM_HOME"
 alias cdfcpr="cd_down_tree $FORCE_COM_HOME/practice"
 alias cdfcpro="cd_down_tree $FORCE_COM_HOME/projects"
-alias mrsv="cd_save $MRROBINSMITH_COM_HOME"
-
-alias mrcm="cd_commit $MRROBINSMITH_COM_HOME"
-
-alias mrst="cd_status $MRROBINSMITH_COM_HOME"
-
-alias mrgl="cd_git_log $MRROBINSMITH_COM_HOME"
-
-alias mrpl="cd_pull $MRROBINSMITH_COM_HOME"
-
-alias idmr="idea $MRROBINSMITH_COM_HOME"
-
-alias cdmr="cd_down_tree $MRROBINSMITH_COM_HOME"
-alias cdmrpr="cd_down_tree $MRROBINSMITH_COM_HOME/practice"
-alias cdmrpro="cd_down_tree $MRROBINSMITH_COM_HOME/projects"
 alias wfsv="cd_save $WORK_FORCE_COM_HOME"
 
 alias wfcm="cd_commit $WORK_FORCE_COM_HOME"
@@ -448,6 +478,21 @@ alias idga="idea $GAME_HOME"
 alias cdga="cd_down_tree $GAME_HOME"
 alias cdgapr="cd_down_tree $GAME_HOME/practice"
 alias cdgapro="cd_down_tree $GAME_HOME/projects"
+alias mrsv="cd_save $WEBSITE_HOME"
+
+alias mrcm="cd_commit $WEBSITE_HOME"
+
+alias mrst="cd_status $WEBSITE_HOME"
+
+alias mrgl="cd_git_log $WEBSITE_HOME"
+
+alias mrpl="cd_pull $WEBSITE_HOME"
+
+alias idmr="idea $WEBSITE_HOME"
+
+alias cdmr="cd_down_tree $WEBSITE_HOME"
+alias cdmrpr="cd_down_tree $WEBSITE_HOME/practice"
+alias cdmrpro="cd_down_tree $WEBSITE_HOME/projects"
 alias bbsv="cd_save $BOUNCING_BALLS_HOME"
 
 alias bbcm="cd_commit $BOUNCING_BALLS_HOME"
@@ -493,21 +538,6 @@ alias idff="idea $FLAPPY_FISH_HOME"
 alias cdff="cd_down_tree $FLAPPY_FISH_HOME"
 alias cdffpr="cd_down_tree $FLAPPY_FISH_HOME/practice"
 alias cdffpro="cd_down_tree $FLAPPY_FISH_HOME/projects"
-alias mrdsv="cd_save $MRROBINSMITH_COM_DEV_HOME"
-
-alias mrdcm="cd_commit $MRROBINSMITH_COM_DEV_HOME"
-
-alias mrdst="cd_status $MRROBINSMITH_COM_DEV_HOME"
-
-alias mrdgl="cd_git_log $MRROBINSMITH_COM_DEV_HOME"
-
-alias mrdpl="cd_pull $MRROBINSMITH_COM_DEV_HOME"
-
-alias idmrd="idea $MRROBINSMITH_COM_DEV_HOME"
-
-alias cdmrd="cd_down_tree $MRROBINSMITH_COM_DEV_HOME"
-alias cdmrdpr="cd_down_tree $MRROBINSMITH_COM_DEV_HOME/practice"
-alias cdmrdpro="cd_down_tree $MRROBINSMITH_COM_DEV_HOME/projects"
 alias tesv="cd_save $JS_TESTS_HOME"
 
 alias tecm="cd_commit $JS_TESTS_HOME"

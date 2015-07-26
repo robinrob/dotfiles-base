@@ -409,7 +409,11 @@ alias bl="bundle list"
 
 alias bu="bundle update"
 
+alias nl="sudo npm link"
+
 alias ni="sudo npm install"
+
+alias nis="npm_install_save"
 
 alias nig="sudo npm install -g"
 
@@ -951,8 +955,9 @@ alias phf="phone"
 
 alias bank="get_record bank"
 
-
 alias postcode="get_record home_postcode"
+
+alias em="get_record email"
 
 alias pc="postcode"
 
@@ -1023,8 +1028,6 @@ alias i="idea"
 alias lo="localhost_browse"
 
 alias lom="localhost_browse_edit"
-
-alias nis="npm_install_save"
 
 alias moq="edit_open_jquery"
 
