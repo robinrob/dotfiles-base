@@ -359,6 +359,8 @@ alias cdlists="cd_down_tree $LISTS_HOME"
 ###############################################################################
 # Development operations
 ###############################################################################
+alias ven="virtualenv"
+
 alias ut="utop"
 
 alias cdfn="cd_down_tree $FUNCS_HOME"
@@ -366,6 +368,10 @@ alias cdfn="cd_down_tree $FUNCS_HOME"
 alias jk="jekyll"
 
 alias jkb="jekyll build --watch"
+
+alias pbi="pythonbrew install"
+
+alias pbu="pythonbrew uninstall"
 
 alias pbu="pythonbrew use"
 
@@ -416,6 +422,10 @@ alias ni="sudo npm install"
 alias nis="npm_install_save"
 
 alias nig="sudo npm install -g"
+
+alias pi="pip_install"
+
+alias pu="sudo pip uninstall"
 
 alias npmgls="npm config set json; npm -g list --depth=0"
 

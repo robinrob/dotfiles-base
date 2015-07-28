@@ -88,6 +88,21 @@ alias idjv="idea $JV_HOME"
 alias cdjv="cd_down_tree $JV_HOME"
 alias cdjvpr="cd_down_tree $JV_HOME/practice"
 alias cdjvpro="cd_down_tree $JV_HOME/projects"
+alias nosv="cd_save $NOS_HOME"
+
+alias nocm="cd_commit $NOS_HOME"
+
+alias nost="cd_status $NOS_HOME"
+
+alias nogl="cd_git_log $NOS_HOME"
+
+alias nopl="cd_pull $NOS_HOME"
+
+alias idno="idea $NOS_HOME"
+
+alias cdno="cd_down_tree $NOS_HOME"
+alias cdnopr="cd_down_tree $NOS_HOME/practice"
+alias cdnopro="cd_down_tree $NOS_HOME/projects"
 alias qsv="cd_save $QUIZ_HOME"
 
 alias qcm="cd_commit $QUIZ_HOME"
@@ -178,21 +193,6 @@ alias idpr="idea $PROG_HOME"
 alias cdpr="cd_down_tree $PROG_HOME"
 alias cdprpr="cd_down_tree $PROG_HOME/practice"
 alias cdprpro="cd_down_tree $PROG_HOME/projects"
-alias csv="cd_save $C_HOME"
-
-alias ccm="cd_commit $C_HOME"
-
-alias cst="cd_status $C_HOME"
-
-alias cgl="cd_git_log $C_HOME"
-
-alias cpl="cd_pull $C_HOME"
-
-alias idc="idea $C_HOME"
-
-alias cdc="cd_down_tree $C_HOME"
-alias cdcpr="cd_down_tree $C_HOME/practice"
-alias cdcpro="cd_down_tree $C_HOME/projects"
 alias mrdsv="cd_save $WEBSITE_DEV_HOME"
 
 alias mrdcm="cd_commit $WEBSITE_DEV_HOME"
@@ -208,6 +208,21 @@ alias idmrd="idea $WEBSITE_DEV_HOME"
 alias cdmrd="cd_down_tree $WEBSITE_DEV_HOME"
 alias cdmrdpr="cd_down_tree $WEBSITE_DEV_HOME/practice"
 alias cdmrdpro="cd_down_tree $WEBSITE_DEV_HOME/projects"
+alias csv="cd_save $C_HOME"
+
+alias ccm="cd_commit $C_HOME"
+
+alias cst="cd_status $C_HOME"
+
+alias cgl="cd_git_log $C_HOME"
+
+alias cpl="cd_pull $C_HOME"
+
+alias idc="idea $C_HOME"
+
+alias cdc="cd_down_tree $C_HOME"
+alias cdcpr="cd_down_tree $C_HOME/practice"
+alias cdcpro="cd_down_tree $C_HOME/projects"
 alias cpsv="cd_save $C_PLUS_PLUS_HOME"
 
 alias cpcm="cd_commit $C_PLUS_PLUS_HOME"

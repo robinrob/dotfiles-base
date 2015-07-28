@@ -336,6 +336,8 @@ export RECIPES_APP_HOME=$JS_HOME/projects/recipes-app
 
 export RECIPES_SERVER_HOME=$RUBY_HOME/projects/recipes-server
 
+export NOS_HOME=$WORK_HOME/python/NOS-BIT
+
 ###############################################################################
 # Files
 ###############################################################################
