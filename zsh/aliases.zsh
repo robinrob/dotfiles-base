@@ -431,6 +431,8 @@ alias vi="vagrant init"
 
 alias vu="vagrant_up"
 
+alias vpr="vagrant reload --provision"
+
 alias vd="vagrant destroy"
 
 alias vssh="vagrant ssh"
