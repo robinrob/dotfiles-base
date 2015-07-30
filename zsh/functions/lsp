@@ -1,2 +1,2 @@
-$(copy_print ls $1)
+copy_print $(ls $1)
 

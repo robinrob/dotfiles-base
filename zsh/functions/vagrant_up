@@ -1,0 +1,10 @@
+cmd="vagrant up"
+print "$(green Attempting:) $(yellow $cmd)"
+eval $cmd
+
+if [[ $? == 1 ]]
+then
+  cmd="vagrant reload --provision"
+  print "$(green Running:) $(yellow $cmd)"
+  eval $cmd
+fi

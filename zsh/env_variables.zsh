@@ -50,7 +50,7 @@ then
 	export BROWSER="safari"
   export SAYCMD=1  
 else
-	export BROWSER="chrome"
+	export BROWSER="safari"
 fi
 
 

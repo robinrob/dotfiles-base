@@ -1,2 +1,2 @@
-create_bookmark $WORKBOOKMARKS_PATH $@ chrome
+create_bookmark $WORKBOOKMARKS_PATH $@
 
