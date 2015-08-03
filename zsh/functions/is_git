@@ -1,2 +1,2 @@
-dir_exists '.git'
+dir_exists '.git' && return 0 || return 1
 

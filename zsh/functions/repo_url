@@ -1,2 +1,2 @@
-print "https://$(git_host)/$(git_owner)/$(git_project)"
+is_git > /dev/null && print "https://$(git_host)/$(git_owner)/$(git_project)/tree/$(git_branch)"
 

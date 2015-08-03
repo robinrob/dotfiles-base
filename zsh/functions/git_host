@@ -1,1 +1,1 @@
-print 'https://github.com/blah/bkah' | ggrep -Po '(?<=@|/)([a-z_\.-]+)(?=:|/)' | head -1
+print $(git config --get remote.origin.url | ggrep -Po '(?<=@|/)([a-z_\.-]+)(?=:|/)' | head -1)

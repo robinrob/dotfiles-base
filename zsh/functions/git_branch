@@ -1,1 +1,1 @@
-print $(git branch | head -1 | gegrep -o '[-_[:alpha:]]+')
+print $(git branch 2> /dev/null | tr -d ' ' | ggrep -Po '(?<=\*)(.+)')

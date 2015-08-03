@@ -1,2 +1,1 @@
-ls -d $1 2> /dev/null 1> /dev/null && print "yes"
-
+ls -d $1 2> /dev/null 1> /dev/null && print yes && return 0 || return 1

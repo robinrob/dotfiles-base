@@ -1,20 +1,11 @@
 local +r Url=$(repo_url) 2> /dev/null
-local +r Provider=$(print $Url | ggrep -P -o '(?<=https://)([a-z\.]+)(?=\/|:)')
 
-
-if [[ $Provider == 'bitbucket.org' ]]
+if [ -n "$Url" ]
 then
-  local +r Project=$(print $Url | ggrep -P -o '(?<=\/)([a-z-]+)(?=\.git)')
-  Url=$(print $Url | gsed "s/$Project\.git/$Project\/src/")
-fi
-
-
-if [ "$Url" ]
-then
-  green "Repo found: $Url"
+  print "$(green Repo found:) $(yellow $Url)"
+  print "$(green Opening) $(yellow $Url) $(green '...')"
+  browser $Url
 else
-	Url="https://github.com/robinrob"
+  red "Not a git repository configured with a remote url."
 fi
 
-green "Opening $Url ..."
-browser $Url
