@@ -2,7 +2,8 @@ cmd="vagrant up"
 print "$(green Attempting:) $(yellow $cmd)"
 eval $cmd
 
-if [[ $? == 1 || $? == 1000 || $? == 2 ]]
+# if [[ $? == 1 || $? == 1000 || $? == 2 ]]
+if [[ $? != 0 ]]
 then
   cmd="vagrant reload --provision"
   print "$(green Running:) $(yellow $cmd)"

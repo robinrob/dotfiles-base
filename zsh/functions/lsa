@@ -1,5 +1,4 @@
 local +r Target=$*[-1]
 local +r Args=$*[1,-2]
 
-copy_print $(ls $Args $PWD/$Target)
-
+ls $Args $PWD/$Target

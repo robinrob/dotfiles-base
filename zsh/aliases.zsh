@@ -429,9 +429,9 @@ alias pu="sudo pip uninstall"
 
 alias vi="vagrant init"
 
-alias vu="vagrant_up"
+alias vu="vagrant up"
 
-alias vpr="vagrant reload --provision"
+alias vpr="vagrant reload"
 
 alias vd="vagrant destroy"
 
@@ -1013,6 +1013,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias it="iterm"
+
 alias sad="start_angular_dev"
 
 alias gpd="gulp_deploy"

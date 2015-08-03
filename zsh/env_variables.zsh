@@ -334,9 +334,12 @@ export GAME_HOME=$COCOS_EXAMPLES_HOME
 
 export RECIPES_APP_HOME=$JS_HOME/projects/recipes-app
 
-export RECIPES_SERVER_HOME=$RUBY_HOME/projects/recipes-server
+export RECIPES_SERVER_HOME=$PYTHON_HOME/projects/recipes-server-flask
 
 export NOS_HOME=$WORK_HOME/python/NOS-BIT
+
+export PYTHONPATH=$NOS_HOME
+
 
 ###############################################################################
 # Files
