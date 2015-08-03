@@ -1,11 +1,13 @@
 rvm use 2.1.4 > /dev/null
 
+local +r HamlCommand='html2haml --no-erb --html-attributes'
+
 if (( $# == 0 ))
 then
-  find . -maxdepth 1 -name \*.html -print | sed 'p;s/.html$/.haml/' | xargs -n2 html2haml --no-erb --html-attributes
+  eval "find . -maxdepth 1 -name \*.html -print | sed 'p;s/.html$/.haml/' | xargs -n2 $HamlCommand"
 else
   for file in $*
   do
-    html2haml --no-erb $file > $(name $file).haml
+    eval "$HamlCommand $file > $(name $file).haml"
   done
 fi

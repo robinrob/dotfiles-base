@@ -84,7 +84,7 @@ alias mv="gmv"
 
 alias egrep="gegrep"
 
-alias grep="gegrep"
+alias grep="ggrep"
 
 alias find="gfind"
 

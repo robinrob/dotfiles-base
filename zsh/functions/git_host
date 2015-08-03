@@ -1,0 +1,1 @@
+print 'https://github.com/blah/bkah' | ggrep -Po '(?<=@|/)([a-z_\.-]+)(?=:|/)' | head -1

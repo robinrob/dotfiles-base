@@ -1,16 +1,2 @@
-typeset url
-
-url=$(git config --get remote.origin.url)
-owner_repo=$(print $url | awk '{split($1,a,"@"); print a[2]}' | awk '{split($1,a,":"); print a[2]}')
-branch=$(git_branch)
-
-if [[ -n $(print $url | grep github) ]]
-then
-  url="https://github.com/${owner_repo}"
-elif [[ -n $(print $url | grep bitbucket) ]]
-then
-  url="https://bitbucket.org/${owner_repo}"
-fi
-
-print $url
+print "https://$(git_host)/$(git_owner)/$(git_project)"
 
