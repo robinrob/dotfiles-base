@@ -1,2 +1,12 @@
-is_git > /dev/null && print "https://$(git_host)/$(git_owner)/$(git_project)/tree/$(git_branch)"
+if [[ -n $(is_remote_git) ]]
+then
+  if [[ $(git_host) == "github.com" ]]
+  then
+    Location="tree/$(git_branch)"
+  elif [[ $(git_host) == "bitbucket.org" ]]
+  then
+    Location="src/?at=$(git_branch)"
+  fi
 
+  print "https://$(git_host)/$(git_owner)/$(git_project)/$Location"
+fi

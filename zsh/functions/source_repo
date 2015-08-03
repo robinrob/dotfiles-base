@@ -1,4 +1,5 @@
 local +r Url=$(repo_url) 2> /dev/null
+local +r Location
 
 if [ -n "$Url" ]
 then

@@ -1,0 +1,1 @@
+( git config --get remote.origin.url && return 0 ) || return 1

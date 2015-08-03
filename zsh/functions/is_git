@@ -1,2 +1,2 @@
-dir_exists '.git' && return 0 || return 1
+( ( dir_exists '.git' > /dev/null || git_remote > /dev/null ) && print yes && return 0 ) || return 1
 
