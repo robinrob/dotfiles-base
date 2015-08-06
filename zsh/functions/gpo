@@ -1,0 +1,9 @@
+if (( $# > 0))
+then
+  git push origin $@
+
+else
+  cmd="git push origin $(git_branch)"
+  green $cmd
+  eval $cmd
+fi

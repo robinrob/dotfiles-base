@@ -108,6 +108,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias lsv="ls ~/VirtualBox\ VMs"
+
 alias pg="rebookmark page"
 
 alias viM="/usr/bin/vim"
@@ -189,6 +191,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias vbm="VBoxManage"
+
 alias office="open -a OpenOffice"
 
 alias pix="open -a Pixelmator"
@@ -431,7 +435,7 @@ alias vi="vagrant init"
 
 alias vu="vagrant up"
 
-alias vpr="vagrant reload"
+alias vpr="vagrant reload --provision"
 
 alias vd="vagrant destroy"
 
@@ -608,7 +612,7 @@ alias grs="git remote show"
 
 alias grao="git remote add origin"
 
-alias gpo="git push origin"
+alias gplo="git pull origin"
 
 alias gpom="git push origin master"
 

@@ -3,31 +3,51 @@
 ###############################################################################
 
 ###############################################################################
-# Shell
+# Shell configuration
 ###############################################################################
 export EDITOR="mvim"
 
 export VISUAL=vim
 
 ###############################################################################
-# ZSH global variables
+# Colors
 ###############################################################################
-export TRUE_VALUE="yes"
+export GREP_COLOR="1;37"
 
-export TRUE="yes"
+export GREP_COLORS="ms=$GREP_COLOR:mc=01;31:sl=:cx=:fn=0:ln=32:bn=32:se=36"
 
-export FALSE=no
+export LS_COLORS='di=1;34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
 
-export TO_DO="do"
-
-export TO_READ=read
-
-export TO_WATCH=watch
-
-export TO_LEARN=learn
+export CLICOLOR=1
 
 ###############################################################################
-# Host-specific
+# Syntax highlighing in `less`. Requires `brew install source-highlight`
+###############################################################################
+export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
+
+export LESS=" -R "
+
+export LESSC_PATH="/usr/local/lib/node_modules/less/bin/lessc"
+
+###############################################################################
+# Python
+###############################################################################
+export PYTHONPATH=$NOS_HOME
+
+###############################################################################
+# Ruby
+###############################################################################
+export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/lib/ruby/2.0.0
+
+
+###############################################################################
+# Node
+###############################################################################
+export NPMLIB_HOME=/usr/local/lib/node_modules
+
+
+###############################################################################
+# Host-specific variables
 ###############################################################################
 # `sudo hostname <name>` or `sudo scutil --set HostName <name>` to change the
 # hostname. `hostname -s` gets just the part before the dot.
@@ -55,12 +75,7 @@ fi
 
 
 ###############################################################################
-# Directories
-###############################################################################
-export GOOGLE_DRIVE="$HOME/Google Drive"
-
-###############################################################################
-# Programming top-level repos
+# Code Repos
 ###############################################################################
 export PROGRAMMING_HOME="$HOME/Programming/robin"
 
@@ -75,8 +90,6 @@ export C_PLUS_PLUS_HOME="$HOME/Programming/robin/c-plus-plus"
 export COFFEESCRIPT_HOME="$HOME/Programming/robin/coffeescript"
 
 export COQ_HOME="$HOME/Programming/robin/coq"
-
-export DOCS_HOME="$HOME/Programming/robin/docs"
 
 export FISH_HOME="$HOME/Programming/robin/fish"
 
@@ -117,8 +130,6 @@ export PI_HOME=$PYTHON_HOME/projects/pi
 export PYAPP_HOME=$PYTHON_HOME/projects/pyapp
 
 export FABFILE_HOME=$PYTHON_HOME/projects/fabfile
-
-export NPMLIB_HOME=/usr/local/lib/node_modules
 
 export FABFILE_BASIC_HOME=$PYTHON_HOME/projects/fabfile-basic
 
@@ -168,8 +179,6 @@ export RUBY_TEMPLATES_HOME=$RUBY_HOME/templates
 
 export RUBYAPP_HOME=$RUBY_HOME/projects/ruby-app
 
-export CRASH_REPORTS_HOME=$MERCURY_DOCS_HOME/air-crash-reports
-
 # export RAKELIB_HOME=$RUBY_HOME/projects/rakelib
 export RAKELIB_HOME=$HOME/.rake
 
@@ -191,13 +200,27 @@ export GITHUB_HOME=$RUBY_HOME/projects/github
 
 export MOBILEAPP_HOME=$JS_HOME/projects/mobile-app-cordova
 
-export REPOS=$RUBY_HOME" "$SH_HOME" "$DOTFILES_HOME" "$PYTHON_HOME
+export BOUNCING_BALLS_HOME="$JS_HOME/projects/bouncing-balls"
 
-export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/lib/ruby/2.0.0
+export CONCENTRATION_GAME_HOME="$JS_HOME/projects/concentration-game"
 
-export EC2_HOME=/usr/local/lib/ec2-api-tools-1.6.11.0
+export FLAPPY_FISH_HOME="$JS_HOME/projects/flappy-fish"
 
-export GAM_PATH=/usr/local/Library/gam
+export PLANET_PAIRS_HOME="$JS_HOME/projects/planet-pairs"
+
+export COCOS_EXAMPLES_HOME="$JS_HOME/projects/cocos-examples"
+
+export RUNNER_HOME="$JS_HOME/projects/runner"
+
+export ORBITER_HOME="$JS_HOME/projects/orbiter-lite"
+
+export GAME_HOME=$COCOS_EXAMPLES_HOME
+
+export RECIPES_APP_HOME=$JS_HOME/projects/recipes-app
+
+export RECIPES_SERVER_HOME=$PYTHON_HOME/projects/recipes-server-flask
+
+export NOS_HOME=$WORK_HOME/python/NOS-BIT
 
 export WORK_HOME=$HOME/Programming/work
 
@@ -211,25 +234,48 @@ export MSCHEF=$WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef
 
 export LOCAL_HOME=$RUBY_HOME/projects/local
 
+
+###############################################################################
+# Directories
+###############################################################################
+export GOOGLE_DRIVE="$HOME/Google Drive"
+
+export CRASH_REPORTS_HOME=$MERCURY_DOCS_HOME/air-crash-reports
+
+export DOCS_HOME="$HOME/Programming/robin/docs"
+
+export RECORDS_HOME="$MERCURY_HOME/docs/IMPORTANT/records"
+
+export WORK_RECORDS_HOME="$VENUS_HOME/docs/IMPORTANT/records"
+
+export RECEIPTS_HOME=$GOOGLE_DRIVE/expenses
+
+export EXPENSES_HOME=$RECEIPTS_HOME
+
+# This must NOT be wrapped in quotes or the whitespace-escaping in the path does not work!!
+export CAMERA_HOME="$FILES_HOME/Camera\ Uploads"
+
+export TRASH_HOME=$HOME/.Trash
+
+export CANADA_HOME="$MERCURY_HOME/docs/IMPORTANT/canada"
+
+export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
+
+export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/22.6.2/
+
+export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
+
+export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/files/backgrounds/jpg
+
+export SYSTEM_SCREENSAVERS_HOME=/Library/Screen\ Savers/Default\ Collections
+
+export SCREENSAVERS_HOME="$SYSTEM_SCREENSAVERS_HOME/Robin"
+
+export EC2_HOME=/usr/local/lib/ec2-api-tools-1.6.11.0
+
+export GAM_PATH=/usr/local/Library/gam
+
 export TODO_HOME=$LOCAL_HOME/lib/todo.csv
-
-export INTELLIJ_VERSION=14
-
-export INTELLIJ_IDEA="IntelliJ IDEA $INTELLIJ_VERSION"
-
-export INTELLIJ_IDEA_HOME="/Applications/$INTELLIJ_IDEA.app/Contents/MacOS"
-
-export INTELLIJ_IDEA_PATH="$INTELLIJ_IDEA_HOME/idea"
-
-export INTELLIJ_IDEA_PREFS_HOME="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION"
-
-export INTELLIJ_CONFIG="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/keymaps/Robin.xml"
-
-export INTELLIJ_COLORS="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/colors"
-
-export PICTURES_HOME="$GOOGLE_DRIVE/pictures/pictures"
-
-export PHOTOS_HOME="$GOOGLE_DRIVE/pictures/photos"
 
 export LA_HOME=$PHOTOS_HOME/la
 
@@ -279,66 +325,9 @@ export AWS_CONFIG="$HOME/.aws/config"
 
 export KITCHENPLAN_HOME=/opt/kitchenplan
 
-export RECORDS_HOME="$MERCURY_HOME/docs/IMPORTANT/records"
+export PICTURES_HOME="$GOOGLE_DRIVE/pictures/pictures"
 
-export WORK_RECORDS_HOME="$VENUS_HOME/docs/IMPORTANT/records"
-
-export RECEIPTS_HOME=$GOOGLE_DRIVE/expenses
-
-export EXPENSES_HOME=$RECEIPTS_HOME
-
-# This must NOT be wrapped in quotes or the whitespace-escaping in the path does not work!!
-export CAMERA_HOME="$FILES_HOME/Camera\ Uploads"
-
-export TRASH_HOME=$HOME/.Trash
-
-export CANADA_HOME="$MERCURY_HOME/docs/IMPORTANT/canada"
-
-export USE_PYTHON=1
-
-export USE_RUBY=1
-
-export SAYCMD_OVERRIDE=0
-
-export ADOBE_PATH="/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader"
-
-export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
-
-export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/22.6.2/
-
-export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/bin/
-
-export BACKGROUNDS_HOME=$DOTFILES_BASE_HOME/config/files/backgrounds/jpg
-
-export SYSTEM_SCREENSAVERS_HOME=/Library/Screen\ Savers/Default\ Collections
-
-export SCREENSAVERS_HOME="$SYSTEM_SCREENSAVERS_HOME/Robin"
-
-
-# Projects
-export BOUNCING_BALLS_HOME="$JS_HOME/projects/bouncing-balls"
-
-export CONCENTRATION_GAME_HOME="$JS_HOME/projects/concentration-game"
-
-export FLAPPY_FISH_HOME="$JS_HOME/projects/flappy-fish"
-
-export PLANET_PAIRS_HOME="$JS_HOME/projects/planet-pairs"
-
-export COCOS_EXAMPLES_HOME="$JS_HOME/projects/cocos-examples"
-
-export RUNNER_HOME="$JS_HOME/projects/runner"
-
-export ORBITER_HOME="$JS_HOME/projects/orbiter-lite"
-
-export GAME_HOME=$COCOS_EXAMPLES_HOME
-
-export RECIPES_APP_HOME=$JS_HOME/projects/recipes-app
-
-export RECIPES_SERVER_HOME=$PYTHON_HOME/projects/recipes-server-flask
-
-export NOS_HOME=$WORK_HOME/python/NOS-BIT
-
-export PYTHONPATH=$NOS_HOME
+export PHOTOS_HOME="$GOOGLE_DRIVE/pictures/photos"
 
 
 ###############################################################################
@@ -384,6 +373,7 @@ typeset -T ALIAS_FILES alias_files
 
 alias_files=($ALIASES_PATH $BOOKMARKS_ALIAS_PATH)
 
+
 ###############################################################################
 # Applications
 ###############################################################################
@@ -397,26 +387,22 @@ export GIMP_HOME="$HOME/.gimp"
 
 export gimp_dir="$HOME/.gimp"
 
+export ADOBE_PATH="/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader"
 
-###############################################################################
-# Colors
-###############################################################################
-export GREP_COLOR="1;37"
+export INTELLIJ_VERSION=14
 
-export GREP_COLORS="ms=$GREP_COLOR:mc=01;31:sl=:cx=:fn=0:ln=32:bn=32:se=36"
+export INTELLIJ_IDEA="IntelliJ IDEA $INTELLIJ_VERSION"
 
-export LS_COLORS='di=1;34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
+export INTELLIJ_IDEA_HOME="/Applications/$INTELLIJ_IDEA.app/Contents/MacOS"
 
-export CLICOLOR=1
+export INTELLIJ_IDEA_PATH="$INTELLIJ_IDEA_HOME/idea"
 
-# Syntax highlighing in `less`
-# Requires `brew install source-highlight`
-##############################
-export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
+export INTELLIJ_IDEA_PREFS_HOME="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION"
 
-export LESS=" -R "
+export INTELLIJ_CONFIG="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/keymaps/Robin.xml"
 
-export LESSC_PATH="/usr/local/lib/node_modules/less/bin/lessc"
+export INTELLIJ_COLORS="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/colors"
+
 
 ###############################################################################
 # Cocos
@@ -440,3 +426,37 @@ export GULPFILE_HOME="$JS_HOME/projects/gulpfile"
 export GULPFILE_PATH="$GULPFILE_HOME/gulpfile.js"
 
 export GIT_QUICKSAVE_MSG="Quick-save."
+
+
+###############################################################################
+# Docker
+###############################################################################
+export DOCKER_HOST=tcp://192.168.59.103:2376
+
+export DOCKER_CERT_PATH=/Users/msl/.boot2docker/certs/boot2docker-vm
+
+export DOCKER_TLS_VERIFY=1
+
+
+###############################################################################
+# Function/alias variables
+###############################################################################
+export TRUE_VALUE="yes"
+
+export TRUE="yes"
+
+export FALSE=no
+
+export TO_DO="do"
+
+export TO_READ=read
+
+export TO_WATCH=watch
+
+export TO_LEARN=learn
+
+export USE_PYTHON=1
+
+export USE_RUBY=1
+
+export SAYCMD_OVERRIDE=0
