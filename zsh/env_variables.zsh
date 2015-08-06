@@ -157,6 +157,12 @@ export ENVS_PATH=$ZDOT_HOME/env_variables.zsh
 
 export FUNCS_HOME=$ZDOT_HOME/functions
 
+export CONFIG_HOME=$DOTFILES_BASE_HOME/config
+
+export CONFIG_DOTFILES_HOME=$DOTFILES_BASE_HOME/config/dotfiles
+
+export CONFIG_FILES_HOME=$DOTFILES_BASE_HOME/config/files
+
 export FORCE_COM_HOME=$PROG_HOME/force.com
 
 export WORK_FORCE_COM_HOME=$WORK_HOME/force.com

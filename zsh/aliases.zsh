@@ -191,6 +191,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias b2d="boot2docker"
+
 alias vbm="VBoxManage"
 
 alias office="open -a OpenOffice"
@@ -775,6 +777,8 @@ alias gzsh="cat $HOME/.zshrc | grep -i"
 
 alias mzen="$EDITOR $HOME/.zshenv"
 
+alias mbash="$EDITOR $HOME/.bashrc"
+
 alias bmk="bookmark"
 
 alias wbmk="work_bookmark"
@@ -1048,8 +1052,6 @@ alias tot="to_html"
 alias gup="gulp_up"
 
 alias id="idea"
-
-alias i="idea"
 
 alias lo="localhost_browse"
 
@@ -1358,8 +1360,6 @@ alias brun="brew uninstall"
 alias brug="brew update; brew upgrade"
 
 alias brs="save_homebrew"
-
-alias b="browser"
 
 alias bkmk="bookmark"
 
