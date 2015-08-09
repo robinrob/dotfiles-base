@@ -415,6 +415,8 @@ alias gib="gem install bundler"
 
 alias gi="gem install"
 
+alias gu="gem uninstall"
+
 alias bi="bundle install"
 
 alias bl="bundle list"
@@ -425,9 +427,13 @@ alias nl="sudo npm link"
 
 alias ni="sudo npm install"
 
+alias nu="sudo npm uninstall"
+
 alias nis="npm_install_save"
 
 alias nig="sudo npm install -g"
+
+alias boi="bower install"
 
 alias pi="pip_install"
 
@@ -1049,8 +1055,6 @@ alias toh="to_haml"
 
 alias tot="to_html"
 
-alias gup="gulp_up"
-
 alias id="idea"
 
 alias lo="localhost_browse"
@@ -1134,6 +1138,8 @@ alias olst="open_last_modified"
 alias hmrec="salesforce_record eu1"
 
 alias rsal="source_aliases"
+
+alias rsaL="resource_aliases"
 
 alias phon="phonetic"
 

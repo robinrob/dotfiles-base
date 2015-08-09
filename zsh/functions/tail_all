@@ -1,0 +1,10 @@
+local +r Pattern=$*[-1]
+
+
+IFS="
+"
+for file in $(gfind . -maxdepth 1 -name "$Pattern")
+do
+  yellow $file
+  tail $*[1,-2] $file
+done

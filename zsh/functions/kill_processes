@@ -1,16 +1,11 @@
+(( $# > 0 )) || red "Must give name(s) of process(es)!"
+
 local +r -a Processes
 Processes=($*)
 
+for process in $Processes
+do
+  print "$(green Killing all) $(yellow ${process}) $(green processes '...')"
 
-if (( $#Processes < 1 ))
-then
-  red "Must give name(s) of process(es)!"
-	
-else
-  for process in $Processes
-  do
-    print "$(green)Killing all $(yellow)${process} $(green)processes ...$(default)"
-    
-    ps aux | grep -i $process | awk '{print $2}' | xargs kill -KILL 2> /dev/null
-  done
-fi
+  ps aux | grep -i $process | awk '{print $2}' | xargs kill -KILL 2> /dev/null
+done
