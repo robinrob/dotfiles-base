@@ -335,6 +335,8 @@ export PICTURES_HOME="$GOOGLE_DRIVE/pictures/pictures"
 
 export PHOTOS_HOME="$GOOGLE_DRIVE/pictures/photos"
 
+export GOOD_PHOTOS_HOME="$GOOGLE_DRIVE/pictures/photos/good_pictures_of_me"
+
 
 ###############################################################################
 # Files
