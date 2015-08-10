@@ -433,6 +433,8 @@ alias nis="npm_install_save"
 
 alias nig="sudo npm install -g"
 
+alias bow="bower"
+
 alias boi="bower install"
 
 alias pi="pip_install"
@@ -574,9 +576,7 @@ alias grm="git rm -r --cached"
 
 alias gre="git remote"
 
-alias gbd="git branch develop && git checkout develop"
-
-alias gbx="git branch -d"
+alias gbd="git branch -d"
 
 alias gbm="git branch master && git checkout master	"
 
@@ -1027,6 +1027,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gbch="git_branch_checkout"
+
 alias it="iterm"
 
 alias sad="start_angular_dev"
@@ -1357,9 +1359,13 @@ alias swr="switch_ruby"
 
 alias brl="brew list"
 
+alias brln="brew link"
+
 alias bri="brew install"
 
-alias bru="brew update"
+alias bru="brew update; brew doctor"
+
+alias brd="brew doctor"
 
 alias brun="brew uninstall"
 
