@@ -1089,9 +1089,9 @@ alias cdf="cd_to_file"
 
 alias dd="duckduckgo"
 
-alias gr="grep_recursive"
+alias gr="grep_recursive -g"
 
-alias gR="grep_recursive_sensitive"
+alias gri="grep_recursive_sensitive -g"
 
 alias sedall="sed_all"
 
