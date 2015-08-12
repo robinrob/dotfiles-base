@@ -1,16 +1,23 @@
-local +r GrepExpression=$1
-local +r FindExpression=$2
-if [[ -n $3 ]]
-then
-  local +r Where=$3
-else
-  local +r Where="."
-fi
+local +r GrepExpression
+local +r FindExpression
+local +r Where='.'
+local +r MaxDepth
 
 
-IFS="
+while getopts :g:f:w:d: name
+do
+	case $name in
+		g) GrepExpression="$OPTARG" ;;
+    f) FindExpression="$OPTARG" ;;
+    w) Where="$OPTARG" ;;
+    d) MaxDepth="-maxdepth $OPTARG" ;;
+    *) red 'grep_all -g <grep-expression> -f <find-expression> -w <where> -d <depth>'
+	esac
+done
+
+IFS=" 
 "
-for file in $(gfind $Where -follow -name "*$FindExpression*" -type f)
+for file in $(gfind $Where ${=MaxDepth} -follow -name $FindExpression -type f)
 do
   grep=$(grep -i $GrepExpression $file)
   if [[ -n $grep ]]

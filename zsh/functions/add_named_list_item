@@ -3,4 +3,10 @@ local +r ListPath=$LISTS_HOME/${List}.txt
 local +A Args
 Args=($*)
 
+
+if ! [[ -f $ListPath ]]
+then
+  touch $ListPath
+fi
+
 add_list_item $ListPath $Args

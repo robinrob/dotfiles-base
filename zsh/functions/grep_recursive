@@ -1,10 +1,19 @@
-case $#@ in
-  1)
-    egrep -ri $1 * ;;
-  2)
-    find $2 -type f -exec printf {}: \; -exec egrep -H $1 {} \; ;;
-  3)
-    find $2 -maxdepth $3 -type f -exec egrep -H $1 {} \; ;;
-  *)
-    red "egrep_recursive <regex> <location> <depth>" ;;
-esac
+local +r GrepExpression
+local +r Where='.'
+local +r MaxDepth
+local +r Insensitive
+
+
+while getopts :g:w:d:i opt
+do
+	case $opt in
+		g) GrepExpression="$OPTARG" ;;
+    w) Where="$OPTARG" ;;
+    d) MaxDepth="-maxdepth $OPTARG" ;;
+    i) Insensitive="--ignore-case" ;;
+    *) red "grep_recursive -g <regex> -w <location> -d <depth> -i" ;;
+	esac
+done
+
+
+gfind $Where $MaxDepth -type f -exec egrep -H $Insensitive $GrepExpression {} \;
