@@ -1,18 +1,21 @@
-local +r Pattern
+local +r Usage="find <pattern> -w <location> -d <depth>"
+
+[[ -z $1 ]] && red $Usage && return 1
+
+
+local +r Pattern=$1; shift
 local +r Where='.'
 local +r MaxDepth
+local +r Exclude
 
-
-while getopts :f:w:d: name
+while getopts :w:d:e: opt
 do
-	case $name in
-		f) Pattern="$OPTARG" ;;
+	case $opt in
     w) Where="$OPTARG" ;;
     d) MaxDepth="-maxdepth $OPTARG" ;;
-    *) red "find -f <pattern> -w <location> -d <depth>" ;;
+    e) Exclude="\! -name $OPTARG" ;;
+    *) red $Usage && return 1 ;;
 	esac
 done
 
-cmd="gfind $Where $MaxDepth -iname '*$Pattern*'"
-green $cmd
-eval $cmd
+gfind $Where ${=MaxDepth} ${=Exclude} -iname "*$Pattern*"

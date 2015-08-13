@@ -1,19 +1,21 @@
-local +r GrepExpression
+local +r Usage='grep_recursive -g <regex> -w <location> -d <depth> -i'
+
+[[ -z $1 ]] && red $Usage && return 1
+
+
+local +r GrepExpression=$1; shift
 local +r Where='.'
 local +r MaxDepth
 local +r Insensitive
 
-
-while getopts :g:w:d:i opt
+while getopts :w:d:i opt
 do
 	case $opt in
-		g) GrepExpression="$OPTARG" ;;
     w) Where="$OPTARG" ;;
     d) MaxDepth="-maxdepth $OPTARG" ;;
     i) Insensitive="--ignore-case" ;;
-    *) red "grep_recursive -g <regex> -w <location> -d <depth> -i" ;;
+    *) red $Usage && return 1 ;;
 	esac
 done
 
-
-gfind $Where $MaxDepth -type f -exec egrep -H $Insensitive $GrepExpression {} \;
+gfind $Where ${=MaxDepth} -type f -exec egrep -H $Insensitive $GrepExpression {} \;

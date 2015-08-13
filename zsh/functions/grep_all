@@ -1,28 +1,31 @@
-local +r GrepExpression
-local +r FindExpression
+local +r Usage='grep_all <grep-expression> <find-expression> -w <where> -d <depth>'
+
+( [[ -z $1 ]] || [[ -z $2 ]] ) && red $Usage && return 1
+
+
+local +r GrepExpression=$1;
+local +r FindExpression=$2; shift 2
 local +r Where='.'
 local +r MaxDepth
 
-
-while getopts :g:f:w:d: name
+while getopts :w:d: opt
 do
-	case $name in
-		g) GrepExpression="$OPTARG" ;;
-    f) FindExpression="$OPTARG" ;;
+	case $opt in
     w) Where="$OPTARG" ;;
     d) MaxDepth="-maxdepth $OPTARG" ;;
-    *) red 'grep_all -g <grep-expression> -f <find-expression> -w <where> -d <depth>'
+    *) red $Usage && return 1 ;;
 	esac
 done
 
 IFS=" 
 "
-for file in $(gfind $Where ${=MaxDepth} -follow -name $FindExpression -type f)
+for file in $(gfind $Where ${=MaxDepth} -follow -name "$FindExpression" -type f)
 do
-  grep=$(grep -i $GrepExpression $file)
-  if [[ -n $grep ]]
+  local +r Result
+  Result=$(ggrep -i $GrepExpression $file)
+  if [[ -n $Result ]]
   then
     yellow $file
-    print $grep | grep -i $GrepExpression
+    print $Result | ggrep -i $GrepExpression
   fi
 done
