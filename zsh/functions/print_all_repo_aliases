@@ -23,7 +23,6 @@ abbreviations[js-tests]=te
 abbreviations[jv]=jv
 abbreviations[javascript]=j
 abbreviations[markdown]=m
-abbreviations[nos]=no
 abbreviations[ocaml]=o
 abbreviations[orbiter]=or
 abbreviations[perl]=pl
@@ -44,10 +43,10 @@ abbreviations[quiz]=q
 abbreviations[zsh]=z
 
 # Work
-abbreviations[work-force-com]=wf
+abbreviations[nos]=no
 
 
 for repo in ${(k)abbreviations}
 do
-  print_repo_aliases $repo $abbreviations[$repo] sv cd_save
+  print_repo_aliases $repo $abbreviations[$repo]
 done
