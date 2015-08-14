@@ -13,7 +13,7 @@ do
 	case $opt in
     w) Where="$OPTARG" ;;
     d) MaxDepth="-maxdepth $OPTARG" ;;
-    e) Exclude="\! -name $OPTARG" ;;
+    # e) Exclude="\! -name $OPTARG" ;;
     *) red $Usage && return 1 ;;
 	esac
 done

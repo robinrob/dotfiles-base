@@ -7,15 +7,17 @@ local +r GrepExpression=$1; shift
 local +r Where='.'
 local +r MaxDepth
 local +r Insensitive
+local +r Exclude
 
-while getopts :w:d:i opt
+while getopts :w:d:e:i opt
 do
 	case $opt in
     w) Where="$OPTARG" ;;
     d) MaxDepth="-maxdepth $OPTARG" ;;
     i) Insensitive="--ignore-case" ;;
+    e) Exclude="! -name $OPTARG" ;;
     *) red $Usage && return 1 ;;
 	esac
 done
 
-gfind $Where ${=MaxDepth} -type f -exec egrep -H $Insensitive $GrepExpression {} \;
+gfind $Where ${=MaxDepth} -type f ${=Exclude} -exec egrep -H $Insensitive $GrepExpression {} \;

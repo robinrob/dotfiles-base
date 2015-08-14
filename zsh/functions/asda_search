@@ -1,0 +1,1 @@
+browser "http://groceries.asda.com/search/$(urlencode $@)"

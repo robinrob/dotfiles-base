@@ -8,11 +8,12 @@ local +r FindExpression=$2; shift 2
 local +r Where='.'
 local +r MaxDepth
 
-while getopts :w:d: opt
+while getopts :w:d:e: opt
 do
 	case $opt in
     w) Where="$OPTARG" ;;
     d) MaxDepth="-maxdepth $OPTARG" ;;
+    # e) FindExpression="! -name $OPTARG ${=FindExpression}" ;;
     *) red $Usage && return 1 ;;
 	esac
 done
