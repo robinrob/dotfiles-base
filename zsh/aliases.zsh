@@ -1045,6 +1045,8 @@ alias toc="to_celcius"
 
 alias rks="rake_save"
 
+alias rkcl="rake_do base:clean"
+
 alias zaz="zazzle"
 
 alias light="lightning"
@@ -1085,13 +1087,15 @@ alias del="move_to_trash"
 
 alias repoal="recreate_all_repo_aliases"
 
-alias cdt="cd_down_tree"
+alias cdt="cd_to_file"
 
-alias cdf="cd_to_file"
+alias cdtr="cd_down_tree"
 
 alias dd="duckduckgo"
 
-alias gr="grep_recursive"
+alias gr="grep_recursive_insensitive"
+
+alias gR="grep_recursive"
 
 alias sedall="sed_all"
 
