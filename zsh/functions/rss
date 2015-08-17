@@ -26,7 +26,7 @@ case $Feed in
   space)
     Url='http://phys.org/rss-Feed/space-news/space-exploration/' ;;
   science)
-    Url='http://www.sciencemag.org/rss/current.xml' 99;;
+    Url='http://www.sciencemag.org/rss/current.xml' ;;
   sciencepodcast)
     Url='http://www.sciencemag.org/rss/podcast.xml' ;;
   sciencenews)

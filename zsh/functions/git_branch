@@ -1,1 +1,1 @@
-print $(git branch 2> /dev/null | tr -d ' ' | ggrep -Po '(?<=\*)(.+)')
+print $(git branch 2> /dev/null | ggrep -Po '(?<=\*)(.+)' | tr -d ' ')

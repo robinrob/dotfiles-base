@@ -194,7 +194,7 @@ export RAKEFILE="$RAKELIB_HOME/Rakefile"
 
 export GLOBAL_RAKEFILE_HOME=$RUBY_HOME/projects/global-rakefile
 
-export RSS_HOME=$RUBY_HOME/projects/rss-openeEC
+export RSS_HOME=$RUBY_HOME/projects/rss-opener
 
 export QUIZ_HOME=$RUBY_HOME/projects/quiz
 

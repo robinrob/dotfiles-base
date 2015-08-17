@@ -1,4 +1,6 @@
-FILENAME=$1
-cp $HTML_TEMPLATES_HOME/practice_bootstrap.html $FILENAME.html
-cp $HTML_TEMPLATES_HOME/practice_bootstrap.html $FILENAME.html
+local +r Name=$1
+local +r HamlFile=$Name.haml
+
+cp $CSS_HOME/templates/practice_bootstrap.haml $HamlFile
+gsed -i "s/Title/$(nameify $Name)/g" $HamlFile
 
