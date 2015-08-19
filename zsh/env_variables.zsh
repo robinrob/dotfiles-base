@@ -175,6 +175,8 @@ export JS_HOME=$PROG_HOME/javascript
 
 export JS_LIB_HOME=$JS_HOME/lib
 
+export NODE_HOME=$PROG_HOME/node
+
 export HTML_CSS_HOME=$PROG_HOME/html-css
 
 export HTML_LESS_HOME=$PROG_HOME/html-less
@@ -224,7 +226,9 @@ export GAME_HOME=$COCOS_EXAMPLES_HOME
 
 export RECIPES_APP_HOME=$JS_HOME/projects/recipes-app
 
-export RECIPES_SERVER_HOME=$PYTHON_HOME/projects/recipes-server-flask
+export RECIPES_SERVER_HOME=$RUBY_HOME/projects/recipes-server
+
+export ANGULAR_TEST_HOME=$JS_HOME/projects/angular-test
 
 export NOS_HOME=$WORK_HOME/python/NOS-BIT
 

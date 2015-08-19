@@ -11,6 +11,19 @@ alias idsc="idea $SCALA_HOME"
 alias cdsc="cd_down_tree $SCALA_HOME"
 alias cdscpr="cd_down_tree $SCALA_HOME/practice"
 alias cdscpro="cd_down_tree $SCALA_HOME/projects"
+alias nsv="cd_save $NODE_HOME"
+
+alias ncm="cd_commit $NODE_HOME"
+
+alias nst="cd_status $NODE_HOME"
+
+alias npl="cd_pull $NODE_HOME"
+
+alias idn="idea $NODE_HOME"
+
+alias cdn="cd_down_tree $NODE_HOME"
+alias cdnpr="cd_down_tree $NODE_HOME/practice"
+alias cdnpro="cd_down_tree $NODE_HOME/projects"
 alias gisv="cd_save $GIMP_HOME"
 
 alias gicm="cd_commit $GIMP_HOME"
@@ -50,6 +63,19 @@ alias idm="idea $MARKDOWN_HOME"
 alias cdm="cd_down_tree $MARKDOWN_HOME"
 alias cdmpr="cd_down_tree $MARKDOWN_HOME/practice"
 alias cdmpro="cd_down_tree $MARKDOWN_HOME/projects"
+alias nosv="cd_save $NOS_HOME"
+
+alias nocm="cd_commit $NOS_HOME"
+
+alias nost="cd_status $NOS_HOME"
+
+alias nopl="cd_pull $NOS_HOME"
+
+alias idno="idea $NOS_HOME"
+
+alias cdno="cd_down_tree $NOS_HOME"
+alias cdnopr="cd_down_tree $NOS_HOME/practice"
+alias cdnopro="cd_down_tree $NOS_HOME/projects"
 alias rssv="cd_save $RSS_HOME"
 
 alias rscm="cd_commit $RSS_HOME"
@@ -76,19 +102,6 @@ alias idjv="idea $JV_HOME"
 alias cdjv="cd_down_tree $JV_HOME"
 alias cdjvpr="cd_down_tree $JV_HOME/practice"
 alias cdjvpro="cd_down_tree $JV_HOME/projects"
-alias nosv="cd_save $NOS_HOME"
-
-alias nocm="cd_commit $NOS_HOME"
-
-alias nost="cd_status $NOS_HOME"
-
-alias nopl="cd_pull $NOS_HOME"
-
-alias idno="idea $NOS_HOME"
-
-alias cdno="cd_down_tree $NOS_HOME"
-alias cdnopr="cd_down_tree $NOS_HOME/practice"
-alias cdnopro="cd_down_tree $NOS_HOME/projects"
 alias qsv="cd_save $QUIZ_HOME"
 
 alias qcm="cd_commit $QUIZ_HOME"
@@ -180,6 +193,19 @@ alias idmrd="idea $WEBSITE_DEV_HOME"
 alias cdmrd="cd_down_tree $WEBSITE_DEV_HOME"
 alias cdmrdpr="cd_down_tree $WEBSITE_DEV_HOME/practice"
 alias cdmrdpro="cd_down_tree $WEBSITE_DEV_HOME/projects"
+alias atsv="cd_save $ANGULAR_TEST_HOME"
+
+alias atcm="cd_commit $ANGULAR_TEST_HOME"
+
+alias atst="cd_status $ANGULAR_TEST_HOME"
+
+alias atpl="cd_pull $ANGULAR_TEST_HOME"
+
+alias idat="idea $ANGULAR_TEST_HOME"
+
+alias cdat="cd_down_tree $ANGULAR_TEST_HOME"
+alias cdatpr="cd_down_tree $ANGULAR_TEST_HOME/practice"
+alias cdatpro="cd_down_tree $ANGULAR_TEST_HOME/projects"
 alias csv="cd_save $C_HOME"
 
 alias ccm="cd_commit $C_HOME"
@@ -336,19 +362,6 @@ alias idfc="idea $FORCE_COM_HOME"
 alias cdfc="cd_down_tree $FORCE_COM_HOME"
 alias cdfcpr="cd_down_tree $FORCE_COM_HOME/practice"
 alias cdfcpro="cd_down_tree $FORCE_COM_HOME/projects"
-alias wfsv="cd_save $WORK_FORCE_COM_HOME"
-
-alias wfcm="cd_commit $WORK_FORCE_COM_HOME"
-
-alias wfst="cd_status $WORK_FORCE_COM_HOME"
-
-alias wfpl="cd_pull $WORK_FORCE_COM_HOME"
-
-alias idwf="idea $WORK_FORCE_COM_HOME"
-
-alias cdwf="cd_down_tree $WORK_FORCE_COM_HOME"
-alias cdwfpr="cd_down_tree $WORK_FORCE_COM_HOME/practice"
-alias cdwfpro="cd_down_tree $WORK_FORCE_COM_HOME/projects"
 alias asv="cd_save $AWK_HOME"
 
 alias acm="cd_commit $AWK_HOME"

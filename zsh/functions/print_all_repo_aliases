@@ -2,6 +2,7 @@ typeset -A abbreviations
 
 # Home
 abbreviations[awk]=a
+abbreviations[angular-test]=at
 abbreviations[bouncing_balls]=bb
 abbreviations[c]=c
 abbreviations[cocos-examples]=ce
@@ -23,6 +24,7 @@ abbreviations[js-tests]=te
 abbreviations[jv]=jv
 abbreviations[javascript]=j
 abbreviations[markdown]=m
+abbreviations[node]=n
 abbreviations[ocaml]=o
 abbreviations[orbiter]=or
 abbreviations[perl]=pl

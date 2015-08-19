@@ -1027,6 +1027,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias lod="lodash_doc_search"
+
 alias asda="asda_search"
 
 alias gbch="git_branch_checkout"
