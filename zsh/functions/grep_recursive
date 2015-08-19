@@ -27,6 +27,4 @@ do
 	esac
 done
 
-print "Excludes: $Excludes"
-
 gfind $Where ${=MaxDepth} -type f ${=Excludes} -exec egrep -H $Insensitive $GrepExpression {} \;
