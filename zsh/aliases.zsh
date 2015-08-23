@@ -497,8 +497,6 @@ alias p3="$HOME/.pythonbrew/pythons/Python-3.2/bin/python3"
 
 alias pbrew="pythonbrew"
 
-alias cen="cat $ENVS_PATH"
-
 alias cals="cat $ALIASES_PATH"
 
 alias lsfn="ls $FUNCS_HOME"
@@ -829,15 +827,27 @@ alias rnsall="cd_down_tree $SCREENSHOTS_HOME && despace"
 
 alias mal="$EDITOR $ZDOT_HOME/aliases.zsh"
 
+alias cal="cat $ZDOT_HOME/aliases.zsh"
+
 alias mun="$EDITOR $ZDOT_HOME/unaliases.zsh"
+
+alias cun="cun $ZDOT_HOME/unaliases.zsh"
 
 alias mop="$EDITOR $ZDOT_HOME/options.zsh"
 
+alias cop="cat $ZDOT_HOME/options.zsh"
+
 alias mos="$EDITOR $ZDOT_HOME/osx.zsh"
+
+alias cos="cat $ZDOT_HOME/osx.zsh"
 
 alias men="$EDITOR $ZDOT_HOME/env_variables.zsh"
 
+alias cen="cat $ENVS_PATH"
+
 alias mpa="$EDITOR $ZDOT_HOME/path.zsh"
+
+alias cpa="cat $ZDOT_HOME/path.zsh"
 
 alias mmutt="$EDITOR $HOME/.mutt/muttrc"
 
