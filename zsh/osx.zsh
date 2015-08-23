@@ -760,7 +760,10 @@ defaults write -g ApplePersistence -bool no 2> /dev/null
 chflags nohidden ~/Library/ 2> /dev/null
 
 # Enable character menu
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Disable new Yosemite default setting that globally prevents key repeat!
+defaults write -g ApplePressAndHoldEnabled -bool false
 
 ###############################################################################
 # Desktop Background
