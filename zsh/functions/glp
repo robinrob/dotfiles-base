@@ -1,3 +1,4 @@
+idea
 iterm $PWD
 [[ -n $@ ]] && localhost_browse $@
 gulp
