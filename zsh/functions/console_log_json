@@ -1,0 +1,3 @@
+local +r Variable=$1
+
+copy_print "console.log('$Variable: ' + JSON.stringify($Variable, null, '\\\t'))"

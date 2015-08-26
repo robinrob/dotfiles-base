@@ -1037,11 +1037,15 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias logj="console_log_json"
+
 alias lod="lodash_doc_search"
 
 alias asda="asda_search"
 
 alias gbch="git_branch_checkout"
+
+alias gbn="git_branch_checkout"
 
 alias it="iterm"
 
