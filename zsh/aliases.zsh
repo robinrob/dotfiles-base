@@ -1037,6 +1037,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias adbr="adb_restart"
+
 alias logj="console_log_json"
 
 alias lod="lodash_doc_search"
