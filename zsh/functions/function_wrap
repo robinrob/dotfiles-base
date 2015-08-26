@@ -1,0 +1,7 @@
+local +r Function=$1
+
+local +r Contents="$(cat $FUNCS_HOME/$Function)"
+
+Contents=$(print -r $Contents | sed 's/^/\t/g')
+
+copy_print "function $Function () {\n$Contents\n}"
