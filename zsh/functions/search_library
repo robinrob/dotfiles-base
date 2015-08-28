@@ -1,1 +1,7 @@
-browser "http://capitadiscovery.co.uk/edinburgh/items?query=$(urlencode $@)"
+case $# in
+  0)
+    get_record libcode ;;
+  *)
+    browser "http://capitadiscovery.co.uk/edinburgh/items?query=$(urlencode $@)" ;;
+esac
+

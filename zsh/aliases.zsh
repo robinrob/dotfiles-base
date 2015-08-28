@@ -108,6 +108,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias libcode="grec libcode"
+
 alias lsv="ls ~/VirtualBox\ VMs"
 
 alias pg="rebookmark page"
@@ -433,9 +435,11 @@ alias nis="npm_install_save"
 
 alias nig="sudo npm install -g"
 
-alias bow="bower"
+alias bo="bower"
 
-alias boi="bower install"
+alias boi="bower_install_save"
+
+alias bou="bower uninstall"
 
 alias pi="pip_install"
 
@@ -1037,6 +1041,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+# alias lsreq="ls_js_require"
+
+alias req="ls_js_require"
+
 alias adbr="adb_restart"
 
 alias logj="console_log_json"
