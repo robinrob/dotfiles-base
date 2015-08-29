@@ -244,6 +244,10 @@ export MSCHEF=$WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef
 
 export LOCAL_HOME=$RUBY_HOME/projects/local
 
+export ORIGINS_HOME=$JS_HOME/projects/fundamental-origins
+
+export ORIGINS_DEV_HOME=$JS_HOME/projects/fundamental-origins-dev
+
 
 ###############################################################################
 # Directories

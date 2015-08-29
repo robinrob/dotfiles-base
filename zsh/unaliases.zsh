@@ -80,4 +80,4 @@ unalias gco 2> /dev/null
 
 unalias gRm 2> /dev/null
 
-unalias _ 2> /dev/null
+unalias git 2> /dev/null

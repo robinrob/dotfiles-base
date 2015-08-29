@@ -28,8 +28,8 @@ source $ZSHCOLORS_PATH
 #create_repo_envs
 source $ZDOT_HOME/env_variables.zsh
 
-GITHUB_CREDS=$GITHUB_HOME/creds.sh
-[[ -f $GITHUB_CREDS ]] && source $GITHUB_CREDS
+# GITHUB_CREDS=$GITHUB_HOME/creds.sh
+# [[ -f $GITHUB_CREDS ]] && source $GITHUB_CREDS
 
 
 # Unaliases

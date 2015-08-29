@@ -546,6 +546,10 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
+alias gco="git config"
+
+alias gcog="git config --global"
+
 alias glsf="git ls-files "
 
 alias gau="git add -u"
@@ -883,9 +887,13 @@ alias fbs="fab save"
 
 alias fcl="fab clean"
 
-alias cgc="cat $HOME/.gitconfig"
+alias cgc="cat .git/config"
 
-alias mgc="$EDITOR $HOME/.gitconfig"
+alias cgC="cat $HOME/.gitconfig"
+
+alias mgc="$EDITOR .git/config"
+
+alias mgC="$EDITOR $HOME/.gitconfig"
 
 alias mrd="m README.md"
 
@@ -1202,8 +1210,6 @@ alias rps="repeat_string"
 alias colorc="color_using_code"
 
 alias grc="grep_color"
-
-alias gco="get_color_code"
 
 alias sbr="set_browser"
 

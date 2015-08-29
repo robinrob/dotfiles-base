@@ -37,6 +37,19 @@ alias idgi="idea $GIMP_HOME"
 alias cdgi="cd_down_tree $GIMP_HOME"
 alias cdgipr="cd_down_tree $GIMP_HOME/practice"
 alias cdgipro="cd_down_tree $GIMP_HOME/projects"
+alias fusv="cd_save $ORIGINS_HOME"
+
+alias fucm="cd_commit $ORIGINS_HOME"
+
+alias fust="cd_status $ORIGINS_HOME"
+
+alias fupl="cd_pull $ORIGINS_HOME"
+
+alias idfu="idea $ORIGINS_HOME"
+
+alias cdfu="cd_down_tree $ORIGINS_HOME"
+alias cdfupr="cd_down_tree $ORIGINS_HOME/practice"
+alias cdfupro="cd_down_tree $ORIGINS_HOME/projects"
 alias zsv="cd_save $ZSH_HOME"
 
 alias zcm="cd_commit $ZSH_HOME"
@@ -63,6 +76,19 @@ alias idm="idea $MARKDOWN_HOME"
 alias cdm="cd_down_tree $MARKDOWN_HOME"
 alias cdmpr="cd_down_tree $MARKDOWN_HOME/practice"
 alias cdmpro="cd_down_tree $MARKDOWN_HOME/projects"
+alias fudsv="cd_save $ORIGINS_DEV_HOME"
+
+alias fudcm="cd_commit $ORIGINS_DEV_HOME"
+
+alias fudst="cd_status $ORIGINS_DEV_HOME"
+
+alias fudpl="cd_pull $ORIGINS_DEV_HOME"
+
+alias idfud="idea $ORIGINS_DEV_HOME"
+
+alias cdfud="cd_down_tree $ORIGINS_DEV_HOME"
+alias cdfudpr="cd_down_tree $ORIGINS_DEV_HOME/practice"
+alias cdfudpro="cd_down_tree $ORIGINS_DEV_HOME/projects"
 alias nosv="cd_save $NOS_HOME"
 
 alias nocm="cd_commit $NOS_HOME"
@@ -141,19 +167,6 @@ alias idra="idea $RECIPES_APP_HOME"
 alias cdra="cd_down_tree $RECIPES_APP_HOME"
 alias cdrapr="cd_down_tree $RECIPES_APP_HOME/practice"
 alias cdrapro="cd_down_tree $RECIPES_APP_HOME/projects"
-alias fsv="cd_save $FISH_HOME"
-
-alias fcm="cd_commit $FISH_HOME"
-
-alias fst="cd_status $FISH_HOME"
-
-alias fpl="cd_pull $FISH_HOME"
-
-alias idf="idea $FISH_HOME"
-
-alias cdf="cd_down_tree $FISH_HOME"
-alias cdfpr="cd_down_tree $FISH_HOME/practice"
-alias cdfpro="cd_down_tree $FISH_HOME/projects"
 alias rsv="cd_save $RUBY_HOME"
 
 alias rcm="cd_commit $RUBY_HOME"
@@ -167,6 +180,19 @@ alias idr="idea $RUBY_HOME"
 alias cdr="cd_down_tree $RUBY_HOME"
 alias cdrpr="cd_down_tree $RUBY_HOME/practice"
 alias cdrpro="cd_down_tree $RUBY_HOME/projects"
+alias fsv="cd_save $FISH_HOME"
+
+alias fcm="cd_commit $FISH_HOME"
+
+alias fst="cd_status $FISH_HOME"
+
+alias fpl="cd_pull $FISH_HOME"
+
+alias idf="idea $FISH_HOME"
+
+alias cdf="cd_down_tree $FISH_HOME"
+alias cdfpr="cd_down_tree $FISH_HOME/practice"
+alias cdfpro="cd_down_tree $FISH_HOME/projects"
 alias prsv="cd_save $PROG_HOME"
 
 alias prcm="cd_commit $PROG_HOME"
@@ -245,6 +271,19 @@ alias idcn="idea $CONCENTRATION_GAME_HOME"
 alias cdcn="cd_down_tree $CONCENTRATION_GAME_HOME"
 alias cdcnpr="cd_down_tree $CONCENTRATION_GAME_HOME/practice"
 alias cdcnpro="cd_down_tree $CONCENTRATION_GAME_HOME/projects"
+alias rassv="cd_save $RECIPES_SERVER_HOME"
+
+alias rascm="cd_commit $RECIPES_SERVER_HOME"
+
+alias rasst="cd_status $RECIPES_SERVER_HOME"
+
+alias raspl="cd_pull $RECIPES_SERVER_HOME"
+
+alias idras="idea $RECIPES_SERVER_HOME"
+
+alias cdras="cd_down_tree $RECIPES_SERVER_HOME"
+alias cdraspr="cd_down_tree $RECIPES_SERVER_HOME/practice"
+alias cdraspro="cd_down_tree $RECIPES_SERVER_HOME/projects"
 alias ghsv="cd_save $GITHUB_HOME"
 
 alias ghcm="cd_commit $GITHUB_HOME"
@@ -271,19 +310,6 @@ alias idj="idea $JAVASCRIPT_HOME"
 alias cdj="cd_down_tree $JAVASCRIPT_HOME"
 alias cdjpr="cd_down_tree $JAVASCRIPT_HOME/practice"
 alias cdjpro="cd_down_tree $JAVASCRIPT_HOME/projects"
-alias rassv="cd_save $RECIPES_SERVER_HOME"
-
-alias rascm="cd_commit $RECIPES_SERVER_HOME"
-
-alias rasst="cd_status $RECIPES_SERVER_HOME"
-
-alias raspl="cd_pull $RECIPES_SERVER_HOME"
-
-alias idras="idea $RECIPES_SERVER_HOME"
-
-alias cdras="cd_down_tree $RECIPES_SERVER_HOME"
-alias cdraspr="cd_down_tree $RECIPES_SERVER_HOME/practice"
-alias cdraspro="cd_down_tree $RECIPES_SERVER_HOME/projects"
 alias osv="cd_save $OCAML_HOME"
 
 alias ocm="cd_commit $OCAML_HOME"

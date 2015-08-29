@@ -17,6 +17,7 @@ Dirs=(
   $NDK_ROOT
   $NDK_MODULE_PATH
   /usr/local/Library/anaconda3/bin
+  ./node_modules/.bin
 )
 
 for dir in $Dirs
