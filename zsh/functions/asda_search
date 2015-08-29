@@ -1,1 +1,10 @@
-browser "http://groceries.asda.com/search/$(urlencode $@)"
+local +r Url
+
+case $# in
+  0)
+    Url="http://groceries.asda.com" ;;
+  1) 
+    Url="http://groceries.asda.com/search/$(urlencode $@)" ;;
+esac
+
+browser $Url

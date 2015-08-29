@@ -389,6 +389,8 @@ typeset -T ALIAS_FILES alias_files
 
 alias_files=($ALIASES_PATH $BOOKMARKS_ALIAS_PATH)
 
+# export GIT_SSH=$DOTFILES_BASE_HOME/sh/ssh-git.sh
+
 
 ###############################################################################
 # Applications

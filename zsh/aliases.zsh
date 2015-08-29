@@ -84,7 +84,7 @@ alias mv="gmv"
 
 alias egrep="gegrep"
 
-alias grep="ggrep"
+alias grep="ggrep --text"
 
 alias find="gfind"
 
@@ -108,6 +108,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias dirp="dir | pbcopy && pbpaste"
+
 alias libcode="grec libcode"
 
 alias lsv="ls ~/VirtualBox\ VMs"
@@ -130,7 +132,6 @@ alias kid="kill_processes idea"
 
 alias repals="rm repo_aliases.zsh; print_all_repo_aliases > repo_aliases.zsh; source_aliases"
 
-
 alias flight="rss flight"
 
 alias space="rss space"
@@ -145,7 +146,11 @@ alias ncP="no | sudo cp"
 
 alias ycp="yes | cp"
 
+alias sycp="yes | silent_cp"
+
 alias ycP="yes | sudo cp"
+
+alias sycP="yes | sudo silent_cp"
 
 alias api="cocosapi"
 
