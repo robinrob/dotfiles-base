@@ -6,12 +6,17 @@ source $ZDOT_HOME/indents.zsh
 function install {
   LABEL=$1
   FILEPATH=$2
+  DIRPATH=$(dirname $FILEPATH)
 
   print "\t${ITEM}$(green Installing) $(yellow $LABEL) $(green config to) $(yellow $FILEPATH) $(green ...)"
 	cp $FILEPATH $FILEPATH.backup 2> /dev/null
 
-	# For some reason the evals were required here
-	rm -f $FILEPATH
+  if ! [[ -d $DIRPATH ]]
+  then
+    mkdir $DIRPATH
+  else
+	  rm -f $FILEPATH
+  fi
 	cp "$DOTFILES_BASE_HOME/config/files/Robin.jetbrains.xml" $FILEPATH
 }
 
