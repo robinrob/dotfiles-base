@@ -551,9 +551,9 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
-alias gco="git config"
+alias gco="git_config"
 
-alias gcog="git config --global"
+alias gcog="git_config_global"
 
 alias glsf="git ls-files "
 
@@ -1062,6 +1062,8 @@ alias adbr="adb_restart"
 
 alias logj="console_log_json"
 
+alias logp="log_python"
+
 alias lod="lodash_doc_search"
 
 alias asda="asda_search"
@@ -1411,6 +1413,8 @@ alias brd="brew doctor"
 alias brun="brew uninstall"
 
 alias brug="brew update; brew upgrade"
+
+alias brin="brew info"
 
 alias brs="save_homebrew"
 

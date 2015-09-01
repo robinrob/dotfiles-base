@@ -1,0 +1,3 @@
+git config merge.tool DiffMerge
+
+git config push.default matching

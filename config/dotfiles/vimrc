@@ -154,7 +154,7 @@ set ignorecase
 "Disables ignorecase for uppercase characters. Lowercase still match all."
 set smartcase
 
-set guifont=Menlo\ Regular:h14
+set guifont=Hack:h14
 
 "Reverse meaning of /g option in search-replace - i.e. it defaults to global,
 "but first-occurrence behaviour can be selected with /g."

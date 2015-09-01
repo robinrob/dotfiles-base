@@ -1,0 +1,6 @@
+case $# in
+  0)
+    git config --global --list ;;
+  1)
+    git config --global $1 ;;
+esac
