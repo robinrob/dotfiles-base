@@ -9,3 +9,6 @@ done
 brew install http://www.soimort.org/translate-shell/translate-shell.rb
 brew uninstall macvim
 brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
+
+# Install Octave
+./octave.zsh

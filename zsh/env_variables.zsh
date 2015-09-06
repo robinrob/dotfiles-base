@@ -181,8 +181,6 @@ export HTML_CSS_HOME=$PROG_HOME/html-css
 
 export HTML_LESS_HOME=$PROG_HOME/html-less
 
-export HTML_TEMPLATES_HOME=$HTML_CSS_HOME/templates
-
 export RUBY_TEMPLATES_HOME=$RUBY_HOME/templates
 
 export RUBYAPP_HOME=$RUBY_HOME/projects/ruby-app
@@ -395,6 +393,8 @@ alias_files=($ALIASES_PATH $BOOKMARKS_ALIAS_PATH)
 ###############################################################################
 # Applications
 ###############################################################################
+export OCTAVE_HOME=/usr/local/Cellar/octave/4.0.0
+
 export SUBLIMETEXT_HOME="$HOME/Library/Application Support/Sublime Text 3"
 
 export CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"

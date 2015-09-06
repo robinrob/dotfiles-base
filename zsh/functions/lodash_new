@@ -1,0 +1,6 @@
+local +r Name=$1
+local +r Filename=$Name.js
+
+cp $NODE_HOME/templates/lodash.js $Filename
+
+$EDITOR $Filename

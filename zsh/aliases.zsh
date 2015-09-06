@@ -108,6 +108,16 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias limmy="tube \"limmy's show\""
+
+alias obk="open_named_list_item books"
+
+alias otl="open_named_list_item learn"
+
+alias otw="open_named_list_item watch"
+
+alias otr="open_named_list_item read"
+
 alias dirp="dir | pbcopy && pbpaste"
 
 alias libcode="grec libcode"
@@ -198,6 +208,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias oct="octave"
+
 alias b2d="boot2docker"
 
 alias vbm="VBoxManage"
@@ -484,7 +496,7 @@ alias cnew="new -i '' -e cq -f"
 
 alias nnew="new_s node js"
 
-alias ndnew="nnew"
+alias lnew="lodash_new"
 
 alias cssnew="new -i '' -e css -f"
 
@@ -1054,13 +1066,19 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias icon="glyphicon_search"
+
+alias link="link_script"
+
 # alias lsreq="ls_js_require"
 
 alias req="ls_js_require"
 
 alias adbr="adb_restart"
 
-alias logj="console_log_json"
+alias logj="js_console_log"
+
+alias logjs="js_console_log_json"
 
 alias logp="log_python"
 
@@ -1416,7 +1434,7 @@ alias brug="brew update; brew upgrade"
 
 alias brin="brew info"
 
-alias brs="save_homebrew"
+alias brs="brew search"
 
 alias bkmk="bookmark"
 
