@@ -8,6 +8,8 @@ alias scpl="cd_pull $SCALA_HOME"
 
 alias idsc="idea $SCALA_HOME"
 
+alias itsc="iterm $SCALA_HOME"
+
 alias cdsc="cd_down_tree $SCALA_HOME"
 alias cdscpr="cd_down_tree $SCALA_HOME/practice"
 alias cdscpro="cd_down_tree $SCALA_HOME/projects"
@@ -20,6 +22,8 @@ alias nst="cd_status $NODE_HOME"
 alias npl="cd_pull $NODE_HOME"
 
 alias idn="idea $NODE_HOME"
+
+alias itn="iterm $NODE_HOME"
 
 alias cdn="cd_down_tree $NODE_HOME"
 alias cdnpr="cd_down_tree $NODE_HOME/practice"
@@ -34,6 +38,8 @@ alias gipl="cd_pull $GIMP_HOME"
 
 alias idgi="idea $GIMP_HOME"
 
+alias itgi="iterm $GIMP_HOME"
+
 alias cdgi="cd_down_tree $GIMP_HOME"
 alias cdgipr="cd_down_tree $GIMP_HOME/practice"
 alias cdgipro="cd_down_tree $GIMP_HOME/projects"
@@ -46,6 +52,8 @@ alias fust="cd_status $ORIGINS_HOME"
 alias fupl="cd_pull $ORIGINS_HOME"
 
 alias idfu="idea $ORIGINS_HOME"
+
+alias itfu="iterm $ORIGINS_HOME"
 
 alias cdfu="cd_down_tree $ORIGINS_HOME"
 alias cdfupr="cd_down_tree $ORIGINS_HOME/practice"
@@ -60,6 +68,8 @@ alias zpl="cd_pull $ZSH_HOME"
 
 alias idz="idea $ZSH_HOME"
 
+alias itz="iterm $ZSH_HOME"
+
 alias cdz="cd_down_tree $ZSH_HOME"
 alias cdzpr="cd_down_tree $ZSH_HOME/practice"
 alias cdzpro="cd_down_tree $ZSH_HOME/projects"
@@ -72,6 +82,8 @@ alias mst="cd_status $MARKDOWN_HOME"
 alias mpl="cd_pull $MARKDOWN_HOME"
 
 alias idm="idea $MARKDOWN_HOME"
+
+alias itm="iterm $MARKDOWN_HOME"
 
 alias cdm="cd_down_tree $MARKDOWN_HOME"
 alias cdmpr="cd_down_tree $MARKDOWN_HOME/practice"
@@ -86,6 +98,8 @@ alias fudpl="cd_pull $ORIGINS_DEV_HOME"
 
 alias idfud="idea $ORIGINS_DEV_HOME"
 
+alias itfud="iterm $ORIGINS_DEV_HOME"
+
 alias cdfud="cd_down_tree $ORIGINS_DEV_HOME"
 alias cdfudpr="cd_down_tree $ORIGINS_DEV_HOME/practice"
 alias cdfudpro="cd_down_tree $ORIGINS_DEV_HOME/projects"
@@ -98,6 +112,8 @@ alias nost="cd_status $NOS_HOME"
 alias nopl="cd_pull $NOS_HOME"
 
 alias idno="idea $NOS_HOME"
+
+alias itno="iterm $NOS_HOME"
 
 alias cdno="cd_down_tree $NOS_HOME"
 alias cdnopr="cd_down_tree $NOS_HOME/practice"
@@ -112,6 +128,8 @@ alias rspl="cd_pull $RSS_HOME"
 
 alias idrs="idea $RSS_HOME"
 
+alias itrs="iterm $RSS_HOME"
+
 alias cdrs="cd_down_tree $RSS_HOME"
 alias cdrspr="cd_down_tree $RSS_HOME/practice"
 alias cdrspro="cd_down_tree $RSS_HOME/projects"
@@ -124,6 +142,8 @@ alias jvst="cd_status $JV_HOME"
 alias jvpl="cd_pull $JV_HOME"
 
 alias idjv="idea $JV_HOME"
+
+alias itjv="iterm $JV_HOME"
 
 alias cdjv="cd_down_tree $JV_HOME"
 alias cdjvpr="cd_down_tree $JV_HOME/practice"
@@ -138,6 +158,8 @@ alias qpl="cd_pull $QUIZ_HOME"
 
 alias idq="idea $QUIZ_HOME"
 
+alias itq="iterm $QUIZ_HOME"
+
 alias cdq="cd_down_tree $QUIZ_HOME"
 alias cdqpr="cd_down_tree $QUIZ_HOME/practice"
 alias cdqpro="cd_down_tree $QUIZ_HOME/projects"
@@ -150,6 +172,8 @@ alias sst="cd_status $SH_HOME"
 alias spl="cd_pull $SH_HOME"
 
 alias ids="idea $SH_HOME"
+
+alias its="iterm $SH_HOME"
 
 alias cds="cd_down_tree $SH_HOME"
 alias cdspr="cd_down_tree $SH_HOME/practice"
@@ -164,6 +188,8 @@ alias rapl="cd_pull $RECIPES_APP_HOME"
 
 alias idra="idea $RECIPES_APP_HOME"
 
+alias itra="iterm $RECIPES_APP_HOME"
+
 alias cdra="cd_down_tree $RECIPES_APP_HOME"
 alias cdrapr="cd_down_tree $RECIPES_APP_HOME/practice"
 alias cdrapro="cd_down_tree $RECIPES_APP_HOME/projects"
@@ -176,6 +202,8 @@ alias rst="cd_status $RUBY_HOME"
 alias rpl="cd_pull $RUBY_HOME"
 
 alias idr="idea $RUBY_HOME"
+
+alias itr="iterm $RUBY_HOME"
 
 alias cdr="cd_down_tree $RUBY_HOME"
 alias cdrpr="cd_down_tree $RUBY_HOME/practice"
@@ -190,6 +218,8 @@ alias fpl="cd_pull $FISH_HOME"
 
 alias idf="idea $FISH_HOME"
 
+alias itf="iterm $FISH_HOME"
+
 alias cdf="cd_down_tree $FISH_HOME"
 alias cdfpr="cd_down_tree $FISH_HOME/practice"
 alias cdfpro="cd_down_tree $FISH_HOME/projects"
@@ -202,6 +232,8 @@ alias prst="cd_status $PROG_HOME"
 alias prpl="cd_pull $PROG_HOME"
 
 alias idpr="idea $PROG_HOME"
+
+alias itpr="iterm $PROG_HOME"
 
 alias cdpr="cd_down_tree $PROG_HOME"
 alias cdprpr="cd_down_tree $PROG_HOME/practice"
@@ -216,6 +248,8 @@ alias mrdpl="cd_pull $WEBSITE_DEV_HOME"
 
 alias idmrd="idea $WEBSITE_DEV_HOME"
 
+alias itmrd="iterm $WEBSITE_DEV_HOME"
+
 alias cdmrd="cd_down_tree $WEBSITE_DEV_HOME"
 alias cdmrdpr="cd_down_tree $WEBSITE_DEV_HOME/practice"
 alias cdmrdpro="cd_down_tree $WEBSITE_DEV_HOME/projects"
@@ -228,6 +262,8 @@ alias atst="cd_status $ANGULAR_TEST_HOME"
 alias atpl="cd_pull $ANGULAR_TEST_HOME"
 
 alias idat="idea $ANGULAR_TEST_HOME"
+
+alias itat="iterm $ANGULAR_TEST_HOME"
 
 alias cdat="cd_down_tree $ANGULAR_TEST_HOME"
 alias cdatpr="cd_down_tree $ANGULAR_TEST_HOME/practice"
@@ -242,6 +278,8 @@ alias cpl="cd_pull $C_HOME"
 
 alias idc="idea $C_HOME"
 
+alias itc="iterm $C_HOME"
+
 alias cdc="cd_down_tree $C_HOME"
 alias cdcpr="cd_down_tree $C_HOME/practice"
 alias cdcpro="cd_down_tree $C_HOME/projects"
@@ -254,6 +292,8 @@ alias cpst="cd_status $C_PLUS_PLUS_HOME"
 alias cppl="cd_pull $C_PLUS_PLUS_HOME"
 
 alias idcp="idea $C_PLUS_PLUS_HOME"
+
+alias itcp="iterm $C_PLUS_PLUS_HOME"
 
 alias cdcp="cd_down_tree $C_PLUS_PLUS_HOME"
 alias cdcppr="cd_down_tree $C_PLUS_PLUS_HOME/practice"
@@ -268,6 +308,8 @@ alias cnpl="cd_pull $CONCENTRATION_GAME_HOME"
 
 alias idcn="idea $CONCENTRATION_GAME_HOME"
 
+alias itcn="iterm $CONCENTRATION_GAME_HOME"
+
 alias cdcn="cd_down_tree $CONCENTRATION_GAME_HOME"
 alias cdcnpr="cd_down_tree $CONCENTRATION_GAME_HOME/practice"
 alias cdcnpro="cd_down_tree $CONCENTRATION_GAME_HOME/projects"
@@ -280,6 +322,8 @@ alias rasst="cd_status $RECIPES_SERVER_HOME"
 alias raspl="cd_pull $RECIPES_SERVER_HOME"
 
 alias idras="idea $RECIPES_SERVER_HOME"
+
+alias itras="iterm $RECIPES_SERVER_HOME"
 
 alias cdras="cd_down_tree $RECIPES_SERVER_HOME"
 alias cdraspr="cd_down_tree $RECIPES_SERVER_HOME/practice"
@@ -294,6 +338,8 @@ alias ghpl="cd_pull $GITHUB_HOME"
 
 alias idgh="idea $GITHUB_HOME"
 
+alias itgh="iterm $GITHUB_HOME"
+
 alias cdgh="cd_down_tree $GITHUB_HOME"
 alias cdghpr="cd_down_tree $GITHUB_HOME/practice"
 alias cdghpro="cd_down_tree $GITHUB_HOME/projects"
@@ -306,6 +352,8 @@ alias jst="cd_status $JAVASCRIPT_HOME"
 alias jpl="cd_pull $JAVASCRIPT_HOME"
 
 alias idj="idea $JAVASCRIPT_HOME"
+
+alias itj="iterm $JAVASCRIPT_HOME"
 
 alias cdj="cd_down_tree $JAVASCRIPT_HOME"
 alias cdjpr="cd_down_tree $JAVASCRIPT_HOME/practice"
@@ -320,6 +368,8 @@ alias opl="cd_pull $OCAML_HOME"
 
 alias ido="idea $OCAML_HOME"
 
+alias ito="iterm $OCAML_HOME"
+
 alias cdo="cd_down_tree $OCAML_HOME"
 alias cdopr="cd_down_tree $OCAML_HOME/practice"
 alias cdopro="cd_down_tree $OCAML_HOME/projects"
@@ -332,6 +382,8 @@ alias dtst="cd_status $DOTFILES_HOME"
 alias dtpl="cd_pull $DOTFILES_HOME"
 
 alias iddt="idea $DOTFILES_HOME"
+
+alias itdt="iterm $DOTFILES_HOME"
 
 alias cddt="cd_down_tree $DOTFILES_HOME"
 alias cddtpr="cd_down_tree $DOTFILES_HOME/practice"
@@ -346,6 +398,8 @@ alias dpl="cd_pull $DOTFILES_BASE_HOME"
 
 alias idd="idea $DOTFILES_BASE_HOME"
 
+alias itd="iterm $DOTFILES_BASE_HOME"
+
 alias cdd="cd_down_tree $DOTFILES_BASE_HOME"
 alias cddpr="cd_down_tree $DOTFILES_BASE_HOME/practice"
 alias cddpro="cd_down_tree $DOTFILES_BASE_HOME/projects"
@@ -358,6 +412,8 @@ alias hst="cd_status $HTML_HOME"
 alias hpl="cd_pull $HTML_HOME"
 
 alias idh="idea $HTML_HOME"
+
+alias ith="iterm $HTML_HOME"
 
 alias cdh="cd_down_tree $HTML_HOME"
 alias cdhpr="cd_down_tree $HTML_HOME/practice"
@@ -372,6 +428,8 @@ alias ppl="cd_pull $PYTHON_HOME"
 
 alias idp="idea $PYTHON_HOME"
 
+alias itp="iterm $PYTHON_HOME"
+
 alias cdp="cd_down_tree $PYTHON_HOME"
 alias cdppr="cd_down_tree $PYTHON_HOME/practice"
 alias cdppro="cd_down_tree $PYTHON_HOME/projects"
@@ -384,6 +442,8 @@ alias fcst="cd_status $FORCE_COM_HOME"
 alias fcpl="cd_pull $FORCE_COM_HOME"
 
 alias idfc="idea $FORCE_COM_HOME"
+
+alias itfc="iterm $FORCE_COM_HOME"
 
 alias cdfc="cd_down_tree $FORCE_COM_HOME"
 alias cdfcpr="cd_down_tree $FORCE_COM_HOME/practice"
@@ -398,6 +458,8 @@ alias apl="cd_pull $AWK_HOME"
 
 alias ida="idea $AWK_HOME"
 
+alias ita="iterm $AWK_HOME"
+
 alias cda="cd_down_tree $AWK_HOME"
 alias cdapr="cd_down_tree $AWK_HOME/practice"
 alias cdapro="cd_down_tree $AWK_HOME/projects"
@@ -410,6 +472,8 @@ alias orst="cd_status $ORBITER_HOME"
 alias orpl="cd_pull $ORBITER_HOME"
 
 alias idor="idea $ORBITER_HOME"
+
+alias itor="iterm $ORBITER_HOME"
 
 alias cdor="cd_down_tree $ORBITER_HOME"
 alias cdorpr="cd_down_tree $ORBITER_HOME/practice"
@@ -424,6 +488,8 @@ alias plpl="cd_pull $PERL_HOME"
 
 alias idpl="idea $PERL_HOME"
 
+alias itpl="iterm $PERL_HOME"
+
 alias cdpl="cd_down_tree $PERL_HOME"
 alias cdplpr="cd_down_tree $PERL_HOME/practice"
 alias cdplpro="cd_down_tree $PERL_HOME/projects"
@@ -436,6 +502,8 @@ alias ppst="cd_status $PLANET_PAIRS_HOME"
 alias pppl="cd_pull $PLANET_PAIRS_HOME"
 
 alias idpp="idea $PLANET_PAIRS_HOME"
+
+alias itpp="iterm $PLANET_PAIRS_HOME"
 
 alias cdpp="cd_down_tree $PLANET_PAIRS_HOME"
 alias cdpppr="cd_down_tree $PLANET_PAIRS_HOME/practice"
@@ -450,6 +518,8 @@ alias cspl="cd_pull $COFFEESCRIPT_HOME"
 
 alias idcs="idea $COFFEESCRIPT_HOME"
 
+alias itcs="iterm $COFFEESCRIPT_HOME"
+
 alias cdcs="cd_down_tree $COFFEESCRIPT_HOME"
 alias cdcspr="cd_down_tree $COFFEESCRIPT_HOME/practice"
 alias cdcspro="cd_down_tree $COFFEESCRIPT_HOME/projects"
@@ -462,6 +532,8 @@ alias gast="cd_status $GAME_HOME"
 alias gapl="cd_pull $GAME_HOME"
 
 alias idga="idea $GAME_HOME"
+
+alias itga="iterm $GAME_HOME"
 
 alias cdga="cd_down_tree $GAME_HOME"
 alias cdgapr="cd_down_tree $GAME_HOME/practice"
@@ -476,6 +548,8 @@ alias mrpl="cd_pull $WEBSITE_HOME"
 
 alias idmr="idea $WEBSITE_HOME"
 
+alias itmr="iterm $WEBSITE_HOME"
+
 alias cdmr="cd_down_tree $WEBSITE_HOME"
 alias cdmrpr="cd_down_tree $WEBSITE_HOME/practice"
 alias cdmrpro="cd_down_tree $WEBSITE_HOME/projects"
@@ -488,6 +562,8 @@ alias bbst="cd_status $BOUNCING_BALLS_HOME"
 alias bbpl="cd_pull $BOUNCING_BALLS_HOME"
 
 alias idbb="idea $BOUNCING_BALLS_HOME"
+
+alias itbb="iterm $BOUNCING_BALLS_HOME"
 
 alias cdbb="cd_down_tree $BOUNCING_BALLS_HOME"
 alias cdbbpr="cd_down_tree $BOUNCING_BALLS_HOME/practice"
@@ -502,6 +578,8 @@ alias cepl="cd_pull $COCOS_EXAMPLES_HOME"
 
 alias idce="idea $COCOS_EXAMPLES_HOME"
 
+alias itce="iterm $COCOS_EXAMPLES_HOME"
+
 alias cdce="cd_down_tree $COCOS_EXAMPLES_HOME"
 alias cdcepr="cd_down_tree $COCOS_EXAMPLES_HOME/practice"
 alias cdcepro="cd_down_tree $COCOS_EXAMPLES_HOME/projects"
@@ -514,6 +592,8 @@ alias ffst="cd_status $FLAPPY_FISH_HOME"
 alias ffpl="cd_pull $FLAPPY_FISH_HOME"
 
 alias idff="idea $FLAPPY_FISH_HOME"
+
+alias itff="iterm $FLAPPY_FISH_HOME"
 
 alias cdff="cd_down_tree $FLAPPY_FISH_HOME"
 alias cdffpr="cd_down_tree $FLAPPY_FISH_HOME/practice"
@@ -528,6 +608,8 @@ alias tepl="cd_pull $JS_TESTS_HOME"
 
 alias idte="idea $JS_TESTS_HOME"
 
+alias itte="iterm $JS_TESTS_HOME"
+
 alias cdte="cd_down_tree $JS_TESTS_HOME"
 alias cdtepr="cd_down_tree $JS_TESTS_HOME/practice"
 alias cdtepro="cd_down_tree $JS_TESTS_HOME/projects"
@@ -540,6 +622,8 @@ alias pist="cd_status $PI_HOME"
 alias pipl="cd_pull $PI_HOME"
 
 alias idpi="idea $PI_HOME"
+
+alias itpi="iterm $PI_HOME"
 
 alias cdpi="cd_down_tree $PI_HOME"
 alias cdpipr="cd_down_tree $PI_HOME/practice"
@@ -554,6 +638,8 @@ alias cspl="cd_pull $CSS_HOME"
 
 alias idcs="idea $CSS_HOME"
 
+alias itcs="iterm $CSS_HOME"
+
 alias cdcs="cd_down_tree $CSS_HOME"
 alias cdcspr="cd_down_tree $CSS_HOME/practice"
 alias cdcspro="cd_down_tree $CSS_HOME/projects"
@@ -567,6 +653,8 @@ alias rnpl="cd_pull $RUNNER_HOME"
 
 alias idrn="idea $RUNNER_HOME"
 
+alias itrn="iterm $RUNNER_HOME"
+
 alias cdrn="cd_down_tree $RUNNER_HOME"
 alias cdrnpr="cd_down_tree $RUNNER_HOME/practice"
 alias cdrnpro="cd_down_tree $RUNNER_HOME/projects"
@@ -579,6 +667,8 @@ alias cqst="cd_status $COQ_HOME"
 alias cqpl="cd_pull $COQ_HOME"
 
 alias idcq="idea $COQ_HOME"
+
+alias itcq="iterm $COQ_HOME"
 
 alias cdcq="cd_down_tree $COQ_HOME"
 alias cdcqpr="cd_down_tree $COQ_HOME/practice"

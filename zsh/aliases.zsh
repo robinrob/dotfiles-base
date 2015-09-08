@@ -124,6 +124,8 @@ alias libcode="grec libcode"
 
 alias lsv="ls ~/VirtualBox\ VMs"
 
+alias cdv="cd ~/VirtualBox\ VMs"
+
 alias pg="rebookmark page"
 
 alias viM="/usr/bin/vim"

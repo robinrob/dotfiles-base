@@ -1,4 +1,4 @@
-local +r Usage='grep_all <grep-expression> <find-expression> -w <where> -d <depth>'
+local +r Usage='grep_all <grep-expression> <find-expression> -w <where> -d <depth> -e <excludes>'
 
 ( [[ -z $1 ]] || [[ -z $2 ]] ) && red $Usage && return 1
 
@@ -13,14 +13,19 @@ do
 	case $opt in
     w) Where="$OPTARG" ;;
     d) MaxDepth="-maxdepth $OPTARG" ;;
-    # e) FindExpression="! -name $OPTARG ${=FindExpression}" ;;
+    e) local +r -a ExcludesList
+				ExcludesList=(${=OPTARG})
+				for exclude in $ExcludesList
+				do
+					Excludes="$Excludes ! -name $exclude"
+				done ;;
     *) red $Usage && return 1 ;;
 	esac
 done
 
 IFS=" 
 "
-for file in $(gfind $Where ${=MaxDepth} -follow -name "$FindExpression" -type f)
+for file in $(gfind $Where ${=MaxDepth} -follow ${=Excludes} -name "$FindExpression" -type f)
 do
   local +r Result
   Result=$(ggrep -i $GrepExpression $file)
