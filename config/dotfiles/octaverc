@@ -1,2 +1,12 @@
+## System-wide startup file for Octave.
+##
+## This file should contain any commands that should be executed each
+## time Octave starts for every user at this site.
+
+setenv('HOME', '/usr/local/Cellar/octave/4.0.0/');
+cd ~/
+
 setenv ("GNUTERM", "X11")
-PS1('❯❯ ')
+PS1(' ⚡  ')
+
+addpath("~/octave");
