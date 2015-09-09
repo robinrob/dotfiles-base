@@ -258,9 +258,9 @@ alias adobe="$ADOBE_PATH"
 
 alias m="$EDITOR"
 
-alias e="$EDITOR"
+# alias e="$EDITOR"
 
-alias v="$VISUAL"
+# alias v="$VISUAL"
 
 
 ###############################################################################
@@ -708,6 +708,8 @@ alias rkp="rake_do git:push"
 ###############################################################################
 # Files
 ###############################################################################
+alias moct="m ~/.octaverc"
+
 alias mand="$EDITOR frameworks/runtime-src/proj.android/AndroidManifest.xml"
 
 alias min="$EDITOR $DOTFILES_BASE_HOME/install.zsh"
@@ -1394,8 +1396,6 @@ alias een="edit_env"
 
 alias ppe="pretty_print_env"
 
-alias h="head"
-
 alias t="touch"
 
 alias dsp="despace"
@@ -1481,3 +1481,23 @@ alias afind="libfind_s $AWK_HOME"
 alias zshfind="file_grep $HOME/.zshrc"
 
 alias sshf="file_grep $HOME/.ssh/config"
+
+
+###############################################################################
+# Fundamental constants
+###############################################################################
+alias e="copy_print 2.71828182845904523536028747135266249775724709369995"
+
+alias PI="copy_print 3.14159265358979323846264338327950288419716939937510"
+
+
+###############################################################################
+# Physical constants
+###############################################################################
+alias G="copy_print '6.674e−11'"
+
+alias k="copy_print '1.38e-23'"
+
+alias N="copy_print '6.022e23'"
+
+alias h="copy_print '6.626e-34'"
