@@ -1368,7 +1368,9 @@ alias td="todo"
 
 alias rld="reload_functions"
 
-alias gral="grep_all"
+alias gral="grep_all_insensitive"
+
+alias graL="grep_all"
 
 alias sal="sed_all"
 

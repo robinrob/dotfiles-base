@@ -1,4 +1,4 @@
-local +r Usage='grep_recursive -g <regex> -w <location> -d <depth> -i'
+local +r Usage='grep_recursive -g <regex> -w <location> -d <depth> -i (case-insensitive grep)'
 
 [[ -z $1 ]] && red $Usage && return 1
 
