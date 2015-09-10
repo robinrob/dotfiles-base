@@ -1,7 +1,19 @@
-case $# in
-  0)
-    get_record libcode ;;
-  *)
-    browser "http://capitadiscovery.co.uk/edinburgh/items?query=$(urlencode $@)" ;;
-esac
+local +r Query
+local +r Author
+local +r Title
+local +r Subject
+local +r Url
 
+while getopts :q:a:t:s: opt
+do
+  case $opt in
+    q) Query="$OPTARG" ;;
+    a) Author="AND author:($OPTARG)" ;;
+    t) Title="AND title:($OPTARG)" ;;
+    s) Subject="AND subject:($OPTARG)" ;;
+  esac
+done
+
+Url="http://capitadiscovery.co.uk/edinburgh/items?query=$(urlencode $Query $Author $Title $Subject)"
+
+browser $Url
