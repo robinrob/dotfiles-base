@@ -266,6 +266,8 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdoct="cd $OCTAVE_HOME"
+
 alias cdang="cd $JS_HOME/practice/angular-blog"
 
 alias cdnpm="cd $NPMLIB_HOME"
@@ -708,7 +710,9 @@ alias rkp="rake_do git:push"
 ###############################################################################
 # Files
 ###############################################################################
-alias moct="m ~/.octaverc"
+alias coct="cat ~/.octaverc"
+
+alias moct="$EDITOR ~/.octaverc"
 
 alias mand="$EDITOR frameworks/runtime-src/proj.android/AndroidManifest.xml"
 
