@@ -6,7 +6,11 @@
 setenv('HOME', '/usr/local/Cellar/octave/4.0.0/');
 cd ~/
 
-setenv ("GNUTERM", "X11")
 PS1('⚡  ')
 
 addpath("~/octave");
+
+addpath('scripts')
+
+setenv("GNUTERM", "X11")
+# setenv("GNUTERM","qt")

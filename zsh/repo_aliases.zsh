@@ -223,6 +223,21 @@ alias itf="iterm $FISH_HOME"
 alias cdf="cd_down_tree $FISH_HOME"
 alias cdfpr="cd_down_tree $FISH_HOME/practice"
 alias cdfpro="cd_down_tree $FISH_HOME/projects"
+alias ocsv="cd_save $OCT_HOME"
+
+alias occm="cd_commit $OCT_HOME"
+
+alias ocst="cd_status $OCT_HOME"
+
+alias ocpl="cd_pull $OCT_HOME"
+
+alias idoc="idea $OCT_HOME"
+
+alias itoc="iterm $OCT_HOME"
+
+alias cdoc="cd_down_tree $OCT_HOME"
+alias cdocpr="cd_down_tree $OCT_HOME/practice"
+alias cdocpro="cd_down_tree $OCT_HOME/projects"
 alias prsv="cd_save $PROG_HOME"
 
 alias prcm="cd_commit $PROG_HOME"

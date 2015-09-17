@@ -1444,6 +1444,10 @@ alias brin="brew info"
 
 alias brs="brew search"
 
+alias bro="brew options"
+
+alias brv="brew versions"
+
 alias bkmk="bookmark"
 
 alias wbkmk="work_bookmark"

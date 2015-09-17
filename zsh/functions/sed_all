@@ -4,7 +4,7 @@ local +r Where='.'
 local +r MaxDepth
 local +r Inplace
 
-while getopts :s:f:w:d:i: name
+while getopts :s:f:w:d:i name
 do
 	case $name in
 		s) SedExpression="$OPTARG" ;;
@@ -12,10 +12,13 @@ do
     w) Where="$OPTARG" ;;
     d) MaxDepth="-maxdepth $OPTARG" ;;
     i) Inplace="-i" ;;
-    *) red 'sed_all -s <sed-expression> -f <find-expression> -w <where> -d <depth>'
+    *) red 'sed_all -s <sed-expression> -f <find-expression> -w <where> -d <depth>' ;;
 	esac
 done
 
+print "SedExpression: $SedExpression"
+print "FindExpression: $FindExpression"
+print "Where: $Where"
 
 IFS=" 
 "
@@ -24,7 +27,7 @@ do
   # Single-quotes around the $SedExpression are critical here
   # local +r SedSubExpr = (${(s///SedExpression)})
   # print $SedSubExpr
-  cmd="gsed $Inplace '$SedExpression' $file"
+  cmd="gsed $Inplace \"$SedExpression\" $file"
   yellow $cmd
   eval $cmd
 done

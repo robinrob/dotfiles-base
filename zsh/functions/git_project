@@ -1,1 +1,1 @@
-git config --get remote.origin.url | ggrep -Po '(?<=/)([a-zA-Z_.-]+)(?=\.git)?' | gsed 's/\.git//g'
+git config --get remote.origin.url | ggrep -Po '(?<=/)([a-zA-Z_.-]+)(?=\.git)?' | gsed 's/\.git$//g'

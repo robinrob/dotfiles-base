@@ -7,7 +7,8 @@
 ###############################################################################
 export EDITOR="mvim"
 
-export VISUAL=vim
+# export VISUAL=vim
+export VISUAL=mvim
 
 ###############################################################################
 # Colors
@@ -75,7 +76,7 @@ fi
 
 
 ###############################################################################
-# Code Repos
+# Code repos
 ###############################################################################
 export PROGRAMMING_HOME="$HOME/Programming/robin"
 
@@ -245,6 +246,8 @@ export LOCAL_HOME=$RUBY_HOME/projects/local
 export ORIGINS_HOME=$JS_HOME/projects/fundamental-origins
 
 export ORIGINS_DEV_HOME=$JS_HOME/projects/fundamental-origins-dev
+
+export OCT_HOME=$PROG_HOME/octave
 
 
 ###############################################################################
