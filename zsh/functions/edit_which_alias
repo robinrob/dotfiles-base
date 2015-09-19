@@ -1,0 +1,3 @@
+local +r Alias=$1
+
+edit_function $(which $Alias | ggrep -Po "(?<=$Alias\: aliased to )([a-z_]+)")

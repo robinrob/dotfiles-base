@@ -60,3 +60,4 @@ $ZDOT_HOME/osx.zsh
 
 
 green "Done."
+wank

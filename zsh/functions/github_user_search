@@ -1,4 +1,4 @@
-case $#@ in
+case $# in
   1) browser "https://github.com/search?q=user%3Arobinrob+$(urlencode $1)&type=Repositories" ;;
   *) local +r User=$1; shift; browser "https://github.com/$User?query=$(urlencode $@)"; print 2 ;;
 esac

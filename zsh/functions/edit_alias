@@ -1,0 +1,12 @@
+local +r Usage="edit_alias [alias name]"
+
+(( $# > 2 )) && red $Usage && exit 1
+
+case $# in
+  0)
+    $EDITOR $ZDOT_HOME/aliases.zsh ;;
+  1)
+    edit_which_alias $1 ;;
+  *)
+    red $Usage;
+esac

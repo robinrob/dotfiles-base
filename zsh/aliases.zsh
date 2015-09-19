@@ -858,7 +858,7 @@ alias password="ruby $RUBY_HOME/projects/rbpassword/rbpassword.rb"
 
 alias rnsall="cd_down_tree $SCREENSHOTS_HOME && despace"
 
-alias mal="$EDITOR $ZDOT_HOME/aliases.zsh"
+alias mal="edit_alias"
 
 alias cal="cat $ZDOT_HOME/aliases.zsh"
 
@@ -1229,6 +1229,8 @@ alias wpb="which_pbcopy"
 alias mvt="move_tags"
 
 alias mfn="edit_function"
+
+alias mwa="edit_which_alias"
 
 alias hpb="head_pbcopy"
 

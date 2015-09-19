@@ -1,4 +1,4 @@
-case $#@ in
+case $# in
   0) browser "https://bitbucket.org/robinrob" ;;
   *) browser "https://bitbucket.org/repo/all?name=$(urlencode $@)" ;;
 esac
