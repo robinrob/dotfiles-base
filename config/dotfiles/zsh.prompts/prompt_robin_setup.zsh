@@ -2,19 +2,19 @@
 
 function prompt_robin_precmd {
   # Check for untracked files or updated submodules since vcs_info does not.
-  if [[ -n $(git ls-files --other --exclude-standard 2> /dev/null) ]]; then
-    branch_format="%{$(brightwhite)%}(%{$(cyan)%}%b%f%u%c%{$(red)%}●%{$(brightwhite)%})%f "
-  else
+  if [[ -z $(git ls-files --other --exclude-standard 2> /dev/null) ]]; then
     branch_format="%{$(brightwhite)%}(%{$(cyan)%}%b%f%u%c%{$(brightwhite)%})%f "
+  else
+    branch_format="%{$(brightwhite)%}(%{$(cyan)%}%b%f%u%c%{$(red)%}●%{$(brightwhite)%})%f "
   fi
 
   zstyle ':vcs_info:*:prompt:*' formats "${branch_format}"
 
   vcs_info 'prompt'
 
-  # if (( $+functions[python-info] )); then
-    # python-info
-  # fi
+  if (( $+functions[python-info] )); then
+    python-info
+  fi
 
   # Get ruby information
   # if (( $+functions[ruby-info] )); then

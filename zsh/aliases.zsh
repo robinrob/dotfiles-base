@@ -210,6 +210,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias py="python"
+
 alias oct="octave"
 
 alias b2d="boot2docker"
@@ -1084,11 +1086,13 @@ alias req="ls_js_require"
 
 alias adbr="adb_restart"
 
-alias logj="js_console_log"
+alias logj="js_log"
 
-alias logjs="js_console_log_json"
+alias logjo="js_log_object"
 
-alias logp="log_python"
+alias logp="python_log"
+
+alias logpo="python_log_object"
 
 alias lod="lodash_doc_search"
 

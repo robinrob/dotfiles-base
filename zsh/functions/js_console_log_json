@@ -1,3 +1,0 @@
-local +r Variable=$1
-
-copy_print "\nconsole.log('$Variable: ' + JSON.stringify($Variable, null, '\\\t'))"
