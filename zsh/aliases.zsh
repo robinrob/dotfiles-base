@@ -52,7 +52,7 @@ alias more='less'
 
 alias mkdir='mkdir -pv'
 
-alias w="which_wrap"
+alias w="which_pro"
 
 alias lsn="/usr/local/bin/gls --color=none"
 
