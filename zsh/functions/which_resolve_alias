@@ -2,24 +2,23 @@ local +r Alias=$1
 
 local +r ResolvedAlias="$(resolve_alias $Alias)"
 
-local +r Which="$(which $ResolvedAlias)"
 
-local +r BadResult=$(print $Which | ggrep "$ResolvedAlias not found")
-
-local +r ErrorMsg="$(yellow $Alias) $(red 'resolves to an unknown command!')"
-
-
-# alias resolved to nothing
-if is_empty "$Which"
+# $Alias is not an alias
+if ! resolve_alias $Alias > /dev/null
 then
-  print $ErrorMsg
+  print "$(yellow $Alias) $(red is not an alias\!)"
 
-# `which` resolves to no command
-elif is_not_empty $BadResult
+# $ResolvedAlias resolves to a command, function or other 'whichable'
+# e.g. $Alias -> $ResolvedAlias -> cat
+# e.g. $Alias -> $ResolvedAlias -> prompt
+elif which_wrap $ResolvedAlias > /dev/null
 then
-  print $ErrorMsg
+  which $ResolvedAlias
 
-# `which` resolves to a command
-else
-  print $Which
+# $ResolvedAlias is a binary or command with options
+# e.g. /usr/bin/fasd
+# e.g. fasd -a
+else 
+  print $ResolvedAlias
 fi
+

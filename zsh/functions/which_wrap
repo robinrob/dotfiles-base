@@ -1,0 +1,8 @@
+local +r Thing=$1
+
+if [[ -n $Thing ]]
+then
+  which $Thing
+else
+  return 1
+fi

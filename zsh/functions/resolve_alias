@@ -1,10 +1,11 @@
 local +r Alias=$1
 
-local +r Result=$(which_alias $Alias)
+local +r Result="$(which_alias $Alias)"
 
-if [[ -n $(which_alias $Result) ]]
+if which_alias $Result > /dev/null
 then
   Result=$(resolve_alias $Result)
 fi
 
 print $Result
+( [[ -n $Result ]] && return 0 ) || return 1
