@@ -1,6 +1,6 @@
 if [[ -z $(print "$@" | tr -d ' \t\n\r\f') ]]
 then
-  print $TRUE
+  return 0
 else
-  print $FALSE
+  return 1
 fi

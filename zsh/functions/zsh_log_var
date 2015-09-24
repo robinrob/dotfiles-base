@@ -1,0 +1,3 @@
+local +r Var=$1
+
+copy_print "print \"$Var: _\${$Var}_\""

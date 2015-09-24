@@ -1102,6 +1102,10 @@ alias logp="python_log"
 
 alias logpo="python_log_object"
 
+alias logz="zsh_log"
+
+alias logzv="zsh_log_var"
+
 alias lod="lodash_doc_search"
 
 alias asda="asda_search"

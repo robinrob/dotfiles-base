@@ -1,19 +1,21 @@
 local +r Alias=$1
 
-local +r Which="$(which $(resolve_alias $Alias))"
+local +r ResolvedAlias="$(resolve_alias $Alias)"
 
-local +r BadResult="$(print $Which | ggrep 'not found')"
+local +r Which="$(which $ResolvedAlias)"
+
+local +r BadResult=$(print $Which | ggrep "$ResolvedAlias not found")
 
 local +r ErrorMsg="$(yellow $Alias) $(red 'resolves to an unknown command!')"
 
 
-# `which` is empty
-if [[ -z $Which ]]
+# alias resolved to nothing
+if is_empty "$Which"
 then
   print $ErrorMsg
 
 # `which` resolves to no command
-elif [[ -n $BadResult ]]
+elif is_not_empty $BadResult
 then
   print $ErrorMsg
 
