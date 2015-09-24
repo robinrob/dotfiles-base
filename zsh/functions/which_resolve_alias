@@ -11,7 +11,7 @@ then
 # $ResolvedAlias resolves to a command, function or other 'whichable'
 # e.g. $Alias -> $ResolvedAlias -> cat
 # e.g. $Alias -> $ResolvedAlias -> prompt
-elif which_wrap $ResolvedAlias > /dev/null
+elif which_pro $ResolvedAlias > /dev/null
 then
   which $ResolvedAlias
 
