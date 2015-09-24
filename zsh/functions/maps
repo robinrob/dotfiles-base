@@ -1,1 +1,10 @@
-browser "https://www.google.co.uk/maps/search/$(urlencode $@)"
+local +r Search
+
+case $# in
+  0)
+    Search="$POSTCODE" ;;
+  *)
+    Search="$@"
+esac
+
+browser "https://www.google.co.uk/maps/search/$(urlencode $Search)"

@@ -649,6 +649,10 @@ alias grs="git remote show"
 
 alias grao="git remote add origin"
 
+alias grrm="git remote rm"
+
+alias grrmo="git remote rm origin"
+
 alias gplo="git pull origin"
 
 alias gpom="git push origin master"

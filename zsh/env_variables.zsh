@@ -46,6 +46,8 @@ export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/l
 ###############################################################################
 export NPMLIB_HOME=/usr/local/lib/node_modules
 
+export NPM_PACKAGES="$HOME/.npm-packages"
+
 
 ###############################################################################
 # Host-specific variables
@@ -481,3 +483,8 @@ export USE_PYTHON=1
 export USE_RUBY=1
 
 export SAYCMD_OVERRIDE=0
+
+###############################################################################
+# Misc
+###############################################################################
+export POSTCODE='EH4 3BT'
