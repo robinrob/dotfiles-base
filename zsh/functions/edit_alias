@@ -6,7 +6,7 @@ case $# in
   0)
     $EDITOR $ZDOT_HOME/aliases.zsh ;;
   1)
-    edit_which_alias $1 ;;
+    edit_resolve_alias $1 ;;
   *)
     red $Usage;
 esac

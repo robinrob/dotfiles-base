@@ -1080,6 +1080,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias wal="which_resolve_alias"
+
+alias ral="resolve_alias"
+
 alias icon="glyphicon_search"
 
 alias link="link_script"

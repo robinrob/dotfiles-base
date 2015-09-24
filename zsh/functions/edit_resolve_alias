@@ -1,0 +1,3 @@
+local +r Alias=$1
+
+edit_function $(resolve_alias $Alias)

@@ -1,0 +1,10 @@
+local +r Alias=$1
+
+local +r Result=$(which_alias $Alias)
+
+if [[ -n $(which_alias $Result) ]]
+then
+  Result=$(resolve_alias $Result)
+fi
+
+print $Result
