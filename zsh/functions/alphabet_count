@@ -2,7 +2,7 @@ ITEMS=($*)
 
 COL="%-3s"
 
-typeset -A counts
+local -A counts
 
 for item in $ITEMS
 do
@@ -17,24 +17,19 @@ done
 
 
 ALPHABET=(a b c d e f g h i j k l m n o p q r s t u v w x y z)
-line=""
+local +r Line1=""
+local +r Line2=""
 for char in $ALPHABET
 do
   if [[ -n $counts[$char] ]]
   then
-    line="${line}$(printf $COL $char)"
+    Line1="${Line1}$(printf $COL $char)"
+    Line2="${Line2}$(yellow)$(printf $COL $counts[$char])"
+  else
+    Line1="${Line1}$(printf $COL $char)"
+    Line2="${Line2}$(red)$(printf $COL 0)"
   fi
 done
-green $line
 
-
-line=""
-for char in $ALPHABET
-do
-  if [[ -n $counts[$char] ]]
-  then
-    line="${line}$(printf $COL $counts[$char])"
-  fi
-done
-yellow $line
-
+green $Line1
+print $Line2
