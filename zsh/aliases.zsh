@@ -1338,7 +1338,7 @@ alias dLs="delete_list_item"
 
 alias nls="new_list"
 
-# alias dlls="delete_list"
+alias rmls="remove_list"
 
 alias glst="get_named_list_item"
 

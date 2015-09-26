@@ -1,4 +1,8 @@
+local +r ListjPath
+
 for list in $*
 do
-  touch $LISTS_HOME/$list.txt
+  ListPath="$LISTS_HOME/$list.txt"
+  touch $ListPath
+  print "$(red Created list:) $(yellow $ListPath)"
 done
