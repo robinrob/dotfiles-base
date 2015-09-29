@@ -1,9 +1,8 @@
 if (( $# > 0))
 then
-  git push origin $@
+  git pull origin $@
 
 else
   cmd="git pull origin $(git_branch)"
-  green $cmd
-  eval $cmd
+  green_eval $cmd
 fi

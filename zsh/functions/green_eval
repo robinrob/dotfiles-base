@@ -1,0 +1,4 @@
+local +r Cmd="$*"
+
+green $Cmd
+eval $Cmd

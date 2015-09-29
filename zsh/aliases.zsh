@@ -536,6 +536,8 @@ alias lfn="lsfn"
 
 alias ctfn="ls $FUNCS_HOME | wc -l"
 
+alias wcfn="wc -l $FUNCS_HOME/*"
+
 alias grfn="grep_functions"
 
 alias js="jekyll serve"
