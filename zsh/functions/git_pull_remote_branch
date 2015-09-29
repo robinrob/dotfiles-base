@@ -1,4 +1,4 @@
-local +r Remotej=$1
+local +r Remote=$1
 local +r Branch=$2
 shift 2
 local +r Args="$*"
