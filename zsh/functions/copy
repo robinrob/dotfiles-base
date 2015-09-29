@@ -1,1 +1,1 @@
-printf $@ | pbcopy
+printf "$*" | pbcopy

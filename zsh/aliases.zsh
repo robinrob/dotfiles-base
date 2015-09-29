@@ -388,6 +388,10 @@ alias cdlists="cd_down_tree $LISTS_HOME"
 ###############################################################################
 # Development operations
 ###############################################################################
+alias gts="gulp test-server"
+
+alias gpr="gulp protractor"
+
 alias ven="virtualenv"
 
 alias ut="utop"
@@ -455,6 +459,8 @@ alias nu="sudo npm uninstall"
 alias nis="npm_install_save"
 
 alias nig="sudo npm install -g"
+
+alias nsh="npm shrinkwrap --dev"
 
 alias bo="bower"
 
@@ -567,6 +573,8 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
+alias grb="git rebase"
+
 alias gco="git_config"
 
 alias gcog="git_config_global"
@@ -1078,6 +1086,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gpo="git_push_origin"
+
+alias gplo="git_pull_origin"
+
 alias wal="which_resolve_alias"
 
 alias ral="resolve_alias"

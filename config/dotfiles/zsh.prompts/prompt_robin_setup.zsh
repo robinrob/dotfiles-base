@@ -12,14 +12,14 @@ function prompt_robin_precmd {
 
   vcs_info 'prompt'
 
-  if (( $+functions[python-info] )); then
-    python-info
-  fi
+  # if (( $+functions[python-info] )); then
+    # python-info
+  # fi
 
   # Get ruby information
-  if (( $+functions[ruby-info] )); then
-    ruby-info
-  fi
+  # if (( $+functions[ruby-info] )); then
+    # ruby-info
+  # fi
 }
 
 function prompt_robin_setup {
@@ -72,7 +72,7 @@ function prompt_robin_setup {
 
   PS1="${SEP}$(magandaprompt)%n$(brightwhiteprompt)@%{$HOSTCOLOR%}%B%m%b%f $(brightyellowprompt)\$(dir)/ \${vcs_info_msg_0_}$LIGHTNING$(defaultprompt)  "
 
-  RPS1="\$(gdate +'%H:%M:%S') %20<...<$(defaultprompt)\$(pwd)% $(redprompt)%(?.. (%?%))$(defaultprompt) %(2L. +%L.)%"
+  # RPS1="\$(gdate +'%H:%M:%S') %20<...<$(defaultprompt)\$(pwd)% $(redprompt)%(?.. (%?%))$(defaultprompt) %(2L. +%L.)%"
  
   # Line prefix displayed when waiting for input
   PS2="Waiting for input fool! >> "

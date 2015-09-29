@@ -4,5 +4,5 @@ for list in $*
 do
   ListPath="$LISTS_HOME/$list.txt"
   touch $ListPath
-  print "$(red Created list:) $(yellow $ListPath)"
+  print "$(green Created list:) $(yellow $ListPath)"
 done
