@@ -1090,7 +1090,9 @@ alias ph="phone"
 ###############################################################################
 alias gpo="git_push_origin"
 
-alias gplo="git_pull_origin"
+alias gpl="git_pull_branch"
+
+alias gplo="git_pull_origin_branch"
 
 alias wal="which_resolve_alias"
 

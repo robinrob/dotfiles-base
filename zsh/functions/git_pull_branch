@@ -1,0 +1,7 @@
+if (( $# > 0 ))
+then
+  git_pull_remote_branch $DEFAULT_GIT_REMOTE $@
+
+else
+  git_pull_remote_branch $DEFAULT_GIT_REMOTE $(git_branch)
+fi

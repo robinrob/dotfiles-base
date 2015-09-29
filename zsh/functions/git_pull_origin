@@ -1,8 +1,0 @@
-if (( $# > 0))
-then
-  git pull origin $@
-
-else
-  cmd="git pull origin $(git_branch)"
-  green_eval $cmd
-fi
