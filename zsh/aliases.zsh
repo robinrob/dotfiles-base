@@ -1088,6 +1088,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias nnb="nos_new_bug"
+
+alias nnf="nos_new_feature"
+
 alias gpo="git_push_origin"
 
 alias gpl="git_pull_branch"
