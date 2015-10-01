@@ -1,0 +1,9 @@
+while getopts :s:w: opt
+do
+  case $opt in
+    s) local +r Search="$OPTARG" ;;
+    w) local +r Where="$OPTARG" ;;
+  esac
+done
+
+browser "http://www.yelp.co.uk/search?find_desc=$(urlencode $Search)&find_loc=$(urlencode $Where)&ns=1"

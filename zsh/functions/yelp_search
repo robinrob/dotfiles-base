@@ -1,4 +1,0 @@
-local +r Search="$*[1,-2]"
-local +r Where=$*[-1]
-
-browser "http://www.yelp.co.uk/search?find_desc=$(urlencode $Search)&find_loc=$(urlencode $Where)&ns=1"
