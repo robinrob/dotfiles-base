@@ -1,0 +1,3 @@
+local +r Term=$1
+
+dict $Term | grep "$Term\|$"

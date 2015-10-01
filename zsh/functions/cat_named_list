@@ -1,3 +1,5 @@
-LIST=$1
+local +r List=$1
+local +r ListPath=$(find_first_named_list $List)
 
-cat $LISTS_HOME/$LIST.txt
+green "$(basename $ListPath):"
+cat $ListPath

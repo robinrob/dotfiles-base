@@ -1,3 +1,5 @@
-local +r List=$1.txt
+local +r List=$1
+local +r ListPath=$(find_first_named_list $List)
+local +r Item=$2
 
-get_item $2 $LISTS_HOME/$List
+get_item $Item $ListPath

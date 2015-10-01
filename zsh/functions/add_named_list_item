@@ -1,12 +1,9 @@
 local +r List=$1; shift
-local +r ListPath=$LISTS_HOME/${List}.txt
-local +A Args
-Args=($*)
-
+local +r ListPath=$(find_first_named_list $List)
 
 if ! [[ -f $ListPath ]]
 then
   touch $ListPath
 fi
 
-add_list_item $ListPath $Args
+add_list_item $ListPath $@

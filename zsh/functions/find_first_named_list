@@ -1,0 +1,3 @@
+local +r List=$1
+
+gfind $LISTS_HOME/${List}*.txt | head -1
