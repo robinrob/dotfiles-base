@@ -2,14 +2,13 @@ VAL=$1
 SET=$2
 SET=("${(s/ /)SET}")
 
-found="no"
+local +r ExitCode=1
 for item in $SET
 do
   if [[ $item == $VAL ]]
   then
-    found="yes"
+    ExitCode=0
   fi
 done
 
-print $found
-
+return ExitCode

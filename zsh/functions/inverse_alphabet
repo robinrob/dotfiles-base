@@ -7,7 +7,7 @@ typeset -U inverse
 
 for char in $alphabet
 do
-  if [[ $(is_in_set $char $letters) == "no" ]]
+  if ! $(is_in_set $char $letters)
   then
     inverse=($inverse $char)
   fi
