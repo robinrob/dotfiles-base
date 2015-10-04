@@ -1088,6 +1088,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias amz="search_amazon"
+
+alias amzc="search_amazon_com"
+
 alias dic="search_dictionary"
 
 alias nnb="nos_new_bug"
