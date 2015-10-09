@@ -272,7 +272,7 @@ export EXPENSES_HOME=$RECEIPTS_HOME
 # This must NOT be wrapped in quotes or the whitespace-escaping in the path does not work!!
 export CAMERA_HOME="$FILES_HOME/Camera\ Uploads"
 
-export TRASH_HOME=$HOME/.Trash
+export TRASH_HOME="$HOME/.Trash"
 
 export CANADA_HOME="$MERCURY_HOME/docs/IMPORTANT/canada"
 

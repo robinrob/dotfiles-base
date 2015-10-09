@@ -42,7 +42,7 @@ alias g="grep"
 
 alias cwd="pwd"
 
-alias dt="date"
+alias dt="copy_print_eval \"gdate +'%Y-%m-%d %H:%M:%S.%6N'\""
 
 alias crl="crontab -l"
 
@@ -74,6 +74,8 @@ alias shell="print $SHELL"
 ###############################################################################
 # GNU commands
 ###############################################################################
+alias date="gdate"
+
 alias cp="nocorrect gcp -i"
 
 alias kill="gkill"
