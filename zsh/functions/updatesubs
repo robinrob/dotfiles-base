@@ -1,2 +1,0 @@
-git submodule foreach --recursive "$(git commit -am 'Updates.' && git push) || exit 0"
-
