@@ -108,6 +108,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias recral="reload; recreate_all_repo_aliases"
+
 alias limmy="tube \"limmy's show\""
 
 alias obk="open_named_list_item books"
@@ -577,6 +579,8 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
+alias gsd="git submodule deinit"
+
 alias grb="git rebase"
 
 alias gco="git_config"
@@ -1090,6 +1094,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias grgm="grep_gitmodules"
+
+alias sf="safari"
+
 alias amz="search_amazon"
 
 alias amzc="search_amazon_com"
@@ -1293,8 +1301,6 @@ alias sbr="set_browser"
 alias bgr="background"
 
 alias lsdir="ls_dirname"
-
-alias sf="salesforce_search"
 
 alias sfc="salesforce_class_search"
 

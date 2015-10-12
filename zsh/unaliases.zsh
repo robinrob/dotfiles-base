@@ -2,84 +2,80 @@
 # Un-Aliases
 ###############################################################################
 
-unalias cp 2>/dev/null
+function unal {
+  unalias $1 2> /dev/null
+}
 
-unalias todo 2>/dev/null
+unal cp
 
-unalias gr 2> /dev/null
+unal todo
 
-unalias cdb 2> /dev/null
+unal gr
 
-unalias gam 2> /dev/null
+unal cdb
 
-# unalias gcl 2> /dev/null
+unal gam
 
-unalias c 2> /dev/null
+unal c
 
-unalias gb 2> /dev/null
+unal gb
 
-unalias gi 2> /dev/null
+unal gi
 
-# unalias e 2> /dev/null
+unal gra
 
-unalias gra 2> /dev/null
+unal gbd
 
-unalias gbd 2> /dev/null
+unal g
 
-unalias g 2> /dev/null
+unal sd
 
-unalias sd 2> /dev/null
+unal ga
 
-# unalias gg 2> /dev/null
+unal d
 
-unalias ga 2> /dev/null
+unal s
 
-unalias d 2> /dev/null
+unal gst
 
-unalias s 2> /dev/null
+unal grs
 
-unalias gst 2> /dev/null
+unal sf
 
-unalias grs 2> /dev/null
+unal lsg
 
-# unalias lc 2> /dev/null
+unal ls
 
-unalias sf 2> /dev/null
+unal rm
 
-# unalias cd > /dev/null 2> /dev/null 2> /dev/null
+unal gpl
 
-unalias lsg 2> /dev/null
+unal cd
 
-unalias ls 2> /dev/null
+unal p
 
-unalias rm 2> /dev/null
+unal gh
 
-unalias gpl 2> /dev/null
+unal grr
 
-unalias cd 2> /dev/null
+unal grc
 
-unalias p 2> /dev/null
+unal gg
 
-unalias gh 2> /dev/null
+unal cls
 
-unalias grr 2> /dev/null
+unal gcam
 
-unalias grc 2> /dev/null
+unal gcp
 
-unalias gg 2> /dev/null
+unal gld
 
-unalias cls 2> /dev/null
+unal gco
 
-unalias gcam 2> /dev/null
+unal gRm
 
-unalias gcp 2> /dev/null
+unal git
 
-unalias gld 2> /dev/null
+unal grb
 
-unalias gco 2> /dev/null
-
-unalias gRm 2> /dev/null
-
-unalias git 2> /dev/null
-
-unalias grb 2> /dev/null
+unal gsd

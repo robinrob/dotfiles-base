@@ -221,7 +221,7 @@ export COCOS_EXAMPLES_HOME="$JS_HOME/projects/cocos-examples"
 
 export RUNNER_HOME="$JS_HOME/projects/runner"
 
-export ORBITER_HOME="$JS_HOME/projects/orbiter-lite"
+export ORBITER_HOME="$JS_HOME/projects/orbiter"
 
 export GAME_HOME=$COCOS_EXAMPLES_HOME
 
