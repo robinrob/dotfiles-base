@@ -1,4 +1,12 @@
 local +r Target=$*[-1]
 local +r Args=$*[1,-2]
 
-ls $Args $PWD/$Target
+
+local +r LsArgs=""
+
+if [[ -d $Target ]]
+then
+  LsArgs="-d"
+fi
+
+/usr/local/bin/gls $LsArgs $Args $PWD/$Target

@@ -24,7 +24,7 @@ alias p="print"
 
 alias dal="delete_alias"
 
-alias unal="unalias_aliases"
+alias unaL="unalias_aliases"
 
 alias timezones="sudo systemsetup -listtimezones"
 
@@ -74,6 +74,8 @@ alias shell="print $SHELL"
 ###############################################################################
 # GNU commands
 ###############################################################################
+alias glS="/usr/local/bin/gls"
+
 alias date="gdate"
 
 alias cp="nocorrect gcp -i"
@@ -1312,9 +1314,7 @@ alias sfo="salesforce_object_search"
 
 alias bk="safari_books_search"
 
-alias sfs="bk"
-
-alias rp="source_repo"
+alias rp="open_source_repo_path"
 
 alias kps="kill_processes"
 
@@ -1479,6 +1479,8 @@ alias swr="switch_ruby"
 alias brl="brew list"
 
 alias brln="brew link"
+
+alias brul="brew unlink"
 
 alias bri="brew install"
 

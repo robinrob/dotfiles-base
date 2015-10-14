@@ -1,0 +1,26 @@
+local +r File=$1j
+
+while getopts :f:b: opt
+do
+  case $opt in
+    f)
+      File=$OPTARG ;;
+  esac
+done
+
+local +r Url=$(repo_url $@) 2> /dev/null
+
+
+if [[ -n "$Url" ]]
+then
+  if [[ -n $File ]]
+  then
+    Url="$Url/$File"
+  fi
+  print "$(green Repo found:) $(yellow $Url)"
+  print "$(green Opening) $(yellow $Url) $(green '...')"
+  browser $Url
+else
+  red "Not a git repository configured with a remote url."
+fi
+

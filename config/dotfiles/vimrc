@@ -158,7 +158,7 @@ set guifont=Hack:h14
 
 "Reverse meaning of /g option in search-replace - i.e. it defaults to global,
 "but first-occurrence behaviour can be selected with /g."
-set gdefault
+" set gdefault
 
 
 augroup EnableSyntaxHighlighting

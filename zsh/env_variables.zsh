@@ -430,7 +430,7 @@ export INTELLIJ_COLORS="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/
 ###############################################################################
 # Cocos
 ###############################################################################
-export COCOS_HOME="/usr/local/Library/cocos2d-js-v3.2"
+export COCOS_HOME="/usr/local/Library/cocos2d-x-3.8.1"
 
 export COCOS_LITE_HOME="/usr/local/Library/cocos2d-js-v3.6-lite"
 
