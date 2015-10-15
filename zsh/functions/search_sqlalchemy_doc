@@ -1,0 +1,1 @@
+browser "http://docs.sqlalchemy.org/en/rel_1_0/search.html?q=$(urlencode $@)&check_keywords=yes&area=default"

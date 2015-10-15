@@ -1096,6 +1096,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias alc="search_sqlalchemy_doc"
+
 alias grgm="grep_gitmodules"
 
 alias sf="safari"
@@ -1135,6 +1137,8 @@ alias logj="js_log"
 alias logjo="js_log_object"
 
 alias logp="python_log"
+
+alias logpv="python_log_var"
 
 alias logpo="python_log_object"
 
