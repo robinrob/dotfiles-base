@@ -51,10 +51,12 @@ function color {
 
 function colorencode {
   prefix='"["'; suffix='m'
+
   while getopts :p opt
   do
     case $opt in
-      p) 	prefix='%{"["'; suffix='m%}'; shift ;;
+      p)
+        prefix="%{$prefix"; suffix="$suffix%}"; shift ;;
     esac
   done
 	

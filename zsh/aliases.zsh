@@ -5,9 +5,6 @@
 ###############################################################################
 # Shell commands
 ###############################################################################
-# Just a joke to all the thenners in the world!
-alias than="then"
-
 alias pcregrep='pcregrep --color=auto'
 
 alias rmrf="rm -rf"
@@ -438,6 +435,8 @@ alias rgc="rvm gemset create"
 
 alias rgd="rvm gemset delete"
 
+alias rgn="gemset_new"
+
 alias rvl="rvm list"
 
 alias rsc="rails console"
@@ -535,8 +534,6 @@ alias p3="$HOME/.pythonbrew/pythons/Python-3.2/bin/python3"
 alias pbrew="pythonbrew"
 
 alias cals="cat $ALIASES_PATH"
-
-alias lsfn="ls $FUNCS_HOME"
 
 alias lfn="lsfn"
 
@@ -1096,6 +1093,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias rbdoc="search_ruby_doc"
+
+alias lsfn="ls_function"
+
 alias alc="search_sqlalchemy_doc"
 
 alias grgm="grep_gitmodules"
@@ -1565,3 +1566,11 @@ alias k="copy_print '1.38e-23'"
 alias N="copy_print '6.022e23'"
 
 alias h="copy_print '6.626e-34'"
+
+
+###############################################################################
+# Fun
+###############################################################################
+
+# Just a joke to all the thenners in the world!
+alias than="then"

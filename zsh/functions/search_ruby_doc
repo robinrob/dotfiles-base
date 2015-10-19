@@ -1,0 +1,10 @@
+local +r Search=$1
+
+local +r Url="http://ruby-doc.com"
+
+if [[ -n $Search ]]
+then
+  Url="$Url/search.html?&q=$(urlencode $Search)&sa=Search"
+fi
+
+$BROWSER $Url

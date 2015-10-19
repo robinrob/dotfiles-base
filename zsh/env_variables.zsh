@@ -243,7 +243,7 @@ export NOCCHEF=$WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef
 
 export MSCHEF=$WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef
 
-export LOCAL_HOME=$RUBY_HOME/projects/local
+export LOCAL_HOME=$DOTFILES_HOME/local
 
 export ORIGINS_HOME=$JS_HOME/projects/fundamental-origins
 
