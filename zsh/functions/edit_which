@@ -1,0 +1,1 @@
+$EDITOR $(which $1)

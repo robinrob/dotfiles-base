@@ -51,6 +51,8 @@ alias mkdir='mkdir -pv'
 
 alias w="which_pro"
 
+alias mw="edit_which"
+
 alias lsn="/usr/local/bin/gls --color=none"
 
 alias lsh="find_hidden"
@@ -1088,6 +1090,10 @@ alias pc="postcode"
 alias ad="address"
 
 alias ph="phone"
+
+###############################################################################
+# Scripts
+###############################################################################
 
 
 ###############################################################################
