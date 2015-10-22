@@ -1,4 +1,4 @@
-local +r File=$1j
+local +r File=$1
 
 while getopts :f:b: opt
 do
