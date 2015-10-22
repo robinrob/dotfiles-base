@@ -1,11 +1,11 @@
 local +r -a Funcs
 
-if [[ $@# > 0 ]]
+if [[ $# > 0 ]]
 then
-  print "$(green Un-functioning functions:) $(yellow $@)"
+  print "$(green Un-functioning function\(s\):) $(yellow $@)"
   Funcs=($*)
 else
-  green "Un-functioning all functions"
+  green "Un-functioning all function\(s\)"
   Funcs=($FUNCS_HOME/*(:t))
 fi
 

@@ -1,0 +1,6 @@
+local +r Function=$1
+
+reload_functions $Function
+
+print "$(green Running function:) $(yellow $Function)"
+$Function

@@ -4,7 +4,7 @@ local +r DoWhich
 
 if [[ $@# > 0 ]]
 then
-  print "$(green Loading functions:) $(yellow $@)"
+  print "$(green Loading function\(s\):) $(yellow $@)"
   Funcs=($*)
   DoWhich=$TRUE
 else
