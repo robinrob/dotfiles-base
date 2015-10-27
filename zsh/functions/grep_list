@@ -1,0 +1,4 @@
+local +r ListPath=$1
+local +r GrepExpression=$2
+
+grep $GrepExpression $ListPath

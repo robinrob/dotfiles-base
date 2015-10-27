@@ -1011,7 +1011,7 @@ alias mwr="$EDITOR $WORK_RECORDS_PATH"
 
 alias crec="cat $RECORDS_PATH"
 
-alias cwr="cat $WORK_RECORDS_PATH"
+alias grrec="grep_list $RECORDS_PATH"
 
 alias gov="get_record directgovid"
 
@@ -1053,7 +1053,7 @@ alias phone="get_record phone"
 
 alias ph="phone"
 
-alias phf="phone"
+alias pH="get_record phonecompact"
 
 alias bank="get_record bank"
 
