@@ -584,6 +584,8 @@ alias gsd="git submodule deinit"
 
 alias grb="git rebase"
 
+alias grbc="git rebase --continue"
+
 alias gco="git_config"
 
 alias gcog="git_config_global"
@@ -1053,7 +1055,7 @@ alias phone="get_record phone"
 
 alias ph="phone"
 
-alias pH="get_record phonecompact"
+alias pH="get_record phonecompacb"
 
 alias bank="get_record bank"
 
