@@ -1,9 +1,11 @@
 #!/usr/bin/env zsh
 
 source zsh/colors.zsh
+source zsh/env_variables.zsh
+
 
 # Remove custom dotfiles first
-./uninstall.zsh
+$DOTFILES_BASE_HOME/uninstall.zsh
 
 
 # Installation
@@ -60,4 +62,3 @@ $ZDOT_HOME/osx.zsh
 
 
 green "Done."
-wank
