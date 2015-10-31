@@ -2,4 +2,5 @@ zsh/bookmarks.zsh
 zsh/sf.zsh
 config/files/Packages/User/Package\ Control.last-run
 config/files/Packages/User/Package\ Control.cache
+.idea
 *.DS_Store
