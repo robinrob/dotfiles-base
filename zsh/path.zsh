@@ -20,6 +20,7 @@ Dirs=(
   ./node_modules/.bin
   /usr/local/Cellar/octave/4.0.0/bin
   /usr/local/Cellar/macvim/7.4-77/bin
+  /usr/local/Cellar/octave/4.0.0/bin
 )
 
 for dir in $Dirs

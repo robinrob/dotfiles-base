@@ -8,8 +8,6 @@ cd ~/
 
 PS1('⚡  ')
 
-addpath("~/octave");
-
 addpath('scripts')
 
 setenv("GNUTERM", "X11")
