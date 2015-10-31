@@ -11,7 +11,7 @@ $DOTFILES_BASE_HOME/uninstall.zsh
 # Installation
 $ZDOT_HOME/symlinks.zsh
 
-$ZDOT_HOME/jetbrains.zsh
+# $ZDOT_HOME/jetbrains.zsh
 
 
 # Initialise prompt stuff
