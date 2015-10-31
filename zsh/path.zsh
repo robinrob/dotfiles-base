@@ -18,6 +18,8 @@ Dirs=(
   $NDK_MODULE_PATH
   /usr/local/Library/anaconda3/bin
   ./node_modules/.bin
+  /usr/local/Cellar/octave/4.0.0/bin
+  /usr/local/Cellar/macvim/7.4-77/bin
 )
 
 for dir in $Dirs
