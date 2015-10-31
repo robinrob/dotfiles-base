@@ -1,1 +1,2 @@
-/usr/local/bin/mvim --servername VIM --remote-tab-silent $@
+/usr/local/Cellar/macvim/7.4-77/bin/mvim --servername VIM --remote-tab-silent $@
+

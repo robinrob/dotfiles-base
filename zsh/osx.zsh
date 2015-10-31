@@ -768,7 +768,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 ###############################################################################
 # Desktop Background
 ###############################################################################
-$ZDOT_HOME/osx_background.zsh
+# $ZDOT_HOME/osx_background.zsh
 
 ###############################################################################
 # Screensaver images
