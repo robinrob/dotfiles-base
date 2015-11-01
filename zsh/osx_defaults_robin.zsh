@@ -1,6 +1,17 @@
+#!/usr/bin/env zsh
+
 ###############################################################################
-# Robin's additional defaults
+# Robin's additional defaults and overrides
 ###############################################################################
+
+# hot corners
+defaults write com.apple.dock wvous-tl-corner -int 0
+defaults write com.apple.dock wvous-tl-modifier -int 0
+defaults write com.apple.dock wvous-tr-corner -int 0
+defaults write com.apple.dock wvous-tr-modifier -int 0
+defaults write com.apple.dock wvous-bl-corner -int 0
+defaults write com.apple.dock wvous-bl-modifier -int 0
+
 # Hide tab bar in Safari
 defaults write com.apple.Safari AlwaysShowTabBar -bool NO
 
