@@ -718,9 +718,9 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Programming/robin/zsh/projects/dotfiles/dotfiles-base/config/files/iterm</string>
+	<string>~/Programming/robin/zsh/projects/dotfiles/framework/iTerm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
+	<string>{712, 459}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{1041, 570}</string>
 	<key>NSNavPanelExpandedStateForSaveMode</key>
@@ -741,11 +741,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1276 269 445 77 0 0 1920 1057 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>164 131 924 485 0 0 1280 777 </string>
+	<string>754 418 924 485 0 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 0 1276 777 0 0 1280 777 </string>
+	<string>6 614 1625 774 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-49 -2 1626 800 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -1304,11 +1304,11 @@
 			<key>Name</key>
 			<string>Robin</string>
 			<key>Non Ascii Font</key>
-			<string>Hack 14</string>
+			<string>Hack-Regular 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Hack 14</string>
+			<string>Hack-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2222,13 +2222,13 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>465581188.036336</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>467988004.38899797</real>
+	<real>468167449.06402099</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenBookmark</key>
-	<true/>
+	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -2271,7 +2271,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/msl/Programming/robin/zsh/projects/dotfiles/dotfiles-base/config/files/iterm</string>
+	<string>/Users/robin/Programming/robin/zsh/projects/dotfiles/dotfiles-base/config/files/iterm</string>
 	<key>PromptOnClose</key>
 	<false/>
 	<key>PromptOnQuit</key>
@@ -2291,7 +2291,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-10-31T12:40:00Z</date>
+	<date>2015-11-02T14:30:46Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.1.1</string>
 	<key>SavePasteHistory</key>
