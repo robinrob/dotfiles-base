@@ -213,6 +213,10 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias mvim="/usr/local/Cellar/macvim/7.4-77/bin/mvim --servername VIM --remote-tab-silent"
+
+alias mvim2="/usr/local/Cellar/macvim/7.4-77/bin/mvim --remote-tab"
+
 alias py="python"
 
 alias oct="octave"
@@ -271,6 +275,8 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdcel="cd /usr/local/Cellar"
+
 alias cdoct="cd $OCTAVE_HOME"
 
 alias cdang="cd $JS_HOME/practice/angular-blog"
@@ -551,11 +557,17 @@ alias cdnoc="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
 
 alias cdms="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
 
+alias cc="cocos compile"
+
 alias ccr="cocos run -p android"
 
-alias ccc="cocos compile -p android"
+alias ccw="cocos compile -p web"
 
-alias ccd="cocos deploy -p android"
+alias cdw="cocos deploy -p web"
+
+alias cca="cocos compile -p android"
+
+alias cda="cocos deploy -p android"
 
 alias ccl="logcat-color cocos"
 
@@ -1101,6 +1113,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias rt="run_and_tail"
+
 alias rr="reload_run"
 
 alias rbdoc="search_ruby_doc"
@@ -1188,8 +1202,6 @@ alias light="lightning"
 alias mva="move_to_applications"
 
 alias lS="ls_sort_by_size"
-
-alias cc="creative_commons_search"
 
 alias toh="to_haml"
 

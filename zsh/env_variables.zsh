@@ -438,7 +438,7 @@ export COCOS_CONSOLE_ROOT=$COCOS_HOME/tools/cocos2d-console/bin
 
 export ANT_ROOT=/usr/local/bin
 
-export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
+export NDK_ROOT=/usr/local/Cellar/android-ndk/r10e/
 
 export JS_TESTS_HOME="$COCOS_HOME/samples/js-tests"
 
@@ -459,6 +459,13 @@ export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/msl/.boot2docker/certs/boot2docker-vm
 
 export DOCKER_TLS_VERIFY=1
+
+
+###############################################################################
+# Pyenv
+###############################################################################
+
+export PYENV_ROOT=/usr/local/Library/pyenv
 
 
 ###############################################################################

@@ -1,0 +1,10 @@
+local +r Cmd=$1
+local +r LogName=$2
+
+if [ -f $LogName ]
+then
+  touch $LogName
+fi
+
+eval $Cmd >> $LogName &
+tail -f $LogName
