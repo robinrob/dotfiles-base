@@ -213,10 +213,6 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
-alias mvim="/usr/local/Cellar/macvim/7.4-77/bin/mvim --servername VIM --remote-tab-silent"
-
-alias mvim2="/usr/local/Cellar/macvim/7.4-77/bin/mvim --remote-tab"
-
 alias py="python"
 
 alias oct="octave"
