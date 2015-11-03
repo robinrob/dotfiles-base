@@ -109,6 +109,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias sn="SwitchAudioSource -n"
+
 alias recral="reload; recreate_all_repo_aliases"
 
 alias limmy="tube \"limmy's show\""
@@ -238,6 +240,8 @@ alias utorrent="open -a uTorrent"
 alias spotify="open -a Spotify"
 
 alias spo="spotify"
+
+alias sp="spotify"
 
 alias scc="scalac"
 

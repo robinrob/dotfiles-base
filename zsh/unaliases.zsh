@@ -79,3 +79,5 @@ unal git
 unal grb
 
 unal gsd
+
+unal sprintly
