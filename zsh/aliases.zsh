@@ -109,6 +109,10 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias mcs="$EDITOR '$CSGO_CONFIG'"
+
+alias ccs="cat '$CSGO_CONFIG'"
+
 alias sn="SwitchAudioSource -n"
 
 alias recral="reload; recreate_all_repo_aliases"
@@ -185,7 +189,7 @@ alias ssr="red 'Rebooting!'; sudo shutdown -r now"
 
 alias SSR="ssr"
 
-alias lgo="osascript -e 'tell application \"loginwindow\" to  «event aevtrlgo»'"
+alias logo="osascript -e 'tell app \"System Events\" to log out'"
 
 alias adbd="adb devices"
 

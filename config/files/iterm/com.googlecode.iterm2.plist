@@ -718,7 +718,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Programming/robin/zsh/projects/dotfiles/framework/iTerm2</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -745,7 +745,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>5 27 2553 1386 0 0 2560 1417 </string>
+	<string>742 259 1625 774 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-49 -2 1626 800 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -966,7 +966,7 @@
 			<key>Cursor Type</key>
 			<integer>2</integer>
 			<key>Custom Command</key>
-			<string>Yes</string>
+			<string>No</string>
 			<key>Custom Directory</key>
 			<string>No</string>
 			<key>Default Bookmark</key>
@@ -2222,7 +2222,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>465581188.036336</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>468167449.06402099</real>
+	<real>468253849.96136802</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -2291,7 +2291,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-11-02T14:30:46Z</date>
+	<date>2015-11-03T14:30:46Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.1.1</string>
 	<key>SavePasteHistory</key>

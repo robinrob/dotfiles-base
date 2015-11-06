@@ -20,3 +20,6 @@ for file in $FILES; do
     filepath=$DIR/$file
     ln -s $filepath ~/.$file 2> /dev/null && cyan "\t\t${ITEM}$filepath sym-linked to $HOME/$file"
 done
+
+green "Sym-linking csgo config to $CSGO_CONFIG ..."
+ln -s $DOTFILES_BASE_HOME/config/files/csgo_config.cfg $CSGO_CONFIG 2> /dev/null 2>&1

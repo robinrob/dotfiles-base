@@ -398,6 +398,8 @@ alias_files=($ALIASES_PATH $BOOKMARKS_ALIAS_PATH)
 ###############################################################################
 # Applications
 ###############################################################################
+export CSGO_CONFIG=$HOME/Library/Application\ Support/Steam/SteamApps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/config.cfg
+
 export OCTAVE_HOME=/usr/local/Cellar/octave/4.0.0
 
 export SUBLIMETEXT_HOME="$HOME/Library/Application Support/Sublime Text 3"
