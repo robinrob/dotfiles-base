@@ -1,0 +1,5 @@
+if ! vagrant ssh "$*"
+then
+  vagrant up
+  vagrant ssh "$*"
+fi

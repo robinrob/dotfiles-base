@@ -493,11 +493,13 @@ alias vi="vagrant init"
 
 alias vu="vagrant up"
 
+alias vh="vagrant halt"
+
 alias vpr="vagrant reload --provision"
 
 alias vd="vagrant destroy"
 
-alias vssh="vagrant ssh"
+alias vssh="vagrant_ssh"
 
 alias npmgls="npm config set json; npm -g list --depth=0"
 
