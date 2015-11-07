@@ -1,5 +1,6 @@
-if ! vagrant ssh "$*"
+if vagrant status | ggrep poweroff
 then
   vagrant up
-  vagrant ssh "$*"
 fi
+
+vagrant ssh "$*"
