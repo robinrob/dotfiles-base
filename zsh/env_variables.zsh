@@ -398,7 +398,11 @@ alias_files=($ALIASES_PATH $BOOKMARKS_ALIAS_PATH)
 ###############################################################################
 # Applications
 ###############################################################################
-export CSGO_CONFIG=$HOME/Library/Application\ Support/Steam/SteamApps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/config.cfg
+export CSGO_HOME=$HOME/Library/Application\ Support/Steam/SteamApps/common/Counter-Strike\ Global\ Offensive/csgo
+
+export CSGO_SCREENSHOTS=$CSGO_HOME/screenshots
+
+export CSGO_CONFIG=$CSGO_HOME/cfg/config.cfg
 
 export OCTAVE_HOME=/usr/local/Cellar/octave/4.0.0
 
