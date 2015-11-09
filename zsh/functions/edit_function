@@ -1,5 +1,4 @@
-local +r -a FunctionNames
-FunctionNames=($*)
+local +r -a FunctionNames=($*)
 
 local +r -a FunctionPaths
 for function in $FunctionNames

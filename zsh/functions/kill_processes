@@ -1,7 +1,6 @@
 (( $# > 0 )) || red "Must give name(s) of process(es)!"
 
-local +r -a Processes
-Processes=($*)
+local +r -a Processes=($*)
 
 for process in $Processes
 do

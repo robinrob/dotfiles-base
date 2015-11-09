@@ -3,8 +3,7 @@ local +r BookmarksAliasPath=$2
 shift 2
 
 
-local +r -a Parts
-Parts=("${(s/::/)Line}")
+local +r -a Parts=("${(s/::/)Line}")
 
 local +r Name=$Parts[1]
 

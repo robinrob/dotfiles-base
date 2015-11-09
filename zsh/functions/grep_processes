@@ -1,5 +1,4 @@
-local +r -a Processes
-Processes=($*)
+local +r -a Processes=($*)
 
 
 if (( $#Processes < 1 ))
