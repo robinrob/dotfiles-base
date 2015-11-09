@@ -1,4 +1,6 @@
-if vagrant status | ggrep poweroff
+local +r VagrantStatus=$(vagrant status)
+
+if $VagrantStatus | ggrep poweroff || vagrant status | grep
 then
   vagrant up
 fi

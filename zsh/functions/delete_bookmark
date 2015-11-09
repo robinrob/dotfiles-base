@@ -1,6 +1,5 @@
 local success=$FALSE
-local +r -a Bookmarks
-Bookmarks=($*)
+local +r -a Bookmarks=($*)
 
 for bookmark in $Bookmarks
 do
