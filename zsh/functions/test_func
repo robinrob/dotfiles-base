@@ -1,0 +1,6 @@
+local +r -a vals=($*)
+
+for val in $vals
+do
+  print $val
+done
