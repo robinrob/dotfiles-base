@@ -1,0 +1,9 @@
+local +r Text=$1
+local +r  MatchExpressions=($*[2,-1])
+
+for expression in $MatchExpressions
+do
+  (print $Text | ggrep $expression) && return 0
+done
+
+return 1

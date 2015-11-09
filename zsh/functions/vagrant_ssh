@@ -1,6 +1,6 @@
 local +r VagrantStatus=$(vagrant status)
 
-if $VagrantStatus | ggrep poweroff || vagrant status | grep
+if grep_any $VagrantStatus poweroff aborted
 then
   vagrant up
 fi
