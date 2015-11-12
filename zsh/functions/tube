@@ -1,3 +1,11 @@
-# browser "https://www.youtube.com/results?search_query=$(urlencode $@)"
-browser "https://www.youtube.com/results?search_query=$(urlencode $@)"
+local +r Url
 
+case $# in
+  0)
+    Url="https://www.youtube.com/feed/history"
+    ;;
+  1) Url="https://www.youtube.com/results?search_query=$(urlencode $@)"
+    ;;
+esac
+
+browser $Url

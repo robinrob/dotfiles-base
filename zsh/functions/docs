@@ -1,3 +1,0 @@
-HOSTNAME=$1
-return $FILES_NAME/$HOSTNAME/docs
-

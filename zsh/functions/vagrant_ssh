@@ -1,8 +1,9 @@
 local +r VagrantStatus=$(vagrant status)
 
-if grep_any $VagrantStatus poweroff aborted
+if grep_any $VagrantStatus poweroff aborted 'not created'
 then
+  print here
   vagrant up
 fi
 
-vagrant ssh "$*"
+vagrant ssh $@
