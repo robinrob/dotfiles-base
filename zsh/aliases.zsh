@@ -497,6 +497,8 @@ alias vu="vagrant up"
 
 alias vh="vagrant halt"
 
+alias vs="vagrant status"
+
 alias vpr="vagrant reload --provision"
 
 alias vd="vagrant destroy"
