@@ -281,6 +281,8 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdcsgo="cd '$CSGO_HOME'"
+
 alias cdcel="cd /usr/local/Cellar"
 
 alias cdoct="cd $OCTAVE_HOME"
@@ -474,6 +476,8 @@ alias nl="sudo npm link"
 alias ni="sudo npm install"
 
 alias nu="sudo npm uninstall"
+
+alias nin="npm init"
 
 alias nis="npm_install_save"
 
