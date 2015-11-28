@@ -43,7 +43,6 @@ alias dt="copy_print_eval \"gdate +'%Y-%m-%d %H:%M:%S.%6N'\""
 
 alias crl="crontab -l"
 
-alias less='less -m -N -g -i -J --underline-special --SILENT'
 
 alias more='less'
 
@@ -729,7 +728,6 @@ alias rkm="rake_do db:migrate"
 
 alias rkt="rake_do test"
 
-alias rkss="rake_do git:sort_sub"
 
 alias rk="rake"
 
@@ -845,9 +843,7 @@ alias mrvmrc="$EDITOR .rvmrc"
 
 alias essh="edit $HOME/.ssh/config"
 
-alias ess="edit $HOME/.ssh/config"
 
-alias css="cat $HOME/.ssh/config"
 
 alias cssh="cat $HOME/.ssh/config"
 
@@ -1091,9 +1087,7 @@ alias em="get_record email"
 
 alias pc="postcode"
 
-alias address="get_record home_address"
 
-alias workaddress="get_record work_address"
 
 alias workpostcode="get_record work_postcode"
 
@@ -1509,7 +1503,7 @@ alias ung="unsetopt | grep"
 
 alias sws="switch_say"
 
-alias swso="switch_say_override"
+alias swS="switch_say_override"
 
 alias esws="print $SAYCMD"
 

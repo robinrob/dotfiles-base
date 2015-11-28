@@ -68,10 +68,10 @@ prompt robin
 
 # Greeting
 ###############################################################################
-# printf "$(brightwhite I) $(brightyellow am) $(brightcyan awesome) $(brightwhite ':)')"
-# speak "I am awesome"
+printf "$(brightwhite I) $(brightyellow am) $(brightcyan awesome) $(brightwhite ':)')"
+speak "I am awesome"
 
-# print " ($(nofap) $(brightcyan days))"
+print " ($(nofap) $(brightcyan days))"
 
 
 # Development

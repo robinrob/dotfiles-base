@@ -495,7 +495,7 @@ export USE_PYTHON=1
 
 export USE_RUBY=1
 
-export SAYCMD_OVERRIDE=0
+export SAYCMD_OVERRIDE=
 
 ###############################################################################
 # Misc
