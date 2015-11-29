@@ -1,1 +1,1 @@
-$EDITOR $(which $1)
+$EDITOR $(which_pro $1)

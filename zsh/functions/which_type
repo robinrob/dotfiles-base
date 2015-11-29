@@ -1,0 +1,9 @@
+local +r Which=$(which $1)
+
+if which $1 | grep aliased > /dev/null
+then
+  print 'alias'
+elif [[ -f $(which $1) ]]
+then
+  print 'file'
+fi
