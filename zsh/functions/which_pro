@@ -1,11 +1,11 @@
-local +r Thing=$1
+local +r Thing=$(resolve_which_pro $1)
 local +r Type=$(which_type $Thing)
 
 
 case $Type in
-  alias)
-    which $(resolve_alias $Thing) ;;
   file)
-    cat $(which_recurse $Thing) ;;
+    cat $Thing ;;
+  function)
+    which $Thing ;;
 esac
 

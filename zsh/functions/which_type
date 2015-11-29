@@ -1,9 +1,12 @@
-local +r Which=$(which $1)
+local +r Thing=$1
 
-if which $1 | grep aliased > /dev/null
+if is_alias $Thing
 then
   print 'alias'
-elif [[ -f $(which $1) ]]
+elif [[ -f $(which $Thing) ]]
 then
   print 'file'
+elif is_function $Thing
+then
+  print 'function'
 fi
