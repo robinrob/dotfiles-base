@@ -1,8 +1,10 @@
 local +r Thing=$(resolve_which_pro $1)
-local +r Type=$(which_type $Thing)
+local +r Type=$(which_type "$Thing")
 
 
 case $Type in
+  command)
+    print $Thing ;;
   file)
     cat $Thing ;;
   function)

@@ -40,23 +40,20 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Disable new Yosemite default setting that globally prevents key repeat!
 defaults write -g ApplePressAndHoldEnabled -bool false
 
-###############################################################################
+# Enable Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool false
+
+# Show Dashboard as a Space
+defaults write com.apple.dock dashboard-in-overlay -bool false
+
 # Desktop Background
-###############################################################################
 # $ZDOT_HOME/osx_background.zsh
 
-###############################################################################
 # Screensaver images
-###############################################################################
 $ZDOT_HOME/osx_screensavers.zsh
 
-###############################################################################
 # User profile images
-###############################################################################
 sudo cp $BACKGROUNDS_HOME/* $SYSTEM_PROFILEIMAGES_HOME/Nature
 
-###############################################################################
-# Iterm2
-###############################################################################
 # Iterm2 hotkey window animation duration
 defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.0

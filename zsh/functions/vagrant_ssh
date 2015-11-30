@@ -2,7 +2,6 @@ local +r VagrantStatus=$(vagrant status)
 
 if ! $(print $VagrantStatus | grep 'running')
 then
-  print here
   vagrant up
 fi
 
