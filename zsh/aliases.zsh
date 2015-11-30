@@ -915,7 +915,7 @@ alias mop="$EDITOR $ZDOT_HOME/options.zsh"
 
 alias cop="cat $ZDOT_HOME/options.zsh"
 
-alias mos="$EDITOR $ZDOT_HOME/osx.zsh"
+alias mos="$EDITOR $ZDOT_HOME/osx_defaults*.zsh"
 
 alias cos="cat $ZDOT_HOME/osx.zsh"
 
