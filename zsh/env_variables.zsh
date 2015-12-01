@@ -44,10 +44,9 @@ export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/l
 ###############################################################################
 # Node
 ###############################################################################
-export NPMLIB_HOME=/usr/local/lib/node_modules
+export NPM_PACKAGES=$HOME/.npm-packages
 
-export NPM_PACKAGES="$HOME/.npm-packages"
-
+export NPMLIB_HOME=$NPM_PACKAGES
 
 ###############################################################################
 # Host-specific variables
