@@ -71,7 +71,7 @@ prompt robin
 printf "$(brightwhite I) $(brightyellow am) $(brightcyan awesome) $(brightwhite ':)')"
 speak "I am awesome"
 
-print " ($(nofap) $(brightcyan days))"
+print " ($(nofap_counter) $(brightcyan days))"
 
 
 # Development

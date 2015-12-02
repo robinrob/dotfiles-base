@@ -44,8 +44,6 @@ export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/l
 ###############################################################################
 # Node
 ###############################################################################
-# export NPM_PACKAGES=$HOME/.npm-packages
-
 export NPMLIB_HOME=/usr/local/lib/node_modules
 
 ###############################################################################

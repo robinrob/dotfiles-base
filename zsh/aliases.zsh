@@ -482,6 +482,8 @@ alias nis="npm_install_save"
 
 alias nig="sudo npm install -g"
 
+alias nug="sudo npm uninstall -g"
+
 alias nsh="npm shrinkwrap --dev"
 
 alias bo="bower"

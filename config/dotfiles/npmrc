@@ -3,4 +3,3 @@ long = true
 short = 0
 json = 
 
-prefix=~/.npm-packages
