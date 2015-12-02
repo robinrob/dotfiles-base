@@ -388,21 +388,21 @@ alias ito="iterm $OCAML_HOME"
 alias cdo="cd_down_tree $OCAML_HOME"
 alias cdopr="cd_down_tree $OCAML_HOME/practice"
 alias cdopro="cd_down_tree $OCAML_HOME/projects"
-alias dtsv="cd_save $DOTFILES_HOME"
+alias Dsv="cd_save $DOTFILES_HOME"
 
-alias dtcm="cd_commit $DOTFILES_HOME"
+alias Dcm="cd_commit $DOTFILES_HOME"
 
-alias dtst="cd_status $DOTFILES_HOME"
+alias Dst="cd_status $DOTFILES_HOME"
 
-alias dtpl="cd_pull $DOTFILES_HOME"
+alias Dpl="cd_pull $DOTFILES_HOME"
 
-alias iddt="idea $DOTFILES_HOME"
+alias idD="idea $DOTFILES_HOME"
 
-alias itdt="iterm $DOTFILES_HOME"
+alias itD="iterm $DOTFILES_HOME"
 
-alias cddt="cd_down_tree $DOTFILES_HOME"
-alias cddtpr="cd_down_tree $DOTFILES_HOME/practice"
-alias cddtpro="cd_down_tree $DOTFILES_HOME/projects"
+alias cdD="cd_down_tree $DOTFILES_HOME"
+alias cdDpr="cd_down_tree $DOTFILES_HOME/practice"
+alias cdDpro="cd_down_tree $DOTFILES_HOME/projects"
 alias dsv="cd_save $DOTFILES_BASE_HOME"
 
 alias dcm="cd_commit $DOTFILES_BASE_HOME"
