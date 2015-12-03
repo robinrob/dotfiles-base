@@ -1,23 +1,6 @@
 local +r Branch=$(git_branch)
 
-while getopts :b: opt
-do
-  case $opt in
-    b)
-      Branch=$OPTARG ;;
-  esac
-done
-
-
 if $(is_remote_git)
 then
-  if [[ $(git_host) == "github.com" ]]
-  then
-    Location="tree/$Branch"
-  elif [[ $(git_host) == "bitbucket.org" ]]
-  then
-    Location="src/?at=$Branch"
-  fi
-
-  print "https://$(git_host)/$(git_owner)/$(git_project)/$Location"
+  print "https://$(git_host)/$(git_owner)/$(git_project)"
 fi

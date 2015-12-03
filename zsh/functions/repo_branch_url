@@ -1,0 +1,24 @@
+local +r RepoUrl=$(repo_url $@)
+local +r Branch=$(git_branch)
+
+while getopts :b: opt
+do
+  case $opt in
+    b)
+      Branch=$OPTARG ;;
+  esac
+done
+
+
+if [[ -n $RepoUrl ]]
+then
+  if [[ $(git_host) == "github.com" ]]
+  then
+    Location="tree/$Branch"
+  elif [[ $(git_host) == "bitbucket.org" ]]
+  then
+    Location="src/?at=$Branch"
+  fi
+
+  print "$RepoUrl/$Location"
+fi
