@@ -406,7 +406,9 @@ alias cdlists="cd_down_tree $LISTS_HOME"
 ###############################################################################
 # Development operations
 ###############################################################################
-alias gts="gulp test-server"
+alias gpt="gulp test"
+
+alias gpts="gulp test-server"
 
 alias gpr="gulp protractor"
 
