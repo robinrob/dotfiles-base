@@ -12,7 +12,14 @@ done
 
 if [[ -n "$Commit" ]]
 then
-  local +r Url=$(repo_url $@)/blob/$Commit 2> /dev/null
+  case $(git_host) in
+    github.com)
+      local +r Suffix=blob/$Commit ;;
+    bitbucket.org)
+      local +r Suffix=src/$Commit ;;
+  esac
+  
+  local +r Url=$(repo_url $@)/$Suffix 2> /dev/null
 else
   local +r Url=$(repo_branch_url $@) 2> /dev/null
 fi
