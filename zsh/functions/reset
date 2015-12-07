@@ -1,0 +1,4 @@
+local +r Nofaprc=$HOME/.nofaprc
+
+rm $Nofaprc
+date '+%Y-%m-%d' > $Nofaprc
