@@ -1355,6 +1355,8 @@ alias sfo="salesforce_object_search"
 
 alias bk="safari_books_search"
 
+alias pulls="repo_pull_requests"
+
 alias rp="open_source_repo_path"
 
 alias kps="kill_processes"
