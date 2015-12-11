@@ -36,6 +36,6 @@ do
   if [[ -n $Result ]]
   then
     yellow $file
-    print $Result | ggrep -i $GrepExpression
+    print $Result | ggrep -i --color $GrepExpression
   fi
 done

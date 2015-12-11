@@ -26,4 +26,4 @@ do
 	esac
 done
 
-gfind $Where ${=MaxDepth} -type f ${=Excludes} -exec gegrep -n -H $Insensitive $GrepExpression {} \;
+gfind $Where ${=MaxDepth} -type f ${=Excludes} -exec gegrep -n -H --color $Insensitive $GrepExpression {} \;

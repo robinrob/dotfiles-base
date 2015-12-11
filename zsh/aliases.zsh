@@ -84,7 +84,7 @@ alias mv="gmv"
 
 alias egrep="gegrep"
 
-alias grep="ggrep --text"
+alias grep="ggrep --text --color"
 
 alias find="gfind"
 
