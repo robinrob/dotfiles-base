@@ -1,14 +1,28 @@
 local +r File=$1
 
-while getopts :f:b: opt
+while getopts :f:b:c: opt
 do
   case $opt in
     f)
       File=$OPTARG ;;
+    c)
+      local +r Commit=$OPTARG ;;
   esac
 done
 
-local +r Url=$(repo_url $@) 2> /dev/null
+if [[ -n "$Commit" ]]
+then
+  case $(git_host) in
+    github.com)
+      local +r Suffix=blob/$Commit ;;
+    bitbucket.org)
+      local +r Suffix=src/$Commit ;;
+  esac
+  
+  local +r Url=$(repo_url $@)/$Suffix 2> /dev/null
+else
+  local +r Url=$(repo_branch_url $@) 2> /dev/null
+fi
 
 
 if [[ -n "$Url" ]]
@@ -17,10 +31,12 @@ then
   then
     Url="$Url/$File"
   fi
+
   print "$(green Repo found:) $(yellow $Url)"
   print "$(green Opening) $(yellow $Url) $(green '...')"
   browser $Url
 else
   red "Not a git repository configured with a remote url."
 fi
+
 

@@ -1,0 +1,24 @@
+start_date=$(date --date=$(cat ~/.nofaprc) '+%s')
+date_now=$(date '+%s')
+
+days=$(( (date_now - start_date) / (3600 * 24) ))
+weeks=$(( days / 7 ))
+
+if (( weeks < 1 ))
+then
+  col=red
+elif (( weeks < 2 ))
+then
+  col=yellow
+elif (( weeks < 3 ))
+then
+  col=green
+elif (( weeks < 4 ))
+then
+  col=blue
+elif (( weeks < 13 ))
+then
+  col=brightwhite
+fi
+
+eval "$col $days"

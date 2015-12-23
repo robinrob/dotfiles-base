@@ -1,8 +1,13 @@
-local +r Thing=$1
+local +r Thing=$(resolve_which_pro $1)
+local +r Type=$(which_type "$Thing")
 
-if [[ -n $Thing ]]
-then
-  which $Thing
-else
-  return 1
-fi
+
+case $Type in
+  command)
+    print $Thing ;;
+  file)
+    cat $Thing ;;
+  function)
+    which $Thing ;;
+esac
+

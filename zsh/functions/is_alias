@@ -1,0 +1,1 @@
+which_alias $1 > /dev/null

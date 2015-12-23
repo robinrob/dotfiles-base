@@ -1,5 +1,5 @@
 local +r MacVimDir=/usr/local/Cellar/macvim
 local +r MacVimVersion=$(/usr/local/bin/gls --color=none $MacVimDir)
 
-/usr/local/Cellar/macvim/$MacVimVersion/bin/mvim --servername VIM --remote-tab-silent $@
+/usr/local/Cellar/macvim/$MacVimVersion/bin/mvim --servername VIM --remote-tab-silent $@ > /dev/null
 

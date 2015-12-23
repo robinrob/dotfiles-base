@@ -2,7 +2,6 @@ TASK=$1
 
 local +r -a TASK_ARGS
 TASK_ARGS=($*[2,-1])
-print $TASK_ARGS
 
 BASE_CMD='rake -g'
 

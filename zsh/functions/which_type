@@ -1,0 +1,20 @@
+local +r Thing=$1
+local +r Parts=(${(s/ /)Thing})
+
+
+if (( $#Parts > 1 ))
+then
+  print 'command'
+
+elif is_alias $Thing
+then
+  print 'alias'
+
+elif [[ -f $(which $Thing) ]]
+then
+  print 'file'
+
+elif is_function $Thing
+then
+  print 'function'
+fi

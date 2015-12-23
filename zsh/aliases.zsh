@@ -43,7 +43,6 @@ alias dt="copy_print_eval \"gdate +'%Y-%m-%d %H:%M:%S.%6N'\""
 
 alias crl="crontab -l"
 
-alias less='less -m -N -g -i -J --underline-special --SILENT'
 
 alias more='less'
 
@@ -85,7 +84,7 @@ alias mv="gmv"
 
 alias egrep="gegrep"
 
-alias grep="ggrep --text"
+alias grep="ggrep --text --color"
 
 alias find="gfind"
 
@@ -109,7 +108,7 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
-alias hi="history 1"
+alias hi="history 0"
 
 alias mcs="$EDITOR '$CSGO_CONFIG'"
 
@@ -281,6 +280,8 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdcsgo="cd '$CSGO_HOME'"
+
 alias cdcel="cd /usr/local/Cellar"
 
 alias cdoct="cd $OCTAVE_HOME"
@@ -405,7 +406,9 @@ alias cdlists="cd_down_tree $LISTS_HOME"
 ###############################################################################
 # Development operations
 ###############################################################################
-alias gts="gulp test-server"
+alias gpt="gulp test"
+
+alias gpts="gulp test-server"
 
 alias gpr="gulp protractor"
 
@@ -475,9 +478,13 @@ alias ni="sudo npm install"
 
 alias nu="sudo npm uninstall"
 
+alias nin="npm init"
+
 alias nis="npm_install_save"
 
 alias nig="sudo npm install -g"
+
+alias nug="sudo npm uninstall -g"
 
 alias nsh="npm shrinkwrap --dev"
 
@@ -725,7 +732,6 @@ alias rkm="rake_do db:migrate"
 
 alias rkt="rake_do test"
 
-alias rkss="rake_do git:sort_sub"
 
 alias rk="rake"
 
@@ -841,9 +847,7 @@ alias mrvmrc="$EDITOR .rvmrc"
 
 alias essh="edit $HOME/.ssh/config"
 
-alias ess="edit $HOME/.ssh/config"
 
-alias css="cat $HOME/.ssh/config"
 
 alias cssh="cat $HOME/.ssh/config"
 
@@ -915,7 +919,7 @@ alias mop="$EDITOR $ZDOT_HOME/options.zsh"
 
 alias cop="cat $ZDOT_HOME/options.zsh"
 
-alias mos="$EDITOR $ZDOT_HOME/osx.zsh"
+alias mos="$EDITOR $ZDOT_HOME/osx_defaults*.zsh"
 
 alias cos="cat $ZDOT_HOME/osx.zsh"
 
@@ -1087,9 +1091,7 @@ alias em="get_record email"
 
 alias pc="postcode"
 
-alias address="get_record home_address"
 
-alias workaddress="get_record work_address"
 
 alias workpostcode="get_record work_postcode"
 
@@ -1353,6 +1355,8 @@ alias sfo="salesforce_object_search"
 
 alias bk="safari_books_search"
 
+alias pulls="repo_pull_requests"
+
 alias rp="open_source_repo_path"
 
 alias kps="kill_processes"
@@ -1505,7 +1509,7 @@ alias ung="unsetopt | grep"
 
 alias sws="switch_say"
 
-alias swso="switch_say_override"
+alias swS="switch_say_override"
 
 alias esws="print $SAYCMD"
 

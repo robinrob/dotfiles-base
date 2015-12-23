@@ -1,1 +1,11 @@
-$EDITOR $(which $1)
+local +r Thing=$(resolve_which_pro $1)
+local +r Type=$(which_type $Thing)
+
+
+case $Type in
+  file)
+    $EDITOR $Thing ;;
+  function)
+    edit_function $Thing ;;
+esac
+

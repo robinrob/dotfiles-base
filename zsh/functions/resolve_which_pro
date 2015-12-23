@@ -1,0 +1,13 @@
+local +r Thing=$1
+local +r Type=$(which_type $Thing)
+
+
+case $Type in
+  alias)
+    resolve_alias $Thing ;;
+  file)
+    which_recurse $Thing ;;
+  function)
+    print $Thing ;;
+esac
+
