@@ -220,6 +220,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias clm="open -a Clementime"
+
 alias py="python"
 
 alias oct="octave"
@@ -280,6 +282,8 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdst="cd $STORIES_HOME"
+
 alias cdcsgo="cd '$CSGO_HOME'"
 
 alias cdcel="cd /usr/local/Cellar"

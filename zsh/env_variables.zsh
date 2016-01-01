@@ -177,6 +177,8 @@ export JS_LIB_HOME=$JS_HOME/lib
 
 export NODE_HOME=$PROG_HOME/node
 
+export LODASH_PRACTICE_HOME=$PROG_HOME/node/practice/lodash
+
 export HTML_CSS_HOME=$PROG_HOME/html-css
 
 export HTML_LESS_HOME=$PROG_HOME/html-less
@@ -256,8 +258,6 @@ export GOOGLE_DRIVE="$HOME/Google Drive"
 
 export CRASH_REPORTS_HOME=$MERCURY_DOCS_HOME/air-crash-reports
 
-export DOCS_HOME="$HOME/Programming/robin/docs"
-
 export RECORDS_HOME="$MERCURY_HOME/docs/IMPORTANT/records"
 
 export WORK_RECORDS_HOME="$VENUS_HOME/docs/IMPORTANT/records"
@@ -306,6 +306,8 @@ export MERCURY_HOME=$FILES_HOME/$MERCURY_HOSTNAME
 export MERCURY_DOCS_HOME=$MERCURY_HOME/docs
 
 export SONGS_HOME=$MERCURY_DOCS_HOME/creative/songs
+
+export STORIES_HOME=$MERCURY_DOCS_HOME/creative/writing/stories
 
 export VENUS_HOME=$FILES_HOME/$VENUS_HOSTNAME
 
