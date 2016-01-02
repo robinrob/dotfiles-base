@@ -1,3 +1,5 @@
 [user]
 	email = robin@rsmith.io
 	name = Robin Smith
+[merge]
+	tool = diffmerge
