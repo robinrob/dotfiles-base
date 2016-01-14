@@ -615,8 +615,6 @@ alias vpnd="vpn -q"
 ###############################################################################
 alias gsd="git submodule deinit"
 
-alias grb="git rebase"
-
 alias grbc="git rebase --continue"
 
 alias gco="git_config"
@@ -1129,6 +1127,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias grb="git_rebase"
+
+alias gcnt="git_contributions"
+
 alias grh="grep_history"
 
 alias rt="run_and_tail"
@@ -1175,15 +1177,15 @@ alias req="ls_js_require"
 
 alias adbr="adb_restart"
 
-alias logj="js_log"
+alias logj="log_js"
 
-alias logjo="js_log_object"
+alias logjo="log_js_object"
 
-alias logp="python_log"
+alias logp="log_python"
 
-alias logpv="python_log_var"
+alias logpv="log_python_var"
 
-alias logpo="python_log_object"
+alias logpo="log_python_object"
 
 alias logz="zsh_log"
 

@@ -1,1 +1,1 @@
-copy_print "$(which $1)"
+copy_print "$(which_pro $1)"
