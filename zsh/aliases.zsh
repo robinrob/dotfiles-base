@@ -94,7 +94,7 @@ alias gsed="gsed -r"
 
 alias ls="/usr/local/bin/gls --color"
 
-alias cat="gcat"
+# alias cat="gcat"
 
 alias sed="gsed"
 
@@ -282,6 +282,8 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdstar="cd $HOME/Movies/Star Trek Voyager - Season 2"
+
 alias cdst="cd $STORIES_HOME"
 
 alias cdcsgo="cd '$CSGO_HOME'"
@@ -1091,9 +1093,13 @@ alias postcode="get_record home_postcode"
 
 alias em="get_record email"
 
+alias em2="get_record email2"
+
 alias pc="postcode"
 
+alias ws="get_record website"
 
+alias tw="get_record twitter"
 
 alias workpostcode="get_record work_postcode"
 
@@ -1158,6 +1164,8 @@ alias nnb="nos_new_bug"
 alias nnf="nos_new_feature"
 
 alias gpo="git_push_origin"
+
+alias gpot="git_push_origin_tags"
 
 alias gpl="git_pull_branch"
 

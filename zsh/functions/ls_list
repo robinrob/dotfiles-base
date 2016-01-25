@@ -1,6 +1,6 @@
 if [[ -n $@ ]]
 then
-  ls "${LISTS_HOME}/$(join $@ '/')*.txt" 2> /dev/null 1>&2
+  ls ${LISTS_HOME}/$(join $@ '/')*.txt 2> /dev/null
 else
-  ls "$LISTS_HOME" 2> /dev/null 1>&2
+  ls $LISTS_HOME 2> /dev/null
 fi

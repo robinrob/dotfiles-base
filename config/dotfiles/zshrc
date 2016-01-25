@@ -71,7 +71,7 @@ prompt robin
 printf "$(brightwhite I) $(brightyellow am) $(brightcyan awesome) $(brightwhite ':)')"
 speak "I am awesome"
 
-print " ($(nofap_counter) $(brightcyan days))"
+print " ($(pafon_counter) $(brightcyan days))"
 
 
 # Development
@@ -93,7 +93,7 @@ then
 fi
 
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 
 ## Ruby

@@ -254,7 +254,7 @@ export OCT_HOME=$PROG_HOME/octave
 ###############################################################################
 # Directories
 ###############################################################################
-export GOOGLE_DRIVE="$HOME/Google Drive"
+export GOOGLE_DRIVE="$HOME/Google\ Drive"
 
 export CRASH_REPORTS_HOME=$MERCURY_DOCS_HOME/air-crash-reports
 
@@ -262,9 +262,7 @@ export RECORDS_HOME="$MERCURY_HOME/docs/IMPORTANT/records"
 
 export WORK_RECORDS_HOME="$VENUS_HOME/docs/IMPORTANT/records"
 
-export RECEIPTS_HOME=$GOOGLE_DRIVE/expenses
-
-export EXPENSES_HOME=$RECEIPTS_HOME
+export EXPENSES_HOME="$GOOGLE_DRIVE/expenses"
 
 # This must NOT be wrapped in quotes or the whitespace-escaping in the path does not work!!
 export CAMERA_HOME="$FILES_HOME/Camera\ Uploads"
@@ -301,9 +299,7 @@ export COMMON_HOME=$FILES_HOME/common
 
 export COMMON_DOCS_HOME=$COMMON_HOME/docs
 
-export MERCURY_HOME=$FILES_HOME/$MERCURY_HOSTNAME
-
-export MERCURY_DOCS_HOME=$MERCURY_HOME/docs
+export MERCURY_DOCS_HOME="$GOOGLE_DRIVE/docs"
 
 export SONGS_HOME=$MERCURY_DOCS_HOME/creative/songs
 
@@ -315,7 +311,7 @@ export TEMP_HOME=$HOSTFILES_HOME/temp
 
 export DOCS_HOME=$HOSTFILES_HOME/docs
 
-export LISTS_HOME=$MERCURY_HOME/docs/lists
+export LISTS_HOME=$MERCURY_DOCS_HOME/lists
 
 export RDOCS_HOME=$RFILES_HOME/docs
 
