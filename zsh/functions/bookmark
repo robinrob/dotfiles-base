@@ -1,1 +1,1 @@
-create_bookmark $BOOKMARKS_PATH $@
+create_bookmark $BOOKMARKS_PATH "$@"
