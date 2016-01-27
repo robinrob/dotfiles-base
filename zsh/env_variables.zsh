@@ -379,7 +379,7 @@ export BOOKMARKS_PATH=$LISTS_HOME/bookmarks.txt
 export WORKBOOKMARKS_PATH=$LISTS_HOME/work_bookmarks.txt
 
 typeset -T BOOKMARKS bookmarks
-bookmarks=($WORKBOOKMARKS_PATH $BOOKMARKS_PATH $LISTS_HOME/books.txt)
+bookmarks=($BOOKMARKS_PATH $LISTS_HOME/books.txt)
 
 export BOOKMARKS_ALIAS_PATH=$ZDOT_HOME/bookmarks.zsh
 

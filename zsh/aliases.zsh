@@ -1125,6 +1125,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias clst="cat_last_file"
+
 alias grh="grep_history"
 
 alias rt="run_and_tail"
@@ -1386,8 +1388,6 @@ alias bbu="bitbucket_user_search"
 alias grbk="grep_bookmarks"
 
 alias cpy="copy"
-
-alias clst="cat \$(lastf)"
 
 alias mlst="olst $EDITOR"
 
