@@ -178,6 +178,21 @@ alias its="iterm $SH_HOME"
 alias cds="cd_down_tree $SH_HOME"
 alias cdspr="cd_down_tree $SH_HOME/practice"
 alias cdspro="cd_down_tree $SH_HOME/projects"
+alias lprsv="cd_save $LODASH_PRACTICE_HOME"
+
+alias lprcm="cd_commit $LODASH_PRACTICE_HOME"
+
+alias lprst="cd_status $LODASH_PRACTICE_HOME"
+
+alias lprpl="cd_pull $LODASH_PRACTICE_HOME"
+
+alias idlpr="idea $LODASH_PRACTICE_HOME"
+
+alias itlpr="iterm $LODASH_PRACTICE_HOME"
+
+alias cdlpr="cd_down_tree $LODASH_PRACTICE_HOME"
+alias cdlprpr="cd_down_tree $LODASH_PRACTICE_HOME/practice"
+alias cdlprpro="cd_down_tree $LODASH_PRACTICE_HOME/projects"
 alias rasv="cd_save $RECIPES_APP_HOME"
 
 alias racm="cd_commit $RECIPES_APP_HOME"

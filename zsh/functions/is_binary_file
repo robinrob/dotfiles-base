@@ -1,0 +1,6 @@
+local +r File=$1
+
+local +r FileInfo=$(file $File)
+
+if [[  ]]
+  64-bit executable

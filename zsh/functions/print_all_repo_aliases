@@ -23,6 +23,7 @@ abbreviations[css]=cs
 abbreviations[js-tests]=te
 abbreviations[jv]=jv
 abbreviations[javascript]=j
+abbreviations[lodash-practice]=lpr
 abbreviations[markdown]=m
 abbreviations[node]=n
 abbreviations[oct]=oc

@@ -3,11 +3,18 @@ local +r Type=$(which_type "$Thing")
 
 
 case $Type in
-  command)
+  'command')
     print $Thing ;;
-  file)
-    cat $Thing ;;
-  function)
+
+  'file')
+    if ! [[ -x $Thing ]]
+    then
+      cat $Thing
+    else
+      print $Thing
+    fi ;;
+
+  'function')
     which $Thing ;;
 esac
 

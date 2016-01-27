@@ -94,7 +94,7 @@ alias gsed="gsed -r"
 
 alias ls="/usr/local/bin/gls --color"
 
-alias cat="gcat"
+# alias cat="gcat"
 
 alias sed="gsed"
 
@@ -220,6 +220,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias clm="open -a Clementime"
+
 alias py="python"
 
 alias oct="octave"
@@ -280,6 +282,10 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdstar="cd $HOME/Movies/Star Trek Voyager - Season 2"
+
+alias cdst="cd $STORIES_HOME"
+
 alias cdcsgo="cd '$CSGO_HOME'"
 
 alias cdcel="cd /usr/local/Cellar"
@@ -610,8 +616,6 @@ alias vpnd="vpn -q"
 # Git
 ###############################################################################
 alias gsd="git submodule deinit"
-
-alias grb="git rebase"
 
 alias grbc="git rebase --continue"
 
@@ -1089,9 +1093,13 @@ alias postcode="get_record home_postcode"
 
 alias em="get_record email"
 
+alias em2="get_record email2"
+
 alias pc="postcode"
 
+alias ws="get_record website"
 
+alias tw="get_record twitter"
 
 alias workpostcode="get_record work_postcode"
 
@@ -1127,6 +1135,10 @@ alias ph="phone"
 ###############################################################################
 alias clst="cat_last_file"
 
+alias grb="git_rebase"
+
+alias gcnt="git_contributions"
+
 alias grh="grep_history"
 
 alias rt="run_and_tail"
@@ -1155,6 +1167,8 @@ alias nnf="nos_new_feature"
 
 alias gpo="git_push_origin"
 
+alias gpot="git_push_origin_tags"
+
 alias gpl="git_pull_branch"
 
 alias gplo="git_pull_origin_branch"
@@ -1173,15 +1187,15 @@ alias req="ls_js_require"
 
 alias adbr="adb_restart"
 
-alias logj="js_log"
+alias logj="log_js"
 
-alias logjo="js_log_object"
+alias logjo="log_js_object"
 
-alias logp="python_log"
+alias logp="log_python"
 
-alias logpv="python_log_var"
+alias logpv="log_python_var"
 
-alias logpo="python_log_object"
+alias logpo="log_python_object"
 
 alias logz="zsh_log"
 

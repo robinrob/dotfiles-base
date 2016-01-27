@@ -1,4 +1,4 @@
-local +r Nofaprc=$HOME/.nofaprc
+local +r Pafonrc=$HOME/.pafonrc
 
-rm -f $Nofaprc
-date '+%Y-%m-%d' > $Nofaprc
+rm $Pafonrc
+date '+%Y-%m-%d' > $Pafonrc

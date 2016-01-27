@@ -1,0 +1,3 @@
+local +r Branch=$1
+
+git fetch origin && git rebase origin/$Branch

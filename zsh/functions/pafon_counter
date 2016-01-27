@@ -1,4 +1,4 @@
-start_date=$(date --date=$(cat ~/.nofaprc) '+%s')
+start_date=$(date --date=$(cat ~/.pafonrc) '+%s')
 date_now=$(date '+%s')
 
 days=$(( (date_now - start_date) / (3600 * 24) ))

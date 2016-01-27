@@ -1,0 +1,8 @@
+dumps	test.py	/^import simplejson as simplejson; print 'my_var: {json}'.format(json=simplejson.dumps(my_var, indent=4))$/;"	i
+format	test.py	/^import simplejson as simplejson; print 'my_var: {json}'.format(json=simplejson.dumps(my_var, indent=4))$/;"	i
+indent	test.py	/^import simplejson as simplejson; print 'my_var: {json}'.format(json=simplejson.dumps(my_var, indent=4))$/;"	i
+json	test.py	/^import simplejson as simplejson; print 'my_var: {json}'.format(json=simplejson.dumps(my_var, indent=4))$/;"	i
+my_var	test.py	/^import simplejson as simplejson; print 'my_var: {json}'.format(json=simplejson.dumps(my_var, indent=4))$/;"	i
+my_var	test.py	/^my_var = {$/;"	v
+print	test.py	/^import simplejson as simplejson; print 'my_var: {json}'.format(json=simplejson.dumps(my_var, indent=4))$/;"	i
+simplejson	test.py	/^import simplejson as simplejson; print 'my_var: {json}'.format(json=simplejson.dumps(my_var, indent=4))$/;"	i
