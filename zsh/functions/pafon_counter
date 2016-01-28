@@ -1,4 +1,9 @@
-start_date=$(date --date=$(cat ~/.pafonrc) '+%s')
+if ! [[ -f $PAFONRC ]]
+then
+  reset
+fi
+
+start_date=$(date --date=$(cat $PAFONRC) '+%s')
 date_now=$(date '+%s')
 
 days=$(( (date_now - start_date) / (3600 * 24) ))

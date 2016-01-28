@@ -347,6 +347,8 @@ export GOOD_PHOTOS_HOME="$GOOGLE_DRIVE/pictures/photos/good_pictures_of_me"
 ###############################################################################
 # Files
 ###############################################################################
+export PAFONRC="$HOME/.pafonrc
+"
 export DEFAULT_DESKTOP="$BACKGROUNDS_HOME/DefaultDesktop.jpg"
 
 export SYSTEM_DESKTOP_PATH="/System/Library/CoreServices/DefaultDesktop.jpg"
