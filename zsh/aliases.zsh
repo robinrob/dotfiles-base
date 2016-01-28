@@ -180,7 +180,6 @@ alias lsw="ls | wc -l"
 
 alias pwdp="copy_print \$(pwd)"
 
-alias cldl="green 'Moving $HOME/Downloads/* to Trash ...'; mv $HOME/Downloads/* $HOME/.Trash"
 
 alias ssd="red 'Shutting down!'; sudo shutdown -h now"
 
@@ -194,9 +193,7 @@ alias logo="osascript -e 'tell app \"System Events\" to log out'"
 
 alias adbd="adb devices"
 
-alias lsdl="ls $DOWNLOADS_HOME"
 
-alias lstrdl="lstr $DOWNLOADS_HOME"
 
 alias pag="ps aux | grep"
 
@@ -362,7 +359,6 @@ alias cdgp="cd_down_tree $GULPFILE_HOME"
 
 alias cdrk="cd_down_tree $RAKELIB"
 
-alias cdl="cd_down_tree $LOCAL_HOME"
 
 alias cdw="cd_down_tree $WORK_HOME"
 
@@ -390,7 +386,6 @@ alias cddr="cd_down_tree $HOME/Dropbox"
 
 alias cdk="cd_down_tree $KITCHENPLAN_HOME"
 
-alias cddl="cd_down_tree $DOWNLOADS_HOME"
 
 alias cdmv="cd_down_tree $HOME/Movies"
 
@@ -608,7 +603,6 @@ alias kul="knife upload"
 
 alias kud="knife upload databag"
 
-alias kdl="knife download"
 
 alias vpnd="vpn -q"
 
@@ -627,7 +621,6 @@ alias glsf="git ls-files "
 
 alias gau="git add -u"
 
-alias gcdl="git ls-files --deleted | xargs git checkout"
 
 alias gld="git log -p --topo-order --stat --pretty=format:\${_git_log_medium_format}"
 
@@ -1475,7 +1468,6 @@ alias tls="take"
 
 alias cdld="cd \$(lsltr | tail -1)"
 
-alias dspdl="cd_down_tree $HOME/Downloads; despace; cd - > /dev/null"
 
 alias td="todo"
 
