@@ -108,6 +108,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias rmd="rmdir"
+
 alias hi="history 0"
 
 alias mcs="$EDITOR '$CSGO_CONFIG'"
@@ -282,7 +284,7 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
-alias cdstar="cd $HOME/Movies/Star Trek Voyager - Season 2"
+alias cdstr="cd $HOME/Movies/Star-Trek-Voyager-Season-2"
 
 alias cdst="cd $STORIES_HOME"
 
@@ -1133,6 +1135,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gig="git_ignore"
+
 alias grb="git_rebase"
 
 alias gcnt="git_contributions"
