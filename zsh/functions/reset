@@ -1,4 +1,3 @@
-local +r Pafonrc=$HOME/.pafonrc
+rm -f $PAFONRC
 
-rm $Pafonrc
-date '+%Y-%m-%d' > $Pafonrc
+date '+%Y-%m-%d' > $PAFONRC

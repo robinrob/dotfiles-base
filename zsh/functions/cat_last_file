@@ -1,0 +1,5 @@
+local +r LastFile=$(lastf)
+
+print "$(green Showing file:) $(yellow $LastFile)"
+
+cat $LastFile

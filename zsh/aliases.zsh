@@ -182,7 +182,6 @@ alias lsw="ls | wc -l"
 
 alias pwdp="copy_print \$(pwd)"
 
-alias cldl="green 'Moving $HOME/Downloads/* to Trash ...'; mv $HOME/Downloads/* $HOME/.Trash"
 
 alias ssd="red 'Shutting down!'; sudo shutdown -h now"
 
@@ -196,9 +195,7 @@ alias logo="osascript -e 'tell app \"System Events\" to log out'"
 
 alias adbd="adb devices"
 
-alias lsdl="ls $DOWNLOADS_HOME"
 
-alias lstrdl="lstr $DOWNLOADS_HOME"
 
 alias pag="ps aux | grep"
 
@@ -610,7 +607,6 @@ alias kul="knife upload"
 
 alias kud="knife upload databag"
 
-alias kdl="knife download"
 
 alias vpnd="vpn -q"
 
@@ -629,7 +625,6 @@ alias glsf="git ls-files "
 
 alias gau="git add -u"
 
-alias gcdl="git ls-files --deleted | xargs git checkout"
 
 alias gld="git log -p --topo-order --stat --pretty=format:\${_git_log_medium_format}"
 
@@ -1135,8 +1130,6 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
-alias gig="git_ignore"
-
 alias grb="git_rebase"
 
 alias gcnt="git_contributions"
@@ -1405,8 +1398,6 @@ alias grbk="grep_bookmarks"
 
 alias cpy="copy"
 
-alias clst="cat \$(lastf)"
-
 alias mlst="olst $EDITOR"
 
 alias mvls="mv \$(lastf)"
@@ -1479,7 +1470,6 @@ alias tls="take"
 
 alias cdld="cd \$(lsltr | tail -1)"
 
-alias dspdl="cd_down_tree $HOME/Downloads; despace; cd - > /dev/null"
 
 alias td="todo"
 
