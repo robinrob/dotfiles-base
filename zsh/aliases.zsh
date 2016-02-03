@@ -281,7 +281,7 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
-alias cdstr="cd $HOME/Movies/Star-Trek-Voyager-Season-2"
+alias cdstr="cd $HOME/Movies/Star-Trek-Voyager-Season-3"
 
 alias cdst="cd $STORIES_HOME"
 
@@ -653,6 +653,8 @@ alias grm="git rm -r --cached"
 alias gre="git remote"
 
 alias gbd="git branch -d"
+
+alias gbD="git branch -D"
 
 alias gbm="git branch master && git checkout master	"
 
@@ -1130,6 +1132,10 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias clst="cat_last_file"
+
+alias trans="translate"
+
 alias grb="git_rebase"
 
 alias gcnt="git_contributions"

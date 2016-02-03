@@ -1,27 +1,27 @@
+local +r From
+local +r To
+
 while getopts :f:t: name
 do
 	case $name in
-		f) FROM="$OPTARG" ;;
-		t) TO="$OPTARG" ;;
-		*) usage ;;                # display usage and exit
+		f) From="$OPTARG" ;;
+		t) To="$OPTARG" ;;
 	esac
 done
 
-if [[ "$FROM" == "" ]]
+if [[ "$From" == "" ]]
 then
-	FROM="tl"
+	From="tl"
 else
 	shift; shift;
 fi
 
-if [[ "$TO" == "" ]]
+if [[ "$To" == "" ]]
 then
-	TO="en"
+	To="en"
 else
 	shift; shift;
 fi
 
-args="$@"
-url="https://translate.google.com/#$FROM/$TO/$(urlencode ""$args"")"
-browser $url
+browser "https://translate.google.com/#$From/$To/$(urlencode ""$*"")"
 
