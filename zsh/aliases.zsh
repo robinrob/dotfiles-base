@@ -182,7 +182,6 @@ alias lsw="ls | wc -l"
 
 alias pwdp="copy_print \$(pwd)"
 
-
 alias ssd="red 'Shutting down!'; sudo shutdown -h now"
 
 alias SSD="ssd"
@@ -194,8 +193,6 @@ alias SSR="ssr"
 alias logo="osascript -e 'tell app \"System Events\" to log out'"
 
 alias adbd="adb devices"
-
-
 
 alias pag="ps aux | grep"
 
@@ -219,6 +216,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias cs="open -a 'Counter-Strike Global Offensive'"
+
 alias clm="open -a Clementime"
 
 alias py="python"
@@ -1132,6 +1131,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gig="git_ignore"
+
 alias clst="cat_last_file"
 
 alias trans="translate"
@@ -1624,5 +1625,5 @@ alias h="copy_print '6.626e-34'"
 # Fun
 ###############################################################################
 
-# Just a joke to all the thenners in the world!
+# Just a joke!
 alias than="then"
