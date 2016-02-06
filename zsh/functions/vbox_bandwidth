@@ -1,0 +1,10 @@
+local +r Env=$1
+local +r Limit=$2
+
+VBoxManage modifyvm "$Env" --nicbandwidthgroup1 none
+VBoxManage modifyvm "$Env" --nicbandwidthgroup2 none
+VBoxManage bandwidthctl "$Env" remove Limit
+
+VBoxManage bandwidthctl "$Env" add Limit --type network --limit ${Limit}m
+VBoxManage modifyvm "$Env" --nicbandwidthgroup1 Limit
+VBoxManage modifyvm "$Env" --nicbandwidthgroup2 Limit

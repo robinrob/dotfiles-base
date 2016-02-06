@@ -1,5 +1,7 @@
 (( $# > 0 )) || red "Must give name(s) of process(es)!"
 
+list_processes $@
+
 local +r -a Processes=($*)
 
 for process in $Processes

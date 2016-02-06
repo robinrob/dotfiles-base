@@ -218,6 +218,8 @@ alias syslog="tail -f /var/log/system.log"
 ##############################################################################
 alias cs="open -a 'Counter-Strike Global Offensive'"
 
+alias st="open -a Steam"
+
 alias clm="open -a Clementime"
 
 alias py="python"
