@@ -390,6 +390,10 @@ alias cddr="cd_down_tree $HOME/Dropbox"
 
 alias cdk="cd_down_tree $KITCHENPLAN_HOME"
 
+alias cddoc="cd_down_tree $HOME/Documents"
+
+alias cdopt="cd_down_tree $HOME/Documents/options"
+
 alias cddl="cd_down_tree $DOWNLOADS_HOME"
 
 alias cdmv="cd_down_tree $HOME/Movies"
@@ -913,7 +917,6 @@ alias rnsall="cd_down_tree $SCREENSHOTS_HOME && despace"
 
 alias mal="edit_alias"
 
-alias cal="cat $ZDOT_HOME/aliases.zsh"
 
 alias mun="$EDITOR $ZDOT_HOME/unaliases.zsh"
 
@@ -1133,9 +1136,13 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias cal="calendar
+"
 alias gig="git_ignore"
 
 alias clst="cat_last_file"
+
+alias hlst="head_last_file"
 
 alias trans="translate"
 
