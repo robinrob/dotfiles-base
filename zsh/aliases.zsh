@@ -1342,6 +1342,12 @@ alias scd="start_cocos_dev"
 
 alias std="start_game_dev"
 
+alias stp="kill_processes idea macvim vagrant virtualbox chrome"
+
+alias stg="stp; kill_processes finder safari; open -a 'Counter-Strike Global Offensive'"
+
+alias stpg="kill_processes steam strike"
+
 alias enD="end_dev"
 
 alias wpb="which_pbcopy"
