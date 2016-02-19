@@ -1,0 +1,12 @@
+local +r Branch=$(git_branch)
+
+print $Branch
+local +r Url="https://circleci.com/gh/cbf/NOS-BIT"
+
+if [[ -n $Branch ]]
+then
+  Url="$Url/tree/$(urlencode $Branch)"
+fi
+
+browser $Url
+

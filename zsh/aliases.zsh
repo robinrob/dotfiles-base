@@ -618,6 +618,8 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
+alias grb="git rebase"
+
 alias gsd="git submodule deinit"
 
 alias grbc="git rebase --continue"
@@ -629,7 +631,6 @@ alias gcog="git_config_global"
 alias glsf="git ls-files "
 
 alias gau="git add -u"
-
 
 alias gld="git log -p --topo-order --stat --pretty=format:\${_git_log_medium_format}"
 
@@ -1136,6 +1137,8 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias ci="circle_ci"
+
 alias cal="calendar
 "
 alias gig="git_ignore"
@@ -1145,8 +1148,6 @@ alias clst="cat_last_file"
 alias hlst="head_last_file"
 
 alias trans="translate"
-
-alias grb="git_rebase"
 
 alias gcnt="git_contributions"
 
