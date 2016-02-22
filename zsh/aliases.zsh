@@ -1481,8 +1481,6 @@ alias help="add_named_list_item help"
 
 alias ref="add_named_list_item refs"
 
-alias shop="add_named_list_item shopping"
-
 alias quote="add_named_list_item quotes"
 
 alias jobs="add_named_list_item jobsites"
@@ -1641,5 +1639,5 @@ alias h="copy_print '6.626e-34'"
 # Fun
 ###############################################################################
 
-# Just a joke!
+# Just a joke because i hate thenners!
 alias than="then"
