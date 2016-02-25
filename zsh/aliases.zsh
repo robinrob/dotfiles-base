@@ -390,6 +390,10 @@ alias cddr="cd_down_tree $HOME/Dropbox"
 
 alias cdk="cd_down_tree $KITCHENPLAN_HOME"
 
+alias cddoc="cd_down_tree $HOME/Documents"
+
+alias cdopt="cd_down_tree $HOME/Documents/options"
+
 alias cddl="cd_down_tree $DOWNLOADS_HOME"
 
 alias cdmv="cd_down_tree $HOME/Movies"
@@ -614,6 +618,8 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
+alias grb="git rebase"
+
 alias gsd="git submodule deinit"
 
 alias grbc="git rebase --continue"
@@ -625,7 +631,6 @@ alias gcog="git_config_global"
 alias glsf="git ls-files "
 
 alias gau="git add -u"
-
 
 alias gld="git log -p --topo-order --stat --pretty=format:\${_git_log_medium_format}"
 
@@ -913,7 +918,6 @@ alias rnsall="cd_down_tree $SCREENSHOTS_HOME && despace"
 
 alias mal="edit_alias"
 
-alias cal="cat $ZDOT_HOME/aliases.zsh"
 
 alias mun="$EDITOR $ZDOT_HOME/unaliases.zsh"
 
@@ -1133,13 +1137,17 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias ci="circle_ci"
+
+alias cal="calendar
+"
 alias gig="git_ignore"
 
 alias clst="cat_last_file"
 
-alias trans="translate"
+alias hlst="head_last_file"
 
-alias grb="git_rebase"
+alias trans="translate"
 
 alias gcnt="git_contributions"
 
@@ -1335,6 +1343,12 @@ alias scd="start_cocos_dev"
 
 alias std="start_game_dev"
 
+alias stp="kill_processes idea macvim vagrant virtualbox chrome"
+
+alias stg="stp; kill_processes finder safari; open -a 'Counter-Strike Global Offensive'"
+
+alias stpg="kill_processes steam strike"
+
 alias enD="end_dev"
 
 alias wpb="which_pbcopy"
@@ -1466,8 +1480,6 @@ alias learn="take $TO_LEARN"
 alias help="add_named_list_item help"
 
 alias ref="add_named_list_item refs"
-
-alias shop="add_named_list_item shopping"
 
 alias quote="add_named_list_item quotes"
 
@@ -1627,5 +1639,5 @@ alias h="copy_print '6.626e-34'"
 # Fun
 ###############################################################################
 
-# Just a joke!
+# Just a joke because i hate thenners!
 alias than="then"

@@ -1,0 +1,1 @@
+gcal | ggrep -E --color "\b$(gdate +%e)\b|$" | gsed 's/<\|>/ /g' | ggrep -E --color "\b$(gdate +%e)\b|$"
