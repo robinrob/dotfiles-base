@@ -11,7 +11,7 @@ done
 
 if [[ "$From" == "" ]]
 then
-	From="tl"
+	From="no"
 else
 	shift; shift;
 fi

@@ -362,7 +362,6 @@ alias cdgp="cd_down_tree $GULPFILE_HOME"
 
 alias cdrk="cd_down_tree $RAKELIB"
 
-alias cdl="cd_down_tree $LOCAL_HOME"
 
 alias cdw="cd_down_tree $WORK_HOME"
 
@@ -394,7 +393,6 @@ alias cddoc="cd_down_tree $HOME/Documents"
 
 alias cdopt="cd_down_tree $HOME/Documents/options"
 
-alias cddl="cd_down_tree $DOWNLOADS_HOME"
 
 alias cdmv="cd_down_tree $HOME/Movies"
 
