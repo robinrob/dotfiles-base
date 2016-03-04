@@ -1,1 +1,3 @@
-gcal | ggrep -E --color "\b$(gdate +%e)\b|$" | gsed 's/<\|>/ /g' | ggrep -E --color "\b$(gdate +%e)\b|$"
+local +r DayNum=$(gdate +%e | tr -d ' ')
+
+gcal | gcat | ggrep -E --color "\b$DayNum\b|$" | gsed 's/<\|>//g' | ggrep -E --color "\b$DayNum\b|$"
