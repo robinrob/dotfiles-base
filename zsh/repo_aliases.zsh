@@ -388,6 +388,21 @@ alias itj="iterm $JAVASCRIPT_HOME"
 alias cdj="cd_down_tree $JAVASCRIPT_HOME"
 alias cdjpr="cd_down_tree $JAVASCRIPT_HOME/practice"
 alias cdjpro="cd_down_tree $JAVASCRIPT_HOME/projects"
+alias losv="cd_save $LOCAL_HOME"
+
+alias locm="cd_commit $LOCAL_HOME"
+
+alias lost="cd_status $LOCAL_HOME"
+
+alias lopl="cd_pull $LOCAL_HOME"
+
+alias idlo="idea $LOCAL_HOME"
+
+alias itlo="iterm $LOCAL_HOME"
+
+alias cdlo="cd_down_tree $LOCAL_HOME"
+alias cdlopr="cd_down_tree $LOCAL_HOME/practice"
+alias cdlopro="cd_down_tree $LOCAL_HOME/projects"
 alias osv="cd_save $OCAML_HOME"
 
 alias ocm="cd_commit $OCAML_HOME"
