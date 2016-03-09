@@ -216,6 +216,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias skype="open -a Skype"
+
 alias cs="open -a 'Counter-Strike Global Offensive'"
 
 alias st="open -a Steam"
