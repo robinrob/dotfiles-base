@@ -11,16 +11,16 @@ done
 
 if [[ "$From" == "" ]]
 then
-	From="tl"
+	From="no"
 else
-	shift; shift;
+	shift 2;
 fi
 
 if [[ "$To" == "" ]]
 then
 	To="en"
 else
-	shift; shift;
+	shift 2;
 fi
 
 browser "https://translate.google.com/#$From/$To/$(urlencode ""$*"")"

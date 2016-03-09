@@ -284,6 +284,8 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cddl="cd $HOME/Downloads"
+
 alias cdstr="cd $HOME/Movies/Star-Trek-Voyager-Season-3"
 
 alias cdst="cd $STORIES_HOME"
@@ -364,7 +366,6 @@ alias cdgp="cd_down_tree $GULPFILE_HOME"
 
 alias cdrk="cd_down_tree $RAKELIB"
 
-alias cdl="cd_down_tree $LOCAL_HOME"
 
 alias cdw="cd_down_tree $WORK_HOME"
 
@@ -396,7 +397,6 @@ alias cddoc="cd_down_tree $HOME/Documents"
 
 alias cdopt="cd_down_tree $HOME/Documents/options"
 
-alias cddl="cd_down_tree $DOWNLOADS_HOME"
 
 alias cdmv="cd_down_tree $HOME/Movies"
 
@@ -418,6 +418,8 @@ alias cdlists="cd_down_tree $LISTS_HOME"
 ###############################################################################
 # Development operations
 ###############################################################################
+alias gpk="gulp karma"
+
 alias gpt="gulp test"
 
 alias gpts="gulp test-server"
@@ -489,6 +491,8 @@ alias nl="sudo npm link"
 alias ni="sudo npm install"
 
 alias nu="sudo npm uninstall"
+
+alias nr="npm_reinstall"
 
 alias nin="npm init"
 
@@ -1347,7 +1351,7 @@ alias std="start_game_dev"
 
 alias stp="kill_processes idea macvim vagrant virtualbox chrome"
 
-alias stg="stp; kill_processes finder safari; open -a 'Counter-Strike Global Offensive'"
+alias stg="stp; kill_processes finder safari vlc macvim spotify; open -a 'Counter-Strike Global Offensive'"
 
 alias stpg="kill_processes steam strike"
 

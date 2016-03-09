@@ -1,0 +1,4 @@
+local +r Packages="$@"
+
+sudo npm uninstall $Packages
+sudo npm install $Packages

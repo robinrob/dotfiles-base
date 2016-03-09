@@ -116,3 +116,6 @@ fi
 #########
 [ -f $HOME/.ssh/id_rsa_heroku ] && ssh-add $HOME/.ssh/id_rsa_heroku
 [ -f $HOME/.ssh/id_rsa ] && ssh-add $HOME/.ssh/id_rsa
+
+
+source $(brew --prefix nvm)/nvm.sh

@@ -1,6 +1,6 @@
 [submodule "config/dotfiles/rake"]
-	path = config/dotfiles/rake
-	url = git@github.com:robinrob/rakelib.git
+  path = config/dotfiles/rake
+  url = git@github.com:robinrob/rakelib.git
 [submodule "config/files/intellij-colors-solarized"]
-	path = config/files/intellij-colors-solarized
-	url = git@github.com:jkaving/intellij-colors-solarized.git
+  path = config/files/intellij-colors-solarized
+  url = git@github.com:jkaving/intellij-colors-solarized.git

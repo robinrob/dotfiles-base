@@ -18,6 +18,8 @@ Dirs=(
   $NDK_MODULE_PATH
   /usr/local/Library/anaconda3/bin
   ./node_modules/.bin
+  /usr/local/Cellar/nvm/0.31.0
+  /usr/local/Cellar/node/5.7.0/bin
   /usr/local/Cellar/octave/4.0.0/bin
   /usr/local/Cellar/macvim/7.4-79/bin
   /usr/local/Cellar/octave/4.0.0/bin
