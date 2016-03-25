@@ -119,3 +119,4 @@ fi
 
 
 source $(brew --prefix nvm)/nvm.sh
+nvm use 5.5.0
