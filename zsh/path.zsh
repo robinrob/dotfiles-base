@@ -23,6 +23,7 @@ Dirs=(
   /usr/local/Cellar/octave/4.0.0/bin
   /usr/local/Cellar/macvim/7.4-79/bin
   /usr/local/Cellar/octave/4.0.0/bin
+  /usr/local/Cellar/nvm/0.29.0
   /usr/local/bin
 )
 
