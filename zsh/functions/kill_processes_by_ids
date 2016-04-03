@@ -1,0 +1,10 @@
+(( $# > 0 )) || red "Must give id(s) of process(es)!"
+
+local +r -a Ids=($*)
+
+print "$(green Killing processes with ids:) $(yellow $Ids)"
+
+for id in $Ids
+do
+  kill -KILL $id 2> /dev/null
+done

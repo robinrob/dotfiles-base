@@ -1,7 +1,7 @@
 cd $MRROBINSMITHCOM_HOME
 green 'Starting server ...'
 rake server &
-kill_processes postgres
+kill_processes_by_name postgres
 green 'Starting postgres ...'
 postgres &
 green 'Opening http://localhost:3000'

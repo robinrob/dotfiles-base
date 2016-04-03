@@ -1,0 +1,3 @@
+local +r Port=$1
+
+kill_processes_by_ids $(list_port_listeners $Port)

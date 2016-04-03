@@ -108,6 +108,10 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias ndv="node --version"
+
+alias nvmv="nvm --version"
+
 alias rmd="rmdir"
 
 alias hi="history 0"
@@ -148,11 +152,11 @@ alias vlc="open -a Vlc\ 2"
 
 alias aud="open -a Audacity"
 
-alias kcc="kill_processes cocos"
+alias kcc="kill_processes_by_name cocos"
 
-alias kbs="kill_processes browser-sync"
+alias kbs="kill_processes_by_name browser-sync"
 
-alias kid="kill_processes idea"
+alias kid="kill_processes_by_name idea"
 
 alias repals="rm repo_aliases.zsh; print_all_repo_aliases > repo_aliases.zsh; source_aliases"
 
@@ -216,6 +220,10 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias skype="open -a Skype"
+
+alias war="open -a 'War Thunder'"
+
 alias cs="open -a 'Counter-Strike Global Offensive'"
 
 alias st="open -a Steam"
@@ -1003,6 +1011,8 @@ alias mre="$EDITOR requirements.txt"
 
 alias crq="cat requirements.txt"
 
+alias mrq="$EDITOR requirements.txt"
+
 alias mgi="$EDITOR .gitignore"
 
 alias mgm="$EDITOR .gitmodules"
@@ -1083,8 +1093,6 @@ alias docsec5="get_record docsecbald1"
 
 alias rssaws="get_record rss-aws"
 
-alias ad="address"
-
 alias phonelong="get_record phonelong"
 
 alias phoneshort="get_record phonecompact"
@@ -1103,7 +1111,9 @@ alias em="get_record email"
 
 alias em2="get_record email2"
 
-alias pc="postcode"
+alias ad="get_record home_address"
+
+alias pc="get_record home_postcode"
 
 alias ws="get_record website"
 
@@ -1127,12 +1137,6 @@ alias sky="skytrain"
 
 alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 
-alias pc="postcode"
-
-alias ad="address"
-
-alias ph="phone"
-
 ###############################################################################
 # Scripts
 ###############################################################################
@@ -1141,6 +1145,16 @@ alias ph="phone"
 ###############################################################################
 # Functions
 ###############################################################################
+alias tree="repo_tree"
+
+alias kpl="kill_port_listeners"
+
+alias lpl="list_port_listeners"
+
+alias trn="translate"
+
+alias tra="translate"
+
 alias ci="circle_ci"
 
 alias cal="calendar
@@ -1206,6 +1220,8 @@ alias adbr="adb_restart"
 alias logj="log_js"
 
 alias logjo="log_js_object"
+
+alias logjt="log_js_type"
 
 alias logp="log_python"
 
@@ -1311,10 +1327,6 @@ alias clc="calc"
 
 alias cr="cat_run"
 
-alias trn="translate_to_english"
-
-alias trt="translate_to_tagalog"
-
 alias cbs="browser_sync_cocos"
 
 alias lrl="livereload"
@@ -1347,11 +1359,11 @@ alias scd="start_cocos_dev"
 
 alias std="start_game_dev"
 
-alias stp="kill_processes idea macvim vagrant virtualbox chrome"
+alias stp="kill_processes_by_name idea macvim vagrant virtualbox chrome"
 
-alias stg="stp; kill_processes finder safari vlc macvim spotify; open -a 'Counter-Strike Global Offensive'"
+alias stg="stp; kill_processes_by_name finder safari vlc macvim spotify utorrent preview; open -a Steam"
 
-alias stpg="kill_processes steam strike"
+alias stpg="kill_processes_by_name steam strike thunder"
 
 alias enD="end_dev"
 
@@ -1397,7 +1409,7 @@ alias pulls="repo_pull_requests"
 
 alias rp="open_source_repo_path"
 
-alias kps="kill_processes"
+alias kps="kill_processes_by_name"
 
 alias grp="grep_processes"
 
@@ -1494,7 +1506,6 @@ alias comp="add_named_list_item computer_science"
 alias tls="take"
 
 alias cdld="cd \$(lsltr | tail -1)"
-
 
 alias td="todo"
 

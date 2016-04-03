@@ -1,0 +1,3 @@
+local +r Variable=$1
+
+copy_print "var typ = typeof($Variable); console.log('typeof($Variable): ' + JSON.stringify(typ, null, '\\\t'))"

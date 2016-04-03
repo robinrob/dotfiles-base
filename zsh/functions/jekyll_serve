@@ -1,5 +1,5 @@
 [[ -n $1 ]] && local +r BROWSER=$1
 
-kill_processes jekyll
+kill_processes_by_name jekyll
 chrome http://localhost:4000
 rake_do jekyll:server
