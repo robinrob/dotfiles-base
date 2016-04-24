@@ -720,7 +720,7 @@
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 459}</string>
+	<string>{712, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{1041, 570}</string>
 	<key>NSNavPanelExpandedStateForSaveMode</key>
@@ -741,13 +741,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1276 269 445 77 0 0 1920 1057 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>753 418 924 485 0 0 2560 1417 </string>
+	<string>164 131 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>5 27 2553 1386 0 0 2560 1417 </string>
+	<string>0 0 1280 800 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>4 17 1625 774 0 0 2560 1417 </string>
+	<string>-49 -2 1626 800 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -944,7 +944,7 @@
 			<key>Columns</key>
 			<integer>200</integer>
 			<key>Command</key>
-			<string>/bin/bash -c /bin/zsh</string>
+			<string>/bin/bash -c /usr/local/Cellar/zsh/5.1.1/bin/zsh</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -966,7 +966,7 @@
 			<key>Cursor Type</key>
 			<integer>2</integer>
 			<key>Custom Command</key>
-			<string>No</string>
+			<string>Yes</string>
 			<key>Custom Directory</key>
 			<string>No</string>
 			<key>Default Bookmark</key>
@@ -1304,11 +1304,11 @@
 			<key>Name</key>
 			<string>Robin</string>
 			<key>Non Ascii Font</key>
-			<string>Hack-Regular 14</string>
+			<string>Menlo-Regular 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Hack-Regular 14</string>
+			<string>Menlo-Regular 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1328,20 +1328,20 @@
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.56363654136657715</real>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.56485837697982788</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.50599193572998047</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.051001675426959991</real>
+				<real>0.19370138645172119</real>
 				<key>Green Component</key>
-				<real>0.763386070728302</real>
+				<real>0.15575926005840302</real>
 				<key>Red Component</key>
-				<real>0.1509460061788559</real>
+				<real>0.0</real>
 			</dict>
 			<key>Semantic History</key>
 			<dict>
@@ -1676,7 +1676,7 @@
 			<key>Columns</key>
 			<integer>200</integer>
 			<key>Command</key>
-			<string>/bin/bash -c /bin/zsh</string>
+			<string>/bin/bash -c /usr/local/Cellar/zsh/5.1.1/bin/zsh</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -2222,9 +2222,9 @@
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>477715344.26755798</real>
+	<real>477704294.83306301</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>478816124.20974302</real>
+	<real>481892914.19860601</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -2273,7 +2273,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/robin/Programming/robin/zsh/projects/dotfiles/dotfiles-base/config/files/iterm</string>
+	<string>/Users/msl/Programming/robin/zsh/projects/dotfiles/dotfiles-base/config/files/iterm</string>
 	<key>PromptOnClose</key>
 	<false/>
 	<key>PromptOnQuit</key>
@@ -2293,7 +2293,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-03-04T20:14:06Z</date>
+	<date>2016-04-09T10:07:26Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.1.1</string>
 	<key>SavePasteHistory</key>
