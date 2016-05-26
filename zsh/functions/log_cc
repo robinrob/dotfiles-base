@@ -1,0 +1,1 @@
+copy_print "cc.log('$(upper $*)')"

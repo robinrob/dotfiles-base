@@ -1,0 +1,18 @@
+local +r Pwd=$PWD
+
+check_cd_destination $1 || return 1
+
+IFS="
+"
+
+local +r Files
+Files=($(gfind . -maxdepth 1))
+
+for file in $Files
+do
+  move_to_trash $file
+done
+
+cd $Pwd > /dev/null
+
+return 0

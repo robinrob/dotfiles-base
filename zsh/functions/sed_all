@@ -1,18 +1,20 @@
-local +r SedExpression
-local +r FindExpression
+local +r Usage='sed_all <sed-expression> <find-expression> -w <where> -d <depth>'
+
+( [[ -z $1 ]] || [[ -z $2 ]] ) && red $Usage && return 1
+
+local +r SedExpression=$1;
+local +r FindExpression=$2; shift 2
 local +r Where='.'
 local +r MaxDepth
 local +r Inplace
 
-while getopts :s:f:w:d:i name
+while getopts :w:d:i name
 do
 	case $name in
-		s) SedExpression="$OPTARG" ;;
-    f) FindExpression="$OPTARG" ;;
     w) Where="$OPTARG" ;;
     d) MaxDepth="-maxdepth $OPTARG" ;;
     i) Inplace="-i" ;;
-    *) red 'sed_all -s <sed-expression> -f <find-expression> -w <where> -d <depth>' ;;
+    *) red $Usage && return 1 ;;
 	esac
 done
 

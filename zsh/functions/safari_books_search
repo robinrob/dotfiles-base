@@ -1,6 +1,8 @@
+local +r Url="http://my.safaribooksonline.com"
+
 if (( # > 0 ))
 then
-  safari "http://my.safaribooksonline.com/search?q=$(urlencode $@)"
-else
-  safari 'http://my.safaribooksonline.com/'
+  Url="${Url}/search?q=$(urlencode $@)"
 fi
+
+safari $Url

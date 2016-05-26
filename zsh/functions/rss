@@ -8,6 +8,7 @@ fi
 rvm gemset use rss > /dev/null 2> /dev/null
 
 local +r Url
+local +r Limit
 case $Feed in
   hacker)
     Url='https://news.ycombinator.com/rss' ;;

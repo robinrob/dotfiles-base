@@ -67,7 +67,7 @@ fi
 
 if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
 then
-	export BROWSER="safari"
+	export BROWSER="chrome"
   export SAYCMD=1  
 else
 	export BROWSER="safari"
@@ -124,6 +124,8 @@ export SPRITES_HOME="$RES_HOME/sprites"
 export SOUNDS_HOME="$RES_HOME/sounds"
 
 export ZSH_HOME="$HOME/Programming/robin/zsh"
+
+export GO_HOME="$HOME/Programming/robin/go"
 
 export PI_HOME=$PYTHON_HOME/projects/pi
 
@@ -221,6 +223,8 @@ export COCOS_EXAMPLES_HOME="$JS_HOME/projects/cocos-examples"
 export RUNNER_HOME="$JS_HOME/projects/runner"
 
 export ORBITER_HOME="$JS_HOME/projects/orbiter"
+
+export ORBITER_NEW_HOME="$JS_HOME/projects/orbiter-new"
 
 export GAME_HOME=$COCOS_EXAMPLES_HOME
 
@@ -347,8 +351,8 @@ export GOOD_PHOTOS_HOME="$GOOGLE_DRIVE/pictures/photos/good_pictures_of_me"
 ###############################################################################
 # Files
 ###############################################################################
-export PAFONRC="$HOME/.pafonrc
-"
+export PAFONRC="$HOME/.pafonrc"
+
 export DEFAULT_DESKTOP="$BACKGROUNDS_HOME/DefaultDesktop.jpg"
 
 export SYSTEM_DESKTOP_PATH="/System/Library/CoreServices/DefaultDesktop.jpg"
@@ -443,7 +447,7 @@ export ANT_ROOT=/usr/local/bin
 
 export NDK_ROOT=/usr/local/Cellar/android-ndk/r10e/
 
-export JS_TESTS_HOME="$COCOS_HOME/samples/js-tests"
+export JS_TESTS_HOME="$COCOS_HOME/tests/js-tests"
 
 export NODE_PATH=/usr/lib/node_modules
 
@@ -498,3 +502,26 @@ export SAYCMD_OVERRIDE=0
 # Misc
 ###############################################################################
 export POSTCODE='EH4 3BT'
+
+
+###############################################################################
+# Fundamental constants
+###############################################################################
+export e="2.71828182845904523536028747135266249775724709369995"
+
+export PI="3.14159265358979323846264338327950288419716939937510"
+
+
+###############################################################################
+# Physical constants
+###############################################################################
+export G="'6.674e−11'"
+
+export k="'1.38e-23'"
+
+export N="'6.022e23'"
+
+export h="'6.626e-34'"
+
+
+

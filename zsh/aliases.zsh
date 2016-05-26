@@ -43,7 +43,6 @@ alias dt="copy_print_eval \"gdate +'%Y-%m-%d %H:%M:%S.%6N'\""
 
 alias crl="crontab -l"
 
-
 alias more='less'
 
 alias mkdir='mkdir -pv'
@@ -108,6 +107,12 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias ki="kill_processes_by_name itunes"
+
+alias kp="kill_processes_by_name photos"
+
+alias kc="kill_processes_by_name camera\ upload"
+
 alias ndv="node --version"
 
 alias nvmv="nvm --version"
@@ -220,9 +225,12 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias act="open -a 'Activity Monitor'"
+
 alias skype="open -a Skype"
 
 alias war="open -a 'War Thunder'"
+
 alias cs="open -a 'Counter-Strike Global Offensive'"
 
 alias st="open -a Steam"
@@ -400,6 +408,8 @@ alias cdk="cd_down_tree $KITCHENPLAN_HOME"
 
 alias cddoc="cd_down_tree $HOME/Documents"
 
+alias cdpic="cd_down_tree $HOME/Pictures"
+
 alias cdopt="cd_down_tree $HOME/Documents/options"
 
 
@@ -423,13 +433,13 @@ alias cdlists="cd_down_tree $LISTS_HOME"
 ###############################################################################
 # Development operations
 ###############################################################################
+alias gpp="gulp protractor"
+
 alias gpk="gulp karma"
 
 alias gpt="gulp test"
 
 alias gpts="gulp test-server"
-
-alias gpr="gulp protractor"
 
 alias ven="virtualenv"
 
@@ -597,8 +607,6 @@ alias cdms="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
 
 alias cc="cocos compile"
 
-alias ccr="cocos run -p android"
-
 alias ccw="cocos compile -p web"
 
 alias cdw="cocos deploy -p web"
@@ -606,6 +614,12 @@ alias cdw="cocos deploy -p web"
 alias cca="cocos compile -p android"
 
 alias cda="cocos deploy -p android"
+
+alias ccr="cocos run -p android"
+
+alias cci="cocos compile -p ios"
+
+alias cdi="cocos deploy -p ios"
 
 alias ccl="logcat-color cocos"
 
@@ -809,9 +823,9 @@ alias ctr="cat_named_list read"
 
 alias mtr="edit_named_list read"
 
-alias cjs="cat $LISTS_HOME/jobsites.txt"
+alias cjs="cat $LISTS_HOME/jobs.txt"
 
-alias mjs="$EDITOR $LISTS_HOME/jobsites.txt"
+alias mjs="$EDITOR $LISTS_HOME/jobs.txt"
 
 alias mtd="$EDITOR $LISTS_HOME/$TO_DO.txt"
 
@@ -968,6 +982,8 @@ alias window="open /Users/robinsmith/Dropbox/Camera\ Uploads/gif/window.gif"
 
 alias cleantrash="sudo rm -rf $HOME/.Trash; mkdir $HOME/.Trash"
 
+alias cleandl="clean_directory ~/Downloads"
+
 alias cgi="cat .gitignore"
 
 alias kud="knife_upload_databag"
@@ -1116,6 +1132,8 @@ alias pc="get_record home_postcode"
 
 alias ws="get_record website"
 
+alias in="get_record linkedin"
+
 alias tw="get_record twitter"
 
 alias workpostcode="get_record work_postcode"
@@ -1132,7 +1150,6 @@ alias sb="sabihin"
 
 alias skytrain="open $COMMON_DOCS_HOME/useful/vancouver_skytrain_map.pdf"
 
-alias sky="skytrain"
 
 alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 
@@ -1144,11 +1161,15 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias hack="search_hacker_news"
+
 alias tree="repo_tree"
 
 alias kpl="kill_port_listeners"
 
 alias lpl="list_port_listeners"
+
+alias trN="translate -r"
 
 alias trn="translate"
 
@@ -1156,9 +1177,15 @@ alias tra="translate"
 
 alias ci="circle_ci"
 
-alias cal="calendar
-"
+alias cal="calendar"
+
 alias gig="git_ignore"
+
+alias llst="ls \$(lastf)"
+
+alias mvlst="mv \$(lastf)"
+
+alias pblst="ls \$(lastf) | pbcopy"
 
 alias clst="cat_last_file"
 
@@ -1220,7 +1247,15 @@ alias logj="log_js"
 
 alias logjo="log_js_object"
 
+alias logjv="log_js_variable"
+
 alias logjt="log_js_type"
+
+alias logc="log_cocos"
+
+alias logcv="log_cocos_variable"
+
+alias logco="log_cocos_object"
 
 alias logp="log_python"
 
@@ -1242,11 +1277,13 @@ alias gbn="git_branch_checkout"
 
 alias it="iterm"
 
+alias itt="iterm_iterm"
+
 alias sad="start_angular_dev"
 
 alias gpd="gulp_deploy"
 
-alias in="linkedin_search"
+alias lin="linkedin_search"
 
 alias tof="to_fahrenheit"
 
@@ -1358,7 +1395,7 @@ alias scd="start_cocos_dev"
 
 alias std="start_game_dev"
 
-alias stp="kill_processes_by_name idea macvim vagrant virtualbox chrome"
+alias stp="kill_processes_by_name idea macvim vagrant virtualbox"
 
 alias stg="stp; kill_processes_by_name finder safari vlc macvim spotify utorrent preview; open -a Steam"
 
@@ -1438,8 +1475,6 @@ alias cpy="copy"
 
 alias mlst="olst $EDITOR"
 
-alias mvls="mv \$(lastf)"
-
 alias wk="wiki"
 
 alias ggt="google_translate"
@@ -1498,7 +1533,7 @@ alias ref="add_named_list_item refs"
 
 alias quote="add_named_list_item quotes"
 
-alias jobs="add_named_list_item jobsites"
+alias jobs="add_named_list_item jobs"
 
 alias comp="add_named_list_item computer_science"
 
@@ -1632,21 +1667,21 @@ alias sshf="file_grep $HOME/.ssh/config"
 ###############################################################################
 # Fundamental constants
 ###############################################################################
-alias e="copy_print 2.71828182845904523536028747135266249775724709369995"
-
-alias PI="copy_print 3.14159265358979323846264338327950288419716939937510"
+# alias e="copy_print 2.71828182845904523536028747135266249775724709369995"
+#
+# alias PI="copy_print 3.14159265358979323846264338327950288419716939937510"
 
 
 ###############################################################################
 # Physical constants
 ###############################################################################
-alias G="copy_print '6.674e−11'"
-
-alias k="copy_print '1.38e-23'"
-
-alias N="copy_print '6.022e23'"
-
-alias h="copy_print '6.626e-34'"
+# alias G="copy_print '6.674e−11'"
+#
+# alias k="copy_print '1.38e-23'"
+#
+# alias N="copy_print '6.022e23'"
+#
+# alias h="copy_print '6.626e-34'"
 
 
 ###############################################################################
