@@ -1,1 +1,1 @@
-copy_print "cc.log('$(upper $*)')"
+copy_print "cc.log('$* ...')"

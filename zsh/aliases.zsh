@@ -249,6 +249,8 @@ alias office="open -a OpenOffice"
 
 alias pix="open -a Pixelmator"
 
+alias pixen="open -a Pixen"
+
 alias cpp="copy_print"
 
 alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
@@ -1376,8 +1378,6 @@ alias gsap="git_submodule_add_project"
 alias clf="clean_files"
 
 alias dtsv="dotfiles_save"
-
-alias gtr="google_translate"
 
 alias olst="open_last_modified"
 
