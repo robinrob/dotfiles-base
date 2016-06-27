@@ -3,5 +3,12 @@ local +A Items; Items=($*)
 
 for item in $Items
 do
-  open $(get_named_list_item $List $item)
+  local +r Value=$(get_named_list_item $List $item)
+
+  if $(is_http_url $Value)
+  then
+    safari $Value
+  else
+    open $Value
+  fi
 done
