@@ -1,8 +1,8 @@
 local +r Command=$1
 
-if [[ $Command[1,4] == 'http' ]]
+if $(is_http_url $Command)
 then
-  browser $Command
+  safari $Command
 else
   print "zsh: command not found you nutter!: $@"
 fi

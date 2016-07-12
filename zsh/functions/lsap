@@ -1,2 +1,2 @@
-copy_print $(lsa $@)
+copy_print $(lsa $1)
 

@@ -1,2 +1,2 @@
-browser "https://www.google.ca/#q=$(urlencode $@)&safe=active"
+browser "https://www.google.com/#q=$(urlencode $@)&safe=active"
 

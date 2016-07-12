@@ -1,0 +1,4 @@
+local +r FileType=$1
+local +r AppId=$2
+
+duti -s $AppId $FileType all

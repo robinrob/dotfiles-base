@@ -1,0 +1,4 @@
+local +r Origin=$1
+local +r Destination=$2
+
+browser "https://www.google.co.uk/maps/dir/($(urlencode $Origin)/$(urlencode $Destination)"

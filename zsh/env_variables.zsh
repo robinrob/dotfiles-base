@@ -79,7 +79,9 @@ fi
 ###############################################################################
 export PROGRAMMING_HOME="$HOME/Programming/robin"
 
-export PROG_HOME="$HOME/Programming/robin"
+export PROG_HOME="$HOME/Programming"
+
+export ROBIN_HOME="$HOME/Programming/robin"
 
 export AWK_HOME="$HOME/Programming/robin/awk"
 
@@ -165,25 +167,25 @@ export CONFIG_DOTFILES_HOME=$DOTFILES_BASE_HOME/config/dotfiles
 
 export CONFIG_FILES_HOME=$DOTFILES_BASE_HOME/config/files
 
-export FORCE_COM_HOME=$PROG_HOME/force.com
+export FORCE_COM_HOME=$ROBIN_HOME/force.com
 
 export WORK_FORCE_COM_HOME=$WORK_HOME/force.com
 
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
-export JV_HOME=$PROG_HOME/java
+export JV_HOME=$ROBIN_HOME/java
 
-export JS_HOME=$PROG_HOME/javascript
+export JS_HOME=$ROBIN_HOME/javascript
 
 export JS_LIB_HOME=$JS_HOME/lib
 
-export NODE_HOME=$PROG_HOME/node
+export NODE_HOME=$ROBIN_HOME/node
 
-export LODASH_PRACTICE_HOME=$PROG_HOME/node/practice/lodash
+export LODASH_PRACTICE_HOME=$ROBIN_HOME/node/practice/lodash
 
-export HTML_CSS_HOME=$PROG_HOME/html-css
+export HTML_CSS_HOME=$ROBIN_HOME/html-css
 
-export HTML_LESS_HOME=$PROG_HOME/html-less
+export HTML_LESS_HOME=$ROBIN_HOME/html-less
 
 export RUBY_TEMPLATES_HOME=$RUBY_HOME/templates
 
@@ -252,7 +254,7 @@ export ORIGINS_HOME=$JS_HOME/projects/fundamental-origins
 
 export ORIGINS_DEV_HOME=$JS_HOME/projects/fundamental-origins-dev
 
-export OCT_HOME=$PROG_HOME/octave
+export OCT_HOME=$ROBIN_HOME/octave
 
 
 ###############################################################################
@@ -515,13 +517,10 @@ export PI="3.14159265358979323846264338327950288419716939937510"
 ###############################################################################
 # Physical constants
 ###############################################################################
-export G="'6.674e−11'"
+export G="6.674e-11"
 
-export k="'1.38e-23'"
+export k="1.38e-23"
 
-export N="'6.022e23'"
+export N="6.022e23"
 
-export h="'6.626e-34'"
-
-
-
+export h="6.626e-34"

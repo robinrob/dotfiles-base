@@ -225,6 +225,14 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias ssl="open -a 'shellShock Live'"
+
+alias itunes="open -a iTunes"
+
+alias quick="open -a 'Quicktime Player'"
+
+alias til="open -a Tiled"
+
 alias act="open -a 'Activity Monitor'"
 
 alias skype="open -a Skype"
@@ -566,8 +574,6 @@ alias znew="new_s zsh zsh"
 alias fnew="new_s fish fish"
 
 alias cnew="new -i '' -e cq -f"
-
-alias nnew="new_s node js"
 
 alias lnew="lodash_new"
 
@@ -1163,6 +1169,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias dirs="directions"
+
 alias hack="search_hacker_news"
 
 alias tree="repo_tree"

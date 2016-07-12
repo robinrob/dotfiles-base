@@ -1,0 +1,1 @@
+cat $LISTS_HOME/songs.txt | wc -l
