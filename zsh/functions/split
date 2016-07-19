@@ -1,6 +1,6 @@
-SEPERATOR=$*[-1]
-WORD="$*[1,-2]"
+local +r Separator=$*[-1]
+local +r Word="$*[1,-2]"
 
-WORDS=$(eval 'WORDS=("${(s/'$SEPERATOR'/)WORD}"); print $WORDS')
+Words=$(eval 'Words=("${(s/'$Separator'/)Word}"); print $Words')
 
-print $WORDS
+print $Words

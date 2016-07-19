@@ -607,7 +607,6 @@ alias wcfn="wc -l $FUNCS_HOME/*"
 
 alias grfn="grep_functions"
 
-alias js="jekyll serve"
 
 alias cdnoc="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
 
@@ -831,9 +830,7 @@ alias ctr="cat_named_list read"
 
 alias mtr="edit_named_list read"
 
-alias cjs="cat $LISTS_HOME/jobs.txt"
 
-alias mjs="$EDITOR $LISTS_HOME/jobs.txt"
 
 alias mtd="$EDITOR $LISTS_HOME/$TO_DO.txt"
 
@@ -960,7 +957,7 @@ alias mop="$EDITOR $ZDOT_HOME/options.zsh"
 
 alias cop="cat $ZDOT_HOME/options.zsh"
 
-alias mos="$EDITOR $ZDOT_HOME/osx_defaults*.zsh"
+alias mos="$EDITOR $ZDOT_HOME/osx_defaults_robin.zsh"
 
 alias cos="cat $ZDOT_HOME/osx.zsh"
 
@@ -1279,6 +1276,8 @@ alias logzv="zsh_log_var"
 
 alias lod="lodash_doc_search"
 
+alias sains="sainsburys_search"
+
 alias asda="asda_search"
 
 alias gbch="git_branch_checkout"
@@ -1403,7 +1402,7 @@ alias scd="start_cocos_dev"
 
 alias std="start_game_dev"
 
-alias stp="kill_processes_by_name idea macvim vagrant virtualbox"
+alias stp="kill_processes_by_name idea macvim vagrant virtualbox itunes firefox safari finder"
 
 alias stg="stp; kill_processes_by_name finder safari vlc macvim spotify utorrent preview; open -a Steam"
 
@@ -1698,3 +1697,11 @@ alias sshf="file_grep $HOME/.ssh/config"
 
 # Just a joke because i hate thenners!
 alias than="then"
+
+# I also hate this new breed of thatters ...
+alias that="than"
+
+if (1)
+  that
+  print Oh no
+fi

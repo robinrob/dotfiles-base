@@ -1,1 +1,6 @@
-copy_print "console.log('$(upper $*)')"
+if [[ -z "$*" ]]
+then
+  copy_print "console.log()"
+else
+  copy_print "console.log('$(upper $*)')"
+fi

@@ -1,0 +1,8 @@
+local +r Url
+
+case $# in
+  (0) Url="http://www.sainsburys.co.uk/shop/gb/groceries"  ;;
+  (1) Url="http://www.sainsburys.co.uk/webapp/wcs/stores/servlet/SearchDisplayView?catalogId=10122&langId=44&storeId=10151&searchTerm=$(urlencode $@)"  ;;
+esac
+
+browser $Url

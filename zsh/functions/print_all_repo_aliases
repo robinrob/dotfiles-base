@@ -46,6 +46,7 @@ abbreviations[runner]=rn
 abbreviations[rss]=rs
 abbreviations[scala]=sc
 abbreviations[sh]=s
+abbreviations[typescript]=tp
 abbreviations[website]=mr
 abbreviations[website-dev]=mrd
 abbreviations[quiz]=q

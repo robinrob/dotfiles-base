@@ -185,6 +185,23 @@ alias cdqpr="cd_down_tree $QUIZ_HOME/practice"
 alias cdqpro="cd_down_tree $QUIZ_HOME/projects"
 alias glpq="cd_gulp $QUIZ_HOME"
 
+alias tpsv="cd_save $TYPESCRIPT_HOME"
+
+alias tpcm="cd_commit $TYPESCRIPT_HOME"
+
+alias tpst="cd_status $TYPESCRIPT_HOME"
+
+alias tppl="cd_pull $TYPESCRIPT_HOME"
+
+alias idtp="idea $TYPESCRIPT_HOME"
+
+alias ittp="iterm $TYPESCRIPT_HOME"
+
+alias cdtp="cd_down_tree $TYPESCRIPT_HOME"
+alias cdtppr="cd_down_tree $TYPESCRIPT_HOME/practice"
+alias cdtppro="cd_down_tree $TYPESCRIPT_HOME/projects"
+alias glptp="cd_gulp $TYPESCRIPT_HOME"
+
 alias ssv="cd_save $SH_HOME"
 
 alias scm="cd_commit $SH_HOME"

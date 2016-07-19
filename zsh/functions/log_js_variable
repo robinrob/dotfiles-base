@@ -1,3 +1,10 @@
-local +r Variable=$1
+local +r Variables=($*)
+local +r Strings=()
 
-copy_print "console.log('$Variable: ' + $Variable)"
+
+for variable in $Variables
+do
+  Strings=($Strings "${String}console.log('$variable: ' + $variable)")
+done
+
+join $Strings '\n' | pbcopy && pbpaste

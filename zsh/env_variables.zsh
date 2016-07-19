@@ -181,6 +181,8 @@ export JS_LIB_HOME=$JS_HOME/lib
 
 export NODE_HOME=$ROBIN_HOME/node
 
+export TYPESCRIPT_HOME=$ROBIN_HOME/typescript
+
 export LODASH_PRACTICE_HOME=$ROBIN_HOME/node/practice/lodash
 
 export HTML_CSS_HOME=$ROBIN_HOME/html-css
