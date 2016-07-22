@@ -1174,6 +1174,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias ma="gmail"
+
 alias dirs="directions"
 
 alias hack="search_hacker_news"
@@ -1702,8 +1704,3 @@ alias than="then"
 
 # I also hate this new breed of thatters ...
 alias that="than"
-
-if (1)
-  that
-  print Oh no
-fi
