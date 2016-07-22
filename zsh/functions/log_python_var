@@ -1,1 +1,11 @@
-copy_print "print '$1: {var}'.format(var=$1)"
+local +r Variables=($*)
+local +r Strings=()
+
+
+for variable in $Variables
+do
+  Strings=($Strings "${String}print '$variable: {var}'.format(var=$variable)")
+done
+
+join $Strings '\n' | pbcopy && pbpaste
+

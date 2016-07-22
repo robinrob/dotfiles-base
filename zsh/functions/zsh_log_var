@@ -1,3 +1,11 @@
-local +r Var=$1
+local +r Variables=($*)
+local +r Strings=()
 
-copy_print "print \"$Var: \${$Var}\""
+
+for variable in $Variables
+do
+  Strings=($Strings "${String}print \"$variable: \${$variable}\"")
+done
+
+join $Strings '\n' | pbcopy && pbpaste
+
