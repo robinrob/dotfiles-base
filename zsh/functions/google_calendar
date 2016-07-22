@@ -1,0 +1,8 @@
+local +r Url
+
+case $# in
+  0) Url="https://calendar.google.com" ;;
+  *) Url="https://calendar.google.com/calendar/render#main_7%7Csearch-1+23798+23798+23798-n+$(urlencode $@)++++++++1+7" ;;
+esac
+
+browser $Url

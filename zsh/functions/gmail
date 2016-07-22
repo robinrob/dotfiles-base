@@ -1,1 +1,9 @@
-browser "https://mail.google.com/mail/u/0/#search/$(urlencode $@)"
+local +r Url
+
+case $# in
+  0) Url="https://mail.google.com" ;;
+  *) Url="https://mail.google.com/mail/u/0/#search/$(urlencode $@)";;
+esac
+
+browser $Url
+

@@ -1174,6 +1174,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias ca="google_calendar"
+
 alias ma="gmail"
 
 alias dirs="directions"
