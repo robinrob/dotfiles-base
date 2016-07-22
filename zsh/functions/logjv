@@ -1,1 +1,0 @@
-printf '%s' "$(join $Strings '\n')" | pbcopy && pbpaste
