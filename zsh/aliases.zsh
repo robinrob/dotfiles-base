@@ -107,6 +107,14 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias mapsn="maps -n"
+
+alias llst="ls \$(lastf)"
+
+alias mvlst="mv \$(lastf)"
+
+alias pblst="ls \$(lastf) | pbcopy"
+
 alias ki="kill_processes_by_name itunes"
 
 alias kp="kill_processes_by_name photos"
@@ -1187,12 +1195,6 @@ alias ci="circle_ci"
 alias cal="calendar"
 
 alias gig="git_ignore"
-
-alias llst="ls \$(lastf)"
-
-alias mvlst="mv \$(lastf)"
-
-alias pblst="ls \$(lastf) | pbcopy"
 
 alias clst="cat_last_file"
 
