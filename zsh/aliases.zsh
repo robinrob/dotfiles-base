@@ -1276,9 +1276,9 @@ alias logpv="log_python_var"
 
 alias logpo="log_python_object"
 
-alias logz="zsh_log"
+alias logz="log_zsh"
 
-alias logzv="zsh_log_var"
+alias logzv="log_zsh_var"
 
 alias lod="lodash_doc_search"
 

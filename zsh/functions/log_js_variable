@@ -7,4 +7,4 @@ do
   Strings=($Strings "${String}console.log('$variable: ' + $variable)")
 done
 
-join $Strings '\n' | pbcopy && pbpaste
+printf '%s' "$(join $Strings '\n')" | pbcopy && pbpaste

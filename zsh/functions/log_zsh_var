@@ -7,5 +7,4 @@ do
   Strings=($Strings "${String}print \"$variable: \${$variable}\"")
 done
 
-join $Strings '\n' | pbcopy && pbpaste
-
+printf '%s' "$(join $Strings '\n')" | pbcopy && pbpaste
