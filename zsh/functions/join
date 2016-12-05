@@ -1,3 +1,6 @@
-local IFS="$*[-1]"
+local +r Separator="$*[-1]"
+local +r Words=($*[1,-2])
 
-print "$*[1,-2]"
+Words=$(eval 'Words=("${(j.'$Separator'.)Words}"); print $Words')
+
+print $Words

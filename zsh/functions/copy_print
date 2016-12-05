@@ -1,5 +1,5 @@
 # printf is necessary here because print does not print a string containing only
 # the character '-', no matter how many times the string contains it.
 
-printf "$*" | pbcopy && pbpaste
+printf '%s' "$*" | pbcopy && pbpaste
 

@@ -60,6 +60,8 @@ source $ZDOT_HOME/path.zsh
 ###############################################################################
 source $ZDOT_HOME/options.zsh
 
+zmodload -i zsh/mathfunc
+
 
 # Prompt
 ###############################################################################
@@ -106,6 +108,12 @@ then
 fi
 
 
+## Node
+#########
+source $(brew --prefix nvm)/nvm.sh
+nvm use 6.3.0
+
+
 ## OCaml
 ########
 # OPAM configuration
@@ -116,7 +124,3 @@ fi
 #########
 [ -f $HOME/.ssh/id_rsa_heroku ] && ssh-add $HOME/.ssh/id_rsa_heroku
 [ -f $HOME/.ssh/id_rsa ] && ssh-add $HOME/.ssh/id_rsa
-
-
-source $(brew --prefix nvm)/nvm.sh
-nvm use 5.5.0

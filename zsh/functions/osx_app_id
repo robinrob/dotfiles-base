@@ -1,0 +1,3 @@
+local +r AppName="$*"
+
+/usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' /Applications/$AppName.app/Contents/Info.plist

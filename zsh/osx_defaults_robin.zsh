@@ -57,3 +57,17 @@ sudo cp $BACKGROUNDS_HOME/* $SYSTEM_PROFILEIMAGES_HOME/Nature
 
 # Iterm2 hotkey window animation duration
 defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.0
+
+# ###############################################################################
+# # File associations
+# ###############################################################################
+
+[[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
+autoload -U +X load 2> /dev/null
+load
+
+local +r Extensions=(sh zsh py js sql csv)
+for extension in $Extensions
+do
+  associate_file_type_with_app_name $extension 'IntelliJ IDEA 14'
+done

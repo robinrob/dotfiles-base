@@ -1,11 +1,13 @@
 local +r From
 local +r To
+local +r Reverse=0
 
-while getopts :f:t: name
+while getopts :f:t:r name
 do
 	case $name in
 		f) From="$OPTARG" ;;
 		t) To="$OPTARG" ;;
+		r) Reverse=1;;
 	esac
 done
 
@@ -21,6 +23,15 @@ then
 	To="en"
 else
 	shift 2;
+fi
+
+if [[ $Reverse == 1 ]]
+then
+  tmp=$To
+  To=$From
+  From=$tmp
+
+  shift;
 fi
 
 browser "https://translate.google.com/#$From/$To/$(urlencode ""$*"")"

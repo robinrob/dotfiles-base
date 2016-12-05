@@ -1,0 +1,3 @@
+local +r Variable=$1
+
+copy_print "cc.log('$Variable: ' + $Variable)"

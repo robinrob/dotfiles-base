@@ -1,2 +1,21 @@
-speak $1
+# local +r Command=$1
+# local +r Substr=$Command[1,4]
+#
+# speak $Command
+#
+# if [[ $Substr == 'http' ]]
+# then
+#   # browser $Command
+# else
+# fi
 
+# export COMMAND=$Command
+# export SUBSTR=$Substr
+#
+# function TRAPZERR {
+#   if [[ $? == 127 && $SUBSTR == 'http' ]]
+#   then
+#     browser $COMMAND
+#     return 0
+#   fi
+# }

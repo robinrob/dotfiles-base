@@ -1,0 +1,6 @@
+local +r FileType=$1
+local +r AppName=$2
+
+associate_file_type_with_app_id $FileType $(osx_app_id $AppName)
+
+print "$(green Filetype) $(yellow $FileType) $(green associated with Application) $(yellow $AppName)"

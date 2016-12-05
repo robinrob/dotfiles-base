@@ -1,1 +1,0 @@
-browser "https://translate.google.com/#tl/en/$(urlencode $@)"

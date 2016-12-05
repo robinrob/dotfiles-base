@@ -67,7 +67,7 @@ fi
 
 if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
 then
-	export BROWSER="safari"
+	export BROWSER="chrome"
   export SAYCMD=1  
 else
 	export BROWSER="safari"
@@ -79,7 +79,9 @@ fi
 ###############################################################################
 export PROGRAMMING_HOME="$HOME/Programming/robin"
 
-export PROG_HOME="$HOME/Programming/robin"
+export PROG_HOME="$HOME/Programming"
+
+export ROBIN_HOME="$HOME/Programming/robin"
 
 export AWK_HOME="$HOME/Programming/robin/awk"
 
@@ -125,6 +127,8 @@ export SOUNDS_HOME="$RES_HOME/sounds"
 
 export ZSH_HOME="$HOME/Programming/robin/zsh"
 
+export GO_HOME="$HOME/Programming/robin/go"
+
 export PI_HOME=$PYTHON_HOME/projects/pi
 
 export PYAPP_HOME=$PYTHON_HOME/projects/pyapp
@@ -163,25 +167,27 @@ export CONFIG_DOTFILES_HOME=$DOTFILES_BASE_HOME/config/dotfiles
 
 export CONFIG_FILES_HOME=$DOTFILES_BASE_HOME/config/files
 
-export FORCE_COM_HOME=$PROG_HOME/force.com
+export FORCE_COM_HOME=$ROBIN_HOME/force.com
 
 export WORK_FORCE_COM_HOME=$WORK_HOME/force.com
 
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
-export JV_HOME=$PROG_HOME/java
+export JV_HOME=$ROBIN_HOME/java
 
-export JS_HOME=$PROG_HOME/javascript
+export JS_HOME=$ROBIN_HOME/javascript
 
 export JS_LIB_HOME=$JS_HOME/lib
 
-export NODE_HOME=$PROG_HOME/node
+export NODE_HOME=$ROBIN_HOME/node
 
-export LODASH_PRACTICE_HOME=$PROG_HOME/node/practice/lodash
+export TYPESCRIPT_HOME=$ROBIN_HOME/typescript
 
-export HTML_CSS_HOME=$PROG_HOME/html-css
+export LODASH_PRACTICE_HOME=$ROBIN_HOME/node/practice/lodash
 
-export HTML_LESS_HOME=$PROG_HOME/html-less
+export HTML_CSS_HOME=$ROBIN_HOME/html-css
+
+export HTML_LESS_HOME=$ROBIN_HOME/html-less
 
 export RUBY_TEMPLATES_HOME=$RUBY_HOME/templates
 
@@ -222,6 +228,8 @@ export RUNNER_HOME="$JS_HOME/projects/runner"
 
 export ORBITER_HOME="$JS_HOME/projects/orbiter"
 
+export ORBITER_NEW_HOME="$JS_HOME/projects/orbiter-new"
+
 export GAME_HOME=$COCOS_EXAMPLES_HOME
 
 export RECIPES_APP_HOME=$JS_HOME/projects/recipes-app
@@ -248,7 +256,7 @@ export ORIGINS_HOME=$JS_HOME/projects/fundamental-origins
 
 export ORIGINS_DEV_HOME=$JS_HOME/projects/fundamental-origins-dev
 
-export OCT_HOME=$PROG_HOME/octave
+export OCT_HOME=$ROBIN_HOME/octave
 
 
 ###############################################################################
@@ -347,8 +355,8 @@ export GOOD_PHOTOS_HOME="$GOOGLE_DRIVE/pictures/photos/good_pictures_of_me"
 ###############################################################################
 # Files
 ###############################################################################
-export PAFONRC="$HOME/.pafonrc
-"
+export PAFONRC="$HOME/.pafonrc"
+
 export DEFAULT_DESKTOP="$BACKGROUNDS_HOME/DefaultDesktop.jpg"
 
 export SYSTEM_DESKTOP_PATH="/System/Library/CoreServices/DefaultDesktop.jpg"
@@ -433,7 +441,7 @@ export INTELLIJ_COLORS="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/
 ###############################################################################
 # Cocos
 ###############################################################################
-export COCOS_HOME="/usr/local/Library/cocos2d-x-3.10"
+export COCOS_HOME="/usr/local/Library/cocos2d-x-3.11.1"
 
 export COCOS_LITE_HOME="/usr/local/Library/cocos2d-js-v3.6-lite"
 
@@ -443,7 +451,7 @@ export ANT_ROOT=/usr/local/bin
 
 export NDK_ROOT=/usr/local/Cellar/android-ndk/r10e/
 
-export JS_TESTS_HOME="$COCOS_HOME/samples/js-tests"
+export JS_TESTS_HOME="$COCOS_HOME/tests/js-tests"
 
 export NODE_PATH=/usr/lib/node_modules
 
@@ -498,3 +506,23 @@ export SAYCMD_OVERRIDE=0
 # Misc
 ###############################################################################
 export POSTCODE='EH4 3BT'
+
+
+###############################################################################
+# Fundamental constants
+###############################################################################
+export e="2.71828182845904523536028747135266249775724709369995"
+
+export PI="3.14159265358979323846264338327950288419716939937510"
+
+
+###############################################################################
+# Physical constants
+###############################################################################
+export G="6.674e-11"
+
+export k="1.38e-23"
+
+export N="6.022e23"
+
+export h="6.626e-34"

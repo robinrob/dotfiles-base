@@ -1,0 +1,1 @@
+browser "https://hn.algolia.com/?query=$(urlencode $@)"

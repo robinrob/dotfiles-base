@@ -1,0 +1,8 @@
+local +r Command=$1
+
+if $(is_http_url $Command)
+then
+  safari $Command
+else
+  print "zsh: command not found you nutter!: $@"
+fi

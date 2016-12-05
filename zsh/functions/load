@@ -8,8 +8,9 @@ then
   Funcs=($*)
   DoWhich=$TRUE
 else
-  green "Loading all functions"
   Funcs=($FUNCS_HOME/*(:t))
+  source $ZSHCOLORS_PATH
+  green "Loading all functions"
 fi
 
 for func in $Funcs

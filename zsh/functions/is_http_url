@@ -1,0 +1,4 @@
+local +r String=$1
+
+[[ $String[1,4] == 'http' ]] && return 0 || return 1
+

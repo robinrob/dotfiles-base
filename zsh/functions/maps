@@ -1,4 +1,14 @@
 local +r Search
+local +r Near
+
+print $@
+
+while getopts :n: opt
+do
+  case $opt in
+    (n) Near=true; shift;
+  esac
+done
 
 case $# in
   0)
@@ -6,5 +16,13 @@ case $# in
   *)
     Search="$@"
 esac
+
+if $Near
+then
+  Search="$Search near $(postcode)"
+fi
+
+
+print $Url
 
 browser "https://www.google.co.uk/maps/search/$(urlencode $Search)"

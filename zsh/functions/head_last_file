@@ -2,4 +2,9 @@ local +r LastFile=$(lastf)
 
 print "$(green Showing file:) $(yellow $LastFile)"
 
-head -1 $LastFile
+if [[ -z $1 ]]
+then
+  head -1 $LastFile
+else
+  head $@ $LastFile
+fi

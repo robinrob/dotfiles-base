@@ -1,0 +1,8 @@
+local +r Name=$1
+local +r Filename=${Name}.js
+
+cp $JS_HOME/templates/practice_node.js $Filename
+
+print -z "./$Filename"
+
+$EDITOR $Filename
