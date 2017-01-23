@@ -81,3 +81,5 @@ unal grb
 unal gsd
 
 unal sprintly
+
+unal type

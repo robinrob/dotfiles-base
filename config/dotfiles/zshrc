@@ -111,7 +111,7 @@ fi
 ## Node
 #########
 source $(brew --prefix nvm)/nvm.sh
-nvm use 6.3.0
+nvm use $NODE_VERSION
 
 
 ## OCaml

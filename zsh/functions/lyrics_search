@@ -1,0 +1,1 @@
+browser "http://search.azlyrics.com/search.php?q=$(urlencode $@)"

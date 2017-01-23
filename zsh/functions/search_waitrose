@@ -1,0 +1,10 @@
+local +r Url="http://www.waitrose.com"
+
+if (( # > 0 ))
+then
+  Url="$Url/shop/HeaderSearchCmd?searchTerm=$(urlencode $@)&defaultSearch=G"
+fi
+
+print $Url
+
+browser $Url

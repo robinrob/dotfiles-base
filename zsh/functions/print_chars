@@ -1,0 +1,4 @@
+local +r Num=$1
+local +r Str=$(printf "%-${Num}s" "$Str")
+
+copy_print "${Str// /*}"

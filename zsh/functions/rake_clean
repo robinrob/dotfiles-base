@@ -1,0 +1,6 @@
+local -a Wheres=($*)
+
+for where in $Wheres
+do
+  rake_do base:clean $where
+done

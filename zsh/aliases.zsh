@@ -107,6 +107,18 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias brex="exit"
+
+alias brexit="exit"
+
+alias kcr="kitchen create"
+
+alias kc="kitchen converge"
+
+alias kl="kitchen login"
+
+alias trf="copy_print 'self.assertTrue(False)'"
+
 alias mapsn="maps -n"
 
 alias llst="ls \$(lastf)"
@@ -118,8 +130,6 @@ alias pblst="ls \$(lastf) | pbcopy"
 alias ki="kill_processes_by_name itunes"
 
 alias kp="kill_processes_by_name photos"
-
-alias kc="kill_processes_by_name camera\ upload"
 
 alias ndv="node --version"
 
@@ -233,6 +243,12 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias rl="open -a 'Rocket League'"
+
+alias l4d="open -a 'Left 4 Dead 2'"
+
+alias steam="open -a Steam"
+
 alias ssl="open -a 'shellShock Live'"
 
 alias itunes="open -a iTunes"
@@ -373,6 +389,8 @@ alias cdzd="cd_down_tree $ZDOT_HOME"
 
 alias cdgg="cd_down_tree $HOME/Google\ Drive"
 
+alias cdsinging="cd $SINGING_HOME"
+
 alias cddocs="cd_down_tree $DOCS_HOME"
 
 alias cddc="cd_down_tree $DOCS_HOME"
@@ -396,7 +414,6 @@ alias cdbp="cd_down_tree $MRROBINSMITHCOM_HOME/public/blogposts"
 alias cdgp="cd_down_tree $GULPFILE_HOME"
 
 alias cdrk="cd_down_tree $RAKELIB"
-
 
 alias cdw="cd_down_tree $WORK_HOME"
 
@@ -658,6 +675,8 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
+alias gag="git add .gitignore"
+
 alias grb="git rebase"
 
 alias gsd="git submodule deinit"
@@ -956,6 +975,7 @@ alias rnsall="cd_down_tree $SCREENSHOTS_HOME && despace"
 
 alias mal="edit_alias"
 
+alias cal="cat $ALIASES_PATH"
 
 alias mun="$EDITOR $ZDOT_HOME/unaliases.zsh"
 
@@ -1129,6 +1149,8 @@ alias phone="get_record phone"
 
 alias ph="phone"
 
+alias reg="get_record reg"
+
 alias pH="get_record phonecompacb"
 
 alias bank="get_record bank"
@@ -1153,16 +1175,13 @@ alias workpostcode="get_record work_postcode"
 
 alias residency="$ADOBE_PATH $CANADA_HOME/residency_form.pdf"
 
-alias songs="cd_down_tree $SONGS_HOME"
-
-alias cdsongs="cd_down_tree $SONGS_HOME"
+alias cdsongs="cd \"$SONGS_HOME\""
 
 alias sabihin="song sabihin_mo_na"
 
 alias sb="sabihin"
 
 alias skytrain="open $COMMON_DOCS_HOME/useful/vancouver_skytrain_map.pdf"
-
 
 alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 
@@ -1174,13 +1193,17 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias chars="print_chars"
+
+alias kpr="kill_processes_by_name"
+
 alias ca="google_calendar"
 
 alias ma="gmail"
 
 alias dirs="directions"
 
-alias hack="search_hacker_news"
+alias hacker="search_hacker_news"
 
 alias tree="repo_tree"
 
@@ -1195,8 +1218,6 @@ alias trn="translate"
 alias tra="translate"
 
 alias ci="circle_ci"
-
-alias cal="calendar"
 
 alias gig="git_ignore"
 
@@ -1248,6 +1269,8 @@ alias ral="resolve_alias"
 
 alias icon="glyphicon_search"
 
+alias glyph="glyphicon_search"
+
 alias link="link_script"
 
 # alias lsreq="ls_js_require"
@@ -1280,11 +1303,19 @@ alias logz="log_zsh"
 
 alias logzv="log_zsh_var"
 
+alias logs="log_sh"
+
+alias logsv="log_sh_var"
+
 alias lod="lodash_doc_search"
 
-alias sains="sainsburys_search"
+alias lod="lodash_doc_search"
 
-alias asda="asda_search"
+alias sains="search_sainsburys"
+
+alias asda="search_asda"
+
+alias wait="search_waitrose"
 
 alias gbch="git_branch_checkout"
 
@@ -1306,7 +1337,7 @@ alias toc="to_celcius"
 
 alias rks="rake_save"
 
-alias rkcl="rake_do base:clean"
+alias rkcl="rake_clean"
 
 alias zaz="zazzle"
 
@@ -1496,6 +1527,14 @@ alias ggg="google_groups"
 
 alias gg="google"
 
+alias im="google_images"
+
+alias ms="messenger_search"
+
+alias ly="lyrics_search"
+
+alias tabs="tabs_search"
+
 alias cls="cat_named_list"
 
 alias mls="edit_named_list"
@@ -1624,6 +1663,8 @@ alias brd="brew doctor"
 
 alias brun="brew uninstall"
 
+alias brud="brew update"
+
 alias brug="brew update; brew upgrade"
 
 alias brin="brew info"
@@ -1704,5 +1745,5 @@ alias sshf="file_grep $HOME/.ssh/config"
 # Just a joke because i hate thenners!
 alias than="then"
 
-# I also hate this new breed of thatters ...
+# I also hate thatters ...
 alias that="than"
