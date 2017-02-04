@@ -243,6 +243,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias ra="open -a OpenRA"
+
 alias rl="open -a 'Rocket League'"
 
 alias l4d="open -a 'Left 4 Dead 2'"
@@ -1193,6 +1195,12 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias ms="open -a Messenger"
+
+alias me="open -a Messenger"
+
+alias sl="slack"
+
 alias chars="print_chars"
 
 alias kpr="kill_processes_by_name"
@@ -1528,8 +1536,6 @@ alias ggg="google_groups"
 alias gg="google"
 
 alias im="google_images"
-
-alias ms="messenger_search"
 
 alias ly="lyrics_search"
 

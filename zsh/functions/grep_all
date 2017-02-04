@@ -32,10 +32,10 @@ IFS="
 for file in $(gfind $Where ${=MaxDepth} -follow ${=Excludes} -name "$FindExpression" -type f)
 do
   local +r Result
-  Result=$(ggrep -n -A 2 $Insensitive $GrepExpression $file)
+  Result=$(ggrep -n -A 4 $Insensitive $GrepExpression $file)
   if [[ -n $Result ]]
   then
     yellow $file
-    print $Result | ggrep -A 2 --color $Insensitive $GrepExpression
+    print $Result | ggrep -A 4 --color $Insensitive $GrepExpression
   fi
 done
