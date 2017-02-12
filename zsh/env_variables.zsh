@@ -68,6 +68,8 @@ export HOSTNAME=`hostname -s`
 
 export MERCURY_HOSTNAME='mercury'
 
+export JUPITER_HOSTNAME='jupiter'
+
 export VENUS_HOSTNAME='venus'
 
 if [[ $HOSTNAME == "venus" ]]

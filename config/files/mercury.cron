@@ -1,1 +1,3 @@
-* * 0 0 0 echo hello
+HOSTNAME='jupiter'
+
+#* * * * * PYTHONPATH=/Users/robin/Programming/work/python/NOS-BIT/venv/bin/python2.7 python /Users/robin/Programming/work/python/NOS-BIT/nr_feed_data.py >> /Users/robin/Programming/work/python/NOS-BIT/nr_feed_data.log 2>&1
