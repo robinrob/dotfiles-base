@@ -85,3 +85,5 @@ unal sprintly
 unal type
 
 unal sl
+
+unal vim

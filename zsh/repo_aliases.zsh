@@ -83,6 +83,23 @@ alias cdzpr="cd_down_tree $ZSH_HOME/practice"
 alias cdzpro="cd_down_tree $ZSH_HOME/projects"
 alias glpz="cd_gulp $ZSH_HOME"
 
+alias rasv="cd_save $OPENRA_HOME"
+
+alias racm="cd_commit $OPENRA_HOME"
+
+alias rast="cd_status $OPENRA_HOME"
+
+alias rapl="cd_pull $OPENRA_HOME"
+
+alias idra="idea $OPENRA_HOME"
+
+alias itra="iterm $OPENRA_HOME"
+
+alias cdra="cd_down_tree $OPENRA_HOME"
+alias cdrapr="cd_down_tree $OPENRA_HOME/practice"
+alias cdrapro="cd_down_tree $OPENRA_HOME/projects"
+alias glpra="cd_gulp $OPENRA_HOME"
+
 alias msv="cd_save $MARKDOWN_HOME"
 
 alias mcm="cd_commit $MARKDOWN_HOME"
@@ -235,23 +252,6 @@ alias cdlpr="cd_down_tree $LODASH_PRACTICE_HOME"
 alias cdlprpr="cd_down_tree $LODASH_PRACTICE_HOME/practice"
 alias cdlprpro="cd_down_tree $LODASH_PRACTICE_HOME/projects"
 alias glplpr="cd_gulp $LODASH_PRACTICE_HOME"
-
-alias rasv="cd_save $RECIPES_APP_HOME"
-
-alias racm="cd_commit $RECIPES_APP_HOME"
-
-alias rast="cd_status $RECIPES_APP_HOME"
-
-alias rapl="cd_pull $RECIPES_APP_HOME"
-
-alias idra="idea $RECIPES_APP_HOME"
-
-alias itra="iterm $RECIPES_APP_HOME"
-
-alias cdra="cd_down_tree $RECIPES_APP_HOME"
-alias cdrapr="cd_down_tree $RECIPES_APP_HOME/practice"
-alias cdrapro="cd_down_tree $RECIPES_APP_HOME/projects"
-alias glpra="cd_gulp $RECIPES_APP_HOME"
 
 alias rsv="cd_save $RUBY_HOME"
 

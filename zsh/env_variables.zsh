@@ -196,6 +196,10 @@ export NODE_HOME=$ROBIN_HOME/node
 
 export TYPESCRIPT_HOME=$ROBIN_HOME/typescript
 
+export C_SHARP_HOME=$ROBIN_HOME/c_sharp
+
+export OPENRA_HOME=$C_SHARP_HOME/OpenRA
+
 export HEROES_HOME=$ROBIN_HOME/typescript/practice/heroes-tutorial
 
 export LODASH_PRACTICE_HOME=$ROBIN_HOME/node/practice/lodash
@@ -246,6 +250,8 @@ export ORBITER_HOME="$JS_HOME/projects/orbiter"
 export ORBITER_NEW_HOME="$JS_HOME/projects/orbiter-new"
 
 export GAME_HOME=$COCOS_EXAMPLES_HOME
+
+export OPENRA=$C_SHARP_HOME/OpenRA
 
 export RECIPES_APP_HOME=$JS_HOME/projects/recipes-app
 

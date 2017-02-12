@@ -1265,6 +1265,8 @@ alias nnf="nos_new_feature"
 
 alias gpo="git_push_origin"
 
+alias gpof="git_push_origin_force"
+
 alias gpot="git_push_origin_tags"
 
 alias gpl="git_pull_branch"
