@@ -1,0 +1,6 @@
+local +r Opts=($*)
+
+print "Opts: ${Opts}"
+
+for opt in $Opts:
+  firefox "http://127.0.0.1:5001/#/options/$(urlencode $opt)/reports"

@@ -1195,6 +1195,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias oo="open_option"
+
 alias ms="open -a Messenger"
 
 alias me="open -a Messenger"
