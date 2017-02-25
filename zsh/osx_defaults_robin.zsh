@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+!/usr/bin/env zsh
 
 ###############################################################################
 # Robin's additional defaults and overrides
@@ -71,3 +71,6 @@ for extension in $Extensions
 do
   associate_file_type_with_app_name $extension 'IntelliJ IDEA 14'
 done
+
+# Re-activate notifications centre :( because some apps use it for sounds
+launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null

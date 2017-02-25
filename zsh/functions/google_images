@@ -1,0 +1,1 @@
+browser "https://www.google.com/search?q=$(urlencode $@)&num=100&safe=active&source=lnms&tbm=isch"

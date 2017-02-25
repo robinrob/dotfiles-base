@@ -1,4 +1,4 @@
-local +r File=$1
+local +r File
 
 while getopts :f:b:c: opt
 do
@@ -29,6 +29,7 @@ if [[ -n "$Url" ]]
 then
   if [[ -n $File ]]
   then
+    print here
     Url="$Url/$File"
   fi
 

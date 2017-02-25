@@ -1,1 +1,1 @@
-history 1 | ggrep "[0-9]\+  $1"
+history 1 | ggrep "[0-9 ]\+$1"

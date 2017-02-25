@@ -1,0 +1,12 @@
+# Use this sequence to set permissions on a web app directory
+local +r Username=$1
+
+sudo chown -R $Username:$Username $AppFolder
+sudo chmod go-rwx $AppFolder
+sudo chmod go+x $AppFolder
+sudo chgrp -R $Username $AppFolder
+sudo chmod -R go-rwx $AppFolder
+sudo chmod -R g+rx $AppFolder
+sudo chmod -R g+rwx $AppFolder
+sudo find $AppFolder -type d -exec chmod 755 {} \;
+sudo find $AppFolder -type f -exec chmod 644 {} \;

@@ -1,4 +1,4 @@
-if [[ $HOSTNAME == $MERCURY_HOSTNAME ]]
+if [[ $HOSTNAME == $JUPITER_HOSTNAME ]]
 then
   save_crontab
   save_homebrew

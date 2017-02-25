@@ -40,11 +40,24 @@ export PYTHONPATH=$NOS_HOME
 ###############################################################################
 export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/lib/ruby/2.0.0
 
-
 ###############################################################################
 # Node
 ###############################################################################
 export NPMLIB_HOME=/usr/local/lib/node_modules
+
+# export NODE_VERSION=5.5.0
+export NODE_VERSION=6.9.4
+#
+###############################################################################
+# Java
+#############################################################################
+# export JAVA_VERSION="1.6.0.jdk"
+export JAVA_VERSION="jdk1.7.0_80.jdk"
+# export JAVA_VERSION="jdk1.8.0_102.jdk"
+
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/$JAVA_VERSION/Contents/Home"
+
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines//Contents/Home"
 
 ###############################################################################
 # Host-specific variables
@@ -54,6 +67,8 @@ export NPMLIB_HOME=/usr/local/lib/node_modules
 export HOSTNAME=`hostname -s`
 
 export MERCURY_HOSTNAME='mercury'
+
+export JUPITER_HOSTNAME='jupiter'
 
 export VENUS_HOSTNAME='venus'
 
@@ -183,6 +198,12 @@ export NODE_HOME=$ROBIN_HOME/node
 
 export TYPESCRIPT_HOME=$ROBIN_HOME/typescript
 
+export C_SHARP_HOME=$ROBIN_HOME/c_sharp
+
+export OPENRA_HOME=$C_SHARP_HOME/OpenRA
+
+export HEROES_HOME=$ROBIN_HOME/typescript/practice/heroes-tutorial
+
 export LODASH_PRACTICE_HOME=$ROBIN_HOME/node/practice/lodash
 
 export HTML_CSS_HOME=$ROBIN_HOME/html-css
@@ -232,6 +253,8 @@ export ORBITER_NEW_HOME="$JS_HOME/projects/orbiter-new"
 
 export GAME_HOME=$COCOS_EXAMPLES_HOME
 
+export OPENRA=$C_SHARP_HOME/OpenRA
+
 export RECIPES_APP_HOME=$JS_HOME/projects/recipes-app
 
 export RECIPES_SERVER_HOME=$RUBY_HOME/projects/recipes-server
@@ -262,7 +285,7 @@ export OCT_HOME=$ROBIN_HOME/octave
 ###############################################################################
 # Directories
 ###############################################################################
-export GOOGLE_DRIVE="$HOME/Google\ Drive"
+export GOOGLE_DRIVE="$HOME/Google Drive"
 
 export CRASH_REPORTS_HOME=$MERCURY_DOCS_HOME/air-crash-reports
 
@@ -310,6 +333,8 @@ export COMMON_DOCS_HOME=$COMMON_HOME/docs
 export MERCURY_DOCS_HOME="$GOOGLE_DRIVE/docs"
 
 export SONGS_HOME=$MERCURY_DOCS_HOME/creative/songs
+
+export SINGING_HOME="$HOME/Google\ Drive/singing"
 
 export STORIES_HOME=$MERCURY_DOCS_HOME/creative/writing/stories
 
@@ -475,7 +500,6 @@ export DOCKER_TLS_VERIFY=1
 ###############################################################################
 # Pyenv
 ###############################################################################
-
 export PYENV_ROOT=/usr/local/Library/pyenv
 
 

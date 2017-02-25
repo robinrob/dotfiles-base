@@ -1,0 +1,1 @@
+browser "https://www.facebook.com/messages/search/sliderman?query=$(urlencode $@)"

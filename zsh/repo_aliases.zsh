@@ -83,6 +83,23 @@ alias cdzpr="cd_down_tree $ZSH_HOME/practice"
 alias cdzpro="cd_down_tree $ZSH_HOME/projects"
 alias glpz="cd_gulp $ZSH_HOME"
 
+alias rasv="cd_save $OPENRA_HOME"
+
+alias racm="cd_commit $OPENRA_HOME"
+
+alias rast="cd_status $OPENRA_HOME"
+
+alias rapl="cd_pull $OPENRA_HOME"
+
+alias idra="idea $OPENRA_HOME"
+
+alias itra="iterm $OPENRA_HOME"
+
+alias cdra="cd_down_tree $OPENRA_HOME"
+alias cdrapr="cd_down_tree $OPENRA_HOME/practice"
+alias cdrapro="cd_down_tree $OPENRA_HOME/projects"
+alias glpra="cd_gulp $OPENRA_HOME"
+
 alias msv="cd_save $MARKDOWN_HOME"
 
 alias mcm="cd_commit $MARKDOWN_HOME"
@@ -236,23 +253,6 @@ alias cdlprpr="cd_down_tree $LODASH_PRACTICE_HOME/practice"
 alias cdlprpro="cd_down_tree $LODASH_PRACTICE_HOME/projects"
 alias glplpr="cd_gulp $LODASH_PRACTICE_HOME"
 
-alias rasv="cd_save $RECIPES_APP_HOME"
-
-alias racm="cd_commit $RECIPES_APP_HOME"
-
-alias rast="cd_status $RECIPES_APP_HOME"
-
-alias rapl="cd_pull $RECIPES_APP_HOME"
-
-alias idra="idea $RECIPES_APP_HOME"
-
-alias itra="iterm $RECIPES_APP_HOME"
-
-alias cdra="cd_down_tree $RECIPES_APP_HOME"
-alias cdrapr="cd_down_tree $RECIPES_APP_HOME/practice"
-alias cdrapro="cd_down_tree $RECIPES_APP_HOME/projects"
-alias glpra="cd_gulp $RECIPES_APP_HOME"
-
 alias rsv="cd_save $RUBY_HOME"
 
 alias rcm="cd_commit $RUBY_HOME"
@@ -388,6 +388,23 @@ alias cdcp="cd_down_tree $C_PLUS_PLUS_HOME"
 alias cdcppr="cd_down_tree $C_PLUS_PLUS_HOME/practice"
 alias cdcppro="cd_down_tree $C_PLUS_PLUS_HOME/projects"
 alias glpcp="cd_gulp $C_PLUS_PLUS_HOME"
+
+alias rosv="cd_save $ROBIN_HOME"
+
+alias rocm="cd_commit $ROBIN_HOME"
+
+alias rost="cd_status $ROBIN_HOME"
+
+alias ropl="cd_pull $ROBIN_HOME"
+
+alias idro="idea $ROBIN_HOME"
+
+alias itro="iterm $ROBIN_HOME"
+
+alias cdro="cd_down_tree $ROBIN_HOME"
+alias cdropr="cd_down_tree $ROBIN_HOME/practice"
+alias cdropro="cd_down_tree $ROBIN_HOME/projects"
+alias glpro="cd_gulp $ROBIN_HOME"
 
 alias cnsv="cd_save $CONCENTRATION_GAME_HOME"
 
@@ -542,6 +559,23 @@ alias cdgopr="cd_down_tree $GO_HOME/practice"
 alias cdgopro="cd_down_tree $GO_HOME/projects"
 alias glpgo="cd_gulp $GO_HOME"
 
+alias hesv="cd_save $HEROES_HOME"
+
+alias hecm="cd_commit $HEROES_HOME"
+
+alias hest="cd_status $HEROES_HOME"
+
+alias hepl="cd_pull $HEROES_HOME"
+
+alias idhe="idea $HEROES_HOME"
+
+alias ithe="iterm $HEROES_HOME"
+
+alias cdhe="cd_down_tree $HEROES_HOME"
+alias cdhepr="cd_down_tree $HEROES_HOME/practice"
+alias cdhepro="cd_down_tree $HEROES_HOME/projects"
+alias glphe="cd_gulp $HEROES_HOME"
+
 alias hsv="cd_save $HTML_HOME"
 
 alias hcm="cd_commit $HTML_HOME"
@@ -593,6 +627,23 @@ alias cdfcpr="cd_down_tree $FORCE_COM_HOME/practice"
 alias cdfcpro="cd_down_tree $FORCE_COM_HOME/projects"
 alias glpfc="cd_gulp $FORCE_COM_HOME"
 
+alias plsv="cd_save $PERL_HOME"
+
+alias plcm="cd_commit $PERL_HOME"
+
+alias plst="cd_status $PERL_HOME"
+
+alias plpl="cd_pull $PERL_HOME"
+
+alias idpl="idea $PERL_HOME"
+
+alias itpl="iterm $PERL_HOME"
+
+alias cdpl="cd_down_tree $PERL_HOME"
+alias cdplpr="cd_down_tree $PERL_HOME/practice"
+alias cdplpro="cd_down_tree $PERL_HOME/projects"
+alias glppl="cd_gulp $PERL_HOME"
+
 alias asv="cd_save $AWK_HOME"
 
 alias acm="cd_commit $AWK_HOME"
@@ -626,23 +677,6 @@ alias cdor="cd_down_tree $ORBITER_HOME"
 alias cdorpr="cd_down_tree $ORBITER_HOME/practice"
 alias cdorpro="cd_down_tree $ORBITER_HOME/projects"
 alias glpor="cd_gulp $ORBITER_HOME"
-
-alias plsv="cd_save $PERL_HOME"
-
-alias plcm="cd_commit $PERL_HOME"
-
-alias plst="cd_status $PERL_HOME"
-
-alias plpl="cd_pull $PERL_HOME"
-
-alias idpl="idea $PERL_HOME"
-
-alias itpl="iterm $PERL_HOME"
-
-alias cdpl="cd_down_tree $PERL_HOME"
-alias cdplpr="cd_down_tree $PERL_HOME/practice"
-alias cdplpro="cd_down_tree $PERL_HOME/projects"
-alias glppl="cd_gulp $PERL_HOME"
 
 alias ppsv="cd_save $PLANET_PAIRS_HOME"
 

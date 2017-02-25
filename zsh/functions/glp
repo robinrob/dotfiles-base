@@ -1,3 +1,4 @@
 idea
 iterm $PWD
 gulp $@
+slack

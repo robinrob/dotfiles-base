@@ -1,0 +1,1 @@
+gls -ldtr --time-style=long-iso *"$@"* | tail -n +1 | awk '{for(i=NF-2;i<NF;i++) printf "%s",$i OFS; if(NF)printf "%s",$NF; printf ORS}'

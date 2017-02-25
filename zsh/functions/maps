@@ -6,7 +6,7 @@ print $@
 while getopts :n: opt
 do
   case $opt in
-    (n) Near=true; shift;
+    n) Near="$OPTARG"; shift 2;;
   esac
 done
 
@@ -14,10 +14,12 @@ case $# in
   0)
     Search="$POSTCODE" ;;
   *)
-    Search="$@"
+    Search="$*"
 esac
 
-if $Near
+print "Near: ${Near}"
+
+if [[ -n $Near ]]
 then
   Search="$Search near $(postcode)"
 fi

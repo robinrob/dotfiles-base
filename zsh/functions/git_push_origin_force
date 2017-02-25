@@ -1,0 +1,2 @@
+# Just print the command out ready to run. Ensures correct branch is written over!
+print -z "git push origin $(git_branch) --force"

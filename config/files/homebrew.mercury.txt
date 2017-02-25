@@ -80,12 +80,15 @@ lua
 luajit
 lzip
 macvim
+mongodb
 mpfr
 mplayer
 mutt
 mysql
 ncdu
 nettle
+nginx
+node
 nvm
 ocaml
 octave
@@ -104,6 +107,7 @@ qrupdate
 re2c
 readline
 reattach-to-user-namespace
+rhino
 rlwrap
 scala
 screen
@@ -118,6 +122,7 @@ tmux
 tokyo-cabinet
 translate-shell
 unixodbc
+uwsgi
 veclibfort
 vim
 w3m
@@ -126,5 +131,6 @@ wdiff
 wget
 xmlto
 xz
+yajl
 zlib
 zsh

@@ -1,8 +1,1 @@
-local +r VagrantStatus=$(vagrant status)
-
-if ! $(print $VagrantStatus | grep 'running')
-then
-  vagrant up
-fi
-
 vagrant ssh $@
