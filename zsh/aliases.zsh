@@ -233,6 +233,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias ms="open -a Messenger"
+
 alias ssl="open -a 'shellShock Live'"
 
 alias itunes="open -a iTunes"
@@ -615,7 +617,6 @@ alias wcfn="wc -l $FUNCS_HOME/*"
 
 alias grfn="grep_functions"
 
-
 alias cdnoc="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
 
 alias cdms="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
@@ -955,7 +956,6 @@ alias password="ruby $RUBY_HOME/projects/rbpassword/rbpassword.rb"
 alias rnsall="cd_down_tree $SCREENSHOTS_HOME && despace"
 
 alias mal="edit_alias"
-
 
 alias mun="$EDITOR $ZDOT_HOME/unaliases.zsh"
 
