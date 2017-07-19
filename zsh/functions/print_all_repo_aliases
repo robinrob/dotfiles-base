@@ -55,7 +55,9 @@ abbreviations[quiz]=q
 abbreviations[zsh]=z
 
 # Work
+abbreviations[kaptio]=ka
 abbreviations[nos]=no
+abbreviations[nos2]=no2
 
 
 for repo in ${(k)abbreviations}

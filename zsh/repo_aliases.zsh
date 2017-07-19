@@ -8,6 +8,8 @@ alias scpl="cd_pull $SCALA_HOME"
 
 alias idsc="idea $SCALA_HOME"
 
+alias pysc="pycharm $SCALA_HOME"
+
 alias itsc="iterm $SCALA_HOME"
 
 alias cdsc="cd_down_tree $SCALA_HOME"
@@ -24,6 +26,8 @@ alias nst="cd_status $NODE_HOME"
 alias npl="cd_pull $NODE_HOME"
 
 alias idn="idea $NODE_HOME"
+
+alias pyn="pycharm $NODE_HOME"
 
 alias itn="iterm $NODE_HOME"
 
@@ -42,6 +46,8 @@ alias gipl="cd_pull $GIMP_HOME"
 
 alias idgi="idea $GIMP_HOME"
 
+alias pygi="pycharm $GIMP_HOME"
+
 alias itgi="iterm $GIMP_HOME"
 
 alias cdgi="cd_down_tree $GIMP_HOME"
@@ -58,6 +64,8 @@ alias fust="cd_status $ORIGINS_HOME"
 alias fupl="cd_pull $ORIGINS_HOME"
 
 alias idfu="idea $ORIGINS_HOME"
+
+alias pyfu="pycharm $ORIGINS_HOME"
 
 alias itfu="iterm $ORIGINS_HOME"
 
@@ -76,6 +84,8 @@ alias zpl="cd_pull $ZSH_HOME"
 
 alias idz="idea $ZSH_HOME"
 
+alias pyz="pycharm $ZSH_HOME"
+
 alias itz="iterm $ZSH_HOME"
 
 alias cdz="cd_down_tree $ZSH_HOME"
@@ -92,6 +102,8 @@ alias rast="cd_status $OPENRA_HOME"
 alias rapl="cd_pull $OPENRA_HOME"
 
 alias idra="idea $OPENRA_HOME"
+
+alias pyra="pycharm $OPENRA_HOME"
 
 alias itra="iterm $OPENRA_HOME"
 
@@ -110,6 +122,8 @@ alias mpl="cd_pull $MARKDOWN_HOME"
 
 alias idm="idea $MARKDOWN_HOME"
 
+alias pym="pycharm $MARKDOWN_HOME"
+
 alias itm="iterm $MARKDOWN_HOME"
 
 alias cdm="cd_down_tree $MARKDOWN_HOME"
@@ -126,6 +140,8 @@ alias fudst="cd_status $ORIGINS_DEV_HOME"
 alias fudpl="cd_pull $ORIGINS_DEV_HOME"
 
 alias idfud="idea $ORIGINS_DEV_HOME"
+
+alias pyfud="pycharm $ORIGINS_DEV_HOME"
 
 alias itfud="iterm $ORIGINS_DEV_HOME"
 
@@ -144,6 +160,8 @@ alias nopl="cd_pull $NOS_HOME"
 
 alias idno="idea $NOS_HOME"
 
+alias pyno="pycharm $NOS_HOME"
+
 alias itno="iterm $NOS_HOME"
 
 alias cdno="cd_down_tree $NOS_HOME"
@@ -160,6 +178,8 @@ alias rsst="cd_status $RSS_HOME"
 alias rspl="cd_pull $RSS_HOME"
 
 alias idrs="idea $RSS_HOME"
+
+alias pyrs="pycharm $RSS_HOME"
 
 alias itrs="iterm $RSS_HOME"
 
@@ -178,12 +198,33 @@ alias jvpl="cd_pull $JV_HOME"
 
 alias idjv="idea $JV_HOME"
 
+alias pyjv="pycharm $JV_HOME"
+
 alias itjv="iterm $JV_HOME"
 
 alias cdjv="cd_down_tree $JV_HOME"
 alias cdjvpr="cd_down_tree $JV_HOME/practice"
 alias cdjvpro="cd_down_tree $JV_HOME/projects"
 alias glpjv="cd_gulp $JV_HOME"
+
+alias kasv="cd_save $KAPTIO_HOME"
+
+alias kacm="cd_commit $KAPTIO_HOME"
+
+alias kast="cd_status $KAPTIO_HOME"
+
+alias kapl="cd_pull $KAPTIO_HOME"
+
+alias idka="idea $KAPTIO_HOME"
+
+alias pyka="pycharm $KAPTIO_HOME"
+
+alias itka="iterm $KAPTIO_HOME"
+
+alias cdka="cd_down_tree $KAPTIO_HOME"
+alias cdkapr="cd_down_tree $KAPTIO_HOME/practice"
+alias cdkapro="cd_down_tree $KAPTIO_HOME/projects"
+alias glpka="cd_gulp $KAPTIO_HOME"
 
 alias qsv="cd_save $QUIZ_HOME"
 
@@ -194,6 +235,8 @@ alias qst="cd_status $QUIZ_HOME"
 alias qpl="cd_pull $QUIZ_HOME"
 
 alias idq="idea $QUIZ_HOME"
+
+alias pyq="pycharm $QUIZ_HOME"
 
 alias itq="iterm $QUIZ_HOME"
 
@@ -212,6 +255,8 @@ alias tppl="cd_pull $TYPESCRIPT_HOME"
 
 alias idtp="idea $TYPESCRIPT_HOME"
 
+alias pytp="pycharm $TYPESCRIPT_HOME"
+
 alias ittp="iterm $TYPESCRIPT_HOME"
 
 alias cdtp="cd_down_tree $TYPESCRIPT_HOME"
@@ -228,6 +273,8 @@ alias sst="cd_status $SH_HOME"
 alias spl="cd_pull $SH_HOME"
 
 alias ids="idea $SH_HOME"
+
+alias pys="pycharm $SH_HOME"
 
 alias its="iterm $SH_HOME"
 
@@ -246,6 +293,8 @@ alias lprpl="cd_pull $LODASH_PRACTICE_HOME"
 
 alias idlpr="idea $LODASH_PRACTICE_HOME"
 
+alias pylpr="pycharm $LODASH_PRACTICE_HOME"
+
 alias itlpr="iterm $LODASH_PRACTICE_HOME"
 
 alias cdlpr="cd_down_tree $LODASH_PRACTICE_HOME"
@@ -262,6 +311,8 @@ alias rst="cd_status $RUBY_HOME"
 alias rpl="cd_pull $RUBY_HOME"
 
 alias idr="idea $RUBY_HOME"
+
+alias pyr="pycharm $RUBY_HOME"
 
 alias itr="iterm $RUBY_HOME"
 
@@ -280,6 +331,8 @@ alias fpl="cd_pull $FISH_HOME"
 
 alias idf="idea $FISH_HOME"
 
+alias pyf="pycharm $FISH_HOME"
+
 alias itf="iterm $FISH_HOME"
 
 alias cdf="cd_down_tree $FISH_HOME"
@@ -296,6 +349,8 @@ alias ocst="cd_status $OCT_HOME"
 alias ocpl="cd_pull $OCT_HOME"
 
 alias idoc="idea $OCT_HOME"
+
+alias pyoc="pycharm $OCT_HOME"
 
 alias itoc="iterm $OCT_HOME"
 
@@ -314,6 +369,8 @@ alias prpl="cd_pull $PROG_HOME"
 
 alias idpr="idea $PROG_HOME"
 
+alias pypr="pycharm $PROG_HOME"
+
 alias itpr="iterm $PROG_HOME"
 
 alias cdpr="cd_down_tree $PROG_HOME"
@@ -330,6 +387,8 @@ alias mrdst="cd_status $WEBSITE_DEV_HOME"
 alias mrdpl="cd_pull $WEBSITE_DEV_HOME"
 
 alias idmrd="idea $WEBSITE_DEV_HOME"
+
+alias pymrd="pycharm $WEBSITE_DEV_HOME"
 
 alias itmrd="iterm $WEBSITE_DEV_HOME"
 
@@ -348,6 +407,8 @@ alias atpl="cd_pull $ANGULAR_TEST_HOME"
 
 alias idat="idea $ANGULAR_TEST_HOME"
 
+alias pyat="pycharm $ANGULAR_TEST_HOME"
+
 alias itat="iterm $ANGULAR_TEST_HOME"
 
 alias cdat="cd_down_tree $ANGULAR_TEST_HOME"
@@ -364,6 +425,8 @@ alias cst="cd_status $C_HOME"
 alias cpl="cd_pull $C_HOME"
 
 alias idc="idea $C_HOME"
+
+alias pyc="pycharm $C_HOME"
 
 alias itc="iterm $C_HOME"
 
@@ -382,12 +445,33 @@ alias cppl="cd_pull $C_PLUS_PLUS_HOME"
 
 alias idcp="idea $C_PLUS_PLUS_HOME"
 
+alias pycp="pycharm $C_PLUS_PLUS_HOME"
+
 alias itcp="iterm $C_PLUS_PLUS_HOME"
 
 alias cdcp="cd_down_tree $C_PLUS_PLUS_HOME"
 alias cdcppr="cd_down_tree $C_PLUS_PLUS_HOME/practice"
 alias cdcppro="cd_down_tree $C_PLUS_PLUS_HOME/projects"
 alias glpcp="cd_gulp $C_PLUS_PLUS_HOME"
+
+alias no2sv="cd_save $NOS2_HOME"
+
+alias no2cm="cd_commit $NOS2_HOME"
+
+alias no2st="cd_status $NOS2_HOME"
+
+alias no2pl="cd_pull $NOS2_HOME"
+
+alias idno2="idea $NOS2_HOME"
+
+alias pyno2="pycharm $NOS2_HOME"
+
+alias itno2="iterm $NOS2_HOME"
+
+alias cdno2="cd_down_tree $NOS2_HOME"
+alias cdno2pr="cd_down_tree $NOS2_HOME/practice"
+alias cdno2pro="cd_down_tree $NOS2_HOME/projects"
+alias glpno2="cd_gulp $NOS2_HOME"
 
 alias rosv="cd_save $ROBIN_HOME"
 
@@ -398,6 +482,8 @@ alias rost="cd_status $ROBIN_HOME"
 alias ropl="cd_pull $ROBIN_HOME"
 
 alias idro="idea $ROBIN_HOME"
+
+alias pyro="pycharm $ROBIN_HOME"
 
 alias itro="iterm $ROBIN_HOME"
 
@@ -416,6 +502,8 @@ alias cnpl="cd_pull $CONCENTRATION_GAME_HOME"
 
 alias idcn="idea $CONCENTRATION_GAME_HOME"
 
+alias pycn="pycharm $CONCENTRATION_GAME_HOME"
+
 alias itcn="iterm $CONCENTRATION_GAME_HOME"
 
 alias cdcn="cd_down_tree $CONCENTRATION_GAME_HOME"
@@ -432,6 +520,8 @@ alias rasst="cd_status $RECIPES_SERVER_HOME"
 alias raspl="cd_pull $RECIPES_SERVER_HOME"
 
 alias idras="idea $RECIPES_SERVER_HOME"
+
+alias pyras="pycharm $RECIPES_SERVER_HOME"
 
 alias itras="iterm $RECIPES_SERVER_HOME"
 
@@ -450,6 +540,8 @@ alias ghpl="cd_pull $GITHUB_HOME"
 
 alias idgh="idea $GITHUB_HOME"
 
+alias pygh="pycharm $GITHUB_HOME"
+
 alias itgh="iterm $GITHUB_HOME"
 
 alias cdgh="cd_down_tree $GITHUB_HOME"
@@ -466,6 +558,8 @@ alias jst="cd_status $JAVASCRIPT_HOME"
 alias jpl="cd_pull $JAVASCRIPT_HOME"
 
 alias idj="idea $JAVASCRIPT_HOME"
+
+alias pyj="pycharm $JAVASCRIPT_HOME"
 
 alias itj="iterm $JAVASCRIPT_HOME"
 
@@ -484,6 +578,8 @@ alias lopl="cd_pull $LOCAL_HOME"
 
 alias idlo="idea $LOCAL_HOME"
 
+alias pylo="pycharm $LOCAL_HOME"
+
 alias itlo="iterm $LOCAL_HOME"
 
 alias cdlo="cd_down_tree $LOCAL_HOME"
@@ -500,6 +596,8 @@ alias ost="cd_status $OCAML_HOME"
 alias opl="cd_pull $OCAML_HOME"
 
 alias ido="idea $OCAML_HOME"
+
+alias pyo="pycharm $OCAML_HOME"
 
 alias ito="iterm $OCAML_HOME"
 
@@ -518,6 +616,8 @@ alias Dpl="cd_pull $DOTFILES_HOME"
 
 alias idD="idea $DOTFILES_HOME"
 
+alias pyD="pycharm $DOTFILES_HOME"
+
 alias itD="iterm $DOTFILES_HOME"
 
 alias cdD="cd_down_tree $DOTFILES_HOME"
@@ -534,6 +634,8 @@ alias dst="cd_status $DOTFILES_BASE_HOME"
 alias dpl="cd_pull $DOTFILES_BASE_HOME"
 
 alias idd="idea $DOTFILES_BASE_HOME"
+
+alias pyd="pycharm $DOTFILES_BASE_HOME"
 
 alias itd="iterm $DOTFILES_BASE_HOME"
 
@@ -552,6 +654,8 @@ alias gopl="cd_pull $GO_HOME"
 
 alias idgo="idea $GO_HOME"
 
+alias pygo="pycharm $GO_HOME"
+
 alias itgo="iterm $GO_HOME"
 
 alias cdgo="cd_down_tree $GO_HOME"
@@ -568,6 +672,8 @@ alias hest="cd_status $HEROES_HOME"
 alias hepl="cd_pull $HEROES_HOME"
 
 alias idhe="idea $HEROES_HOME"
+
+alias pyhe="pycharm $HEROES_HOME"
 
 alias ithe="iterm $HEROES_HOME"
 
@@ -586,6 +692,8 @@ alias hpl="cd_pull $HTML_HOME"
 
 alias idh="idea $HTML_HOME"
 
+alias pyh="pycharm $HTML_HOME"
+
 alias ith="iterm $HTML_HOME"
 
 alias cdh="cd_down_tree $HTML_HOME"
@@ -602,6 +710,8 @@ alias pst="cd_status $PYTHON_HOME"
 alias ppl="cd_pull $PYTHON_HOME"
 
 alias idp="idea $PYTHON_HOME"
+
+alias pyp="pycharm $PYTHON_HOME"
 
 alias itp="iterm $PYTHON_HOME"
 
@@ -620,6 +730,8 @@ alias fcpl="cd_pull $FORCE_COM_HOME"
 
 alias idfc="idea $FORCE_COM_HOME"
 
+alias pyfc="pycharm $FORCE_COM_HOME"
+
 alias itfc="iterm $FORCE_COM_HOME"
 
 alias cdfc="cd_down_tree $FORCE_COM_HOME"
@@ -636,6 +748,8 @@ alias plst="cd_status $PERL_HOME"
 alias plpl="cd_pull $PERL_HOME"
 
 alias idpl="idea $PERL_HOME"
+
+alias pypl="pycharm $PERL_HOME"
 
 alias itpl="iterm $PERL_HOME"
 
@@ -654,6 +768,8 @@ alias apl="cd_pull $AWK_HOME"
 
 alias ida="idea $AWK_HOME"
 
+alias pya="pycharm $AWK_HOME"
+
 alias ita="iterm $AWK_HOME"
 
 alias cda="cd_down_tree $AWK_HOME"
@@ -670,6 +786,8 @@ alias orst="cd_status $ORBITER_HOME"
 alias orpl="cd_pull $ORBITER_HOME"
 
 alias idor="idea $ORBITER_HOME"
+
+alias pyor="pycharm $ORBITER_HOME"
 
 alias itor="iterm $ORBITER_HOME"
 
@@ -688,6 +806,8 @@ alias pppl="cd_pull $PLANET_PAIRS_HOME"
 
 alias idpp="idea $PLANET_PAIRS_HOME"
 
+alias pypp="pycharm $PLANET_PAIRS_HOME"
+
 alias itpp="iterm $PLANET_PAIRS_HOME"
 
 alias cdpp="cd_down_tree $PLANET_PAIRS_HOME"
@@ -704,6 +824,8 @@ alias csst="cd_status $COFFEESCRIPT_HOME"
 alias cspl="cd_pull $COFFEESCRIPT_HOME"
 
 alias idcs="idea $COFFEESCRIPT_HOME"
+
+alias pycs="pycharm $COFFEESCRIPT_HOME"
 
 alias itcs="iterm $COFFEESCRIPT_HOME"
 
@@ -722,6 +844,8 @@ alias gapl="cd_pull $GAME_HOME"
 
 alias idga="idea $GAME_HOME"
 
+alias pyga="pycharm $GAME_HOME"
+
 alias itga="iterm $GAME_HOME"
 
 alias cdga="cd_down_tree $GAME_HOME"
@@ -738,6 +862,8 @@ alias mrst="cd_status $WEBSITE_HOME"
 alias mrpl="cd_pull $WEBSITE_HOME"
 
 alias idmr="idea $WEBSITE_HOME"
+
+alias pymr="pycharm $WEBSITE_HOME"
 
 alias itmr="iterm $WEBSITE_HOME"
 
@@ -756,6 +882,8 @@ alias bbpl="cd_pull $BOUNCING_BALLS_HOME"
 
 alias idbb="idea $BOUNCING_BALLS_HOME"
 
+alias pybb="pycharm $BOUNCING_BALLS_HOME"
+
 alias itbb="iterm $BOUNCING_BALLS_HOME"
 
 alias cdbb="cd_down_tree $BOUNCING_BALLS_HOME"
@@ -772,6 +900,8 @@ alias ornst="cd_status $ORBITER_NEW_HOME"
 alias ornpl="cd_pull $ORBITER_NEW_HOME"
 
 alias idorn="idea $ORBITER_NEW_HOME"
+
+alias pyorn="pycharm $ORBITER_NEW_HOME"
 
 alias itorn="iterm $ORBITER_NEW_HOME"
 
@@ -790,6 +920,8 @@ alias cepl="cd_pull $COCOS_EXAMPLES_HOME"
 
 alias idce="idea $COCOS_EXAMPLES_HOME"
 
+alias pyce="pycharm $COCOS_EXAMPLES_HOME"
+
 alias itce="iterm $COCOS_EXAMPLES_HOME"
 
 alias cdce="cd_down_tree $COCOS_EXAMPLES_HOME"
@@ -806,6 +938,8 @@ alias ffst="cd_status $FLAPPY_FISH_HOME"
 alias ffpl="cd_pull $FLAPPY_FISH_HOME"
 
 alias idff="idea $FLAPPY_FISH_HOME"
+
+alias pyff="pycharm $FLAPPY_FISH_HOME"
 
 alias itff="iterm $FLAPPY_FISH_HOME"
 
@@ -824,6 +958,8 @@ alias pipl="cd_pull $PI_HOME"
 
 alias idpi="idea $PI_HOME"
 
+alias pypi="pycharm $PI_HOME"
+
 alias itpi="iterm $PI_HOME"
 
 alias cdpi="cd_down_tree $PI_HOME"
@@ -840,6 +976,8 @@ alias test="cd_status $JS_TESTS_HOME"
 alias tepl="cd_pull $JS_TESTS_HOME"
 
 alias idte="idea $JS_TESTS_HOME"
+
+alias pyte="pycharm $JS_TESTS_HOME"
 
 alias itte="iterm $JS_TESTS_HOME"
 
@@ -858,6 +996,8 @@ alias cspl="cd_pull $CSS_HOME"
 
 alias idcs="idea $CSS_HOME"
 
+alias pycs="pycharm $CSS_HOME"
+
 alias itcs="iterm $CSS_HOME"
 
 alias cdcs="cd_down_tree $CSS_HOME"
@@ -875,6 +1015,8 @@ alias rnpl="cd_pull $RUNNER_HOME"
 
 alias idrn="idea $RUNNER_HOME"
 
+alias pyrn="pycharm $RUNNER_HOME"
+
 alias itrn="iterm $RUNNER_HOME"
 
 alias cdrn="cd_down_tree $RUNNER_HOME"
@@ -891,6 +1033,8 @@ alias cqst="cd_status $COQ_HOME"
 alias cqpl="cd_pull $COQ_HOME"
 
 alias idcq="idea $COQ_HOME"
+
+alias pycq="pycharm $COQ_HOME"
 
 alias itcq="iterm $COQ_HOME"
 

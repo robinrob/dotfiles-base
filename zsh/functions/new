@@ -45,10 +45,10 @@ unset INTERPRETER
 unset FILENAME
 unset EXTENSION
 
-if ! [[ "$NO_OPEN" == "noopen" ]]
-then
-	$EDITOR $FILE
-fi
+# if ! [[ "$NO_OPEN" == "noopen" ]]
+# then
+# 	$EDITOR $FILE
+# fi
 
 print -z ./$FILE
 

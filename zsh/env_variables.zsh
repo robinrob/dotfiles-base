@@ -263,6 +263,10 @@ export ANGULAR_TEST_HOME=$JS_HOME/projects/angular-test
 
 export NOS_HOME=$WORK_HOME/python/NOS-BIT
 
+export NOS2_HOME=$WORK_HOME/python/NOS-BIT-2
+
+export KAPTIO_HOME=$WORK_HOME/python/kaptio
+
 export WORK_HOME=$HOME/Programming/work
 
 export WORK_RUBY_HOME=/Users/robinsmith/Programming/robin/ruby
@@ -461,6 +465,8 @@ export INTELLIJ_IDEA_PREFS_HOME="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ
 export INTELLIJ_CONFIG="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/keymaps/Robin.xml"
 
 export INTELLIJ_COLORS="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/colors"
+
+export PYCHARM="Pycharm CE"
 
 
 ###############################################################################

@@ -1,0 +1,12 @@
+local +r Commit1=HEAD
+local +r Commit2
+
+if [ $# == 2 ]
+then
+  Commit1=$1
+  Commit2=$2
+else
+  Commit2=$1
+fi
+
+git diff $1..$2 --stat

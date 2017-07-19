@@ -1,0 +1,8 @@
+PACKAGE=$1
+
+if [[ -n $PACKAGE ]]
+then
+  sudo pip3 install $PACKAGE
+else
+  sudo pip3 install -r requirements.txt
+fi

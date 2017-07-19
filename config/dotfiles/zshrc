@@ -124,3 +124,4 @@ nvm use $NODE_VERSION
 #########
 [ -f $HOME/.ssh/id_rsa_heroku ] && ssh-add $HOME/.ssh/id_rsa_heroku
 [ -f $HOME/.ssh/id_rsa ] && ssh-add $HOME/.ssh/id_rsa
+[ -f $HOME/.ssh/kaptio ] && ssh-add $HOME/.ssh/kaptio

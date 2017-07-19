@@ -3,3 +3,5 @@
 	name = Robin Smith
 [merge]
 	tool = diffmerge
+[core]
+	excludesfile = /Users/robin/.gitignore

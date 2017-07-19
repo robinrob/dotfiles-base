@@ -70,7 +70,7 @@ function prompt_robin_setup {
 
   SEP="$(magandaprompt)$(repeat_string 80 -)"$'\n'
 
-  PS1="${SEP}$(magandaprompt)%n$(brightwhiteprompt)@%{$HOSTCOLOR%}%B%m%b%f $(brightyellowprompt)\$(dir)/ \${vcs_info_msg_0_}$LIGHTNING$(defaultprompt)  "
+  PS1="${SEP}$(magandaprompt)%n$(brightwhiteprompt)@%{$HOSTCOLOR%}%B%m%b%f $(blueprompt)\$(dir)/ \${vcs_info_msg_0_}$LIGHTNING$(defaultprompt)  "
 
   RPS1="\$(gdate +'%H:%M:%S') %(?.$(greenprompt)(%?%).$(redprompt)(%?%))$(defaultprompt)"
  
