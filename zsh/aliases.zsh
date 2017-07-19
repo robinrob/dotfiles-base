@@ -257,6 +257,8 @@ alias l4d="open -a 'Left 4 Dead 2'"
 
 alias steam="open -a Steam"
 
+alias ms="open -a Messenger"
+
 alias ssl="open -a 'shellShock Live'"
 
 alias itunes="open -a iTunes"
@@ -643,7 +645,6 @@ alias wcfn="wc -l $FUNCS_HOME/*"
 
 alias grfn="grep_functions"
 
-
 alias cdnoc="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
 
 alias cdms="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
@@ -993,6 +994,7 @@ alias rnsall="cd_down_tree $SCREENSHOTS_HOME && despace"
 alias mal="edit_alias"
 
 alias cal="cat $ALIASES_PATH"
+
 
 alias mun="$EDITOR $ZDOT_HOME/unaliases.zsh"
 

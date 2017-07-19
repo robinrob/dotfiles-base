@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
+brew tap homebrew/dupes
+brew install coreutils
+
 
 cat $BREWLIST | while read package ; do
   brew install $package
