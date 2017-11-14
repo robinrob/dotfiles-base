@@ -285,6 +285,11 @@ export ORIGINS_DEV_HOME=$JS_HOME/projects/fundamental-origins-dev
 
 export OCT_HOME=$ROBIN_HOME/octave
 
+export SWIFT_HOME=$ROBIN_HOME/swift
+
+export CALCULATOR_HOME=$SWIFT_HOME/projects/calculator
+
+export GUITAR_CHORDS_HOME=$SWIFT_HOME/projects/GuitarChords
 
 ###############################################################################
 # Directories
@@ -454,7 +459,8 @@ export ADOBE_PATH="/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader"
 
 export INTELLIJ_VERSION=14
 
-export INTELLIJ_IDEA="IntelliJ IDEA $INTELLIJ_VERSION"
+export INTELLIJ_IDEA="IntelliJ IDEA"
+# export INTELLIJ_IDEA="IntelliJ IDEA $INTELLIJ_VERSION"
 
 export INTELLIJ_IDEA_HOME="/Applications/$INTELLIJ_IDEA.app/Contents/MacOS"
 
@@ -465,6 +471,8 @@ export INTELLIJ_IDEA_PREFS_HOME="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ
 export INTELLIJ_CONFIG="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/keymaps/Robin.xml"
 
 export INTELLIJ_COLORS="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/colors"
+
+export INTELLIJ_COMMUNITY="IntelliJ IDEA CE"
 
 export PYCHARM="Pycharm CE"
 

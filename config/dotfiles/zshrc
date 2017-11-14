@@ -70,10 +70,10 @@ prompt robin
 
 # Greeting
 ###############################################################################
-printf "$(brightwhite I) $(brightyellow am) $(brightcyan awesome) $(brightwhite ':)')"
-speak "I am awesome"
-
-print " ($(pafon_counter) $(brightcyan days))"
+# printf "$(brightwhite I) $(brightyellow am) $(brightcyan awesome) $(brightwhite ':)')"
+# speak "I am awesome"
+#
+# print " ($(pafon_counter) $(brightcyan days))"
 
 
 # Development
@@ -125,3 +125,4 @@ nvm use $NODE_VERSION
 [ -f $HOME/.ssh/id_rsa_heroku ] && ssh-add $HOME/.ssh/id_rsa_heroku
 [ -f $HOME/.ssh/id_rsa ] && ssh-add $HOME/.ssh/id_rsa
 [ -f $HOME/.ssh/kaptio ] && ssh-add $HOME/.ssh/kaptio
+[ -f $HOME/.ssh/kaptio ] && ssh-add $HOME/.ssh/ec2_ftp

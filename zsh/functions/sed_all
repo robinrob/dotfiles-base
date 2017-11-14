@@ -1,4 +1,4 @@
-local +r Usage='sed_all <sed-expression> <find-expression> -w <where> -d <depth>'
+local +r Usage='sed_all <sed-expression> <find-expression> -w <where> -d <depth> [-i]'
 
 ( [[ -z $1 ]] || [[ -z $2 ]] ) && red $Usage && return 1
 

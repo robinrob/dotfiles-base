@@ -1,0 +1,7 @@
+local +r Path=$1
+
+cd $Path
+pycharm .
+work_tabs
+vagrant up
+open -a HipChat

@@ -1,5 +1,2 @@
-gmail
-google_calendar
-fast_mail
-fast_mail_calendar
-issues
+browse browser "https://mail.google.com/mail/u/1/?tab=cm#inbox"
+browse browser "https://calendar.google.com/calendar/b/1/render#main_7"

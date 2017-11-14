@@ -107,6 +107,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias pyka="cd_pycharm $KAPTIO_HOME"
+
 alias trf="translate -f fr -t en"
 
 alias brex="exit"
@@ -245,6 +247,18 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias xc="xcode"
+
+alias cle="open -a Clementine"
+
+alias st="open -a sourceTree"
+
+alias sub="open -a 'Sublime Text'"
+
+alias vsc="open -a 'Visual Studio Code'"
+
+alias hk="heroku"
+
 alias hc="open -a Hipchat"
 
 alias golf="open -a 'Golf With Your Friends'"
@@ -275,7 +289,7 @@ alias war="open -a 'War Thunder'"
 
 alias cs="open -a 'Counter-Strike Global Offensive'"
 
-alias st="open -a Steam"
+alias steam="open -a Steam"
 
 alias clm="open -a Clementime"
 
@@ -605,6 +619,8 @@ alias bnew="new_s bash sh"
 
 alias snew="new_s sh sh"
 
+alias swnew="new_s swift swift"
+
 alias onew="new_s ocaml ml"
 
 alias znew="new_s zsh zsh"
@@ -717,7 +733,7 @@ alias gacm="git add -u * && git add * && git commit -m"
 
 alias grS="git reset"
 
-alias grsh="git reset --head"
+alias grsh="git reset head"
 
 alias gas="git add *"
 
@@ -759,7 +775,7 @@ alias gplm="git pull $DEFAULT_GIT_REMOTE master"
 
 alias gcm="git checkout master"
 
-alias gcd="git checkout development"
+alias gcd="git checkout develop"
 
 alias ga="git add"
 
@@ -1134,11 +1150,7 @@ alias lahome="get_record la_home"
 
 alias lawork="get_record la_work"
 
-alias cardcredit="get_record rbc-credit"
-
-alias cardhsbc="get_record hsbc-debit"
-
-alias cardrbc="get_record rbc-debit"
+alias cardnat="get_record nationwide-debit"
 
 alias mspnum="get_record msp_num"
 
@@ -1362,6 +1374,8 @@ alias logs="log_sh"
 
 alias logsv="log_sh_var"
 
+alias logav="log_apex_var"
+
 alias lod="lodash_doc_search"
 
 alias lod="lodash_doc_search"
@@ -1407,6 +1421,8 @@ alias toh="to_haml"
 alias tot="to_html"
 
 alias id="idea"
+
+alias ic="open_app \"$INTELLIJ_COMMUNITY\""
 
 alias pych="pycharm"
 
@@ -1496,7 +1512,7 @@ alias scd="start_cocos_dev"
 
 alias std="start_game_dev"
 
-alias stp="kill_processes_by_name idea macvim vagrant virtualbox itunes firefox safari finder slack pycharm postgres"
+alias stp="kill_processes_by_name idea macvim vagrant virtualbox itunes firefox safari finder slack pycharm postgres hipchat 'visual studio code' postman evernote"
 
 alias stg="stp; kill_processes_by_name finder safari vlc macvim spotify utorrent preview; open -a Steam"
 

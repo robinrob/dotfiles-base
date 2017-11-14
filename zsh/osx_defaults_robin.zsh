@@ -1,4 +1,4 @@
-!/usr/bin/env zsh
+#!/usr/bin/env zsh
 
 ###############################################################################
 # Robin's additional defaults and overrides
@@ -66,7 +66,7 @@ defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.0
 autoload -U +X load 2> /dev/null
 load
 
-local +r Extensions=(sh zsh py js sql csv)
+local +r Extensions=(sh zsh py js sql csv cls object page trigger)
 for extension in $Extensions
 do
   associate_file_type_with_app_name $extension 'IntelliJ IDEA 14'

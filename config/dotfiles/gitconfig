@@ -5,3 +5,9 @@
 	tool = diffmerge
 [core]
 	excludesfile = /Users/robin/.gitignore
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /private/var/folders/50/0160b21j0msfjq8xskfmdw280000gn/T/AppTranslocation/951AACE0-D882-4B36-B879-CC7E1E8D883D/d/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

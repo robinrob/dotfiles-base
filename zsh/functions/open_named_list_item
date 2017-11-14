@@ -7,7 +7,7 @@ do
 
   if $(is_http_url $Value)
   then
-    safari $Value
+    browser $Value
   else
     open $Value
   fi
