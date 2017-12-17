@@ -1,1 +1,1 @@
-copy_print "print '$(upper $*)'"
+copy_print "print('$(upper $*)')"

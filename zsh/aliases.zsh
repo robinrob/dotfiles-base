@@ -107,6 +107,10 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias pyka="cd_pycharm $KAPTIO_HOME"
+
+alias trf="translate -f fr -t en"
+
 alias brex="exit"
 
 alias brexit="exit"
@@ -117,7 +121,7 @@ alias kc="kitchen converge"
 
 alias kl="kitchen login"
 
-alias trf="copy_print 'self.assertTrue(False)'"
+# alias trf="copy_print 'self.assertTrue(False)'"
 
 alias mapsn="maps -n"
 
@@ -243,6 +247,22 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias xc="xcode"
+
+alias cle="open -a Clementine"
+
+alias st="open -a sourceTree"
+
+alias sub="open -a 'Sublime Text'"
+
+alias vsc="open -a 'Visual Studio Code'"
+
+alias hk="heroku"
+
+alias hc="open -a Hipchat"
+
+alias golf="open -a 'Golf With Your Friends'"
+
 alias ra="open -a OpenRA"
 
 alias rl="open -a 'Rocket League'"
@@ -269,7 +289,7 @@ alias war="open -a 'War Thunder'"
 
 alias cs="open -a 'Counter-Strike Global Offensive'"
 
-alias st="open -a Steam"
+alias steam="open -a Steam"
 
 alias clm="open -a Clementime"
 
@@ -309,7 +329,6 @@ alias lessc="$LESSC_PATH"
 
 alias lc="lessc"
 
-alias book="safari"
 
 alias firefoxp="/Applications/Firefox.app/Contents/MacOS/firefox-bin -p"
 
@@ -568,6 +587,10 @@ alias pi="pip_install"
 
 alias pu="sudo pip uninstall"
 
+alias p3i="pip3_install"
+
+alias p3u="sudo pip3 uninstall"
+
 alias vi="vagrant init"
 
 alias vu="vagrant up"
@@ -595,6 +618,8 @@ alias rnew="new_s ruby rb"
 alias bnew="new_s bash sh"
 
 alias snew="new_s sh sh"
+
+alias swnew="new_s swift swift"
 
 alias onew="new_s ocaml ml"
 
@@ -678,6 +703,12 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
+alias gchp="git cherry-pick"
+
+alias hpr="hub_pull_request"
+
+alias grss="git reset --soft"
+
 alias gag="git add .gitignore"
 
 alias grb="git rebase"
@@ -702,7 +733,7 @@ alias gacm="git add -u * && git add * && git commit -m"
 
 alias grS="git reset"
 
-alias grsH="git reset --hard"
+alias grsh="git reset head"
 
 alias gas="git add *"
 
@@ -1079,8 +1110,6 @@ alias sprog="du -dh $PROG_HOME"
 
 alias spr="sprog"
 
-alias sd="du -dh"
-
 alias erk="edit rakefile"
 
 alias rkct="rake count_all"
@@ -1121,11 +1150,7 @@ alias lahome="get_record la_home"
 
 alias lawork="get_record la_work"
 
-alias cardcredit="get_record rbc-credit"
-
-alias cardhsbc="get_record hsbc-debit"
-
-alias cardrbc="get_record rbc-debit"
+alias cardnat="get_record nationwide-debit"
 
 alias mspnum="get_record msp_num"
 
@@ -1165,6 +1190,10 @@ alias em="get_record email"
 
 alias em2="get_record email2"
 
+alias em3="get_record email3"
+
+alias emw="get_record emailwork"
+
 alias ad="get_record home_address"
 
 alias pc="get_record home_postcode"
@@ -1197,6 +1226,24 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias orders="search_amazon_orders"
+
+alias hp="hub_pull_request"
+
+alias wt="work_tabs"
+
+alias cdl="cd_last_dir"
+
+alias fac="fast_mail_calendar"
+
+alias fa="fast_mail"
+
+alias sd="list_dirs_by_size"
+
+alias glc="git_diff_commits"
+
+alias gdc="git_diff_commits"
+
 alias oo="open_option"
 
 alias ms="open -a Messenger"
@@ -1212,6 +1259,8 @@ alias kpr="kill_processes_by_name"
 alias ca="google_calendar"
 
 alias ma="gmail"
+
+alias co="google_contacts"
 
 alias dirs="directions"
 
@@ -1311,6 +1360,10 @@ alias logp="log_python"
 
 alias logpv="log_python_var"
 
+alias logp3v="log_python_3_var"
+
+alias logp3o="log_python_3_object"
+
 alias logpo="log_python_object"
 
 alias logz="log_zsh"
@@ -1320,6 +1373,8 @@ alias logzv="log_zsh_var"
 alias logs="log_sh"
 
 alias logsv="log_sh_var"
+
+alias logav="log_apex_var"
 
 alias lod="lodash_doc_search"
 
@@ -1366,6 +1421,10 @@ alias toh="to_haml"
 alias tot="to_html"
 
 alias id="idea"
+
+alias ic="open_app \"$INTELLIJ_COMMUNITY\""
+
+alias pych="pycharm"
 
 alias lo="localhost_browse"
 
@@ -1453,7 +1512,7 @@ alias scd="start_cocos_dev"
 
 alias std="start_game_dev"
 
-alias stp="kill_processes_by_name idea macvim vagrant virtualbox itunes firefox safari finder"
+alias stp="kill_processes_by_name idea macvim vagrant virtualbox itunes firefox safari finder slack pycharm postgres hipchat 'visual studio code' postman evernote"
 
 alias stg="stp; kill_processes_by_name finder safari vlc macvim spotify utorrent preview; open -a Steam"
 
@@ -1471,9 +1530,9 @@ alias mwa="edit_which_alias"
 
 alias hpb="head_pbcopy"
 
-alias clh="clean_home $HOME"
+alias cleanhome="clean_home $HOME"
 
-alias clf="clean_files"
+alias cleanfiles="clean_files"
 
 alias 80="repeat_string 80 -"
 

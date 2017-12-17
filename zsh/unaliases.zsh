@@ -87,3 +87,9 @@ unal type
 unal sl
 
 unal vim
+
+unal glc
+
+unal du
+
+unal gdu

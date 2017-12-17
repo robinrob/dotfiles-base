@@ -5,6 +5,7 @@ abbreviations[awk]=a
 abbreviations[angular-test]=at
 abbreviations[bouncing_balls]=bb
 abbreviations[c]=c
+abbreviations[calculator]=ca
 abbreviations[cocos-examples]=ce
 abbreviations[coffeescript]=cs
 abbreviations[concentration-game]=cn
@@ -19,6 +20,7 @@ abbreviations[game]=ga
 abbreviations[gimp]=gi
 abbreviations[github]=gh
 abbreviations[go]=go
+abbreviations[guitar-chords]=gu
 abbreviations[heroes]=he
 abbreviations[html]=h
 abbreviations[css]=cs
@@ -48,6 +50,7 @@ abbreviations[runner]=rn
 abbreviations[rss]=rs
 abbreviations[scala]=sc
 abbreviations[sh]=s
+abbreviations[swift]=sw
 abbreviations[typescript]=tp
 abbreviations[website]=mr
 abbreviations[website-dev]=mrd
@@ -55,7 +58,9 @@ abbreviations[quiz]=q
 abbreviations[zsh]=z
 
 # Work
+abbreviations[kaptio]=ka
 abbreviations[nos]=no
+abbreviations[nos2]=no2
 
 
 for repo in ${(k)abbreviations}

@@ -1,0 +1,1 @@
+copy_print "import simplejson as simplejson; print('$1: {json}'.format(json=simplejson.dumps($1, indent=4)))"

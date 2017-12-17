@@ -100,23 +100,6 @@ alias cdrapr="cd_down_tree $OPENRA_HOME/practice"
 alias cdrapro="cd_down_tree $OPENRA_HOME/projects"
 alias glpra="cd_gulp $OPENRA_HOME"
 
-alias msv="cd_save $MARKDOWN_HOME"
-
-alias mcm="cd_commit $MARKDOWN_HOME"
-
-alias mst="cd_status $MARKDOWN_HOME"
-
-alias mpl="cd_pull $MARKDOWN_HOME"
-
-alias idm="idea $MARKDOWN_HOME"
-
-alias itm="iterm $MARKDOWN_HOME"
-
-alias cdm="cd_down_tree $MARKDOWN_HOME"
-alias cdmpr="cd_down_tree $MARKDOWN_HOME/practice"
-alias cdmpro="cd_down_tree $MARKDOWN_HOME/projects"
-alias glpm="cd_gulp $MARKDOWN_HOME"
-
 alias fudsv="cd_save $ORIGINS_DEV_HOME"
 
 alias fudcm="cd_commit $ORIGINS_DEV_HOME"
@@ -133,6 +116,23 @@ alias cdfud="cd_down_tree $ORIGINS_DEV_HOME"
 alias cdfudpr="cd_down_tree $ORIGINS_DEV_HOME/practice"
 alias cdfudpro="cd_down_tree $ORIGINS_DEV_HOME/projects"
 alias glpfud="cd_gulp $ORIGINS_DEV_HOME"
+
+alias msv="cd_save $MARKDOWN_HOME"
+
+alias mcm="cd_commit $MARKDOWN_HOME"
+
+alias mst="cd_status $MARKDOWN_HOME"
+
+alias mpl="cd_pull $MARKDOWN_HOME"
+
+alias idm="idea $MARKDOWN_HOME"
+
+alias itm="iterm $MARKDOWN_HOME"
+
+alias cdm="cd_down_tree $MARKDOWN_HOME"
+alias cdmpr="cd_down_tree $MARKDOWN_HOME/practice"
+alias cdmpro="cd_down_tree $MARKDOWN_HOME/projects"
+alias glpm="cd_gulp $MARKDOWN_HOME"
 
 alias nosv="cd_save $NOS_HOME"
 
@@ -168,6 +168,23 @@ alias cdrspr="cd_down_tree $RSS_HOME/practice"
 alias cdrspro="cd_down_tree $RSS_HOME/projects"
 alias glprs="cd_gulp $RSS_HOME"
 
+alias gusv="cd_save $GUITAR_CHORDS_HOME"
+
+alias gucm="cd_commit $GUITAR_CHORDS_HOME"
+
+alias gust="cd_status $GUITAR_CHORDS_HOME"
+
+alias gupl="cd_pull $GUITAR_CHORDS_HOME"
+
+alias idgu="idea $GUITAR_CHORDS_HOME"
+
+alias itgu="iterm $GUITAR_CHORDS_HOME"
+
+alias cdgu="cd_down_tree $GUITAR_CHORDS_HOME"
+alias cdgupr="cd_down_tree $GUITAR_CHORDS_HOME/practice"
+alias cdgupro="cd_down_tree $GUITAR_CHORDS_HOME/projects"
+alias glpgu="cd_gulp $GUITAR_CHORDS_HOME"
+
 alias jvsv="cd_save $JV_HOME"
 
 alias jvcm="cd_commit $JV_HOME"
@@ -184,6 +201,40 @@ alias cdjv="cd_down_tree $JV_HOME"
 alias cdjvpr="cd_down_tree $JV_HOME/practice"
 alias cdjvpro="cd_down_tree $JV_HOME/projects"
 alias glpjv="cd_gulp $JV_HOME"
+
+alias swsv="cd_save $SWIFT_HOME"
+
+alias swcm="cd_commit $SWIFT_HOME"
+
+alias swst="cd_status $SWIFT_HOME"
+
+alias swpl="cd_pull $SWIFT_HOME"
+
+alias idsw="idea $SWIFT_HOME"
+
+alias itsw="iterm $SWIFT_HOME"
+
+alias cdsw="cd_down_tree $SWIFT_HOME"
+alias cdswpr="cd_down_tree $SWIFT_HOME/practice"
+alias cdswpro="cd_down_tree $SWIFT_HOME/projects"
+alias glpsw="cd_gulp $SWIFT_HOME"
+
+alias kasv="cd_save $KAPTIO_HOME"
+
+alias kacm="cd_commit $KAPTIO_HOME"
+
+alias kast="cd_status $KAPTIO_HOME"
+
+alias kapl="cd_pull $KAPTIO_HOME"
+
+alias idka="idea $KAPTIO_HOME"
+
+alias itka="iterm $KAPTIO_HOME"
+
+alias cdka="cd_down_tree $KAPTIO_HOME"
+alias cdkapr="cd_down_tree $KAPTIO_HOME/practice"
+alias cdkapro="cd_down_tree $KAPTIO_HOME/projects"
+alias glpka="cd_gulp $KAPTIO_HOME"
 
 alias qsv="cd_save $QUIZ_HOME"
 
@@ -388,6 +439,23 @@ alias cdcp="cd_down_tree $C_PLUS_PLUS_HOME"
 alias cdcppr="cd_down_tree $C_PLUS_PLUS_HOME/practice"
 alias cdcppro="cd_down_tree $C_PLUS_PLUS_HOME/projects"
 alias glpcp="cd_gulp $C_PLUS_PLUS_HOME"
+
+alias no2sv="cd_save $NOS2_HOME"
+
+alias no2cm="cd_commit $NOS2_HOME"
+
+alias no2st="cd_status $NOS2_HOME"
+
+alias no2pl="cd_pull $NOS2_HOME"
+
+alias idno2="idea $NOS2_HOME"
+
+alias itno2="iterm $NOS2_HOME"
+
+alias cdno2="cd_down_tree $NOS2_HOME"
+alias cdno2pr="cd_down_tree $NOS2_HOME/practice"
+alias cdno2pro="cd_down_tree $NOS2_HOME/projects"
+alias glpno2="cd_gulp $NOS2_HOME"
 
 alias rosv="cd_save $ROBIN_HOME"
 
@@ -609,6 +677,23 @@ alias cdp="cd_down_tree $PYTHON_HOME"
 alias cdppr="cd_down_tree $PYTHON_HOME/practice"
 alias cdppro="cd_down_tree $PYTHON_HOME/projects"
 alias glpp="cd_gulp $PYTHON_HOME"
+
+alias casv="cd_save $CALCULATOR_HOME"
+
+alias cacm="cd_commit $CALCULATOR_HOME"
+
+alias cast="cd_status $CALCULATOR_HOME"
+
+alias capl="cd_pull $CALCULATOR_HOME"
+
+alias idca="idea $CALCULATOR_HOME"
+
+alias itca="iterm $CALCULATOR_HOME"
+
+alias cdca="cd_down_tree $CALCULATOR_HOME"
+alias cdcapr="cd_down_tree $CALCULATOR_HOME/practice"
+alias cdcapro="cd_down_tree $CALCULATOR_HOME/projects"
+alias glpca="cd_gulp $CALCULATOR_HOME"
 
 alias fcsv="cd_save $FORCE_COM_HOME"
 

@@ -1,0 +1,17 @@
+local +r Usage="hub_pull_request -b <branch> -m <message>"
+
+local +r Branch="development"
+local +r Message
+
+while getopts :b:m: opt
+do
+	case $opt in
+    b) Branch="$OPTARG" ;;
+    m) Message="$OPTARG" ;;
+    *) red $Usage && return 1 ;;
+	esac
+done
+
+local +r Url=$(hub pull-request -b $Branch -m $Message)
+
+browser $Url

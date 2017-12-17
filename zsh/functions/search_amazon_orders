@@ -1,0 +1,1 @@
+browser "https://www.amazon.co.uk/gp/your-account/order-history/ref=oh_aui_search?opt=ab&search=$(urlencode $@)"

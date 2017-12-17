@@ -1,4 +1,4 @@
-local +r Usage='grep_all <grep-expression> <find-expression> -w <where> -d <depth> -e <excludes> -i (case-insensitive grep)'
+local +r Usage='grep_all <grep-expression> <find-expression> -w <where> -d <depth> -e <excludes> -a <after> -b <before> -i (case-insensitive grep)'
 
 ( [[ -z $1 ]] || [[ -z $2 ]] ) && red $Usage && return 1
 
@@ -9,8 +9,10 @@ local +r Where='.'
 local +r MaxDepth
 local +r Insensitive
 local +r Excludes
+local +r After=2
+local +r Before=2
 
-while getopts :w:d:e:i opt
+while getopts :w:d:e:a:b:i opt
 do
 	case $opt in
     w) Where="$OPTARG" ;;
@@ -23,19 +25,31 @@ do
 				Excludes="$Excludes ! -name $exclude"
       done
       ;;
+    a) After=$OPTARG ;;
+    b) Before=$OPTARG ;;
     *) red $Usage && return 1 ;;
 	esac
 done
 
-IFS=" 
+if [ -n $After ]
+then
+    After="-A $After"
+fi
+
+if [ -n $Before ]
+then
+    Before="-B $Before"
+fi
+
+IFS="
 "
 for file in $(gfind $Where ${=MaxDepth} -follow ${=Excludes} -name "$FindExpression" -type f)
 do
   local +r Result
-  Result=$(ggrep -n -A 4 $Insensitive $GrepExpression $file)
+  Result=$(ggrep -n $After $Before $Insensitive $GrepExpression $file)
   if [[ -n $Result ]]
   then
     yellow $file
-    print $Result | ggrep -A 4 --color $Insensitive $GrepExpression
+    print $Result | ggrep $After $Before --color $Insensitive $GrepExpression
   fi
 done
