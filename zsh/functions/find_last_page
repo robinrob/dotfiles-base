@@ -29,4 +29,4 @@ done
 
 local +r Url="$(getUrl $Index)"
 print "Last page: $Url"
-browser $Url
+safari $Url
