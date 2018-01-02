@@ -370,7 +370,7 @@ alias cdang="cd $JS_HOME/practice/angular-blog"
 
 alias cdnpm="cd $NPMLIB_HOME"
 
-alias cdap="cd_down_tree /Applications"
+alias cdaP="cd_down_tree /Applications"
 
 alias cdim="cd_down_tree $IMPORTANT_HOME"
 

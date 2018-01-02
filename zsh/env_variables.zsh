@@ -291,6 +291,8 @@ export CALCULATOR_HOME=$SWIFT_HOME/projects/calculator
 
 export GUITAR_CHORDS_HOME=$SWIFT_HOME/projects/GuitarChords
 
+export APPLESCRIPT_HOME=$ROBIN_HOME/applescript
+
 ###############################################################################
 # Directories
 ###############################################################################

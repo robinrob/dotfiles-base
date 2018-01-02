@@ -1,0 +1,14 @@
+local +r Url=$1
+local +r ResponseCode=$(get_response_code $Url)
+
+while (($ResponseCode != 200))
+do
+  print "Checking ..."
+  sleep 1
+  ResponseCode=$(get_response_code $Url)
+done
+
+email robin@rsmith.io "$Url is back up!" $Url
+print 'display dialog "Site is up!"' | osascript
+
+browse $Url

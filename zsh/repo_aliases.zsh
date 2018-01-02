@@ -473,6 +473,25 @@ alias cdcpr="cd_down_tree $C_HOME/practice"
 alias cdcpro="cd_down_tree $C_HOME/projects"
 alias glpc="cd_gulp $C_HOME"
 
+alias apsv="cd_save $APPLESCRIPT_HOME"
+
+alias apcm="cd_commit $APPLESCRIPT_HOME"
+
+alias apst="cd_status $APPLESCRIPT_HOME"
+
+alias appl="cd_pull $APPLESCRIPT_HOME"
+
+alias idap="idea $APPLESCRIPT_HOME"
+
+alias xcap="xcode $APPLESCRIPT_HOME"
+
+alias itap="iterm $APPLESCRIPT_HOME"
+
+alias cdap="cd_down_tree $APPLESCRIPT_HOME"
+alias cdappr="cd_down_tree $APPLESCRIPT_HOME/practice"
+alias cdappro="cd_down_tree $APPLESCRIPT_HOME/projects"
+alias glpap="cd_gulp $APPLESCRIPT_HOME"
+
 alias cpsv="cd_save $C_PLUS_PLUS_HOME"
 
 alias cpcm="cd_commit $C_PLUS_PLUS_HOME"
@@ -929,25 +948,6 @@ alias cdmrpr="cd_down_tree $WEBSITE_HOME/practice"
 alias cdmrpro="cd_down_tree $WEBSITE_HOME/projects"
 alias glpmr="cd_gulp $WEBSITE_HOME"
 
-alias bbsv="cd_save $BOUNCING_BALLS_HOME"
-
-alias bbcm="cd_commit $BOUNCING_BALLS_HOME"
-
-alias bbst="cd_status $BOUNCING_BALLS_HOME"
-
-alias bbpl="cd_pull $BOUNCING_BALLS_HOME"
-
-alias idbb="idea $BOUNCING_BALLS_HOME"
-
-alias xcbb="xcode $BOUNCING_BALLS_HOME"
-
-alias itbb="iterm $BOUNCING_BALLS_HOME"
-
-alias cdbb="cd_down_tree $BOUNCING_BALLS_HOME"
-alias cdbbpr="cd_down_tree $BOUNCING_BALLS_HOME/practice"
-alias cdbbpro="cd_down_tree $BOUNCING_BALLS_HOME/projects"
-alias glpbb="cd_gulp $BOUNCING_BALLS_HOME"
-
 alias ornsv="cd_save $ORBITER_NEW_HOME"
 
 alias orncm="cd_commit $ORBITER_NEW_HOME"
@@ -966,6 +966,25 @@ alias cdorn="cd_down_tree $ORBITER_NEW_HOME"
 alias cdornpr="cd_down_tree $ORBITER_NEW_HOME/practice"
 alias cdornpro="cd_down_tree $ORBITER_NEW_HOME/projects"
 alias glporn="cd_gulp $ORBITER_NEW_HOME"
+
+alias bbsv="cd_save $BOUNCING_BALLS_HOME"
+
+alias bbcm="cd_commit $BOUNCING_BALLS_HOME"
+
+alias bbst="cd_status $BOUNCING_BALLS_HOME"
+
+alias bbpl="cd_pull $BOUNCING_BALLS_HOME"
+
+alias idbb="idea $BOUNCING_BALLS_HOME"
+
+alias xcbb="xcode $BOUNCING_BALLS_HOME"
+
+alias itbb="iterm $BOUNCING_BALLS_HOME"
+
+alias cdbb="cd_down_tree $BOUNCING_BALLS_HOME"
+alias cdbbpr="cd_down_tree $BOUNCING_BALLS_HOME/practice"
+alias cdbbpro="cd_down_tree $BOUNCING_BALLS_HOME/projects"
+alias glpbb="cd_gulp $BOUNCING_BALLS_HOME"
 
 alias cesv="cd_save $COCOS_EXAMPLES_HOME"
 

@@ -1,8 +1,9 @@
 typeset -A abbreviations
 
 # Home
-abbreviations[awk]=a
+abbreviations[applescript]=ap
 abbreviations[angular-test]=at
+abbreviations[awk]=a
 abbreviations[bouncing_balls]=bb
 abbreviations[c]=c
 abbreviations[calculator]=ca
