@@ -9,6 +9,7 @@ do
 done
 
 email robin@rsmith.io "$Url is back up!" $Url
-print 'display dialog "Site is up!"' | osascript
+print "display notification \"$Url is up!\"" | osascript
+print "display dialog \"$Url is up!\"" | osascript
 
 browse $Url
