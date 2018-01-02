@@ -1,2 +1,0 @@
-browser "https://www.google.com/#q=$(urlencode $@)&safe=active"
-

@@ -8,6 +8,8 @@ alias scpl="cd_pull $SCALA_HOME"
 
 alias idsc="idea $SCALA_HOME"
 
+alias xcsc="xcode $SCALA_HOME"
+
 alias itsc="iterm $SCALA_HOME"
 
 alias cdsc="cd_down_tree $SCALA_HOME"
@@ -24,6 +26,8 @@ alias nst="cd_status $NODE_HOME"
 alias npl="cd_pull $NODE_HOME"
 
 alias idn="idea $NODE_HOME"
+
+alias xcn="xcode $NODE_HOME"
 
 alias itn="iterm $NODE_HOME"
 
@@ -42,6 +46,8 @@ alias gipl="cd_pull $GIMP_HOME"
 
 alias idgi="idea $GIMP_HOME"
 
+alias xcgi="xcode $GIMP_HOME"
+
 alias itgi="iterm $GIMP_HOME"
 
 alias cdgi="cd_down_tree $GIMP_HOME"
@@ -58,6 +64,8 @@ alias fust="cd_status $ORIGINS_HOME"
 alias fupl="cd_pull $ORIGINS_HOME"
 
 alias idfu="idea $ORIGINS_HOME"
+
+alias xcfu="xcode $ORIGINS_HOME"
 
 alias itfu="iterm $ORIGINS_HOME"
 
@@ -76,6 +84,8 @@ alias zpl="cd_pull $ZSH_HOME"
 
 alias idz="idea $ZSH_HOME"
 
+alias xcz="xcode $ZSH_HOME"
+
 alias itz="iterm $ZSH_HOME"
 
 alias cdz="cd_down_tree $ZSH_HOME"
@@ -92,6 +102,8 @@ alias rast="cd_status $OPENRA_HOME"
 alias rapl="cd_pull $OPENRA_HOME"
 
 alias idra="idea $OPENRA_HOME"
+
+alias xcra="xcode $OPENRA_HOME"
 
 alias itra="iterm $OPENRA_HOME"
 
@@ -110,6 +122,8 @@ alias fudpl="cd_pull $ORIGINS_DEV_HOME"
 
 alias idfud="idea $ORIGINS_DEV_HOME"
 
+alias xcfud="xcode $ORIGINS_DEV_HOME"
+
 alias itfud="iterm $ORIGINS_DEV_HOME"
 
 alias cdfud="cd_down_tree $ORIGINS_DEV_HOME"
@@ -126,6 +140,8 @@ alias mst="cd_status $MARKDOWN_HOME"
 alias mpl="cd_pull $MARKDOWN_HOME"
 
 alias idm="idea $MARKDOWN_HOME"
+
+alias xcm="xcode $MARKDOWN_HOME"
 
 alias itm="iterm $MARKDOWN_HOME"
 
@@ -144,6 +160,8 @@ alias nopl="cd_pull $NOS_HOME"
 
 alias idno="idea $NOS_HOME"
 
+alias xcno="xcode $NOS_HOME"
+
 alias itno="iterm $NOS_HOME"
 
 alias cdno="cd_down_tree $NOS_HOME"
@@ -160,6 +178,8 @@ alias rsst="cd_status $RSS_HOME"
 alias rspl="cd_pull $RSS_HOME"
 
 alias idrs="idea $RSS_HOME"
+
+alias xcrs="xcode $RSS_HOME"
 
 alias itrs="iterm $RSS_HOME"
 
@@ -178,6 +198,8 @@ alias gupl="cd_pull $GUITAR_CHORDS_HOME"
 
 alias idgu="idea $GUITAR_CHORDS_HOME"
 
+alias xcgu="xcode $GUITAR_CHORDS_HOME"
+
 alias itgu="iterm $GUITAR_CHORDS_HOME"
 
 alias cdgu="cd_down_tree $GUITAR_CHORDS_HOME"
@@ -194,6 +216,8 @@ alias jvst="cd_status $JV_HOME"
 alias jvpl="cd_pull $JV_HOME"
 
 alias idjv="idea $JV_HOME"
+
+alias xcjv="xcode $JV_HOME"
 
 alias itjv="iterm $JV_HOME"
 
@@ -212,6 +236,8 @@ alias swpl="cd_pull $SWIFT_HOME"
 
 alias idsw="idea $SWIFT_HOME"
 
+alias xcsw="xcode $SWIFT_HOME"
+
 alias itsw="iterm $SWIFT_HOME"
 
 alias cdsw="cd_down_tree $SWIFT_HOME"
@@ -228,6 +254,8 @@ alias kast="cd_status $KAPTIO_HOME"
 alias kapl="cd_pull $KAPTIO_HOME"
 
 alias idka="idea $KAPTIO_HOME"
+
+alias xcka="xcode $KAPTIO_HOME"
 
 alias itka="iterm $KAPTIO_HOME"
 
@@ -246,6 +274,8 @@ alias qpl="cd_pull $QUIZ_HOME"
 
 alias idq="idea $QUIZ_HOME"
 
+alias xcq="xcode $QUIZ_HOME"
+
 alias itq="iterm $QUIZ_HOME"
 
 alias cdq="cd_down_tree $QUIZ_HOME"
@@ -262,6 +292,8 @@ alias tpst="cd_status $TYPESCRIPT_HOME"
 alias tppl="cd_pull $TYPESCRIPT_HOME"
 
 alias idtp="idea $TYPESCRIPT_HOME"
+
+alias xctp="xcode $TYPESCRIPT_HOME"
 
 alias ittp="iterm $TYPESCRIPT_HOME"
 
@@ -280,6 +312,8 @@ alias spl="cd_pull $SH_HOME"
 
 alias ids="idea $SH_HOME"
 
+alias xcs="xcode $SH_HOME"
+
 alias its="iterm $SH_HOME"
 
 alias cds="cd_down_tree $SH_HOME"
@@ -296,6 +330,8 @@ alias lprst="cd_status $LODASH_PRACTICE_HOME"
 alias lprpl="cd_pull $LODASH_PRACTICE_HOME"
 
 alias idlpr="idea $LODASH_PRACTICE_HOME"
+
+alias xclpr="xcode $LODASH_PRACTICE_HOME"
 
 alias itlpr="iterm $LODASH_PRACTICE_HOME"
 
@@ -314,6 +350,8 @@ alias rpl="cd_pull $RUBY_HOME"
 
 alias idr="idea $RUBY_HOME"
 
+alias xcr="xcode $RUBY_HOME"
+
 alias itr="iterm $RUBY_HOME"
 
 alias cdr="cd_down_tree $RUBY_HOME"
@@ -330,6 +368,8 @@ alias fst="cd_status $FISH_HOME"
 alias fpl="cd_pull $FISH_HOME"
 
 alias idf="idea $FISH_HOME"
+
+alias xcf="xcode $FISH_HOME"
 
 alias itf="iterm $FISH_HOME"
 
@@ -348,6 +388,8 @@ alias ocpl="cd_pull $OCT_HOME"
 
 alias idoc="idea $OCT_HOME"
 
+alias xcoc="xcode $OCT_HOME"
+
 alias itoc="iterm $OCT_HOME"
 
 alias cdoc="cd_down_tree $OCT_HOME"
@@ -364,6 +406,8 @@ alias prst="cd_status $PROG_HOME"
 alias prpl="cd_pull $PROG_HOME"
 
 alias idpr="idea $PROG_HOME"
+
+alias xcpr="xcode $PROG_HOME"
 
 alias itpr="iterm $PROG_HOME"
 
@@ -382,6 +426,8 @@ alias mrdpl="cd_pull $WEBSITE_DEV_HOME"
 
 alias idmrd="idea $WEBSITE_DEV_HOME"
 
+alias xcmrd="xcode $WEBSITE_DEV_HOME"
+
 alias itmrd="iterm $WEBSITE_DEV_HOME"
 
 alias cdmrd="cd_down_tree $WEBSITE_DEV_HOME"
@@ -398,6 +444,8 @@ alias atst="cd_status $ANGULAR_TEST_HOME"
 alias atpl="cd_pull $ANGULAR_TEST_HOME"
 
 alias idat="idea $ANGULAR_TEST_HOME"
+
+alias xcat="xcode $ANGULAR_TEST_HOME"
 
 alias itat="iterm $ANGULAR_TEST_HOME"
 
@@ -416,6 +464,8 @@ alias cpl="cd_pull $C_HOME"
 
 alias idc="idea $C_HOME"
 
+alias xcc="xcode $C_HOME"
+
 alias itc="iterm $C_HOME"
 
 alias cdc="cd_down_tree $C_HOME"
@@ -432,6 +482,8 @@ alias cpst="cd_status $C_PLUS_PLUS_HOME"
 alias cppl="cd_pull $C_PLUS_PLUS_HOME"
 
 alias idcp="idea $C_PLUS_PLUS_HOME"
+
+alias xccp="xcode $C_PLUS_PLUS_HOME"
 
 alias itcp="iterm $C_PLUS_PLUS_HOME"
 
@@ -450,6 +502,8 @@ alias no2pl="cd_pull $NOS2_HOME"
 
 alias idno2="idea $NOS2_HOME"
 
+alias xcno2="xcode $NOS2_HOME"
+
 alias itno2="iterm $NOS2_HOME"
 
 alias cdno2="cd_down_tree $NOS2_HOME"
@@ -466,6 +520,8 @@ alias rost="cd_status $ROBIN_HOME"
 alias ropl="cd_pull $ROBIN_HOME"
 
 alias idro="idea $ROBIN_HOME"
+
+alias xcro="xcode $ROBIN_HOME"
 
 alias itro="iterm $ROBIN_HOME"
 
@@ -484,6 +540,8 @@ alias cnpl="cd_pull $CONCENTRATION_GAME_HOME"
 
 alias idcn="idea $CONCENTRATION_GAME_HOME"
 
+alias xccn="xcode $CONCENTRATION_GAME_HOME"
+
 alias itcn="iterm $CONCENTRATION_GAME_HOME"
 
 alias cdcn="cd_down_tree $CONCENTRATION_GAME_HOME"
@@ -500,6 +558,8 @@ alias rasst="cd_status $RECIPES_SERVER_HOME"
 alias raspl="cd_pull $RECIPES_SERVER_HOME"
 
 alias idras="idea $RECIPES_SERVER_HOME"
+
+alias xcras="xcode $RECIPES_SERVER_HOME"
 
 alias itras="iterm $RECIPES_SERVER_HOME"
 
@@ -518,6 +578,8 @@ alias ghpl="cd_pull $GITHUB_HOME"
 
 alias idgh="idea $GITHUB_HOME"
 
+alias xcgh="xcode $GITHUB_HOME"
+
 alias itgh="iterm $GITHUB_HOME"
 
 alias cdgh="cd_down_tree $GITHUB_HOME"
@@ -534,6 +596,8 @@ alias jst="cd_status $JAVASCRIPT_HOME"
 alias jpl="cd_pull $JAVASCRIPT_HOME"
 
 alias idj="idea $JAVASCRIPT_HOME"
+
+alias xcj="xcode $JAVASCRIPT_HOME"
 
 alias itj="iterm $JAVASCRIPT_HOME"
 
@@ -552,6 +616,8 @@ alias lopl="cd_pull $LOCAL_HOME"
 
 alias idlo="idea $LOCAL_HOME"
 
+alias xclo="xcode $LOCAL_HOME"
+
 alias itlo="iterm $LOCAL_HOME"
 
 alias cdlo="cd_down_tree $LOCAL_HOME"
@@ -568,6 +634,8 @@ alias ost="cd_status $OCAML_HOME"
 alias opl="cd_pull $OCAML_HOME"
 
 alias ido="idea $OCAML_HOME"
+
+alias xco="xcode $OCAML_HOME"
 
 alias ito="iterm $OCAML_HOME"
 
@@ -586,6 +654,8 @@ alias Dpl="cd_pull $DOTFILES_HOME"
 
 alias idD="idea $DOTFILES_HOME"
 
+alias xcD="xcode $DOTFILES_HOME"
+
 alias itD="iterm $DOTFILES_HOME"
 
 alias cdD="cd_down_tree $DOTFILES_HOME"
@@ -602,6 +672,8 @@ alias dst="cd_status $DOTFILES_BASE_HOME"
 alias dpl="cd_pull $DOTFILES_BASE_HOME"
 
 alias idd="idea $DOTFILES_BASE_HOME"
+
+alias xcd="xcode $DOTFILES_BASE_HOME"
 
 alias itd="iterm $DOTFILES_BASE_HOME"
 
@@ -620,6 +692,8 @@ alias gopl="cd_pull $GO_HOME"
 
 alias idgo="idea $GO_HOME"
 
+alias xcgo="xcode $GO_HOME"
+
 alias itgo="iterm $GO_HOME"
 
 alias cdgo="cd_down_tree $GO_HOME"
@@ -636,6 +710,8 @@ alias hest="cd_status $HEROES_HOME"
 alias hepl="cd_pull $HEROES_HOME"
 
 alias idhe="idea $HEROES_HOME"
+
+alias xche="xcode $HEROES_HOME"
 
 alias ithe="iterm $HEROES_HOME"
 
@@ -654,6 +730,8 @@ alias hpl="cd_pull $HTML_HOME"
 
 alias idh="idea $HTML_HOME"
 
+alias xch="xcode $HTML_HOME"
+
 alias ith="iterm $HTML_HOME"
 
 alias cdh="cd_down_tree $HTML_HOME"
@@ -670,6 +748,8 @@ alias pst="cd_status $PYTHON_HOME"
 alias ppl="cd_pull $PYTHON_HOME"
 
 alias idp="idea $PYTHON_HOME"
+
+alias xcp="xcode $PYTHON_HOME"
 
 alias itp="iterm $PYTHON_HOME"
 
@@ -688,6 +768,8 @@ alias capl="cd_pull $CALCULATOR_HOME"
 
 alias idca="idea $CALCULATOR_HOME"
 
+alias xcca="xcode $CALCULATOR_HOME"
+
 alias itca="iterm $CALCULATOR_HOME"
 
 alias cdca="cd_down_tree $CALCULATOR_HOME"
@@ -704,6 +786,8 @@ alias fcst="cd_status $FORCE_COM_HOME"
 alias fcpl="cd_pull $FORCE_COM_HOME"
 
 alias idfc="idea $FORCE_COM_HOME"
+
+alias xcfc="xcode $FORCE_COM_HOME"
 
 alias itfc="iterm $FORCE_COM_HOME"
 
@@ -722,6 +806,8 @@ alias plpl="cd_pull $PERL_HOME"
 
 alias idpl="idea $PERL_HOME"
 
+alias xcpl="xcode $PERL_HOME"
+
 alias itpl="iterm $PERL_HOME"
 
 alias cdpl="cd_down_tree $PERL_HOME"
@@ -738,6 +824,8 @@ alias ast="cd_status $AWK_HOME"
 alias apl="cd_pull $AWK_HOME"
 
 alias ida="idea $AWK_HOME"
+
+alias xca="xcode $AWK_HOME"
 
 alias ita="iterm $AWK_HOME"
 
@@ -756,6 +844,8 @@ alias orpl="cd_pull $ORBITER_HOME"
 
 alias idor="idea $ORBITER_HOME"
 
+alias xcor="xcode $ORBITER_HOME"
+
 alias itor="iterm $ORBITER_HOME"
 
 alias cdor="cd_down_tree $ORBITER_HOME"
@@ -772,6 +862,8 @@ alias ppst="cd_status $PLANET_PAIRS_HOME"
 alias pppl="cd_pull $PLANET_PAIRS_HOME"
 
 alias idpp="idea $PLANET_PAIRS_HOME"
+
+alias xcpp="xcode $PLANET_PAIRS_HOME"
 
 alias itpp="iterm $PLANET_PAIRS_HOME"
 
@@ -790,6 +882,8 @@ alias cspl="cd_pull $COFFEESCRIPT_HOME"
 
 alias idcs="idea $COFFEESCRIPT_HOME"
 
+alias xccs="xcode $COFFEESCRIPT_HOME"
+
 alias itcs="iterm $COFFEESCRIPT_HOME"
 
 alias cdcs="cd_down_tree $COFFEESCRIPT_HOME"
@@ -806,6 +900,8 @@ alias gast="cd_status $GAME_HOME"
 alias gapl="cd_pull $GAME_HOME"
 
 alias idga="idea $GAME_HOME"
+
+alias xcga="xcode $GAME_HOME"
 
 alias itga="iterm $GAME_HOME"
 
@@ -824,6 +920,8 @@ alias mrpl="cd_pull $WEBSITE_HOME"
 
 alias idmr="idea $WEBSITE_HOME"
 
+alias xcmr="xcode $WEBSITE_HOME"
+
 alias itmr="iterm $WEBSITE_HOME"
 
 alias cdmr="cd_down_tree $WEBSITE_HOME"
@@ -840,6 +938,8 @@ alias bbst="cd_status $BOUNCING_BALLS_HOME"
 alias bbpl="cd_pull $BOUNCING_BALLS_HOME"
 
 alias idbb="idea $BOUNCING_BALLS_HOME"
+
+alias xcbb="xcode $BOUNCING_BALLS_HOME"
 
 alias itbb="iterm $BOUNCING_BALLS_HOME"
 
@@ -858,6 +958,8 @@ alias ornpl="cd_pull $ORBITER_NEW_HOME"
 
 alias idorn="idea $ORBITER_NEW_HOME"
 
+alias xcorn="xcode $ORBITER_NEW_HOME"
+
 alias itorn="iterm $ORBITER_NEW_HOME"
 
 alias cdorn="cd_down_tree $ORBITER_NEW_HOME"
@@ -874,6 +976,8 @@ alias cest="cd_status $COCOS_EXAMPLES_HOME"
 alias cepl="cd_pull $COCOS_EXAMPLES_HOME"
 
 alias idce="idea $COCOS_EXAMPLES_HOME"
+
+alias xcce="xcode $COCOS_EXAMPLES_HOME"
 
 alias itce="iterm $COCOS_EXAMPLES_HOME"
 
@@ -892,6 +996,8 @@ alias ffpl="cd_pull $FLAPPY_FISH_HOME"
 
 alias idff="idea $FLAPPY_FISH_HOME"
 
+alias xcff="xcode $FLAPPY_FISH_HOME"
+
 alias itff="iterm $FLAPPY_FISH_HOME"
 
 alias cdff="cd_down_tree $FLAPPY_FISH_HOME"
@@ -908,6 +1014,8 @@ alias pist="cd_status $PI_HOME"
 alias pipl="cd_pull $PI_HOME"
 
 alias idpi="idea $PI_HOME"
+
+alias xcpi="xcode $PI_HOME"
 
 alias itpi="iterm $PI_HOME"
 
@@ -926,6 +1034,8 @@ alias tepl="cd_pull $JS_TESTS_HOME"
 
 alias idte="idea $JS_TESTS_HOME"
 
+alias xcte="xcode $JS_TESTS_HOME"
+
 alias itte="iterm $JS_TESTS_HOME"
 
 alias cdte="cd_down_tree $JS_TESTS_HOME"
@@ -942,6 +1052,8 @@ alias csst="cd_status $CSS_HOME"
 alias cspl="cd_pull $CSS_HOME"
 
 alias idcs="idea $CSS_HOME"
+
+alias xccs="xcode $CSS_HOME"
 
 alias itcs="iterm $CSS_HOME"
 
@@ -960,6 +1072,8 @@ alias rnpl="cd_pull $RUNNER_HOME"
 
 alias idrn="idea $RUNNER_HOME"
 
+alias xcrn="xcode $RUNNER_HOME"
+
 alias itrn="iterm $RUNNER_HOME"
 
 alias cdrn="cd_down_tree $RUNNER_HOME"
@@ -976,6 +1090,8 @@ alias cqst="cd_status $COQ_HOME"
 alias cqpl="cd_pull $COQ_HOME"
 
 alias idcq="idea $COQ_HOME"
+
+alias xccq="xcode $COQ_HOME"
 
 alias itcq="iterm $COQ_HOME"
 

@@ -459,8 +459,8 @@ export ADOBE_PATH="/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader"
 
 export INTELLIJ_VERSION=14
 
-export INTELLIJ_IDEA="IntelliJ IDEA"
-# export INTELLIJ_IDEA="IntelliJ IDEA $INTELLIJ_VERSION"
+# export INTELLIJ_IDEA="IntelliJ IDEA"
+export INTELLIJ_IDEA="IntelliJ IDEA $INTELLIJ_VERSION"
 
 export INTELLIJ_IDEA_HOME="/Applications/$INTELLIJ_IDEA.app/Contents/MacOS"
 

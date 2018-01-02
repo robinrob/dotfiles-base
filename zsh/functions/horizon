@@ -1,0 +1,4 @@
+# Height is in metres
+local +r Height=$1
+
+print $(( 3.57 * sqrt($Height) )) km

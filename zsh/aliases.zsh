@@ -247,6 +247,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias ev="open_app Evernote"
+
 alias xc="xcode"
 
 alias cle="open -a Clementine"
@@ -608,6 +610,8 @@ alias vssh="vagrant_ssh"
 alias npmgls="npm config set json; npm -g list --depth=0"
 
 alias npmls="npm config set json; npm list --depth=0"
+
+alias apnew="new_s osascript scpt"
 
 alias anew="new_s awk awk"
 
@@ -1226,6 +1230,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias swdoc="search_ios_doc"
+
 alias orders="search_amazon_orders"
 
 alias hp="hub_pull_request"
@@ -1304,7 +1310,11 @@ alias alc="search_sqlalchemy_doc"
 
 alias grgm="grep_gitmodules"
 
-alias sf="safari"
+alias sf="browse safari"
+
+alias ff="browse firefox"
+
+alias ch="browse chrome"
 
 alias amz="search_amazon"
 
@@ -1375,6 +1385,10 @@ alias logs="log_sh"
 alias logsv="log_sh_var"
 
 alias logav="log_apex_var"
+
+alias logsw="log_swift"
+
+alias logswv="log_swift_var"
 
 alias lod="lodash_doc_search"
 
@@ -1598,7 +1612,7 @@ alias ggt="google_translate"
 
 alias ggg="google_groups"
 
-alias gg="google"
+alias gg="browse chrome"
 
 alias im="google_images"
 
