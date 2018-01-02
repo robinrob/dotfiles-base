@@ -247,8 +247,6 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
-alias ev="open_app Evernote"
-
 alias xc="xcode"
 
 alias cle="open -a Clementine"

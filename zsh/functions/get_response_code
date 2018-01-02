@@ -1,0 +1,10 @@
+local +r Url=$1
+
+local +r Code=$(curl -I $Url 2>/dev/null | head -n 1 | cut -d$' ' -f2 | tr -d ' ')
+
+if $(is_empty $Code)
+then
+  print -r 404
+else
+  print -r $Code
+fi

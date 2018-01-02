@@ -1,0 +1,32 @@
+local +r Usage='find_last_page <url> <page-num-placeholder> [<start-index>]'
+
+(( $# < 2 )) && red $Usage && return 1
+
+local +r Url=$1
+local +r PageNumPlaceholder=$2
+local +r Index=1
+if (( $# == 3 ))
+then
+  Index=$3
+fi
+
+local +r ResponseCode=200
+
+function getUrl {
+  print -r $(print $Url | sed "s/$PageNumPlaceholder/$Index/g")
+}
+
+while (($ResponseCode == 200))
+do
+  (( Index = Index + 1 ))
+  print "Checking page number: $Index"
+
+  ResponseCode=$(get_response_code $(getUrl $Index))
+  print "ResponseCode: ${ResponseCode}"
+done
+(( Index = Index - 1 ))
+
+
+local +r Url="$(getUrl $Index)"
+print "Last page: $Url"
+safari $Url
