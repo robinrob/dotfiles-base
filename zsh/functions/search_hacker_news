@@ -2,7 +2,7 @@ local +r Url
 
 case $# in
   0) Url="https://news.ycombinator.com" ;;
-  *) Url="https://hn.algolia.com/?query=$(urlencode $@)" ;;
+  *) Url="https://hn.algolia.com/?query=$(urlencode $@)&sort=byDate&prefix&page=0&dateRange=all&type=story"
 esac
 
 browser $Url
