@@ -10,6 +10,10 @@ done
 
 email robin@rsmith.io "$Url is back up!" $Url
 print "display notification \"$Url is up!\"" | osascript
-print "display dialog \"$Url is up!\"" | osascript
 
-browse $Url
+print "display alert \"Site is up!\" message \"$Url is back up\" as critical buttons {\"Go to website\"} default button \"Go to website\"
+
+set response to button returned of the result
+
+if response is \"Go to website\" then open location \"$Url\"" | osascript
+

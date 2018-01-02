@@ -247,6 +247,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias ap="open_app 'appleScript Editor'"
+
 alias xc="xcode"
 
 alias cle="open -a Clementine"
