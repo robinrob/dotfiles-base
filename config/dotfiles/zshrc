@@ -79,27 +79,10 @@ prompt robin
 # Development
 ###############################################################################
 
-## Python
-#########
-[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
-
-python=2.7
-if [[ $USE_PYTHON == 1 ]]
-then
-  if [[ "$HOSTNAME" == "$VENUS_HOSTNAME" ]]
-  then
-	  pythonbrew use $python 2> /dev/null
-  else
-	  pythonbrew use $python 2> /dev/null
-  fi
-fi
-
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-
 ## Ruby
 #######
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 # `rvm reset` is the magic secret command that fixes the path errors!!
 ruby="2.1.4"
 if [[ $USE_RUBY == 1 ]]

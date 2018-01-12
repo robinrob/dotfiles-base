@@ -46,7 +46,7 @@ export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/l
 export NPMLIB_HOME=/usr/local/lib/node_modules
 
 # export NODE_VERSION=5.5.0
-export NODE_VERSION=6.9.4
+export NODE_VERSION=6.9.0
 #
 ###############################################################################
 # Java
