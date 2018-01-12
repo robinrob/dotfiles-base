@@ -247,6 +247,10 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias ev="open_app Evernote"
+
+alias di="open_app Discord"
+
 alias ap="open_app 'appleScript Editor'"
 
 alias xc="xcode"
@@ -305,9 +309,9 @@ alias vbm="VBoxManage"
 
 alias office="open -a OpenOffice"
 
-alias pix="open -a Pixelmator"
+# alias pix="open -a Pixelmator"
 
-alias pixen="open -a Pixen"
+alias pix="open -a Pixen"
 
 alias cpp="copy_print"
 
@@ -672,8 +676,6 @@ alias cdms="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
 alias cc="cocos compile"
 
 alias ccw="cocos compile -p web"
-
-alias cdw="cocos deploy -p web"
 
 alias cca="cocos compile -p android"
 
@@ -1230,6 +1232,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias gchord="search_guitar_chord"
+
 alias swdoc="search_ios_doc"
 
 alias orders="search_amazon_orders"

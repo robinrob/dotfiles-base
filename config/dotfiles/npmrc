@@ -1,5 +1,5 @@
-parseable = true
-long = true
-short = 0
-json = 
-
+parseable=true
+long=true
+short=0
+json=true
+engine-strict=true

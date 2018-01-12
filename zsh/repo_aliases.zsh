@@ -264,6 +264,25 @@ alias cdkapr="cd_down_tree $KAPTIO_HOME/practice"
 alias cdkapro="cd_down_tree $KAPTIO_HOME/projects"
 alias glpka="cd_gulp $KAPTIO_HOME"
 
+alias cosv="cd_save $CONSOLE_WRITER_HOME"
+
+alias cocm="cd_commit $CONSOLE_WRITER_HOME"
+
+alias cost="cd_status $CONSOLE_WRITER_HOME"
+
+alias copl="cd_pull $CONSOLE_WRITER_HOME"
+
+alias idco="idea $CONSOLE_WRITER_HOME"
+
+alias xcco="xcode $CONSOLE_WRITER_HOME"
+
+alias itco="iterm $CONSOLE_WRITER_HOME"
+
+alias cdco="cd_down_tree $CONSOLE_WRITER_HOME"
+alias cdcopr="cd_down_tree $CONSOLE_WRITER_HOME/practice"
+alias cdcopro="cd_down_tree $CONSOLE_WRITER_HOME/projects"
+alias glpco="cd_gulp $CONSOLE_WRITER_HOME"
+
 alias qsv="cd_save $QUIZ_HOME"
 
 alias qcm="cd_commit $QUIZ_HOME"
@@ -834,25 +853,6 @@ alias cdplpr="cd_down_tree $PERL_HOME/practice"
 alias cdplpro="cd_down_tree $PERL_HOME/projects"
 alias glppl="cd_gulp $PERL_HOME"
 
-alias asv="cd_save $AWK_HOME"
-
-alias acm="cd_commit $AWK_HOME"
-
-alias ast="cd_status $AWK_HOME"
-
-alias apl="cd_pull $AWK_HOME"
-
-alias ida="idea $AWK_HOME"
-
-alias xca="xcode $AWK_HOME"
-
-alias ita="iterm $AWK_HOME"
-
-alias cda="cd_down_tree $AWK_HOME"
-alias cdapr="cd_down_tree $AWK_HOME/practice"
-alias cdapro="cd_down_tree $AWK_HOME/projects"
-alias glpa="cd_gulp $AWK_HOME"
-
 alias orsv="cd_save $ORBITER_HOME"
 
 alias orcm="cd_commit $ORBITER_HOME"
@@ -871,6 +871,25 @@ alias cdor="cd_down_tree $ORBITER_HOME"
 alias cdorpr="cd_down_tree $ORBITER_HOME/practice"
 alias cdorpro="cd_down_tree $ORBITER_HOME/projects"
 alias glpor="cd_gulp $ORBITER_HOME"
+
+alias asv="cd_save $AWK_HOME"
+
+alias acm="cd_commit $AWK_HOME"
+
+alias ast="cd_status $AWK_HOME"
+
+alias apl="cd_pull $AWK_HOME"
+
+alias ida="idea $AWK_HOME"
+
+alias xca="xcode $AWK_HOME"
+
+alias ita="iterm $AWK_HOME"
+
+alias cda="cd_down_tree $AWK_HOME"
+alias cdapr="cd_down_tree $AWK_HOME/practice"
+alias cdapro="cd_down_tree $AWK_HOME/projects"
+alias glpa="cd_gulp $AWK_HOME"
 
 alias ppsv="cd_save $PLANET_PAIRS_HOME"
 
