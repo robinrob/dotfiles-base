@@ -295,6 +295,12 @@ export GUITAR_CHORDS_HOME=$SWIFT_HOME/projects/GuitarChords
 
 export APPLESCRIPT_HOME=$ROBIN_HOME/applescript
 
+export DICTIONARY_HOME=$PYTHON_HOME/projects/dictionary
+
+export DICTIONARY_HOME=$PYTHON_HOME/projects/dictionary
+
+export LIFE_HOME=$PYTHON_HOME/projects/life
+
 ###############################################################################
 # Directories
 ###############################################################################

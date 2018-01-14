@@ -319,7 +319,9 @@ alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework
 
 alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
-alias dic="dict"
+alias dic="dictionary"
+
+alias dict="dictionary"
 
 alias utorrent="open -a uTorrent"
 
@@ -360,6 +362,8 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
+alias cdchoir="cd $SINGING_HOME/choir"
+
 alias cddl="cd $HOME/Downloads"
 
 alias cdstr="cd $HOME/Movies/Star-Trek-Voyager-Season-3"
@@ -716,6 +720,8 @@ alias hpr="hub_pull_request"
 alias grss="git reset --soft"
 
 alias gag="git add .gitignore"
+
+alias gar="git add README.md"
 
 alias grb="git rebase"
 
@@ -1232,6 +1238,10 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias dic="dictionary"
+
+alias thes="dictionary -t"
+
 alias gchord="search_guitar_chord"
 
 alias swdoc="search_ios_doc"
@@ -1323,8 +1333,6 @@ alias ch="browse chrome"
 alias amz="search_amazon"
 
 alias amzc="search_amazon_com"
-
-alias dic="search_dictionary"
 
 alias nnb="nos_new_bug"
 
@@ -1491,10 +1499,6 @@ alias yellm="yell_map_search"
 alias yelp="search_yelp_edinburgh"
 
 alias phys="physics_forums_search"
-
-alias thes="thesaurus"
-
-alias the="thesaurus"
 
 alias clc="calc"
 
