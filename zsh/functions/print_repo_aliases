@@ -6,6 +6,7 @@ print_repo_action $Repo $Abbr cm cd_commit
 print_repo_action $Repo $Abbr st cd_status
 print_repo_action $Repo $Abbr pl cd_pull
 print_repo_action $Repo id $Abbr idea
+print_repo_action $Repo ic $Abbr idea
 print_repo_action $Repo xc $Abbr xcode
 # print_repo_action $Repo py $Abbr pycharm
 print_repo_action $Repo it $Abbr iterm
