@@ -1,7 +1,7 @@
-# local +r Command=$1
+local +r Command=$1
 # local +r Substr=$Command[1,4]
 #
-# speak $Command
+speak $Command
 #
 # if [[ $Substr == 'http' ]]
 # then

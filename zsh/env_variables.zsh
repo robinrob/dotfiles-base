@@ -467,20 +467,21 @@ export gimp_dir="$HOME/.gimp"
 
 export ADOBE_PATH="/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader"
 
-export INTELLIJ_VERSION=14
+# export INTELLIJ_VERSION=14
+export INTELLIJ_VERSION=2017.3
 
-# export INTELLIJ_IDEA="IntelliJ IDEA"
-export INTELLIJ_IDEA="IntelliJ IDEA $INTELLIJ_VERSION"
+export INTELLIJ_IDEA="IdeaIC$INTELLIJ_VERSION"
+# export INTELLIJ_IDEA="IntelliJ IDEA $INTELLIJ_VERSION"
 
 export INTELLIJ_IDEA_HOME="/Applications/$INTELLIJ_IDEA.app/Contents/MacOS"
 
 export INTELLIJ_IDEA_PATH="$INTELLIJ_IDEA_HOME/idea"
 
-export INTELLIJ_IDEA_PREFS_HOME="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION"
+export INTELLIJ_IDEA_PREFS_HOME="$HOME/Library/Preferences/$INTELLIJ_IDEA"
 
-export INTELLIJ_CONFIG="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/keymaps/Robin.xml"
+export INTELLIJ_CONFIG="$HOME/Library/Preferences/$INTELLIJ_IDEA/keymaps/Robin.xml"
 
-export INTELLIJ_COLORS="$HOME/Library/Preferences/IntelliJIdea$INTELLIJ_VERSION/colors"
+export INTELLIJ_COLORS="$HOME/Library/Preferences/$INTELLIJ_IDEA/colors"
 
 export INTELLIJ_COMMUNITY="IntelliJ IDEA CE"
 
