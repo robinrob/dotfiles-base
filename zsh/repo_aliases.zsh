@@ -17,6 +17,25 @@ alias cdscpr="cd_down_tree $SCALA_HOME/practice"
 alias cdscpro="cd_down_tree $SCALA_HOME/projects"
 alias glpsc="cd_gulp $SCALA_HOME"
 
+alias disv="cd_save $DICTIONARY_HOME"
+
+alias dicm="cd_commit $DICTIONARY_HOME"
+
+alias dist="cd_status $DICTIONARY_HOME"
+
+alias dipl="cd_pull $DICTIONARY_HOME"
+
+alias iddi="idea $DICTIONARY_HOME"
+
+alias xcdi="xcode $DICTIONARY_HOME"
+
+alias itdi="iterm $DICTIONARY_HOME"
+
+alias cddi="cd_down_tree $DICTIONARY_HOME"
+alias cddipr="cd_down_tree $DICTIONARY_HOME/practice"
+alias cddipro="cd_down_tree $DICTIONARY_HOME/projects"
+alias glpdi="cd_gulp $DICTIONARY_HOME"
+
 alias nsv="cd_save $NODE_HOME"
 
 alias ncm="cd_commit $NODE_HOME"
@@ -378,25 +397,6 @@ alias cdrpr="cd_down_tree $RUBY_HOME/practice"
 alias cdrpro="cd_down_tree $RUBY_HOME/projects"
 alias glpr="cd_gulp $RUBY_HOME"
 
-alias fsv="cd_save $FISH_HOME"
-
-alias fcm="cd_commit $FISH_HOME"
-
-alias fst="cd_status $FISH_HOME"
-
-alias fpl="cd_pull $FISH_HOME"
-
-alias idf="idea $FISH_HOME"
-
-alias xcf="xcode $FISH_HOME"
-
-alias itf="iterm $FISH_HOME"
-
-alias cdf="cd_down_tree $FISH_HOME"
-alias cdfpr="cd_down_tree $FISH_HOME/practice"
-alias cdfpro="cd_down_tree $FISH_HOME/projects"
-alias glpf="cd_gulp $FISH_HOME"
-
 alias ocsv="cd_save $OCT_HOME"
 
 alias occm="cd_commit $OCT_HOME"
@@ -415,6 +415,25 @@ alias cdoc="cd_down_tree $OCT_HOME"
 alias cdocpr="cd_down_tree $OCT_HOME/practice"
 alias cdocpro="cd_down_tree $OCT_HOME/projects"
 alias glpoc="cd_gulp $OCT_HOME"
+
+alias fsv="cd_save $FISH_HOME"
+
+alias fcm="cd_commit $FISH_HOME"
+
+alias fst="cd_status $FISH_HOME"
+
+alias fpl="cd_pull $FISH_HOME"
+
+alias idf="idea $FISH_HOME"
+
+alias xcf="xcode $FISH_HOME"
+
+alias itf="iterm $FISH_HOME"
+
+alias cdf="cd_down_tree $FISH_HOME"
+alias cdfpr="cd_down_tree $FISH_HOME/practice"
+alias cdfpro="cd_down_tree $FISH_HOME/projects"
+alias glpf="cd_gulp $FISH_HOME"
 
 alias prsv="cd_save $PROG_HOME"
 
@@ -1080,6 +1099,25 @@ alias cdte="cd_down_tree $JS_TESTS_HOME"
 alias cdtepr="cd_down_tree $JS_TESTS_HOME/practice"
 alias cdtepro="cd_down_tree $JS_TESTS_HOME/projects"
 alias glpte="cd_gulp $JS_TESTS_HOME"
+
+alias lisv="cd_save $LIFE_HOME"
+
+alias licm="cd_commit $LIFE_HOME"
+
+alias list="cd_status $LIFE_HOME"
+
+alias lipl="cd_pull $LIFE_HOME"
+
+alias idli="idea $LIFE_HOME"
+
+alias xcli="xcode $LIFE_HOME"
+
+alias itli="iterm $LIFE_HOME"
+
+alias cdli="cd_down_tree $LIFE_HOME"
+alias cdlipr="cd_down_tree $LIFE_HOME/practice"
+alias cdlipro="cd_down_tree $LIFE_HOME/projects"
+alias glpli="cd_gulp $LIFE_HOME"
 
 alias cssv="cd_save $CSS_HOME"
 
