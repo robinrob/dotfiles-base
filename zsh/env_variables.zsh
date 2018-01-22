@@ -295,9 +295,7 @@ export GUITAR_CHORDS_HOME=$SWIFT_HOME/projects/GuitarChords
 
 export APPLESCRIPT_HOME=$ROBIN_HOME/applescript
 
-export DICTIONARY_HOME=$PYTHON_HOME/projects/dictionary
-
-export DICTIONARY_HOME=$PYTHON_HOME/projects/dictionary
+export DICSAURUS_HOME=$PYTHON_HOME/projects/dicsaurus
 
 export LIFE_HOME=$PYTHON_HOME/projects/life
 
@@ -467,11 +465,11 @@ export gimp_dir="$HOME/.gimp"
 
 export ADOBE_PATH="/Applications/Adobe\ Reader.app/Contents/MacOS/AdobeReader"
 
-# export INTELLIJ_VERSION=14
-export INTELLIJ_VERSION=2017.3
+export INTELLIJ_VERSION=14
+# export INTELLIJ_VERSION=2017.3
 
-export INTELLIJ_IDEA="IdeaIC$INTELLIJ_VERSION"
-# export INTELLIJ_IDEA="IntelliJ IDEA $INTELLIJ_VERSION"
+export INTELLIJ_IDEA="IntelliJIDEA$INTELLIJ_VERSION"
+# export INTELLIJ_IDEA="IdeaIC$INTELLIJ_VERSION"
 
 export INTELLIJ_IDEA_HOME="/Applications/$INTELLIJ_IDEA.app/Contents/MacOS"
 
