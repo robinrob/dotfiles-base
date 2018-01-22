@@ -1,0 +1,8 @@
+local +r Files=$(git_untracked | xargs)
+
+if [[ -n $Files ]]
+then
+  rm $($Files)
+else
+  green "No untracked files to delete."
+fi

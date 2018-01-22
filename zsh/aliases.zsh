@@ -107,6 +107,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias rmgU="rm \$(git_untracked | xargs)"
+
 alias dt="date"
 
 alias pyka="cd_pycharm $KAPTIO_HOME"
