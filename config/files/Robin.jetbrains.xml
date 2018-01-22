@@ -1,4 +1,5 @@
 <keymap version="1" name="Robin" parent="Mac OS X 10.5+">
+
   <action id="CloseAllEditorsButActive">
     <keyboard-shortcut first-keystroke="shift meta x" />
   </action>
@@ -6,102 +7,102 @@
     <keyboard-shortcut first-keystroke="shift meta w" />
   </action>
   <action id="CollapseAll">
-    <keyboard-shortcut first-keystroke="meta subtract" />
+    <keyboard-shortcut first-keystroke="meta MINUS" />
   </action>
   <action id="CollapseRegion">
-    <keyboard-shortcut first-keystroke="meta subtract" />
+    <keyboard-shortcut first-keystroke="meta MINUS" />
   </action>
   <action id="Console.TableResult.Reload" />
   <action id="CopyElement" />
   <action id="EditSource">
-    <keyboard-shortcut first-keystroke="enter" />
+    <keyboard-shortcut first-keystroke="ENTER" />
   </action>
   <action id="EditorDecreaseFontSize">
-    <keyboard-shortcut first-keystroke="meta minus" />
+    <keyboard-shortcut first-keystroke="meta MINUS" />
   </action>
   <action id="EditorIncreaseFontSize">
-    <keyboard-shortcut first-keystroke="meta equals" />
+    <keyboard-shortcut first-keystroke="meta EQUALS" />
   </action>
-  <action id="EditorTextEnd">
-    <keyboard-shortcut first-keystroke="meta end" />
-    <keyboard-shortcut first-keystroke="meta down" />
+  <action id="EditorTextEND">
+    <keyboard-shortcut first-keystroke="meta END" />
+    <keyboard-shortcut first-keystroke="meta DOWN" />
   </action>
-  <action id="EditorTextEndWithSelection">
-    <keyboard-shortcut first-keystroke="shift meta end" />
-    <keyboard-shortcut first-keystroke="shift meta down" />
+  <action id="EditorTextENDWithSelection">
+    <keyboard-shortcut first-keystroke="shift meta END" />
+    <keyboard-shortcut first-keystroke="shift meta DOWN" />
   </action>
   <action id="EditorTextStart">
-    <keyboard-shortcut first-keystroke="meta home" />
-    <keyboard-shortcut first-keystroke="meta up" />
+    <keyboard-shortcut first-keystroke="meta HOME" />
+    <keyboard-shortcut first-keystroke="meta UP" />
   </action>
   <action id="EditorTextStartWithSelection">
-    <keyboard-shortcut first-keystroke="shift meta home" />
-    <keyboard-shortcut first-keystroke="shift meta up" />
+    <keyboard-shortcut first-keystroke="shift meta HOME" />
+    <keyboard-shortcut first-keystroke="shift meta UP" />
   </action>
   <action id="ExpandAll">
-    <keyboard-shortcut first-keystroke="meta add" />
+    <keyboard-shortcut first-keystroke="meta ADD" />
   </action>
   <action id="ExpandRegion">
-    <keyboard-shortcut first-keystroke="meta add" />
+    <keyboard-shortcut first-keystroke="meta ADD" />
   </action>
   <action id="FindInPath" />
   <action id="Images.Editor.ZoomIn">
-    <keyboard-shortcut first-keystroke="meta add" />
+    <keyboard-shortcut first-keystroke="meta ADD" />
   </action>
   <action id="Images.Editor.ZoomOut">
-    <keyboard-shortcut first-keystroke="meta subtract" />
+    <keyboard-shortcut first-keystroke="meta MINUS" />
   </action>
   <action id="IntroduceVariable" />
-  <action id="MoveStatementDown" />
-  <action id="MoveStatementUp" />
+  <action id="MoveStatementDOWN" />
+  <action id="MoveStatementUP" />
   <action id="Refresh" />
   <action id="RemoteHostView.Rename">
-    <keyboard-shortcut first-keystroke="shift f6" />
+    <keyboard-shortcut first-keystroke="shift F6" />
   </action>
   <action id="RenameElement">
-    <keyboard-shortcut first-keystroke="shift f6" />
+    <keyboard-shortcut first-keystroke="shift F6" />
     <keyboard-shortcut first-keystroke="ctrl r" />
   </action>
   <action id="RenameFavoritesList">
-    <keyboard-shortcut first-keystroke="shift f6" />
+    <keyboard-shortcut first-keystroke="shift F6" />
   </action>
   <action id="Rerun" />
-  <action id="ResizeToolWindowDown" />
-  <action id="ResizeToolWindowUp" />
+  <action id="ResizeToolWindowDOWN" />
+  <action id="ResizeToolWindowUP" />
   <action id="Run" />
   <action id="ShelvedChanges.Rename">
-    <keyboard-shortcut first-keystroke="shift f6" />
+    <keyboard-shortcut first-keystroke="shift F6" />
   </action>
   <action id="ShowNavBar">
-    <keyboard-shortcut first-keystroke="alt home" />
+    <keyboard-shortcut first-keystroke="alt HOME" />
   </action>
   <action id="SwitchApply">
-    <keyboard-shortcut first-keystroke="ctrl alt enter" />
+    <keyboard-shortcut first-keystroke="ctrl alt ENTER" />
   </action>
-  <action id="SwitchDown">
-    <keyboard-shortcut first-keystroke="ctrl alt down" />
+  <action id="SwitchDOWN">
+    <keyboard-shortcut first-keystroke="ctrl alt DOWN" />
   </action>
-  <action id="SwitchLeft">
-    <keyboard-shortcut first-keystroke="ctrl alt left" />
+  <action id="SwitchLEFT">
+    <keyboard-shortcut first-keystroke="ctrl alt LEFT" />
   </action>
-  <action id="SwitchRight">
-    <keyboard-shortcut first-keystroke="ctrl alt right" />
+  <action id="SwitchRIGHT">
+    <keyboard-shortcut first-keystroke="ctrl alt RIGHT" />
   </action>
-  <action id="SwitchUp">
-    <keyboard-shortcut first-keystroke="ctrl alt up" />
+  <action id="SwitchUP">
+    <keyboard-shortcut first-keystroke="ctrl alt UP" />
   </action>
   <action id="Synchronize">
     <keyboard-shortcut first-keystroke="meta alt y" />
-    <keyboard-shortcut first-keystroke="f5" />
+    <keyboard-shortcut first-keystroke="F5" />
   </action>
   <action id="ToggleFullScreen">
     <keyboard-shortcut first-keystroke="ctrl meta f" />
     <keyboard-shortcut first-keystroke="shift meta f" />
   </action>
   <action id="UML.ApplyCurrentLayout" />
-  <action id="latex.align_center" />
-  <action id="latex.align_left" />
-  <action id="latex.align_right" />
+  <action id="latex.align_cENTER" />
+  <action id="latex.align_LEFT" />
+  <action id="latex.align_RIGHT" />
   <action id="latex.bold" />
   <action id="latex.italic" />
   <action id="latex.underline" />
