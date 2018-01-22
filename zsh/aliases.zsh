@@ -107,6 +107,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias dt="date"
+
 alias pyka="cd_pycharm $KAPTIO_HOME"
 
 alias trf="translate -f fr -t en"
@@ -713,6 +715,8 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
+alias glu="git_ls_untracked_files"
+
 alias gchp="git cherry-pick"
 
 alias hpr="hub_pull_request"
@@ -1022,7 +1026,6 @@ alias rnsall="cd_down_tree $SCREENSHOTS_HOME && despace"
 alias mal="edit_alias"
 
 alias cal="cat $ALIASES_PATH"
-
 
 alias mun="$EDITOR $ZDOT_HOME/unaliases.zsh"
 
