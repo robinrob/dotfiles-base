@@ -107,8 +107,6 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
-alias rmgU="rm \$(git_untracked | xargs)"
-
 alias dt="date"
 
 alias pyka="cd_pycharm $KAPTIO_HOME"
@@ -1232,6 +1230,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias rmgU="rm_git_untracked_files"
+
 alias dict="/usr/local/bin/dict"
 
 alias dic="dicsaurus"

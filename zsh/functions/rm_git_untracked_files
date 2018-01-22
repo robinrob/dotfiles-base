@@ -1,8 +1,13 @@
-local +r Files=$(git_untracked | xargs)
+local +r Files=($(git_untracked | xargs))
 
 if [[ -n $Files ]]
 then
-  rm $($Files)
+  red "Deleting untracked files:"
+  for file in $Files
+  do
+      yellow $file
+      rm $file
+  done
 else
   green "No untracked files to delete."
 fi
