@@ -321,10 +321,6 @@ alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework
 
 alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
-alias dic="dictionary"
-
-alias dict="dictionary"
-
 alias utorrent="open -a uTorrent"
 
 alias spotify="open -a Spotify"
@@ -821,10 +817,6 @@ alias gplo="git pull origin"
 
 alias gpom="git push origin master"
 
-alias gpg="git push github"
-
-alias gplg="git pull github"
-
 alias gpgm="git push github master"
 
 alias gpbm="git push bitbucket master"
@@ -923,7 +915,6 @@ alias mcol="$EDITOR $ZDOT_HOME/colors.zsh"
 
 alias ocv="open -a OpenOffice $IMPORTANT_HOME/cv/cv.odt"
 
-alias splq="$EDITOR $PROG_HOME/splunk/splunk_searches.txt"
 
 alias regex="$RUBY_HOME/practice/regexp_operators.rb"
 
@@ -1107,9 +1098,7 @@ alias cgfl="cat Gemfile.lock"
 
 alias mre="$EDITOR requirements.txt"
 
-alias crq="cat requirements.txt"
 
-alias mrq="$EDITOR requirements.txt"
 
 alias mgi="$EDITOR .gitignore"
 
@@ -1241,9 +1230,11 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
-alias dic="dictionary"
+alias dict="/usr/local/bin/dict"
 
-alias thes="dictionary -t"
+alias dic="dicsaurus"
+
+alias thes="dicsaurus -t"
 
 alias gchord="search_guitar_chord"
 
@@ -1361,9 +1352,7 @@ alias glyph="glyphicon_search"
 
 alias link="link_script"
 
-# alias lsreq="ls_js_require"
 
-alias req="ls_js_require"
 
 alias adbr="adb_restart"
 
@@ -1459,7 +1448,6 @@ alias lo="localhost_browse"
 
 alias lom="localhost_browse_edit"
 
-alias moq="edit_open_jquery"
 
 alias jqdoc="jquery_doc_search"
 
