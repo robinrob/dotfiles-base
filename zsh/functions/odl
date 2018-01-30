@@ -1,7 +1,0 @@
-cd ~/Downloads
-despace
-last_download=$(ls -ltr  ~/Downloads | awk '{print $9}' | tail -1)
-print $last_download | pbcopy
-green "Opening latest file: $(yellow)$last_download$(default)"
-open $last_download
-
