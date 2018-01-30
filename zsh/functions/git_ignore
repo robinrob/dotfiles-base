@@ -1,1 +1,6 @@
+if ! [ -f .gitignore ]
+then
+  touch .gitignore
+fi
+
 print $1 >> .gitignore

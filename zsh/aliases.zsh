@@ -57,8 +57,6 @@ alias lsh="find_hidden"
 
 alias lsl="ls -lL"
 
-alias lsd="ls -d"
-
 alias isgit="show_git"
 
 alias isg="isgit"
@@ -107,6 +105,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias odl="open ~/Downloads"
+
 alias dt="date"
 
 alias pyka="cd_pycharm $KAPTIO_HOME"
@@ -1212,7 +1212,6 @@ alias workpostcode="get_record work_postcode"
 
 alias residency="$ADOBE_PATH $CANADA_HOME/residency_form.pdf"
 
-alias cdsongs="cd \"$SONGS_HOME\""
 
 alias sabihin="song sabihin_mo_na"
 
@@ -1280,7 +1279,7 @@ alias co="google_contacts"
 
 alias dirs="directions"
 
-alias hacker="search_hacker_news"
+alias hn="search_hacker_news"
 
 alias tree="repo_tree"
 
