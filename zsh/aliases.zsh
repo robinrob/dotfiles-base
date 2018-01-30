@@ -249,6 +249,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias we="open_app webStorm"
+
 alias ev="open_app Evernote"
 
 alias di="open_app Discord"
