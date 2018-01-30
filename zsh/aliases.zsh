@@ -1444,6 +1444,8 @@ alias id="idea"
 
 alias ic="open_app \"$INTELLIJ_COMMUNITY\""
 
+alias we="open_app $WEBSTORM"
+
 alias pych="pycharm"
 
 alias lo="localhost_browse"

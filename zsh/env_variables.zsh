@@ -486,6 +486,8 @@ export INTELLIJ_COMMUNITY="IntelliJ IDEA CE"
 
 export PYCHARM="Pycharm CE"
 
+export WEBSTORM="WebStorm"
+
 
 ###############################################################################
 # Cocos

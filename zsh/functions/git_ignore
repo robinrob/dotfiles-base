@@ -1,1 +1,9 @@
-print $1 >> .gitignore
+if ! [[ -f .gigignore ]]
+then
+  touch .gitignore
+fi
+
+for filename in $*
+do
+  print $filename >> .gitignore
+done
