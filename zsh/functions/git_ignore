@@ -1,6 +1,9 @@
-if ! [ -f .gitignore ]
+if ! [[ -f .gigignore ]]
 then
   touch .gitignore
 fi
 
-print $1 >> .gitignore
+for filename in $*
+do
+  print $filename >> .gitignore
+done

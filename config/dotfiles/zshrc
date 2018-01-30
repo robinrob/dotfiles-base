@@ -110,3 +110,4 @@ nvm use $NODE_VERSION
 [ -f $HOME/.ssh/kaptio ] && ssh-add $HOME/.ssh/kaptio
 [ -f $HOME/.ssh/kaptio ] && ssh-add $HOME/.ssh/ec2_ftp
 [ -f $HOME/.ssh/bitbucket_rsmith-io ] && ssh-add $HOME/.ssh/bitbucket_rsmith-io
+[ -f $HOME/.ssh/bitbucket_rsmith-io ] && ssh-add $HOME/.ssh/github_robinrob
