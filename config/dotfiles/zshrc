@@ -87,14 +87,14 @@ prompt robin
 ruby="2.1.4"
 if [[ $USE_RUBY == 1 ]]
 then
-  rvm use ruby-"$ruby"
+  # rvm use ruby-"$ruby"
 fi
 
 
 ## Node
 #########
 source $(brew --prefix nvm)/nvm.sh
-nvm use $NODE_VERSION
+# nvm use $NODE_VERSION
 
 
 ## OCaml

@@ -1,4 +1,4 @@
-COLOR='maganda'
+COLOR='magenta'
 while getopts :c:d:p: name
 do
 	case $name in

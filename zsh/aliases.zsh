@@ -1445,6 +1445,8 @@ alias ic="open_app \"$INTELLIJ_COMMUNITY\""
 
 alias we="open_app $WEBSTORM"
 
+alias rb="open_app RubyMine"
+
 alias pych="pycharm"
 
 alias lo="localhost_browse"

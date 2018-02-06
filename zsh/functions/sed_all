@@ -1,4 +1,4 @@
-local +r Usage='sed_all <sed-expression> <find-expression> -w <where> -d <depth> [-i]'
+local +r Usage='sed_all <sed-expression> <find-expression> -w <where> -d <depth> -g <grep-first>[-i]'
 
 ( [[ -z $1 ]] || [[ -z $2 ]] ) && red $Usage && return 1
 
@@ -6,13 +6,15 @@ local +r SedExpression=$1;
 local +r FindExpression=$2; shift 2
 local +r Where='.'
 local +r MaxDepth
+local +r GrepFirstExpression
 local +r Inplace
 
-while getopts :w:d:i name
+while getopts :w:d:g:i name
 do
 	case $name in
     w) Where="$OPTARG" ;;
     d) MaxDepth="-maxdepth $OPTARG" ;;
+    g) GrepFirstExpression="$OPTARG" ;;
     i) Inplace="-i" ;;
     *) red $Usage && return 1 ;;
 	esac
@@ -29,7 +31,11 @@ do
   # Single-quotes around the $SedExpression are critical here
   # local +r SedSubExpr = (${(s///SedExpression)})
   # print $SedSubExpr
-  cmd="gsed $Inplace \"$SedExpression\" $file"
-  yellow $cmd
-  eval $cmd
+
+  if $(grep_all_insensitive $GrepFirstExpression $file)
+  then
+    cmd="gsed $Inplace \"$SedExpression\" $file"
+    yellow $cmd
+    eval $cmd
+  fi
 done
