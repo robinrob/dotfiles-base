@@ -23,16 +23,17 @@ done
 print "SedExpression: $SedExpression"
 print "FindExpression: $FindExpression"
 print "Where: $Where"
+print "GrepFirstExpression: ${GrepFirstExpression}"
 
 IFS=" 
 "
-for file in $(gfind $Where ${=MaxDepth} -name "$FindExpression" -type f)
+for file in $(gfind -P $Where ${=MaxDepth} -name "$FindExpression" -type f)
 do
   # Single-quotes around the $SedExpression are critical here
   # local +r SedSubExpr = (${(s///SedExpression)})
   # print $SedSubExpr
 
-  if $(grep_all_insensitive $GrepFirstExpression $file)
+  if ggrep -qo $GrepFirstExpression "$file"
   then
     cmd="gsed $Inplace \"$SedExpression\" $file"
     yellow $cmd
