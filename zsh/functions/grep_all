@@ -43,7 +43,7 @@ fi
 
 IFS="
 "
-for file in $(gfind $Where ${=MaxDepth} -follow ${=Excludes} -name "$FindExpression" -type f)
+for file in $(gfind -P $Where ${=MaxDepth} -follow ${=Excludes} -name "$FindExpression" -type f)
 do
   local +r Result
   Result=$(ggrep -n $After $Before $Insensitive $GrepExpression $file)

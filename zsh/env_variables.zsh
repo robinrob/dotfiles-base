@@ -492,7 +492,7 @@ export WEBSTORM="WebStorm"
 ###############################################################################
 # Cocos
 ###############################################################################
-export COCOS_HOME="/usr/local/Library/cocos2d-x-3.11.1"
+export COCOS_HOME="/usr/local/Library/cocos2d-x-3.16"
 
 export COCOS_LITE_HOME="/usr/local/Library/cocos2d-js-v3.6-lite"
 

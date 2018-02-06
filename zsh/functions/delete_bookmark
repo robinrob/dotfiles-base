@@ -11,7 +11,7 @@ do
     print "$(red)Bookmark $(yellow)$bookmark $(red)unbookmarked$(default)"
     success=$TRUE
   else
-    print "$(maganda)Bookmark $(yellow)$bookmark $(maganda)does not exist$(default)"
+    print "$(magenta)Bookmark $(yellow)$bookmark $(magenta)does not exist$(default)"
   fi
 done
 

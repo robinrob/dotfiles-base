@@ -17,7 +17,7 @@ colors[cyan]='0;36'
 colors[brightcyan]='1;36'
 colors[white]='0;37'
 colors[brightwhite]='1;37'
-colors[maganda]='1;35'
+colors[magenta]='1;35'
 
 
 function shellcolor {
