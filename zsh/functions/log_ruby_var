@@ -1,0 +1,10 @@
+local +r Variables=($*)
+local +r Strings=()
+
+
+for variable in $Variables
+do
+  Strings=($Strings "${String}puts \"$variable: \#{$variable}\"")
+done
+
+printf '%s' "$(join $Strings '\n')" | pbcopy && pbpaste

@@ -12,3 +12,5 @@ export PATH=$ANT_ROOT:$PATH
 # Add environment variable NDK_ROOT for cocos2d-x
 export NDK_ROOT=/usr/local/Cellar/android-ndk/r9d/
 export PATH=$NDK_ROOT:$PATH
+
+export PATH="$HOME/.cargo/bin:$PATH"

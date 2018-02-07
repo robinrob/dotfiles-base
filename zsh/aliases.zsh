@@ -249,6 +249,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias rb="open_app RubyMine"
+
 alias we="open_app webStorm"
 
 alias ev="open_app Evernote"
@@ -559,7 +561,7 @@ alias gnb="gem install bundler && bundle install"
 
 alias gib="gem install bundler"
 
-alias gi="gem install"
+alias gi="bundler add"
 
 alias gu="gem uninstall"
 
@@ -1382,6 +1384,10 @@ alias logp3v="log_python_3_var"
 alias logp3o="log_python_3_object"
 
 alias logpo="log_python_object"
+
+alias logr="log_ruby"
+
+alias logrv="log_ruby_var"
 
 alias logz="log_zsh"
 
