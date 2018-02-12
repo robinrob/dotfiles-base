@@ -7,7 +7,6 @@ local +r Line=""
 
 for n ({1..$Num})
 do
-  Line="$String$Line"
+  printf $String '-%.0s'
 done
 
-printf $Line
