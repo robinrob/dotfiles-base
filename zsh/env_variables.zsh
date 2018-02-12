@@ -52,8 +52,9 @@ export NODE_VERSION=6.9.0
 # Java
 #############################################################################
 # export JAVA_VERSION="1.6.0.jdk"
-export JAVA_VERSION="jdk1.7.0_80.jdk"
+# export JAVA_VERSION="jdk1.7.0_80.jdk"
 # export JAVA_VERSION="jdk1.8.0_102.jdk"
+export JAVA_VERSION="jdk-9.0.4.jdk"
 
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/$JAVA_VERSION/Contents/Home"
 
