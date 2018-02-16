@@ -100,7 +100,7 @@ source $(brew --prefix nvm)/nvm.sh
 ## OCaml
 ########
 # OPAM configuration
-. /Users/msl/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 
 ## SSH

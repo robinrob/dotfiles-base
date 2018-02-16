@@ -561,7 +561,7 @@ alias gnb="gem install bundler && bundle install"
 
 alias gib="gem install bundler"
 
-alias gi="bundler add"
+alias gi="gem install"
 
 alias gu="gem uninstall"
 
@@ -1361,13 +1361,13 @@ alias link="link_script"
 
 alias adbr="adb_restart"
 
-alias logj="log_js"
+alias logjs="log_js"
 
-alias logjo="log_js_object"
+alias logjso="log_js_object"
 
-alias logjv="log_js_variable"
+alias logjsv="log_js_variable"
 
-alias logjt="log_js_type"
+alias logjst="log_js_type"
 
 alias logc="log_cocos"
 
@@ -1402,6 +1402,10 @@ alias logav="log_apex_var"
 alias logsw="log_swift"
 
 alias logswv="log_swift_var"
+
+alias logjv="log_java"
+
+alias logjvv="log_java_var"
 
 alias lod="lodash_doc_search"
 

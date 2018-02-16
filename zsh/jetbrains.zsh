@@ -18,6 +18,7 @@ function install {
 	  rm -f $FILEPATH
   fi
 	cp "$DOTFILES_BASE_HOME/config/files/Robin.jetbrains.xml" $FILEPATH
+	# cp "$DOTFILES_BASE_HOME/config/files/Robin.jetbrains.xml.old" $FILEPATH
 }
 
 green "Installing Jetbrains IDE config files ..."

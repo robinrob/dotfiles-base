@@ -52,8 +52,9 @@ export NODE_VERSION=6.9.0
 # Java
 #############################################################################
 # export JAVA_VERSION="1.6.0.jdk"
-export JAVA_VERSION="jdk1.7.0_80.jdk"
+# export JAVA_VERSION="jdk1.7.0_80.jdk"
 # export JAVA_VERSION="jdk1.8.0_102.jdk"
+export JAVA_VERSION="jdk-9.0.4.jdk"
 
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/$JAVA_VERSION/Contents/Home"
 
@@ -375,8 +376,6 @@ export SCREENSHOTS_HOME=$HOSTFILES_HOME/screenshots
 
 export SCREENSHOT_NAME=$HOSTNAME
 
-export PHONEGAP_HOME=/usr/local/Library/phonegap-2.9.0
-
 export ANDROID_HOME=/usr/local/Cellar/android-sdk
 
 export DATA_LOADER_PATH=/Applications/LexiLoader_v30.app/Contents/Resources/Java/Dataloader.jar
@@ -384,8 +383,6 @@ export DATA_LOADER_PATH=/Applications/LexiLoader_v30.app/Contents/Resources/Java
 export USEFUL_HOME=$DOCS_HOME/useful
 
 export AWS_CONFIG="$HOME/.aws/config"
-
-export KITCHENPLAN_HOME=/opt/kitchenplan
 
 export PICTURES_HOME="$GOOGLE_DRIVE/pictures/pictures"
 
