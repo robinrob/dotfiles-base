@@ -81,7 +81,7 @@ prompt robin
 
 ## Ruby
 #######
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # `rvm reset` is the magic secret command that fixes the path errors!!
 ruby="2.1.4"
@@ -100,7 +100,7 @@ source $(brew --prefix nvm)/nvm.sh
 ## OCaml
 ########
 # OPAM configuration
-. /Users/msl/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 
 ## SSH

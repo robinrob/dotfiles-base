@@ -223,7 +223,7 @@ alias ssr="red 'Rebooting!'; sudo shutdown -r now"
 
 alias SSR="ssr"
 
-alias logo="osascript -e 'tell app \"System Events\" to log out'"
+alias logout="osascript -e 'tell app \"System Events\" to log out'"
 
 alias adbd="adb devices"
 
@@ -1402,6 +1402,12 @@ alias logav="log_apex_var"
 alias logsw="log_swift"
 
 alias logswv="log_swift_var"
+
+alias logo="log_ocaml"
+
+alias logod="log_ocaml_int"
+
+alias logov="log_ocaml_var"
 
 alias lod="lodash_doc_search"
 
