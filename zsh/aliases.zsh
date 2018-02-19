@@ -1403,17 +1403,13 @@ alias logsw="log_swift"
 
 alias logswv="log_swift_var"
 
-<<<<<<< HEAD
 alias logo="log_ocaml"
 
 alias logod="log_ocaml_int"
 
-alias logov="log_ocaml_var"
-=======
 alias logjv="log_java"
 
 alias logjvv="log_java_var"
->>>>>>> 2c745eb31a5ae6dc647906125507c5d4c59f8c75
 
 alias lod="lodash_doc_search"
 
