@@ -775,47 +775,47 @@ alias cdopr="cd_down_tree $OCAML_HOME/practice"
 alias cdopro="cd_down_tree $OCAML_HOME/projects"
 alias glpo="cd_gulp $OCAML_HOME"
 
-alias Dsv="cd_save $DOTFILES_HOME"
+alias dsv="cd_save $DOTFILES_HOME"
 
-alias Dcm="cd_commit $DOTFILES_HOME"
+alias dcm="cd_commit $DOTFILES_HOME"
 
-alias Dst="cd_status $DOTFILES_HOME"
+alias dst="cd_status $DOTFILES_HOME"
 
-alias Dpl="cd_pull $DOTFILES_HOME"
+alias dpl="cd_pull $DOTFILES_HOME"
 
-alias idD="idea $DOTFILES_HOME"
+alias idd="idea $DOTFILES_HOME"
 
-alias icD="idea $DOTFILES_HOME"
+alias icd="idea $DOTFILES_HOME"
 
-alias xcD="xcode $DOTFILES_HOME"
+alias xcd="xcode $DOTFILES_HOME"
 
-alias itD="iterm $DOTFILES_HOME"
+alias itd="iterm $DOTFILES_HOME"
 
-alias cdD="cd_down_tree $DOTFILES_HOME"
-alias cdDpr="cd_down_tree $DOTFILES_HOME/practice"
-alias cdDpro="cd_down_tree $DOTFILES_HOME/projects"
-alias glpD="cd_gulp $DOTFILES_HOME"
+alias cdd="cd_down_tree $DOTFILES_HOME"
+alias cddpr="cd_down_tree $DOTFILES_HOME/practice"
+alias cddpro="cd_down_tree $DOTFILES_HOME/projects"
+alias glpd="cd_gulp $DOTFILES_HOME"
 
-alias dsv="cd_save $DOTFILES_BASE_HOME"
+alias dbsv="cd_save $DOTFILES_BASE_HOME"
 
-alias dcm="cd_commit $DOTFILES_BASE_HOME"
+alias dbcm="cd_commit $DOTFILES_BASE_HOME"
 
-alias dst="cd_status $DOTFILES_BASE_HOME"
+alias dbst="cd_status $DOTFILES_BASE_HOME"
 
-alias dpl="cd_pull $DOTFILES_BASE_HOME"
+alias dbpl="cd_pull $DOTFILES_BASE_HOME"
 
-alias idd="idea $DOTFILES_BASE_HOME"
+alias iddb="idea $DOTFILES_BASE_HOME"
 
-alias icd="idea $DOTFILES_BASE_HOME"
+alias icdb="idea $DOTFILES_BASE_HOME"
 
-alias xcd="xcode $DOTFILES_BASE_HOME"
+alias xcdb="xcode $DOTFILES_BASE_HOME"
 
-alias itd="iterm $DOTFILES_BASE_HOME"
+alias itdb="iterm $DOTFILES_BASE_HOME"
 
-alias cdd="cd_down_tree $DOTFILES_BASE_HOME"
-alias cddpr="cd_down_tree $DOTFILES_BASE_HOME/practice"
-alias cddpro="cd_down_tree $DOTFILES_BASE_HOME/projects"
-alias glpd="cd_gulp $DOTFILES_BASE_HOME"
+alias cddb="cd_down_tree $DOTFILES_BASE_HOME"
+alias cddbpr="cd_down_tree $DOTFILES_BASE_HOME/practice"
+alias cddbpro="cd_down_tree $DOTFILES_BASE_HOME/projects"
+alias glpdb="cd_gulp $DOTFILES_BASE_HOME"
 
 alias gosv="cd_save $GO_HOME"
 

@@ -376,8 +376,6 @@ export SCREENSHOTS_HOME=$HOSTFILES_HOME/screenshots
 
 export SCREENSHOT_NAME=$HOSTNAME
 
-export PHONEGAP_HOME=/usr/local/Library/phonegap-2.9.0
-
 export ANDROID_HOME=/usr/local/Cellar/android-sdk
 
 export DATA_LOADER_PATH=/Applications/LexiLoader_v30.app/Contents/Resources/Java/Dataloader.jar
@@ -385,8 +383,6 @@ export DATA_LOADER_PATH=/Applications/LexiLoader_v30.app/Contents/Resources/Java
 export USEFUL_HOME=$DOCS_HOME/useful
 
 export AWS_CONFIG="$HOME/.aws/config"
-
-export KITCHENPLAN_HOME=/opt/kitchenplan
 
 export PICTURES_HOME="$GOOGLE_DRIVE/pictures/pictures"
 

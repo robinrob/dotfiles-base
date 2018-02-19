@@ -1,0 +1,1 @@
+copy_print "System.out.prinln('$(upper $*)');"
