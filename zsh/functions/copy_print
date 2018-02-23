@@ -1,5 +1,26 @@
 # printf is necessary here because print does not print a string containing only
 # the character '-', no matter how many times the string contains it.
 
-printf '%s' "$*" | pbcopy && pbpaste
+
+local +r Usage="copy_print [-n] (no newline) <strings>"
+local +r NoNewline=$FALSE_VALUE
+
+while getopts :n opt
+do
+	case $opt in
+    n) NoNewline=$TRUE_VALUE
+      ;;
+    *) red $Usage && return 1 ;;
+	esac
+done
+
+local +r FormatStr='%s'
+if [[ $NoNewline == $FALSE_VALUE ]]
+then
+  FormatStr="$FormatStr\n"
+else
+  shift 1
+fi
+
+printf $FormatStr "$*" | pbcopy && pbpaste
 
