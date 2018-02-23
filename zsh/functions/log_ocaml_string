@@ -1,0 +1,2 @@
+copy_print "Printf.printf \"$1: %s\n\" $1 ;;"
+

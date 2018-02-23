@@ -1407,6 +1407,12 @@ alias logo="log_ocaml"
 
 alias logod="log_ocaml_int"
 
+alias logos="log_ocaml_string"
+
+alias logob="log_ocaml_bool"
+
+alias logof="log_ocaml_float"
+
 alias logjv="log_java"
 
 alias logjvv="log_java_var"
