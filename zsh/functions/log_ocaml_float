@@ -1,2 +1,0 @@
-copy_print "Printf.printf \"$1: %f\n\" $1 ;;"
-
