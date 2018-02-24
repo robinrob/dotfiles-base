@@ -1405,13 +1405,13 @@ alias logswv="log_swift_var"
 
 alias logo="log_ocaml"
 
-alias logod="log_ocaml_int"
+alias logod="log_ocaml_var d"
 
-alias logos="log_ocaml_string"
+alias logos="log_ocaml_var s"
 
-alias logob="log_ocaml_bool"
+alias logob="log_ocaml_var b"
 
-alias logof="log_ocaml_float"
+alias logof="log_ocaml_var f"
 
 alias logjv="log_java"
 
