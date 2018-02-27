@@ -1,2 +1,2 @@
-copy_print "Printf.printf \"$*\n\" ;"
+copy_print "Printf.printf \"$(upper $*)\n\" ;"
 
