@@ -239,6 +239,8 @@ alias sshkey="cat $HOME/.ssh/id_rsa.pub | pbcopy"
 
 alias rkls="rake_do git:foreach nil"
 
+alias rkss="rake_do git:sort_sub"
+
 alias str="du -dh $TRASH_HOME"
 
 alias sdr="du -dh $HOME/Dropbox"
