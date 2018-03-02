@@ -74,3 +74,6 @@ done
 
 # Re-activate notifications centre :( because some apps use it for sounds
 launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+
+# Fixes 'black screen' problem in Macvim
+defaults write org.vim.MacVim MMUseCGLayerAlways -bool YES

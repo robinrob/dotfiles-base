@@ -1363,13 +1363,13 @@ alias link="link_script"
 
 alias adbr="adb_restart"
 
-alias logjs="log_js"
+alias logj="log_js"
 
-alias logjso="log_js_object"
+alias logjo="log_js_object"
 
-alias logjsv="log_js_variable"
+alias logjv="log_js_variable"
 
-alias logjst="log_js_type"
+alias logjt="log_js_type"
 
 alias logc="log_cocos"
 
@@ -1415,7 +1415,7 @@ alias logob="log_ocaml_var b"
 
 alias logof="log_ocaml_var f"
 
-alias logjv="log_java"
+alias logjava="log_java"
 
 alias logjvv="log_java_var"
 
@@ -1476,7 +1476,6 @@ alias pych="pycharm"
 alias lo="localhost_browse"
 
 alias lom="localhost_browse_edit"
-
 
 alias jqdoc="jquery_doc_search"
 
