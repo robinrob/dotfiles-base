@@ -579,6 +579,12 @@ alias ni="sudo npm install"
 
 alias nu="sudo npm uninstall"
 
+alias yi="yarn install"
+
+alias ya="yarn add"
+
+alias yr="yarn remove"
+
 alias nr="npm_reinstall"
 
 alias nin="npm init"
