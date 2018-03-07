@@ -100,7 +100,7 @@ source $(brew --prefix nvm)/nvm.sh
 ## OCaml
 ########
 # OPAM configuration
-. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+. /Users/robin/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 
 ## SSH
@@ -111,3 +111,4 @@ source $(brew --prefix nvm)/nvm.sh
 [ -f $HOME/.ssh/kaptio ] && ssh-add $HOME/.ssh/ec2_ftp
 [ -f $HOME/.ssh/bitbucket_rsmith-io ] && ssh-add $HOME/.ssh/bitbucket_rsmith-io
 [ -f $HOME/.ssh/bitbucket_rsmith-io ] && ssh-add $HOME/.ssh/github_robinrob
+
