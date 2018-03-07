@@ -1,0 +1,8 @@
+if [[ -f .node-version ]]
+then
+  local +r DesiredNodeVersion=$(cat .node-version)
+  if [[ $(node -v) != "v$DesiredNodeVersion" ]]
+  then
+    nvm use $DesiredNodeVersion
+  fi
+fi

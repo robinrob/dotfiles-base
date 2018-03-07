@@ -46,7 +46,9 @@ export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/l
 export NPMLIB_HOME=/usr/local/lib/node_modules
 
 # export NODE_VERSION=5.5.0
-export NODE_VERSION=6.9.0
+# export NODE_VERSION=6.9.0
+export NODE_VERSION=6.13.0
+export NODE_VERSION=9.7.1
 #
 ###############################################################################
 # Java
@@ -442,6 +444,8 @@ alias_files=($ALIASES_PATH $BOOKMARKS_ALIAS_PATH)
 ###############################################################################
 # Applications
 ###############################################################################
+export MACVIM_VERSION=8.0-145_1
+
 export CSGO_HOME=$HOME/Library/Application\ Support/Steam/SteamApps/common/Counter-Strike\ Global\ Offensive/csgo
 
 export CSGO_SCREENSHOTS=$CSGO_HOME/screenshots

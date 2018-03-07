@@ -1,2 +1,3 @@
 # git_checkout_master_if_on_detached_head
 # source_venv_if_present
+nvm_use_node_version
