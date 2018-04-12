@@ -107,8 +107,6 @@ source $(brew --prefix nvm)/nvm.sh
 #########
 [ -f $HOME/.ssh/id_rsa_heroku ] && ssh-add $HOME/.ssh/id_rsa_heroku
 [ -f $HOME/.ssh/id_rsa ] && ssh-add $HOME/.ssh/id_rsa
-[ -f $HOME/.ssh/kaptio ] && ssh-add $HOME/.ssh/kaptio
-[ -f $HOME/.ssh/kaptio ] && ssh-add $HOME/.ssh/ec2_ftp
 [ -f $HOME/.ssh/bitbucket_rsmith-io ] && ssh-add $HOME/.ssh/bitbucket_rsmith-io
 [ -f $HOME/.ssh/bitbucket_rsmith-io ] && ssh-add $HOME/.ssh/github_robinrob
 

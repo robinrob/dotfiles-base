@@ -269,7 +269,7 @@ alias st="open -a sourceTree"
 
 alias sub="open -a 'Sublime Text'"
 
-alias vsc="open -a 'Visual Studio Code'"
+alias vs="open -a 'Visual Studio Code'"
 
 alias hk="heroku"
 
@@ -621,7 +621,7 @@ alias vu="vagrant up"
 
 alias vh="vagrant halt"
 
-alias vs="vagrant status"
+# alias vs="vagrant status"
 
 alias vpr="vagrant reload --provision"
 
@@ -1032,6 +1032,8 @@ alias rnsall="cd_down_tree $SCREENSHOTS_HOME && despace"
 
 alias mal="edit_alias"
 
+alias mun="$EDITOR $ZDOT_HOME/unaliases.zsh"
+
 alias cal="cat $ALIASES_PATH"
 
 alias mun="$EDITOR $ZDOT_HOME/unaliases.zsh"
@@ -1113,8 +1115,6 @@ alias mgfl="$EDITOR Gemfile.lock"
 alias cgfl="cat Gemfile.lock"
 
 alias mre="$EDITOR requirements.txt"
-
-
 
 alias mgi="$EDITOR .gitignore"
 

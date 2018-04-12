@@ -1,5 +1,5 @@
 alias | while read line
 do
   name=$(print $line | gawk -F= '{print $1}')
-  unalias $name
+  unalias "$name" 2> /dev/null
 done

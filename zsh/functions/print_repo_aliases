@@ -8,7 +8,7 @@ print_repo_action $Repo $Abbr pl cd_pull
 print_repo_action $Repo id $Abbr idea
 print_repo_action $Repo ic $Abbr idea
 print_repo_action $Repo xc $Abbr xcode
-# print_repo_action $Repo py $Abbr pycharm
+print_repo_action $Repo vs $Abbr vscode
 print_repo_action $Repo it $Abbr iterm
 print_repo_nav $Repo $Abbr
 print_repo_reverse_action $Repo $Abbr glp cd_gulp

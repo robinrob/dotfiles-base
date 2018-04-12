@@ -12,6 +12,8 @@ alias icsc="idea $SCALA_HOME"
 
 alias xcsc="xcode $SCALA_HOME"
 
+alias vssc="vscode $SCALA_HOME"
+
 alias itsc="iterm $SCALA_HOME"
 
 alias cdsc="cd_down_tree $SCALA_HOME"
@@ -32,6 +34,8 @@ alias idn="idea $NODE_HOME"
 alias icn="idea $NODE_HOME"
 
 alias xcn="xcode $NODE_HOME"
+
+alias vsn="vscode $NODE_HOME"
 
 alias itn="iterm $NODE_HOME"
 
@@ -54,6 +58,8 @@ alias icgi="idea $GIMP_HOME"
 
 alias xcgi="xcode $GIMP_HOME"
 
+alias vsgi="vscode $GIMP_HOME"
+
 alias itgi="iterm $GIMP_HOME"
 
 alias cdgi="cd_down_tree $GIMP_HOME"
@@ -74,6 +80,8 @@ alias idfu="idea $ORIGINS_HOME"
 alias icfu="idea $ORIGINS_HOME"
 
 alias xcfu="xcode $ORIGINS_HOME"
+
+alias vsfu="vscode $ORIGINS_HOME"
 
 alias itfu="iterm $ORIGINS_HOME"
 
@@ -96,6 +104,8 @@ alias icz="idea $ZSH_HOME"
 
 alias xcz="xcode $ZSH_HOME"
 
+alias vsz="vscode $ZSH_HOME"
+
 alias itz="iterm $ZSH_HOME"
 
 alias cdz="cd_down_tree $ZSH_HOME"
@@ -116,6 +126,8 @@ alias idra="idea $OPENRA_HOME"
 alias icra="idea $OPENRA_HOME"
 
 alias xcra="xcode $OPENRA_HOME"
+
+alias vsra="vscode $OPENRA_HOME"
 
 alias itra="iterm $OPENRA_HOME"
 
@@ -138,6 +150,8 @@ alias icfud="idea $ORIGINS_DEV_HOME"
 
 alias xcfud="xcode $ORIGINS_DEV_HOME"
 
+alias vsfud="vscode $ORIGINS_DEV_HOME"
+
 alias itfud="iterm $ORIGINS_DEV_HOME"
 
 alias cdfud="cd_down_tree $ORIGINS_DEV_HOME"
@@ -158,6 +172,8 @@ alias idm="idea $MARKDOWN_HOME"
 alias icm="idea $MARKDOWN_HOME"
 
 alias xcm="xcode $MARKDOWN_HOME"
+
+alias vsm="vscode $MARKDOWN_HOME"
 
 alias itm="iterm $MARKDOWN_HOME"
 
@@ -180,6 +196,8 @@ alias icno="idea $NOS_HOME"
 
 alias xcno="xcode $NOS_HOME"
 
+alias vsno="vscode $NOS_HOME"
+
 alias itno="iterm $NOS_HOME"
 
 alias cdno="cd_down_tree $NOS_HOME"
@@ -200,6 +218,8 @@ alias idrs="idea $RSS_HOME"
 alias icrs="idea $RSS_HOME"
 
 alias xcrs="xcode $RSS_HOME"
+
+alias vsrs="vscode $RSS_HOME"
 
 alias itrs="iterm $RSS_HOME"
 
@@ -222,6 +242,8 @@ alias icgu="idea $GUITAR_CHORDS_HOME"
 
 alias xcgu="xcode $GUITAR_CHORDS_HOME"
 
+alias vsgu="vscode $GUITAR_CHORDS_HOME"
+
 alias itgu="iterm $GUITAR_CHORDS_HOME"
 
 alias cdgu="cd_down_tree $GUITAR_CHORDS_HOME"
@@ -242,6 +264,8 @@ alias idjv="idea $JV_HOME"
 alias icjv="idea $JV_HOME"
 
 alias xcjv="xcode $JV_HOME"
+
+alias vsjv="vscode $JV_HOME"
 
 alias itjv="iterm $JV_HOME"
 
@@ -264,6 +288,8 @@ alias icsw="idea $SWIFT_HOME"
 
 alias xcsw="xcode $SWIFT_HOME"
 
+alias vssw="vscode $SWIFT_HOME"
+
 alias itsw="iterm $SWIFT_HOME"
 
 alias cdsw="cd_down_tree $SWIFT_HOME"
@@ -284,6 +310,8 @@ alias iddi="idea $DICSAURUS_HOME"
 alias icdi="idea $DICSAURUS_HOME"
 
 alias xcdi="xcode $DICSAURUS_HOME"
+
+alias vsdi="vscode $DICSAURUS_HOME"
 
 alias itdi="iterm $DICSAURUS_HOME"
 
@@ -306,6 +334,8 @@ alias icka="idea $KAPTIO_HOME"
 
 alias xcka="xcode $KAPTIO_HOME"
 
+alias vska="vscode $KAPTIO_HOME"
+
 alias itka="iterm $KAPTIO_HOME"
 
 alias cdka="cd_down_tree $KAPTIO_HOME"
@@ -326,6 +356,8 @@ alias idco="idea $CONSOLE_WRITER_HOME"
 alias icco="idea $CONSOLE_WRITER_HOME"
 
 alias xcco="xcode $CONSOLE_WRITER_HOME"
+
+alias vsco="vscode $CONSOLE_WRITER_HOME"
 
 alias itco="iterm $CONSOLE_WRITER_HOME"
 
@@ -348,6 +380,8 @@ alias icq="idea $QUIZ_HOME"
 
 alias xcq="xcode $QUIZ_HOME"
 
+alias vsq="vscode $QUIZ_HOME"
+
 alias itq="iterm $QUIZ_HOME"
 
 alias cdq="cd_down_tree $QUIZ_HOME"
@@ -368,6 +402,8 @@ alias idtp="idea $TYPESCRIPT_HOME"
 alias ictp="idea $TYPESCRIPT_HOME"
 
 alias xctp="xcode $TYPESCRIPT_HOME"
+
+alias vstp="vscode $TYPESCRIPT_HOME"
 
 alias ittp="iterm $TYPESCRIPT_HOME"
 
@@ -390,6 +426,8 @@ alias ics="idea $SH_HOME"
 
 alias xcs="xcode $SH_HOME"
 
+alias vss="vscode $SH_HOME"
+
 alias its="iterm $SH_HOME"
 
 alias cds="cd_down_tree $SH_HOME"
@@ -410,6 +448,8 @@ alias idlpr="idea $LODASH_PRACTICE_HOME"
 alias iclpr="idea $LODASH_PRACTICE_HOME"
 
 alias xclpr="xcode $LODASH_PRACTICE_HOME"
+
+alias vslpr="vscode $LODASH_PRACTICE_HOME"
 
 alias itlpr="iterm $LODASH_PRACTICE_HOME"
 
@@ -432,6 +472,8 @@ alias icr="idea $RUBY_HOME"
 
 alias xcr="xcode $RUBY_HOME"
 
+alias vsr="vscode $RUBY_HOME"
+
 alias itr="iterm $RUBY_HOME"
 
 alias cdr="cd_down_tree $RUBY_HOME"
@@ -452,6 +494,8 @@ alias idoc="idea $OCT_HOME"
 alias icoc="idea $OCT_HOME"
 
 alias xcoc="xcode $OCT_HOME"
+
+alias vsoc="vscode $OCT_HOME"
 
 alias itoc="iterm $OCT_HOME"
 
@@ -474,6 +518,8 @@ alias icf="idea $FISH_HOME"
 
 alias xcf="xcode $FISH_HOME"
 
+alias vsf="vscode $FISH_HOME"
+
 alias itf="iterm $FISH_HOME"
 
 alias cdf="cd_down_tree $FISH_HOME"
@@ -494,6 +540,8 @@ alias idpr="idea $PROG_HOME"
 alias icpr="idea $PROG_HOME"
 
 alias xcpr="xcode $PROG_HOME"
+
+alias vspr="vscode $PROG_HOME"
 
 alias itpr="iterm $PROG_HOME"
 
@@ -516,6 +564,8 @@ alias icmrd="idea $WEBSITE_DEV_HOME"
 
 alias xcmrd="xcode $WEBSITE_DEV_HOME"
 
+alias vsmrd="vscode $WEBSITE_DEV_HOME"
+
 alias itmrd="iterm $WEBSITE_DEV_HOME"
 
 alias cdmrd="cd_down_tree $WEBSITE_DEV_HOME"
@@ -536,6 +586,8 @@ alias idat="idea $ANGULAR_TEST_HOME"
 alias icat="idea $ANGULAR_TEST_HOME"
 
 alias xcat="xcode $ANGULAR_TEST_HOME"
+
+alias vsat="vscode $ANGULAR_TEST_HOME"
 
 alias itat="iterm $ANGULAR_TEST_HOME"
 
@@ -558,6 +610,8 @@ alias icc="idea $C_HOME"
 
 alias xcc="xcode $C_HOME"
 
+alias vsc="vscode $C_HOME"
+
 alias itc="iterm $C_HOME"
 
 alias cdc="cd_down_tree $C_HOME"
@@ -578,6 +632,8 @@ alias idap="idea $APPLESCRIPT_HOME"
 alias icap="idea $APPLESCRIPT_HOME"
 
 alias xcap="xcode $APPLESCRIPT_HOME"
+
+alias vsap="vscode $APPLESCRIPT_HOME"
 
 alias itap="iterm $APPLESCRIPT_HOME"
 
@@ -600,6 +656,8 @@ alias iccp="idea $C_PLUS_PLUS_HOME"
 
 alias xccp="xcode $C_PLUS_PLUS_HOME"
 
+alias vscp="vscode $C_PLUS_PLUS_HOME"
+
 alias itcp="iterm $C_PLUS_PLUS_HOME"
 
 alias cdcp="cd_down_tree $C_PLUS_PLUS_HOME"
@@ -620,6 +678,8 @@ alias idno2="idea $NOS2_HOME"
 alias icno2="idea $NOS2_HOME"
 
 alias xcno2="xcode $NOS2_HOME"
+
+alias vsno2="vscode $NOS2_HOME"
 
 alias itno2="iterm $NOS2_HOME"
 
@@ -642,6 +702,8 @@ alias icro="idea $ROBIN_HOME"
 
 alias xcro="xcode $ROBIN_HOME"
 
+alias vsro="vscode $ROBIN_HOME"
+
 alias itro="iterm $ROBIN_HOME"
 
 alias cdro="cd_down_tree $ROBIN_HOME"
@@ -662,6 +724,8 @@ alias idcn="idea $CONCENTRATION_GAME_HOME"
 alias iccn="idea $CONCENTRATION_GAME_HOME"
 
 alias xccn="xcode $CONCENTRATION_GAME_HOME"
+
+alias vscn="vscode $CONCENTRATION_GAME_HOME"
 
 alias itcn="iterm $CONCENTRATION_GAME_HOME"
 
@@ -684,6 +748,8 @@ alias icras="idea $RECIPES_SERVER_HOME"
 
 alias xcras="xcode $RECIPES_SERVER_HOME"
 
+alias vsras="vscode $RECIPES_SERVER_HOME"
+
 alias itras="iterm $RECIPES_SERVER_HOME"
 
 alias cdras="cd_down_tree $RECIPES_SERVER_HOME"
@@ -704,6 +770,8 @@ alias idgh="idea $GITHUB_HOME"
 alias icgh="idea $GITHUB_HOME"
 
 alias xcgh="xcode $GITHUB_HOME"
+
+alias vsgh="vscode $GITHUB_HOME"
 
 alias itgh="iterm $GITHUB_HOME"
 
@@ -726,6 +794,8 @@ alias icj="idea $JAVASCRIPT_HOME"
 
 alias xcj="xcode $JAVASCRIPT_HOME"
 
+alias vsj="vscode $JAVASCRIPT_HOME"
+
 alias itj="iterm $JAVASCRIPT_HOME"
 
 alias cdj="cd_down_tree $JAVASCRIPT_HOME"
@@ -746,6 +816,8 @@ alias idlo="idea $LOCAL_HOME"
 alias iclo="idea $LOCAL_HOME"
 
 alias xclo="xcode $LOCAL_HOME"
+
+alias vslo="vscode $LOCAL_HOME"
 
 alias itlo="iterm $LOCAL_HOME"
 
@@ -768,6 +840,8 @@ alias ico="idea $OCAML_HOME"
 
 alias xco="xcode $OCAML_HOME"
 
+alias vso="vscode $OCAML_HOME"
+
 alias ito="iterm $OCAML_HOME"
 
 alias cdo="cd_down_tree $OCAML_HOME"
@@ -788,6 +862,8 @@ alias idd="idea $DOTFILES_HOME"
 alias icd="idea $DOTFILES_HOME"
 
 alias xcd="xcode $DOTFILES_HOME"
+
+alias vsd="vscode $DOTFILES_HOME"
 
 alias itd="iterm $DOTFILES_HOME"
 
@@ -810,6 +886,8 @@ alias icdb="idea $DOTFILES_BASE_HOME"
 
 alias xcdb="xcode $DOTFILES_BASE_HOME"
 
+alias vsdb="vscode $DOTFILES_BASE_HOME"
+
 alias itdb="iterm $DOTFILES_BASE_HOME"
 
 alias cddb="cd_down_tree $DOTFILES_BASE_HOME"
@@ -830,6 +908,8 @@ alias idgo="idea $GO_HOME"
 alias icgo="idea $GO_HOME"
 
 alias xcgo="xcode $GO_HOME"
+
+alias vsgo="vscode $GO_HOME"
 
 alias itgo="iterm $GO_HOME"
 
@@ -852,6 +932,8 @@ alias iche="idea $HEROES_HOME"
 
 alias xche="xcode $HEROES_HOME"
 
+alias vshe="vscode $HEROES_HOME"
+
 alias ithe="iterm $HEROES_HOME"
 
 alias cdhe="cd_down_tree $HEROES_HOME"
@@ -872,6 +954,8 @@ alias idh="idea $HTML_HOME"
 alias ich="idea $HTML_HOME"
 
 alias xch="xcode $HTML_HOME"
+
+alias vsh="vscode $HTML_HOME"
 
 alias ith="iterm $HTML_HOME"
 
@@ -894,6 +978,8 @@ alias icp="idea $PYTHON_HOME"
 
 alias xcp="xcode $PYTHON_HOME"
 
+alias vsp="vscode $PYTHON_HOME"
+
 alias itp="iterm $PYTHON_HOME"
 
 alias cdp="cd_down_tree $PYTHON_HOME"
@@ -914,6 +1000,8 @@ alias idca="idea $CALCULATOR_HOME"
 alias icca="idea $CALCULATOR_HOME"
 
 alias xcca="xcode $CALCULATOR_HOME"
+
+alias vsca="vscode $CALCULATOR_HOME"
 
 alias itca="iterm $CALCULATOR_HOME"
 
@@ -936,6 +1024,8 @@ alias icfc="idea $FORCE_COM_HOME"
 
 alias xcfc="xcode $FORCE_COM_HOME"
 
+alias vsfc="vscode $FORCE_COM_HOME"
+
 alias itfc="iterm $FORCE_COM_HOME"
 
 alias cdfc="cd_down_tree $FORCE_COM_HOME"
@@ -956,6 +1046,8 @@ alias idpl="idea $PERL_HOME"
 alias icpl="idea $PERL_HOME"
 
 alias xcpl="xcode $PERL_HOME"
+
+alias vspl="vscode $PERL_HOME"
 
 alias itpl="iterm $PERL_HOME"
 
@@ -978,6 +1070,8 @@ alias icor="idea $ORBITER_HOME"
 
 alias xcor="xcode $ORBITER_HOME"
 
+alias vsor="vscode $ORBITER_HOME"
+
 alias itor="iterm $ORBITER_HOME"
 
 alias cdor="cd_down_tree $ORBITER_HOME"
@@ -998,6 +1092,8 @@ alias ida="idea $AWK_HOME"
 alias ica="idea $AWK_HOME"
 
 alias xca="xcode $AWK_HOME"
+
+alias vsa="vscode $AWK_HOME"
 
 alias ita="iterm $AWK_HOME"
 
@@ -1020,6 +1116,8 @@ alias icpp="idea $PLANET_PAIRS_HOME"
 
 alias xcpp="xcode $PLANET_PAIRS_HOME"
 
+alias vspp="vscode $PLANET_PAIRS_HOME"
+
 alias itpp="iterm $PLANET_PAIRS_HOME"
 
 alias cdpp="cd_down_tree $PLANET_PAIRS_HOME"
@@ -1040,6 +1138,8 @@ alias idcs="idea $COFFEESCRIPT_HOME"
 alias iccs="idea $COFFEESCRIPT_HOME"
 
 alias xccs="xcode $COFFEESCRIPT_HOME"
+
+alias vscs="vscode $COFFEESCRIPT_HOME"
 
 alias itcs="iterm $COFFEESCRIPT_HOME"
 
@@ -1062,6 +1162,8 @@ alias icga="idea $GAME_HOME"
 
 alias xcga="xcode $GAME_HOME"
 
+alias vsga="vscode $GAME_HOME"
+
 alias itga="iterm $GAME_HOME"
 
 alias cdga="cd_down_tree $GAME_HOME"
@@ -1082,6 +1184,8 @@ alias idmr="idea $WEBSITE_HOME"
 alias icmr="idea $WEBSITE_HOME"
 
 alias xcmr="xcode $WEBSITE_HOME"
+
+alias vsmr="vscode $WEBSITE_HOME"
 
 alias itmr="iterm $WEBSITE_HOME"
 
@@ -1104,6 +1208,8 @@ alias icorn="idea $ORBITER_NEW_HOME"
 
 alias xcorn="xcode $ORBITER_NEW_HOME"
 
+alias vsorn="vscode $ORBITER_NEW_HOME"
+
 alias itorn="iterm $ORBITER_NEW_HOME"
 
 alias cdorn="cd_down_tree $ORBITER_NEW_HOME"
@@ -1124,6 +1230,8 @@ alias idbb="idea $BOUNCING_BALLS_HOME"
 alias icbb="idea $BOUNCING_BALLS_HOME"
 
 alias xcbb="xcode $BOUNCING_BALLS_HOME"
+
+alias vsbb="vscode $BOUNCING_BALLS_HOME"
 
 alias itbb="iterm $BOUNCING_BALLS_HOME"
 
@@ -1146,6 +1254,8 @@ alias icce="idea $COCOS_EXAMPLES_HOME"
 
 alias xcce="xcode $COCOS_EXAMPLES_HOME"
 
+alias vsce="vscode $COCOS_EXAMPLES_HOME"
+
 alias itce="iterm $COCOS_EXAMPLES_HOME"
 
 alias cdce="cd_down_tree $COCOS_EXAMPLES_HOME"
@@ -1166,6 +1276,8 @@ alias idff="idea $FLAPPY_FISH_HOME"
 alias icff="idea $FLAPPY_FISH_HOME"
 
 alias xcff="xcode $FLAPPY_FISH_HOME"
+
+alias vsff="vscode $FLAPPY_FISH_HOME"
 
 alias itff="iterm $FLAPPY_FISH_HOME"
 
@@ -1188,6 +1300,8 @@ alias icpi="idea $PI_HOME"
 
 alias xcpi="xcode $PI_HOME"
 
+alias vspi="vscode $PI_HOME"
+
 alias itpi="iterm $PI_HOME"
 
 alias cdpi="cd_down_tree $PI_HOME"
@@ -1208,6 +1322,8 @@ alias idte="idea $JS_TESTS_HOME"
 alias icte="idea $JS_TESTS_HOME"
 
 alias xcte="xcode $JS_TESTS_HOME"
+
+alias vste="vscode $JS_TESTS_HOME"
 
 alias itte="iterm $JS_TESTS_HOME"
 
@@ -1230,6 +1346,8 @@ alias icli="idea $LIFE_HOME"
 
 alias xcli="xcode $LIFE_HOME"
 
+alias vsli="vscode $LIFE_HOME"
+
 alias itli="iterm $LIFE_HOME"
 
 alias cdli="cd_down_tree $LIFE_HOME"
@@ -1250,6 +1368,8 @@ alias idcs="idea $CSS_HOME"
 alias iccs="idea $CSS_HOME"
 
 alias xccs="xcode $CSS_HOME"
+
+alias vscs="vscode $CSS_HOME"
 
 alias itcs="iterm $CSS_HOME"
 
@@ -1272,6 +1392,8 @@ alias icrn="idea $RUNNER_HOME"
 
 alias xcrn="xcode $RUNNER_HOME"
 
+alias vsrn="vscode $RUNNER_HOME"
+
 alias itrn="iterm $RUNNER_HOME"
 
 alias cdrn="cd_down_tree $RUNNER_HOME"
@@ -1292,6 +1414,8 @@ alias idcq="idea $COQ_HOME"
 alias iccq="idea $COQ_HOME"
 
 alias xccq="xcode $COQ_HOME"
+
+alias vscq="vscode $COQ_HOME"
 
 alias itcq="iterm $COQ_HOME"
 
