@@ -9,5 +9,5 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /private/var/folders/50/0160b21j0msfjq8xskfmdw280000gn/T/AppTranslocation/A99721C1-B0DA-4351-ABCD-1CEAC5F98EB9/d/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /private/var/folders/50/0160b21j0msfjq8xskfmdw280000gn/T/AppTranslocation/E24FE0F7-1C4C-405B-AF69-128CAD9974F0/d/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
