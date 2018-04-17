@@ -1,0 +1,19 @@
+local +r Usage='find_not_in <find-expression> <dir-pattern-to-exclude>'
+	(
+		[[ -z $1 ]] || [[ -z $2 ]]
+	) && red $Usage && return 1
+
+local +r PatternToFind=$1
+local +r DirectoryPatternsToExclude=($*[2,-1])
+
+local +r Cmd="find ."
+
+for exclude in $DirectoryPatternsToExclude
+do
+  Cmd="$Cmd -path '$exclude' -prune -o"
+done
+
+Cmd="$Cmd -name '$PatternToFind' -print"
+
+eval $Cmd
+

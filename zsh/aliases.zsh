@@ -581,6 +581,10 @@ alias nu="sudo npm uninstall"
 
 alias yi="yarn install"
 
+alias yga="yarn global add"
+
+alias ygr="yarn global remove"
+
 alias ya="yarn add"
 
 alias yr="yarn remove"
