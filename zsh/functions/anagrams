@@ -1,0 +1,5 @@
+for word in $*
+do
+  printf "$(anagram $word) "
+done
+print

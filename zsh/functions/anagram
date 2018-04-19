@@ -1,0 +1,17 @@
+RANDOM=$$ 
+
+local array shuffled size count index
+integer size count index
+typeset -a array shuffled
+
+local -a array=($(split $1 ''))
+size=${(w)#array}
+
+while ((count++ < size))
+do
+  index=$((1 + (${(w)#array} * RANDOM / 32767)))
+  shuffled+=($array[$index])
+  array[$index]=()
+done
+
+print $shuffled | tr -d ' '

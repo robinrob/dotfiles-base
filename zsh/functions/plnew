@@ -1,3 +1,9 @@
-FILENAME=$1
-new_from_template $PERL_HOME/templates/practice.pl $FILENAME.pl
+# FILENAME=$1
+#
+# new_from_template $PERL_HOME/templates/practice.pl $FILENAME.pl
 
+INTERPRETER=$1
+EXTENSION=$2
+FILENAME=$3
+NOOPEN=$4
+new -i $INTERPRETER -e $EXTENSION -f $FILENAME

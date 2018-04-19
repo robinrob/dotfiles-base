@@ -645,6 +645,8 @@ alias bnew="new_s bash sh"
 
 alias snew="new_s sh sh"
 
+alias plnew="new_s perl pl"
+
 alias swnew="new_s swift swift"
 
 alias onew="new_s ocaml ml"
