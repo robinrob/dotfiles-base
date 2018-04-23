@@ -1527,7 +1527,7 @@ alias yell="yell_search"
 
 alias yellm="yell_map_search"
 
-alias yelp="search_yelp_edinburgh"
+alias yelp="search_yelp"
 
 alias phys="physics_forums_search"
 

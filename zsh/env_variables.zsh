@@ -86,9 +86,6 @@ fi
 if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
 then
 	export BROWSER="chrome"
-  export SAYCMD=1  
-else
-	export BROWSER="safari"
 fi
 
 
@@ -556,7 +553,7 @@ export SAYCMD_OVERRIDE=0
 ###############################################################################
 # Misc
 ###############################################################################
-export POSTCODE='EH4 3BT'
+export POSTCODE='NG2 7ER'
 
 
 ###############################################################################

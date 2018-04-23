@@ -1,1 +1,0 @@
-search_yelp -w Edinburgh -s "$*"
