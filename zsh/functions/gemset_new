@@ -4,7 +4,7 @@ if [[ $# == 2 ]]
 then
   local +r RubyVersion=$2
 else
-  local +r RubyVersion='2.1.4'
+  local +r RubyVersion=$RUBY_VERSION
 fi
 
 rm .ruby-gemset 2> /dev/null
