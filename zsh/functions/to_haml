@@ -1,4 +1,4 @@
-rvm use 2.1.4 > /dev/null
+rvm use $RUBY_VERSION > /dev/null
 
 local +r HamlCommand='html2haml --no-erb --html-attributes'
 

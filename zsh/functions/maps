@@ -12,7 +12,7 @@ done
 
 case $# in
   0)
-    Search="$POSTCODE" ;;
+    Search="$(get_postcode)" ;;
   *)
     Search="$*"
 esac
@@ -21,7 +21,7 @@ print "Near: ${Near}"
 
 if [[ -n $Near ]]
 then
-  Search="$Search near $(postcode)"
+  Search="$Search near $(get_postcode)"
 fi
 
 

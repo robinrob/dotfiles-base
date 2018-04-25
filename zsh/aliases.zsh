@@ -645,6 +645,8 @@ alias bnew="new_s bash sh"
 
 alias snew="new_s sh sh"
 
+alias plnew="new_s perl pl"
+
 alias swnew="new_s swift swift"
 
 alias onew="new_s ocaml ml"
@@ -1525,7 +1527,7 @@ alias yell="yell_search"
 
 alias yellm="yell_map_search"
 
-alias yelp="search_yelp_edinburgh"
+alias yelp="search_yelp"
 
 alias phys="physics_forums_search"
 
