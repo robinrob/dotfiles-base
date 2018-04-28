@@ -1,1 +1,1 @@
-open -a Google\ Chrome $1
+open -a Google\ Chrome $*
