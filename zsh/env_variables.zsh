@@ -229,9 +229,7 @@ export RSS_HOME=$RUBY_HOME/projects/rss-opener
 
 export QUIZ_HOME=$RUBY_HOME/projects/quiz
 
-export WEBSITE_HOME=$JS_HOME/projects/robinrob.github.io
-
-export WEBSITE_DEV_HOME=$JS_HOME/projects/robinrob.github.io-dev
+export WEBSITE_HOME=$JS_HOME/projects/rsmithio
 
 export GITHUB_HOME=$RUBY_HOME/projects/github
 
