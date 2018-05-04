@@ -251,6 +251,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias todo="open -a todoist"
+
 alias 1p="open_app 1Password\ 6"
 
 alias rb="open_app RubyMine"
