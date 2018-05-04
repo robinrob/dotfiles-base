@@ -251,6 +251,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias wch="open_weechat"
+
 alias 1p="open_app 1Password\ 6"
 
 alias rb="open_app RubyMine"
@@ -418,7 +420,6 @@ alias cdsp="cd_down_tree $SPRITES_HOME"
 
 alias cdsn="cd_down_tree $SOUNDS_HOME"
 
-alias cdres="cd_down_tree $RES_HOME"
 
 alias cdlst="cd_down_tree $LISTS_HOME"
 

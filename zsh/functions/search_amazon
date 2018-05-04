@@ -1,2 +1,2 @@
-browser "http://www.amazon.co.uk/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=$(urlencode $@)"
+browser "http://smile.amazon.co.uk/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=$(urlencode $@)"
 
