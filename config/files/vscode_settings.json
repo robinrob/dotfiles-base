@@ -1,24 +1,26 @@
-// Place your settings in this file to overwrite the default settings
 {
-    "window.zoomLevel": 1,
-    "workbench.colorTheme": "Solarized Dark",
-    "workbench.editor": {
-      "enablePreview": false,
-      "enablePreviewFromQuickOpen": false,
-      "showTabs": false
-    },
-    "vim.disableAnnoyingNeovimMessage": true,
-    "[javascriptreact]": {
-        
-    },
-    "[javascript]": {
-        
-    },
-    "files.associations": {
-        "*.jsx": "javascriptreact"
-    },
-    "editor": {
-        "tabSize": 2,
-        "detectIndentation": false
-    }
+  "vim.disableAnnoyingNeovimMessage": true,
+  "sync.gist": "ffd8ac2f85eb54b57d3e55b28c95057d",
+  "sync.lastUpload": "2018-02-16T14:52:32.860Z",
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.lastDownload": "",
+  "sync.forceDownload": false,
+  "sync.anonymousGist": false,
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  "workbench.colorTheme": "Solarized Dark",
+  "window.zoomLevel": 1,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor": {
+    "tabSize": 2,
+    "detectIndentation": false,
+    "wordWrap": "on"
+  },
+  "files.associations": {
+    "*.jsx": "javascriptreact"
   }
+}
