@@ -254,6 +254,7 @@ alias syslog="tail -f /var/log/system.log"
 alias todo="open -a todoist"
 
 alias wch="open_weechat"
+
 alias 1p="open_app 1Password\ 6"
 
 alias rb="open_app RubyMine"
@@ -592,6 +593,8 @@ alias ygr="yarn global remove"
 alias ya="yarn add"
 
 alias yr="yarn remove"
+
+alias yup="yarn upgrade"
 
 alias nr="npm_reinstall"
 

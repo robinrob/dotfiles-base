@@ -1,0 +1,19 @@
+{
+    "sync.gist": "ffd8ac2f85eb54b57d3e55b28c95057d",
+    "sync.lastUpload": "2018-02-16T14:52:32.860Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "workbench.colorTheme": "Solarized Dark",
+    "window.zoomLevel": 0,
+    "editor.wordWrap": "on",
+    "workbench.editor.enablePreview": false,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+}
