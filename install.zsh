@@ -48,6 +48,9 @@ cp $DOTFILES_BASE_HOME/config/files/Robin.keylayout.xml ~/Library/Keyboard\ Layo
 green "Installing SublimeText3 configuration ..."
 $ZDOT_HOME/sublimetext.zsh
 
+green "Installing VS Code configuration ..."
+$ZDOT_HOME/vscode.zsh
+
 
 green "Generating bookmarks ..."
 generate_all_bookmarks > /dev/null
