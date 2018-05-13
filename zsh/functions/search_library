@@ -14,6 +14,6 @@ do
   esac
 done
 
-Url="http://capitadiscovery.co.uk/edinburgh/items?query=$(urlencode $Query $Author $Title $Subject)"
+Url="https://emlib.ent.sirsidynix.net.uk/client/en_GB/nottcity/search/results?qu=$(urlencode $*)"
 
 browser $Url
