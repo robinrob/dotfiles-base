@@ -20,7 +20,15 @@
     "detectIndentation": false,
     "wordWrap": "on"
   },
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.autoIndent": true
+  },
   "files.associations": {
     "*.jsx": "javascriptreact"
-  }
+  },
+  "python.linting.enabled": false,
+  "python.linting.flake8Args": [],
+  "python.linting.flake8Enabled": true,
 }
