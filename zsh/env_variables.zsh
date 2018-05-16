@@ -92,6 +92,8 @@ then
 	export BROWSER="chrome"
 fi
 
+export BROWSER_APP="Google\ Chrome"
+
 
 ###############################################################################
 # Code repos
