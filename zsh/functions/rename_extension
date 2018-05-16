@@ -1,0 +1,4 @@
+local +r FilePath=$1
+local +r NewExtension=$2
+
+mv $FilePath $(remove_extension $FilePath).$NewExtension

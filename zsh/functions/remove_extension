@@ -1,2 +1,4 @@
-print $1 | sed 's/b(.[a-zA-Z0-9]+)+b//g'
+local +r FilePath=$1
+
+print "$(dirname $FilePath)/$(basename $FilePath | cut -f 1 -d '.')"
 

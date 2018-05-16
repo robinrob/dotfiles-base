@@ -1,0 +1,10 @@
+local +r Dir=$1
+local +r OriginalExtension=$2
+local +r NewExtension=$3
+
+
+for filepath in $(/bin/ls $Dir/*.$OriginalExtension | xargs)
+do
+  rename_extension $filepath $NewExtension || return 1
+done
+
