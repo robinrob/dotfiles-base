@@ -674,6 +674,8 @@ alias gnew="new -i '' -e gimp -f"
 
 alias mnew="new -i '' -e md -f"
 
+alias nnew="new_s node js"
+
 alias demo="open $MOBILEAPP_HOME/www/index.html"
 
 alias up2="pythonbrew use 2.7"

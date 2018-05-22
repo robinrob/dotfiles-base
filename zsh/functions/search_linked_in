@@ -1,0 +1,6 @@
+if (( $#* == 0 ))
+then
+  browser "https://www.linkedin.com/in/rsmithio/"
+else
+  browser "https://www.linkedin.com/search/results/index/?keywords=$(urlencode $*)&origin=GLOBAL_SEARCH_HEADER"
+fi
