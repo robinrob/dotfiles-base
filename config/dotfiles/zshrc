@@ -84,23 +84,23 @@ prompt robin
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # `rvm reset` is the magic secret command that fixes the path errors!!
-ruby="2.1.4"
-if [[ $USE_RUBY == 1 ]]
-then
+# ruby="2.1.4"
+# if [[ $USE_RUBY == 1 ]]
+# then
   # rvm use ruby-"$ruby"
-fi
+# fi
 
 
 ## Node
 #########
-source $(brew --prefix nvm)/nvm.sh
+# source_nvm
 # nvm use $NODE_VERSION
 
 
 ## OCaml
 ########
 # OPAM configuration
-. /Users/robin/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+# source opam
 
 
 ## SSH

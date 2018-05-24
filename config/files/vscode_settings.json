@@ -16,20 +16,29 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor": {
-    "tabSize": 2,
+    "tabSize": 4,
     "detectIndentation": false,
     "wordWrap": "on"
   },
   "[python]": {
-    "editor.insertSpaces": true,
     "editor.tabSize": 4,
-    "editor.autoIndent": true
   },
   "files.associations": {
     "*.jsx": "javascriptreact"
   },
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": false,
+  "[ruby]": {
+    "editor.tabSize": 2,
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+  },
+  "[javascriptreact]": {
+    "editor.tabSize": 2,
+  },
+  "python.linting.enabled": false,
   "python.linting.flake8Args": [],
   "python.linting.flake8Enabled": true,
 }

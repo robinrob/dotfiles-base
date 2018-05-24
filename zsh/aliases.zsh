@@ -663,6 +663,8 @@ alias fnew="new_s fish fish"
 
 alias lnew="lodash_new"
 
+alias nnew="new_s node js"
+
 alias demo="open $MOBILEAPP_HOME/www/index.html"
 
 alias up2="pythonbrew use 2.7"
