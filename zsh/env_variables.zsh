@@ -67,6 +67,11 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/$JAVA_VERSION/Contents/Home"
 # export JAVA_HOME="/Library/Java/JavaVirtualMachines//Contents/Home"
 
 ###############################################################################
+# Go
+#############################################################################
+export GOPATH=$HOME/.go
+
+###############################################################################
 # Host-specific variables
 ###############################################################################
 # `sudo hostname <name>` or `sudo scutil --set HostName <name>` to change the

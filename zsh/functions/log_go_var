@@ -1,0 +1,5 @@
+local +r Type=$1
+local +r Var=$2
+
+copy_print "fmt.Println(\"$Var: \" + fmt.Sprintf(\"%$Type\", $Var))"
+

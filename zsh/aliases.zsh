@@ -380,7 +380,6 @@ alias cdstr="cd $HOME/Movies/Star-Trek-Voyager-Season-3"
 
 alias cdst="cd $STORIES_HOME"
 
-alias cdcsgo="cd '$CSGO_HOME'"
 
 alias cdcel="cd /usr/local/Cellar"
 
@@ -662,17 +661,7 @@ alias znew="new_s zsh zsh"
 
 alias fnew="new_s fish fish"
 
-alias cnew="new -i '' -e cq -f"
-
 alias lnew="lodash_new"
-
-alias cssnew="new -i '' -e css -f"
-
-alias tnew="new -i '' -e txt -f"
-
-alias gnew="new -i '' -e gimp -f"
-
-alias mnew="new -i '' -e md -f"
 
 alias demo="open $MOBILEAPP_HOME/www/index.html"
 
@@ -1424,15 +1413,21 @@ alias logsw="log_swift"
 
 alias logswv="log_swift_var"
 
-alias logo="log_ocaml"
-
 alias logod="log_ocaml_var d"
 
 alias logos="log_ocaml_var s"
 
-alias logob="log_ocaml_var b"
+alias logob="log_ocaml_var B"
 
 alias logof="log_ocaml_var f"
+
+alias loggd="log_go_var d"
+
+alias loggs="log_go_var s"
+
+alias loggb="log_go_var t"
+
+alias loggf="log_go_var f"
 
 alias logjava="log_java"
 

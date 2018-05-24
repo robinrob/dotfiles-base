@@ -27,6 +27,7 @@ Dirs=(
   /usr/local/Cellar/nvm/0.29.0
   /usr/local/bin
   /Applications/Postgres.app/Contents/Versions/latest/bin
+  $GOPATH/bin
 )
 
 for dir in $Dirs
