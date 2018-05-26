@@ -339,14 +339,11 @@ alias spotify="open -a Spotify"
 
 alias spo="spotify"
 
-alias sp="spotify"
-
 alias scc="scalac"
 
 alias lessc="$LESSC_PATH"
 
 alias lc="lessc"
-
 
 alias firefoxp="/Applications/Firefox.app/Contents/MacOS/firefox-bin -p"
 
@@ -1245,6 +1242,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias sp="spellcheck_pro"
+
 alias rmgU="rm_git_untracked_files"
 
 alias dict="/usr/local/bin/dict"

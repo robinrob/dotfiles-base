@@ -1,0 +1,10 @@
+local +r Files=($*)
+
+for file in $Files
+do
+  local -U WordSet=($(cat $file | aspell list | xargs -0))
+  for word in $WordSet
+  do
+    print $word
+  done
+done
