@@ -1655,7 +1655,9 @@ alias ggt="google_translate"
 
 alias ggg="google_groups"
 
-alias gg="browse chrome"
+alias gg="chrome"
+
+alias cn="canary"
 
 alias im="google_images"
 
