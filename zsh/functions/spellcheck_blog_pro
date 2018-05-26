@@ -1,0 +1,17 @@
+local +r Files=($*)
+
+local +r -U Ignores=($(cat $DOTFILES_BASE_HOME/config/files/spellcheck_ignores.txt | xargs))
+
+for file in $Files
+do
+  print "$(green Mis-spelled words in:) $(yellow $file)"
+
+  for word in $(spellcheck_list $file)
+  do
+    if ! $(is_in_set $word $Ignores)
+    then
+    grep_pretty "\\b$word\\b" $file
+    fi
+  done
+done
+

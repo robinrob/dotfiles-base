@@ -1,0 +1,5 @@
+local +r Original=$1
+local +r Replacement=$2
+local +r File=$3
+
+gsed -i "s/\\b$Original\\b/$Replacement/g" $File

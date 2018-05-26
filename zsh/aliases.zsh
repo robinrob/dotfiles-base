@@ -1242,7 +1242,17 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
-alias sp="spellcheck_pro"
+alias sp="spellcheck"
+
+alias spb="spellcheck_blog"
+
+alias spbp="spellcheck_blog_pro"
+
+alias spp="spellcheck_pro"
+
+alias spi="spellcheck_ignore"
+
+alias spf="spellcheck_fix"
 
 alias rmgU="rm_git_untracked_files"
 

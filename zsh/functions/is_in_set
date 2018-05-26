@@ -1,14 +1,12 @@
-VAL=$1
-SET=$2
-SET=("${(s/ /)SET}")
+local +r Value=$1
+local +r Set=("${(s/ /)*[2,-1]}")
 
-local +r ExitCode=1
-for item in $SET
+for item in $Set
 do
-  if [[ $item == $VAL ]]
+  if [[ $item == $Value ]]
   then
-    ExitCode=0
+    return 0
   fi
 done
 
-return ExitCode
+return 1
