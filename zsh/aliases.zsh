@@ -1657,6 +1657,8 @@ alias ggg="google_groups"
 
 alias gg="browse chrome"
 
+alias cn="canary"
+
 alias im="google_images"
 
 alias ly="lyrics_search"

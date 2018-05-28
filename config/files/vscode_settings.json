@@ -18,7 +18,8 @@
   "editor": {
     "tabSize": 4,
     "detectIndentation": false,
-    "wordWrap": "on"
+    "wordWrap": "on",
+    "rulers": [120]
   },
   "[python]": {
     "editor.tabSize": 4,
