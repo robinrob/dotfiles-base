@@ -38,3 +38,16 @@ reasonml
 
 setattr
 getattribute
+recurse
+recursing
+gitmodules
+gitconfig
+href
+baseurl
+GitConfigFile
+repo
+foreach
+submodule
+submodules
+GitConfigBlockCollection
+GitConfigBlock
