@@ -1,6 +1,6 @@
 if [[ -f .node-version ]]
 then
-  if $(exec_exists nvm)
+  if ! $(exec_exists nvm)
   then
     source_nvm
   fi
