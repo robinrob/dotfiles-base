@@ -1,3 +1,4 @@
-TEXT="$@"
-print $TEXT:l
+local +r Text=$*
+
+print ${Text:l}
 

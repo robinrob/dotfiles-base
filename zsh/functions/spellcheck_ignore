@@ -1,0 +1,6 @@
+local +r -a WordsToIgnore=($*)
+
+for word in $WordsToIgnore
+do
+  printf "\n$word" >> $DOTFILES_BASE_HOME/config/files/spellcheck_ignores.txt
+done

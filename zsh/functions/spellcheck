@@ -1,0 +1,11 @@
+local +r Files=($*)
+
+for file in $Files
+do
+  print "$(green Mis-spelled words in:) $(yellow $file)"
+
+  for word in $(spellcheck_list $file)
+  do
+    red $word
+  done
+done

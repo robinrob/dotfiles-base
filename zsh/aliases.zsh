@@ -339,14 +339,11 @@ alias spotify="open -a Spotify"
 
 alias spo="spotify"
 
-alias sp="spotify"
-
 alias scc="scalac"
 
 alias lessc="$LESSC_PATH"
 
 alias lc="lessc"
-
 
 alias firefoxp="/Applications/Firefox.app/Contents/MacOS/firefox-bin -p"
 
@@ -1245,6 +1242,18 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias sp="spellcheck"
+
+alias spb="spellcheck_blog"
+
+alias spbp="spellcheck_blog_pro"
+
+alias spp="spellcheck_pro"
+
+alias spi="spellcheck_ignore"
+
+alias spf="spellcheck_fix"
+
 alias rmgU="rm_git_untracked_files"
 
 alias dict="/usr/local/bin/dict"
@@ -1655,7 +1664,9 @@ alias ggt="google_translate"
 
 alias ggg="google_groups"
 
-alias gg="browse chrome"
+alias gg="chrome"
+
+alias cn="canary"
 
 alias cn="canary"
 

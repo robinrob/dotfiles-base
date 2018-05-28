@@ -4,3 +4,4 @@ config/files/Packages/User/Package\ Control.last-run
 config/files/Packages/User/Package\ Control.cache
 .idea
 *.DS_Store
+.history
