@@ -1,0 +1,25 @@
+local +r FilePath1=$1
+local +r FilePath2=$2
+
+IFS="
+"
+
+local +r -U Contents1=($(cat $FilePath1))
+local +r -U Contents2=($(cat $FilePath2))
+
+for item in $Contents1
+do
+  if ! $(is_in_set $item $Contents2)
+  then
+    green "$FilePath1: $(yellow +$item)"
+  fi
+done
+
+
+for item in $Contents2
+do
+  if ! $(is_in_set $item $Contents1)
+  then
+    green "$FilePath2: $(yellow +$item)"
+  fi
+done
