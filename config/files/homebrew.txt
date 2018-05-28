@@ -3,12 +3,14 @@ adns
 android-ndk
 android-sdk
 ant
+apple-gcc42
 arpack
 asciidoc
 aspcud
 aspell
 autoconf
 automake
+awk
 awscli
 bash
 bdw-gc
@@ -23,10 +25,12 @@ coreutils
 cscope
 ctags
 dict
+diffutils
 docbook
 docbook-xsl
 docbook2x
 duti
+ed
 epstool
 fasd
 fftw
@@ -64,6 +68,7 @@ go
 graphicsmagick
 grep
 gringo
+gzip
 hdf5
 heroku
 hub
@@ -113,6 +118,7 @@ nginx
 node
 npth
 nvm
+objective-caml
 ocaml
 ocamlbuild
 octave
@@ -126,6 +132,7 @@ pinentry
 pkg-config
 plotutils
 portaudio
+postgresql
 pstoedit
 pv
 pyenv
@@ -170,10 +177,3 @@ yajl
 yarn
 zlib
 zsh
-apple-gcc42
-awk
-diffutils
-ed
-gzip
-objective-caml
-postgresql
