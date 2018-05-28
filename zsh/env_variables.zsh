@@ -425,6 +425,8 @@ export DEFAULT_GIT_URL="git@github.com:robinrob"
 
 export BREWLIST=$DOTFILES_BASE_HOME/config/files/homebrew.txt
 
+export SPELLCHECK_IGNORES=$DOTFILES_BASE_HOME/config/files/spellcheck_ignores.txt
+
 export GDOC_TEMPLATE=$GOOGLE_DRIVE/new_document.gdoc
 
 export BOOKMARKS_PATH=$LISTS_HOME/bookmarks.txt

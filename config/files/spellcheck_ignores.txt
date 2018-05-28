@@ -14,7 +14,6 @@ TetrisGrid
 parallelisation
 Parallelisation
 wikipedia
-testability
 Coq
 Javascript
 PHP
@@ -24,3 +23,18 @@ Printf
 printf
 Lodash
 plaintext
+MovementType
+ElementType
+InvalidMoveException
+docstrings
+Github
+enum
+Enum
+GridSquare
+elif
+elif
+vscode
+reasonml
+
+setattr
+getattribute

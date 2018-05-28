@@ -5,7 +5,13 @@ TASK_ARGS=($*[2,-1])
 
 BASE_CMD='rake -g'
 
-rvm use $RUBY_VERSION > /dev/null && rvm gemset use rakelib
+if ! $(exec_exists rvm)
+then
+  green "Sourcing rvm ..."
+  source_rvm
+fi
+
+# rvm use $RUBY_VERSION > /dev/null && rvm gemset use rakelib
 
 if [ -f $RAKEFILE ]
 then

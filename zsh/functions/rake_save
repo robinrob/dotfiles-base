@@ -4,9 +4,8 @@ IFS=' '
   # robinrob.github.io-dev) TASK="jekyll:save" ;;
   # *) TASK="base:save" ;;
 # esac
-TASK="base:save"
 
-rake_do $TASK "$*"
+rake_do base:save "$*"
 
 # if [[ $(is_in_set $*[-1] 'bitbucket github origin live') == "yes" ]]
 # then

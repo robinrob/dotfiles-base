@@ -2,8 +2,8 @@ EXEC=$1
 
 if [[ "$(which $EXEC)" == "$EXEC not found" ]]
 then
-	print "no"
-else
-	print "yes"
+	return 1
 fi
+
+return 0
 

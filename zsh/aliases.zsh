@@ -612,6 +612,8 @@ alias bou="bower uninstall"
 
 alias pi="pip_install"
 
+alias pfr="pip freeze"
+
 alias pu="sudo pip uninstall"
 
 alias p3i="pip3_install"
@@ -1251,6 +1253,10 @@ alias spbp="spellcheck_blog_pro"
 alias spp="spellcheck_pro"
 
 alias spi="spellcheck_ignore"
+
+alias cspi="cat $SPELLCHECK_IGNORES"
+
+alias mspi="$EDITOR $SPELLCHECK_IGNORES"
 
 alias spf="spellcheck_fix"
 
