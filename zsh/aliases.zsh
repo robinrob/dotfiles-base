@@ -1254,6 +1254,8 @@ alias spp="spellcheck_pro"
 
 alias spi="spellcheck_ignore"
 
+alias spid="spellcheck_delete_ignore"
+
 alias cspi="cat $SPELLCHECK_IGNORES"
 
 alias mspi="$EDITOR $SPELLCHECK_IGNORES"
