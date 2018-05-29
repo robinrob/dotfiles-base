@@ -612,6 +612,8 @@ alias bou="bower uninstall"
 
 alias pi="pip_install"
 
+alias pfr="pip freeze"
+
 alias pu="sudo pip uninstall"
 
 alias p3i="pip3_install"
@@ -1664,7 +1666,7 @@ alias ggt="google_translate"
 
 alias ggg="google_groups"
 
-alias gg="chrome"
+alias gg="browse chrome"
 
 alias cn="canary"
 

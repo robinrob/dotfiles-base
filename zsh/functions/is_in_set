@@ -1,6 +1,7 @@
 local +r Value=$1
 local +r Set=("${(s/ /)*[2,-1]}")
 
+IFS=" "
 for item in $Set
 do
   if [[ $item == $Value ]]

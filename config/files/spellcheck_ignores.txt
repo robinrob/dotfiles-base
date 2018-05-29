@@ -24,3 +24,12 @@ Printf
 printf
 Lodash
 plaintext
+elif
+Github
+MovementType
+InvalidMoveException
+docstrings
+ElementType
+GridSquare
+Enum
+enum

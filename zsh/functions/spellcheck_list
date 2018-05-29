@@ -2,6 +2,8 @@ local +r Files=($*)
 
 for file in $Files
 do
+  IFS="
+"
   local -U WordSet=($(cat $file | aspell -d en_GB-ise list | xargs -0))
   for word in $WordSet
   do
