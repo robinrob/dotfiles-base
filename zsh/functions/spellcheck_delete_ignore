@@ -1,0 +1,4 @@
+local +r LineToDelete=$1
+
+delete_line_from_file $SPELLCHECK_IGNORES $LineToDelete
+cat $SPELLCHECK_IGNORES

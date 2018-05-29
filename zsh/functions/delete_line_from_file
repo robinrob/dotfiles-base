@@ -1,0 +1,4 @@
+local +r File=$1
+local +r Line=$2
+
+gsed -i '/^'$Line'$/d' $File
