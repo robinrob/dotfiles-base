@@ -1670,7 +1670,7 @@ alias ggt="google_translate"
 
 alias ggg="google_groups"
 
-alias gg="chrome"
+alias gg="browse chrome"
 
 alias cn="canary"
 

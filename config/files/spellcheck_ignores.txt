@@ -51,3 +51,10 @@ submodule
 submodules
 GitConfigBlockCollection
 GitConfigBlock
+SIGTERM
+zsh
+osascript
+plist
+zsh
+osascript
+plist
