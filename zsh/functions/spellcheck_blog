@@ -1,3 +1,12 @@
+local +r RawOutput=""
+
+while getopts :r opt
+do
+  case $opt in
+    r) local +r RawOutput=$TRUE; shift 1
+  esac
+done
+
 local +r Files=($*)
 
 IFS="
@@ -6,13 +15,21 @@ local +r -U Ignores=($(cat $SPELLCHECK_IGNORES))
 
 for file in $Files
 do
-  print "$(green Mis-spelled words in:) $(yellow $file)"
+  if ! [[ $RawOutput ]]
+  then
+    print "$(green Mis-spelled words in:) $(yellow $file)"
+  fi
 
   for word in $(spellcheck_list $file)
   do
     if ! $(is_in_set $word $Ignores)
     then
-      red $word
+      if [[ $RawOutput ]]
+      then
+        print $word
+      else
+        red $word
+      fi
     fi
   done
 done

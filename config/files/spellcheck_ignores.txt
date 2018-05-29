@@ -16,6 +16,7 @@ OCaml's
 PHP
 Parallelisation
 Printf
+SIGTERM
 Tetris
 TetrisGrid
 TetrisPiece
@@ -31,8 +32,12 @@ gitconfig
 gitmodules
 href
 img
+launchctl
+launchd
+osascript
 parallelisation
 plaintext
+plist
 png
 pre
 printf
@@ -50,3 +55,4 @@ th
 url
 vscode
 wikipedia
+zsh
