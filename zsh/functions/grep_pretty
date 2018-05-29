@@ -1,4 +1,4 @@
 local +r Word=$1
 local +r File=$2
 
-ggrep -n -H --color "$Word" $File
+ggrep -P -n -H --color "$Word" $File

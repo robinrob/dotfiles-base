@@ -23,6 +23,17 @@ Printf
 printf
 Lodash
 plaintext
+<<<<<<< HEAD
+elif
+Github
+MovementType
+InvalidMoveException
+docstrings
+ElementType
+GridSquare
+Enum
+enum
+=======
 MovementType
 ElementType
 InvalidMoveException
@@ -50,9 +61,5 @@ foreach
 submodule
 submodules
 GitConfigBlockCollection
-GitConfigBlockElementType
-GridSquare
-
-elif
-Github
-testability
+GitConfigBlock
+>>>>>>> bbd026dce25912e35954fb3a7e5d557d085b67f8

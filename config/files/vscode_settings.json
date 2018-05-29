@@ -12,14 +12,14 @@
   "sync.quietSync": false,
   "sync.askGistName": false,
   "workbench.colorTheme": "Solarized Dark",
-"window.zoomLevel": 0,
+"window.zoomLevel": 1,
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor": {
     "tabSize": 4,
     "detectIndentation": false,
     "wordWrap": "on",
-    "rulers": [130]
+    "rulers": [120]
   },
   "[python]": {
     "editor.tabSize": 4,

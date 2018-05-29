@@ -12,7 +12,11 @@ do
   do
     if ! $(is_in_set $word $Ignores)
     then
-      red $word
+<<<<<<< HEAD
+      grep_pretty "\\b$word\\b" $file
+=======
+      grep_pretty "(?<=\\b|[_])$word(?=\\b|[_])" $file
+>>>>>>> bbd026dce25912e35954fb3a7e5d557d085b67f8
     fi
   done
 done

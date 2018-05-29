@@ -1,6 +1,8 @@
 local +r Files=($*)
 
-local +r -U Ignores=($(cat $DOTFILES_BASE_HOME/config/files/spellcheck_ignores.txt | xargs))
+IFS="
+"
+local +r -U Ignores=($(cat $SPELLCHECK_IGNORES))
 
 for file in $Files
 do
@@ -10,7 +12,7 @@ do
   do
     if ! $(is_in_set $word $Ignores)
     then
-      grep_pretty "\\b$word\\b" $file
+      grep_pretty "(?<=\\b|[_])$word(?=\\b|[_])" $file
     fi
   done
 done

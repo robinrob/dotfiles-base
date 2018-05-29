@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-brew tap homebrew/dupes
 brew install coreutils
 
 

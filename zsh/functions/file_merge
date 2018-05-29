@@ -1,0 +1,15 @@
+local +r Files=($*)
+
+local +r -U AllContents
+
+IFS="
+"
+for file in $Files
+do
+  local +r -U AllContents=($AllContents $(cat $file))
+done
+
+for item in $AllContents
+do
+  print $item
+done

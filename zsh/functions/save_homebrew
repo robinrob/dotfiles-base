@@ -1,7 +1,18 @@
-brew_list=$DOTFILES_BASE_HOME/config/files/homebrew.$HOSTNAME.txt
+local +r ExistingBrewList=$DOTFILES_BASE_HOME/config/files/homebrew.txt
 
-print "$(green)Saving homebrew packages list to $(yellow)$brew_list$(default)"
+print "$(green)Saving homebrew packages list to $(yellow)$ExistingBrewList$(default)"
 
-rm -f $brew_list
-brew list > $brew_list
+local +r NewBrews=$DOTFILES_BASE_HOME/config/files/homebrew_new.txt
+local +r NewBrewList=$DOTFILES_BASE_HOME/config/files/homebrew2.txt
+
+rm -f $NewBrews
+rm -f $NewBrewList
+
+brew list > $NewBrews
+
+file_merge $ExistingBrewList $NewBrews | sort > $NewBrewList
+
+mv $NewBrewList $ExistingBrewList
+
+rm -f $NewBrews
 

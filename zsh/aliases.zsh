@@ -1254,6 +1254,10 @@ alias spp="spellcheck_pro"
 
 alias spi="spellcheck_ignore"
 
+alias cspi="cat $SPELLCHECK_IGNORES"
+
+alias mspi="$EDITOR $SPELLCHECK_IGNORES"
+
 alias spf="spellcheck_fix"
 
 alias rmgU="rm_git_untracked_files"
@@ -1667,6 +1671,8 @@ alias ggt="google_translate"
 alias ggg="google_groups"
 
 alias gg="browse chrome"
+
+alias cn="canary"
 
 alias cn="canary"
 
