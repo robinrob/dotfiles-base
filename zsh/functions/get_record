@@ -1,1 +1,1 @@
-get_item $1 $records
+get_item $1 $RECORDS_PATH

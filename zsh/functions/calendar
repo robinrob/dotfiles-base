@@ -1,3 +1,15 @@
 local +r DayNum=$(gdate +%e | tr -d ' ')
+local +r ExtraMonths=$1
+local +r CurrentMonth=$(gdate +%m)
 
-gcal | gcat | ggrep -E --color "\b$DayNum\b|$" | gsed 's/<\|>//g' | ggrep -E --color "\b$DayNum\b|$"
+gcal $CurrentMonth | gcat | ggrep -E --color "\b$DayNum\b|$" | gsed 's/<\|>/ /g' | ggrep -E --color "\b$DayNum\b|$"
+
+if [[ -n $ExtraMonths ]]
+then
+  local +r MaxMonth=$(( CurrentMonth + ExtraMonths ))
+  for month_num in {$(( $CurrentMonth + 1 ))..$MaxMonth}
+  do
+    gcal $month_num
+  done
+fi
+
