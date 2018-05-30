@@ -8,7 +8,7 @@ done
 
 IFS="
 "
-local +r -U UniqueWords=($(cat $SPELLCHECK_IGNORES | sort))
+local +r -U UniqueWords=($(cat $SPELLCHECK_IGNORES | sort --ignore-case))
 
 local +r NewSpellcheckIgnores=${SPELLCHECK_IGNORES}.new
 

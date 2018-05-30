@@ -3,7 +3,7 @@ local +r RawOutput=""
 while getopts :r opt
 do
   case $opt in
-    r) local +r RawOutput=$TRUE; shift 1
+    r) local +r RawOutput=$TRUE; shift; break
   esac
 done
 
