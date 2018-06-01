@@ -1,14 +1,20 @@
+<<<<<<< HEAD
 AppConfig
 AppLogger
 baseurl
+=======
+>>>>>>> 77195f19fee7302860f34ce135af39621246f53e
 CLI
-codebase
 Coq
+<<<<<<< HEAD
 csv
 docstrings
+=======
+DOTFILES
+>>>>>>> 77195f19fee7302860f34ce135af39621246f53e
 ElementType
-elif
 Enum
+<<<<<<< HEAD
 enum
 Evernote
 foreach
@@ -16,47 +22,78 @@ getattribute
 gitconfig
 GitConfigBlock
 GitConfigBlockBuilder
+=======
+>>>>>>> 77195f19fee7302860f34ce135af39621246f53e
 GitConfigBlockCollection
 GitConfigBlockElementType
 GitConfigFile
 GitConfigReader
 Github
+<<<<<<< HEAD
 gitmodules
 GitRepoTree
 GitSubDoer
+=======
+>>>>>>> 77195f19fee7302860f34ce135af39621246f53e
 GridSquare
-href
-img
+IDEs
+IntelliJ
 InvalidMoveException
 Javascript
-launchctl
-launchd
 Lodash
 MovementType
 OCaml
 OCaml's
-osascript
-Parallelisation
-parallelisation
 PHP
+Parallelisation
+Printf
+SIGTERM
+Symlink
+Tetris
+TetrisGrid
+TetrisPiece
+UI
+Utop
+VSCODE
+ZSH
+baseurl
+codebase
+config
+docstrings
+dotfiles
+elif
+enum
+foreach
+getattribute
+gitconfig
+gitmodules
+href
+img
+json
+launchctl
+launchd
+osascript
+parallelisation
 plaintext
 plist
 png
 pre
-Printf
 printf
 reasonml
 recurse
 recursing
 repo
 setattr
-SIGTERM
 src
 stressfully
 submodule
 submodules
+symlink
+symlinking
+symlinks
 td
 testability
+<<<<<<< HEAD
 TestGitConfigBlock
 TestGitConfigBlockBuilder
 TestGitConfigBlockCollection
@@ -65,23 +102,11 @@ TestGitConfigReader
 Tetris
 TetrisGrid
 TetrisPiece
+=======
+>>>>>>> 77195f19fee7302860f34ce135af39621246f53e
 th
+unix
 url
-Utop
 vscode
 wikipedia
 zsh
-DOTFILES
-IDEs
-IntelliJ
-Symlink
-UI
-VSCODE
-ZSH
-config
-dotfiles
-json
-symlink
-symlinking
-symlinks
-unix

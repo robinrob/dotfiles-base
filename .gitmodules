@@ -4,3 +4,9 @@
 [submodule "config/files/intellij-colors-solarized"]
   path = config/files/intellij-colors-solarized
   url = git@github.com:jkaving/intellij-colors-solarized.git
+[submodule "zsh/disable-startup-sound"]
+	path = zsh/disable-startup-sound
+	url = git@gist.github.com:2ccacd2d5358bcd8fc38a46f5e44228e.git
+[submodule "zsh/disable-osx-startup-sound"]
+	path = zsh/disable-osx-startup-sound
+	url = git@gist.github.com:2ccacd2d5358bcd8fc38a46f5e44228e.git

@@ -8,9 +8,7 @@ local +r NoNewline=$FALSE_VALUE
 while getopts :n opt
 do
 	case $opt in
-    n) NoNewline=$TRUE_VALUE
-      ;;
-    *) red $Usage && return 1 ;;
+    n) NoNewline=$TRUE_VALUE ;;
 	esac
 done
 

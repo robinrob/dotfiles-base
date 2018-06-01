@@ -42,6 +42,9 @@
   "[html]": {
     "editor.tabSize": 2,
   },
+  "[sass]": {
+    "editor.tabSize": 2,
+  },
   "python.linting.enabled": false,
   "python.linting.flake8Args": [],
   "python.linting.flake8Enabled": true,

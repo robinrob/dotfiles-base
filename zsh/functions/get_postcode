@@ -1,1 +1,1 @@
-print $(grec home_postcode)
+print $(get_record home_postcode)
