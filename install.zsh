@@ -63,5 +63,7 @@ generate_all_bookmarks > /dev/null
 green "Setting OSX defaults ..."
 $ZDOT_HOME/osx.zsh
 
+green "Installing disable startup sound daemon ..."
+$ZDOT_HOME/disable-osx-startup-sound/install.zsh
 
 green "Done."
