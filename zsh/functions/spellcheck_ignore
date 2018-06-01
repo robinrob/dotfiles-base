@@ -1,22 +1,23 @@
+IFS=" "
 local +r -a WordsToIgnore=($*)
 
 for word in $WordsToIgnore
 do
   printf "\n$word" >> $SPELLCHECK_IGNORES
-  IFS="
-"
-  local +r -U UniqueWords=($(cat $SPELLCHECK_IGNORES | sort))
-
-  local +r NewSpellcheckIgnores=${SPELLCHECK_IGNORES}.new
-
-  touch $NewSpellcheckIgnores
-  for word in $UniqueWords
-  do
-    if ! [[ $(print $word | tr -d ' ') == '' ]]
-    then
-      print $word >> $NewSpellcheckIgnores
-    fi
-  done
-
-  mv $NewSpellcheckIgnores $SPELLCHECK_IGNORES
 done
+
+IFS="
+"
+local +r -U UniqueWords=($(cat $SPELLCHECK_IGNORES | sort --ignore-case))
+
+local +r NewSpellcheckIgnores=${SPELLCHECK_IGNORES}.new
+
+touch $NewSpellcheckIgnores
+for word in $UniqueWords
+do
+  if ! [[ $(print $word | tr -d ' ') == '' ]]
+  then
+    print $word >> $NewSpellcheckIgnores
+  fi
+done
+mv $NewSpellcheckIgnores $SPELLCHECK_IGNORES

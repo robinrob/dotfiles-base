@@ -1,4 +1,8 @@
-local +r LineToDelete=$1
+local +r -a WordsToDelete=($*)
 
-delete_line_from_file $SPELLCHECK_IGNORES $LineToDelete
+for word in $WordsToDelete
+do
+  delete_line_from_file $SPELLCHECK_IGNORES $word
+done
+
 cat $SPELLCHECK_IGNORES
