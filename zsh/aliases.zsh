@@ -215,11 +215,11 @@ alias lsw="ls | wc -l"
 
 alias pwdp="copy_print \$(pwd)"
 
-alias ssd="red 'Shutting down!'; sudo shutdown -h now"
+alias ssd="shutdown_system"
 
 alias SSD="ssd"
 
-alias ssr="red 'Rebooting!'; sudo shutdown -r now"
+alias ssr="restart_system"
 
 alias SSR="ssr"
 

@@ -1,0 +1,3 @@
+ red 'Shutting down!'
+ silence_system
+ sudo shutdown -h now
