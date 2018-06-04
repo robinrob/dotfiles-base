@@ -1,4 +1,4 @@
-local +r LastFile=$(lastf)
+local +r LastFile=$(get_last_modified_file)
 
 print "$(green Showing file:) $(yellow $LastFile)"
 

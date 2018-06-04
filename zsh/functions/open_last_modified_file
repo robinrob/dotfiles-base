@@ -1,0 +1,9 @@
+local +r Where="$1"
+
+if [[ -n $Where ]]
+then
+  open $Where/"$(get_last_modified_file $Where)"
+else
+  open "$(get_last_modified_file $Where)"
+fi
+

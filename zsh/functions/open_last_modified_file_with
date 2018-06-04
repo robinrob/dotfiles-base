@@ -5,4 +5,4 @@ then
   local +r App=$1
 fi
 
-$($App "$(lastf)")
+$($App "$(get_last_modified_file)")

@@ -728,6 +728,8 @@ alias vpnd="vpn -q"
 ###############################################################################
 alias gs="git_status"
 
+alias gchi="git_checkout_by_item_num"
+
 alias grf="git_remove_by_item_num"
 
 alias gd="git_diff_by_item_num"
@@ -1580,9 +1582,9 @@ alias clf="clean_files"
 
 alias dtsv="dotfiles_save"
 
-alias olst="open_last_modified"
+alias olst="open_last_modified_file"
 
-alias oldl="lastf $HOME/Downloads"
+alias oldl="open_last_modified_file $HOME/Downloads"
 
 alias hmrec="salesforce_record eu1"
 
