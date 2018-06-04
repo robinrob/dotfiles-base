@@ -105,7 +105,7 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
-alias odl="open ~/Downloads"
+alias odl="open $HOME/Downloads"
 
 alias dt="date"
 
@@ -127,7 +127,7 @@ alias kl="kitchen login"
 
 alias mapsn="maps -n"
 
-alias llst="ls \$(lastf)"
+alias llst="lastf"
 
 alias mvlst="mv \$(lastf)"
 
@@ -167,9 +167,9 @@ alias dirp="dir | pbcopy && pbpaste"
 
 alias libcode="grec libcode"
 
-alias lsv="ls ~/VirtualBox\ VMs"
+alias lsv="ls $HOME/VirtualBox\ VMs"
 
-alias cdv="cd ~/VirtualBox\ VMs"
+alias cdv="cd $HOME/VirtualBox\ VMs"
 
 alias pg="rebookmark page"
 
@@ -726,6 +726,10 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
+alias gs="git_status"
+
+alias gd="git_diff"
+
 alias glu="git_ls_untracked_files"
 
 alias gchp="git cherry-pick"
@@ -886,9 +890,9 @@ alias rkp="rake_do git:push"
 ###############################################################################
 # Files
 ###############################################################################
-alias coct="cat ~/.octaverc"
+alias coct="cat $HOME/.octaverc"
 
-alias moct="$EDITOR ~/.octaverc"
+alias moct="$EDITOR $HOME/.octaverc"
 
 alias mand="$EDITOR frameworks/runtime-src/proj.android/AndroidManifest.xml"
 
@@ -1073,7 +1077,7 @@ alias window="open /Users/robinsmith/Dropbox/Camera\ Uploads/gif/window.gif"
 
 alias cleantrash="sudo rm -rf $HOME/.Trash; mkdir $HOME/.Trash"
 
-alias cleandl="clean_directory ~/Downloads"
+alias cleandl="clean_directory $HOME/Downloads"
 
 alias cgi="cat .gitignore"
 
@@ -1575,6 +1579,8 @@ alias clf="clean_files"
 alias dtsv="dotfiles_save"
 
 alias olst="open_last_modified"
+
+alias oldl="lastf $HOME/Downloads"
 
 alias hmrec="salesforce_record eu1"
 

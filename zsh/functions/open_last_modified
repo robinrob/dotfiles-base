@@ -1,10 +1,8 @@
-local +r App=$1
+local +r App="open"
 
-despace
-
-if [[ -n $App ]]
+if (( $# == 1 ))
 then
- eval "$App \$(lastf)"
-else
-  open $(lastf)
+  local +r App=$1
 fi
+
+$($App "$(lastf)")

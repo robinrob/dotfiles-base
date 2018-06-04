@@ -1,0 +1,27 @@
+IFS="
+"
+
+function line_contains_file {
+  line=$1
+  if [[ -f $(print $line | gawk '{print $2}') ]] || [[ -f $(print $line | gawk '{print $1}') ]] || $(string_contains $line 'deleted:')
+  then
+    return 0
+  else
+    return 1
+  fi
+}
+
+local item_num=1
+# Read all lines from command output INCLUDING newlines
+for line in "${(@f)"$(git status)"}"
+do
+  if line_contains_file $line
+  then
+    print "$(red $line) $(blue \($item_num\))"
+
+    item_num=$(( item_num + 1 ))
+  else
+    print $line
+  fi
+done
+

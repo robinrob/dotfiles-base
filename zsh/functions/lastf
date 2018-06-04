@@ -1,1 +1,3 @@
-copy_print $(lstr $@ | awk '{print $3}' | tail -1)
+local +r Dir=$1
+
+copy_print $(command gls $Dir -t | ghead -1)
