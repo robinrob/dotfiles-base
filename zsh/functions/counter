@@ -1,0 +1,10 @@
+trap do_exit SIGINT
+
+while true
+do
+  print date +%s
+done
+
+function do_exit {
+  exit 0
+}

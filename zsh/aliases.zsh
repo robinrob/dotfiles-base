@@ -734,6 +734,8 @@ alias grf="git_remove_by_item_num"
 
 alias gd="git_diff_by_item_num"
 
+alias gcf="git_do_by_item_num cat"
+
 alias glu="git_ls_untracked_files"
 
 alias gchp="git cherry-pick"
