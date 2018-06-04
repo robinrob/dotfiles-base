@@ -1,0 +1,8 @@
+local +r ItemNum=$1
+
+if [[ -n $ItemNum ]]
+then
+  git diff $(git_get_item_by_num $ItemNum)
+else
+  git diff
+fi

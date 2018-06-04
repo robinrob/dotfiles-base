@@ -1,0 +1,8 @@
+local +r ItemNum=$1
+
+[[ -n $ItemNum ]] || return 1
+
+IFS="
+"
+local +r -a Items=($(git status -s | gawk '{print $2}'))
+print $Items[$ItemNum]

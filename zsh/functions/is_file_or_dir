@@ -1,0 +1,8 @@
+local +r Path=$1
+
+if [[ -f $Path ]] || [[ -d $Path ]]
+then
+  return 0
+else
+  return 1
+fi

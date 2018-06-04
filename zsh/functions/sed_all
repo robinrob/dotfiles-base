@@ -20,11 +20,6 @@ do
 	esac
 done
 
-print "SedExpression: $SedExpression"
-print "FindExpression: $FindExpression"
-print "Where: $Where"
-print "GrepFirstExpression: ${GrepFirstExpression}"
-
 IFS=" 
 "
 for file in $(gfind -P $Where ${=MaxDepth} -name "$FindExpression" -type f)

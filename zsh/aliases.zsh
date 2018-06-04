@@ -728,7 +728,9 @@ alias vpnd="vpn -q"
 ###############################################################################
 alias gs="git_status"
 
-alias gd="git_diff"
+alias grf="git_remove_by_item_num"
+
+alias gd="git_diff_by_item_num"
 
 alias glu="git_ls_untracked_files"
 

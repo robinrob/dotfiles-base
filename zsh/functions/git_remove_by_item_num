@@ -1,0 +1,7 @@
+local +r ItemNum=$1
+
+[[ -n $ItemNum ]] || return 1
+
+local +r Item=$(git_get_item_by_num $ItemNum)
+
+$(is_file_or_dir $Item) && move_to_trash $Item

@@ -3,7 +3,7 @@ IFS="
 
 function line_contains_file {
   line=$1
-  if [[ -f $(print $line | gawk '{print $2}') ]] || [[ -f $(print $line | gawk '{print $1}') ]] || $(string_contains $line 'deleted:')
+  if $(is_file_or_dir $(print $line | gawk '{print $2}')) || $(is_file_or_dir $(print $line | gawk '{print $1}')) || $(string_contains $line 'deleted:')
   then
     return 0
   else

@@ -1,4 +1,4 @@
-! [[ -f .cocos-project.json ]] && red "No .cocos-project.json!" && exit 1
+! [[ -f .cocos-project.json ]] && red "No .cocos-project.json!" && return 1
 
 local +r Old=$1
 local +r New=$2

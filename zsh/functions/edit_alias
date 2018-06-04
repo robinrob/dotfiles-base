@@ -1,6 +1,6 @@
 local +r Usage="edit_alias [alias name]"
 
-(( $# > 2 )) && red $Usage && exit 1
+(( $# > 2 )) && red $Usage && return 1
 
 case $# in
   0)

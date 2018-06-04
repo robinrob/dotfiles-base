@@ -5,7 +5,7 @@ do
 		c) CAT="$OPTARG" ;;
 		d) DIR="$OPTARG" ;;
 		p) PATTERN="$OPTARG" ;;
-		*) usage ;;                # display usage and exit
+		*) usage ;;                # display usage and return
 	esac
 done
 
