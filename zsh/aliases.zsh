@@ -275,7 +275,7 @@ alias st="open -a sourceTree"
 
 alias sub="open -a 'Sublime Text'"
 
-alias vs="open -a 'Visual Studio Code'"
+alias vs="open_app 'Visual Studio Code'"
 
 alias hk="heroku"
 
@@ -1329,6 +1329,10 @@ alias tra="translate"
 alias ci="circle_ci"
 
 alias gig="git_ignore"
+
+alias gigd="git_ignore_delete"
+
+alias gdg="git diff .gitignore"
 
 alias clst="cat_last_file"
 

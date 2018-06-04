@@ -7,3 +7,8 @@ for filename in $*
 do
   print $filename >> .gitignore
 done
+
+# Remove duplicate rows
+replace_file .gitignore "$(setify_file .gitignore)"
+
+cat .gitignore

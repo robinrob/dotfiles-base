@@ -2,7 +2,7 @@ local +r -a WordsToDelete=($*)
 
 for word in $WordsToDelete
 do
-  delete_line_from_file $SPELLCHECK_IGNORES $word
+  delete_lines_from_file $SPELLCHECK_IGNORES $word
 done
 
 cat $SPELLCHECK_IGNORES

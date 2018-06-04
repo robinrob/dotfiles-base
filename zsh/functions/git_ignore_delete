@@ -1,0 +1,3 @@
+delete_lines_from_file .gitignore $*
+
+cat .gitignore

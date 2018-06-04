@@ -1,0 +1,3 @@
+local +r Filepath=$1
+
+file_merge $Filepath

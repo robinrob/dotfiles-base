@@ -1,0 +1,6 @@
+local +r Filepath=$1
+local +r Contents=$2
+
+rm -f $Filepath
+
+print $Contents > $Filepath

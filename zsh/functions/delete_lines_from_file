@@ -1,0 +1,7 @@
+local +r File=$1
+local +r -a Lines=($*[2,-1])
+
+for line in $Lines
+do
+  gsed -i '/^'$line'$/d' $File
+done
