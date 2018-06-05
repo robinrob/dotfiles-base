@@ -29,7 +29,6 @@ if [[ -n "$Url" ]]
 then
   if [[ -n $File ]]
   then
-    print here
     Url="$Url/$File"
   fi
 

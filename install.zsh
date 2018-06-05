@@ -23,12 +23,14 @@ source ~/.variables
 autoload -U +X $fpath[1]/*(:t) 2> /dev/null
 
 
+# Git
+#########################################################################
+print "$(green Installing global gitconfig:) $(yellow gitconfig) $(green ...)"
+ln -s $DOTFILES_BASE_HOME/config/files/gitconfig $HOME/.gitconfig
+
+
 # OS-X Defaults
 #########################################################################
-print "$(green Installing global gitconfig:) $(yellow gitconfig.$HOSTNAME) $(green ...)"
-cp $DOTFILES_BASE_HOME/config/files/gitconfig.$HOSTNAME $HOME/.gitconfig
-
-
 green "Installing silent system sound ..."
 cp $DOTFILES_BASE_HOME/config/files/silence.wav ~/Library/Sounds
 
