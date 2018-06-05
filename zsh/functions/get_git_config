@@ -1,0 +1,9 @@
+local +r RelevantDir=$(pwd)
+
+if [[ -f $RelevantDir/.gitconfig ]]
+then
+  print $RelevantDir/.gitconfig
+
+else
+  print $HOME/.gitconfig
+fi

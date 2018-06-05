@@ -1101,7 +1101,7 @@ alias fbs="fab save"
 
 alias fcl="fab clean"
 
-alias cgc="cat .git/config"
+alias cgc="cat \$(get_git_config)"
 
 alias cgC="cat $HOME/.gitconfig"
 
@@ -1258,6 +1258,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias lsa="ls_absolute"
+
 alias sp="spellcheck"
 
 alias spb="spellcheck_blog"
