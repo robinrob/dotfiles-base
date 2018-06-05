@@ -738,8 +738,6 @@ alias ga="git_do 'git add'"
 
 alias gcf="git_do_by_item_num cat"
 
-alias ga="git_do_by_item_num 'git add'"
-
 alias glu="git_ls_untracked_files"
 
 alias gchp="git cherry-pick"

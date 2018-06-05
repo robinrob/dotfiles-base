@@ -5,4 +5,4 @@ local +r ItemNum=$2
 
 local +r Item=$(git_get_item_by_num $ItemNum)
 
-$(is_file_or_dir $Item) && eval "$Task $Item"
+eval "$Task $Item"

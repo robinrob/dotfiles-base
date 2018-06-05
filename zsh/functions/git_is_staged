@@ -1,0 +1,10 @@
+local +r Filename=$1
+
+local +r Stage=$(git diff --cached)
+
+if $(string_contains $Stage "diff --git a/$Filename b/$Filename")
+then
+  return 0
+else
+  return 1
+fi

@@ -19,28 +19,53 @@ function get_file_from_line {
 function get_file_status {
   file=$1
 
-  git status --short $file | gawk '{print $1}'
+  print ${FileStatuses[$file]}
+}
+
+function is_staged {
+  local +r Filename=$1
+
+  if $(string_contains $GitStage "diff --git a/$Filename b/$Filename")
+  then
+    return 0
+  else
+    return 1
+  fi
 }
 
 function print_file_line {
   local +r RawLine=$1
-  local +r FileStatus=$(get_file_status $(get_file_from_line $line))
+  local +r Filename=$(get_file_from_line $line)
+  local +r FileStatus=$(get_file_status $Filename)
 
-  case $FileStatus in
-    M) line="$(red $RawLine)" ;;
-    D) line="$(red $RawLine)" ;;
-    N) line="$(red $RawLine)" ;;
-    ??) line="$(red $RawLine)" ;;
-    A) line="$(green $RawLine)" ;;
-  esac
+  if $(is_in_set $FileStatus AM MM)
+  then
+    line="$(red $RawLine)"
+  elif $(is_staged $Filename)
+  then
+    line="$(green $RawLine)"
+  else
+    line="$(red $RawLine)"
+  fi
 
   print "$line $(blue \($item_num\))"
 }
 
+local +r GitStage=$(git diff --cached)
+typeset -A FileStatuses
+
+for line in $(git status -s)
+do
+  file_status=$(print $line | gawk '{print $1}')
+  filename=$(print $line | gawk '{print $2}')
+
+  FileStatuses[$filename]=$file_status
+done
+
 if (( $# > 0 ))
 then
   local +r FilenameOrNum=$1
-  if [[ -n $FilenameOrNum ]] && is_number $FilenameOrNum > /dev/null
+  if $(is_number $FilenameOrNum)
   then
     git_do_by_item_num 'git status' $FilenameOrNum
   else

@@ -1,15 +1,14 @@
-local +r Command=$1
-local +r FilenameOrNum=$2
+IFS=" "
 
-if (( $# == 1 ))
+local +r Command=$1
+local +r -a FilenamesOrNums=($*[2,-1])
+
+if (( $# > 1 )) && $(is_number $FilenamesOrNums)
 then
-  eval "$Command"
-elif [[ -n $FilenameOrNum ]]
-then
-  if is_number $FilenameOrNum > /dev/null
-  then
-    git_do_by_item_num "$Command" $FilenameOrNum
-  else
-    eval "$Command $*[2,-1]"
-  fi
+  for FileNum in $FilenamesOrNums
+  do
+    git_do_by_item_num "$Command" $FileNum
+  done
+else
+  eval "$*"
 fi
