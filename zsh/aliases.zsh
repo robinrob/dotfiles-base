@@ -736,6 +736,8 @@ alias gd="git_diff_by_item_num"
 
 alias gcf="git_do_by_item_num cat"
 
+alias ga="git_do_by_item_num 'git add'"
+
 alias glu="git_ls_untracked_files"
 
 alias gchp="git cherry-pick"
@@ -813,8 +815,6 @@ alias gplm="git pull $DEFAULT_GIT_REMOTE master"
 alias gcm="git checkout master"
 
 alias gcd="git checkout develop"
-
-alias ga="git add"
 
 alias gsi="git submodule init"
 

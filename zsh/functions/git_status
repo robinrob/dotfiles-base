@@ -1,7 +1,7 @@
 IFS="
 "
 
-function line_contains_file {
+function line_contains_modifications {
   line=$1
   if $(is_file_or_dir $(print $line | gawk '{print $2}')) || $(is_file_or_dir $(print $line | gawk '{print $1}')) || $(string_contains $line 'deleted:')
   then
@@ -15,11 +15,14 @@ local item_num=1
 # Read all lines from command output INCLUDING newlines
 for line in "${(@f)"$(git status)"}"
 do
-  if line_contains_file $line
+  if line_contains_modifications $line
   then
     print "$(red $line) $(blue \($item_num\))"
 
     item_num=$(( item_num + 1 ))
+  elif string_contains $line 'new file:'
+  then
+    green $line
   else
     print $line
   fi
