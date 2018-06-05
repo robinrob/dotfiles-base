@@ -25,7 +25,7 @@ function get_file_status {
 function is_staged {
   local +r Filename=$1
 
-  if $(string_contains $GitStage "diff --git a/$Filename b/$Filename")
+  if $(string_contains $GitStage "$Filename")
   then
     return 0
   else
@@ -52,7 +52,7 @@ function print_file_line {
   print "$line $(blue \($FileNum\))"
 }
 
-local +r GitStage=$(git diff --cached)
+local +r GitStage=$(git diff --stat --cached)
 typeset -A FileStatuses
 typeset -A FileNums
 
