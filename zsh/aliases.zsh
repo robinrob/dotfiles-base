@@ -251,6 +251,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias wa="open -a WhatsApp"
+
 alias todo="open -a todoist"
 
 alias wch="open_weechat"
@@ -1620,7 +1622,6 @@ alias mvt="move_tags"
 
 alias mfn="edit_function"
 
-alias mwa="edit_which_alias"
 
 alias hpb="head_pbcopy"
 
