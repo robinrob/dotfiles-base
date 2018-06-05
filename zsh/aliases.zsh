@@ -732,7 +732,9 @@ alias gchi="git_checkout_by_item_num"
 
 alias grf="git_remove_by_item_num"
 
-alias gd="git_diff_by_item_num"
+alias gd="git_do 'git diff'"
+
+alias ga="git_do 'git add'"
 
 alias gcf="git_do_by_item_num cat"
 

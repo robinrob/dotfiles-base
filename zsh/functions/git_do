@@ -1,6 +1,15 @@
-ACTION=$1
-shift
-ARGS=$@
+local +r Command=$1
+local +r FilenameOrNum=$2
 
-git $ACTION $ARGS
-
+if (( $# == 1 ))
+then
+  eval "$Command"
+elif [[ -n $FilenameOrNum ]]
+then
+  if is_number $FilenameOrNum > /dev/null
+  then
+    git_do_by_item_num "$Command" $FilenameOrNum
+  else
+    eval "$Command $*[2,-1]"
+  fi
+fi

@@ -1,0 +1,3 @@
+local +r Value=$1
+
+print $Value | ggrep '[0-9]\+'

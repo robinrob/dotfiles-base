@@ -1,9 +1,9 @@
 IFS="
 "
 
-function line_contains_modifications {
+function line_contains_file {
   line=$1
-  if $(is_file_or_dir $(print $line | gawk '{print $2}')) || $(is_file_or_dir $(print $line | gawk '{print $1}')) || $(string_contains $line 'deleted:')
+  if $(is_file_or_dir $(print $line | gawk '{print $NF}')) || $(string_contains $line 'deleted:')
   then
     return 0
   else
@@ -11,20 +11,57 @@ function line_contains_modifications {
   fi
 }
 
-local item_num=1
-# Read all lines from command output INCLUDING newlines
-for line in "${(@f)"$(git status)"}"
-do
-  if line_contains_modifications $line
-  then
-    print "$(red $line) $(blue \($item_num\))"
+function get_file_from_line {
+  remove_trailing_slash $(print $line | gawk '{print $NF}')
+}
 
-    item_num=$(( item_num + 1 ))
-  elif string_contains $line 'new file:'
+
+function get_file_status {
+  file=$1
+
+  git status --short $file | gawk '{print $1}'
+}
+
+function print_file_line {
+  local +r RawLine=$1
+  local +r FileStatus=$(get_file_status $(get_file_from_line $line))
+
+  case $FileStatus in
+    M) line="$(red $RawLine)" ;;
+    D) line="$(red $RawLine)" ;;
+    N) line="$(red $RawLine)" ;;
+    ??) line="$(red $RawLine)" ;;
+    A) line="$(green $RawLine)" ;;
+  esac
+
+  print "$line $(blue \($item_num\))"
+}
+
+if (( $# > 0 ))
+then
+  local +r FilenameOrNum=$1
+  if [[ -n $FilenameOrNum ]] && is_number $FilenameOrNum > /dev/null
   then
-    green $line
+    git_do_by_item_num 'git status' $FilenameOrNum
   else
-    print $line
+    git status $*
   fi
-done
+else
+  local item_num=1
+  # Read all lines from command output INCLUDING newlines
+  for line in "${(@f)"$(git status)"}"
+  do
+    if line_contains_file $line
+    then
+      print_file_line $line $index
+      # print "$(red $line) $(blue \($item_num\))"
 
+      item_num=$(( item_num + 1 ))
+    elif string_contains $line 'new file:'
+    then
+      green $line
+    else
+      print $line
+    fi
+  done
+fi
