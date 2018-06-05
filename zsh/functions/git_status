@@ -52,7 +52,7 @@ function print_file_line {
   print "$line $(blue \($FileNum\))"
 }
 
-local +r GitStage=$(git diff --stat --cached)
+local +r GitStage=$(git diff --stat --cached | gawk '{print $1}')
 typeset -A FileStatuses
 typeset -A FileNums
 
