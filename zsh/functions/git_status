@@ -1,25 +1,29 @@
 IFS="
 "
 
-function line_contains_file {
-  line=$1
-  if $(is_file_or_dir $(print $line | gawk '{print $NF}')) || $(string_contains $line 'deleted:')
+function clean_file_line {
+  local +r Line=$1
+
+  print $(print $Line | gsed 's/\(.*\)//g')
+}
+
+function get_file_from_line {
+  local +r Line=$1
+  # local +r PossibleFile=$(remove_trailing_slash $(clean_file_line $Line | gawk '{print $NF}'))
+  local +r PossibleFile=$(remove_trailing_slash $(print $(clean_file_line $Line) | gawk '{print $NF}') | tr -d ' ')
+
+  if $(is_file_or_dir $PossibleFile) || $(string_contains $Line 'deleted:')
   then
-    return 0
+    print $PossibleFile
   else
     return 1
   fi
 }
 
-function get_file_from_line {
-  remove_trailing_slash $(print $line | gawk '{print $NF}')
-}
-
-
 function get_file_status {
-  file=$1
+  local +r File=$1
 
-  print ${FileStatuses[$file]}
+  print ${FileStatuses[$File]}
 }
 
 function is_staged {
@@ -35,21 +39,21 @@ function is_staged {
 
 function print_file_line {
   local +r RawLine=$1
-  local +r Filename=$(get_file_from_line $line)
+  local +r Filename=$2
   local +r FileStatus=$(get_file_status $Filename)
   local +r FileNum=${FileNums[$Filename]}
 
   if $(is_in_set $FileStatus AM MM)
   then
-    line="$(red $RawLine)"
+    local +r Line="$(red $RawLine)"
   elif $(is_staged $Filename)
   then
-    line="$(green $RawLine)"
+    local +r Line="$(green $RawLine)"
   else
-    line="$(red $RawLine)"
+    local +r Line="$(red $RawLine)"
   fi
 
-  print "$line $(blue \($FileNum\))"
+  print "$Line $(blue \($FileNum\))"
 }
 
 local +r GitStage=$(git diff --stat --cached | gawk '{print $1}')
@@ -59,11 +63,11 @@ typeset -A FileNums
 index=1
 for line in $(git status -s)
 do
-  file_status=$(print $line | gawk '{print $1}')
-  filename=$(print $line | gawk '{print $2}')
+  local +r FileStatus=$(print $line | gawk '{print $1}')
+  local +r Filename=$(print $line | gawk '{print $2}')
 
-  FileStatuses[$filename]=$file_status
-  FileNums[$filename]=$index
+  FileStatuses[$Filename]=$FileStatus
+  FileNums[$Filename]=$index
 
   index=$(( index + 1 ))
 done
@@ -78,14 +82,16 @@ then
     git status $*
   fi
 else
-  text=""
+  # local text=""
 
   # Read all lines from command output INCLUDING newlines
   for line in "${(@f)"$(git status)"}"
   do
-    if line_contains_file $line
+    local +r PossibleFile=$(get_file_from_line $line)
+    # print "PossibleFile: ${PossibleFile}"
+    if [[ -n $PossibleFile ]]
     then
-      print_file_line $line
+      print_file_line $line $PossibleFile
       # text="$text $(print_file_line $line)\n"
 
     else
