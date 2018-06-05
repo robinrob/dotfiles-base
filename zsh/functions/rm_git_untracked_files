@@ -1,3 +1,4 @@
+IFS=" "
 local +r Files=($(git_untracked | xargs))
 
 if [[ -n $Files ]]

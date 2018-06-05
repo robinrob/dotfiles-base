@@ -37,6 +37,7 @@ function print_file_line {
   local +r RawLine=$1
   local +r Filename=$(get_file_from_line $line)
   local +r FileStatus=$(get_file_status $Filename)
+  local +r FileNum=${FileNums[$Filename]}
 
   if $(is_in_set $FileStatus AM MM)
   then
@@ -48,18 +49,23 @@ function print_file_line {
     line="$(red $RawLine)"
   fi
 
-  print "$line $(blue \($item_num\))"
+  print "$line $(blue \($FileNum\))"
 }
 
 local +r GitStage=$(git diff --cached)
 typeset -A FileStatuses
+typeset -A FileNums
 
+index=1
 for line in $(git status -s)
 do
   file_status=$(print $line | gawk '{print $1}')
   filename=$(print $line | gawk '{print $2}')
 
   FileStatuses[$filename]=$file_status
+  FileNums[$filename]=$index
+
+  index=$(( index + 1 ))
 done
 
 if (( $# > 0 ))
@@ -72,19 +78,17 @@ then
     git status $*
   fi
 else
-  local item_num=1
   # Read all lines from command output INCLUDING newlines
   for line in "${(@f)"$(git status)"}"
   do
     if line_contains_file $line
     then
-      print_file_line $line $index
-      # print "$(red $line) $(blue \($item_num\))"
+      print_file_line $line
 
-      item_num=$(( item_num + 1 ))
     elif string_contains $line 'new file:'
     then
       green $line
+
     else
       print $line
     fi
