@@ -78,19 +78,19 @@ then
     git status $*
   fi
 else
+  text=""
+
   # Read all lines from command output INCLUDING newlines
   for line in "${(@f)"$(git status)"}"
   do
     if line_contains_file $line
     then
       print_file_line $line
-
-    elif string_contains $line 'new file:'
-    then
-      green $line
+      # text="$text $(print_file_line $line)\n"
 
     else
       print $line
+      # text="$text $line\n"
     fi
   done
 fi

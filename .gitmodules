@@ -5,5 +5,5 @@
   path = config/files/intellij-colors-solarized
   url = git@github.com:jkaving/intellij-colors-solarized.git
 [submodule "zsh/disable-osx-startup-sound"]
-	path = zsh/disable-osx-startup-sound
-	url = git@github.com:robinrob/immutable
+  path = zsh/disable-osx-startup-sound
+  url = git@github.com:robinrob/immutable
