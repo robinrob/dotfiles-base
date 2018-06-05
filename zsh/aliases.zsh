@@ -251,6 +251,10 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias n="open -a Notes"
+
+alias notes="open -a Notes"
+
 alias todo="open -a todoist"
 
 alias wch="open_weechat"
