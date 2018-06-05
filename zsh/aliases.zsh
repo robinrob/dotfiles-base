@@ -251,13 +251,11 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
-<<<<<<< HEAD
 alias wa="open -a WhatsApp"
-=======
+
 alias n="open -a Notes"
 
 alias notes="open -a Notes"
->>>>>>> 3c2de50ec36829d022d3836b0e00c86d3da212bb
 
 alias todo="open -a todoist"
 
