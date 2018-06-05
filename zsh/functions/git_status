@@ -64,7 +64,7 @@ index=1
 for line in $(git status -s)
 do
   local +r FileStatus=$(print $line | gawk '{print $1}')
-  local +r Filename=$(print $line | gawk '{print $2}')
+  local +r Filename=$(remove_trailing_slash $(print $line | gawk '{print $2}'))
 
   FileStatuses[$Filename]=$FileStatus
   FileNums[$Filename]=$index

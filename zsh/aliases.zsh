@@ -734,9 +734,13 @@ alias gchi="git_checkout_by_item_num"
 
 alias grf="git_remove_by_item_num"
 
+alias gig="git_do git_ignore"
+
 alias gd="git_do 'git diff'"
 
 alias ga="git_do 'git add'"
+
+alias gch="git_do 'git checkout'"
 
 alias gcf="git_do_by_item_num cat"
 
@@ -797,8 +801,6 @@ alias gbd="git branch -d"
 alias gbD="git branch -D"
 
 alias gbm="git branch master && git checkout master	"
-
-alias gch="git checkout"
 
 alias gb="git branch"
 
@@ -1340,7 +1342,7 @@ alias tra="translate"
 
 alias ci="circle_ci"
 
-alias gig="git_ignore"
+# alias gig="git_ignore"
 
 alias gigd="git_ignore_delete"
 
