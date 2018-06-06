@@ -10,7 +10,7 @@ Files=($(gfind . -maxdepth 1))
 
 for file in $Files
 do
-  move_to_trash $file
+  trash $file
 done
 
 cd $Pwd > /dev/null

@@ -1,7 +1,13 @@
-local +r ItemNum=$1
+local +r -a ItemNums=($*)
 
-[[ -n $ItemNum ]] || return 1
+[[ -z $ItemNums ]] && return 1
 
-local +r Item=$(git_get_item_by_num $ItemNum)
+for ItemNum in $ItemNums
+do
+  local +r Item=$(git_get_item_by_num $ItemNum)
 
-$(is_file_or_dir $Item) && move_to_trash $Item
+  if $(is_file_or_dir $Item)
+  then
+    trash $Item
+  fi
+done
