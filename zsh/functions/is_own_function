@@ -1,0 +1,8 @@
+local +r FunctionName=$1
+
+if ls $FUNCS_HOME/$FunctionName > /dev/null 2> /dev/null
+then
+  return 0
+else
+  return 1
+fi

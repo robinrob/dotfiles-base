@@ -1,0 +1,7 @@
+local +r Color=$1; shift
+local +r Text=$@
+
+local +r StartColorTag=$(create_color_tag $(get_color_code $Color))
+local +r EndColorTag=$(create_color_tag $(get_color_code DEFAULT))
+
+color_text $StartColorTag $EndColorTag $Text

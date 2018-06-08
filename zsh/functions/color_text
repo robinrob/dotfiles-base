@@ -1,0 +1,11 @@
+local +r StartColorTag=$1; local +r EndColorTag=$2; shift 2
+local +r Text=$@
+
+if [[ -n "$Text" ]]
+then
+  # Terminated coloring
+  print "$(eval print $StartColorTag'$Text'$EndColorTag)"
+else
+  # Open-ended coloring
+  print -n "$(eval print $StartColorTag)"
+fi

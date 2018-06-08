@@ -1,0 +1,15 @@
+# Create basic prefix/suffix symbols to wrap around color code, used in shell
+local Prefix='"["'; local Suffix='m'
+
+while getopts :p opt
+do
+  case $opt in
+    # Append extra symbols to prefix/suffix to make the tag work in prompt
+    p) Prefix="%{$Prefix"; Suffix="$Suffix%}"; shift ;;
+  esac
+done
+
+local +r ColorCode=$1
+
+# Complete color tag
+print ${Prefix}${ColorCode}${Suffix}

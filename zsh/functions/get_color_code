@@ -1,1 +1,4 @@
-print $colors[$1]
+# Get the corresponding color code for the given color name
+local +r ColorName=$1
+
+print '${COLORS['$ColorName']}'
