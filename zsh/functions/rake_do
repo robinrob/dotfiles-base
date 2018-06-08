@@ -11,8 +11,6 @@ then
   source_rvm
 fi
 
-# rvm use $RUBY_VERSION > /dev/null && rvm gemset use rakelib
-
 if [ -f $RAKEFILE ]
 then
   print "$(green "Using Rakefile: ")$(yellow)$RAKEFILE $(default)"

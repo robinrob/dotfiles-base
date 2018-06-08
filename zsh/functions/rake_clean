@@ -1,4 +1,9 @@
-local -a Wheres=($*)
+if (( $# > 0))
+then
+  local -a Wheres=($*)
+else
+  local -a Wheres=(.)
+fi
 
 for where in $Wheres
 do
