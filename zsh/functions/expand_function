@@ -1,0 +1,14 @@
+local +r FunctionName=$1
+
+IFS=" "
+local +r -a Words=($(which $FunctionName | xargs))
+
+local +r -a Functions
+
+for word in $Words
+do
+  if [[ $(which_type $word) == 'function' ]]
+  then
+    print $word
+  fi
+done

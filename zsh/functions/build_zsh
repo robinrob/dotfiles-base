@@ -1,0 +1,8 @@
+local +r FunctionName=$1
+
+local +r Contents=""
+
+Contents=$(which $FunctionName)
+
+print $Contents
+
