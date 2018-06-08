@@ -1,74 +1,214 @@
-source $ZDOT_HOME/color_codes.zsh
+#Black       0;30     Dark Gray     1;30
+#Blue        0;34     bright Blue    1;34
+#Green       0;32     bright Green   1;32
+#Cyan        0;36     bright Cyan    1;36
+#Red         0;31     bright Red     1;31
+#Purple      0;35     bright Magenta  1;35
+#Brown       0;33     Yellow        1;33
+#bright Gray  0;37     White         1;37
 
-function shellcolor {
-  color=$1; shift
-
-  start=$(colorencode $(colorcode $color))
-  end=$(colorencode $(colorcode DEFAULT))
-
-  color $start $end $@
-}
-
-function promptcolor  {
-  color=$1; shift
-
-  start=$(colorencode -p $(colorcode $color))
-  end=$(colorencode -p $(colorcode DEFAULT))
-
-  color $start $end $@
-}
+export ccdefault="0"
+export ccblack="0;30"
+export ccdarkgrey="1;30"
+export ccred="0;31"
+export ccbrightred="1;31"
+export ccgreen="0;32"
+export ccbrightgreen="1;32"
+export ccyellow="0;33"
+export ccbrightyellow="1;33"
+export ccblue="0;34"
+export ccbrightblue="1;34"
+export ccmagenta="0;35"
+export ccbrightmagenta="1;35"
+export cccyan="0;36"
+export ccbrightcyan="1;36"
+export ccwhite="0;37"
+export ccbrightwhite="1;37"
 
 function color {
-  start=$1; end=$2; shift 2
-
-	if [[ -n "$@" ]]
+	color=$1
+	shift;
+	start=$(colorencode $color)
+	end=$(colorencode default)
+	if [[ "$@" == "" ]]
 	then
-    print "$(eval print $start'$@'$end)"
+		echo "`eval echo $start`"
 	else
-    print -n "$(eval print $start)"
+		echo "`eval echo $start'$@'$end`"
 	fi
 }
 
 function colorencode {
-  prefix='"["'; suffix='m'
-
-  while getopts :p opt
-  do
-    case $opt in
-      p)
-        prefix="%{$prefix"; suffix="$suffix%}"; shift ;;
-    esac
-  done
-	
-	print ${prefix}${1}${suffix}
+	prefix='$(echo "[")'
+	suffix='m'
+	echo $prefix'${cc'$1'}'$suffix
 }
 
-function colorcode {
-	print '${COLORS['$1']}'
+function promptcolor {
+	color=$1
+	shift;
+	start=$(promptcolorencode $color)
+	end=$(promptcolorencode default)
+	if [[ "$@" == "" ]]
+	then
+		echo "`eval echo $start`"
+	else
+		echo "`eval echo $start'$@'$end`"
+	fi
 }
 
-# Progamatically-define shell and prompt color functions. This one's a beauty!!
-for key in ${(k)COLORS}
-  do
-    eval "function ${key:l} { shellcolor $key \$@ }"
-    eval "function ${key:l}prompt { promptcolor $key \$@ }"
-done
+function promptcolorencode {
+	prefix='%{$(echo "[")'
+	suffix='m%}'
+	echo $prefix'${cc'$1'}'$suffix
+}
 
-# Now you will be able to use terminal and prompt color functions like below.
-# Each type comes in two forms: open-ended, and default-ended. This is 
-# demonstrated in the below examples:
-# 
-# Terminal colors:
-#
-# red this is red; print this is default
-#
-# red; print this is red; default; print this is default
-# print "$(red This is red), whilst this is default"
-# print "$(red)This is red, $(default)whilst this is default"
-#
-#
-# Prompt colors:
-#
-# redprompt this is red prompt; defaultprompt this is default
-#
-# redprompt; print this is red prompt; defaultprompt; print this is default
+# Shell colors
+function default {
+	color default $@
+}
+
+function black {
+	color black $@
+}
+
+function darkgrey {
+	color darkgrey $@
+}
+
+function red {
+	color red $@
+}
+
+function brightred {
+	color brightred $@
+}
+
+function green {
+	color green $@
+}
+
+function brightgreen {
+	color brightgreen $@
+}
+
+function yellow {
+	color yellow $@
+}
+
+function brightyellow {
+	color brightyellow $@
+}
+
+function blue {
+	color blue $@
+}
+
+function brightblue {
+	color brightblue $@
+}
+
+function magenta {
+	color magenta $@
+}
+
+function brightmagenta {
+	color brightmagenta $@
+}
+
+function cyan {
+	color cyan $@
+}
+
+function brightcyan {
+	color brightcyan $@
+}
+
+function white {
+	color white $@
+}
+
+function brightwhite {
+	color brightwhite $@
+}
+
+function maganda {
+	brightmagenta $@
+}
+
+# Prompt colors
+function defaultprompt {
+	promptcolor default $@
+}
+
+function blackprompt {
+	promptcolor black $@
+}
+
+function darkgreyprompt {
+	promptcolor darkgrey $@
+}
+
+function redprompt {
+	promptcolor red $@
+}
+
+function brightredprompt {
+	promptcolor brightred $@
+}
+
+function greenprompt {
+	promptcolor green $@
+}
+
+function brightredprompt {
+	promptcolor brightred $@
+}
+
+function brightgreenprompt {
+	promptcolor brightgreen $@
+}
+
+function yellowprompt {
+	promptcolor yellow $@
+}
+
+function brightyellowprompt {
+	promptcolor brightyellow $@
+}
+
+function blueprompt {
+	promptcolor blue $@
+}
+
+function brightblueprompt {
+	promptcolor brightblue $@
+}
+
+function magentaprompt {
+	promptcolor magenta $@
+}
+
+function brightmagentaprompt {
+	promptcolor brightmagenta $@
+}
+
+function cyanprompt {
+	promptcolor cyan $@
+}
+
+function brightcyanprompt {
+	promptcolor brightcyan $@
+}
+
+function whiteprompt {
+	promptcolor white $@
+}
+
+function brightwhiteprompt {
+	promptcolor brightwhite $@
+}
+
+function magandaprompt {
+	brightmagentaprompt $@
+}

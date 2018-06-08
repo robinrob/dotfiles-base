@@ -1,6 +1,7 @@
 local +r Value=$1
 
-if [[ -n $(print $Value | tr -d '[:alpha:]' | ggrep '[0-9]\+') ]]
+# If $Value is non-null and result of removing all numbers is empty string, then $Value is a number
+if [[ -n $Value ]] && [[ -z $(print $Value | tr -d '[0-9]') ]]
 then
   return 0
 else
