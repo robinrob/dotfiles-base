@@ -1,14 +1,9 @@
 local +r FunctionName=$1
 
 IFS=" "
-local +r -a Words=($(which $FunctionName | xargs))
+local +r -U FunctionList=($(expand_function_list $FunctionName))
 
-local +r -a Functions
-
-for word in $Words
+for func in $FunctionList
 do
-  if [[ $(which_type $word) == 'function' ]]
-  then
-    print $word
-  fi
+  which $func
 done

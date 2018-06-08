@@ -1,11 +1,15 @@
-<<<<<<< HEAD
 local +r FunctionName=$1
+local +r ScriptPath=$2
 
-local +r Contents=""
+rm -f $ScriptPath
+touch $ScriptPath
 
-Contents=$(which $FunctionName)
+local +r Script="$(expand_function $FunctionName)"
 
-print $Contents
-=======
->>>>>>> 652e9c49f0742254f69e1c04dc5d822d6743005a
+if [[ $(print -r $Script | ggrep COLORS) ]]
+then
+  cat $ZDOT_HOME/color_codes.zsh >> $ScriptPath
+fi
+
+print $Script >> $ScriptPath
 

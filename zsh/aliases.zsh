@@ -251,8 +251,6 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
-alias wa="open -a WhatsApp"
-
 alias n="open -a Notes"
 
 alias notes="open -a Notes"

@@ -9,7 +9,7 @@ local +r -U Contents2=($(cat $FilePath2))
 
 for item in $Contents1
 do
-  if ! $(is_in_set $item $Contents2)
+  if ! $(is_in_set $Contents2 $item)
   then
     green "$FilePath1: $(yellow +$item)"
   fi
@@ -18,7 +18,7 @@ done
 
 for item in $Contents2
 do
-  if ! $(is_in_set $item $Contents1)
+  if ! $(is_in_set $Contents1 $item)
   then
     green "$FilePath2: $(yellow +$item)"
   fi

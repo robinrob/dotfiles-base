@@ -1,4 +1,4 @@
-if which $1 | grep "$1 () {" > /dev/null
+if which $1 | ggrep "$1 () {" > /dev/null
 then
   return 0
 else

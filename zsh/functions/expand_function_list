@@ -1,0 +1,22 @@
+# Function to expand
+local +r FunctionName=$1
+local +r -U ExistingFunctions=($FunctionName $2)
+# print "ExistingFunctions: ${ExistingFunctions}"
+
+IFS=" "
+local +r -U Words=($(func_contents $FunctionName | ggrep -Po '\b[[:alpha:]_]+\b' | xargs))
+
+# Array of function names
+local +r -U Functions
+
+for word in $Words
+do
+  if [[ $word != $FunctionName ]] && ! $(is_in_set $Functions $word) && ! $(is_in_set $ExistingFunctions $word) && is_name_case $word && is_function $word
+  then
+    Functions=($Functions $word)
+    Functions=($Functions $(expand_function_list $word $Functions))
+  fi
+done
+
+print $FunctionName $(setify_list $Functions)
+

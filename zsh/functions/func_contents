@@ -1,0 +1,3 @@
+local +r FunctionName=$1
+
+ which $FunctionName | ghead -n -1 | gtail -n +2

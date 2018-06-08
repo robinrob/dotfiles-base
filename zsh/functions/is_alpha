@@ -1,0 +1,9 @@
+local +r Word=$1
+
+if [[ $(print $Word | tr -d '^[:alpha:]') == "" ]]
+then
+  return 0
+else
+  return 1
+fi
+

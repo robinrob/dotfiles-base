@@ -22,7 +22,7 @@ do
 
   for word in $(spellcheck_list $file)
   do
-    if ! $(is_in_set $word $Ignores)
+    if ! $(is_in_set $Ignores $word)
     then
       if [[ $RawOutput ]]
       then

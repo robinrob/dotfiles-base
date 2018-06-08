@@ -1,0 +1,3 @@
+local +r -U Set=($*)
+
+copy_print $Set

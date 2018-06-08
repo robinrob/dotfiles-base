@@ -1,30 +1,10 @@
-typeset -Ag colors
-
-colors[default]='0'
-colors[black]='0;30'
-colors[darkgrey]='1;30'
-colors[red]='0;31'
-colors[brightred]='1;31'
-colors[green]='0;32'
-colors[brightgreen]='1;32'
-colors[yellow]='0;33'
-colors[brightyellow]='1;33'
-colors[blue]='0;34'
-colors[brightblue]='1;34'
-colors[magenta]='0;35'
-colors[brightmagenta]='1;35'
-colors[cyan]='0;36'
-colors[brightcyan]='1;36'
-colors[white]='0;37'
-colors[brightwhite]='1;37'
-colors[magenta]='1;35'
-
+source $ZDOT_HOME/color_codes.zsh
 
 function shellcolor {
   color=$1; shift
 
   start=$(colorencode $(colorcode $color))
-  end=$(colorencode $(colorcode default))
+  end=$(colorencode $(colorcode DEFAULT))
 
   color $start $end $@
 }
@@ -33,7 +13,7 @@ function promptcolor  {
   color=$1; shift
 
   start=$(colorencode -p $(colorcode $color))
-  end=$(colorencode -p $(colorcode default))
+  end=$(colorencode -p $(colorcode DEFAULT))
 
   color $start $end $@
 }
@@ -64,14 +44,14 @@ function colorencode {
 }
 
 function colorcode {
-	print '${colors['$1']}'
+	print '${COLORS['$1']}'
 }
 
 # Progamatically-define shell and prompt color functions. This one's a beauty!!
-for key in ${(k)colors}
+for key in ${(k)COLORS}
   do
-    eval "function $key { shellcolor $key \$@ }"
-    eval "function ${key}prompt { promptcolor $key \$@ }"
+    eval "function ${key:l} { shellcolor $key \$@ }"
+    eval "function ${key:l}prompt { promptcolor $key \$@ }"
 done
 
 # Now you will be able to use terminal and prompt color functions like below.

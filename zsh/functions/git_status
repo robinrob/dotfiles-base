@@ -43,7 +43,7 @@ function print_file_line {
   local +r FileStatus=$(get_file_status $Filename)
   local +r FileNum=${FileNums[$Filename]}
 
-  if $(is_in_set $FileStatus AM MM)
+  if $(is_in_set AM MM $FileStatus)
   then
     local +r Line="$(red $RawLine)"
   elif $(is_staged $Filename)

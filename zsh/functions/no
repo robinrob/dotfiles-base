@@ -1,4 +1,4 @@
 while :
 do
-  print no
+  print "no"
 done

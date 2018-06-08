@@ -1,9 +1,8 @@
-local +r Value=$1
-
 IFS=" "
-local +r -U Set=(${(s/ /)*[2,-1]})
+local +r -U Set=(${(s/ /)*[1,-2]})
 
-IFS=" "
+local +r -U Value=$*[-1]
+
 for item in $Set
 do
   if [[ $item == $Value ]]
