@@ -20,12 +20,6 @@ function get_file_from_line {
   fi
 }
 
-function get_file_status {
-  local +r File=$1
-
-  print ${FileStatuses[$File]}
-}
-
 function is_staged {
   local +r Filename=$1
 
@@ -40,7 +34,7 @@ function is_staged {
 function print_file_line {
   local +r RawLine=$1
   local +r Filename=$2
-  local +r FileStatus=$(get_file_status $Filename)
+  local +r FileStatus=${FileStatuses[$Filename]}
   local +r FileNum=${FileNums[$Filename]}
 
   if $(is_in_set AM MM $FileStatus)
@@ -53,7 +47,7 @@ function print_file_line {
     local +r Line="$(red $RawLine)"
   fi
 
-  print "$Line $(blue \($FileNum\))"
+  print "$Line $(blue $FileNum)"
 }
 
 local +r GitStage=$(git diff --stat --cached | gawk '{print $1}')

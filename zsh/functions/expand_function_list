@@ -12,7 +12,7 @@ local +r -U Functions
 for word in $Words
 do
   # print "word: ${word}"
-  if ! $(is_in_set $Functions $word) && ! $(is_in_set $ExistingFunctions $word) && is_name_case $word && is_own_function $word
+  if ! $(is_in_set $Functions $word) && ! $(is_in_set $ExistingFunctions $word) && is_name_case $word && is_function $word
   then
     # print "word: ${word}"
     local +r -U AllExistingFunctions=($ExistingFunctions $Functions)

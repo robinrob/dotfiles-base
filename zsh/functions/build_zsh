@@ -4,12 +4,7 @@ local +r ScriptPath=$2
 rm -f $ScriptPath
 touch $ScriptPath
 
-local +r Script="$(expand_function $FunctionName)"
-
-if [[ $(print -r $Script | ggrep COLORS) ]]
-then
-  cat $ZDOT_HOME/color_codes.zsh >> $ScriptPath
-fi
+local +r Script="$(expand_function $FunctionName)\n$(which create_color_functions)\ncreate_color_functions"
 
 print $Script >> $ScriptPath
 
