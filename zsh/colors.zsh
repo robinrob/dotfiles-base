@@ -1,214 +1,93 @@
-#Black       0;30     Dark Gray     1;30
-#Blue        0;34     bright Blue    1;34
-#Green       0;32     bright Green   1;32
-#Cyan        0;36     bright Cyan    1;36
-#Red         0;31     bright Red     1;31
-#Purple      0;35     bright Magenta  1;35
-#Brown       0;33     Yellow        1;33
-#bright Gray  0;37     White         1;37
+source $ZDOT_HOME/color_codes.zsh
 
-export ccdefault="0"
-export ccblack="0;30"
-export ccdarkgrey="1;30"
-export ccred="0;31"
-export ccbrightred="1;31"
-export ccgreen="0;32"
-export ccbrightgreen="1;32"
-export ccyellow="0;33"
-export ccbrightyellow="1;33"
-export ccblue="0;34"
-export ccbrightblue="1;34"
-export ccmagenta="0;35"
-export ccbrightmagenta="1;35"
-export cccyan="0;36"
-export ccbrightcyan="1;36"
-export ccwhite="0;37"
-export ccbrightwhite="1;37"
+# Color the given shell text with the given color
+function color_shell_text {
+  local +r Color=$1; shift
+  local +r Text=$@
 
-function color {
-	color=$1
-	shift;
-	start=$(colorencode $color)
-	end=$(colorencode default)
-	if [[ "$@" == "" ]]
+  local +r StartColorTag=$(create_color_tag $(get_color_code $Color))
+  local +r EndColorTag=$(create_color_tag $(get_color_code DEFAULT))
+
+  color_text $StartColorTag $EndColorTag $Text
+}
+
+# Color the given prompt text with the given color
+function color_prompt_text  {
+  local +r Color=$1; shift
+  local +r Text=$@
+
+  local +r StartColorTag=$(create_color_tag -p $(get_color_code $Color))
+  local +r EndColorTag=$(create_color_tag -p $(get_color_code DEFAULT))
+
+  color_text $StartColorTag $EndColorTag $Text
+}
+
+# Start coloring with given start color tag. If text is supplied, terminate with the given end color tag.
+function color_text {
+  local +r StartColorTag=$1; local +r EndColorTag=$2; shift 2
+  local +r Text=$@
+
+	if [[ -n "$Text" ]]
 	then
-		echo "`eval echo $start`"
+    # Terminated coloring
+    print "$(eval print $StartColorTag'$Text'$EndColorTag)"
 	else
-		echo "`eval echo $start'$@'$end`"
+    # Open-ended coloring
+    print -n "$(eval print $StartColorTag)"
 	fi
 }
 
-function colorencode {
-	prefix='$(echo "[")'
-	suffix='m'
-	echo $prefix'${cc'$1'}'$suffix
+# Combine the given color code with the relevant symbols to generate the shell/prompt-specific color tag
+function create_color_tag {
+  # Create basic prefix/suffix symbols to wrap around color code, used in shell
+  local Prefix='"["'; local Suffix='m'
+
+  while getopts :p opt
+  do
+    case $opt in
+      # Append extra symbols to prefix/suffix to make the tag work in prompt
+      p) Prefix="%{$Prefix"; Suffix="$Suffix%}"; shift ;;
+    esac
+  done
+
+  local +r ColorCode=$1
+	
+  # Complete color tag
+	print ${Prefix}${ColorCode}${Suffix}
 }
 
-function promptcolor {
-	color=$1
-	shift;
-	start=$(promptcolorencode $color)
-	end=$(promptcolorencode default)
-	if [[ "$@" == "" ]]
-	then
-		echo "`eval echo $start`"
-	else
-		echo "`eval echo $start'$@'$end`"
-	fi
+# Get the corresponding color code for the given color name
+function get_color_code {
+  local +r ColorName=$1
+
+	print '${COLORS['$ColorName']}'
 }
 
-function promptcolorencode {
-	prefix='%{$(echo "[")'
-	suffix='m%}'
-	echo $prefix'${cc'$1'}'$suffix
-}
+# Progamatically-define shell and prompt color functions by iterating over
+# the COLORS hash.
+# 
+# Resulting functions are e.g. red, redprompt, green, greenprompt etc.
+for key in ${(k)COLORS}
+  do
+    eval "function ${key:l} { color_shell_text $key \$@ }"
+    eval "function ${key:l}prompt { color_prompt_text $key \$@ }"
+done
 
-# Shell colors
-function default {
-	color default $@
-}
-
-function black {
-	color black $@
-}
-
-function darkgrey {
-	color darkgrey $@
-}
-
-function red {
-	color red $@
-}
-
-function brightred {
-	color brightred $@
-}
-
-function green {
-	color green $@
-}
-
-function brightgreen {
-	color brightgreen $@
-}
-
-function yellow {
-	color yellow $@
-}
-
-function brightyellow {
-	color brightyellow $@
-}
-
-function blue {
-	color blue $@
-}
-
-function brightblue {
-	color brightblue $@
-}
-
-function magenta {
-	color magenta $@
-}
-
-function brightmagenta {
-	color brightmagenta $@
-}
-
-function cyan {
-	color cyan $@
-}
-
-function brightcyan {
-	color brightcyan $@
-}
-
-function white {
-	color white $@
-}
-
-function brightwhite {
-	color brightwhite $@
-}
-
-function maganda {
-	brightmagenta $@
-}
-
-# Prompt colors
-function defaultprompt {
-	promptcolor default $@
-}
-
-function blackprompt {
-	promptcolor black $@
-}
-
-function darkgreyprompt {
-	promptcolor darkgrey $@
-}
-
-function redprompt {
-	promptcolor red $@
-}
-
-function brightredprompt {
-	promptcolor brightred $@
-}
-
-function greenprompt {
-	promptcolor green $@
-}
-
-function brightredprompt {
-	promptcolor brightred $@
-}
-
-function brightgreenprompt {
-	promptcolor brightgreen $@
-}
-
-function yellowprompt {
-	promptcolor yellow $@
-}
-
-function brightyellowprompt {
-	promptcolor brightyellow $@
-}
-
-function blueprompt {
-	promptcolor blue $@
-}
-
-function brightblueprompt {
-	promptcolor brightblue $@
-}
-
-function magentaprompt {
-	promptcolor magenta $@
-}
-
-function brightmagentaprompt {
-	promptcolor brightmagenta $@
-}
-
-function cyanprompt {
-	promptcolor cyan $@
-}
-
-function brightcyanprompt {
-	promptcolor brightcyan $@
-}
-
-function whiteprompt {
-	promptcolor white $@
-}
-
-function brightwhiteprompt {
-	promptcolor brightwhite $@
-}
-
-function magandaprompt {
-	brightmagentaprompt $@
-}
+# Now you will be able to use terminal and prompt color functions like below.
+# Each type comes in two forms: open-ended, and default-ended. This is 
+# demonstrated in the below examples:
+# 
+# Terminal colors:
+#
+# red this is red; print this is default
+#
+# red; print this is red; default; print this is default
+# print "$(red This is red), whilst this is default"
+# print "$(red)This is red, $(default)whilst this is default"
+#
+#
+# Prompt colors:
+#
+# redprompt this is red prompt; defaultprompt this is default
+#
+# redprompt; print this is red prompt; defaultprompt; print this is default
