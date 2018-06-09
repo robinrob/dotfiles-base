@@ -1,3 +1,30 @@
+create_color_functions () {
+	typeset -Ag COLORS
+	COLORS[DEFAULT]='0' 
+	COLORS[BLACK]='0;30' 
+	COLORS[DARKGREY]='1;30' 
+	COLORS[RED]='0;31' 
+	COLORS[BRIGHTRED]='1;31' 
+	COLORS[GREEN]='0;32' 
+	COLORS[BRIGHTGREEN]='1;32' 
+	COLORS[YELLOW]='0;33' 
+	COLORS[BRIGHTYELLOW]='1;33' 
+	COLORS[BLUE]='0;34' 
+	COLORS[BRIGHTBLUE]='1;34' 
+	COLORS[MAGENTA]='0;35' 
+	COLORS[BRIGHTMAGENTA]='1;35' 
+	COLORS[CYAN]='0;36' 
+	COLORS[BRIGHTCYAN]='1;36' 
+	COLORS[WHITE]='0;37' 
+	COLORS[BRIGHTWHITE]='1;37' 
+	COLORS[MAGENTA]='1;35' 
+	for key in ${(k)COLORS}
+	do
+		eval "function ${key:l} { color_shell_text $key $@ }"
+		eval "function ${key:l}prompt { color_prompt_text $key $@ }"
+	done
+}
+create_color_functions
 git_status () {
 	IFS="
 " 
@@ -15,10 +42,6 @@ git_status () {
 			return 1
 		fi
 	}
-	get_file_status () {
-		local +r File=$1 
-		print ${FileStatuses[$File]}
-	}
 	is_staged () {
 		local +r Filename=$1 
 		if $(string_contains $GitStage "$Filename")
@@ -31,7 +54,7 @@ git_status () {
 	print_file_line () {
 		local +r RawLine=$1 
 		local +r Filename=$2 
-		local +r FileStatus=$(get_file_status $Filename) 
+		local +r FileStatus=${FileStatuses[$Filename]} 
 		local +r FileNum=${FileNums[$Filename]} 
 		if $(is_in_set AM MM $FileStatus)
 		then
@@ -42,11 +65,11 @@ git_status () {
 		else
 			local +r Line="$(red $RawLine)" 
 		fi
-		print "$Line $(blue $FileNum)"
+		print "$Line $(blue \($FileNum\))"
 	}
-	typeset +r -g GitStage=$(git diff --stat --cached | gawk '{print $1}') 
-	typeset -Ag FileStatuses
-	typeset -Ag FileNums
+	local +r GitStage=$(git diff --stat --cached | gawk '{print $1}') 
+	typeset -A FileStatuses
+	typeset -A FileNums
 	index=1 
 	for line in $(git status -s)
 	do
@@ -78,20 +101,6 @@ git_status () {
 		done
 	fi
 }
-clean_file_line () {
-	local +r Line=$1 
-	print $(print $Line | gsed 's/(.*)//g')
-}
-get_file_from_line () {
-	local +r Line=$1 
-	local +r PossibleFile=$(remove_trailing_slash $(print $(clean_file_line $Line) | gawk '{print $NF}') | tr -d ' ') 
-	if $(is_file_or_dir $PossibleFile) || $(string_contains $Line 'deleted:')
-	then
-		print $PossibleFile
-	else
-		return 1
-	fi
-}
 remove_trailing_slash () {
 	local +r String=$1 
 	if [[ $String[-1] == "/" ]]
@@ -115,35 +124,6 @@ string_contains () {
 	local +r SubString=$2 
 	[[ "${String#*$SubString}" != "$String" ]] && return 0
 	return 1
-}
-get_file_status () {
-	local +r File=$1 
-	print ${FileStatuses[$File]}
-}
-is_staged () {
-	local +r Filename=$1 
-	if $(string_contains $GitStage "$Filename")
-	then
-		return 0
-	else
-		return 1
-	fi
-}
-print_file_line () {
-	local +r RawLine=$1 
-	local +r Filename=$2 
-	local +r FileStatus=$(get_file_status $Filename) 
-	local +r FileNum=${FileNums[$Filename]} 
-	if $(is_in_set AM MM $FileStatus)
-	then
-		local +r Line="$(red $RawLine)" 
-	elif $(is_staged $Filename)
-	then
-		local +r Line="$(green $RawLine)" 
-	else
-		local +r Line="$(red $RawLine)" 
-	fi
-	print "$Line $(blue $FileNum)"
 }
 is_in_set () {
 	IFS=" " 
@@ -236,30 +216,3 @@ git_get_item_by_num () {
 	local +r -a Items=($(git status -s | gawk '{print $2}')) 
 	print $Items[$ItemNum]
 }
-create_color_functions () {
-	typeset -Ag COLORS
-	COLORS[DEFAULT]='0' 
-	COLORS[BLACK]='0;30' 
-	COLORS[DARKGREY]='1;30' 
-	COLORS[RED]='0;31' 
-	COLORS[BRIGHTRED]='1;31' 
-	COLORS[GREEN]='0;32' 
-	COLORS[BRIGHTGREEN]='1;32' 
-	COLORS[YELLOW]='0;33' 
-	COLORS[BRIGHTYELLOW]='1;33' 
-	COLORS[BLUE]='0;34' 
-	COLORS[BRIGHTBLUE]='1;34' 
-	COLORS[MAGENTA]='0;35' 
-	COLORS[BRIGHTMAGENTA]='1;35' 
-	COLORS[CYAN]='0;36' 
-	COLORS[BRIGHTCYAN]='1;36' 
-	COLORS[WHITE]='0;37' 
-	COLORS[BRIGHTWHITE]='1;37' 
-	COLORS[MAGENTA]='1;35' 
-	for key in ${(k)COLORS}
-	do
-		eval "function ${key:l} { color_shell_text $key $@ }"
-		eval "function ${key:l}prompt { color_prompt_text $key $@ }"
-	done
-}
-create_color_functions

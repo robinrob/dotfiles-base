@@ -4,7 +4,10 @@ local +r ScriptPath=$2
 rm -f $ScriptPath
 touch $ScriptPath
 
-local +r Script="$(expand_function $FunctionName)\n$(which create_color_functions)\ncreate_color_functions"
+print "$(which create_color_functions)
+create_color_functions
+$(expand_function $FunctionName)" >> $ScriptPath
 
-print $Script >> $ScriptPath
-
+#which create_color_functions >> $ScriptPath
+#print create_color_functions >> $ScriptPath
+#print -r $(expand_function $FunctionName) >> $ScriptPath
