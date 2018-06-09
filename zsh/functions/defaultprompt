@@ -1,0 +1,3 @@
+defaultprompt () {
+	color_prompt_text DEFAULT $@
+}

@@ -1,0 +1,3 @@
+red () {
+	color_shell_text RED $@
+}

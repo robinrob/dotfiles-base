@@ -4,9 +4,14 @@ local +r ScriptPath=$2
 rm -f $ScriptPath
 touch $ScriptPath
 
-print "$(which create_color_functions)
-create_color_functions
-$(expand_function $FunctionName)" >> $ScriptPath
+local +r Contents="$(expand_function $FunctionName)"
+if $(print $Contents | ggrep 'COLORS')
+then
+  Contents="typeset -Ag COLORS=($(print ${(kv)COLORS} | xargs))
+  $Contents"
+fi
+
+print $Contents >> $ScriptPath
 
 #which create_color_functions >> $ScriptPath
 #print create_color_functions >> $ScriptPath

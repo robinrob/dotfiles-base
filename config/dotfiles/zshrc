@@ -17,8 +17,6 @@ for config_file ($HOME/.framework/zsh/*.zsh) source $config_file
 [[ $fpath = *dotfiles-base* ]] || fpath=($FUNCS_HOME $fpath)
 autoload -U +X $fpath[1]/*(:t) 2> /dev/null
 
-create_color_functions
-
 # Environment Variables - must come before aliases, since if an env used by an
 # alias is already set: the alias will evaluate using that env!
 ###############################################################################

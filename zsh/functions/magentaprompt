@@ -1,0 +1,3 @@
+magentaprompt () {
+	color_prompt_text MAGENTA $@
+}

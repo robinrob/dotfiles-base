@@ -1,0 +1,3 @@
+brightwhite () {
+	color_shell_text BRIGHTWHITE $@
+}

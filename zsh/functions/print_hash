@@ -1,0 +1,7 @@
+local +r HashVarName=$(eval print $"$1")
+print "HashVarName: ${HashVarName}"
+
+for key in ${(k)HashVarName}
+do
+  print $key ${HashVarName[$key]}
+done
