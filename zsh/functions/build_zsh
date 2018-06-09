@@ -4,15 +4,12 @@ local +r ScriptPath=$2
 rm -f $ScriptPath
 touch $ScriptPath
 
-local +r Contents="$(expand_function $FunctionName)"
-if $(print $Contents | ggrep 'COLORS')
+local +r Contents=$(expand_function $FunctionName)
+if $(print "$Contents" | ggrep 'COLORS')
 then
-  Contents="typeset -Ag COLORS=($(print ${(kv)COLORS} | xargs))
-  $Contents"
+  Contents="$(cat $ZDOT_HOME/color_codes.zsh)
+
+  ${Contents}"
 fi
 
-print $Contents >> $ScriptPath
-
-#which create_color_functions >> $ScriptPath
-#print create_color_functions >> $ScriptPath
-#print -r $(expand_function $FunctionName) >> $ScriptPath
+print "$Contents" >> $ScriptPath

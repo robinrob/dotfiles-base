@@ -1,4 +1,24 @@
-typeset -Ag COLORS=(CYAN 0;36 BRIGHTBLUE 1;34 BRIGHTGREEN 1;32 WHITE 0;37 YELLOW 0;33 DARKGREY 1;30 BRIGHTWHITE 1;37 BRIGHTCYAN 1;36 BRIGHTYELLOW 1;33 DEFAULT 0 BLUE 0;34 BRIGHTMAGENTA 1;35 BLACK 0;30 BRIGHTRED 1;31 RED 0;31 MAGENTA 1;35 GREEN 0;32)
+typeset -Ag COLORS
+
+COLORS[DEFAULT]='0'
+COLORS[BLACK]='0;30'
+COLORS[DARKGREY]='1;30'
+COLORS[RED]='0;31'
+COLORS[BRIGHTRED]='1;31'
+COLORS[GREEN]='0;32'
+COLORS[BRIGHTGREEN]='1;32'
+COLORS[YELLOW]='0;33'
+COLORS[BRIGHTYELLOW]='1;33'
+COLORS[BLUE]='0;34'
+COLORS[BRIGHTBLUE]='1;34'
+COLORS[MAGENTA]='0;35'
+COLORS[BRIGHTMAGENTA]='1;35'
+COLORS[CYAN]='0;36'
+COLORS[BRIGHTCYAN]='1;36'
+COLORS[WHITE]='0;37'
+COLORS[BRIGHTWHITE]='1;37'
+COLORS[MAGENTA]='1;35'
+
   git_status () {
 	IFS="
 " 
@@ -39,7 +59,7 @@ typeset -Ag COLORS=(CYAN 0;36 BRIGHTBLUE 1;34 BRIGHTGREEN 1;32 WHITE 0;37 YELLOW
 		else
 			local +r Line="$(red $RawLine)" 
 		fi
-		print "$Line $(blue ($FileNum))"
+		print "$Line $(blue \($FileNum\))"
 	}
 	local +r GitStage=$(git diff --stat --cached | gawk '{print $1}') 
 	typeset -A FileStatuses
@@ -76,18 +96,8 @@ typeset -Ag COLORS=(CYAN 0;36 BRIGHTBLUE 1;34 BRIGHTGREEN 1;32 WHITE 0;37 YELLOW
 	fi
 }
 clean_file_line () {
-	local +r Line=$1 
-	print $(print $Line | gsed 's/(.*)//g')
-}
-get_file_from_line () {
-	local +r Line=$1 
-	local +r PossibleFile=$(remove_trailing_slash $(print $(clean_file_line $Line) | gawk '{print $NF}') | tr -d ' ') 
-	if $(is_file_or_dir $PossibleFile) || $(string_contains $Line 'deleted:')
-	then
-		print $PossibleFile
-	else
-		return 1
-	fi
+	# undefined
+	builtin autoload -XU
 }
 remove_trailing_slash () {
 	local +r String=$1 
@@ -112,31 +122,6 @@ string_contains () {
 	local +r SubString=$2 
 	[[ "${String#*$SubString}" != "$String" ]] && return 0
 	return 1
-}
-is_staged () {
-	local +r Filename=$1 
-	if $(string_contains $GitStage "$Filename")
-	then
-		return 0
-	else
-		return 1
-	fi
-}
-print_file_line () {
-	local +r RawLine=$1 
-	local +r Filename=$2 
-	local +r FileStatus=${FileStatuses[$Filename]} 
-	local +r FileNum=${FileNums[$Filename]} 
-	if $(is_in_set AM MM $FileStatus)
-	then
-		local +r Line="$(red $RawLine)" 
-	elif $(is_staged $Filename)
-	then
-		local +r Line="$(green $RawLine)" 
-	else
-		local +r Line="$(red $RawLine)" 
-	fi
-	print "$Line $(blue ($FileNum))"
 }
 is_in_set () {
 	IFS=" " 
