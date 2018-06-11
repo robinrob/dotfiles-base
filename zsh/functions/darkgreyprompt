@@ -1,0 +1,3 @@
+darkgreyprompt () {
+	color_prompt_text DARKGREY $@
+}

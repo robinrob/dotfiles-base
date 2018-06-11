@@ -1,0 +1,3 @@
+darkgrey () {
+	color_shell_text DARKGREY $@
+}

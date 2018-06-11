@@ -1,0 +1,3 @@
+redprompt () {
+	color_prompt_text RED $@
+}

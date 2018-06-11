@@ -47,7 +47,7 @@ function print_file_line {
     local +r Line="$(red $RawLine)"
   fi
 
-  print "$Line $(blue $FileNum)"
+  print "$Line $(blue \($FileNum\))"
 }
 
 local +r GitStage=$(git diff --stat --cached | gawk '{print $1}')

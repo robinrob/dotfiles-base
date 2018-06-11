@@ -1,0 +1,3 @@
+whiteprompt () {
+	color_prompt_text WHITE $@
+}

@@ -1,0 +1,3 @@
+brightred () {
+	color_shell_text BRIGHTRED $@
+}

@@ -1,0 +1,3 @@
+brightyellowprompt () {
+	color_prompt_text BRIGHTYELLOW $@
+}
