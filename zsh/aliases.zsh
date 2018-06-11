@@ -750,7 +750,7 @@ alias gch="git_do 'git checkout'"
 
 alias grS="git_do 'git reset'"
 
-alias gcf="git_do_by_item_num cat"
+alias gc="git_do_by_item_num cat"
 
 alias glu="git_ls_untracked_files"
 
