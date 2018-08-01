@@ -29,17 +29,12 @@ function get_file_from_line {
 function is_staged {
   local +r Filename=$1
 
-  case a in
-    $GitStage) return 0;;
-    *) return 1;;
-  esac
-  
-  # if $(string_contains $GitStage "$Filename")
-  # then
-  #   return 0
-  # else
-  #   return 1
-  # fi
+  if $(string_contains $GitStage "$Filename")
+  then
+    return 0
+  else
+    return 1
+  fi
 }
 
 function print_file_line {
