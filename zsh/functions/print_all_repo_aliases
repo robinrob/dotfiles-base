@@ -1,6 +1,7 @@
 typeset -A abbreviations
 
 # Home
+abbreviations[adhd_website]=ad
 abbreviations[applescript]=ap
 abbreviations[angular-test]=at
 abbreviations[awk]=a

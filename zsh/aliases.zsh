@@ -149,7 +149,7 @@ alias mcs="$EDITOR '$CSGO_CONFIG'"
 
 alias ccs="cat '$CSGO_CONFIG'"
 
-alias sn="SwitchAudioSource -n"
+# alias sn="SwitchAudioSource -n"
 
 alias recral="reload; recreate_all_repo_aliases"
 
@@ -177,7 +177,7 @@ alias viM="/usr/bin/vim"
 
 alias wifi="grec wifi"
 
-alias vlc="open -a Vlc\ 2"
+alias vlc="open -a VLC"
 
 alias aud="open -a Audacity"
 
@@ -251,6 +251,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias sn="open -a Sonos"
+
 alias n="open -a Notes"
 
 alias notes="open -a Notes"
@@ -318,6 +320,8 @@ alias steam="open -a Steam"
 alias clm="open -a Clementime"
 
 alias py="python"
+
+alias py3="python3"
 
 alias oct="octave"
 
@@ -648,7 +652,7 @@ alias apnew="new_s osascript scpt"
 
 alias anew="new_s awk awk"
 
-alias pnew="new_s python py"
+alias pnew="new_s python3 py"
 
 alias rnew="new_s ruby rb"
 
@@ -732,13 +736,21 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
-alias gS="git status"
+# alias gS="git stanus"
 
-alias gs="git_status"
+# alias gs="git status"
 
-alias gchi="git_checkout_by_item_num"
+alias gig="git_ignore"
 
-alias grf="git_remove_by_item_num"
+alias gd="git diff"
+
+alias ga="git add"
+
+alias gch="git checkout"
+
+alias grS="git reset"
+
+alias gs="git_status -t"
 
 alias gig="git_do git_ignore"
 
@@ -829,6 +841,8 @@ alias gcd="git checkout develop"
 alias gsi="git submodule init"
 
 alias gsu="git submodule update"
+
+alias gsui="git submodule update --init"
 
 alias gsur="git submodule update --init --recursive"
 
@@ -1264,6 +1278,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias linked="search_linked_in"
+
 alias lsa="ls_absolute"
 
 alias sp="spellcheck"
@@ -1625,7 +1641,6 @@ alias wpb="which_pbcopy"
 alias mvt="move_tags"
 
 alias mfn="edit_function"
-
 
 alias hpb="head_pbcopy"
 

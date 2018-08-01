@@ -1,0 +1,6 @@
+local +r String=$1
+local +r SubString=$2
+
+[[ "${String#*$SubString}" != "$String" ]] && return 0
+
+return 1

@@ -1,16 +1,22 @@
+start=$(date +'%s.%N')
 IFS="
+
 "
 
-function clean_file_line {
-  local +r Line=$1
-
-  print $(print $Line | gsed 's/\(.*\)//g')
-}
+local +r TextMode
+while getopts :t opt
+do
+  case $opt in
+    t) TextMode="true"; shift ;;
+  esac
+done
 
 function get_file_from_line {
   local +r Line=$1
   # local +r PossibleFile=$(remove_trailing_slash $(clean_file_line $Line | gawk '{print $NF}'))
-  local +r PossibleFile=$(remove_trailing_slash $(print $(clean_file_line $Line) | gawk '{print $NF}') | tr -d ' ')
+  # remove any forward slashes
+  local +r CleanLine=$(gsed 's/\(.*\)//g' <<< "$Line")
+  local +r PossibleFile=$(remove_trailing_slash "${${(z)Line}[-1]}")
 
   if $(is_file_or_dir $PossibleFile) || $(string_contains $Line 'deleted:')
   then
@@ -23,12 +29,17 @@ function get_file_from_line {
 function is_staged {
   local +r Filename=$1
 
-  if $(string_contains $GitStage "$Filename")
-  then
-    return 0
-  else
-    return 1
-  fi
+  case a in
+    $GitStage) return 0;;
+    *) return 1;;
+  esac
+  
+  # if $(string_contains $GitStage "$Filename")
+  # then
+  #   return 0
+  # else
+  #   return 1
+  # fi
 }
 
 function print_file_line {
@@ -55,10 +66,10 @@ typeset -A FileStatuses
 typeset -A FileNums
 
 index=1
-for line in $(git status -s)
+for line in $(git status --short)
 do
-  local +r FileStatus=$(print $line | gawk '{print $1}')
-  local +r Filename=$(remove_trailing_slash $(print $line | gawk '{print $2}'))
+  local +r FileStatus=${${(z)line}[1]}
+  local +r Filename=$(remove_trailing_slash ${${(z)line}[2]})
 
   FileStatuses[$Filename]=$FileStatus
   FileNums[$Filename]=$index
@@ -76,7 +87,7 @@ then
     git status $*
   fi
 else
-  # local text=""
+  local text=""
 
   # Read all lines from command output INCLUDING newlines
   for line in "${(@f)"$(git status)"}"
@@ -85,12 +96,43 @@ else
     # print "PossibleFile: ${PossibleFile}"
     if [[ -n $PossibleFile ]]
     then
-      print_file_line $line $PossibleFile
-      # text="$text $(print_file_line $line)\n"
+      local +r RawLine=$line
+      local +r Filename=$PossibleFile
+      local +r FileStatus=${FileStatuses[$Filename]}
+      local +r FileNum=${FileNums[$Filename]}
+
+      if $(is_in_set AM MM $FileStatus)
+      then
+        local +r Line="$(red $RawLine)"
+      elif $(is_staged $Filename)
+      then
+        local +r Line="$(green $RawLine)"
+      else
+        local +r Line="$(red $RawLine)"
+      fi
+
+      if [[ -n $TextMode ]]
+      then
+        # text="$text $Line $(blue \($FileNum\))\n"
+        text="$text $Line \($FileNum\)\n"
+      else
+        print "$Line $(blue \($FileNum\))"
+      fi
 
     else
-      print $line
-      # text="$text $line\n"
+      if [[ -n $TextMode ]]
+      then
+        text="$text $line\n"
+      else
+        print $line
+      fi
     fi
   done
+
+  if [[ -n $TextMode ]]
+  then
+    print $text
+  fi
 fi
+end=$(date +'%s.%N')
+print $(( end - start ))

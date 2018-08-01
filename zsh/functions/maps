@@ -1,8 +1,6 @@
 local +r Search
 local +r Near
 
-print $@
-
 while getopts :n: opt
 do
   case $opt in
@@ -17,14 +15,9 @@ case $# in
     Search="$*"
 esac
 
-print "Near: ${Near}"
-
 if [[ -n $Near ]]
 then
   Search="$Search near $(get_postcode)"
 fi
-
-
-print $Url
 
 browser "https://www.google.co.uk/maps/search/$(urlencode $Search)"

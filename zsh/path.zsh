@@ -18,6 +18,7 @@ Dirs=(
   $NDK_MODULE_PATH
   /usr/local/Library/anaconda3/bin
   /usr/local/Library/weechat-2.1/bin
+  /usr/local/Library/git-number
   ./node_modules/.bin
   /usr/local/Cellar/nvm/0.31.0
   /usr/local/Cellar/node/5.7.0/bin
