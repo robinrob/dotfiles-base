@@ -23,27 +23,31 @@
     "editor.tabSize": 4,
   },
   "files.associations": {
-    "*.jsx": "javascriptreact"
+    "*.jsx": "javascriptreact",
   },
-  "[ruby]": {
+  "languages": {
+    "id": "shellscript",
+    "extensions": [""],
+  },
+  "[ruby]",: {
     "editor.tabSize": 2,
   },
-  "[javascript]": {
+  "[javascript]",: {
     "editor.tabSize": 2,
   },
-  "[typescript]": {
+  "[typescript]",: {
     "editor.tabSize": 2,
   },
-  "[javascriptreact]": {
+  "[javascriptreact]",: {
     "editor.tabSize": 2,
   },
-  "[html]": {
+  "[html]",: {
     "editor.tabSize": 2,
   },
-  "[sass]": {
+  "[sass]",: {
     "editor.tabSize": 2,
   },
-  "python.linting.enabled": false,
-  "python.linting.flake8Args": [],
+  "python.linting.enabled",: false,
+  "python.linting.flake8Args",: [],
   "python.linting.flake8Enabled": true,
 }

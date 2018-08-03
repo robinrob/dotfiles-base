@@ -620,6 +620,8 @@ alias boi="bower_install_save"
 
 alias bou="bower uninstall"
 
+alias nt="nosetests"
+
 alias pi="pip_install"
 
 alias pfr="pip freeze"
