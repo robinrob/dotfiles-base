@@ -1,6 +1,5 @@
-start=$(date +'%s.%N')
+local +r Start=$(date +'%s.%N')
 IFS="
-
 "
 
 local +r TextMode
@@ -11,14 +10,20 @@ do
   esac
 done
 
+function clean_file_line {
+  local +r Line=$1
+
+  print $(gsed 's/\s$//g' <<< $(gsed 's/\(.*\)//g' <<< $line))
+}
+
 function get_file_from_line {
   local +r Line=$1
   # local +r PossibleFile=$(remove_trailing_slash $(clean_file_line $Line | gawk '{print $NF}'))
-  # remove any forward slashes
-  local +r CleanLine=$(gsed 's/\(.*\)//g' <<< "$Line")
-  local +r PossibleFile=$(remove_trailing_slash "${${(z)Line}[-1]}")
-
-  if $(is_file_or_dir $PossibleFile) || $(string_contains $Line 'deleted:')
+  # local +r PossibleFile=$(remove_trailing_slash $(print $(clean_file_line $Line) | gawk '{print $NF}') | tr -d ' ')
+  local +r PossibleFile=$(remove_trailing_slash $(ggrep -Poe '(?<=\s)([^\s]+)$' <<< $(clean_file_line $Line)))
+  # print "PossibleFile: ${PossibleFile}" >> out.txt
+ 
+  if $(is_file_or_dir $PossibleFile) || $(string_contains_word $Line 'deleted:')
   then
     print $PossibleFile
   else
@@ -29,7 +34,7 @@ function get_file_from_line {
 function is_staged {
   local +r Filename=$1
 
-  if $(string_contains $GitStage "$Filename")
+  if $(is_in_set $GitStage "$Filename")
   then
     return 0
   else
@@ -53,18 +58,25 @@ function print_file_line {
     local +r Line="$(red $RawLine)"
   fi
 
-  print "$Line $(blue \($FileNum\))"
+  print "$Line \($FileNum\)"
 }
 
-local +r GitStage=$(git diff --stat --cached | gawk '{print $1}')
+typeset -a GitStage
+for line in "${(@f)"$(git diff --stat --cached | head -n -1 | ggrep -Poe '^([^\s]+)(?=\s)')"}"
+do
+  GitStage=($GitStage $line)
+done
+
 typeset -A FileStatuses
 typeset -A FileNums
 
 index=1
-for line in $(git status --short)
+for line in $(git status -s)
 do
-  local +r FileStatus=${${(z)line}[1]}
-  local +r Filename=$(remove_trailing_slash ${${(z)line}[2]})
+  # local +r FileStatus=$(print $line | gawk '{print $1}')
+  local +r FileStatus=$(ggrep -Poe '^([^\s]+)(?=\s)' <<< $line)
+  local +r Filename=$(remove_trailing_slash $(gawk '{print $2}' <<< $line))
+  # print "Filename: ${Filename}"
 
   FileStatuses[$Filename]=$FileStatus
   FileNums[$Filename]=$index
@@ -82,7 +94,10 @@ then
     git status $*
   fi
 else
-  local text=""
+  if [[ -n $TextMode ]]
+  then
+    local text=""
+  fi
 
   # Read all lines from command output INCLUDING newlines
   for line in "${(@f)"$(git status)"}"
@@ -91,27 +106,11 @@ else
     # print "PossibleFile: ${PossibleFile}"
     if [[ -n $PossibleFile ]]
     then
-      local +r RawLine=$line
-      local +r Filename=$PossibleFile
-      local +r FileStatus=${FileStatuses[$Filename]}
-      local +r FileNum=${FileNums[$Filename]}
-
-      if $(is_in_set AM MM $FileStatus)
-      then
-        local +r Line="$(red $RawLine)"
-      elif $(is_staged $Filename)
-      then
-        local +r Line="$(green $RawLine)"
-      else
-        local +r Line="$(red $RawLine)"
-      fi
-
       if [[ -n $TextMode ]]
       then
-        # text="$text $Line $(blue \($FileNum\))\n"
-        text="$text $Line \($FileNum\)\n"
+        text="$text $(print_file_line $line $PossibleFile)\n"
       else
-        print "$Line $(blue \($FileNum\))"
+        print_file_line $line $PossibleFile
       fi
 
     else
@@ -122,12 +121,9 @@ else
         print $line
       fi
     fi
-  done
 
-  if [[ -n $TextMode ]]
-  then
-    print $text
-  fi
+  done
+  print $text
 fi
-end=$(date +'%s.%N')
-print $(( end - start ))
+local +r End=$(date +'%s.%N')
+print $(( End - Start))
