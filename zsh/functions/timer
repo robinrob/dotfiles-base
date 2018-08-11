@@ -1,0 +1,22 @@
+while getopts :s:m:h: opt
+do
+  case $opt in
+    s) local +r Duration=$OPTARG ;;
+    m) local +r Duration=$(( OPTARG * 60 )) ;;
+    h) local +r Duration=$(( OPTARG * 3600 )) ;;
+  esac
+done
+
+if [[ -z $Duration ]]
+then
+  local +r Minutes=$*[-1]
+  local +r Duration=$(( Minutes * 60 ))
+fi
+
+sleep $Duration
+
+for n ({1..10})
+do
+  print "TIMER FINISHED"
+  say "beep"
+done
