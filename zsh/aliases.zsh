@@ -105,6 +105,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias meditate="timer 10"
+
 alias odl="open $HOME/Downloads"
 
 alias dt="date"
@@ -492,7 +494,6 @@ alias cddoc="cd_down_tree $HOME/Documents"
 alias cdpic="cd_down_tree $HOME/Pictures"
 
 alias cdopt="cd_down_tree $HOME/Documents/options"
-
 
 alias cdmv="cd_down_tree $HOME/Movies"
 

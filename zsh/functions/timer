@@ -1,3 +1,12 @@
+trap max_brightness INT
+STOP='FALSE'
+
+function max_brightness {
+  brightness 1
+
+  STOP='TRUE'
+}
+
 while getopts :s:m:h: opt
 do
   case $opt in
@@ -15,8 +24,33 @@ fi
 
 sleep $Duration
 
-for n ({1..10})
-do
+
+function timer_finished_alert {
   print "TIMER FINISHED"
   say "beep"
-done
+
+  local +r CurrentBrightness=$(brightness -l | ggrep -Poe '([0-9]+\.[0-9]+)$')
+  if [[ $STOP == 'FALSE' ]]
+  then
+    if (( $CurrentBrightness == 0.0 ))
+    then
+      brightness 1
+    else
+      brightness 0
+    fi
+  fi
+}
+
+# for n ({1..10})
+  # do
+    #   sleep 0.1
+    #   timer_finished_alert()
+    # done
+
+
+    while [[ $STOP == 'FALSE' ]]
+    do
+      sleep 0.1
+      timer_finished_alert
+    done
+
