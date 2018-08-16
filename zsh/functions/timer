@@ -2,9 +2,9 @@ trap max_brightness INT
 STOP='FALSE'
 
 function max_brightness {
-  brightness 1
-
   STOP='TRUE'
+
+  trap INT
 }
 
 while getopts :s:m:h: opt
@@ -24,33 +24,30 @@ fi
 
 sleep $Duration
 
-
 function timer_finished_alert {
   print "TIMER FINISHED"
-  say "beep"
 
-  local +r CurrentBrightness=$(brightness -l | ggrep -Poe '([0-9]+\.[0-9]+)$')
   if [[ $STOP == 'FALSE' ]]
   then
-    if (( $CurrentBrightness == 0.0 ))
+    if (( $PHASE == 0 ))
     then
-      brightness 1
-    else
+      say "bull"
       brightness 0
+      PHASE=1
+    else
+      say "dog"
+      brightness 1
+      PHASE=0
     fi
   fi
 }
 
-# for n ({1..10})
-  # do
-    #   sleep 0.1
-    #   timer_finished_alert()
-    # done
+osascript -e 'set volume output volume 50'
+local PHASE=0
+while [[ $STOP == 'FALSE' ]]
+do
+  timer_finished_alert
+  sleep 0.1
+done
 
-
-    while [[ $STOP == 'FALSE' ]]
-    do
-      sleep 0.1
-      timer_finished_alert
-    done
-
+brightness 1

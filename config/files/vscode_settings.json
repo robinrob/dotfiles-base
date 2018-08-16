@@ -50,4 +50,5 @@
   "python.linting.enabled",: false,
   "python.linting.flake8Args",: [],
   "python.linting.flake8Enabled": true,
+  "workbench.startupEditor": ""
 }

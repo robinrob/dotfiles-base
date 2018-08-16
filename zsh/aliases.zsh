@@ -105,6 +105,16 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias cdtr="cd ~/.Trash"
+
+alias sdtr="sd ~/.Trash"
+
+alias pomo="timer 25"
+
+alias brk="timer 5"
+
+alias brk2="timer 10"
+
 alias meditate="timer 10"
 
 alias odl="open $HOME/Downloads"
@@ -739,7 +749,7 @@ alias vpnd="vpn -q"
 ###############################################################################
 # Git
 ###############################################################################
-# alias gS="git stanus"
+alias gS="git status"
 
 # alias gs="git status"
 
@@ -1281,6 +1291,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias o="open_app /usr/bin/open"
+
 alias linked="search_linked_in"
 
 alias lsa="ls_absolute"

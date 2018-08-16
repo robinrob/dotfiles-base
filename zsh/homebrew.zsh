@@ -2,7 +2,6 @@
 
 brew install coreutils
 
-
 cat $BREWLIST | while read package ; do
   brew install $package
 done
@@ -14,3 +13,7 @@ brew install macvim --custom-icons --override-system-vim --with-lua --with-luaji
 
 # Install Octave
 ./octave.zsh
+
+# Hack font
+brew tap caskroom/fonts
+brew cask install font-hack
