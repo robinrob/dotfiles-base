@@ -1,0 +1,8 @@
+local -a words
+
+for word in $*
+do
+  words=($words "${line}$(upper $word[1])$(lower $word[2,-1])")
+done
+
+copy_print $(join $words '')
