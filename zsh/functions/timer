@@ -42,7 +42,7 @@ function timer_finished_alert {
   fi
 }
 
-osascript -e 'set volume output volume 50'
+osascript -e 'set volume output volume 100'
 local PHASE=0
 while [[ $STOP == 'FALSE' ]]
 do

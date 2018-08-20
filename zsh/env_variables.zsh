@@ -121,7 +121,7 @@ export FISH_HOME="$HOME/Programming/robin/fish"
 
 export FORCE_COM_HOME="$HOME/Programming/robin/force.com"
 
-export HTML_HOME="$HOME/Programming/robin/html5"
+export HTML_HOME="$HOME/Programming/robin/html"
 
 export CSS_HOME="$HOME/Programming/robin/css"
 
@@ -152,6 +152,8 @@ export SOUNDS_HOME="$RES_HOME/sounds"
 export ZSH_HOME="$HOME/Programming/robin/zsh"
 
 export GO_HOME="$HOME/Programming/robin/go"
+
+export PHP_HOME="$HOME/Programming/robin/php"
 
 export PI_HOME=$PYTHON_HOME/projects/pi
 
@@ -307,6 +309,8 @@ export APPLESCRIPT_HOME=$ROBIN_HOME/applescript
 export DICSAURUS_HOME=$PYTHON_HOME/projects/dicsaurus
 
 export LIFE_HOME=$PYTHON_HOME/projects/life
+
+export WHEELBLAZERS_WP_THEME_HOME=$PHP_HOME/projects/blazers-wp-theme
 
 ###############################################################################
 # Directories
@@ -514,10 +518,6 @@ export NDK_ROOT=/usr/local/Cellar/android-ndk/r10e/
 export JS_TESTS_HOME="$COCOS_HOME/tests/js-tests"
 
 export NODE_PATH=/usr/lib/node_modules
-
-export GULPFILE_HOME="$JS_HOME/projects/gulpfile"
-
-export GULPFILE_PATH="$GULPFILE_HOME/gulpfile.js"
 
 export GIT_QUICKSAVE_MSG="Quick-save."
 

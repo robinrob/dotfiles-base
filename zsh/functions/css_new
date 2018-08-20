@@ -1,0 +1,3 @@
+PROJECT=$1
+cat $CSS_HOME/templates/practice_css.html | gsed "s/Title/$(snake_to_title $PROJECT)/" > $PROJECT.html
+

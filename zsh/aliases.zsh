@@ -657,6 +657,8 @@ alias vd="vagrant destroy"
 
 alias vssh="vagrant_ssh"
 
+alias dcu="docker-compose up"
+
 alias npmgls="npm config set json; npm -g list --depth=0"
 
 alias npmls="npm config set json; npm list --depth=0"
@@ -1291,6 +1293,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias csnew="css_new"
+
 alias o="open_app /usr/bin/open"
 
 alias linked="search_linked_in"

@@ -51,4 +51,10 @@
   "python.linting.flake8Args",: [],
   "python.linting.flake8Enabled": true,
   "workbench.startupEditor": ""
+  "colorInfo.languages": [
+    {
+        "selector": "sass",
+        "colors": ["css", "hex", "rgb"]
+    }
+  ]
 }

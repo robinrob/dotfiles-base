@@ -223,6 +223,21 @@ alias cdkapr="cd_down_tree $KAPTIO_HOME/practice"
 alias cdkapro="cd_down_tree $KAPTIO_HOME/projects"
 alias glpka="cd_gulp $KAPTIO_HOME"
 
+alias idwh="idea $WHEELBLAZERS_WP_THEME_HOME"
+
+alias icwh="idea $WHEELBLAZERS_WP_THEME_HOME"
+
+alias xcwh="xcode $WHEELBLAZERS_WP_THEME_HOME"
+
+alias vswh="vscode $WHEELBLAZERS_WP_THEME_HOME"
+
+alias itwh="iterm $WHEELBLAZERS_WP_THEME_HOME"
+
+alias cdwh="cd_down_tree $WHEELBLAZERS_WP_THEME_HOME"
+alias cdwhpr="cd_down_tree $WHEELBLAZERS_WP_THEME_HOME/practice"
+alias cdwhpro="cd_down_tree $WHEELBLAZERS_WP_THEME_HOME/projects"
+alias glpwh="cd_gulp $WHEELBLAZERS_WP_THEME_HOME"
+
 alias idco="idea $CONSOLE_WRITER_HOME"
 
 alias icco="idea $CONSOLE_WRITER_HOME"
