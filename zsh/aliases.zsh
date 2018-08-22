@@ -105,6 +105,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias gn="git-number"
+
 alias cdtr="cd ~/.Trash"
 
 alias sdtr="sd ~/.Trash"
@@ -753,13 +755,13 @@ alias vpnd="vpn -q"
 ###############################################################################
 alias gS="git status"
 
-alias gs="git_status"
+alias gs="git-number"
 
 alias gig="git_ignore"
 
 alias gd="git diff"
 
-alias ga="git add"
+alias ga="git-number add"
 
 alias gch="git checkout"
 
@@ -768,8 +770,6 @@ alias grS="git reset"
 alias gig="git_do git_ignore"
 
 alias gd="git_do 'git diff'"
-
-alias ga="git_do 'git add'"
 
 alias gch="git_do 'git checkout'"
 
