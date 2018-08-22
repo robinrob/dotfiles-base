@@ -753,7 +753,7 @@ alias vpnd="vpn -q"
 ###############################################################################
 alias gS="git status"
 
-# alias gs="git status"
+alias gs="git_status"
 
 alias gig="git_ignore"
 
@@ -764,8 +764,6 @@ alias ga="git add"
 alias gch="git checkout"
 
 alias grS="git reset"
-
-alias gs="git_status -t"
 
 alias gig="git_do git_ignore"
 
