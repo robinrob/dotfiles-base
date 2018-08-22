@@ -2,11 +2,11 @@ local +r Start=$(date +'%s.%N')
 IFS="
 "
 
-local +r TextMode
-while getopts :t opt
+local +r LineByLineMode
+while getopts :l opt
 do
   case $opt in
-    t) TextMode="true"; shift ;;
+    l) LineByLineMode="true"; shift ;;
   esac
 done
 
@@ -49,7 +49,7 @@ then
     git status $*
   fi
 else
-  if [[ -n $TextMode ]]
+  if [[ -z $LineByLineMode ]]
   then
     local text=""
   fi
@@ -84,7 +84,7 @@ else
       local +r FileLine="$Line \($FileNum\)"
 
 
-      if [[ -n $TextMode ]]
+      if [[ -z $LineByLineMode ]]
       then
         text="$text $FileLine\n"
       else
@@ -92,7 +92,7 @@ else
       fi
 
     else
-      if [[ -n $TextMode ]]
+      if [[ -z $LineByLineMode ]]
       then
         text="$text $line\n"
       else
@@ -102,7 +102,7 @@ else
 
   done
 
-  if [[ -n $TextMode ]]
+  if [[ -z $LineByLineMode ]]
   then
     print $text
   fi
