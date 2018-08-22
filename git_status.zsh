@@ -19,85 +19,146 @@ COLORS[WHITE]='0;37'
 COLORS[BRIGHTWHITE]='1;37'
 COLORS[MAGENTA]='1;35'
 
-  git_status () {
-	IFS="
-" 
-	clean_file_line () {
-		local +r Line=$1 
-		print $(print $Line | gsed 's/(.*)//g')
-	}
-	get_file_from_line () {
-		local +r Line=$1 
-		local +r PossibleFile=$(remove_trailing_slash $(print $(clean_file_line $Line) | gawk '{print $NF}') | tr -d ' ') 
-		if $(is_file_or_dir $PossibleFile) || $(string_contains $Line 'deleted:')
-		then
-			print $PossibleFile
-		else
-			return 1
-		fi
-	}
-	is_staged () {
-		local +r Filename=$1 
-		if $(string_contains $GitStage "$Filename")
-		then
-			return 0
-		else
-			return 1
-		fi
-	}
-	print_file_line () {
-		local +r RawLine=$1 
-		local +r Filename=$2 
-		local +r FileStatus=${FileStatuses[$Filename]} 
-		local +r FileNum=${FileNums[$Filename]} 
-		if $(is_in_set AM MM $FileStatus)
-		then
-			local +r Line="$(red $RawLine)" 
-		elif $(is_staged $Filename)
-		then
-			local +r Line="$(green $RawLine)" 
-		else
-			local +r Line="$(red $RawLine)" 
-		fi
-		print "$Line $(blue \($FileNum\))"
-	}
-	local +r GitStage=$(git diff --stat --cached | gawk '{print $1}') 
-	typeset -A FileStatuses
-	typeset -A FileNums
-	index=1 
-	for line in $(git status -s)
-	do
-		local +r FileStatus=$(print $line | gawk '{print $1}') 
-		local +r Filename=$(remove_trailing_slash $(print $line | gawk '{print $2}')) 
-		FileStatuses[$Filename]=$FileStatus 
-		FileNums[$Filename]=$index 
-		index=$(( index + 1 )) 
-	done
-	if (( $# > 0 ))
-	then
-		local +r FilenameOrNum=$1 
-		if $(is_number $FilenameOrNum)
-		then
-			git_do_by_item_num 'git status' $FilenameOrNum
-		else
-			git status $*
-		fi
-	else
-		for line in "${(@f)"$(git status)"}"
-		do
-			local +r PossibleFile=$(get_file_from_line $line) 
-			if [[ -n $PossibleFile ]]
-			then
-				print_file_line $line $PossibleFile
-			else
-				print $line
-			fi
-		done
-	fi
-}
 clean_file_line () {
+	local +r Line=$1 
+	print $(gsed 's/s$//g' <<< $(gsed 's/(.*)//g' <<< $line))
+}
+
+  git_status () {
+	local +r Start=$(date +'%s.%N')
+IFS="
+"
+
+local +r TextMode
+while getopts :t opt
+do
+  case $opt in
+    t) TextMode="true"; shift ;;
+  esac
+done
+
+
+local +r -a GitStage
+for line in "${(@f)"$(git diff --raw --cached | gawk '{print $NF}')"}"
+do
+  GitStage=($GitStage $line)
+done
+
+typeset -A FileStatuses
+typeset -A FileNums
+
+index=1
+for line in $(git status -s)
+do
+  # local +r FileStatus=$(print $line | gawk '{print $1}')
+  local +r FileStatus=$(ggrep -Poe '^([^\s]+)(?=\s)' <<< $line)
+  local +r Filename=$(remove_trailing_slash $(gawk '{print $2}' <<< $line))
+  # print "Filename: ${Filename}"
+
+  FileStatuses[$Filename]=$FileStatus
+  FileNums[$Filename]=$index
+
+  index=$(( index + 1 ))
+done
+
+if (( $# > 0 ))
+then
+  local +r FilenameOrNum=$1
+  if $(is_number $FilenameOrNum)
+  then
+    git_do_by_item_num 'git status' $FilenameOrNum
+  else
+    git status $*
+  fi
+else
+  if [[ -n $TextMode ]]
+  then
+    local text=""
+  fi
+
+  # Read all lines from command output INCLUDING newlines
+  for line in "${(@f)"$(git status)"}"
+  do
+    # local +r PossibleFile=$(remove_trailing_slash $(clean_file_line $Line | gawk '{print $NF}'))
+    # local +r PossibleFile=$(remove_trailing_slash $(print $(clean_file_line $ggLine) | gawk '{print $NF}') | tr -d ' ')
+    local PossibleFile=$(remove_trailing_slash $(ggrep -Poe '(?<=\s)([^\s]+)$' <<< $(clean_file_line $line)))
+
+    # print "PossibleFile: ${PossibleFile}" >> out.txt
+    # print "PossibleFile: ${PossibleFile}"
+    if $(is_file_or_dir $PossibleFile) || $(string_contains_word $line 'deleted:')
+    then
+
+      local +r RawLine=$line
+      local +r Filename=$PossibleFile
+      local +r FileStatus=${FileStatuses[$Filename]}
+      local +r FileNum=${FileNums[$Filename]}
+
+      if $(is_in_set AM MM $FileStatus)
+      then
+        local +r Line="$(red $RawLine)"
+      elif $(is_in_set $GitStage "$Filename")
+      then
+        local +r Line="$(green $RawLine)"
+      else
+        local +r Line="$(red $RawLine)"
+      fi
+
+      local +r FileLine="$Line \($FileNum\)"
+
+
+      if [[ -n $TextMode ]]
+      then
+        text="$text $FileLine\n"
+      else
+        print "$FileLine"
+      fi
+
+    else
+      if [[ -n $TextMode ]]
+      then
+        text="$text $line\n"
+      else
+        print $line
+      fi
+    fi
+
+  done
+
+  if [[ -n $TextMode ]]
+  then
+    print $text
+  fi
+fi
+local +r End=$(date +'%s.%N')
+# print $(( End - Start))
+
+
+}
+
+git_do() {
+  IFS=" "
+
+local +r Command=$1
+local +r -a FilenamesOrNums=($*[2,-1])
+
+if (( $# > 1 )) && $(is_number $FilenamesOrNums)
+then
+  for FileNum in $FilenamesOrNums
+  do
+    git_do_by_item_num "$Command" $FileNum
+  done
+else
+  eval "$*"
+fi
+
+}
+
+git () {
+	noglob hub $@
+}
+diff () {
 	# undefined
-	builtin autoload -XU
+	builtin autoload -XUz
 }
 remove_trailing_slash () {
 	local +r String=$1 
@@ -108,6 +169,30 @@ remove_trailing_slash () {
 		print $String
 	fi
 }
+is_number () {
+	local +r Value=$1 
+	if [[ -n $Value ]] && [[ -z $(print $Value | tr -d '[0-9]') ]]
+	then
+		return 0
+	else
+		return 1
+	fi
+}
+git_do_by_item_num () {
+	local +r Task=$1 
+	local +r ItemNum=$2 
+	[[ -z $ItemNum ]] && return 1
+	local +r Item=$(git_get_item_by_num $ItemNum) 
+	eval "$Task $Item"
+}
+git_get_item_by_num () {
+	local +r ItemNum=$1 
+	[[ -n $ItemNum ]] || return 1
+	IFS="
+" 
+	local +r -a Items=($(git status -s | gawk '{print $2}')) 
+	print $Items[$ItemNum]
+}
 is_file_or_dir () {
 	local +r Path=$1 
 	if [[ -f $Path ]] || [[ -d $Path ]]
@@ -117,7 +202,7 @@ is_file_or_dir () {
 		return 1
 	fi
 }
-string_contains () {
+string_contains_word () {
 	local +r String=$1 
 	local +r SubString=$2 
 	[[ "${String#*$SubString}" != "$String" ]] && return 0
@@ -179,38 +264,4 @@ color_text () {
 }
 green () {
 	color_shell_text GREEN $@
-}
-blue () {
-	color_shell_text BLUE $@
-}
-git () {
-	noglob hub $@
-}
-diff () {
-	# undefined
-	builtin autoload -XUz
-}
-is_number () {
-	local +r Value=$1 
-	if [[ -n $Value ]] && [[ -z $(print $Value | tr -d '[0-9]') ]]
-	then
-		return 0
-	else
-		return 1
-	fi
-}
-git_do_by_item_num () {
-	local +r Task=$1 
-	local +r ItemNum=$2 
-	[[ -z $ItemNum ]] && return 1
-	local +r Item=$(git_get_item_by_num $ItemNum) 
-	eval "$Task $Item"
-}
-git_get_item_by_num () {
-	local +r ItemNum=$1 
-	[[ -n $ItemNum ]] || return 1
-	IFS="
-" 
-	local +r -a Items=($(git status -s | gawk '{print $2}')) 
-	print $Items[$ItemNum]
 }
