@@ -16,53 +16,8 @@ function clean_file_line {
   print $(gsed 's/\s$//g' <<< $(gsed 's/\(.*\)//g' <<< $line))
 }
 
-function get_file_from_line {
-  local +r Line=$1
-  # local +r PossibleFile=$(remove_trailing_slash $(clean_file_line $Line | gawk '{print $NF}'))
-  # local +r PossibleFile=$(remove_trailing_slash $(print $(clean_file_line $Line) | gawk '{print $NF}') | tr -d ' ')
-  local +r PossibleFile=$(remove_trailing_slash $(ggrep -Poe '(?<=\s)([^\s]+)$' <<< $(clean_file_line $Line)))
-  # print "PossibleFile: ${PossibleFile}" >> out.txt
- 
-  if $(is_file_or_dir $PossibleFile) || $(string_contains_word $Line 'deleted:')
-  then
-    print $PossibleFile
-  else
-    return 1
-  fi
-}
-
-function is_staged {
-  local +r Filename=$1
-
-  if $(is_in_set $GitStage "$Filename")
-  then
-    return 0
-  else
-    return 1
-  fi
-}
-
-function print_file_line {
-  local +r RawLine=$1
-  local +r Filename=$2
-  local +r FileStatus=${FileStatuses[$Filename]}
-  local +r FileNum=${FileNums[$Filename]}
-
-  if $(is_in_set AM MM $FileStatus)
-  then
-    local +r Line="$(red $RawLine)"
-  elif $(is_staged $Filename)
-  then
-    local +r Line="$(green $RawLine)"
-  else
-    local +r Line="$(red $RawLine)"
-  fi
-
-  print "$Line \($FileNum\)"
-}
-
-typeset -a GitStage
-for line in "${(@f)"$(git diff --stat --cached | head -n -1 | ggrep -Poe '^([^\s]+)(?=\s)')"}"
+local +r -a GitStage
+for line in "${(@f)"$(git diff --raw --cached | gawk '{print $NF}')"}"
 do
   GitStage=($GitStage $line)
 done
@@ -102,15 +57,38 @@ else
   # Read all lines from command output INCLUDING newlines
   for line in "${(@f)"$(git status)"}"
   do
-    local +r PossibleFile=$(get_file_from_line $line)
+    # local +r PossibleFile=$(remove_trailing_slash $(clean_file_line $Line | gawk '{print $NF}'))
+    # local +r PossibleFile=$(remove_trailing_slash $(print $(clean_file_line $ggLine) | gawk '{print $NF}') | tr -d ' ')
+    local PossibleFile=$(remove_trailing_slash $(ggrep -Poe '(?<=\s)([^\s]+)$' <<< $(clean_file_line $line)))
+
+    # print "PossibleFile: ${PossibleFile}" >> out.txt
     # print "PossibleFile: ${PossibleFile}"
-    if [[ -n $PossibleFile ]]
+    if $(is_file_or_dir $PossibleFile) || $(string_contains_word $line 'deleted:')
     then
+
+      local +r RawLine=$line
+      local +r Filename=$PossibleFile
+      local +r FileStatus=${FileStatuses[$Filename]}
+      local +r FileNum=${FileNums[$Filename]}
+
+      if $(is_in_set AM MM $FileStatus)
+      then
+        local +r Line="$(red $RawLine)"
+      elif $(is_in_set $GitStage "$Filename")
+      then
+        local +r Line="$(green $RawLine)"
+      else
+        local +r Line="$(red $RawLine)"
+      fi
+
+      local +r FileLine="$Line \($FileNum\)"
+
+
       if [[ -n $TextMode ]]
       then
-        text="$text $(print_file_line $line $PossibleFile)\n"
+        text="$text $FileLine\n"
       else
-        print_file_line $line $PossibleFile
+        print "$FileLine"
       fi
 
     else
@@ -123,7 +101,11 @@ else
     fi
 
   done
-  print $text
+
+  if [[ -n $TextMode ]]
+  then
+    print $text
+  fi
 fi
 local +r End=$(date +'%s.%N')
-print $(( End - Start))
+# print $(( End - Start))

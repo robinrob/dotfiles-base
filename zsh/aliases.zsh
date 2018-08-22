@@ -1293,6 +1293,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias nunv="nvm_use_node_version"
+
 alias csnew="css_new"
 
 alias o="open_app /usr/bin/open"
