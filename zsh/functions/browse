@@ -1,11 +1,11 @@
 local +r Browser=$1
-local +r Url=$2
+local +r Url=$(urlencode $2)
 
 if $(is_not_empty $Url)
 then
   if $(is_http_url $Url)
   then
-    Url=$Url
+    Url=$(urlencode $Url)
   else
     Url="https://www.google.com/#q=$(urlencode $*[2,-1])&safe=active"
   fi

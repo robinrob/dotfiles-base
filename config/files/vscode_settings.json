@@ -12,7 +12,7 @@
   "sync.quietSync": false,
   "sync.askGistName": false,
   "workbench.colorTheme": "Solarized Dark",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.rulers": [120],
@@ -29,28 +29,28 @@
     "id": "shellscript",
     "extensions": [""],
   },
-  "[ruby]",: {
+  "[ruby]": {
     "editor.tabSize": 2,
   },
-  "[javascript]",: {
+  "[javascript]": {
     "editor.tabSize": 2,
   },
-  "[typescript]",: {
+  "[typescript]": {
     "editor.tabSize": 2,
   },
-  "[javascriptreact]",: {
+  "[javascriptreact]": {
     "editor.tabSize": 2,
   },
-  "[html]",: {
+  "[html]": {
     "editor.tabSize": 2,
   },
-  "[sass]",: {
+  "[sass]": {
     "editor.tabSize": 2,
   },
-  "python.linting.enabled",: false,
-  "python.linting.flake8Args",: [],
+  "python.linting.enabled": false,
+  "python.linting.flake8Args": [],
   "python.linting.flake8Enabled": true,
-  "workbench.startupEditor": ""
+  "workbench.startupEditor": "",
   "colorInfo.languages": [
     {
         "selector": "sass",

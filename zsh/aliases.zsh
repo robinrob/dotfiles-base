@@ -159,9 +159,7 @@ alias rmd="rmdir"
 
 alias hi="history 0"
 
-alias mcs="$EDITOR '$CSGO_CONFIG'"
 
-alias ccs="cat '$CSGO_CONFIG'"
 
 # alias sn="SwitchAudioSource -n"
 
@@ -205,7 +203,6 @@ alias repals="rm repo_aliases.zsh; print_all_repo_aliases > repo_aliases.zsh; so
 
 alias flight="rss flight"
 
-alias space="rss space"
 
 alias science="rss science"
 
@@ -265,6 +262,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias num="open -a Numbers"
+
 alias sn="open -a Sonos"
 
 alias n="open -a Notes"
@@ -287,7 +286,9 @@ alias di="open_app Discord"
 
 alias ap="open_app 'appleScript Editor'"
 
-alias xc="xcode"
+# alias xc="xcode"
+
+alias xc="open_app Xcode-beta"
 
 alias cle="open -a Clementine"
 
@@ -327,7 +328,6 @@ alias skype="open -a Skype"
 
 alias war="open -a 'War Thunder'"
 
-alias cs="open -a 'Counter-Strike Global Offensive'"
 
 alias steam="open -a Steam"
 
@@ -451,7 +451,6 @@ alias cdgg="cd_down_tree $HOME/Google\ Drive"
 
 alias cdsinging="cd $SINGING_HOME"
 
-alias cddocs="cd_down_tree $DOCS_HOME"
 
 alias cddc="cd_down_tree $DOCS_HOME"
 
@@ -502,6 +501,8 @@ alias cddr="cd_down_tree $HOME/Dropbox"
 alias cdk="cd_down_tree $KITCHENPLAN_HOME"
 
 alias cddoc="cd_down_tree $HOME/Documents"
+
+alias cdmu="cd_down_tree $HOME/Music"
 
 alias cdpic="cd_down_tree $HOME/Pictures"
 
@@ -1295,7 +1296,7 @@ alias nunv="nvm_use_node_version"
 
 alias csnew="css_new"
 
-alias o="open_app /usr/bin/open"
+alias o="open_something"
 
 alias linked="search_linked_in"
 
@@ -1352,8 +1353,6 @@ alias gdc="git_diff_commits"
 alias oo="open_option"
 
 alias ms="open -a Messenger"
-
-alias me="open -a Messenger"
 
 alias sl="slack"
 

@@ -1,0 +1,7 @@
+local +r Where="."
+if (( $# > 0 ))
+then
+  local +r Where="$*"
+fi
+
+open $Where

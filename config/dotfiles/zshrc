@@ -67,10 +67,10 @@ prompt robin
 
 # Greeting
 ###############################################################################
-# printf "$(brightwhite I) $(brightyellow am) $(brightcyan awesome) $(brightwhite ':)')"
+printf "$(brightwhite I) $(brightyellow am) $(brightcyan awesome) $(brightwhite ':)')"
 # speak "I am awesome"
 #
-# print " ($(pafon_counter) $(brightcyan days))"
+print " ($(pafon_counter) $(brightcyan days))"
 
 
 # Development

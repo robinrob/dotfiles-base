@@ -1,0 +1,7 @@
+local +r code=$(print $(get_record uc-code) | tr -d '-')
+local +A positions=($*)
+
+for pos in $positions
+do
+  print $code[$pos]
+done
