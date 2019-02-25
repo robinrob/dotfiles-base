@@ -41,9 +41,10 @@ then
     Before="-B $Before"
 fi
 
-IFS="
-"
-for file in $(gfind -P $Where ${=MaxDepth} -follow ${=Excludes} -name "$FindExpression" -type f)
+IFS=" "
+local +r -a Files=($(gfind -P $Where ${=MaxDepth} -follow ${=Excludes} -name "$FindExpression" -type f | xargs))
+
+for file in $Files
 do
   local +r Result
   Result=$(ggrep -n $After $Before $Insensitive $GrepExpression $file)
