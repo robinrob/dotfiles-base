@@ -1,14 +1,19 @@
 ADHD
 ADHDeveloper
 ADHDevelopers
+AngularJS
+APIs
 AppConfig
 AppLogger
+AWS
 baseurl
 CLI
+Cloudreach
 codebase
 config
 Coq
 csv
+CTO
 docstrings
 DOTFILES
 dotfiles
@@ -41,8 +46,10 @@ Javascript
 json
 launchctl
 launchd
+LinkedIn
 Lodash
 MovementType
+Netlify
 NHS
 OCaml
 OCaml's
@@ -53,6 +60,7 @@ PHP
 plaintext
 plist
 png
+PostgreSQL
 pre
 Printf
 printf
@@ -60,6 +68,7 @@ reasonml
 recurse
 recursing
 repo
+Salesforce
 setattr
 SIGTERM
 src
@@ -88,6 +97,8 @@ url
 Utop
 VSCODE
 vscode
+Wheelblazers
 wikipedia
+Wordpress
 ZSH
 zsh

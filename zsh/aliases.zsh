@@ -312,11 +312,11 @@ alias l4d="open -a 'Left 4 Dead 2'"
 
 alias steam="open -a Steam"
 
-alias ms="open -a Messenger"
-
 alias ssl="open -a 'shellShock Live'"
 
 alias itunes="open -a iTunes"
+
+alias itu="open -a iTunes"
 
 alias quick="open -a 'Quicktime Player'"
 
@@ -327,7 +327,6 @@ alias act="open -a 'Activity Monitor'"
 alias skype="open -a Skype"
 
 alias war="open -a 'War Thunder'"
-
 
 alias steam="open -a Steam"
 
@@ -1872,7 +1871,7 @@ alias brun="brew uninstall"
 
 alias brud="brew update"
 
-alias brug="brew update; brew upgrade"
+alias brug="brew update --verbose; brew upgrade"
 
 alias brin="brew info"
 
