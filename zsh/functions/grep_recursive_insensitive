@@ -1,1 +1,1 @@
-grep_recursive $@ -i
+grep_recursive -g $@ -i

@@ -1,0 +1,9 @@
+local +r ListName=$1
+local +r -a Items=($*[2,-1])
+
+for item in $Items
+do
+  add_named_list_item $ListName $item
+done
+
+

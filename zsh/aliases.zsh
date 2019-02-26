@@ -1777,6 +1777,14 @@ alias atl="add_named_list_item $TO_LEARN"
 
 alias atw="add_named_list_item $TO_WATCH"
 
+alias ctt="cat_named_list thoughts"
+
+alias mtt="edit_named_list thoughts"
+
+alias att="add_thought"
+
+alias dtt="delete_named_list_item thoughts"
+
 alias atc="add_named_list_item courses"
 
 alias read1="take $TO_READ"

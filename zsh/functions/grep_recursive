@@ -1,17 +1,15 @@
 local +r Usage='grep_recursive -g <regex> -w <location> -d <depth> -i (case-insensitive grep)'
 
-[[ -z $1 ]] && red $Usage && return 1
-
-
-local +r GrepExpression=$1; shift
+local +r GrepExpression
 local +r Where='.'
 local +r MaxDepth
 local +r Insensitive
 local +r Excludes
 
-while getopts :w:d:e:i opt
+while getopts :g:w:d:e:i opt
 do
 	case $opt in
+    g) GrepExpression=$OPTARG ;;
     w) Where="$OPTARG" ;;
     d) MaxDepth="-maxdepth $OPTARG" ;;
     i) Insensitive="--ignore-case" ;;
@@ -25,5 +23,7 @@ do
     *) red $Usage && return 1 ;;
 	esac
 done
+
+[[ -z $GrepExpression ]] && red $Usage && return 1
 
 gfind $Where ${=MaxDepth} -type f ${=Excludes} -exec gegrep -n -H --color $Insensitive $GrepExpression {} \;

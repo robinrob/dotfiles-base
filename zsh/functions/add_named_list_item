@@ -1,4 +1,4 @@
-local +r List=$1; shift
+local +r List=$1
 local +r ListPath=$(find_first_named_list $List)
 
 if ! [[ -f $ListPath ]]
@@ -6,4 +6,4 @@ then
   touch $ListPath
 fi
 
-add_list_item $ListPath $@
+add_list_item $ListPath $*[2,-1]
