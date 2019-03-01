@@ -1291,6 +1291,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias nvu="nvm_use"
+
 alias nunv="nvm_use_node_version"
 
 alias csnew="css_new"
@@ -1870,6 +1872,8 @@ alias brln="brew link"
 alias brul="brew unlink"
 
 alias bri="brew install"
+
+alias brr="brew reinstall"
 
 alias bru="brew update; brew doctor"
 

@@ -1,0 +1,8 @@
+local +r Version=$1
+
+if ! $(exec_exists nvm)
+then
+  source_nvm
+fi
+
+nvm use $Version
