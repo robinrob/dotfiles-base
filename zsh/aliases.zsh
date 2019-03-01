@@ -1593,7 +1593,7 @@ alias dd="duckduckgo"
 
 alias gr="grep_recursive_insensitive"
 
-alias gR="grep_recursive"
+alias gR="grep_recursive -g"
 
 alias sedall="sed_all"
 

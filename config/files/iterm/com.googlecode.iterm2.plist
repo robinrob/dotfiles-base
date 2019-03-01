@@ -778,9 +778,9 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 23 1280 755 0 0 1280 778 </string>
+	<string>3 0 634 778 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>643 0 634 778 0 0 1280 778 </string>
+	<string>0 179 1280 599 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2344,7 +2344,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-09-11T15:48:03Z</date>
+	<date>2019-02-25T11:26:27Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.1.1</string>
 	<key>SavePasteHistory</key>
@@ -2352,7 +2352,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -2398,6 +2398,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.0</string>
+	<string>3.2.7</string>
 </dict>
 </plist>

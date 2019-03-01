@@ -17,7 +17,7 @@ for file in $Files
 do
   if ! [[ $RawOutput ]]
   then
-    print "$(green Mis-spelled words in:) $(yellow $file)"
+    print "$(green Mis-spelledwords in:) $(yellow $file)"
   fi
 
   for word in $(spellcheck_list $file)

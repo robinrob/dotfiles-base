@@ -4,7 +4,8 @@ for file in $Files
 do
   IFS="
 "
-  local -U WordSet=($(cat $file | aspell -d en_GB-ise list | xargs -0))
+  # local -U WordSet=($(cat $file | aspell -d en_GB-ise list | xargs -0))
+  local -U WordSet=($(cat $file | hunspell -l -d en_GB | xargs -0))
   for word in $WordSet
   do
     print -r "$word"
