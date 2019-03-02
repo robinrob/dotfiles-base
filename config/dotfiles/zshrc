@@ -90,7 +90,7 @@ print " ($(pafon_counter) $(brightcyan days))"
 
 ## Node
 #########
-source_nvm
+# source_nvm
 # nvm use $NODE_VERSION
 
 

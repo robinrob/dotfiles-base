@@ -1,4 +1,11 @@
+local +r Usage="$(red)nvm_use [version]. If version not specified then .node-version file must exist in working directory.$(default)"
 local +r Version=$1
+
+if [[ -z $Version ]] && [[ -f .node-version ]]
+then
+  Version=$(cat .node-version)
+fi
+[[ -z $Version ]] && print $Usage && return 1
 
 if ! $(exec_exists nvm)
 then
