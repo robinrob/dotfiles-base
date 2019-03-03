@@ -298,6 +298,8 @@ alias sub="open -a 'Sublime Text'"
 
 alias vs="open_app 'Visual Studio Code'"
 
+alias at="open_app 'Atom'"
+
 alias hk="heroku"
 
 alias hc="open -a Hipchat"
@@ -759,7 +761,7 @@ alias gs="git-number"
 
 alias gig="git_ignore"
 
-alias gd="git diff"
+alias gd="git-number diff"
 
 alias ga="git-number add"
 
@@ -768,8 +770,6 @@ alias gch="git checkout"
 alias grS="git reset"
 
 alias gig="git_do git_ignore"
-
-alias gd="git_do 'git diff'"
 
 alias gch="git_do 'git checkout'"
 
