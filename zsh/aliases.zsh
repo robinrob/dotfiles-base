@@ -555,8 +555,6 @@ alias pbu="pythonbrew use"
 
 alias pbl="pythonbrew list"
 
-alias rgm="rvm_gem_list"
-
 alias crv="cat .ruby-version"
 
 alias crg="cat .ruby-gemset"
@@ -565,21 +563,9 @@ alias rgfl="rm Gemfile.lock"
 
 alias gib="gem install bundler"
 
-alias rge="rvm gemset empty"
-
-alias rgl="rvm gemset list"
-
-alias rvu="rvm use"
-
-alias rgu="rvm gemset use"
-
-alias rgc="rvm gemset create"
-
-alias rgd="rvm gemset delete"
+alias rvu="rbenv_use"
 
 alias rgn="gemset_new"
-
-alias rvl="rvm list"
 
 alias rsc="rails console"
 

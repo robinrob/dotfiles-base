@@ -1,0 +1,8 @@
+local +r Version=$1
+
+if ! $(rbenv use $Version)
+then
+  rbenv install $Version
+fi
+
+rbenv use $Version
