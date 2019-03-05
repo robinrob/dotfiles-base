@@ -48,6 +48,7 @@ Enum
 enum
 ERB
 Evernote
+filetype
 foreach
 getattribute
 gitconfig
@@ -87,6 +88,7 @@ launchctl
 launchd
 LinkedIn
 Lodash
+MacVim
 MapReduce
 MovementType
 MPhys
@@ -151,6 +153,8 @@ Tetris
 tetris
 TetrisGrid
 TetrisPiece
+TextMate
+TextWrangler
 th
 todo
 Todoist
@@ -161,7 +165,10 @@ UOTC
 url
 Utop
 VSCODE
+VSCode
 vscode
+VSCode's
+VSCodes
 Wheelblazers
 wikipedia
 Wordpress

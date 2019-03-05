@@ -1,8 +1,19 @@
+local +r Usage="$(red)rvm_use [version]. If version not specified then .ruby-version file must exist in working directory.$(default)"
 local +r Version=$1
 
-if ! $(rbenv use $Version)
+if [[ -z $Version ]] && [[ -f .ruby-version ]]
+then
+  Version=$(cat .ruby-version)
+fi
+
+if [[ -z $Version ]]
+then
+  print $Usage
+fi
+
+if ! $(rbenv local $Version)
 then
   rbenv install $Version
 fi
 
-rbenv use $Version
+rbenv local $Version
