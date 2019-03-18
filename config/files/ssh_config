@@ -1,0 +1,31 @@
+#################################################################################
+# Robin Smith IO
+#################################################################################
+Host pi
+User pi
+Hostname 198.168.0.24
+
+# Host rsmith.github.com
+# HostName github.com
+# User rsmith
+# PreferredAuthentications publickey
+# IdentityFile ~/.ssh/rsmith-github
+# IdentitiesOnly yes
+# Port 443
+
+Host github.com
+HostName ssh.github.com
+User robinrob
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/github_robinrob
+IdentitiesOnly yes
+Port 443
+
+Host bitbucket.org
+HostName altssh.bitbucket.org
+User rsmith-io
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/bitbucket_rsmith-io
+IdentitiesOnly yes
+Port 443
+
