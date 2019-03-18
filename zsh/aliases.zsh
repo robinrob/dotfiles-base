@@ -563,7 +563,7 @@ alias rgfl="rm Gemfile.lock"
 
 alias gib="gem install bundler"
 
-alias rvu="rbenv_use"
+alias rbu="rbenv_use"
 
 alias rgn="gemset_new"
 
@@ -703,7 +703,6 @@ alias grfn="grep_functions"
 
 alias cdnoc="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-noc-chef"
 
-alias cdms="cd_down_tree $WORK_HOME/ruby/cloudreach-chef/cloudreach-ms-chef"
 
 alias cc="cocos compile"
 
@@ -996,13 +995,7 @@ alias mgrc="$EDITOR $HOME/.gimprc"
 
 alias cvrc="cat $HOME/.vimrc"
 
-alias mrvm="$EDITOR $HOME/.rvmrc"
-
-alias mrvmrc="$EDITOR .rvmrc"
-
 alias essh="edit $HOME/.ssh/config"
-
-
 
 alias cssh="cat $HOME/.ssh/config"
 
@@ -1056,7 +1049,6 @@ alias maw="$EDITOR $AWS_CONFIG"
 
 alias erec="$EDITOR $RECORDS_PATH"
 
-alias cms="edit $DOCS_HOME/commands.txt"
 
 alias password="ruby $RUBY_HOME/projects/rbpassword/rbpassword.rb"
 
@@ -1338,8 +1330,6 @@ alias glc="git_diff_commits"
 alias gdc="git_diff_commits"
 
 alias oo="open_option"
-
-alias ms="open -a Messenger"
 
 alias sl="slack"
 
