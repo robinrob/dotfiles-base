@@ -4,5 +4,5 @@ local +r Destination=$TRASH_HOME
 for file in $Files
 do
   print "$(red Moving) $(yellow $file) $(red to $Destination)"
-  gmv $file $Destination	
+  sudo gmv $file $Destination	
 done

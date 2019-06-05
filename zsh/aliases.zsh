@@ -274,7 +274,7 @@ alias todo="open -a todoist"
 
 alias wch="open_weechat"
 
-alias 1p="open_app 1Password\ 6"
+alias 1p="open_app 1Password\ 7"
 
 alias rb="open_app RubyMine"
 
