@@ -9,7 +9,6 @@ alias pcregrep='pcregrep --color=auto'
 
 alias rmrf="rm -rf"
 
-alias rmr="rm -r"
 
 alias cpx="chmod +x"
 
@@ -201,7 +200,6 @@ alias kid="kill_processes_by_name idea"
 
 alias repals="rm repo_aliases.zsh; print_all_repo_aliases > repo_aliases.zsh; source_aliases"
 
-alias flight="rss flight"
 
 
 alias science="rss science"
@@ -274,7 +272,7 @@ alias todo="open -a todoist"
 
 alias wch="open_weechat"
 
-alias 1p="open_app 1Password\ 7"
+alias 1p="open_app 1Password\ 6"
 
 alias rb="open_app RubyMine"
 
@@ -820,7 +818,6 @@ alias gbm="git branch master && git checkout master	"
 
 alias gb="git branch"
 
-alias gcmr="git submodule foreach 'git checkout master'"
 
 alias gsf="git submodule foreach"
 
@@ -1269,6 +1266,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias pafon="pafon_counter"
+
 alias nvu="nvm_use"
 
 alias nunv="nvm_use_node_version"
@@ -1523,7 +1522,6 @@ alias rkcl="rake_clean"
 
 alias zaz="zazzle"
 
-alias light="lightning"
 
 alias mva="move_to_applications"
 
@@ -1577,7 +1575,6 @@ alias sedall="sed_all"
 
 alias jks="jekyll_serve"
 
-alias lib="search_library"
 
 alias yell="yell_search"
 
@@ -1681,7 +1678,6 @@ alias pdf="print_default"
 
 alias grec="get_record"
 
-alias reminderrobin="reminder robin@mrrobinsmith.com"
 
 alias reminderwork="reminder robin.smith@cloudreach.co.uk"
 
