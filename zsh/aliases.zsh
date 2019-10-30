@@ -1496,7 +1496,7 @@ alias sains="search_sainsburys"
 
 alias asda="search_asda"
 
-alias wait="search_waitrose"
+alias wt="search_waitrose"
 
 alias gbch="git_branch_checkout"
 

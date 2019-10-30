@@ -13,3 +13,10 @@ then
 fi
 
 nvm use $Version
+if ! [[ $? ]]
+then
+  green "Installing Node $Version ..."
+  nvm install $Version
+  nvm use $Version
+fi
+
