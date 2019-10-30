@@ -12,8 +12,7 @@ then
   source_nvm
 fi
 
-nvm use $Version
-if ! [[ $? ]]
+if ! nvm use $Version
 then
   green "Installing Node $Version ..."
   nvm install $Version
