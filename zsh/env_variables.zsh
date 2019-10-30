@@ -92,7 +92,7 @@ fi
 
 if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
 then
-	export BROWSER="chrome"
+	export BROWSER="safari"
 fi
 
 export BROWSER_APP="Google\ Chrome"
