@@ -7,3 +7,6 @@
 [submodule "zsh/disable-osx-startup-sound"]
   path = zsh/disable-osx-startup-sound
   url = git@github.com:robinrob/immutable
+[submodule "git-number"]
+	path = git-number
+	url = git@github.com:holygeek/git-number.git
