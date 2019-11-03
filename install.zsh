@@ -70,4 +70,7 @@ green "Installing git-number tool ..."
 $ZDOT_HOME/install_git_numbers.zsh
 
 
+green "Installing iTerm2 preferences plist file ..."
+$ZDOT_HOME/install_iterm_plist.zsh
+
 green "Done."

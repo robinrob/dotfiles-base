@@ -5,11 +5,6 @@ TASK_ARGS=($*[2,-1])
 
 BASE_CMD='rake -g'
 
-if ! $(exec_exists rvm)
-then
-  green "Sourcing rvm ..."
-  source_rvm
-fi
 
 if [ -f $RAKEFILE ]
 then
