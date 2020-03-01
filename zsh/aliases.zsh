@@ -124,7 +124,9 @@ alias dt="date"
 
 alias pyka="cd_pycharm $KAPTIO_HOME"
 
-alias trf="translate -f fr -t en"
+alias trf="translate_french"
+
+alias tre="translate_english"
 
 alias brex="exit"
 
@@ -268,7 +270,7 @@ alias n="open -a Notes"
 
 alias notes="open -a Notes"
 
-alias todo="open -a todoist"
+alias todo="open -a Microsoft\ To\ Do"
 
 alias wch="open_weechat"
 
@@ -1219,7 +1221,7 @@ alias phone="get_record phone"
 
 alias ph="phone"
 
-alias reg="get_record reg"
+alias reg="get_record car-reg"
 
 alias pH="get_record phonecompacb"
 
@@ -1266,6 +1268,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias emo="search_emoji"
+
 alias pafon="pafon_counter"
 
 alias nvu="nvm_use"
@@ -1496,7 +1500,13 @@ alias sains="search_sainsburys"
 
 alias asda="search_asda"
 
-alias wt="search_waitrose"
+alias wait="search_waitrose"
+
+alias morr="search_morrisons"
+
+alias ebay="search_ebay"
+
+alias tor="search_tornado"
 
 alias gbch="git_branch_checkout"
 

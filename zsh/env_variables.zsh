@@ -90,12 +90,8 @@ then
   export PGDATA="$HOME/Library/Containers/com.heroku.postgres/Data/Library/Application Support/Postgres/var"
 fi
 
-if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
-then
-	export BROWSER="safari"
-fi
+export BROWSER="safari"
 
-export BROWSER_APP="Google\ Chrome"
 
 
 ###############################################################################
@@ -349,8 +345,6 @@ export EC2_HOME=/usr/local/lib/ec2-api-tools-1.6.11.0
 export GAM_PATH=/usr/local/Library/gam
 
 export TODO_HOME=$LOCAL_HOME/lib/todo.csv
-
-export LA_HOME=$PHOTOS_HOME/la
 
 export FILES_HOME=$HOME/Dropbox
 
