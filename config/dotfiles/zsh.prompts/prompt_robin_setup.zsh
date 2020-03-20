@@ -66,11 +66,12 @@ function prompt_robin_setup {
 	  HOSTCOLOR="$(brightredprompt)"
   fi
 
-  LIGHTNING="⚡"
+  # ICON="⚡"
+  ICON="🖕"
 
   SEP="$(magentaprompt)$(repeat_string 80 -)"$'\n'
 
-  PS1="${SEP}$(magentaprompt)%n$(brightwhiteprompt)@%{$HOSTCOLOR%}%B%m%b%f $(blueprompt)\$(directory_name)/ \${vcs_info_msg_0_}$LIGHTNING$(defaultprompt)  "
+  PS1="${SEP}$(magentaprompt)%n$(brightwhiteprompt)@%{$HOSTCOLOR%}%B%m%b%f $(blueprompt)\$(directory_name)/ \${vcs_info_msg_0_}$ICON$(defaultprompt)  "
 
   RPS1="%(?.$(greenprompt)(%?%).$(redprompt)(%?%))$(defaultprompt)"
  

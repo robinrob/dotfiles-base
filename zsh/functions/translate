@@ -13,7 +13,7 @@ done
 
 if [[ "$From" == "" ]]
 then
-	From="no"
+	From="fr"
 else
 	shift 2;
 fi

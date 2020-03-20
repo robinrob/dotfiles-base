@@ -104,6 +104,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias history="history 0"
+
 alias gn="git-number"
 
 alias cdtr="cd ~/.Trash"
@@ -271,6 +273,8 @@ alias n="open -a Notes"
 alias notes="open -a Notes"
 
 alias todo="open -a Microsoft\ To\ Do"
+
+alias afa="open -a Microsoft\ To\ Do"
 
 alias wch="open_weechat"
 
@@ -1187,7 +1191,6 @@ alias crec="cat $RECORDS_PATH"
 
 alias grrec="grep_list $RECORDS_PATH"
 
-alias gov="get_record directgovid"
 
 alias lahome="get_record la_home"
 
@@ -1268,6 +1271,14 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias syn="chercher_synonymes"
+
+alias sign="search_signs"
+
+alias gif="search_gifs"
+
+alias con="search_conjugaisons"
+
 alias emo="search_emoji"
 
 alias pafon="pafon_counter"
@@ -1340,7 +1351,7 @@ alias chars="print_chars"
 
 alias kpr="kill_processes_by_name"
 
-alias ca="google_calendar"
+alias ca="open -a Calendar"
 
 alias ma="gmail"
 
@@ -1503,6 +1514,8 @@ alias asda="search_asda"
 alias wait="search_waitrose"
 
 alias morr="search_morrisons"
+
+alias tesc="search_tesco"
 
 alias ebay="search_ebay"
 

@@ -40,7 +40,7 @@ crontab $DOTFILES_BASE_HOME/config/files/crontab.cron
 
 
 green "Installing Robin's custom keyboard layout ..."
-cp $DOTFILES_BASE_HOME/config/files/Robin.keylayout.xml ~/Library/Keyboard\ Layouts/Robin.keylayout
+$ZDOT_HOME/install_keylayout.zsh
 
 
 # green "Installing sudoers file ..."

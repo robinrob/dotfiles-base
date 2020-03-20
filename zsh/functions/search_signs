@@ -1,0 +1,1 @@
+browser "https://www.signingsavvy.com/search/$(urlencode $@)"

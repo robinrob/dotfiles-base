@@ -1,0 +1,1 @@
+browser "https://giphy.com/search/$(urlencode $@)"
