@@ -272,9 +272,7 @@ alias n="open -a Notes"
 
 alias notes="open -a Notes"
 
-alias todo="open -a Microsoft\ To\ Do"
-
-alias afa="open -a Microsoft\ To\ Do"
+# alias todo="open -a Microsoft\ To\ Do"
 
 alias wch="open_weechat"
 
@@ -1271,6 +1269,20 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias rim="chercher_rimes"
+
+alias thes="search_thesaurus"
+
+alias words="scrabble_words"
+
+alias wcp="word_count_pro"
+
+alias dic="search_wiktionary"
+
+alias apod="search_apod"
+
+alias sto="search_stock_images"
+
 alias syn="chercher_synonymes"
 
 alias sign="search_signs"
@@ -1317,9 +1329,9 @@ alias rmgU="rm_git_untracked_files"
 
 alias dict="/usr/local/bin/dict"
 
-alias dic="dicsaurus"
+# alias dic="dicsaurus"
 
-alias thes="dicsaurus -t"
+# alias thes="dicsaurus -t"
 
 alias gchord="search_guitar_chord"
 
@@ -1840,8 +1852,6 @@ alias dsp="despace"
 
 alias bell="tput bel"
 
-alias sto="setopt"
-
 alias uns="unsetopt"
 
 alias seg="set -o | grep"
@@ -1929,6 +1939,13 @@ alias afind="libfind_s $AWK_HOME"
 alias zshfind="file_grep $HOME/.zshrc"
 
 alias sshf="file_grep $HOME/.ssh/config"
+
+
+###############################################################################
+# Records
+###############################################################################
+
+alias rentcode="get_record rent"
 
 
 ###############################################################################
