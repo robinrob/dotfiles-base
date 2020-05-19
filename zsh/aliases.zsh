@@ -272,7 +272,7 @@ alias n="open -a Notes"
 
 alias notes="open -a Notes"
 
-# alias todo="open -a Microsoft\ To\ Do"
+alias todo="open -a Microsoft\ To\ Do"
 
 alias wch="open_weechat"
 
@@ -1194,7 +1194,7 @@ alias lahome="get_record la_home"
 
 alias lawork="get_record la_work"
 
-alias cardnat="get_record nationwide-debit"
+alias cardmon="get_record monzo-debit"
 
 alias mspnum="get_record msp_num"
 
@@ -1269,6 +1269,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias mots="chercher_words"
+
 alias rim="chercher_rimes"
 
 alias thes="search_thesaurus"
@@ -1337,7 +1339,7 @@ alias gchord="search_guitar_chord"
 
 alias swdoc="search_ios_doc"
 
-alias orders="search_amazon_orders"
+alias ordres="search_amazon_orders"
 
 alias hp="hub_pull_request"
 
@@ -1414,6 +1416,8 @@ alias lsfn="ls_function"
 alias alc="search_sqlalchemy_doc"
 
 alias grgm="grep_gitmodules"
+
+alias op="browse opera"
 
 alias sf="browse safari"
 
