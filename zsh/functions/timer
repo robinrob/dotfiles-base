@@ -1,7 +1,35 @@
-trap max_brightness INT
-STOP='FALSE'
+trap cancel_timer INT
+local +r STOP='FALSE'
 
-function max_brightness {
+function timer_finished_alert {
+  if [[ $STOP == 'FALSE' ]]
+  then
+    if (( $PHASE == 0 ))
+    then
+      say "bull"
+      # brightness 0
+      PHASE=1
+    else
+      say "dog"
+      # brightness 1
+      PHASE=0
+    fi
+  fi
+}
+
+function timer_finished {
+  osascript -e 'set volume output volume 100'
+  local PHASE=0
+  while [[ $STOP == 'FALSE' ]]
+  do
+    timer_finished_alert
+    sleep 0.1
+  done
+
+  # brightness 1
+}
+
+function cancel_timer {
   STOP='TRUE'
 
   trap INT
@@ -24,30 +52,8 @@ fi
 
 sleep $Duration
 
-function timer_finished_alert {
-  print "TIMER FINISHED"
+if [[ $STOP == 'FALSE' ]]
+then
+  timer_finished
+fi
 
-  if [[ $STOP == 'FALSE' ]]
-  then
-    if (( $PHASE == 0 ))
-    then
-      say "bull"
-      brightness 0
-      PHASE=1
-    else
-      say "dog"
-      brightness 1
-      PHASE=0
-    fi
-  fi
-}
-
-osascript -e 'set volume output volume 100'
-local PHASE=0
-while [[ $STOP == 'FALSE' ]]
-do
-  timer_finished_alert
-  sleep 0.1
-done
-
-brightness 1

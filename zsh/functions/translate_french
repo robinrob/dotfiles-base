@@ -1,1 +1,0 @@
-browser "https://www.linguee.com/french-english/search?source=auto&query=$(urlencode $@)"

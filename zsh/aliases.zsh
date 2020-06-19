@@ -126,7 +126,7 @@ alias dt="date"
 
 alias pyka="cd_pycharm $KAPTIO_HOME"
 
-alias trf="translate_french"
+alias trs="translate_slovenian"
 
 alias tre="translate_english"
 
@@ -264,6 +264,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias tel="open -a Telegram"
+
 alias num="open -a Numbers"
 
 alias sn="open -a Sonos"
@@ -1269,6 +1271,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias screw="search_screwfix"
+
 alias mots="chercher_words"
 
 alias rim="chercher_rimes"
