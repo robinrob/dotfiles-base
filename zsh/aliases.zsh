@@ -106,7 +106,7 @@ alias tail="gtail"
 ###############################################################################
 alias history="history 0"
 
-alias gn="git-number"
+alias gn="git_number"
 
 alias cdtr="cd ~/.Trash"
 
@@ -264,6 +264,10 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias hl="open -a Half-Life"
+
+alias hl2="open -a Half-Life 2"
+
 alias tel="open -a Telegram"
 
 alias num="open -a Numbers"
@@ -746,13 +750,13 @@ alias vpnd="vpn -q"
 ###############################################################################
 alias gS="git status"
 
-alias gs="git-number"
+alias gs="git_number"
 
 alias gig="git_ignore"
 
-alias gd="git-number diff"
+alias gd="git_number diff"
 
-alias ga="git-number add"
+alias ga="git_number add"
 
 alias gch="git checkout"
 
@@ -1509,7 +1513,6 @@ alias logos="log_ocaml_var s"
 
 alias logob="log_ocaml_var B"
 
-alias logof="log_ocaml_var f"
 
 alias loggd="log_go_var d"
 
