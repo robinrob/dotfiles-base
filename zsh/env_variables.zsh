@@ -40,7 +40,7 @@ export PYTHONDONTWRITEBYTECODE=1
 ###############################################################################
 export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/lib/ruby/2.0.0
 
-export RUBY_VERSION=2.5.0
+export RUBY_VERSION=2.6.0
 
 ###############################################################################
 # Node
