@@ -270,7 +270,7 @@ alias uto="open -a uTorrent"
 
 alias hl="open -a Half-Life"
 
-alias hl2="open -a Half-Life 2"
+# alias hl2="open -a Half-Life 2"
 
 alias tel="open -a Telegram"
 
