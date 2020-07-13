@@ -112,8 +112,6 @@ alias gn="git_number"
 
 alias cdtr="cd ~/.Trash"
 
-alias sdtr="sd ~/.Trash"
-
 alias pomo="timer 25"
 
 alias brk="timer 5"
@@ -256,7 +254,7 @@ alias rkls="rake_do git:foreach nil"
 
 alias rkss="rake_do git:sort_sub"
 
-alias str="du -dh $TRASH_HOME"
+alias str="sd ~/.Trash"
 
 alias sdr="du -dh $HOME/Dropbox"
 
@@ -266,6 +264,10 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias qb="open -a Qbittorrent"
+
+alias uto="open -a uTorrent"
+
 alias hl="open -a Half-Life"
 
 alias hl2="open -a Half-Life 2"
@@ -1277,6 +1279,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias mtm="move_to_music"
+
 alias screw="search_screwfix"
 
 alias mots="chercher_words"
