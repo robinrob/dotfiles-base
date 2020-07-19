@@ -266,7 +266,7 @@ alias syslog="tail -f /var/log/system.log"
 ##############################################################################
 alias qb="open -a Qbittorrent"
 
-alias uto="open -a uTorrent"
+alias ut="open -a uTorrent"
 
 alias hl="open -a Half-Life"
 
@@ -551,7 +551,7 @@ alias gpts="gulp test-server"
 
 alias ven="virtualenv"
 
-alias ut="utop"
+# alias ut="utop"
 
 alias cdfn="cd_down_tree $FUNCS_HOME"
 
