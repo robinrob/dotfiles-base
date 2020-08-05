@@ -523,7 +523,7 @@ alias cdopt="cd_down_tree $HOME/Documents/options"
 
 alias cdmv="cd_down_tree $HOME/Movies"
 
-alias cdmv="cd_down_tree $HOME/Books"
+alias cdbk="cd_down_tree $HOME/Books"
 
 alias cdaws="cd_down_tree `dirname $AWS_CONFIG`"
 
