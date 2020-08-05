@@ -1,0 +1,1 @@
+browser "https://www.linguee.com/english-portuguese/search?source=auto&query=$(urlencode $@)"

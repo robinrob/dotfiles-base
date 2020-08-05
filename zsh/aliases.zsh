@@ -128,7 +128,9 @@ alias pyka="cd_pycharm $KAPTIO_HOME"
 
 alias trs="translate_slovenian"
 
-alias tre="translate_english"
+alias tre="translate_french"
+
+alias trp="translate_portuguese"
 
 alias brex="exit"
 
@@ -139,8 +141,6 @@ alias kcr="kitchen create"
 alias kc="kitchen converge"
 
 alias kl="kitchen login"
-
-# alias trf="copy_print 'self.assertTrue(False)'"
 
 alias mapsn="maps -n"
 
@@ -278,7 +278,7 @@ alias num="open -a Numbers"
 
 alias sn="open -a Sonos"
 
-alias n="open -a Notes"
+alias n="open -a Evernote"
 
 alias notes="open -a Notes"
 
@@ -522,6 +522,8 @@ alias cdpic="cd_down_tree $HOME/Pictures"
 alias cdopt="cd_down_tree $HOME/Documents/options"
 
 alias cdmv="cd_down_tree $HOME/Movies"
+
+alias cdmv="cd_down_tree $HOME/Books"
 
 alias cdaws="cd_down_tree `dirname $AWS_CONFIG`"
 
