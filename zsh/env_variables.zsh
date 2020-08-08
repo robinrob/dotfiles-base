@@ -115,8 +115,6 @@ export COQ_HOME="$HOME/Programming/robin/coq"
 
 export FISH_HOME="$HOME/Programming/robin/fish"
 
-export FORCE_COM_HOME="$HOME/Programming/robin/force.com"
-
 export HTML_HOME="$HOME/Programming/robin/html"
 
 export CSS_HOME="$HOME/Programming/robin/css"
@@ -188,10 +186,6 @@ export CONFIG_HOME=$DOTFILES_BASE_HOME/config
 export CONFIG_DOTFILES_HOME=$DOTFILES_BASE_HOME/config/dotfiles
 
 export CONFIG_FILES_HOME=$DOTFILES_BASE_HOME/config/files
-
-export FORCE_COM_HOME=$ROBIN_HOME/force.com
-
-export WORK_FORCE_COM_HOME=$WORK_HOME/force.com
 
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
