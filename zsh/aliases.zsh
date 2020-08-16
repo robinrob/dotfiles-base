@@ -88,7 +88,7 @@ alias sed="gsed -r"
 
 alias gsed="gsed -r"
 
-alias ls="/usr/local/bin/gls --color"
+alias ls="/usr/local/bin/gls --color -1"
 
 # alias cat="gcat"
 
