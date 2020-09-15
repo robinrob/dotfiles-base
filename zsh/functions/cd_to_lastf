@@ -1,0 +1,7 @@
+local +r LastFileOrDir=$(lastf_absolute 2> /dev/null)
+
+if $(is_dir $LastFileOrDir)
+then
+  cd $LastFileOrDir
+fi
+

@@ -104,6 +104,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias cdlm="cd $HOME/Movies; cd_to_lastf"
+
 alias frv="fix_ruby_version"
 
 alias history="history 0"
@@ -256,6 +258,10 @@ alias rkss="rake_do git:sort_sub"
 
 alias str="sd ~/.Trash"
 
+alias strash="sd ~/.Trash"
+
+alias sdtrash="sd ~/.Trash"
+
 alias sdr="du -dh $HOME/Dropbox"
 
 alias syslog="tail -f /var/log/system.log"
@@ -264,6 +270,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias pre="open -a Preview"
+
 alias qb="open -a Qbittorrent"
 
 alias ut="open -a uTorrent"
@@ -1281,6 +1289,10 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias tor="search_tornado"
+
+alias pho="search_google_photos"
+
 alias mtm="move_to_music"
 
 alias screw="search_screwfix"
@@ -1361,7 +1373,7 @@ alias hp="hub_pull_request"
 
 alias wt="work_tabs"
 
-alias cdl="cd_last_dir"
+alias cdl="cd_to_lastf"
 
 alias fac="fast_mail_calendar"
 
@@ -1550,7 +1562,6 @@ alias tesc="search_tesco"
 
 alias ebay="search_ebay"
 
-alias tor="search_tornado"
 
 alias gbch="git_branch_checkout"
 

@@ -2,9 +2,9 @@ local +r Url
 
 case $# in
   0)
-    Url="https://tornadoofchaos.wordpress.com" ;;
+    Url="https://atornadoofchaos.wordpress.com" ;;
   *) 
-    Url="https://tornadoofchaos.wordpress.com/?s=$(urlencode $@)" ;;
+    Url="https://atornadoofchaos.wordpress.com/?s=$(urlencode $@)" ;;
 esac
 
 browser $Url
