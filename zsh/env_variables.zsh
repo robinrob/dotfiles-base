@@ -115,7 +115,7 @@ export COQ_HOME="$HOME/Programming/robin/coq"
 
 export FISH_HOME="$HOME/Programming/robin/fish"
 
-export HTML_HOME="$HOME/Programming/robin/html"
+export HTML_HOME="$HOME/Programming/robin/html"G
 
 export CSS_HOME="$HOME/Programming/robin/css"
 
@@ -440,6 +440,8 @@ alias_files=($ALIASES_PATH $BOOKMARKS_ALIAS_PATH)
 
 # export GIT_SSH=$DOTFILES_BASE_HOME/sh/ssh-git.sh
 
+export PODCAST_HOME="$HOME/Google\ Drive/podcast"
+
 
 ###############################################################################
 # Applications
@@ -578,3 +580,4 @@ export h="6.626e-34"
 # Shell color names & codes
 ###############################################################################
 source $ZDOT_HOME/color_codes.zsh
+

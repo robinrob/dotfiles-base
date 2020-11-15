@@ -1,4 +1,4 @@
-local +r Origin=$1
-local +r Destination=$2
+local +r Origin=$(get_record home_postcode)
+local +r Destination="$@"
 
 browser "https://www.google.co.uk/maps/dir/($(urlencode $Origin)/$(urlencode $Destination)"

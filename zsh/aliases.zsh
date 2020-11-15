@@ -132,6 +132,8 @@ alias trs="translate_slovenian"
 
 alias tre="translate_french"
 
+alias trg="translate_german"
+
 alias trp="translate_portuguese"
 
 alias brex="exit"
@@ -198,6 +200,8 @@ alias vlc="open -a VLC"
 
 alias aud="open -a Audacity"
 
+alias gar="open -a garageBand"
+
 alias kcc="kill_processes_by_name cocos"
 
 alias kbs="kill_processes_by_name browser-sync"
@@ -205,8 +209,6 @@ alias kbs="kill_processes_by_name browser-sync"
 alias kid="kill_processes_by_name idea"
 
 alias repals="rm repo_aliases.zsh; print_all_repo_aliases > repo_aliases.zsh; source_aliases"
-
-
 
 alias science="rss science"
 
@@ -276,6 +278,8 @@ alias qb="open -a Qbittorrent"
 
 alias ut="open -a uTorrent"
 
+alias uto="open -a uTorrent"
+
 alias hl="open -a Half-Life"
 
 # alias hl2="open -a Half-Life 2"
@@ -286,15 +290,13 @@ alias num="open -a Numbers"
 
 alias sn="open -a Sonos"
 
-alias n="open -a Evernote"
+alias n="open -a Notes"
 
 alias notes="open -a Notes"
 
 alias todo="open -a Microsoft\ To\ Do"
 
 alias wch="open_weechat"
-
-alias 1p="open_app 1Password\ 6"
 
 alias rb="open_app RubyMine"
 
@@ -368,8 +370,6 @@ alias office="open -a OpenOffice"
 
 # alias pix="open -a Pixelmator"
 
-alias pix="open -a Pixen"
-
 alias cpp="copy_print"
 
 alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
@@ -412,6 +412,9 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
+
+alias cdpod="cd_down_tree $PODCAST_HOME"
+
 alias cdchoir="cd $SINGING_HOME/choir"
 
 alias cddl="cd $HOME/Downloads"
@@ -419,7 +422,6 @@ alias cddl="cd $HOME/Downloads"
 alias cdstr="cd $HOME/Movies/Star-Trek-Voyager-Season-3"
 
 alias cdst="cd $STORIES_HOME"
-
 
 alias cdcel="cd /usr/local/Cellar"
 
@@ -794,7 +796,7 @@ alias grss="git reset --soft"
 
 alias gag="git add .gitignore"
 
-alias gar="git add README.md"
+# alias gar="git add README.md"
 
 alias grb="git rebase"
 
@@ -1628,8 +1630,6 @@ alias repoal="recreate_all_repo_aliases"
 
 alias cdt="cd_to_file"
 
-alias cdtr="cd_down_tree"
-
 alias dd="duckduckgo"
 
 alias gr="grep_recursive_insensitive"
@@ -1639,7 +1639,6 @@ alias gR="grep_recursive -g"
 alias sedall="sed_all"
 
 alias jks="jekyll_serve"
-
 
 alias yell="yell_search"
 
@@ -1768,7 +1767,7 @@ alias ggt="google_translate"
 
 alias ggg="google_groups"
 
-alias gg="browse browser"
+alias gg="search_google"
 
 alias cn="canary"
 
@@ -1976,6 +1975,8 @@ alias sshf="file_grep $HOME/.ssh/config"
 ###############################################################################
 
 alias rentcode="get_record rent"
+
+alias card="get_record card-mon"
 
 
 ###############################################################################
