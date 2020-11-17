@@ -340,6 +340,8 @@ alias ssl="open -a 'shellShock Live'"
 
 alias mu="open -a Music"
 
+alias pod="open -a Podcasts"
+
 alias quick="open -a 'Quicktime Player'"
 
 alias til="open -a Tiled"
