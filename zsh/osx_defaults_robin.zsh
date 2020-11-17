@@ -77,3 +77,6 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.pl
 
 # Fixes 'black screen' problem in Macvim
 defaults write org.vim.MacVim MMUseCGLayerAlways -bool YES
+
+# 'natural' scrolling style!
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true

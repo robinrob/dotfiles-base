@@ -338,9 +338,7 @@ alias steam="open -a Steam"
 
 alias ssl="open -a 'shellShock Live'"
 
-alias itunes="open -a iTunes"
-
-alias itu="open -a iTunes"
+alias mu="open -a Music"
 
 alias quick="open -a 'Quicktime Player'"
 
