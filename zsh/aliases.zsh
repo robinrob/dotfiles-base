@@ -130,12 +130,6 @@ alias pyka="cd_pycharm $KAPTIO_HOME"
 
 alias brexit="exit"
 
-alias kcr="kitchen create"
-
-alias kc="kitchen converge"
-
-alias kl="kitchen login"
-
 alias mapsn="maps -n"
 
 alias llst="lastf"
@@ -266,10 +260,6 @@ alias pre="open -a Preview"
 
 alias qb="open -a Qbittorrent"
 
-alias ut="open -a uTorrent"
-
-alias uto="open -a uTorrent"
-
 alias hl="open -a Half-Life"
 
 # alias hl2="open -a Half-Life 2"
@@ -365,8 +355,6 @@ alias cpp="copy_print"
 alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
-
-alias utorrent="open -a uTorrent"
 
 alias spotify="open -a Spotify"
 
@@ -1681,12 +1669,6 @@ alias swd="start_website_dev"
 alias scd="start_cocos_dev"
 
 alias std="start_game_dev"
-
-alias stp="kill_processes_by_name idea macvim vagrant virtualbox itunes firefox safari finder slack pycharm postgres hipchat 'visual studio code' postman evernote"
-
-alias stg="stp; kill_processes_by_name finder safari vlc macvim spotify utorrent preview; open -a Steam"
-
-alias stpg="kill_processes_by_name steam strike thunder"
 
 alias enD="end_dev"
 
