@@ -128,16 +128,6 @@ alias dt="date"
 
 alias pyka="cd_pycharm $KAPTIO_HOME"
 
-alias trs="translate_slovenian"
-
-alias tre="translate_french"
-
-alias trg="translate_german"
-
-alias trp="translate_portuguese"
-
-alias brex="exit"
-
 alias brexit="exit"
 
 alias kcr="kitchen create"
@@ -1291,6 +1281,14 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias trs="translate_slovenian"
+
+alias tre="translate_french"
+
+alias trg="translate_german"
+
+alias trp="translate_portuguese"
+
 alias tor="search_tornado"
 
 alias pho="search_google_photos"

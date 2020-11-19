@@ -58,6 +58,9 @@ sudo cp $BACKGROUNDS_HOME/* $SYSTEM_PROFILEIMAGES_HOME/Nature
 # Iterm2 hotkey window animation duration
 defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.0
 
+# Disable the floating screenshot thumbnail!
+defaults write com.apple.screencapture show-thumbnail -bool FALSE
+
 # ###############################################################################
 # # File associations
 # ###############################################################################
