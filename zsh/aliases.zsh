@@ -391,7 +391,7 @@ alias m="$EDITOR"
 # Navigation
 ###############################################################################
 
-alias cdpod="cd_down_tree $PODCAST_HOME"
+alias cdpod="cd_down_tree $HOME/Google\ Drive/podcast"
 
 alias cdchoir="cd $SINGING_HOME/choir"
 
@@ -1269,6 +1269,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias torrent="search_torrents"
+
 alias trs="translate_slovenian"
 
 alias tre="translate_french"

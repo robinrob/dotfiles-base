@@ -1,0 +1,11 @@
+
+IFS="
+"
+local -r -a Podcasts=($(/bin/ls -dr $PODCAST_HOME/podcast_*.band))
+
+local +r LastPodcast=$(basename $Podcasts[1])
+
+local +r LastPodcastNum=$(print $LastPodcast | ggrep -o "[0-9]")
+
+print $LastPodcastNum
+

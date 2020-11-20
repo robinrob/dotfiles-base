@@ -1,0 +1,12 @@
+local +r Name="$@"
+
+local +r LastPodcastNum=$(get_last_podcast_num)
+
+local +r NextPodcastNum=$(( $LastPodcastNum + 1 ))
+
+local +r DateString=$(gdate +%Y_%m_%d)
+
+# cp -r $PODCAST_HOME/podcast.band $PODCAST_HOME/podcast_${NextPodcastNum}_${DateString}_${Name}.band
+cp -r $PODCAST_HOME/podcast.band $PODCAST_HOME/podcast_${NextPodcastNum}.band
+
+cd $PODCAST_HOME
