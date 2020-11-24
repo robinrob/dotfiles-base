@@ -256,6 +256,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias app="open -a App\ Store"
+
 alias pre="open -a Preview"
 
 alias qb="open -a Qbittorrent"
@@ -1269,6 +1271,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias npod="new_podcast"
+
 alias torrent="search_torrents"
 
 alias trs="translate_slovenian"
