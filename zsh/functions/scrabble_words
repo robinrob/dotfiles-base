@@ -1,1 +1,1 @@
-browser "https://scrabble.merriam.com/words/start-with/$(urlencode $*)"
+browser "https://www.wordfind.com/starts-with/$(urlencode $1)/"

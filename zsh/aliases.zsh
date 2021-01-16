@@ -224,7 +224,6 @@ alias ssr="restart_system"
 
 alias SSR="ssr"
 
-alias logout="osascript -e 'tell app \"System Events\" to log out'"
 
 alias adbd="adb devices"
 
@@ -242,11 +241,11 @@ alias rkls="rake_do git:foreach nil"
 
 alias rkss="rake_do git:sort_sub"
 
-alias str="sd ~/.Trash"
+alias str="list_dirs_by_size ~/.Trash"
 
-alias strash="sd ~/.Trash"
+alias strash="list_dirs_by_size ~/.Trash"
 
-alias sdtrash="sd ~/.Trash"
+alias sdtrash="list_dirs_by_size ~/.Trash"
 
 alias sdr="du -dh $HOME/Dropbox"
 
@@ -297,8 +296,6 @@ alias xc="open_app Xcode-beta"
 alias cle="open -a Clementine"
 
 alias st="open -a sourceTree"
-
-alias sub="open -a 'Sublime Text'"
 
 alias vs="open_app 'Visual Studio Code'"
 
@@ -1271,6 +1268,14 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias reddit="search_reddit"
+
+alias redd="search_reddit"
+
+alias sub="search_subtitles"
+
+alias omag="open_copied_magnet_link"
+
 alias npod="new_podcast"
 
 alias torrent="search_torrents"
@@ -1282,8 +1287,6 @@ alias tre="translate_french"
 alias trg="translate_german"
 
 alias trp="translate_portuguese"
-
-alias tor="search_tornado"
 
 alias pho="search_google_photos"
 
@@ -1446,6 +1449,8 @@ alias sf="browse safari"
 alias ff="browse firefox"
 
 alias ch="browse chrome"
+
+alias to="browse tor"
 
 alias amz="search_amazon"
 

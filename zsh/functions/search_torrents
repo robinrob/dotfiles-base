@@ -1,1 +1,1 @@
-browser "https://torrentseeker.com/search.php?q=$(urlencode $@)"
+tor "https://torrentseeker.com/search.php?q=$(urlencode $@)"
