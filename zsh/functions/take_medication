@@ -1,0 +1,7 @@
+local +r Date=$(gdate '+%Y-%m-%d %H:%M:%S')
+
+local +r MedicationRC="$HOME/.medicationrc"
+
+rm -f $MedicationRC
+
+print $Date > $MedicationRC

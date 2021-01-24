@@ -255,6 +255,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias xld="open -a XLD"
+
 alias app="open -a App\ Store"
 
 alias pre="open -a Preview"
@@ -1268,6 +1270,12 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias wed="when_medication"
+
+alias ged="get_medication_date"
+
+alias med="take_medication"
+
 alias reddit="search_reddit"
 
 alias redd="search_reddit"
@@ -1283,6 +1291,10 @@ alias torrent="search_torrents"
 alias trs="translate_slovenian"
 
 alias tre="translate_french"
+
+alias trf="translate_french"
+
+alias tri="translate_italian"
 
 alias trg="translate_german"
 
