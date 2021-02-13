@@ -7,4 +7,4 @@ case $# in
     ;;
 esac
 
-browser $Url
+chrome $Url

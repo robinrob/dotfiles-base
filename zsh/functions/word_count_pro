@@ -1,0 +1,4 @@
+local +r Opt=$1
+shift
+
+print -n "$*" | wc $Opt

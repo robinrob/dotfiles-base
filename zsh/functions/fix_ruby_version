@@ -1,2 +1,3 @@
 rm -f .ruby-version
-echo 2.6.3 > .ruby-version
+
+echo $RUBY_VERSION > .ruby-version

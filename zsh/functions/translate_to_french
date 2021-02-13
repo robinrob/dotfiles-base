@@ -1,0 +1,1 @@
+browse "https://www.linguee.com/english-french/search?source=auto&query=$(urlencode $@)"

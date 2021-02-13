@@ -1,0 +1,1 @@
+browser "https://www.liste-de-mots.com/tous-les-mots-par-lettre/$(urlencode $@)/"

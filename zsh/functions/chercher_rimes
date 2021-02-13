@@ -1,0 +1,1 @@
+browser "https://www.dicodesrimes.com/rime/$(urlencode $@)"

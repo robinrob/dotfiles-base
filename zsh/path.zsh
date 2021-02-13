@@ -28,6 +28,7 @@ Dirs=(
   /usr/local/Cellar/macvim/$MACVIM_VERSION/bin
   /usr/local/Cellar/octave/4.0.0/bin
   /usr/local/bin
+  /usr/local/lib
   /Applications/Postgres.app/Contents/Versions/latest/bin
   $GOPATH/bin
 )

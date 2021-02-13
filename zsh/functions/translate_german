@@ -1,0 +1,1 @@
+browser "https://www.linguee.com/english-german/search?source=auto&query=$(urlencode $@)"

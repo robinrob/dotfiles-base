@@ -1,0 +1,1 @@
+tor "https://torrentseeker.com/search.php?q=$(urlencode $@)"

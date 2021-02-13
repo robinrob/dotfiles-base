@@ -1,0 +1,11 @@
+
+IFS="
+"
+local -r -a Podcasts=($(/usr/local/bin/gls -d $PODCAST_HOME/podcast_*.band | gsort -V --reverse))
+
+local +r LastPodcast=$(basename $Podcasts[1])
+
+local +r LastPodcastNum=$(print $LastPodcast | ggrep -P -o "(?<=podcast_)[0-9]+")
+
+print $LastPodcastNum
+

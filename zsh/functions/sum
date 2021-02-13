@@ -1,0 +1,9 @@
+local +r Total=0
+
+for num in $*
+do
+  Total=$(( Total + num ))
+
+done
+
+print $Total

@@ -40,7 +40,7 @@ export PYTHONDONTWRITEBYTECODE=1
 ###############################################################################
 export RUBY_LIB=/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/lib/ruby/2.0.0
 
-export RUBY_VERSION=2.5.0
+export RUBY_VERSION=2.6.0
 
 ###############################################################################
 # Node
@@ -90,12 +90,8 @@ then
   export PGDATA="$HOME/Library/Containers/com.heroku.postgres/Data/Library/Application Support/Postgres/var"
 fi
 
-if [[ "$HOSTNAME" == "$MERCURY_HOSTNAME" ]]
-then
-	export BROWSER="safari"
-fi
+export BROWSER="safari"
 
-export BROWSER_APP="Google\ Chrome"
 
 
 ###############################################################################
@@ -119,9 +115,7 @@ export COQ_HOME="$HOME/Programming/robin/coq"
 
 export FISH_HOME="$HOME/Programming/robin/fish"
 
-export FORCE_COM_HOME="$HOME/Programming/robin/force.com"
-
-export HTML_HOME="$HOME/Programming/robin/html"
+export HTML_HOME="$HOME/Programming/robin/html"G
 
 export CSS_HOME="$HOME/Programming/robin/css"
 
@@ -192,10 +186,6 @@ export CONFIG_HOME=$DOTFILES_BASE_HOME/config
 export CONFIG_DOTFILES_HOME=$DOTFILES_BASE_HOME/config/dotfiles
 
 export CONFIG_FILES_HOME=$DOTFILES_BASE_HOME/config/files
-
-export FORCE_COM_HOME=$ROBIN_HOME/force.com
-
-export WORK_FORCE_COM_HOME=$WORK_HOME/force.com
 
 export BACKUPS_HOME=$RUBY_HOME/projects/aws-backup-manager
 
@@ -350,9 +340,9 @@ export GAM_PATH=/usr/local/Library/gam
 
 export TODO_HOME=$LOCAL_HOME/lib/todo.csv
 
-export LA_HOME=$PHOTOS_HOME/la
-
 export FILES_HOME=$HOME/Dropbox
+
+export DROPBOX_HOME=$HOME/Dropbox
 
 export HOSTFILES_HOME=$FILES_HOME/$HOSTNAME
 
@@ -384,7 +374,7 @@ export IMPORTANT_HOME=$COMMON_DOCS_HOME/IMPORTANT
 
 export KNOWLEDGE_HOME=$DOCS_HOME/knowledge
 
-export SCREENSHOTS_HOME=$HOSTFILES_HOME/screenshots
+export SCREENSHOTS_HOME=$DROPBOX_HOME/Screenshots
 
 export SCREENSHOT_NAME=$HOSTNAME
 
@@ -451,6 +441,8 @@ typeset -T ALIAS_FILES alias_files
 alias_files=($ALIASES_PATH $BOOKMARKS_ALIAS_PATH)
 
 # export GIT_SSH=$DOTFILES_BASE_HOME/sh/ssh-git.sh
+
+export PODCAST_HOME=$HOME/Google\ Drive/podcast
 
 
 ###############################################################################
@@ -590,3 +582,4 @@ export h="6.626e-34"
 # Shell color names & codes
 ###############################################################################
 source $ZDOT_HOME/color_codes.zsh
+

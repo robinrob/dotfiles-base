@@ -1,0 +1,1 @@
+browser "https://www.reddit.com/search/?q=$(urlencode $@)"

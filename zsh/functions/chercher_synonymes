@@ -1,0 +1,1 @@
+browser "https://synonyms.reverso.net/synonyme/fr/$(urlencode $@)"

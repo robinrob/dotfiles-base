@@ -1,0 +1,5 @@
+local +r SearchTerm=$(urlencode $@)
+
+browser "https://unsplash.com/s/photos/$SearchTerm"
+browser "https://www.pexels.com/search/$SearchTerm"
+browser "https://pixabay.com/images/search/$SearchTerm"

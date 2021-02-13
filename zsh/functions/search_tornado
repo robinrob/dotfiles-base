@@ -1,0 +1,10 @@
+local +r Url
+
+case $# in
+  0)
+    Url="https://atornadoofchaos.wordpress.com" ;;
+  *) 
+    Url="https://atornadoofchaos.wordpress.com/?s=$(urlencode $@)" ;;
+esac
+
+browser $Url

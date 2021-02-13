@@ -88,7 +88,7 @@ alias sed="gsed -r"
 
 alias gsed="gsed -r"
 
-alias ls="/usr/local/bin/gls --color"
+alias ls="/usr/local/bin/gls --color -1"
 
 # alias cat="gcat"
 
@@ -104,11 +104,15 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
-alias gn="git-number"
+alias cdlm="cd $HOME/Movies; cd_to_lastf"
+
+alias frv="fix_ruby_version"
+
+alias history="history 0"
+
+alias gn="git_number"
 
 alias cdtr="cd ~/.Trash"
-
-alias sdtr="sd ~/.Trash"
 
 alias pomo="timer 25"
 
@@ -124,19 +128,7 @@ alias dt="date"
 
 alias pyka="cd_pycharm $KAPTIO_HOME"
 
-alias trf="translate -f fr -t en"
-
-alias brex="exit"
-
 alias brexit="exit"
-
-alias kcr="kitchen create"
-
-alias kc="kitchen converge"
-
-alias kl="kitchen login"
-
-# alias trf="copy_print 'self.assertTrue(False)'"
 
 alias mapsn="maps -n"
 
@@ -192,6 +184,8 @@ alias vlc="open -a VLC"
 
 alias aud="open -a Audacity"
 
+alias gar="open -a garageBand"
+
 alias kcc="kill_processes_by_name cocos"
 
 alias kbs="kill_processes_by_name browser-sync"
@@ -199,8 +193,6 @@ alias kbs="kill_processes_by_name browser-sync"
 alias kid="kill_processes_by_name idea"
 
 alias repals="rm repo_aliases.zsh; print_all_repo_aliases > repo_aliases.zsh; source_aliases"
-
-
 
 alias science="rss science"
 
@@ -232,7 +224,6 @@ alias ssr="restart_system"
 
 alias SSR="ssr"
 
-alias logout="osascript -e 'tell app \"System Events\" to log out'"
 
 alias adbd="adb devices"
 
@@ -250,7 +241,11 @@ alias rkls="rake_do git:foreach nil"
 
 alias rkss="rake_do git:sort_sub"
 
-alias str="du -dh $TRASH_HOME"
+alias str="list_dirs_by_size ~/.Trash"
+
+alias strash="list_dirs_by_size ~/.Trash"
+
+alias sdtrash="list_dirs_by_size ~/.Trash"
 
 alias sdr="du -dh $HOME/Dropbox"
 
@@ -260,6 +255,20 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias xld="open -a XLD"
+
+alias app="open -a App\ Store"
+
+alias pre="open -a Preview"
+
+alias qb="open -a Qbittorrent"
+
+alias hl="open -a Half-Life"
+
+# alias hl2="open -a Half-Life 2"
+
+alias tel="open -a Telegram"
+
 alias num="open -a Numbers"
 
 alias sn="open -a Sonos"
@@ -268,11 +277,9 @@ alias n="open -a Notes"
 
 alias notes="open -a Notes"
 
-alias todo="open -a todoist"
+alias todo="open -a Microsoft\ To\ Do"
 
 alias wch="open_weechat"
-
-alias 1p="open_app 1Password\ 6"
 
 alias rb="open_app RubyMine"
 
@@ -291,8 +298,6 @@ alias xc="open_app Xcode-beta"
 alias cle="open -a Clementine"
 
 alias st="open -a sourceTree"
-
-alias sub="open -a 'Sublime Text'"
 
 alias vs="open_app 'Visual Studio Code'"
 
@@ -314,9 +319,9 @@ alias steam="open -a Steam"
 
 alias ssl="open -a 'shellShock Live'"
 
-alias itunes="open -a iTunes"
+alias mu="open -a Music"
 
-alias itu="open -a iTunes"
+alias pod="open -a Podcasts"
 
 alias quick="open -a 'Quicktime Player'"
 
@@ -346,15 +351,11 @@ alias office="open -a OpenOffice"
 
 # alias pix="open -a Pixelmator"
 
-alias pix="open -a Pixen"
-
 alias cpp="copy_print"
 
 alias screensaver="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 alias scr="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
-
-alias utorrent="open -a uTorrent"
 
 alias spotify="open -a Spotify"
 
@@ -390,6 +391,9 @@ alias m="$EDITOR"
 ###############################################################################
 # Navigation
 ###############################################################################
+
+alias cdpod="cd_down_tree $HOME/Google\ Drive/podcast"
+
 alias cdchoir="cd $SINGING_HOME/choir"
 
 alias cddl="cd $HOME/Downloads"
@@ -397,7 +401,6 @@ alias cddl="cd $HOME/Downloads"
 alias cdstr="cd $HOME/Movies/Star-Trek-Voyager-Season-3"
 
 alias cdst="cd $STORIES_HOME"
-
 
 alias cdcel="cd /usr/local/Cellar"
 
@@ -509,6 +512,8 @@ alias cdopt="cd_down_tree $HOME/Documents/options"
 
 alias cdmv="cd_down_tree $HOME/Movies"
 
+alias cdbk="cd_down_tree $HOME/Books"
+
 alias cdaws="cd_down_tree `dirname $AWS_CONFIG`"
 
 alias cdm="cd_down_tree $JS_HOME/projects"
@@ -537,7 +542,7 @@ alias gpts="gulp test-server"
 
 alias ven="virtualenv"
 
-alias ut="utop"
+# alias ut="utop"
 
 alias cdfn="cd_down_tree $FUNCS_HOME"
 
@@ -740,13 +745,13 @@ alias vpnd="vpn -q"
 ###############################################################################
 alias gS="git status"
 
-alias gs="git-number"
+alias gs="git_number"
 
 alias gig="git_ignore"
 
-alias gd="git-number diff"
+alias gd="git_number diff"
 
-alias ga="git-number add"
+alias ga="git_number add"
 
 alias gch="git checkout"
 
@@ -770,7 +775,7 @@ alias grss="git reset --soft"
 
 alias gag="git add .gitignore"
 
-alias gar="git add README.md"
+# alias gar="git add README.md"
 
 alias grb="git rebase"
 
@@ -1185,13 +1190,12 @@ alias crec="cat $RECORDS_PATH"
 
 alias grrec="grep_list $RECORDS_PATH"
 
-alias gov="get_record directgovid"
 
 alias lahome="get_record la_home"
 
 alias lawork="get_record la_work"
 
-alias cardnat="get_record nationwide-debit"
+alias cardmon="get_record monzo-debit"
 
 alias mspnum="get_record msp_num"
 
@@ -1219,7 +1223,7 @@ alias phone="get_record phone"
 
 alias ph="phone"
 
-alias reg="get_record reg"
+alias reg="get_record car-reg"
 
 alias pH="get_record phonecompacb"
 
@@ -1266,6 +1270,68 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias wed="when_medication"
+
+alias ged="get_medication_date"
+
+alias med="take_medication"
+
+alias reddit="search_reddit"
+
+alias redd="search_reddit"
+
+alias sub="search_subtitles"
+
+alias omag="open_copied_magnet_link"
+
+alias npod="new_podcast"
+
+alias torrent="search_torrents"
+
+alias trs="translate_slovenian"
+
+alias tre="translate_french"
+
+alias trf="translate_french"
+
+alias tri="translate_italian"
+
+alias trg="translate_german"
+
+alias trp="translate_portuguese"
+
+alias pho="search_google_photos"
+
+alias mtm="move_to_music"
+
+alias screw="search_screwfix"
+
+alias mots="chercher_words"
+
+alias rim="chercher_rimes"
+
+alias thes="search_thesaurus"
+
+alias words="scrabble_words"
+
+alias wcp="word_count_pro"
+
+alias dic="search_wiktionary"
+
+alias apod="search_apod"
+
+alias sto="search_stock_images"
+
+alias syn="chercher_synonymes"
+
+alias sign="search_signs"
+
+alias gif="search_gifs"
+
+alias con="search_conjugaisons"
+
+alias emo="search_emoji"
+
 alias pafon="pafon_counter"
 
 alias nvu="nvm_use"
@@ -1302,21 +1368,21 @@ alias rmgU="rm_git_untracked_files"
 
 alias dict="/usr/local/bin/dict"
 
-alias dic="dicsaurus"
+# alias dic="dicsaurus"
 
-alias thes="dicsaurus -t"
+# alias thes="dicsaurus -t"
 
 alias gchord="search_guitar_chord"
 
 alias swdoc="search_ios_doc"
 
-alias orders="search_amazon_orders"
+alias ordres="search_amazon_orders"
 
 alias hp="hub_pull_request"
 
 alias wt="work_tabs"
 
-alias cdl="cd_last_dir"
+alias cdl="cd_to_lastf"
 
 alias fac="fast_mail_calendar"
 
@@ -1336,7 +1402,7 @@ alias chars="print_chars"
 
 alias kpr="kill_processes_by_name"
 
-alias ca="google_calendar"
+alias ca="open -a Calendar"
 
 alias ma="gmail"
 
@@ -1388,11 +1454,15 @@ alias alc="search_sqlalchemy_doc"
 
 alias grgm="grep_gitmodules"
 
+alias op="browse opera"
+
 alias sf="browse safari"
 
 alias ff="browse firefox"
 
 alias ch="browse chrome"
+
+alias to="browse tor"
 
 alias amz="search_amazon"
 
@@ -1474,7 +1544,6 @@ alias logos="log_ocaml_var s"
 
 alias logob="log_ocaml_var B"
 
-alias logof="log_ocaml_var f"
 
 alias loggd="log_go_var d"
 
@@ -1496,7 +1565,14 @@ alias sains="search_sainsburys"
 
 alias asda="search_asda"
 
-alias wt="search_waitrose"
+alias wait="search_waitrose"
+
+alias morr="search_morrisons"
+
+alias tesc="search_tesco"
+
+alias ebay="search_ebay"
+
 
 alias gbch="git_branch_checkout"
 
@@ -1563,8 +1639,6 @@ alias repoal="recreate_all_repo_aliases"
 
 alias cdt="cd_to_file"
 
-alias cdtr="cd_down_tree"
-
 alias dd="duckduckgo"
 
 alias gr="grep_recursive_insensitive"
@@ -1574,7 +1648,6 @@ alias gR="grep_recursive -g"
 alias sedall="sed_all"
 
 alias jks="jekyll_serve"
-
 
 alias yell="yell_search"
 
@@ -1619,12 +1692,6 @@ alias swd="start_website_dev"
 alias scd="start_cocos_dev"
 
 alias std="start_game_dev"
-
-alias stp="kill_processes_by_name idea macvim vagrant virtualbox itunes firefox safari finder slack pycharm postgres hipchat 'visual studio code' postman evernote"
-
-alias stg="stp; kill_processes_by_name finder safari vlc macvim spotify utorrent preview; open -a Steam"
-
-alias stpg="kill_processes_by_name steam strike thunder"
 
 alias enD="end_dev"
 
@@ -1703,7 +1770,7 @@ alias ggt="google_translate"
 
 alias ggg="google_groups"
 
-alias gg="browse chrome"
+alias gg="search_google"
 
 alias cn="canary"
 
@@ -1817,8 +1884,6 @@ alias dsp="despace"
 
 alias bell="tput bel"
 
-alias sto="setopt"
-
 alias uns="unsetopt"
 
 alias seg="set -o | grep"
@@ -1906,6 +1971,15 @@ alias afind="libfind_s $AWK_HOME"
 alias zshfind="file_grep $HOME/.zshrc"
 
 alias sshf="file_grep $HOME/.ssh/config"
+
+
+###############################################################################
+# Records
+###############################################################################
+
+alias rentcode="get_record rent"
+
+alias card="get_record card-mon"
 
 
 ###############################################################################

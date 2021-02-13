@@ -7,7 +7,7 @@ then
   then
     Url=$(urlencode $Url)
   else
-    Url="https://www.google.com/#q=$(urlencode $*[2,-1])&safe=active"
+    Url="https://duckduckgo.com/?q=$(urlencode $*[2,-1])&t=h_&ia=web"
   fi
 fi
 

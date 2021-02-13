@@ -1,0 +1,1 @@
+browser "https://la-conjugaison.nouvelobs.com/du/verbe/$(urlencode $@).php"

@@ -1,0 +1,1 @@
+browser "https://www.opensubtitles.org/en/search2/sublanguageid-eng/moviename-$(urlencode $@)"
