@@ -1,0 +1,1 @@
+browser "https://www.morflora.com/?s=$(urlencode $@)"

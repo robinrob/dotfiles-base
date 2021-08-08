@@ -1,0 +1,1 @@
+browser "https://wordpress.com/posts/atornadoofchaos.wordpress.com?s=$(urlencode $@)"

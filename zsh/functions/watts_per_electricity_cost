@@ -1,0 +1,12 @@
+local +r MonthlyCost=$(( $1 * 1.0 ))
+
+local +r CostPerKwh=0.172
+
+local +r Watts=$(( ($MonthlyCost / $CostPerKwh) * 1000.0 / (30.42 * 24)))
+
+function print_format_number {
+  print $1 | /usr/bin/awk '{ printf("%.4g\n", $1) }'
+}
+
+print "Watts: $(print_format_number $Watts)W"
+

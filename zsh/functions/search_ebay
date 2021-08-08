@@ -2,7 +2,7 @@ local +r BaseUrl
 
 case $# in
   0)
-    Url="http://www.ebay.co.uk" ;;
+    Url="https://www.ebay.co.uk/myb/PurchaseHistory" ;;
   *) 
     Url="https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=$(urlencode $@)&_sacat=0" ;;
 esac

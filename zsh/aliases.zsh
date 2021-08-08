@@ -255,6 +255,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias key="open -a Keychain\ Access"
+
 alias xld="open -a XLD"
 
 alias app="open -a App\ Store"
@@ -1270,6 +1272,18 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias thought="search_thoughtmaybe"
+
+alias wpe="watts_per_electricity_cost"
+
+alias ele="electricity_cost"
+
+alias posts="search_posts"
+
+alias pla="search_plants"
+
+alias winnersh="search_winnersh"
+
 alias wed="when_medication"
 
 alias ged="get_medication_date"
@@ -1737,6 +1751,8 @@ alias rp="open_source_repo_path"
 
 alias kps="kill_processes_by_name"
 
+alias die="kps"
+
 alias grp="grep_processes"
 
 alias lps="list_processes"
@@ -1744,7 +1760,6 @@ alias lps="list_processes"
 alias pdf="print_default"
 
 alias grec="get_record"
-
 
 alias reminderwork="reminder robin.smith@cloudreach.co.uk"
 

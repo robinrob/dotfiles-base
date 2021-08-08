@@ -2,9 +2,10 @@ local +r Url
 
 case $# in
   0)
-    Url="http://groceries.morrisons.com" ;;
+    Url="https://groceries.store.morrisons.com/products/" ;;
   *) 
-    Url="https://groceries.morrisons.com/search?entry=$(urlencode $@)" ;;
+    Url="https://groceries.store.morrisons.com/products/search?q=$(urlencode $@)" ;;
 esac
 
 browser $Url
+

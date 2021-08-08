@@ -1,0 +1,10 @@
+local +r Url
+
+case $# in
+  0)
+    Url="https://www.gardenstoreonline.co.uk" ;;
+  *) 
+    Url="https://www.gardenstoreonline.co.uk/search-results.html?searchvalue=$(urlencode $@)" ;;
+esac
+
+browser $Url

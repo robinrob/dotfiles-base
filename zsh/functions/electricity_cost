@@ -1,0 +1,20 @@
+local +r Watts=$(( $1 * 1.0 ))
+
+local +r CostPerKwh=0.172
+
+local +r CostPerHour=$(( Watts / 1000.0 * $CostPerKwh ))
+
+local +r CostPerMinute=$(( CostPerHour / 60.0 ))
+
+local +r CostPerDay=$(( $CostPerHour * 24.0 ))
+
+local +r CostPerMonth=$(( $CostPerDay * 30.42 ))
+
+function print_format_number {
+  print $1 | /usr/bin/awk '{ printf("%.4g \n", $1) }'
+}
+
+print "Cost Per Minute: £$(print_format_number $CostPerMinute)"
+print "Cost Per Hour: £$(print_format_number $CostPerHour)"
+print "Cost Per Day: £$(print_format_number $CostPerDay)"
+print "Cost Per Month: £$(print_format_number $CostPerMonth)"

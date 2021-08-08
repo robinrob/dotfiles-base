@@ -1,0 +1,1 @@
+browser "https://thoughtmaybe.com/?s=$(urlencode $@)"
