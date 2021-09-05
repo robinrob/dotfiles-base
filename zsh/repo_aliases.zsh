@@ -28,6 +28,21 @@ alias cdnpr="cd_down_tree $NODE_HOME/practice"
 alias cdnpro="cd_down_tree $NODE_HOME/projects"
 alias glpn="cd_gulp $NODE_HOME"
 
+alias idpla="idea $PLANTS_FOR_LIFE_HOME"
+
+alias icpla="idea $PLANTS_FOR_LIFE_HOME"
+
+alias xcpla="xcode $PLANTS_FOR_LIFE_HOME"
+
+alias vspla="vscode $PLANTS_FOR_LIFE_HOME"
+
+alias itpla="iterm $PLANTS_FOR_LIFE_HOME"
+
+alias cdpla="cd_down_tree $PLANTS_FOR_LIFE_HOME"
+alias cdplapr="cd_down_tree $PLANTS_FOR_LIFE_HOME/practice"
+alias cdplapro="cd_down_tree $PLANTS_FOR_LIFE_HOME/projects"
+alias glppla="cd_gulp $PLANTS_FOR_LIFE_HOME"
+
 alias idgi="idea $GIMP_HOME"
 
 alias icgi="idea $GIMP_HOME"

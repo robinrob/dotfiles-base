@@ -755,13 +755,11 @@ alias gd="git_number diff"
 
 alias ga="git_number add"
 
-alias gch="git checkout"
+alias gch="git_number checkout"
 
 alias grS="git reset"
 
 alias gig="git_do git_ignore"
-
-alias gch="git_do 'git checkout'"
 
 alias grS="git_do 'git reset'"
 

@@ -230,6 +230,8 @@ export QUIZ_HOME=$RUBY_HOME/projects/quiz
 
 export WEBSITE_HOME=$JS_HOME/projects/rsmithio
 
+export PLANTS_FOR_LIFE_HOME=$JS_HOME/projects/robinrob.github.io
+
 export ADHD_WEBSITE_HOME=$JS_HOME/projects/adhdevelopers
 
 export GITHUB_HOME=$RUBY_HOME/projects/github

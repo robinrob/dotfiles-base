@@ -4,6 +4,10 @@ local +r Version=$1
 if [[ -z $Version ]] && [[ -f .ruby-version ]]
 then
   Version=$(cat .ruby-version)
+
+elif [[ -z $Version ]] && [[ -n $RUBY_VERSION ]]
+then
+  Version=$RUBY_VERSION
 fi
 
 if [[ -z $Version ]]
