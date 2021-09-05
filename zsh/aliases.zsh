@@ -1272,6 +1272,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias urban="search_urbandictionary"
+
 alias thought="search_thoughtmaybe"
 
 alias wpe="watts_per_electricity_cost"
