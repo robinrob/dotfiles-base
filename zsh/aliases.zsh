@@ -104,6 +104,8 @@ alias tail="gtail"
 ###############################################################################
 # Shortcuts
 ###############################################################################
+alias son="open /System/Library/PreferencePanes/Sound.prefPane"
+
 alias cdlm="cd $HOME/Movies; cd_to_lastf"
 
 alias frv="fix_ruby_version"
@@ -758,12 +760,6 @@ alias ga="git_number add"
 alias gch="git_number checkout"
 
 alias grS="git reset"
-
-alias gig="git_do git_ignore"
-
-alias grS="git_do 'git reset'"
-
-alias gc="git_do_by_item_num cat"
 
 alias glu="git_ls_untracked_files"
 
