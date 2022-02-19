@@ -10,4 +10,5 @@ do
   $(is_not_empty $val) && break
 done
 
-is_not_empty $val && copy_print ""$val""
+is_not_empty $val && copy_printf ""$val""
+print

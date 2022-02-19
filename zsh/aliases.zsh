@@ -257,6 +257,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias wa="open -a WhatsApp"
+
 alias key="open -a Keychain\ Access"
 
 alias xld="open -a XLD"
@@ -1266,6 +1268,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias tornado="search_tornado"
+
 alias urban="search_urbandictionary"
 
 alias thought="search_thoughtmaybe"
@@ -1315,6 +1319,8 @@ alias pho="search_google_photos"
 alias mtm="move_to_music"
 
 alias screw="search_screwfix"
+
+alias diy="search_bandq"
 
 alias mots="chercher_words"
 
