@@ -12,7 +12,7 @@ brew uninstall macvim
 brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
 
 # Install Octave
-./octave.zsh
+# $ZDOT_HOME/octave.zsh
 
 # Hack font
 brew tap caskroom/fonts
