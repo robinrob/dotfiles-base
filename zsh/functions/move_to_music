@@ -1,1 +1,1 @@
-cp -r "$@" $HOME/Music/Automatically\ Add\ to\ Music.localized/
+cp -r "$@" $HOME/Music/Music/Media.localized/Automatically\ Add\ to\ Music.localized/
