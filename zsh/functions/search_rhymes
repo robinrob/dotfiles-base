@@ -1,0 +1,1 @@
+browser "https://www.rhymezone.com/r/rhyme.cgi?Word=$(urlencode $@)&typeofrhyme=adv&loc=advlink"

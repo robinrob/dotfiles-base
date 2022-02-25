@@ -1340,6 +1340,8 @@ alias sto="search_stock_images"
 
 alias syn="chercher_synonymes"
 
+alias rhy="search_rhymes"
+
 alias sign="search_signs"
 
 alias gif="search_gifs"
