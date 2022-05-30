@@ -84,9 +84,9 @@ alias grep="ggrep --text --color"
 
 alias find="gfind"
 
-alias sed="gsed -r"
+# alias sed="gsed -r"
 
-alias gsed="gsed -r"
+# alias gsed="gsed -r"
 
 alias ls="/usr/local/bin/gls --color -1"
 
@@ -257,6 +257,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias music="open -a MusicHarbor"
+
 alias wa="open -a WhatsApp"
 
 alias key="open -a Keychain\ Access"
@@ -1278,7 +1280,6 @@ alias wpe="watts_per_electricity_cost"
 
 alias ele="electricity_cost"
 
-alias posts="search_posts"
 
 alias pla="search_plants"
 
@@ -1398,13 +1399,7 @@ alias ordres="search_amazon_orders"
 
 alias hp="hub_pull_request"
 
-alias wt="work_tabs"
-
 alias cdl="cd_to_lastf"
-
-alias fac="fast_mail_calendar"
-
-alias fa="fast_mail"
 
 alias sd="list_dirs_by_size"
 
