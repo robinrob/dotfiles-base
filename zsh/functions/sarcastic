@@ -1,0 +1,27 @@
+IFS="
+"
+
+local +r -a Text=($(print $* | fold -w1))
+
+
+local switch=$TRUE
+local newtext=""
+
+for char in $Text
+do
+	if [[ $char = " " ]]
+	then
+		newtext="$newtext$char"
+
+	elif [[ $switch == $FALSE ]]
+	then
+		newtext="$newtext$(upper $char)"
+		switch=$TRUE
+
+	else
+		newtext="$newtext$(lower $char)"
+		switch=$FALSE
+	fi
+done
+
+print $newtext
