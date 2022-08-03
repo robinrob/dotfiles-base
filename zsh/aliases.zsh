@@ -257,6 +257,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias vb="open -a VirtualBox"
+
 alias music="open -a MusicHarbor"
 
 alias wa="open -a WhatsApp"
@@ -323,7 +325,6 @@ alias rl="open -a 'Rocket League'"
 
 alias l4d="open -a 'Left 4 Dead 2'"
 
-alias steam="open -a Steam"
 
 alias ssl="open -a 'shellShock Live'"
 
@@ -341,7 +342,6 @@ alias skype="open -a Skype"
 
 alias war="open -a 'War Thunder'"
 
-alias steam="open -a Steam"
 
 alias clm="open -a Clementime"
 
@@ -426,7 +426,6 @@ alias cdcl="cd_down_tree /usr/local/Cellar"
 
 alias cdts="cd_down_tree $JS_TESTS_HOME/src"
 
-alias cdsam="cd_down_tree $COCOS_HOME/samples"
 
 alias cdmw="cd_down_tree $COCOS_HOME/samples/js-moonwarriors"
 
@@ -500,9 +499,7 @@ alias cdbspr="cd_down_tree $CSS_HOME/practice/bootstrap"
 
 alias cdjqpr="cd_down_tree $JS_HOME/practice/jquery"
 
-alias cdcam="cd_down_tree '$CAMERA_HOME'"
 
-alias ocam="cd_down_tree $CAMERA_HOME && open ."
 
 alias cdtr="cd_down_tree $TRASH_HOME"
 
@@ -528,7 +525,6 @@ alias cdm="cd_down_tree $JS_HOME/projects"
 
 alias cdmb="cd_down_tree $JS_HOME/projects/mobile-app-cordova"
 
-alias cdgam="cd_down_tree $GAM_PATH"
 
 alias cdexp="cd $EXPENSES_HOME"
 
@@ -1223,6 +1219,8 @@ alias phone="get_record phone"
 
 alias ph="phone"
 
+alias phs="phoneshort"
+
 alias reg="get_record car-reg"
 
 alias pH="get_record phonecompacb"
@@ -1271,6 +1269,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 # Functions
 ###############################################################################
 alias tornado="search_tornado"
+
+alias torn="search_tornado"
 
 alias urban="search_urbandictionary"
 
@@ -1322,6 +1322,8 @@ alias mtm="move_to_music"
 alias screw="search_screwfix"
 
 alias diy="search_bandq"
+
+alias bnq="search_bandq"
 
 alias mots="chercher_words"
 

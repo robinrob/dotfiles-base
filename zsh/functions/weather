@@ -3,6 +3,8 @@ local +r Url="http://www.bbc.co.uk/weather"
 if (( # > 0))
 then
   Url="$Url/$(urlencode $@)"
+else
+  Url="$Url/$(lower $(get_record home_postcode | gawk '{print $1}'))"
 fi
 
 browser $Url

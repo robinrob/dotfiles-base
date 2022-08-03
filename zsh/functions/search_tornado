@@ -1,10 +1,11 @@
 local +r Url
+local +r Domain="tornadoofchaos.uk"
 
 case $# in
   0)
-    Url="https://atornadoofchaos.wordpress.com" ;;
+    Url="https://$Domain" ;;
   *) 
-    Url="https://atornadoofchaos.wordpress.com/?s=$(urlencode $@)" ;;
+    Url="https://$Domain/?s=$(urlencode $@)" ;;
 esac
 
 browser $Url
