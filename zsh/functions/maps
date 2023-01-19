@@ -15,9 +15,9 @@ case $# in
     Search="$*"
 esac
 
-if [[ -n $Near ]]
-then
+# if [[ -n $Near ]]
+# then
   Search="$Search near $(get_postcode)"
-fi
+# fi
 
 browser "https://www.google.co.uk/maps/search/$(urlencode $Search)"

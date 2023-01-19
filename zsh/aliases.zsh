@@ -110,7 +110,7 @@ alias cdlm="cd $HOME/Movies; cd_to_lastf"
 
 alias frv="fix_ruby_version"
 
-alias history="history 0"
+# alias history="history 0"
 
 alias gn="git_number"
 
@@ -257,6 +257,8 @@ alias syslog="tail -f /var/log/system.log"
 ###############################################################################
 # Applications/tools
 ##############################################################################
+alias pia="open -a Private\ Internet\ Access"
+
 alias vb="open -a VirtualBox"
 
 alias music="open -a MusicHarbor"
@@ -1268,6 +1270,8 @@ alias tubemap="open $COMMON_DOCS_HOME/useful/tube_map.pdf"
 ###############################################################################
 # Functions
 ###############################################################################
+alias mapS="maps_basic"
+
 alias tornado="search_tornado"
 
 alias torn="search_tornado"
@@ -1288,8 +1292,6 @@ alias winnersh="search_winnersh"
 alias wed="when_medication"
 
 alias ged="get_medication_date"
-
-alias med="take_medication"
 
 alias reddit="search_reddit"
 
@@ -1397,7 +1399,6 @@ alias gchord="search_guitar_chord"
 
 alias swdoc="search_ios_doc"
 
-alias ordres="search_amazon_orders"
 
 alias hp="hub_pull_request"
 
