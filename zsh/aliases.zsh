@@ -68,7 +68,7 @@ alias shell="print $SHELL"
 ###############################################################################
 # GNU commands
 ###############################################################################
-alias glS="/usr/local/bin/gls"
+alias glS="/opt/homebrew/bin/gls"
 
 alias date="gdate"
 
@@ -88,7 +88,7 @@ alias find="gfind"
 
 # alias gsed="gsed -r"
 
-alias ls="/usr/local/bin/gls --color -1"
+alias ls="/opt/homebrew/bin/gls --color -1"
 
 # alias cat="gcat"
 
