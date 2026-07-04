@@ -26,4 +26,4 @@ done
 
 [[ -z $GrepExpression ]] && red $Usage && return 1
 
-gfind $Where ${=MaxDepth} -type f ${=Excludes} -exec gegrep -n -H --color $Insensitive $GrepExpression {} \;
+gfind $Where ${=MaxDepth} -type f ${=Excludes} -exec ggrep -E -n -H --color $Insensitive $GrepExpression {} \;
